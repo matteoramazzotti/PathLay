@@ -1,0 +1,38 @@
+Tag,Description,Content
+expname,Holds the name of the Experiment Package,String of text
+comments,Holds brief comments for the Experiment Package,String of text
+idcol,Holds the number representing the column with the IDs in the Transcriptomic dataset,Integer Number
+datacol,Holds the number representing the column with the differential expression values in the Transcriptomic dataset,Integer Number
+datatype,Holds the type of differential expression value used in the Transcriptomic dataset,“logFC” or “FC” or “Raw”
+datadir,,
+datathr,,
+pcol,Holds the number representing the column with the p-values in the Transcriptomic dataset,Integer Number
+pthr,Holds the number representing the threshold for the p-values in the Transcriptomic dataset,Any Number
+midcol,Holds the number representing the column with the IDs in the miRNomic dataset,Integer Number
+mdatacol,Holds the number representing the column with the differential expression values in the miRNomic dataset,Integer Number
+mdatatype,Holds the type of differential expression value used in the miRNomic dataset,“logFC” or “FC” or “Raw”
+mdatadir,,
+mdatathr,,
+mpcol,Holds the number representing the column with the p-values in the miRNomic dataset,Integer Number
+mpthr,Holds the number representing the threshold for the p-values in the miRNomic dataset,Any Number
+metidcol,Holds the number representing the column with the IDs in the Metabolomic dataset,Integer Number
+metdatacol,Holds the number representing the column with the expression values in the Metabolomic dataset,Integer Number
+metdatatype,Holds the type of differential expression value used in the Metabolomic dataset,“logFC” or “FC” or “Raw”
+metdatadir,,
+metdatathr,,
+metpcol,Holds the number representing the column with the p-values in the Metabolomic dataset,Integer Number
+metpthr,Holds the number representing the threshold for the p-values in the Metabolomic dataset,Any Number
+methidcol,Holds the number representing the column with the IDs in the Methylomic dataset,Integer Number
+methdatacol,Holds the number representing the column with the differential expression values in the Methylomic dataset,Integer Number
+methdatatype,Holds the type of differential expression value used in the Methylomic dataset,“logFC” or “FC” or “Raw”
+methdatadir,,
+methdatathr,,
+methpcol,Holds the number representing the column with the p-values in the Methylomic dataset,Integer Number
+methpthr,Holds the number representing the threshold for the p-values in the Methylomic dataset,Any Number
+protidcol,Holds the number representing the column with the IDs in the Proteomic dataset,Integer Number
+protdatacol,Holds the number representing the column with the differential expression values in the Proteomic dataset,Integer Number
+protdatatype,Holds the type of differential expression value used in the Proteomic dataset,“logFC” or “FC” or “Raw”
+protdatadir,,
+protdatathr,,
+protpcol,Holds the number representing the column with the p-values in the Proteomic dataset,Integer Number
+protpthr,Holds the number representing the threshold for the p-values in the Proteomic dataset,Any Number

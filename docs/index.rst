@@ -34,6 +34,7 @@ Indices and tables
 	* :ref:`Experiment Package <usage_specs>`
 		* :ref:`Configuration File <usage_specs_conf>`
 		* :ref:`Datasets Files <usage_specs_data>`
+		* :ref:`Supported IDs <usage_specs_ids>`
 	* :ref:`Home Manager <usage_home>`
 	* :ref:`Configuration Page <usage_access>`
 	* :ref:`Pathway Explorer <usage_results>`
@@ -178,19 +179,100 @@ Each Experiment Package is defined from up to 7 different text files with differ
    :widths: 30, 70
    :header-rows: 1
 
-Every experiment created in your Home Page has a name like "exp1,2,3..." automatically assigned. If you want to manually configure an experiment from scratch you have to name your files with this convention in mind (i.e exp1.conf, exp1.mrna, exp1.meta etc...).
+Every experiment created in your Home Page has a name like "exp1,2,3..." automatically assigned. If you want to manually configure an experiment from scratch you have to name your files with this convention in mind (i.e. exp1.conf, exp1.mrna, exp1.meta etc...).
 
 .. _usage_specs_conf:
 
 Configuration File
-++++++++++++++++++
+^^^^^^^^^^^^^^^^^^
 
+The configuration file for the Experiment Package is structured as a series of tag and value pairs, separated by a "=" character, with each line of the file holding one pair.
+
+.. csv-table:: Configuration File Tags
+   :file: ./tables/table_exp_package_2.csv
+   :widths: 15, 50, 30
+   :header-rows: 1
+
+An example of a fully configured .conf file is displayed below:
+
+.. code-block:: 
+	:caption: Structure of a .conf file of an Experiment Package with Transcriptomic, Proteomic, miRNomic, Methylomic and Metabolomic datasets associated
+
+	expname=LTED vs MCF7+
+	comments=ANOVA adj.p + Tukey
+	idcol=8
+	datacol=6
+	datatype=logFC
+	datadir=out
+	datathr=1
+	pcol=5
+	pthr=0.05
+	midcol=1
+	mdatacol=6
+	mdatatype=logFC
+	mdatadir=out
+	mdatathr=1
+	mpcol=5
+	mpthr=0.05
+	metidcol=8
+	metdatacol=6
+	metdatatype=logFC
+	metdatadir=out
+	metdatathr=1
+	metpcol=5
+	metpthr=0.05
+	methidcol=8
+	methdatacol=6
+	methdatatype=logFC
+	methdatadir=out
+	methdatathr=1
+	methpcol=5
+	methpthr=0.05
+	protidcol=1
+	protdatacol=4
+	protdatatype=logFC
+	protdatadir=out
+	protdatathr=1
+	protpcol=3
+	protpthr=0.05
+
+The experiment Package is named "LTED vs MCF7+" and we can see it has all the -omics datasets currently supported by PathLay associated to it, and we can read their configurations as it follows:
+
+*	The Transcriptomic datataset has its IDs stored in the 8th column, logFC values stored in the 6th column and p-values stored in the 5th column. IDs with a p-value minor than 0.05 and logFC minor or major than 1 will be kept during PathLay's analysis.
+
+*	The miRNomic datataset has its IDs stored in the 1st column, logFC values stored in the 6th column and p-values stored in the 5th column. IDs with a p-value minor than 0.05 and logFC minor or major than 1 will be kept during PathLay's analysis.
+
+*	The Metabolomic datataset has its IDs stored in the 8th column, logFC values stored in the 6th column and p-values stored in the 5th column. IDs with a p-value minor than 0.05 and logFC minor or major than 1 will be kept during PathLay's analysis.
+
+*	The Methylomic datataset has its IDs stored in the 8th column, logFC values stored in the 6th column and p-values stored in the 5th column. IDs with a p-value minor than 0.05 and logFC minor or major than 1 will be kept during PathLay's analysis.
+
+*	The Proteomic datataset has its IDs stored in the 1st column, logFC values stored in the 4th column and p-values stored in the 3rd column. IDs with a p-value minor than 0.05 and logFC minor or major than 1 will be kept during PathLay's analysis.
+
+.. note::
+	Experiment Packages can be created and configured in your Home Page with a more intuitive approach. Once the "Save" button is clicked the .conf file will be automatically generated and saved in your home folder.
 
 
 .. _usage_specs_data:
 
 Datasets Files
-++++++++++++++
+^^^^^^^^^^^^^^
+
+Each dataset file (i.e. .mrna, .prot, .mirna, .meta and .meth files) is a tab separated file that can have any number of columns but at least one, two or three, depending on the Analysis Mode you will choose for PathLay (see more in Configuration Page section). An "ID Only" analysis just requires an ID list in your dataset file, an "ID + DE" analysis requires an ID list with Expression Values associated and a "Full" analysis requires all the above plus a list of p-values associated to each ID.
+
+.. note::
+	Datasets can be copied and pasted in their related text areas in your Home Page. Once the "Save" button is clicked the dataset file will be created in your home folder and named after the experiment.
+
+
+.. _usage_specs_ids:
+
+Supported IDs
+^^^^^^^^^^^^^
+
+.. csv-table:: Compatible IDs to use in your Datasets
+   :file: ./tables/table_exp_package_3.csv
+   :widths: 50, 50
+   :header-rows: 1
+
 
 .. _usage_home:
 
