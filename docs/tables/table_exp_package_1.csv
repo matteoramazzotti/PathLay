@@ -1,0 +1,8 @@
+File Extension,Content
+.conf,Holds the main configuration of the Experiment Package
+.mrna,Holds the Transcriptomic dataset
+.prot,Holds the Proteomic dataset
+.mirna,Holds the miRNomic dataset
+.meth,Holds the Methylomic dataset
+.ont,Holds the Gene Ontologies entries of interest of the Experiment Package
+.meta,Holds the Metabolomic dataset
