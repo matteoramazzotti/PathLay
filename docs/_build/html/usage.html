@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome to PathLay’s documentation! &mdash; PathLay 0.1 documentation</title>
+  <title>Usage &mdash; PathLay 0.1 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -27,7 +27,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="#" class="icon icon-home"> PathLay
+            <a href="index.html" class="icon icon-home"> PathLay
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -39,25 +39,7 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <!-- Local TOC -->
               <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">Welcome to PathLay’s documentation!</a></li>
-<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
-<li><a class="reference internal" href="#features">Features</a></li>
-<li><a class="reference internal" href="#requirements">Requirements</a><ul>
-<li><a class="reference internal" href="#for-building-the-docker-image-recommended">For Building the Docker Image (Recommended)</a></li>
-<li><a class="reference internal" href="#for-the-apache-server-installation">For the Apache Server Installation</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#installation">Installation</a><ul>
-<li><a class="reference internal" href="#building-the-docker-image-recommended">Building the Docker Image (Recommended)</a></li>
-<li><a class="reference internal" href="#apache-server-installation">Apache Server Installation</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#how-to-run">How to run</a><ul>
-<li><a class="reference internal" href="#run-pathlay-as-localhost">Run PathLay as Localhost</a></li>
-<li><a class="reference internal" href="#run-pathlay-as-server">Run PathLay as Server</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#usage">Usage</a><ul>
+<li><a class="reference internal" href="#">Usage</a><ul>
 <li><a class="reference internal" href="#account-managing">Account Managing</a><ul>
 <li><a class="reference internal" href="#register-a-new-account">Register a New Account</a></li>
 <li><a class="reference internal" href="#login-to-an-existing-account">Login to an Existing Account</a></li>
@@ -104,9 +86,6 @@
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#contribute">Contribute</a></li>
-<li><a class="reference internal" href="#support">Support</a></li>
-<li><a class="reference internal" href="#license">License</a></li>
 </ul>
 </div>
         </div>
@@ -115,17 +94,17 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="#">PathLay</a>
+          <a href="index.html">PathLay</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="#" class="icon icon-home"></a></li>
-      <li class="breadcrumb-item active">Welcome to PathLay’s documentation!</li>
+      <li><a href="index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">Usage</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/usage.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -133,187 +112,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="welcome-to-pathlay-s-documentation">
-<h1>Welcome to PathLay’s documentation!<a class="headerlink" href="#welcome-to-pathlay-s-documentation" title="Permalink to this heading"></a></h1>
-</section>
-<section id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this heading"></a></h1>
-<ul class="simple">
-<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
-<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
-<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
-<li><p><a class="reference internal" href="#features"><span class="std std-ref">Features</span></a></p></li>
-<li><dl class="simple">
-<dt><a class="reference internal" href="#requirements"><span class="std std-ref">Requirements</span></a></dt><dd><ul>
-<li><p><a class="reference internal" href="#requirements-docker"><span class="std std-ref">For Building the Docker Image</span></a></p></li>
-<li><p><a class="reference internal" href="#requirements-apache"><span class="std std-ref">For the Apache Server Installation</span></a></p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><a class="reference internal" href="#installation"><span class="std std-ref">Installation</span></a></dt><dd><ul>
-<li><p><a class="reference internal" href="#installation-docker"><span class="std std-ref">Building the Docker Image</span></a></p></li>
-<li><p><a class="reference internal" href="#installation-apache"><span class="std std-ref">Apache Server Installation</span></a></p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><a class="reference internal" href="#howto"><span class="std std-ref">How to Run</span></a></dt><dd><ul>
-<li><p><a class="reference internal" href="#howto-docker-local"><span class="std std-ref">Run PathLay as Localhost</span></a></p></li>
-<li><p><a class="reference internal" href="#howto-docker-server"><span class="std std-ref">Run PathLay as Server</span></a></p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><a class="reference internal" href="#usage"><span class="std std-ref">Usage</span></a></dt><dd><ul>
-<li><dl class="simple">
-<dt><a class="reference internal" href="usage.html#usage-account"><span class="std std-ref">Account Managing</span></a></dt><dd><ul>
-<li><p><a class="reference internal" href="usage.html#usage-account-new"><span class="std std-ref">Register a New Account</span></a></p></li>
-<li><p><a class="reference internal" href="usage.html#usage-account-login"><span class="std std-ref">Login to an Existing Account</span></a></p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><a class="reference internal" href="usage.html#usage-specs"><span class="std std-ref">Experiment Package</span></a></dt><dd><ul>
-<li><p><a class="reference internal" href="usage.html#usage-specs-conf"><span class="std std-ref">Configuration File</span></a></p></li>
-<li><p><a class="reference internal" href="usage.html#usage-specs-data"><span class="std std-ref">Datasets Files</span></a></p></li>
-<li><p><a class="reference internal" href="usage.html#usage-specs-ids"><span class="std std-ref">Supported IDs</span></a></p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><a class="reference internal" href="usage.html#usage-home"><span class="std std-ref">Home Manager</span></a></dt><dd><ul>
-<li><p><a class="reference internal" href="usage.html#usage-home-create"><span class="std std-ref">Creating an Experiment Package</span></a></p></li>
-<li><p><a class="reference internal" href="usage.html#usage-home-load"><span class="std std-ref">Loading an Experiment Package</span></a></p></li>
-<li><p><a class="reference internal" href="usage.html#usage-home-ont"><span class="std std-ref">Gene Ontologies</span></a></p></li>
-<li><p><a class="reference internal" href="usage.html#usage-home-download"><span class="std std-ref">Downloading an Experiment Package</span></a></p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><a class="reference internal" href="usage.html#usage-access"><span class="std std-ref">Configuration Page</span></a></dt><dd><ul>
-<li><p><a class="reference internal" href="usage.html#usage-access-mode"><span class="std std-ref">Selecting an Analysis Mode</span></a></p></li>
-<li><p><a class="reference internal" href="usage.html#usage-access-nodeg"><span class="std std-ref">Non Differentially Expressed IDs</span></a></p></li>
-<li><p><a class="reference internal" href="usage.html#usage-access-tfs"><span class="std std-ref">Transcription Factors</span></a></p></li>
-<li><p><a class="reference internal" href="usage.html#usage-access-stat"><span class="std std-ref">Maps Restriction Procedure</span></a></p></li>
-<li><p><a class="reference internal" href="usage.html#usage-access-mapdb"><span class="std std-ref">Maps Databases</span></a></p></li>
-<li><p><a class="reference internal" href="usage.html#usage-access-data"><span class="std std-ref">Data Selection</span></a></p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><a class="reference internal" href="usage.html#usage-results"><span class="std std-ref">Pathway Explorer</span></a></dt><dd><ul>
-<li><p><a class="reference internal" href="usage.html#usage-results-mapsel"><span class="std std-ref">Pathway Navigation</span></a></p></li>
-<li><p><a class="reference internal" href="usage.html#usage-results-legend"><span class="std std-ref">Indicators</span></a></p></li>
-<li><p><a class="reference internal" href="usage.html#usage-results-highlight"><span class="std std-ref">Highlighting Feature</span></a></p></li>
-<li><p><a class="reference internal" href="usage.html#usage-results-clipboard"><span class="std std-ref">The Clipboard</span></a></p></li>
-<li><dl class="simple">
-<dt><a class="reference internal" href="usage.html#usage-results-logical"><span class="std std-ref">The Logical Section</span></a></dt><dd><ul>
-<li><p><a class="reference internal" href="usage.html#usage-results-logical-byids"><span class="std std-ref">Select by IDs</span></a></p></li>
-<li><p><a class="reference internal" href="usage.html#usage-results-logical-byagreement"><span class="std std-ref">Select by Agreement</span></a></p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><a class="reference internal" href="usage.html#usage-results-settings"><span class="std std-ref">Settings</span></a></dt><dd><ul>
-<li><p><a class="reference internal" href="usage.html#usage-results-settings-transparencyandsize"><span class="std std-ref">Transparency and Size</span></a></p></li>
-<li><p><a class="reference internal" href="usage.html#usage-results-settings-screenshot"><span class="std std-ref">Screenshot</span></a></p></li>
-</ul>
-</dd>
-</dl>
-</li>
-</ul>
-</dd>
-</dl>
-</li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><p><a class="reference internal" href="#contribute"><span class="std std-ref">Contribute</span></a></p></li>
-<li><p><a class="reference internal" href="#support"><span class="std std-ref">Support</span></a></p></li>
-<li><p><a class="reference internal" href="#license"><span class="std std-ref">License</span></a></p></li>
-</ul>
-</section>
-<section id="features">
-<span id="id1"></span><h1>Features<a class="headerlink" href="#features" title="Permalink to this heading"></a></h1>
-</section>
-<section id="requirements">
-<span id="id2"></span><h1>Requirements<a class="headerlink" href="#requirements" title="Permalink to this heading"></a></h1>
-<section id="for-building-the-docker-image-recommended">
-<span id="requirements-docker"></span><h2>For Building the Docker Image (Recommended)<a class="headerlink" href="#for-building-the-docker-image-recommended" title="Permalink to this heading"></a></h2>
-<ul class="simple">
-<li><p>Docker: <a class="reference external" href="https://docs.docker.com/get-docker/">https://docs.docker.com/get-docker/</a></p></li>
-</ul>
-</section>
-<section id="for-the-apache-server-installation">
-<span id="requirements-apache"></span><h2>For the Apache Server Installation<a class="headerlink" href="#for-the-apache-server-installation" title="Permalink to this heading"></a></h2>
-<ul class="simple">
-<li><p>Apache: <a class="reference external" href="https://httpd.apache.org/download.cgi">https://httpd.apache.org/download.cgi</a></p></li>
-</ul>
-</section>
-</section>
-<section id="installation">
-<span id="id3"></span><h1>Installation<a class="headerlink" href="#installation" title="Permalink to this heading"></a></h1>
-<section id="building-the-docker-image-recommended">
-<span id="installation-docker"></span><h2>Building the Docker Image (Recommended)<a class="headerlink" href="#building-the-docker-image-recommended" title="Permalink to this heading"></a></h2>
-<div class="literal-block-wrapper docutils container" id="id8">
-<div class="code-block-caption"><span class="caption-text">Navigate to the directory with the downloaded DockerFile</span><a class="headerlink" href="#id8" title="Permalink to this code"></a></div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">directory</span>
-</pre></div>
-</div>
-</div>
-<div class="literal-block-wrapper docutils container" id="id9">
-<div class="code-block-caption"><span class="caption-text">Build image from DockerFile</span><a class="headerlink" href="#id9" title="Permalink to this code"></a></div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">build</span> <span class="o">-</span><span class="n">t</span> <span class="n">pathlay</span> <span class="o">.</span>
-</pre></div>
-</div>
-</div>
-</section>
-<section id="apache-server-installation">
-<span id="installation-apache"></span><h2>Apache Server Installation<a class="headerlink" href="#apache-server-installation" title="Permalink to this heading"></a></h2>
-</section>
-</section>
-<section id="how-to-run">
-<span id="howto"></span><h1>How to run<a class="headerlink" href="#how-to-run" title="Permalink to this heading"></a></h1>
-<section id="run-pathlay-as-localhost">
-<span id="howto-docker-local"></span><h2>Run PathLay as Localhost<a class="headerlink" href="#run-pathlay-as-localhost" title="Permalink to this heading"></a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">run</span> <span class="o">--</span><span class="n">name</span> <span class="n">pathlay_local</span> <span class="o">-</span><span class="n">d</span> <span class="o">-</span><span class="n">p</span> <span class="mi">80</span><span class="p">:</span><span class="mi">80</span> <span class="n">pathlay</span>
-</pre></div>
-</div>
-<p>You can check that the container is running with the following:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">ps</span> <span class="o">-</span><span class="n">a</span>
-</pre></div>
-</div>
-<p>To access PathLay simply connect to <a class="reference external" href="http://localhost/pathlay_2/pathlay_home.html">http://localhost/pathlay_2/pathlay_home.html</a></p>
-</section>
-<section id="run-pathlay-as-server">
-<span id="howto-docker-server"></span><h2>Run PathLay as Server<a class="headerlink" href="#run-pathlay-as-server" title="Permalink to this heading"></a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">run</span> <span class="o">--</span><span class="n">name</span> <span class="n">pathlay_server</span> <span class="o">-</span><span class="n">d</span> <span class="o">-</span><span class="n">p</span> <span class="mi">80</span><span class="p">:</span><span class="mi">80</span> <span class="o">-</span><span class="n">p</span> <span class="mi">143</span><span class="p">:</span><span class="mi">143</span> <span class="o">--</span><span class="n">network</span> <span class="n">network</span> <span class="n">pathlay</span>
-</pre></div>
-</div>
-<p>You can check that the container is running on your host machine with the following:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">ps</span> <span class="o">-</span><span class="n">a</span>
-</pre></div>
-</div>
-<p>Check the IP address of your host machine:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">hostname</span> <span class="o">-</span><span class="n">I</span>
-</pre></div>
-</div>
-<p>To access PathLay from your host machine simply connect to <a class="reference external" href="http://localhost/pathlay_2/pathlay_home.html">http://localhost/pathlay_2/pathlay_home.html</a></p>
-<p>To access PathLay from a client machine in the same network simply connect to <a class="reference external" href="http://host_ip_address/pathlay_2/pathlay_home.html">http://host_ip_address/pathlay_2/pathlay_home.html</a></p>
-</section>
-</section>
-<section id="usage">
-<span id="id4"></span><h1>Usage<a class="headerlink" href="#usage" title="Permalink to this heading"></a></h1>
+  <section id="usage">
+<h1>Usage<a class="headerlink" href="#usage" title="Permalink to this heading"></a></h1>
 <section id="account-managing">
 <span id="usage-account"></span><h2>Account Managing<a class="headerlink" href="#account-managing" title="Permalink to this heading"></a></h2>
 <section id="register-a-new-account">
@@ -327,8 +127,8 @@
 <span id="usage-specs"></span><h2>Experiment Package<a class="headerlink" href="#experiment-package" title="Permalink to this heading"></a></h2>
 <p>In the following section, the structure of a zipped Experiment Package will be explained. Please note that each and avery file listed below can be created and modified from your Home Page direclty, with no need to manually adjust them from outside PathLay.
 Each Experiment Package is defined from up to 7 different text files with different extensions:</p>
-<table class="colwidths-given docutils align-default" id="id10">
-<caption><span class="caption-text">Experiment Package Content</span><a class="headerlink" href="#id10" title="Permalink to this table"></a></caption>
+<table class="colwidths-given docutils align-default" id="id1">
+<caption><span class="caption-text">Experiment Package Content</span><a class="headerlink" href="#id1" title="Permalink to this table"></a></caption>
 <colgroup>
 <col style="width: 30%" />
 <col style="width: 70%" />
@@ -366,8 +166,8 @@ Each Experiment Package is defined from up to 7 different text files with differ
 <section id="configuration-file">
 <span id="usage-specs-conf"></span><h3>Configuration File<a class="headerlink" href="#configuration-file" title="Permalink to this heading"></a></h3>
 <p>The configuration file for the Experiment Package is structured as a series of tag and value pairs, separated by a “=” character, with each line of the file holding one pair.</p>
-<table class="colwidths-given docutils align-default" id="id11">
-<caption><span class="caption-text">Configuration File Tags</span><a class="headerlink" href="#id11" title="Permalink to this table"></a></caption>
+<table class="colwidths-given docutils align-default" id="id2">
+<caption><span class="caption-text">Configuration File Tags</span><a class="headerlink" href="#id2" title="Permalink to this table"></a></caption>
 <colgroup>
 <col style="width: 16%" />
 <col style="width: 53%" />
@@ -531,8 +331,8 @@ Each Experiment Package is defined from up to 7 different text files with differ
 </tbody>
 </table>
 <p>An example of a fully configured .conf file is displayed below:</p>
-<div class="literal-block-wrapper docutils container" id="id12">
-<div class="code-block-caption"><span class="caption-text">Structure of a .conf file of an Experiment Package with Transcriptomic, Proteomic, miRNomic, Methylomic and Metabolomic datasets associated</span><a class="headerlink" href="#id12" title="Permalink to this code"></a></div>
+<div class="literal-block-wrapper docutils container" id="id3">
+<div class="code-block-caption"><span class="caption-text">Structure of a .conf file of an Experiment Package with Transcriptomic, Proteomic, miRNomic, Methylomic and Metabolomic datasets associated</span><a class="headerlink" href="#id3" title="Permalink to this code"></a></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">expname</span><span class="o">=</span><span class="n">LTED</span> <span class="n">vs</span> <span class="n">MCF7</span><span class="o">+</span>
 <span class="n">comments</span><span class="o">=</span><span class="n">ANOVA</span> <span class="n">adj</span><span class="o">.</span><span class="n">p</span> <span class="o">+</span> <span class="n">Tukey</span>
 <span class="n">idcol</span><span class="o">=</span><span class="mi">8</span>
@@ -596,8 +396,8 @@ Each Experiment Package is defined from up to 7 different text files with differ
 </section>
 <section id="supported-ids">
 <span id="usage-specs-ids"></span><h3>Supported IDs<a class="headerlink" href="#supported-ids" title="Permalink to this heading"></a></h3>
-<table class="colwidths-given docutils align-default" id="id13">
-<caption><span class="caption-text">Compatible IDs to use in your Datasets</span><a class="headerlink" href="#id13" title="Permalink to this table"></a></caption>
+<table class="colwidths-given docutils align-default" id="id4">
+<caption><span class="caption-text">Compatible IDs to use in your Datasets</span><a class="headerlink" href="#id4" title="Permalink to this table"></a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -792,8 +592,8 @@ The “Reset” button will empty the selection pool and restore the selectors a
 <section id="select-by-agreement">
 <span id="usage-results-logical-byagreement"></span><h4>Select by Agreement<a class="headerlink" href="#select-by-agreement" title="Permalink to this heading"></a></h4>
 <p>The second row in the Logical Section is composed by a series of selectors that allows the setup of the so called “Agreement” which is a feature that lets you select two related data types and select what type of correlation you are interested in. The main data type can be selected with the first selector which provides a choice between “Gene” and “Protein”, and the second data type can be selected with the other selector which allows a choice between “Gene” or “Protein” (depending on your main data type of choice), “miRNA”, “Methylation” or “TF”. After the two data types are selected, the last step to do is to choose a “Positive Agreement” or a “Negative Agreement” with the last selector and hit the “Add” button. The configured agreement will be displayed in the “Agreements Selected” pool positioned under the “IDs Selected” pool. Once the select button is clicked, indicators that don’t satisfy the requirements of the agreement will be hidden, thus if a pathway doesn’t have visible indicators it will not be included in the pathway selector. Multiple agreements can be added to the pool to make the selection more stringent. How various agreements work is reported in the following table:</p>
-<table class="colwidths-given docutils align-default" id="id14">
-<caption><span class="caption-text">Types of Agreement</span><a class="headerlink" href="#id14" title="Permalink to this table"></a></caption>
+<table class="colwidths-given docutils align-default" id="id5">
+<caption><span class="caption-text">Types of Agreement</span><a class="headerlink" href="#id5" title="Permalink to this table"></a></caption>
 <colgroup>
 <col style="width: 20%" />
 <col style="width: 40%" />
@@ -849,15 +649,6 @@ As before, to remove it the “X” button on the right or the “Reset” butto
 </section>
 </section>
 </section>
-</section>
-<section id="contribute">
-<span id="id5"></span><h1>Contribute<a class="headerlink" href="#contribute" title="Permalink to this heading"></a></h1>
-</section>
-<section id="support">
-<span id="id6"></span><h1>Support<a class="headerlink" href="#support" title="Permalink to this heading"></a></h1>
-</section>
-<section id="license">
-<span id="id7"></span><h1>License<a class="headerlink" href="#license" title="Permalink to this heading"></a></h1>
 </section>
 
 
