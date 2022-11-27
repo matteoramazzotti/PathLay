@@ -4,9 +4,9 @@ How to run
 
 .. _howto_docker_local:
 
-------------------------
-Run PathLay as Localhost
-------------------------
+---------------------------------------
+Run PathLay as local server (localhost)
+---------------------------------------
 
 .. code-block::
 
@@ -24,9 +24,9 @@ To access PathLay simply connect to http://localhost/pathlay_2/pathlay_home.html
 
 .. _howto_docker_server:
 
----------------------
-Run PathLay as Server
----------------------
+-----------------------------
+Run PathLay as network server
+-----------------------------
 
 .. code-block::
 
