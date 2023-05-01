@@ -334,7 +334,7 @@ As previously explained, ID only components will not be allowed to call out for 
 Pathway Explorer
 ----------------
 
-The "Analysis Results" page will be displayed after the configuration and the submitting of an analysis on an Experiment Package in your home. IDs coming from your datasets will be portrayed as different indicators on pathways depending on the Analysis Mode chosen (see more "Selecting an Analysis Mode"). This page allows you to:
+The "PathLay - MAPS" page will be displayed after the configuration and the submitting of an analysis on an Experiment Package in your home. IDs coming from your datasets will be portrayed as different indicators on pathways depending on the Analysis Mode chosen (see more "Selecting an Analysis Mode"). This page allows you to:
 
 	* Display your datasets on pathways
 	* Filter pathways by selecting a specific gene/protein/miRNA/TF ID or by multiple IDs
@@ -344,7 +344,7 @@ The "Analysis Results" page will be displayed after the configuration and the su
 	* Filter pathways by selecting an "Agreement" between Gene/Proteins and Methylation, miRNAs or TFs
 
 .. warning::
-	The "Analysis Results" page is directly accessible after you hit the "Submit" button allowing you to navigate through pathways right away but depending on how much data PathLay needs to process, some indicators may not be displayed correctly from the go and require more time.
+	The "PathLay - MAPS" page is directly accessible after you hit the "Submit" button allowing you to navigate through pathways right away but depending on how much data PathLay needs to process, some indicators may not be displayed correctly from the go and require more time.
 
 .. _usage_results_mapsel:
 
@@ -363,13 +363,46 @@ Pathways available are listed in alphabetical order in the dropdown menu on the 
 Indicators
 ^^^^^^^^^^
 
+.. _usage_features_menu:
+
+^^^^^^^^^
+Main Menu
+^^^^^^^^^
+
+The "PathLay - MAPS" page provides different features in six sections accessible from a menu located in the upper right corner of the page:
+
+	* Highlight: Provides the selectors to highlight indicators containing specific components
+	* Screenshot: Creates a downloadable image of a map with its indicators
+	* Clipboard: Open or close Clipboard
+	* Settings: Allows tuning of indicators transparency and size
+	* Selectors: Provides the main query system for pathway and indicator filtering
+	* ?: Displays helpful information regarding the interpratation of the indicators
+
+These sections and the respective features will be explained in detail later.
+
+
+
+
+
 .. _usage_results_highlight:
 
 ^^^^^^^^^^^^^^^^^^^^
 Highlighting Feature
 ^^^^^^^^^^^^^^^^^^^^
 
-Two more dropdown menus are located next to the pathway selection dropdown menu and provides an indicator highligthing feature depending on your analysis configuration and the datasets loaded. The combination of these two selectors allows to choose a data type between Genes, Proteins, miRNAs, Metabolites, TFs and Ontologies and display the list of IDs of that data type. Selecting one ID will fill the pathway selector only with the pathway IDs that contains an indicator that represents the ID chosen. For instance, if you are interested in the pathways that displays an indicator for the COX1 gene (which was included in your transcriptomic dataset), simply select "Genes" and then select "COX1": the pathway selector will now list only those pathways. The behaviour is a little different when selecting a cellular compartment from the Ontologies section, since it will also hide those indicators that do not belong in the cellular compartment. To reset anyone of these selectors simply select the first option provided by them. 
+In this sections two selectors are displayed and their content varies depending on the features enabled during configuration.
+The first selector lists the categories of components available between: Genes, Proteins, TFs, miRNAs, Methylations, Chromatin Statuses and Metabolites.
+Selecting one data type will switch to the respective component selector filled with the available IDs.
+When an ID is chosen, all the indicators related to it will be highlighted with a pink dotted border, and the maps not containing any indicator of interest will be disabled from the map selector.
+
+
+.. note::
+	To reset the highlight simply select the first option from the ID selector.
+
+.. note::
+	The highlight feature will highlight only those indicators currently available from the displayable maps. 
+	This means that when a query from the "Selectors" section has been performed, the selectors in the Highlight section will be filled only with the components represented on the maps that remained available after it. 
+
 
 .. _usage_results_clipboard:
 
@@ -377,7 +410,7 @@ Two more dropdown menus are located next to the pathway selection dropdown menu 
 The Clipboard
 ^^^^^^^^^^^^^
 
-The Clipboard is a freely movable window that will be displayed as soon as the "Analysis Results" page is loaded. It is composed by two boxes, the "Info" box and the "Selected" box. The "Info" box will display the information related to a clicked indicator, this includes every ID that the indicator is portaying, with their differential expression values and other IDs eventually linked. Cliking on the IDs in the "Info" box will open up a page in the online database of reference for that data type:
+The Clipboard is a freely movable window that will be displayed as soon as the "PathLay - MAPS" page is loaded. It is composed by two boxes, the "Info" box and the "Selected" box. The "Info" box will display the information related to a clicked indicator, this includes every ID that the indicator is portaying, with their differential expression values and other IDs eventually linked. Cliking on the IDs in the "Info" box will open up a page in the online database of reference for that data type:
 
 	* NCBI for genes 
 	* UniProtKB for proteins 
@@ -392,10 +425,18 @@ Once you have clicked an indicator on a pathway and its information is displayed
 .. _usage_results_logical:
 
 ^^^^^^^^^^^^^^^^^^^
-The Logical Section
+The Selectors Section
 ^^^^^^^^^^^^^^^^^^^
 
-This section in the "Analysis Results" page will be displayed when clicking the "Show Logicals" in the top right corner and allows to perform more sophisticate selections either by IDs or by "Agreement".
+This section contains the main query system of the "PathLay - MAPS" page allowing to perform a more sophisticate three level selection by:
+	* IDs
+	* Agreement between two components
+	* Ontology (Cellular Compartments)
+
+These selections can be performed by adding a query tag using one of the three selectors and clicking the respective "Add" button. 
+Once all the query tags you are interested in are added to the pool on the right, the query can be performed by clicking the "Select" button.
+To reset the interface to its default state simply click the "Reset" button next to it.
+Details on each type of query tag are provided below.
 
 .. _usage_results_logical_byids:
 
@@ -403,15 +444,19 @@ This section in the "Analysis Results" page will be displayed when clicking the 
 Select by IDs
 """""""""""""
 
-The first row in the Logical Section is composed by a selector that allows the selection of a data type between "Gene", "Protein", "miRNA" and "Metabolite", depending on your analysis configuration. Selecting one data type will pop up another selector with a list of IDs of the data type chosen. Once an ID is selected, it can be added to the selection pool "IDs Selected" positioned on the right of the Logical Section. Every ID added to the pool is represented as a colored box and can be removed from the pool by clicking the "X" button on the right. Colors are assigned considering the data type:
+The first row in the Logical Section is composed by a selector that allows the selection of a data type between "Gene", "Protein", TFs, "miRNA", "Methylation", "Chromatin" and "Metabolite", depending on your analysis configuration.
+Selecting one data type will pop up another selector with a list of IDs of the data type chosen, in a similar fashion of the HighLight section.
+Once an ID is selected, it can be added to the query pool "IDs Selected".
+Every ID added to the pool will be represented as a query tag and can be removed from the pool by clicking the "X" button on the right.
+IDs' query tag have colors are assigned considering the data type:
 
 	* Light blue for genes
 	* Purple for proteins
 	* Red for miRNAs
 	* Yellow for Metabolites
+	* Grey for TFs, Methylations and Chromatin Statuses
 	
-The "Select" button will perform a pathway selection using the pool content as criteria: only those pathways portraying all the IDs in the pool will be displayed in the pathway selector.
-The "Reset" button will empty the selection pool and restore the selectors at their default state.
+The "Select" button will perform a pathway selection using the pool content as criteria: considering a strictly ID based query, only those pathways portraying all the IDs in the pool will be displayed in the pathway selector and kept available.
 
 .. warning::
 	It is possible that loaded pathways cannot satisfy the requirements for the selection made. In this case the pathway selector will become empty. Resetting the selection with the "Reset" button will restore the pathway selector at its default state.
@@ -438,7 +483,7 @@ As before, to remove it the "X" button on the right or the "Reset" button must b
 Settings
 ^^^^^^^^
 
-The settings section in the "Analysis Results" page will be displayed when clicking the "Show Settings" button and allows to change some graphical parameters for the indicators like size and transparency values.
+The settings section in the "PathLay - MAPS" page will be displayed when clicking the "Show Settings" button and allows to change some graphical parameters for the indicators like size and transparency values.
 
 .. _usage_results_settings_transparencyandsize:
 
