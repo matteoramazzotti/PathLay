@@ -259,9 +259,9 @@ Filtering Options
 ^^^^^^^^^^^^^^^^^
 
 There are three filters available for each data type, which can be enabled by checking the respective box and requires a threshold value to be written in the input field next to it. These three filters are summarized below:
-	* Effect Size < : filters out all the components with an Effect Size value greater than the threshold selected
-	* Effect Size > : filters out all the components with an Effect Size value smaller than the threshold selected
-	* p-value < : filters out all the components with a p-value value greater than the threshold
+	* Effect Size "<" : filters out all the components with an Effect Size value greater than the threshold selected
+	* Effect Size ">" : filters out all the components with an Effect Size value smaller than the threshold selected
+	* p-value "<" : filters out all the components with a p-value value greater than the threshold
 
 .. warning::
 	Whenever a threshold field displays a red background, it means that the aforementioned threshold is not valid and contains a typing error. In this situation if the related filter checkbox remains enabled, the submit button will disappear until this error is either fixed by changing the threshold value or by disabling the filter.
@@ -272,7 +272,9 @@ There are three filters available for each data type, which can be enabled by ch
 ID Preservation
 ^^^^^^^^^^^^^^^
 
-ID Preservation can be enabled for every data type by checking the "Preserve non DE IDs" checkbox. This feature will not let PathLay to discard IDs found in the dataset without an Effect Size value. These "ID Only" components will be represented with a different palette of colors since they do not provide any information regarding their differential expression, but they will be still integrated with the other datasets.
+ID Preservation can be enabled for every data type by checking the "Preserve non DE IDs" checkbox.
+This feature will not let PathLay to discard IDs found in the dataset without an Effect Size value.
+These "ID Only" components will be represented with a different palette of colors since they do not provide any information regarding their differential expression, but they will be still integrated with the other datasets.
 
 
 
@@ -282,16 +284,48 @@ ID Preservation can be enabled for every data type by checking the "Preserve non
 Non Differentially Expressed IDs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Whenever a miRNomic or a Methylomic dataset is in use, miRNas and methylations will be represented alongside the related genes. PathLays's approach is to integrate the information held within different datasets whenever is possible, hence when a Transcriptomic dataset is provided together with a miRNomic or/and a Methylomic one, the standard procedure adopted is to represent only miRNas and methylations related to the genes provided in the Transcriptomic dataset. It is possible to represent miRNas or methylations despite them being related to genes in a Transcriptomic dataset, by checking "miRNAs" or/and "Methylations" in the "Load NODEGs from:" section. This feature allows PathLay to display miRnas and methylations as grey indicators that represent a non-differentially expressed gene (i.e. a gene not provided in other datasets).
+Whenever a miRNa, Methylation or Chromatin status dataset is enabled, miRNas, methylations and chromatin statuses will be represented alongside the related genes.
+PathLays's approach is to integrate the information held within different datasets whenever is possible, hence when a Transcriptomic or Proteomic dataset is provided and enabled alongside the afromentioned ones, the standard procedure adopted is to represent an integration of these informations using genes and proteins provided as a scaffold on which miRNAs, methylations and chromatin statuses impact.
+Anyway It is possible to represent miRNas, methylations or chromatin statuses despite the absence of their related genes in the Transcriptomic dataset, by checking the "No DE Loading" feature in their respective configurations.
+This feature allows PathLay to display miRnas, methylations and chromatin statuses on grey indicators that represent a non-differentially expressed gene (i.e. a gene not provided in other datasets).
+This feature specifically works with the IDs of miRNAs, methylations and chromatin statuses linked to an Effect Size value, while the IDs without an Effect Size value will be only linked and represented alongside those genes or proteins that are effectively provided by their respectiv datasets, unless the "No DE Loading From Preserved IDs" feature is enabled.
+By doing this, ID only components coming from these thre datasets will also be able to call out Non DE genes and proteins.
+Graphically speaking this is translated into grey indicators surrounded by smaller circles and squares coloured in orange.
 
 
 .. _usage_access_tfs:
 
-^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
 Transcription Factors
-^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
 
-PathLay also supports GTRD as a database and can display transcription factors (TFs) that interacts with genes coming from a Transcriptomic dataset and as well recognize if those gene IDs actually refers directly to a transcription factor. Transcription factors contained in GTRD database will be loaded and linked to the gene IDs in the Transcriptomic dataset, if a transcription factor is found in the Transcriptomic dataset it will also be linked to any related gene in the dataset. An option for TFs is present in the "Load NODEGs from:" section alongside miRNAs and methylations, when enabled it allows any transcription factor found in the transcriptomic dataset to be linked to any ID not included in the dataset with the same approach as miRNAs and methylations.
+PathLay also supports GTRD as a database and can display transcription factors (TFs) that interacts with genes coming from a Transcriptomic or Proteomic dataset and as well recognize if those gene/protein IDs actually refers directly to a transcription factor.
+Transcription factors will be loaded and linked to the gene IDs in the Transcriptomic dataset if the "Enable TFs" feature is enabled. The same goes for the proteomic dataset which has its own "Enable TFs" feature.
+If a transcription factor is found in the Transcriptomic dataset it will be linked to any related gene also present in the dataset.
+Whenever Transcriptomic and Proteomic datasets are enabled together and the "Enable TFs" feature is enabled for at least one of them, once a TF is recognized, its targets will be looked for both in the Transcriptomic and Proteomic dataset to guarantee an high level degree of integration. 
+
+
+.. _usage_access_id_only_tfs:
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Transcription Factors ID Preservation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Normally, if a Transcription Factor is recognized in an ID Only component found in the Transcriptomic or Proteomic dataset (when of course the "Preserve non DE IDs" feature is enabled for them), it is just loaded as a DE component and not represented as a TF.
+To overcome this, one should enable the "Preserve IDs for TFs" feature in the Gene or Protein configuration depending on the scope of the analysis.
+Transcription Factors recognized in this manner will be represented as small oragne squares on the right side of the main indicators.
+
+.. _usage_access_no_de_tfs:
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Loading Non Differentially Expressed IDs from TFs
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The "Load Non DE from TFs" feature provides the possibility to let any differentially expressed TF found to be linked to genes and proteins not provided in the datasets, in a similar fashion of the "No DE Loading" feature seen in the miRNAs, Methylations and Chromatin Statuses configurations.
+As previously explained, ID only components will not be allowed to call out for Non Differentially Expressed Genes or Proteins unless this feature is manually enabled and TFs make no exception in this regard: enabling the "Load Non DE from Preserved TFs" feature will do the job.
+
+
+
 
 
 .. _usage_results:

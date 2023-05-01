@@ -38,6 +38,8 @@ Indices and tables
 		* :ref:`ID Preservation <usage_data_id_only>`
 		* :ref:`Non Differentially Expressed IDs <usage_access_nodeg>`
 		* :ref:`Transcription Factors <usage_access_tfs>`
+		* :ref:`Transcription Factors ID Preservation <usage_access_id_only_tfs>`
+		* :ref:`Loading Non Differentially Expressed IDs from TFs <usage_access_no_de_tfs>`
 	* :ref:`Pathway Explorer <usage_results>`
 		* :ref:`Pathway Navigation <usage_results_mapsel>`
 		* :ref:`Indicators <usage_results_legend>`
