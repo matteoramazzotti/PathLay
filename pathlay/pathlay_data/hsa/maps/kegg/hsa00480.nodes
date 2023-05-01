@@ -1,0 +1,97 @@
+TEXT	TYPE	DB	ID	X	Y
+Glutathione metabolism	hsa	KEGG	hsa00480
+GSTO2	GeneProduct	Entrez Gene	119391	388,526
+GGT6	GeneProduct	Entrez Gene	124975	489,526	332,430	195,405
+GSTA5	GeneProduct	Entrez Gene	221357	388,526
+G6PD	GeneProduct	Entrez Gene	2539	217,511
+GPX6	GeneProduct	Entrez Gene	257202	194,567
+GGT1	GeneProduct	Entrez Gene	2678	489,526	332,430	195,405
+GGT7	GeneProduct	Entrez Gene	2686	489,526	332,430	195,405
+GGT5	GeneProduct	Entrez Gene	2687	489,526	332,430	195,405
+OPLAH	GeneProduct	Entrez Gene	26873	374,144
+GCLC	GeneProduct	Entrez Gene	2729	542,275
+GCLM	GeneProduct	Entrez Gene	2730	542,275
+HPGDS	GeneProduct	Entrez Gene	27306	388,526
+GPX1	GeneProduct	Entrez Gene	2876	194,567
+GPX2	GeneProduct	Entrez Gene	2877	194,567
+GPX3	GeneProduct	Entrez Gene	2878	194,567
+GPX4	GeneProduct	Entrez Gene	2879	217,546
+GPX5	GeneProduct	Entrez Gene	2880	194,567
+GPX7	GeneProduct	Entrez Gene	2882	194,567
+ANPEP	GeneProduct	Entrez Gene	290	592,515	357,323
+GSR	GeneProduct	Entrez Gene	2936	169,458
+GSS	GeneProduct	Entrez Gene	2937	458,457
+GSTA1	GeneProduct	Entrez Gene	2938	388,526
+GSTA2	GeneProduct	Entrez Gene	2939	388,526
+GSTA3	GeneProduct	Entrez Gene	2940	388,526
+GSTA4	GeneProduct	Entrez Gene	2941	388,526
+GSTM1	GeneProduct	Entrez Gene	2944	388,526
+GSTM2	GeneProduct	Entrez Gene	2946	388,526
+GSTM3	GeneProduct	Entrez Gene	2947	388,526
+GSTM4	GeneProduct	Entrez Gene	2948	388,526
+GSTM5	GeneProduct	Entrez Gene	2949	388,526
+GSTP1	GeneProduct	Entrez Gene	2950	388,526
+GSTT1	GeneProduct	Entrez Gene	2952	388,526
+GSTT2	GeneProduct	Entrez Gene	2953	388,526
+IDH1	GeneProduct	Entrez Gene	3417	169,490
+IDH2	GeneProduct	Entrez Gene	3418	169,490
+GSTK1	GeneProduct	Entrez Gene	373156	388,526
+MGST1	GeneProduct	Entrez Gene	4257	388,526
+MGST2	GeneProduct	Entrez Gene	4258	388,526
+MGST3	GeneProduct	Entrez Gene	4259	388,526
+GPX8	GeneProduct	Entrez Gene	493869	194,567
+CHAC2	GeneProduct	Entrez Gene	494143	263,416
+ODC1	GeneProduct	Entrez Gene	4953	208,683
+RRM2B	GeneProduct	Entrez Gene	50484	736,729	736,790
+LAP3	GeneProduct	Entrez Gene	51056	357,342	640,515
+TXNDC12	GeneProduct	Entrez Gene	51060	169,546
+NAT8B	GeneProduct	Entrez Gene	51471	801,526
+PGD	GeneProduct	Entrez Gene	5226	169,511
+RRM1	GeneProduct	Entrez Gene	6240	736,729	736,790
+RRM2	GeneProduct	Entrez Gene	6241	736,729	736,790
+GSTT2B	GeneProduct	Entrez Gene	653689	388,526
+SMS	GeneProduct	Entrez Gene	6611	369,727
+SRM	GeneProduct	Entrez Gene	6723	290,643	237,921
+GGCT	GeneProduct	Entrez Gene	79017	449,103	195,257
+CHAC1	GeneProduct	Entrez Gene	79094	263,416
+NAT8	GeneProduct	Entrez Gene	9027	801,526
+GSTO1	GeneProduct	Entrez Gene	9446	388,526
+PRDX6	GeneProduct	Entrez Gene	9588	242,567
+NADPH	Metabolite	KEGG Compound	C00005	117,500	776,580
+NADP+	Metabolite	KEGG Compound	C00006	270,500	694,580
+Acetyl-CoA	Metabolite	KEGG Compound	C00024	768,498
+L-Glutamate	Metabolite	KEGG Compound	C00025	542,175	523,498
+Glycine	Metabolite	KEGG Compound	C00037	490,304	726,498
+Glutathione	Metabolite	KEGG Compound	C00051	332,456
+Ascorbate	Metabolite	KEGG Compound	C00072	801,649
+L-Ornithine	Metabolite	KEGG Compound	C00077	207,715
+L-Cysteine	Metabolite	KEGG Compound	C00097	415,248
+Glutathione disulfide	Metabolite	KEGG Compound	C00127	66,456
+Putrescine	Metabolite	KEGG Compound	C00134	207,642
+L-Amino acid	Metabolite	KEGG Compound	C00151	105,215
+Spermidine	Metabolite	KEGG Compound	C00315	384,645
+gamma-L-Glutamyl-L-cysteine	Metabolite	KEGG Compound	C00669	542,456
+Spermine	Metabolite	KEGG Compound	C00750	368,791
+RX	Metabolite	KEGG Compound	C01322	359,498
+Cys-Gly	Metabolite	KEGG Compound	C01419	332,377
+Cadaverine	Metabolite	KEGG Compound	C01672	188,920
+5-Oxoproline	Metabolite	KEGG Compound	C01879	195,143
+Trypanothione	Metabolite	KEGG Compound	C02090	621,684
+R-S-Glutathione	Metabolite	KEGG Compound	C02320	441,525
+Trypanothione disulfide	Metabolite	KEGG Compound	C03170	849,684
+Bis-gamma-glutamylcystine	Metabolite	KEGG Compound	C03646	746,460
+(5-L-Glutamyl)-L-amino acid	Metabolite	KEGG Compound	C03740	195,297
+Dehydroascorbate	Metabolite	KEGG Compound	C05422	669,649
+S-Substituted L-cysteine	Metabolite	KEGG Compound	C05726	749,525
+S-Substituted N-acetyl-L-cysteine	Metabolite	KEGG Compound	C05727	856,525
+R-S-Cysteinylglycine	Metabolite	KEGG Compound	C05729	548,525
+Glutathionylspermidine	Metabolite	KEGG Compound	C05730	498,684
+Glutathionylspermine	Metabolite	KEGG Compound	C16562	498,864
+Bis(glutathionyl)spermine	Metabolite	KEGG Compound	C16563	621,864
+Bis(glutathionyl)spermine disulfide	Metabolite	KEGG Compound	C16564	849,864
+Aminopropylcadaverine	Metabolite	KEGG Compound	C16565	294,920
+Glutathionylaminopropylcadaverine	Metabolite	KEGG Compound	C16566	498,920
+Homotrypanothione	Metabolite	KEGG Compound	C16567	621,920
+Homotrypanothione disulfide	Metabolite	KEGG Compound	C16568	849,920
+Tryparedoxin	Metabolite	KEGG Compound	C16663	801,718
+Tryparedoxin disulfide	Metabolite	KEGG Compound	C16664	669,718

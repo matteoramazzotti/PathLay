@@ -1,0 +1,14 @@
+TEXT	TYPE	DB	ID	X	Y
+Virion - Flavivirus	mmu	KEGG	mmu03264
+Heparan sulfate	Metabolite	KEGG Compound	C00925	147,342
+Chondroitin sulfate	Metabolite	KEGG Compound	C00607	147,342
+Havcr1	GeneProduct	Entrez Gene	171283	78,365
+Timd2	GeneProduct	Entrez Gene	171284	78,365
+Tyro3	GeneProduct	Entrez Gene	22174	78,316
+Cd209c	GeneProduct	Entrez Gene	170776	78,340
+Cd209d	GeneProduct	Entrez Gene	170779	78,340
+Cd209e	GeneProduct	Entrez Gene	170780	78,340
+Cd209a	GeneProduct	Entrez Gene	170786	78,340
+Cd209f	GeneProduct	Entrez Gene	69142	78,340
+Cd209b	GeneProduct	Entrez Gene	69165	78,340
+Cd209g	GeneProduct	Entrez Gene	70192	78,340

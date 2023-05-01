@@ -1,0 +1,155 @@
+TEXT	TYPE	DB	ID	X	Y
+Glycerophospholipid metabolism	hsa	KEGG	hsa00564
+PLA2G4B	GeneProduct	Entrez Gene	100137049	763,210	763,615
+LPCAT3	GeneProduct	Entrez Gene	10162	763,234	763,641	565,614
+CEPT1	GeneProduct	Entrez Gene	10390	728,303	729,590
+CDS1	GeneProduct	Entrez Gene	1040	371,590
+PEMT	GeneProduct	Entrez Gene	10400	646,289	647,374	647,442
+CDIPT	GeneProduct	Entrez Gene	10423	278,608
+LYPLA1	GeneProduct	Entrez Gene	10434	861,641	861,235
+AGPAT1	GeneProduct	Entrez Gene	10554	277,414
+AGPAT2	GeneProduct	Entrez Gene	10555	277,414
+PNPLA6	GeneProduct	Entrez Gene	10908	861,641	861,660	861,254	861,235
+CHAT	GeneProduct	Entrez Gene	1103	1093,325
+PLAAT3	GeneProduct	Entrez Gene	11145	763,254	763,210	561,694	763,615	763,661
+CHKA	GeneProduct	Entrez Gene	1119	981,326	981,532
+CHKB	GeneProduct	Entrez Gene	1120	981,326	981,532
+LYPLA2	GeneProduct	Entrez Gene	11313	861,660	861,254
+PLD4	GeneProduct	Entrez Gene	122618	426,427	426,526
+PLA2G4E	GeneProduct	Entrez Gene	123745	763,210	763,615
+MBOAT2	GeneProduct	Entrez Gene	129642	277,414	763,641	565,614
+GPAT4	GeneProduct	Entrez Gene	137964	251,301
+DGKK	GeneProduct	Entrez Gene	139189	426,482
+GPAT2	GeneProduct	Entrez Gene	150763	251,301
+PLB1	GeneProduct	Entrez Gene	151056	763,210	763,615	861,641	861,660	861,254	861,235
+MBOAT1	GeneProduct	Entrez Gene	154141	277,414	763,641	565,614
+DGKA	GeneProduct	Entrez Gene	1606	426,482
+DGKB	GeneProduct	Entrez Gene	1607	426,482
+DGKG	GeneProduct	Entrez Gene	1608	426,482
+DGKH	GeneProduct	Entrez Gene	160851	426,482
+DGKQ	GeneProduct	Entrez Gene	1609	426,482
+PHOSPHO1	GeneProduct	Entrez Gene	162466	981,551	981,345
+PLPP4	GeneProduct	Entrez Gene	196051	562,450	562,471
+GPD1L	GeneProduct	Entrez Gene	23171	170,214
+LPIN1	GeneProduct	Entrez Gene	23175	562,450
+PLD3	GeneProduct	Entrez Gene	23646	426,427	426,526
+PLA2G15	GeneProduct	Entrez Gene	23659	861,235
+PISD	GeneProduct	Entrez Gene	23761	588,647
+LCLAT1	GeneProduct	Entrez Gene	253558	277,414	162,599	162,784	345,842
+LPCAT4	GeneProduct	Entrez Gene	254531	763,234	763,641	345,842	565,614
+PLA2G4F	GeneProduct	Entrez Gene	255189	763,210	763,615
+PLA2G2D	GeneProduct	Entrez Gene	26279	763,210	763,615
+GPD1	GeneProduct	Entrez Gene	2819	170,214
+GPD2	GeneProduct	Entrez Gene	2820	170,273
+PLA2G4D	GeneProduct	Entrez Gene	283748	763,210	763,615
+PLA2G2E	GeneProduct	Entrez Gene	30814	763,210	763,615
+PNPLA7	GeneProduct	Entrez Gene	375775	861,641	861,660	861,254	861,235
+PLA2G2C	GeneProduct	Entrez Gene	391013	763,210	763,615
+LCAT	GeneProduct	Entrez Gene	3931	763,189
+ACHE	GeneProduct	Entrez Gene	43	1093,345
+PLA2G3	GeneProduct	Entrez Gene	50487	763,210	763,615
+PCYT1A	GeneProduct	Entrez Gene	5130	861,334
+PLA1A	GeneProduct	Entrez Gene	51365	561,715
+PLA2G1B	GeneProduct	Entrez Gene	5319	763,210	763,615
+PLA2G2A	GeneProduct	Entrez Gene	5320	763,210	763,615
+PLA2G4A	GeneProduct	Entrez Gene	5321	763,210	763,615
+PLA2G5	GeneProduct	Entrez Gene	5322	763,210	763,615
+PLD1	GeneProduct	Entrez Gene	5337	426,427	426,526
+PLD2	GeneProduct	Entrez Gene	5338	426,427	426,526
+CRLS1	GeneProduct	Entrez Gene	54675	277,794
+LPCAT2	GeneProduct	Entrez Gene	54947	763,234	345,842
+ETNK2	GeneProduct	Entrez Gene	55224	981,532
+AGPAT5	GeneProduct	Entrez Gene	55326	277,414
+ETNK1	GeneProduct	Entrez Gene	55500	981,532
+GPCPD1	GeneProduct	Entrez Gene	56261	981,233	981,639
+AGPAT3	GeneProduct	Entrez Gene	56894	277,414	162,599
+AGPAT4	GeneProduct	Entrez Gene	56895	277,414	162,599
+ADPRM	GeneProduct	Entrez Gene	56985	388,211
+CHPT1	GeneProduct	Entrez Gene	56994	728,303
+GPAM	GeneProduct	Entrez Gene	57678	251,301
+PCYT2	GeneProduct	Entrez Gene	5833	861,545
+PLA2G2F	GeneProduct	Entrez Gene	64600	763,210	763,615
+ETNPPL	GeneProduct	Entrez Gene	64850	981,487
+LPIN3	GeneProduct	Entrez Gene	64900	562,450
+TAFAZZIN	GeneProduct	Entrez Gene	6901	162,784
+MBOAT7	GeneProduct	Entrez Gene	79143	162,599
+LPCAT1	GeneProduct	Entrez Gene	79888	763,234	345,842
+PTDSS2	GeneProduct	Entrez Gene	81490	588,666
+PLA2G12A	GeneProduct	Entrez Gene	81579	763,210	763,615
+PLA2G6	GeneProduct	Entrez Gene	8398	763,210	763,615
+PLA2G10	GeneProduct	Entrez Gene	8399	763,210	763,615
+GNPAT	GeneProduct	Entrez Gene	8443	112,301
+PLPP5	GeneProduct	Entrez Gene	84513	562,450	562,471
+PLA2G12B	GeneProduct	Entrez Gene	84647	763,210	763,615
+GPAT3	GeneProduct	Entrez Gene	84803	251,301
+DGKZ	GeneProduct	Entrez Gene	8525	426,482
+DGKE	GeneProduct	Entrez Gene	8526	426,482
+DGKD	GeneProduct	Entrez Gene	8527	426,482
+SELENOI	GeneProduct	Entrez Gene	85465	729,590
+PLA2G4C	GeneProduct	Entrez Gene	8605	763,210	763,615
+PLPP1	GeneProduct	Entrez Gene	8611	562,450
+PLPP2	GeneProduct	Entrez Gene	8612	562,450
+PLPP3	GeneProduct	Entrez Gene	8613	562,450
+JMJD7-PLA2G4B	GeneProduct	Entrez Gene	8681	763,210	763,615
+CDS2	GeneProduct	Entrez Gene	8760	371,590
+DGKI	GeneProduct	Entrez Gene	9162	426,482
+PCYT1B	GeneProduct	Entrez Gene	9468	861,334
+PGS1	GeneProduct	Entrez Gene	9489	346,692
+LPIN2	GeneProduct	Entrez Gene	9663	562,450
+PTDSS1	GeneProduct	Entrez Gene	9791	521,368
+LPGAT1	GeneProduct	Entrez Gene	9926	345,842
+Acyl-CoA	Metabolite	KEGG Compound	C00040	389,389	389,274
+Acetaldehyde	Metabolite	KEGG Compound	C00084	1068,487
+sn-Glycerol 3-phosphate	Metabolite	KEGG Compound	C00093	1068,649	352,243	1068,243
+Glycerone phosphate	Metabolite	KEGG Compound	C00111	112,243
+Choline	Metabolite	KEGG Compound	C00114	1032,335
+Phosphatidylcholine	Metabolite	KEGG Compound	C00157	708,243
+Ethanolamine	Metabolite	KEGG Compound	C00189	1032,542
+CDP-diacylglycerol	Metabolite	KEGG Compound	C00269	345,655
+CDP-choline	Metabolite	KEGG Compound	C00307	816,334
+Phosphatidylglycerol	Metabolite	KEGG Compound	C00344	345,793
+Ethanolamine phosphate	Metabolite	KEGG Compound	C00346	924,542
+Phosphatidylethanolamine	Metabolite	KEGG Compound	C00350	708,651
+Phosphatidate	Metabolite	KEGG Compound	C00416	352,460
+CDP-glycerol	Metabolite	KEGG Compound	C00513	435,243
+CDP-ethanolamine	Metabolite	KEGG Compound	C00570	816,542
+Choline phosphate	Metabolite	KEGG Compound	C00588	924,335
+sn-Glycerol 1-phosphate	Metabolite	KEGG Compound	C00623	352,153
+1,2-Diacyl-sn-glycerol	Metabolite	KEGG Compound	C00641	708,460	494,793
+sn-Glycero-3-phosphocholine	Metabolite	KEGG Compound	C00670	924,243
+1-Acyl-sn-glycerol 3-phosphate	Metabolite	KEGG Compound	C00681	276,352
+1-Phosphatidyl-D-myo-inositol	Metabolite	KEGG Compound	C01194	217,607
+N-Methylethanolamine phosphate	Metabolite	KEGG Compound	C01210	924,442
+sn-Glycero-3-phosphoethanolamine	Metabolite	KEGG Compound	C01233	924,649
+Phosphatidyl-N-methylethanolamine	Metabolite	KEGG Compound	C01241	647,405
+Acetylcholine	Metabolite	KEGG Compound	C01996	1144,335
+Phosphatidylserine	Metabolite	KEGG Compound	C02737	522,655
+Acylglycerone phosphate	Metabolite	KEGG Compound	C03372	112,352
+1-Acylglycerophosphoinositol	Metabolite	KEGG Compound	C03819	104,607
+L-Serine-phosphoethanolamine	Metabolite	KEGG Compound	C03872	816,488
+Phosphatidylglycerophosphate	Metabolite	KEGG Compound	C03892	345,727
+2-Acyl-sn-glycerol 3-phosphate	Metabolite	KEGG Compound	C03974	352,352
+1-Acyl-sn-glycero-3-phosphocholine	Metabolite	KEGG Compound	C04230	816,199
+2-Acyl-sn-glycero-3-phosphocholine	Metabolite	KEGG Compound	C04233	816,280
+Phosphatidyl-N-dimethylethanolamine	Metabolite	KEGG Compound	C04308	647,333
+1-Acyl-sn-glycero-3-phosphoethanolamine	Metabolite	KEGG Compound	C04438	816,613
+3-(O-Geranylgeranyl)-sn-glycerol 1-phosphate	Metabolite	KEGG Compound	C04590	452,153
+2,3-Bis-O-(geranylgeranyl)glycerol 1-phosphate	Metabolite	KEGG Compound	C04638	552,153
+2-Acyl-sn-glycero-3-phosphoethanolamine	Metabolite	KEGG Compound	C05973	816,692
+2-Acyl-sn-glycero-3-phosphoserine	Metabolite	KEGG Compound	C05974	609,704
+Aminoacyl-phosphatidylglycerol	Metabolite	KEGG Compound	C05976	495,825
+Cardiolipin	Metabolite	KEGG Compound	C05980	217,793
+Triethanolamine	Metabolite	KEGG Compound	C06771	1253,542
+Diethanolamine	Metabolite	KEGG Compound	C06772	1144,542
+Phosphodimethylethanolamine	Metabolite	KEGG Compound	C13482	924,389
+CDP-2,3-bis-O-(geranylgeranyl)-sn-glycerol	Metabolite	KEGG Compound	C18059	652,153
+1-Acyl-sn-glycero-3-phosphoserine	Metabolite	KEGG Compound	C18125	609,613
+1-Acyl-sn-glycero-3-phosphoglycerol	Metabolite	KEGG Compound	C18126	345,865
+Monolysocardiolipin	Metabolite	KEGG Compound	C18129	104,793
+Diacylglycerylhomoserine	Metabolite	KEGG Compound	C18168	797,384
+Diacylglyceryl-N,N,N-trimethylhomoserine	Metabolite	KEGG Compound	C18169	891,384
+2,3-Bis-O-(geranylgeranyl)-sn-glycero-1-phospho-L-serine	Metabolite	KEGG Compound	C20466	752,153
+2,3-Bis-(O-phytanyl)-sn-glycerol 1-phosphate	Metabolite	KEGG Compound	C20518	552,214
+Heptaprenylglyceryl phosphate	Metabolite	KEGG Compound	C22340	452,91
+Heptaprenylglycerol	Metabolite	KEGG Compound	C22341	552,91
+Diacetylheptaprenylglycerol	Metabolite	KEGG Compound	C22342	652,91

@@ -1,0 +1,185 @@
+TEXT	TYPE	DB	ID	X	Y
+ABC transporters	hsa	KEGG	hsa02010
+ABCC5	GeneProduct	Entrez Gene	10057	1299,802
+ABCB6	GeneProduct	Entrez Gene	10058	1424,334
+ABCC9	GeneProduct	Entrez Gene	10060	1424,729
+ABCC4	GeneProduct	Entrez Gene	10257	1299,779
+ABCA7	GeneProduct	Entrez Gene	10347	1299,239
+ABCA10	GeneProduct	Entrez Gene	10349	1361,239
+ABCA9	GeneProduct	Entrez Gene	10350	1361,215
+ABCA8	GeneProduct	Entrez Gene	10351	1361,192
+CFTR	GeneProduct	Entrez Gene	1080	1361,704
+ABCB8	GeneProduct	Entrez Gene	11194	1299,382
+ABCC2	GeneProduct	Entrez Gene	1244	1299,729
+ABCA13	GeneProduct	Entrez Gene	154664	1299,286
+DEFB1	GeneProduct	Entrez Gene	1672	571,1232
+ABCA1	GeneProduct	Entrez Gene	19	1299,145
+ABCA2	GeneProduct	Entrez Gene	20	1299,169
+ABCA3	GeneProduct	Entrez Gene	21	1299,192
+ABCD1	GeneProduct	Entrez Gene	215	1299,973
+ABCB7	GeneProduct	Entrez Gene	22	1424,358
+ABCD2	GeneProduct	Entrez Gene	225	1299,998
+ABCB10	GeneProduct	Entrez Gene	23456	1299,430
+ABCB9	GeneProduct	Entrez Gene	23457	1299,406
+ABCA6	GeneProduct	Entrez Gene	23460	1361,169
+ABCA5	GeneProduct	Entrez Gene	23461	1361,145
+ABCA4	GeneProduct	Entrez Gene	24	1299,215
+ABCA12	GeneProduct	Entrez Gene	26154	1299,262
+ABCB5	GeneProduct	Entrez Gene	340273	1361,382
+ABCC6	GeneProduct	Entrez Gene	368	1299,826
+ABCC1	GeneProduct	Entrez Gene	4363	1299,704
+ABCB1	GeneProduct	Entrez Gene	5243	1361,334
+ABCB4	GeneProduct	Entrez Gene	5244	1361,358
+ABCD3	GeneProduct	Entrez Gene	5825	1299,1023
+ABCD4	GeneProduct	Entrez Gene	5826	1299,1048
+ABCG4	GeneProduct	Entrez Gene	64137	1299,1119
+ABCG5	GeneProduct	Entrez Gene	64240	1424,1095
+ABCG8	GeneProduct	Entrez Gene	64241	1424,1120
+ABCC8	GeneProduct	Entrez Gene	6833	1424,704
+TAP1	GeneProduct	Entrez Gene	6890	1299,334
+TAP2	GeneProduct	Entrez Gene	6891	1299,358
+ABCC11	GeneProduct	Entrez Gene	85320	1299,874
+ABCB11	GeneProduct	Entrez Gene	8647	1485,334
+ABCC3	GeneProduct	Entrez Gene	8714	1299,754
+ABCC10	GeneProduct	Entrez Gene	89845	1299,850
+ABCC12	GeneProduct	Entrez Gene	94160	1299,899
+ABCG2	GeneProduct	Entrez Gene	9429	1361,1095
+ABCG1	GeneProduct	Entrez Gene	9619	1299,1094
+Orthophosphate	Metabolite	KEGG Compound	C00009	590,144
+L-Glutamate	Metabolite	KEGG Compound	C00025	590,315	590,525	590,395
+D-Glucose	Metabolite	KEGG Compound	C00031	208,1741	208,1784
+Heme	Metabolite	KEGG Compound	C00032	937,616	590,1133
+Manganese	Metabolite	KEGG Compound	C00034	590,1714	590,1591	590,1678	590,1783	590,1749	590,1619
+Glycine	Metabolite	KEGG Compound	C00037	591,942
+Zinc cation	Metabolite	KEGG Compound	C00038	590,1650	590,1678	590,1783	590,1749
+L-Alanine	Metabolite	KEGG Compound	C00041	591,942
+L-Lysine	Metabolite	KEGG Compound	C00047	590,213	590,706	590,767	590,737	590,807
+L-Aspartate	Metabolite	KEGG Compound	C00049	590,315	590,395
+Glutathione	Metabolite	KEGG Compound	C00051	590,1319
+Sulfate	Metabolite	KEGG Compound	C00059	208,144
+L-Arginine	Metabolite	KEGG Compound	C00062	590,213	590,670	590,351	590,706	590,737	590,807
+L-Glutamine	Metabolite	KEGG Compound	C00064	590,315	590,289	591,942	590,706
+L-Serine	Metabolite	KEGG Compound	C00065	591,942
+Copper	Metabolite	KEGG Compound	C00070	590,1678
+L-Ornithine	Metabolite	KEGG Compound	C00077	590,213	590,670	590,807
+L-Phenylalanine	Metabolite	KEGG Compound	C00079	591,942
+Urea	Metabolite	KEGG Compound	C00086	591,1015
+Nitrite	Metabolite	KEGG Compound	C00088	208,248
+Sucrose	Metabolite	KEGG Compound	C00089	208,1053
+sn-Glycerol 3-phosphate	Metabolite	KEGG Compound	C00093	208,2229
+D-Fructose	Metabolite	KEGG Compound	C00095	208,1999
+Oligopeptide	Metabolite	KEGG Compound	C00098	590,1091
+Dipeptide	Metabolite	KEGG Compound	C00107	590,1133	590,1175
+Choline	Metabolite	KEGG Compound	C00114	208,780	208,750
+Glycerol	Metabolite	KEGG Compound	C00116	208,2188
+Biotin	Metabolite	KEGG Compound	C00120	590,1940	590,1975
+D-Ribose	Metabolite	KEGG Compound	C00121	208,1819
+L-Leucine	Metabolite	KEGG Compound	C00123	591,897	591,942
+Putrescine	Metabolite	KEGG Compound	C00134	208,568	208,615
+L-Histidine	Metabolite	KEGG Compound	C00135	591,256	591,897	591,942	590,706	590,737	590,807
+myo-Inositol	Metabolite	KEGG Compound	C00137	208,2115
+N-Acetyl-D-glucosamine	Metabolite	KEGG Compound	C00140	208,1314
+L-Proline	Metabolite	KEGG Compound	C00148	208,780	208,750	591,942
+L-Amino acid	Metabolite	KEGG Compound	C00151	590,481
+D-Mannose	Metabolite	KEGG Compound	C00159	208,1784
+Cobalt ion	Metabolite	KEGG Compound	C00175	590,1842
+D-Xylose	Metabolite	KEGG Compound	C00181	208,1946	208,1819
+L-Valine	Metabolite	KEGG Compound	C00183	591,897
+Cellobiose	Metabolite	KEGG Compound	C00185	208,1358
+L-Threonine	Metabolite	KEGG Compound	C00188	591,897
+Maltose	Metabolite	KEGG Compound	C00208	208,1226	208,838	208,1053
+Adenosine	Metabolite	KEGG Compound	C00212	208,1687
+Lactose	Metabolite	KEGG Compound	C00243	208,967
+Nitrate	Metabolite	KEGG Compound	C00244	208,248
+Taurine	Metabolite	KEGG Compound	C00245	208,332
+Riboflavin	Metabolite	KEGG Compound	C00255	591,2060
+L-Arabinose	Metabolite	KEGG Compound	C00259	208,1865	208,1741	208,967
+HCO3-	Metabolite	KEGG Compound	C00288	208,294
+Nickel	Metabolite	KEGG Compound	C00291	590,1904
+Inosine	Metabolite	KEGG Compound	C00294	208,1687
+Uridine	Metabolite	KEGG Compound	C00299	208,1687
+Spermidine	Metabolite	KEGG Compound	C00315	208,568
+Thiosulfate	Metabolite	KEGG Compound	C00320	208,144
+Deoxyguanosine	Metabolite	KEGG Compound	C00330	208,1687
+D-Galacturonate	Metabolite	KEGG Compound	C00333	208,1096
+Lipopolysaccharide	Metabolite	KEGG Compound	C00338	937,257	936,662
+Thiamine	Metabolite	KEGG Compound	C00378	208,529
+Xylitol	Metabolite	KEGG Compound	C00379	208,2090
+Guanosine	Metabolite	KEGG Compound	C00387	208,1687
+Mannitol	Metabolite	KEGG Compound	C00392	208,1010
+L-Isoleucine	Metabolite	KEGG Compound	C00407	591,897
+5-Aminolevulinate	Metabolite	KEGG Compound	C00430	590,1133
+Pectate	Metabolite	KEGG Compound	C00470	208,1096
+Cytidine	Metabolite	KEGG Compound	C00475	208,1687
+Carnitine	Metabolite	KEGG Compound	C00487	208,780	208,750
+L-Cystine	Metabolite	KEGG Compound	C00491	589,561	590,596
+Raffinose	Metabolite	KEGG Compound	C00492	208,924
+Erythritol	Metabolite	KEGG Compound	C00503	208,2065
+Deoxyuridine	Metabolite	KEGG Compound	C00526	208,1687
+Deoxyadenosine	Metabolite	KEGG Compound	C00559	208,1687
+Betaine	Metabolite	KEGG Compound	C00719	208,780	208,750
+Tungsten	Metabolite	KEGG Compound	C00753	208,181	208,211
+D-Sorbitol	Metabolite	KEGG Compound	C00794	208,1010
+D-Methionine	Metabolite	KEGG Compound	C00855	591,978
+Phospholipid	Metabolite	KEGG Compound	C00865	208,1633
+Deoxycytidine	Metabolite	KEGG Compound	C00881	208,1687
+Choline sulfate	Metabolite	KEGG Compound	C00919	208,780	208,750
+Cyclomaltodextrin	Metabolite	KEGG Compound	C00973	208,881
+alpha,alpha-Trehalose	Metabolite	KEGG Compound	C01083	208,1226	208,1053	208,1270
+Orthophosphoric monoester	Metabolite	KEGG Compound	C01153	590,178
+Hydroxyproline	Metabolite	KEGG Compound	C01157	590,852
+Inositol 1-phosphate	Metabolite	KEGG Compound	C01177	208,2147
+4-Trimethylammoniobutanoate	Metabolite	KEGG Compound	C01181	208,780	208,750
+4-Amino-5-hydroxymethyl-2-methylpyrimidine	Metabolite	KEGG Compound	C01279	208,390
+Sodium cation	Metabolite	KEGG Compound	C01330	937,340
+Cyanate	Metabolite	KEGG Compound	C01417	208,248
+D-Allose	Metabolite	KEGG Compound	C01487	208,1973
+Phthalate	Metabolite	KEGG Compound	C01606	208,421
+Xylobiose	Metabolite	KEGG Compound	C01630	208,1531
+Bacitracin	Metabolite	KEGG Compound	C01667	937,450	936,828	937,422
+Chitobiose	Metabolite	KEGG Compound	C01674	208,1444	208,1401
+Nopaline	Metabolite	KEGG Compound	C01682	590,438
+D-Rhamnose	Metabolite	KEGG Compound	C01684	208,2032
+Xanthosine	Metabolite	KEGG Compound	C01762	208,1687
+Lipoprotein	Metabolite	KEGG Compound	C01834	937,573
+Maltotriose	Metabolite	KEGG Compound	C01835	208,924	208,881
+Maltodextrin	Metabolite	KEGG Compound	C01935	208,838	208,881
+Oleandomycin	Metabolite	KEGG Compound	C01946	937,395
+Isomaltotriose	Metabolite	KEGG Compound	C02160	208,924
+Digalacturonate	Metabolite	KEGG Compound	C02273	208,1139
+2-Aminoethylphosphonate	Metabolite	KEGG Compound	C03557	210,709
+Galactose oligosaccharide	Metabolite	KEGG Compound	C03611	208,881
+Methyl beta-D-galactoside	Metabolite	KEGG Compound	C03619	208,1919
+(E)-4-(Trimethylammonio)but-2-enoate	Metabolite	KEGG Compound	C04114	208,780	208,750
+D-Octopine	Metabolite	KEGG Compound	C04137	590,438	590,807
+Ciprofloxacin	Metabolite	KEGG Compound	C05349	936,706
+Melibiose	Metabolite	KEGG Compound	C05402	208,924
+Deoxyinosine	Metabolite	KEGG Compound	C05512	208,1687
+Vitamin B12	Metabolite	KEGG Compound	C05776	590,1565
+Fe(III)hydroxamate	Metabolite	KEGG Compound	C06227	590,1538
+Fe(III)dicitrate	Metabolite	KEGG Compound	C06229	590,1458
+Fe-enterobactin	Metabolite	KEGG Compound	C06230	590,1502
+Molybdate	Metabolite	KEGG Compound	C06232	208,459	208,211
+Norfloxacin	Metabolite	KEGG Compound	C06687	936,706
+Capsular polysaccharide	Metabolite	KEGG Compound	C06705	937,179	937,222
+Lipo-oligosaccharide	Metabolite	KEGG Compound	C06706	937,313
+Teichoic acid	Metabolite	KEGG Compound	C06707	937,285
+Hemine	Metabolite	KEGG Compound	C06767	937,368
+Sparfloxacin	Metabolite	KEGG Compound	C07662	936,706
+Moxifloxacin	Metabolite	KEGG Compound	C07663	936,706
+Polymyxin B	Metabolite	KEGG Compound	C11612	936,861
+Colistin sulfate	Metabolite	KEGG Compound	C13768	936,861
+Fe2+	Metabolite	KEGG Compound	C14818	590,1714	590,1678	590,1783
+Fe3+	Metabolite	KEGG Compound	C14819	208,497	590,1678
+Alkanesulfonate	Metabolite	KEGG Compound	C15521	208,361
+AI-2	Metabolite	KEGG Compound	C16421	590,2016	208,1819
+Mannopine	Metabolite	KEGG Compound	C16692	207,661
+Nickel(2+)	Metabolite	KEGG Compound	C19609	590,1275
+N-Formyl-4-amino-5-aminomethyl-2-methylpyrimidine	Metabolite	KEGG Compound	C19872	208,390
+alpha-1,5-L-Arabinobiose	Metabolite	KEGG Compound	C20570	208,1488
+alpha-1,5-L-Arabinotriose	Metabolite	KEGG Compound	C20571	208,1488
+alpha-1,5-L-Arabinotetraose	Metabolite	KEGG Compound	C20572	208,1488
+Aldotetraouronic acid	Metabolite	KEGG Compound	C20573	208,1183
+D-Galactofuranose	Metabolite	KEGG Compound	C21066	209,1891
+S-Methyl-L-cysteine	Metabolite	KEGG Compound	C22040	591,632
+	Metabolite	KEGG Compound	gl:G00457	208,881

@@ -1,0 +1,18 @@
+TEXT	TYPE	DB	ID	X	Y
+TCA cycle nutrient use and invasiveness of ovarian cancer	Homo sapiens	WikiPathways	WP2868
+STAT3	GeneProduct	Entrez Gene	6774	459.0,404.0
+Lactate	Metabolite	HMDB	HMDB0000190	219.0,460.0
+ERK1	GeneProduct	Entrez Gene	5595	639.0,296.25
+JAK1	GeneProduct	Entrez Gene	3716	459.0,351.0
+D-Glutamine	Metabolite	HMDB	HMDB0003423	639.0,202.0
+ERK2	GeneProduct	Entrez Gene	5594	639.0,276.25
+Pyruvate	Metabolite	HMDB	HMDB0000243	219.0,546.0
+Glucose	Metabolite	HMDB	HMDB0000122	459.0,202.0
+EGFR	GeneProduct	Entrez Gene	1956	459.0,287.0
+TCA Cycle	Pathway	WikiPathways	WP78	640.0,513.0
+Glucose	Metabolite	HMDB	HMDB0000122	459.0,202.0
+STAT3	GeneProduct	Entrez Gene	6774	459.0,404.0
+Glucose	Metabolite	HMDB	HMDB0000122	459.0,202.0
+EGFR	GeneProduct	Entrez Gene	1956	459.0,287.0
+JAK1	GeneProduct	Entrez Gene	3716	459.0,351.0
+STAT3	GeneProduct	Entrez Gene	6774	459.0,404.0

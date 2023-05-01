@@ -1,0 +1,44 @@
+TEXT	TYPE	DB	ID	X	Y
+Valproic acid pathway	Homo sapiens	WikiPathways	WP3871
+GABA	Metabolite	HMDB	HMDB0000112	86.5,158.0
+Pentanoyl-CoA	Metabolite	HMDB	HMDB0013037	1146.0,395.0
+3-Oxovalproic acid	Metabolite	HMDB	HMDB0060685	737.5,75.0
+ACSM1	GeneProduct	Entrez Gene	116285	482.0,364.0
+2-Propylglutaric acid	Metabolite	HMDB	HMDB0060684	776.5,560.0
+3-Hydroxyvalproic acid	Metabolite	HMDB	HMDB0013899	595.5,75.0
+2-Propyl-2,4-pentadienoic acid	Metabolite	HMDB	HMDB0060682	856.5,153.0
+HADHB	GeneProduct	Entrez Gene	3032	969.25,465.75
+3-ene-Valproic acid CoA	Metabolite	HMDB	HMDB0060740	776.5,462.0
+4-ene-Valproic acid	Metabolite	HMDB	HMDB0013897	602.0,194.0
+UGT1A3	GeneProduct	Entrez Gene	54659	482.0,298.0
+2-n-Propyl-4-oxopentanoic acid	Metabolite	HMDB	HMDB0060683	787.5,612.0
+EHHADH	GeneProduct	Entrez Gene	1962	862.0,362.0
+4-ene-Valproic acid CoA	Metabolite	HMDB	HMDB0060762	842.0,236.0
+CYP2B6	GeneProduct	Entrez Gene	1555	482.0,520.0
+2,3-diene-Valproic acid-CoA	Metabolite	HMDB	HMDB0060723	776.5,520.25
+Propionyl-CoA	Metabolite	HMDB	HMDB0001275	1147.0,469.0
+4-Hydroxyvalproic acid	Metabolite	HMDB	HMDB0013900	598.5,614.0
+2,3-diene-Valproic acid-CoA	Metabolite	HMDB	HMDB0060723	776.5,520.25
+HDAC1	GeneProduct	Entrez Gene	3065	225.0,194.0
+HSD17B10	GeneProduct	Entrez Gene	3028	987.0,349.0
+3-ene-Valproic acid CoA	Metabolite	HMDB	HMDB0060740	776.5,462.0
+Uridine 5'-diphosphate	Metabolite	HMDB	HMDB0000295	561.5,326.0
+3-Hydroxyvalproic acid CoA	Metabolite	HMDB	HMDB0060744	962.0,396.0
+3-oxo-Valproic acid CoA	Metabolite	HMDB	HMDB0060749	1170.5,328.0
+Valproic acid CoA	Metabolite	HMDB	HMDB0060877	595.5,395.0
+HADHA	GeneProduct	Entrez Gene	3030	969.0,445.0
+2-ene-Valproic acid CoA	Metabolite	HMDB	HMDB0060714	776.5,395.0
+5-Hydroxyvalproic acid	Metabolite	HMDB	HMDB0013898	595.5,559.0
+CYP2A6	GeneProduct	Entrez Gene	1548	482.0,500.0
+CYP2C9	GeneProduct	Entrez Gene	1559	482.0,480.0
+ACADSB	GeneProduct	Entrez Gene	36	678.0,366.0
+Valproic acid	Metabolite	HMDB	HMDB0001877	364.0,194.0
+IVD	GeneProduct	Entrez Gene	3712	678.0,425.0
+Uridine diphosphate glucuronic acid	Metabolite	HMDB	HMDB0000935	324.0,325.0
+ABAT	GeneProduct	Entrez Gene	18	225.0,158.0
+Valproic acid glucuronide	Metabolite	HMDB	HMDB0000901	595.5,269.0
+ACADSB	GeneProduct	Entrez Gene	36	678.0,366.0
+CYP2A6	GeneProduct	Entrez Gene	1548	482.0,500.0
+CYP2B6	GeneProduct	Entrez Gene	1555	482.0,520.0
+CYP2C9	GeneProduct	Entrez Gene	1559	482.0,480.0
+CYP2A6	GeneProduct	Entrez Gene	1548	482.0,500.0

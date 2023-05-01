@@ -1,0 +1,82 @@
+TEXT	TYPE	DB	ID	X	Y
+Propanoate metabolism	mmu	KEGG	mmu00640
+Aldh6a1	GeneProduct	Entrez Gene	104776	159,325
+3-Oxopropanoate	Metabolite	KEGG Compound	C00222	225,327
+Bckdha	GeneProduct	Entrez Gene	12039	806,138
+Bckdhb	GeneProduct	Entrez Gene	12040	806,138
+Dbt	GeneProduct	Entrez Gene	13171	806,275
+Enzyme N6-(S-propyldihydrolipoyl)lysine	Metabolite	KEGG Compound	C21018	806,249
+2-Methyl-trans-aconitate	Metabolite	KEGG Compound	C21250	1127,532
+Propynoate	Metabolite	KEGG Compound	C00804	225,451
+Acox1	GeneProduct	Entrez Gene	11430	593,338
+Acox3	GeneProduct	Entrez Gene	80911	593,338
+Propenoyl-CoA	Metabolite	KEGG Compound	C00894	523,327
+3-Hydroxypropanoate	Metabolite	KEGG Compound	C01013	324,327
+beta-Alanine	Metabolite	KEGG Compound	C00099	325,388
+Hibch	GeneProduct	Entrez Gene	227095	377,327
+Malonyl-CoA	Metabolite	KEGG Compound	C00083	222,228
+Aldh6a1	GeneProduct	Entrez Gene	104776	951,409
+Mcee	GeneProduct	Entrez Gene	73724	807,494
+Pcca	GeneProduct	Entrez Gene	110821	721,390
+Pccb	GeneProduct	Entrez Gene	66904	721,390
+Echdc1	GeneProduct	Entrez Gene	52665	831,390
+Acss3	GeneProduct	Entrez Gene	380660	1051,229
+Acss3	GeneProduct	Entrez Gene	380660	1051,143
+Acss2	GeneProduct	Entrez Gene	60525	1001,229
+Acss1	GeneProduct	Entrez Gene	68738	1001,229
+Acss2	GeneProduct	Entrez Gene	60525	1001,143
+Acss1	GeneProduct	Entrez Gene	68738	1001,143
+Acacb	GeneProduct	Entrez Gene	100705	159,252
+Acaca	GeneProduct	Entrez Gene	107476	159,252
+Ldhal6b	GeneProduct	Entrez Gene	106557	743,64
+Ldha	GeneProduct	Entrez Gene	16828	743,64
+Ldhb	GeneProduct	Entrez Gene	16832	743,64
+Ldhc	GeneProduct	Entrez Gene	16833	743,64
+Ehhadh	GeneProduct	Entrez Gene	74147	468,317
+Echs1	GeneProduct	Entrez Gene	93747	468,317
+Hadha	GeneProduct	Entrez Gene	97212	468,317
+Mlycd	GeneProduct	Entrez Gene	56690	159,204
+2-Oxobutanoate	Metabolite	KEGG Compound	C00109	806,105
+Propanoyl phosphate	Metabolite	KEGG Compound	C02876	911,105
+Propanoate	Metabolite	KEGG Compound	C00163	1026,105
+(S)-Lactate	Metabolite	KEGG Compound	C00186	523,157
+Lactoyl-CoA	Metabolite	KEGG Compound	C00827	523,228
+Propanoyl-CoA	Metabolite	KEGG Compound	C00100	806,324
+(S)-Methylmalonyl-CoA	Metabolite	KEGG Compound	C00683	807,454
+Methylmalonate	Metabolite	KEGG Compound	C02170	897,454
+beta-Alanyl-CoA	Metabolite	KEGG Compound	C02335	419,388
+3-Hydroxypropionyl-CoA	Metabolite	KEGG Compound	C05668	418,327
+2-Hydroxybutanoic acid	Metabolite	KEGG Compound	C05984	684,63
+3-Oxopropionyl-CoA	Metabolite	KEGG Compound	C05989	418,228
+Propionyladenylate	Metabolite	KEGG Compound	C05983	1026,179
+(R)-Methylmalonyl-CoA	Metabolite	KEGG Compound	C01213	807,538
+Acads	GeneProduct	Entrez Gene	11409	593,317
+(Z)-But-2-ene-1,2,3-tricarboxylate	Metabolite	KEGG Compound	C04225	1041,532
+Mmut	GeneProduct	Entrez Gene	17850	807,577
+Succinyl-CoA	Metabolite	KEGG Compound	C00091	807,619
+2-Methylcitrate	Metabolite	KEGG Compound	C02225	1041,433
+Sucla2	GeneProduct	Entrez Gene	20916	865,630
+Suclg2	GeneProduct	Entrez Gene	20917	865,630
+Suclg1	GeneProduct	Entrez Gene	56451	865,630
+Sucla2	GeneProduct	Entrez Gene	20916	865,609
+Suclg2	GeneProduct	Entrez Gene	20917	865,609
+Suclg1	GeneProduct	Entrez Gene	56451	865,609
+Succinate	Metabolite	KEGG Compound	C00042	918,619
+(2S,3R)-3-Hydroxybutane-1,2,3-tricarboxylate	Metabolite	KEGG Compound	C04593	1041,619
+Abat	GeneProduct	Entrez Gene	268860	276,370
+Acetyl-CoA	Metabolite	KEGG Compound	C00024	90,227
+Propane-1-ol	Metabolite	KEGG Compound	C05979	637,581
+Propanal	Metabolite	KEGG Compound	C00479	637,468
+Glycerone phosphate	Metabolite	KEGG Compound	C00111	291,581
+Propane-1,2-diol	Metabolite	KEGG Compound	C00583	499,468
+(S)-Lactaldehyde	Metabolite	KEGG Compound	C00424	499,581
+Hydroxyacetone	Metabolite	KEGG Compound	C05235	396,468
+Methylglyoxal	Metabolite	KEGG Compound	C00546	396,581
+(S)-Methylmalonate semialdehyde	Metabolite	KEGG Compound	C06002	950,454
+Enzyme N6-(dihydrolipoyl)lysine	Metabolite	KEGG Compound	C15973	768,271
+Enzyme N6-(lipoyl)lysine	Metabolite	KEGG Compound	C15972	768,206
+2-(alpha-Hydroxypropyl)thiamine diphosphate	Metabolite	KEGG Compound	C21017	806,177
+Thiamin diphosphate	Metabolite	KEGG Compound	C00068	844,160
+Dld	GeneProduct	Entrez Gene	13382	769,241
+Bckdha	GeneProduct	Entrez Gene	12039	806,209
+Bckdhb	GeneProduct	Entrez Gene	12040	806,209

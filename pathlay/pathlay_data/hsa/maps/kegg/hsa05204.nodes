@@ -1,0 +1,184 @@
+TEXT	TYPE	DB	ID	X	Y
+Chemical carcinogenesis	hsa	KEGG	hsa05204
+NAT2	GeneProduct	Entrez Gene	10	184,162	316,215	871,146	871,326	871,259
+CYP3A7-CYP3A51P	GeneProduct	Entrez Gene	100861540	183,711	183,760	183,814
+UGT2B11	GeneProduct	Entrez Gene	10720	1038,1889	213,1691
+UGT2A1	GeneProduct	Entrez Gene	10941	1038,1889	213,1691
+CHRNA7	GeneProduct	Entrez Gene	1139	338,1399
+GSTO2	GeneProduct	Entrez Gene	119391	708,1934	357,509	251,547	203,2054
+ADH1A	GeneProduct	Entrez Gene	124	928,1889
+ADH1B	GeneProduct	Entrez Gene	125	928,1889
+ADH1C	GeneProduct	Entrez Gene	126	928,1889
+ADH4	GeneProduct	Entrez Gene	127	928,1889
+ADH5	GeneProduct	Entrez Gene	128	928,1889
+ADH6	GeneProduct	Entrez Gene	130	928,1889
+ADH7	GeneProduct	Entrez Gene	131	928,1889
+CYP1A1	GeneProduct	Entrez Gene	1543	724,1847	406,481	348,432	131,482	736,526	736,579	961,525	724,1764	183,711	183,760	183,814
+CYP1A2	GeneProduct	Entrez Gene	1544	724,1847	236,1179	724,1764	184,215	755,145	758,260	758,326
+CYP1B1	GeneProduct	Entrez Gene	1545	406,481	348,432	131,482	736,526	736,579	961,525
+CYP2A6	GeneProduct	Entrez Gene	1548	234,1333	233,1455	233,1543	233,1631
+CYP2A7	GeneProduct	Entrez Gene	1549	234,1333	233,1455	233,1543	233,1631
+CYP3A7	GeneProduct	Entrez Gene	1551	183,711	183,760	183,814
+CYP2A13	GeneProduct	Entrez Gene	1553	234,1333	233,1455	233,1543	233,1631
+CYP2C19	GeneProduct	Entrez Gene	1557	131,482
+CYP2C8	GeneProduct	Entrez Gene	1558	131,482
+CYP2C9	GeneProduct	Entrez Gene	1559	131,482
+CYP2C18	GeneProduct	Entrez Gene	1562	131,482
+CYP2E1	GeneProduct	Entrez Gene	1571	724,1847	724,1764	823,1597	190,1882	213,2101
+CYP3A4	GeneProduct	Entrez Gene	1576	236,1179	131,482	183,711	183,760	183,814
+CYP3A5	GeneProduct	Entrez Gene	1577	183,711	183,760	183,814
+AKR1C2	GeneProduct	Entrez Gene	1646	145,1487
+EPHX1	GeneProduct	Entrez Gene	2052	300,482	842,526
+ALDH3A1	GeneProduct	Entrez Gene	218	928,1810
+ALDH3B1	GeneProduct	Entrez Gene	221	928,1810
+GSTA5	GeneProduct	Entrez Gene	221357	708,1934	357,509	251,547	203,2054
+ALDH3B2	GeneProduct	Entrez Gene	222	928,1810
+HPGDS	GeneProduct	Entrez Gene	27306	708,1934	357,509	251,547	203,2054
+GSTA1	GeneProduct	Entrez Gene	2938	708,1934	357,509	251,547	203,2054
+GSTA2	GeneProduct	Entrez Gene	2939	708,1934	357,509	251,547	203,2054
+GSTA3	GeneProduct	Entrez Gene	2940	708,1934	357,509	251,547	203,2054
+GSTA4	GeneProduct	Entrez Gene	2941	708,1934	357,509	251,547	203,2054
+GSTM1	GeneProduct	Entrez Gene	2944	708,1934	357,509	251,547	203,2054
+GSTM2	GeneProduct	Entrez Gene	2946	708,1934	357,509	251,547	203,2054
+GSTM3	GeneProduct	Entrez Gene	2947	708,1934	357,509	251,547	203,2054
+GSTM4	GeneProduct	Entrez Gene	2948	708,1934	357,509	251,547	203,2054
+GSTM5	GeneProduct	Entrez Gene	2949	708,1934	357,509	251,547	203,2054
+GSTP1	GeneProduct	Entrez Gene	2950	708,1934	357,509	251,547	203,2054
+GSTT1	GeneProduct	Entrez Gene	2952	708,1934	357,509	251,547	203,2054
+GSTT2	GeneProduct	Entrez Gene	2953	708,1934	357,509	251,547	203,2054
+HSD11B1	GeneProduct	Entrez Gene	3290	195,1487
+GSTK1	GeneProduct	Entrez Gene	373156	708,1934	357,509	251,547	203,2054
+HSD11B1L	GeneProduct	Entrez Gene	374875	195,1487
+ARNT	GeneProduct	Entrez Gene	405	139,604
+MGST1	GeneProduct	Entrez Gene	4257	708,1934	357,509	251,547	203,2054
+MGST2	GeneProduct	Entrez Gene	4258	708,1934	357,509	251,547	203,2054
+MGST3	GeneProduct	Entrez Gene	4259	708,1934	357,509	251,547	203,2054
+SULT1A4	GeneProduct	Entrez Gene	445329	871,188
+UGT2B28	GeneProduct	Entrez Gene	54490	1038,1889	213,1691
+UGT1A10	GeneProduct	Entrez Gene	54575	1038,1889	213,1691
+UGT1A8	GeneProduct	Entrez Gene	54576	1038,1889	213,1691
+UGT1A7	GeneProduct	Entrez Gene	54577	1038,1889	213,1691
+UGT1A6	GeneProduct	Entrez Gene	54578	1038,1889	213,1691
+UGT1A5	GeneProduct	Entrez Gene	54579	1038,1889	213,1691
+UGT1A9	GeneProduct	Entrez Gene	54600	1038,1889	213,1691
+UGT1A4	GeneProduct	Entrez Gene	54657	1038,1889	213,1691
+UGT1A1	GeneProduct	Entrez Gene	54658	1038,1889	213,1691
+UGT1A3	GeneProduct	Entrez Gene	54659	1038,1889	213,1691
+KYAT3	GeneProduct	Entrez Gene	56267	893,1933
+PTGS2	GeneProduct	Entrez Gene	5743	318,866
+UGT2A2	GeneProduct	Entrez Gene	574537	1038,1889	213,1691
+CYP3A43	GeneProduct	Entrez Gene	64816	183,711	183,760	183,814
+GSTT2B	GeneProduct	Entrez Gene	653689	708,1934	357,509	251,547	203,2054
+SULT1A2	GeneProduct	Entrez Gene	6799	871,188
+SULT1A1	GeneProduct	Entrez Gene	6817	871,188
+SULT1A3	GeneProduct	Entrez Gene	6818	871,188
+SULT2A1	GeneProduct	Entrez Gene	6822	892,579
+UGT2B4	GeneProduct	Entrez Gene	7363	1038,1889	213,1691
+UGT2B7	GeneProduct	Entrez Gene	7364	1038,1889	213,1691
+UGT2B10	GeneProduct	Entrez Gene	7365	1038,1889	213,1691
+UGT2B15	GeneProduct	Entrez Gene	7366	1038,1889	213,1691
+UGT2B17	GeneProduct	Entrez Gene	7367	1038,1889	213,1691
+UGT2A3	GeneProduct	Entrez Gene	79799	1038,1889	213,1691
+CBR1	GeneProduct	Entrez Gene	873	170,1506
+KYAT1	GeneProduct	Entrez Gene	883	893,1933
+NAT1	GeneProduct	Entrez Gene	9	184,162	316,215	871,146	871,326	871,259
+GSTO1	GeneProduct	Entrez Gene	9446	708,1934	357,509	251,547	203,2054
+Hydrogen peroxide	Metabolite	KEGG Compound	C00027	317,263	163,1070	222,1070	285,1070	753,1074
+Naphthalene-1,2-diol	Metabolite	KEGG Compound	C03012	276,709
+N-Acetoxy-4-aminobiphenyl	Metabolite	KEGG Compound	C03621	378,214
+N-Hydroxy-4-aminobiphenyl	Metabolite	KEGG Compound	C03622	248,214
+Ethylene	Metabolite	KEGG Compound	C06547	266,2011
+Ethylene oxide	Metabolite	KEGG Compound	C06548	128,1789
+1,2-Dichloroethane	Metabolite	KEGG Compound	C06752	151,2101
+Chloroacetaldehyde	Metabolite	KEGG Compound	C06754	378,2101
+Trichloroethene	Metabolite	KEGG Compound	C06790	657,1847
+Vinyl chloride	Metabolite	KEGG Compound	C06793	127,1880
+Aflatoxin B1	Metabolite	KEGG Compound	C06800	173,1178
+Chloral hydrate	Metabolite	KEGG Compound	C06899	880,1847
+Melphalan	Metabolite	KEGG Compound	C07122	866,705
+Trichloroethanol	Metabolite	KEGG Compound	C07490	983,1888
+Benzo[a]pyrene	Metabolite	KEGG Compound	C07535	73,481
+Thiotepa	Metabolite	KEGG Compound	C07641	866,753
+4-Aminobiphenyl	Metabolite	KEGG Compound	C10998	100,213
+TCE epoxide	Metabolite	KEGG Compound	C11148	788,1763
+Dichloroacetate	Metabolite	KEGG Compound	C11149	983,1763
+Trichloroacetate	Metabolite	KEGG Compound	C11150	983,1807
+Methyl methacrylate	Metabolite	KEGG Compound	C14527	884,983
+9-Hydroxybenzo[a]pyrene	Metabolite	KEGG Compound	C14556	305,431
+N-Nitrosodimethylamine	Metabolite	KEGG Compound	C14704	765,1594
+1,2-Naphthoquinone	Metabolite	KEGG Compound	C14783	401,710
+Benzo[a]pyrene-9,10-oxide	Metabolite	KEGG Compound	C14849	204,467
+Benzo[a]pyrene-7,8-oxide	Metabolite	KEGG Compound	C14850	204,481
+Benzo[a]pyrene-4,5-oxide	Metabolite	KEGG Compound	C14851	204,495
+Benzo[a]pyrene-7,8-diol	Metabolite	KEGG Compound	C14852	356,481
+Benzo[a]pyrene-7,8-dihydrodiol-9,10-oxide	Metabolite	KEGG Compound	C14853	466,481
+9-Hydroxybenzo[a]pyrene-4,5-oxide	Metabolite	KEGG Compound	C14854	402,431
+4,5-Dihydro-4-hydroxy-5-S-glutathionyl-benzo[a]pyrene	Metabolite	KEGG Compound	C14855	304,547
+7,8-Dihydro-7-hydroxy-8-S-glutathionyl-benzo[a]pyrene	Metabolite	KEGG Compound	C14856	356,546
+Chloral	Metabolite	KEGG Compound	C14866	788,1847
+Dichloroacetyl chloride	Metabolite	KEGG Compound	C14867	855,1763
+S-(1,2-Dichlorovinyl)glutathione	Metabolite	KEGG Compound	C14868	765,1931
+Trichloroethanol glucuronide	Metabolite	KEGG Compound	C14869	1090,1888
+Glutathione episulfonium ion	Metabolite	KEGG Compound	C14874	381,2053
+2-Amino-1-methyl-6-phenylimidazo[4,5-b]pyridine	Metabolite	KEGG Compound	C16038	688,143
+4-(N-Nitrosomethylamino)-1-(3-pyridyl)-1-butanone	Metabolite	KEGG Compound	C16453	170,1455
+Hydroxyl radical	Metabolite	KEGG Compound	C16844	137,1043	196,1044	258,1044	718,1064
+Chromium (VI)	Metabolite	KEGG Compound	C19161	125,971
+Sulfur mustard	Metabolite	KEGG Compound	C19164	851,2053
+2-Amino-3-methylimidazo[4,5-f]quinoline	Metabolite	KEGG Compound	C19180	687,260
+MeIQx	Metabolite	KEGG Compound	C19255	690,326
+Chromium (III)	Metabolite	KEGG Compound	C19368	307,971
+7,12-Dimethylbenz[a]anthracene	Metabolite	KEGG Compound	C19488	690,578
+1a,11b-Dihydro-4,9-dimethylbenz[a]anthra[3,4-b]oxirene	Metabolite	KEGG Compound	C19489	794,525
+trans-3,4-Dihydro-3,4-dihydroxy-7,12-dimethylbenz[a]anthracene	Metabolite	KEGG Compound	C19490	908,525
+Sudan I	Metabolite	KEGG Compound	C19525	111,757
+(1aalpha,2beta,3alpha,11calpha)-1a,2,3,11c-Tetrahydro-6,11-dimethylbenzo[6,7]phenanthro[3,4-b]oxirene-2,3-diol	Metabolite	KEGG Compound	C19559	1022,525
+7-Hydroxymethyl-12-methylbenz[a]anthracene	Metabolite	KEGG Compound	C19561	828,578
+7-Hydroxymethyl-12-methylbenz[a]anthracene sulfate	Metabolite	KEGG Compound	C19562	967,578
+4-[(Hydroxymethyl)nitrosoamino]-1-(3-pyridinyl)-1-butanone	Metabolite	KEGG Compound	C19563	312,1332
+4-(Nitrosoamino)-1-(3-pyridinyl)-1-butanone	Metabolite	KEGG Compound	C19564	428,1332
+4-Hydroxy-1-(3-pyridinyl)-1-butanone	Metabolite	KEGG Compound	C19565	541,1332
+4-Hydroxy-4-(methylnitrosoamino)-1-(3-pyridinyl)-1-butanone	Metabolite	KEGG Compound	C19566	308,1455
+4-Oxo-1-(3-pyridyl)-1-butanone	Metabolite	KEGG Compound	C19567	427,1455
+N-Nitrosomethanamine	Metabolite	KEGG Compound	C19568	384,1498	942,1594
+3-Succinoylpyridine	Metabolite	KEGG Compound	C19569	541,1456
+4-(Methylnitrosamino)-1-(3-pyridyl)-1-butanol	Metabolite	KEGG Compound	C19574	170,1542
+1-(Methylnitrosoamino)-4-(3-pyridinyl)-1,4-butanediol	Metabolite	KEGG Compound	C19577	307,1542
+5-(3-Pyridyl)-2-hydroxytetrahydrofuran	Metabolite	KEGG Compound	C19578	427,1542
+gamma-Hydroxy-3-pyridinebutanoate	Metabolite	KEGG Compound	C19579	540,1542
+alpha-[3-[(Hydroxymethyl)nitrosoamino]propyl]-3-pyridinemethanol	Metabolite	KEGG Compound	C19580	307,1629
+alpha-[3-(Nitrosoamino)propyl]-3-pyridinemethanol	Metabolite	KEGG Compound	C19581	427,1629
+1-(3-Pyridinyl)-1,4-butanediol	Metabolite	KEGG Compound	C19582	540,1629
+Aflatoxin B1-exo-8,9-epoxide	Metabolite	KEGG Compound	C19586	310,1178
+4-(Methylnitrosamino)-1-(1-oxido-3-pyridinyl)-1-butanone	Metabolite	KEGG Compound	C19602	277,1371
+4-(Methylnitrosamino)-1-(3-pyridyl-N-oxide)-1-butanol	Metabolite	KEGG Compound	C19603	276,1591
+4-(Methylnitrosamino)-1-(3-pyridyl)-1-butanol glucuronide	Metabolite	KEGG Compound	C19605	268,1683
+NNAL-N-glucuronide	Metabolite	KEGG Compound	C19606	268,1696
+1-Phenylazo-2,6-dihydroxynaphthalene	Metabolite	KEGG Compound	C20280	276,814
+1-(4-Hydroxyphenylazo)-2-naphthol	Metabolite	KEGG Compound	C20281	276,758
+1-(4-Hydroxyphenylazo)-naphthalene-2,6-diol	Metabolite	KEGG Compound	C20282	403,814
+1-(3,4-Dihydroxyphenylazo)-2-naphthol	Metabolite	KEGG Compound	C20283	401,759
+Benzenediazonium	Metabolite	KEGG Compound	C20284	252,682
+4-Acetylaminobiphenyl	Metabolite	KEGG Compound	C20285	248,161
+2-Hydroxyamino-1-methyl-6-phenylimidazo[4,5-b]pyridine	Metabolite	KEGG Compound	C20286	812,144
+2-Acetoxyamino-1-methyl-6-phenylimidazo[4,5-b]pyridine	Metabolite	KEGG Compound	C20287	936,145
+N-Sulfonyloxy-PhIP	Metabolite	KEGG Compound	C20288	937,187
+N-Hydroxy-IQ	Metabolite	KEGG Compound	C20289	812,260
+N-Acetoxy-IQ	Metabolite	KEGG Compound	C20290	937,260
+N-Hydroxy-MeIQx	Metabolite	KEGG Compound	C20291	812,327
+N-Acetoxy-MeIQx	Metabolite	KEGG Compound	C20293	934,327
+Chromium (V)	Metabolite	KEGG Compound	C20294	184,971
+Chromium (IV)	Metabolite	KEGG Compound	C20295	245,971
+Arsenic (V)	Metabolite	KEGG Compound	C20296	690,992
+Arsenic (III)	Metabolite	KEGG Compound	C20298	784,994
+Dimethylarsinous acid	Metabolite	KEGG Compound	C20300	884,1008
+alpha-Hydroxy-NDMA	Metabolite	KEGG Compound	C20301	877,1594
+Methyldiazonium ion	Metabolite	KEGG Compound	C20302	1071,1594
+Chloroethylene oxide	Metabolite	KEGG Compound	C20303	241,1882
+S-(2-Chloroethyl)glutathione	Metabolite	KEGG Compound	C20304	266,2053
+1,2-Dichloroethanol	Metabolite	KEGG Compound	C20305	275,2101
+Methyldiazohydroxide	Metabolite	KEGG Compound	C20306	1007,1594
+4-Nitrosobiphenyl	Metabolite	KEGG Compound	C20316	377,309
+S-(1,2-Dichlorovinyl)-L-cysteine	Metabolite	KEGG Compound	C20317	856,1932
+S-(1,2-Dichlorovinyl)thiol	Metabolite	KEGG Compound	C20318	948,1933
+Hydronitroxide radical	Metabolite	KEGG Compound	C20319	247,308

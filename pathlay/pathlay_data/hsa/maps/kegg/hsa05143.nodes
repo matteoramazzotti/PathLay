@@ -1,0 +1,47 @@
+TEXT	TYPE	DB	ID	X	Y
+African trypanosomiasis	hsa	KEGG	hsa05143
+LOC102723407	GeneProduct	Entrez Gene	102723407	482,242	482,262
+IDO2	GeneProduct	Entrez Gene	169355	1173,515
+F2RL1	GeneProduct	Entrez Gene	2150	884,685
+PLCB1	GeneProduct	Entrez Gene	23236	1043,685
+GNAQ	GeneProduct	Entrez Gene	2776	946,685
+HBA1	GeneProduct	Entrez Gene	3039	180,450
+HBA2	GeneProduct	Entrez Gene	3040	180,450
+HBB	GeneProduct	Entrez Gene	3043	180,450
+HPR	GeneProduct	Entrez Gene	3250	205,499
+APOA1	GeneProduct	Entrez Gene	335	205,516
+ICAM1	GeneProduct	Entrez Gene	3383	982,289
+IFNG	GeneProduct	Entrez Gene	3458	790,457
+FAS	GeneProduct	Entrez Gene	355	982,156
+IL1B	GeneProduct	Entrez Gene	3553	790,230
+FASLG	GeneProduct	Entrez Gene	356	923,156
+IL6	GeneProduct	Entrez Gene	3569	790,250
+IL10	GeneProduct	Entrez Gene	3586	574,141
+IL12A	GeneProduct	Entrez Gene	3592	655,372
+IL12B	GeneProduct	Entrez Gene	3593	655,372
+IL18	GeneProduct	Entrez Gene	3606	655,392
+IDO1	GeneProduct	Entrez Gene	3620	1173,515
+KNG1	GeneProduct	Entrez Gene	3827	487,472
+LAMA4	GeneProduct	Entrez Gene	3910	1065,248
+MYD88	GeneProduct	Entrez Gene	4615	611,317
+NPPA	GeneProduct	Entrez Gene	4878	487,506
+PLCB2	GeneProduct	Entrez Gene	5330	1043,685
+PLCB3	GeneProduct	Entrez Gene	5331	1043,685
+PLCB4	GeneProduct	Entrez Gene	5332	1043,685
+TLR9	GeneProduct	Entrez Gene	54106	546,317
+PRKCA	GeneProduct	Entrez Gene	5578	1230,685
+PRKCB	GeneProduct	Entrez Gene	5579	1230,685
+PRKCG	GeneProduct	Entrez Gene	5582	1230,685
+SELE	GeneProduct	Entrez Gene	6401	982,268
+THOP1	GeneProduct	Entrez Gene	7064	399,472
+TNF	GeneProduct	Entrez Gene	7124	790,210
+VCAM1	GeneProduct	Entrez Gene	7412	982,248
+APOL1	GeneProduct	Entrez Gene	8542	205,533
+Calcium cation	Metabolite	KEGG Compound	C00076	1164,685
+L-Tryptophan	Metabolite	KEGG Compound	C00078	1243,498
+Diacylglycerol	Metabolite	KEGG Compound	C00165	1109,730
+L-Kynurenine	Metabolite	KEGG Compound	C00328	1243,530
+Nitric oxide	Metabolite	KEGG Compound	C00533	1217,175
+Prostaglandin E2	Metabolite	KEGG Compound	C00584	1230,435
+Prostaglandin D2	Metabolite	KEGG Compound	C00696	1215,419
+D-myo-Inositol 1,4,5-trisphosphate	Metabolite	KEGG Compound	C01245	1109,685

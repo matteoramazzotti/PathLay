@@ -1,0 +1,45 @@
+TEXT	TYPE	DB	ID	X	Y
+Collecting duct acid secretion	mmu	KEGG	mmu04966
+Car2	GeneProduct	Entrez Gene	12349	392,502
+Cl-	Metabolite	KEGG Compound	C00698	486,345
+HCO3-	Metabolite	KEGG Compound	C00288	401,336
+Ammonia	Metabolite	KEGG Compound	C00014	33,511
+Carbonic acid	Metabolite	KEGG Compound	C01353	355,439
+Slc12a7	GeneProduct	Entrez Gene	20499	542,470
+Clcnkb	GeneProduct	Entrez Gene	56365	543,517
+Potassium cation	Metabolite	KEGG Compound	C00238	605,476
+Cl-	Metabolite	KEGG Compound	C00698	605,465
+Cl-	Metabolite	KEGG Compound	C00698	606,519
+H2O	Metabolite	KEGG Compound	C00001	332,563
+H+	Metabolite	KEGG Compound	C00080	106,410
+Potassium cation	Metabolite	KEGG Compound	C00238	215,421
+H+	Metabolite	KEGG Compound	C00080	63,374
+CO2	Metabolite	KEGG Compound	C00011	604,562
+Atp6v1b1	GeneProduct	Entrez Gene	110935	157,334
+Atp6v1a	GeneProduct	Entrez Gene	11964	157,334
+Atp6v1b2	GeneProduct	Entrez Gene	11966	157,334
+Atp6v0d1	GeneProduct	Entrez Gene	11972	157,334
+Atp6v1e1	GeneProduct	Entrez Gene	11973	157,334
+Atp6v0e	GeneProduct	Entrez Gene	11974	157,334
+Atp6v0a1	GeneProduct	Entrez Gene	11975	157,334
+Atp6v0c	GeneProduct	Entrez Gene	11984	157,334
+Atp6v0a4	GeneProduct	Entrez Gene	140494	157,334
+Atp6v0a2	GeneProduct	Entrez Gene	21871	157,334
+Atp6v0d2	GeneProduct	Entrez Gene	242341	157,334
+Tcirg1	GeneProduct	Entrez Gene	27060	157,334
+Atp6v1g3	GeneProduct	Entrez Gene	338375	157,334
+Atp6v1f	GeneProduct	Entrez Gene	66144	157,334
+Atp6v1g2	GeneProduct	Entrez Gene	66237	157,334
+Atp6v1g1	GeneProduct	Entrez Gene	66290	157,334
+Atp6v1c1	GeneProduct	Entrez Gene	66335	157,334
+Atp6v1c2	GeneProduct	Entrez Gene	68775	157,334
+Atp6v1d	GeneProduct	Entrez Gene	73834	157,334
+Atp6v1e2	GeneProduct	Entrez Gene	74915	157,334
+Atp6v0e2	GeneProduct	Entrez Gene	76252	157,334
+Slc4a1	GeneProduct	Entrez Gene	20533	544,339
+Atp4a	GeneProduct	Entrez Gene	11944	159,415
+Atp4b	GeneProduct	Entrez Gene	11945	159,415
+H+	Metabolite	KEGG Compound	C00080	102,333
+CO2	Metabolite	KEGG Compound	C00011	374,565
+H+	Metabolite	KEGG Compound	C00080	302,336
+HCO3-	Metabolite	KEGG Compound	C00288	608,334

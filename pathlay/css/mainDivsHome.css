@@ -1,0 +1,43 @@
+.ont_pool {
+
+    border: 5px solid rgb(0, 102, 153);
+    margin-top: 10px;
+    overflow: scroll;
+    border-radius: 15px;
+    padding: 10px;
+    float: right;
+    height: 500px;
+    display: block;
+    width: 45%;
+}
+
+.ont_display {
+    border: 5px solid rgb(0, 102, 153);
+    margin-top: 10px;
+    overflow: scroll;
+    height: 500px;
+    border-radius: 15px;
+    padding: 10px;
+    float: left;
+    display: block;
+    width: 49%;
+}
+
+.div_ont_search {
+    border: solid orange 0px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 100%;
+    float: left;
+}
+
+.setupHomeDiv {  
+    float:right;
+    width:49%;
+    height:30%;
+    text-align:center;
+    display: none;
+}
+body {
+    font-family: Arial, sans-serif;
+}

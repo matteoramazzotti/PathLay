@@ -1,0 +1,59 @@
+TEXT	TYPE	DB	ID	X	Y
+Cocaine addiction	hsa	KEGG	hsa05030
+CDK5	GeneProduct	Entrez Gene	1020	890,939
+CREB3	GeneProduct	Entrez Gene	10488	1001,697
+ADCY5	GeneProduct	Entrez Gene	111	803,330	807,697	805,1067
+GRIN3A	GeneProduct	Entrez Gene	116443	642,921
+GRIN3B	GeneProduct	Entrez Gene	116444	642,921
+CREB1	GeneProduct	Entrez Gene	1385	1001,697
+ATF2	GeneProduct	Entrez Gene	1386	1001,697
+ATF6B	GeneProduct	Entrez Gene	1388	1001,697
+CREB3L4	GeneProduct	Entrez Gene	148327	1001,697
+DDC	GeneProduct	Entrez Gene	1644	227,622	227,259	226,979
+DLG4	GeneProduct	Entrez Gene	1742	682,938
+DRD1	GeneProduct	Entrez Gene	1812	642,330	642,697	642,1067
+DRD2	GeneProduct	Entrez Gene	1813	642,371	642,754
+FOSB	GeneProduct	Entrez Gene	2354	1038,1014
+GPSM1	GeneProduct	Entrez Gene	26086	800,553
+GNAI1	GeneProduct	Entrez Gene	2770	723,288	723,371	727,582	727,754
+GNAI2	GeneProduct	Entrez Gene	2771	723,288	723,371	727,582	727,754
+GNAI3	GeneProduct	Entrez Gene	2773	723,288	723,371	727,582	727,754
+GNAS	GeneProduct	Entrez Gene	2778	723,330	727,697	725,1067
+GRIA2	GeneProduct	Entrez Gene	2891	642,889
+GRIN1	GeneProduct	Entrez Gene	2902	642,921
+GRIN2A	GeneProduct	Entrez Gene	2903	642,921
+GRIN2B	GeneProduct	Entrez Gene	2904	642,921
+GRIN2C	GeneProduct	Entrez Gene	2905	642,921
+GRIN2D	GeneProduct	Entrez Gene	2906	642,921
+GRM2	GeneProduct	Entrez Gene	2912	642,288	642,582
+GRM3	GeneProduct	Entrez Gene	2913	642,288	642,582
+JUN	GeneProduct	Entrez Gene	3725	1038,997
+MAOA	GeneProduct	Entrez Gene	4128	434,565	434,220	436,926
+MAOB	GeneProduct	Entrez Gene	4129	434,565	434,220	436,926
+ATF4	GeneProduct	Entrez Gene	468	1001,697
+NFKB1	GeneProduct	Entrez Gene	4790	890,916
+PDYN	GeneProduct	Entrez Gene	5173	1108,684
+PRKACA	GeneProduct	Entrez Gene	5566	909,331	913,697	913,1067
+PRKACB	GeneProduct	Entrez Gene	5567	909,331	913,697	913,1067
+PRKACG	GeneProduct	Entrez Gene	5568	909,331	913,697	913,1067
+RELA	GeneProduct	Entrez Gene	5970	890,916
+BDNF	GeneProduct	Entrez Gene	627	1108,711
+CREB3L2	GeneProduct	Entrez Gene	64764	1001,697
+SLC6A3	GeneProduct	Entrez Gene	6531	527,260	529,626	526,995
+SLC18A1	GeneProduct	Entrez Gene	6570	343,311	336,675	343,1030
+SLC18A2	GeneProduct	Entrez Gene	6571	343,311	336,675	343,1030
+TH	GeneProduct	Entrez Gene	7054	157,622	157,259	157,979
+PPP1R1B	GeneProduct	Entrez Gene	84152	912,1006
+CREB3L3	GeneProduct	Entrez Gene	84699	1001,697
+RGS9	GeneProduct	Entrez Gene	8787	800,783
+CDK5R1	GeneProduct	Entrez Gene	8851	848,969
+CREB3L1	GeneProduct	Entrez Gene	90993	1001,697
+CREB5	GeneProduct	Entrez Gene	9586	1001,697
+L-Glutamate	Metabolite	KEGG Compound	C00025	593,237	588,551
+Hydrogen peroxide	Metabolite	KEGG Compound	C00027	428,530	428,186	427,887
+L-Tyrosine	Metabolite	KEGG Compound	C00082	126,637	125,275	127,993
+3,4-Dihydroxy-L-phenylalanine	Metabolite	KEGG Compound	C00355	195,638	197,275	196,994
+3',5'-Cyclic AMP	Metabolite	KEGG Compound	C00575	857,330	860,696	858,1067
+3,4-Dihydroxyphenylacetate	Metabolite	KEGG Compound	C01161	384,531	386,187	384,887
+Dopamine	Metabolite	KEGG Compound	C03758	265,638	405,593	266,275	408,234	570,625	527,328	569,260	525,696	261,994	405,949	526,1065	568,996
+	Metabolite	KEGG Compound	dr:D00110	586,587	584,958	338,703

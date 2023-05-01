@@ -1,0 +1,115 @@
+TEXT	TYPE	DB	ID	X	Y
+Sphingolipid metabolism	mmu	KEGG	mmu00600
+Psap	GeneProduct	Entrez Gene	19156	557,502
+Psapl1	GeneProduct	Entrez Gene	76943	557,502
+Acer3	GeneProduct	Entrez Gene	66190	423,423
+Degs1	GeneProduct	Entrez Gene	13244	483,340
+9130409I23Rik	GeneProduct	Entrez Gene	619326	483,340
+Degs2	GeneProduct	Entrez Gene	70059	483,340
+Degs1	GeneProduct	Entrez Gene	13244	360,340
+9130409I23Rik	GeneProduct	Entrez Gene	619326	360,340
+Degs2	GeneProduct	Entrez Gene	70059	360,340
+Smpd1	GeneProduct	Entrez Gene	20597	729,375
+Smpd2	GeneProduct	Entrez Gene	20598	729,375
+Enpp7	GeneProduct	Entrez Gene	238011	729,375
+Smpd3	GeneProduct	Entrez Gene	58994	729,375
+Smpd4	GeneProduct	Entrez Gene	77626	729,375
+Cers6	GeneProduct	Entrez Gene	241447	577,281
+Cers3	GeneProduct	Entrez Gene	545975	577,281
+Cers4	GeneProduct	Entrez Gene	67260	577,281
+Cers5	GeneProduct	Entrez Gene	71949	577,281
+Cers2	GeneProduct	Entrez Gene	76893	577,281
+Cers1	GeneProduct	Entrez Gene	93898	577,281
+Cerk	GeneProduct	Entrez Gene	223753	729,422
+Plpp1	GeneProduct	Entrez Gene	19012	729,444
+Plpp2	GeneProduct	Entrez Gene	50784	729,444
+Plpp3	GeneProduct	Entrez Gene	67916	729,444
+Plpp1	GeneProduct	Entrez Gene	19012	520,187
+Plpp2	GeneProduct	Entrez Gene	50784	520,187
+Plpp3	GeneProduct	Entrez Gene	67916	520,187
+Plpp1	GeneProduct	Entrez Gene	19012	229,231
+Plpp2	GeneProduct	Entrez Gene	50784	229,231
+Plpp3	GeneProduct	Entrez Gene	67916	229,231
+Sphinganine	Metabolite	KEGG Compound	C00836	336,366
+Phytosphingosine	Metabolite	KEGG Compound	C12144	374,294
+Phytoceramide	Metabolite	KEGG Compound	C12145	481,294
+Dihydroceramide	Metabolite	KEGG Compound	C12126	481,366
+Lactosylceramide	Metabolite	KEGG Compound	C01290	337,453
+Sphingosine 1-phosphate	Metabolite	KEGG Compound	C06124	643,146
+Sgpp2	GeneProduct	Entrez Gene	433323	729,465
+Sgpp1	GeneProduct	Entrez Gene	81535	729,465
+Sptlc2	GeneProduct	Entrez Gene	20773	171,367
+Sptlc3	GeneProduct	Entrez Gene	228677	171,367
+Sptlc1	GeneProduct	Entrez Gene	268656	171,367
+Kdsr	GeneProduct	Entrez Gene	70750	280,376
+Gal3st1	GeneProduct	Entrez Gene	53897	729,644
+Gla	GeneProduct	Entrez Gene	11605	622,584
+Gal3st1	GeneProduct	Entrez Gene	53897	729,537
+Neu1	GeneProduct	Entrez Gene	18010	574,536
+Neu2	GeneProduct	Entrez Gene	23956	574,536
+Neu4	GeneProduct	Entrez Gene	241159	574,536
+Neu3	GeneProduct	Entrez Gene	50877	574,536
+Ugt8a	GeneProduct	Entrez Gene	22239	670,495
+Glb1	GeneProduct	Entrez Gene	12091	423,465
+Gba	GeneProduct	Entrez Gene	14466	557,454
+Gba2	GeneProduct	Entrez Gene	230101	557,454
+Ugcg	GeneProduct	Entrez Gene	22234	557,425
+Sgpp2	GeneProduct	Entrez Gene	433323	570,187
+Sgpp1	GeneProduct	Entrez Gene	81535	570,187
+Asah1	GeneProduct	Entrez Gene	11886	646,259
+Acer1	GeneProduct	Entrez Gene	171168	646,259
+Acer2	GeneProduct	Entrez Gene	230379	646,259
+Asah2	GeneProduct	Entrez Gene	54447	646,259
+Sphk1	GeneProduct	Entrez Gene	20698	645,187
+Sphk2	GeneProduct	Entrez Gene	56632	645,187
+Sphk1	GeneProduct	Entrez Gene	20698	335,231
+Sphk2	GeneProduct	Entrez Gene	56632	335,231
+Sgpl1	GeneProduct	Entrez Gene	20397	556,138
+Sgpl1	GeneProduct	Entrez Gene	20397	423,147
+Galc	GeneProduct	Entrez Gene	14420	624,473
+Arsa	GeneProduct	Entrez Gene	11883	729,583
+B4galt5	GeneProduct	Entrez Gene	56336	423,445
+B4galt6	GeneProduct	Entrez Gene	56386	423,445
+Sgpp2	GeneProduct	Entrez Gene	433323	280,231
+Sgpp1	GeneProduct	Entrez Gene	81535	280,231
+Glucosylceramide	Metabolite	KEGG Compound	C01190	481,454
+Sphinganine 1-phosphate	Metabolite	KEGG Compound	C01120	336,146
+Ethanolamine phosphate	Metabolite	KEGG Compound	C00346	481,146
+Ceramide phosphoethanolamine	Metabolite	KEGG Compound	C06062	787,283
+Ceramide 2-aminoethylphosphonate	Metabolite	KEGG Compound	C05681	787,308
+3-Dehydrosphinganine	Metabolite	KEGG Compound	C02934	229,366
+L-Serine	Metabolite	KEGG Compound	C00065	137,307
+Palmitoyl-CoA	Metabolite	KEGG Compound	C00154	119,366
+Sphingosine	Metabolite	KEGG Compound	C00319	643,221
+N-Acylsphingosine	Metabolite	KEGG Compound	C00195	644,365
+Asah1	GeneProduct	Entrez Gene	11886	423,402
+Asah2	GeneProduct	Entrez Gene	54447	423,402
+Galactosylceramide	Metabolite	KEGG Compound	C02686	644,536
+Psychosine	Metabolite	KEGG Compound	C01747	787,149
+Sphingosyl-phosphocholine	Metabolite	KEGG Compound	C03640	910,366
+Ceramide 1-phosphate	Metabolite	KEGG Compound	C02960	787,454
+Sphingomyelin	Metabolite	KEGG Compound	C00550	787,365
+Sulfatide	Metabolite	KEGG Compound	C06125	787,536
+GM4	Metabolite	KEGG Compound	C06128	499,536
+Digalactosylceramide	Metabolite	KEGG Compound	C06126	643,643
+Digalactosylceramide sulfate	Metabolite	KEGG Compound	C06127	786,644
+Sgms1	GeneProduct	Entrez Gene	208449	729,336
+Sgms2	GeneProduct	Entrez Gene	74442	729,336
+Asah1	GeneProduct	Entrez Gene	11886	423,284
+Asah2	GeneProduct	Entrez Gene	54447	423,284
+Lactosylceramide sulfate	Metabolite	KEGG Compound	C03405	229,452
+Gal3st1	GeneProduct	Entrez Gene	53897	280,444
+Arsa	GeneProduct	Entrez Gene	11883	280,464
+Gangliotriaosylceramide-II3 sulfate	Metabolite	KEGG Compound	C22467	119,452
+B4galnt1	GeneProduct	Entrez Gene	14421	171,444
+Hexa	GeneProduct	Entrez Gene	15211	171,464
+Hexb	GeneProduct	Entrez Gene	15212	171,464
+Cers6	GeneProduct	Entrez Gene	241447	423,376
+Cers3	GeneProduct	Entrez Gene	545975	423,376
+Cers4	GeneProduct	Entrez Gene	67260	423,376
+Cers5	GeneProduct	Entrez Gene	71949	423,376
+Cers2	GeneProduct	Entrez Gene	76893	423,376
+Cers1	GeneProduct	Entrez Gene	93898	423,376
+Degs1	GeneProduct	Entrez Gene	13244	556,365
+9130409I23Rik	GeneProduct	Entrez Gene	619326	556,365
+Degs2	GeneProduct	Entrez Gene	70059	556,365

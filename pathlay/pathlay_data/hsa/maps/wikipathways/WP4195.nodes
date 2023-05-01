@@ -1,0 +1,34 @@
+TEXT	TYPE	DB	ID	X	Y
+Phosphatidylcholine catabolism	Homo sapiens	WikiPathways	WP4195
+acetylcholine	Metabolite	Wikidata	Q180623	841.5966480697283,143.81763528844564
+Stearoyl(18:0) CoA	Metabolite	Wikidata	Q27124612	546.5,570.0
+PLD	Protein	Enzyme Nomenclature	3.1.4.4	638.9670109714432,97.27983539094649
+Acyl-CoA	Metabolite	Wikidata	Q2699537	310.0,234.0
+PC(18:0/20:4)	Metabolite	CAS	35418-59-8	546.5,159.4554953707502
+sphingomyelin	Metabolite	KEGG	C00550	1066.121399176956,93.8271604938272
+Lyso-PC(/20:4)	Metabolite	CAS	108341-80-6	179.9410163339383,390.0
+sphingomyelinases	Protein	Enzyme Nomenclature	3.1.4.12	957.0679012345678,125.1028806584362
+choline kinase	Protein	Enzyme Nomenclature	2.7.1.32	1011.6151385927502,271.49964463397305
+Choline	Metabolite	KEGG	C00114	772.0,234.11978221415603
+FFA	Metabolite	KEGG	C13038	278.0,271.0
+PLA1	Protein	Enzyme Nomenclature	3.1.1.32	623.0,293.0
+ATP	Metabolite	KEGG	C00002	918.5092395167026,271.499644633973
+Acyltransferase	Protein	Enzyme Nomenclature	2.3.1	341.0,302.0
+phosphocholine	Metabolite	KEGG	C00588	1066.121399176956,234.11978221415603
+PA-PLA1	Protein	Uniprot-TrEMBL	D3K5P3	620.0127041742286,405.9074410163345
+Kennedy pathway	Pathway	WikiPathways	WP3933	1066.121399176956,316.87242798353907
+CoA	Metabolite	Wikidata	Q407635	604.5,507.0
+cPLA2	Protein	Enzyme Nomenclature	3.1.1.4	376.0,94.0
+PDE	Protein	Enzyme Nomenclature	3.1.4	179.9410163339383,444.64609800362945
+Glycerol 3-phosphate	Metabolite	Wikidata	Q26711901	269.5,498.98989898989896
+FFA(18:0)	Metabolite	Wikidata	Q209685	546.5,456.0
+LysoPLA1	Protein	Enzyme Nomenclature	3.1.1.5	124.0,234.0
+ACS	Protein	Enzyme Nomenclature	6.2.1.3	470.0,523.0
+Lyso-PC	Metabolite	ChEBI	CHEBI:36313	234.0,163.0
+betaine	Metabolite	Wikidata	Q10860583	780.8832425892326,65.16696167835508
+Lyso-PA(/20:4)	Metabolite	Wikidata	Q27105014	701.0,507.0
+PA(18:0/20:4)	Metabolite	Wikidata	Q27146827	701.0,335.0
+AA	Metabolite	Wikidata	Q407699	84.0,163.0
+glycerol-phosphocholine	Metabolite	Wikidata	Q28529699	234.0,335.0
+LysoPLA2*	Protein	Enzyme Nomenclature	3.1.1.5	131.0,286.0
+ADP	Metabolite	KEGG	C00008	1017.1501427341168,194.05217572556182

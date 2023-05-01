@@ -1,0 +1,33 @@
+TEXT	TYPE	DB	ID	X	Y
+Glycosaminoglycan biosynthesis - heparan sulfate / heparin	hsa	KEGG	hsa00534
+B4GALT7	GeneProduct	Entrez Gene	11285	958.5,296
+B3GALT6	GeneProduct	Entrez Gene	126792	872.5,296
+EXT1	GeneProduct	Entrez Gene	2131	153,296	1311,352	588.5,296	396.5,296	306.5,296	203.5,296
+EXT2	GeneProduct	Entrez Gene	2132	153,296	1311,352	588.5,296	396.5,296	306.5,296	203.5,296
+EXTL1	GeneProduct	Entrez Gene	2134	1312,422	500.5,296
+EXTL2	GeneProduct	Entrez Gene	2135	1311,281	692.5,296
+EXTL3	GeneProduct	Entrez Gene	2137	1311,281	1312,422	692.5,296	500.5,296
+HS3ST5	GeneProduct	Entrez Gene	222537	238,762
+GLCE	GeneProduct	Entrez Gene	26035	610,511	1312,718
+B3GAT3	GeneProduct	Entrez Gene	26229	782.5,296
+HS6ST3	GeneProduct	Entrez Gene	266722	238,610	750,610	1155,799
+NDST1	GeneProduct	Entrez Gene	3340	379,462	1312,640
+XYLT1	GeneProduct	Entrez Gene	64131	1042.5,296
+XYLT2	GeneProduct	Entrez Gene	64132	1042.5,296
+NDST4	GeneProduct	Entrez Gene	64579	379,462	1312,640
+NDST2	GeneProduct	Entrez Gene	8509	379,462	1312,640
+HS6ST2	GeneProduct	Entrez Gene	90161	186,610
+NDST3	GeneProduct	Entrez Gene	9348	379,462	1312,640
+HS6ST1	GeneProduct	Entrez Gene	9394	1105,799	698,610
+HS2ST1	GeneProduct	Entrez Gene	9653	964,610	545,610
+HS3ST3B1	GeneProduct	Entrez Gene	9953	786,941	989,941	1130,942
+HS3ST3A1	GeneProduct	Entrez Gene	9955	786,941	989,941	1130,942
+HS3ST2	GeneProduct	Entrez Gene	9956	545,762	939,941
+HS3ST1	GeneProduct	Entrez Gene	9957	379,762	186,762
+Acetate	Metabolite	KEGG Compound	C00033	1283,660
+3'-Phosphoadenylyl sulfate	Metabolite	KEGG Compound	C00053	1282,623
+Adenosine 3',5'-bisphosphate	Metabolite	KEGG Compound	C00054	1343,660
+	Metabolite	KEGG Compound	gl:G00157	1311,254
+	Metabolite	KEGG Compound	gl:G00162	1311,323
+	Metabolite	KEGG Compound	gl:G00163	1311,392
+	Metabolite	KEGG Compound	gl:G00164	1311,463

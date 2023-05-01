@@ -1,0 +1,27 @@
+TEXT	TYPE	DB	ID	X	Y
+Platelet-mediated interactions with vascular and circulating cells	Homo sapiens	WikiPathways	WP4462
+SELE	GeneProduct	Entrez Gene	6401	732.0,143.0
+P-selectin	Protein	Uniprot-TrEMBL	P16109	568.0,332.0
+TLR2	Protein	Uniprot-TrEMBL	O60603	495.5,296.0
+IL1B	GeneProduct	Entrez Gene	3553	614.0,228.0
+CD40	GeneProduct	Entrez Gene	958	731.5,330.0
+TLR4	Protein	Uniprot-TrEMBL	O00206	584.5,442.0
+TLR7	Protein	Uniprot-TrEMBL	B2R9N9	495.5,372.0
+CD40	GeneProduct	Entrez Gene	958	731.5,330.0
+VCAM1	GeneProduct	Entrez Gene	7412	732.0,168.0
+ICAM1	GeneProduct	Entrez Gene	3383	732.0,193.0
+PF4	GeneProduct	Entrez Gene	5196	299.0,489.0
+Serotonin	Metabolite	KEGG	C00780	299.0,518.0
+CCL5	GeneProduct	Entrez Gene	6352	299.0,547.0
+TGFB1	GeneProduct	Entrez Gene	7040	299.0,576.0
+CD40LG	GeneProduct	Entrez Gene	959	128.0,286.0
+PSGL1	Protein	Uniprot-TrEMBL	Q14242	186.0,210.0
+P-selectin	Protein	Uniprot-TrEMBL	P16109	568.0,332.0
+PSGL1	Protein	Uniprot-TrEMBL	Q14242	186.0,210.0
+PSGL1	Protein	Uniprot-TrEMBL	Q14242	186.0,210.0
+CD40-L	Protein	Uniprot-TrEMBL	P29965	612.5,368.0
+TLR4	Protein	Uniprot-TrEMBL	O00206	584.5,442.0
+IL1B	GeneProduct	Entrez Gene	3553	614.0,228.0
+CCL2	GeneProduct	Entrez Gene	6347	614.0,253.0
+TGFB2	GeneProduct	Entrez Gene	7042	299.0,604.0
+TGFB3	GeneProduct	Entrez Gene	7043	299.0,629.0

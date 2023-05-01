@@ -1,0 +1,83 @@
+TEXT	TYPE	DB	ID	X	Y
+Prolactin signaling pathway	hsa	KEGG	hsa04917
+AKT3	GeneProduct	Entrez Gene	10000	661,267	661,133
+CGA	GeneProduct	Entrez Gene	1081	307,671
+CISH	GeneProduct	Entrez Gene	1154	1028,289
+SOCS4	GeneProduct	Entrez Gene	122809	1028,321
+MAPK14	GeneProduct	Entrez Gene	1432	738,233
+CSN2	GeneProduct	Entrez Gene	1447	1028,530
+CYP17A1	GeneProduct	Entrez Gene	1586	651,673
+ELF5	GeneProduct	Entrez Gene	2001	1028,506
+AKT1	GeneProduct	Entrez Gene	207	661,267	661,133
+AKT2	GeneProduct	Entrez Gene	208	661,267	661,133
+ESR1	GeneProduct	Entrez Gene	2099	1028,640	916,660
+ESR2	GeneProduct	Entrez Gene	2100	1028,640	916,660
+FOXO3	GeneProduct	Entrez Gene	2309	752,133
+FOS	GeneProduct	Entrez Gene	2353	897,184
+SHC2	GeneProduct	Entrez Gene	25759	331,267	331,133
+GALT	GeneProduct	Entrez Gene	2592	1014,133
+GCK	GeneProduct	Entrez Gene	2645	1028,873	502,891
+GRB2	GeneProduct	Entrez Gene	2885	424,184
+GSK3B	GeneProduct	Entrez Gene	2932	752,267
+SOCS7	GeneProduct	Entrez Gene	30837	1028,321
+HRAS	GeneProduct	Entrez Gene	3265	580,184
+INS	GeneProduct	Entrez Gene	3630	1028,937
+IRF1	GeneProduct	Entrez Gene	3659	1028,705
+JAK2	GeneProduct	Entrez Gene	3717	254,363	254,133
+KRAS	GeneProduct	Entrez Gene	3845	580,184
+LHB	GeneProduct	Entrez Gene	3972	307,671
+LHCGR	GeneProduct	Entrez Gene	3973	1028,587	384,671
+SHC4	GeneProduct	Entrez Gene	399694	331,267	331,133
+NFKB1	GeneProduct	Entrez Gene	4790	675,463
+NRAS	GeneProduct	Entrez Gene	4893	580,184
+PIK3CA	GeneProduct	Entrez Gene	5290	514,267	514,133
+PIK3CB	GeneProduct	Entrez Gene	5291	514,267	514,133
+PIK3CD	GeneProduct	Entrez Gene	5293	514,267	514,133
+PIK3R1	GeneProduct	Entrez Gene	5295	514,267	514,133
+PIK3R2	GeneProduct	Entrez Gene	5296	514,267	514,133
+SHC3	GeneProduct	Entrez Gene	53358	331,267	331,133
+MAPK1	GeneProduct	Entrez Gene	5594	813,184
+MAPK3	GeneProduct	Entrez Gene	5595	813,184
+MAPK8	GeneProduct	Entrez Gene	5599	661,233
+MAPK11	GeneProduct	Entrez Gene	5600	738,233
+MAPK9	GeneProduct	Entrez Gene	5601	661,233
+MAPK10	GeneProduct	Entrez Gene	5602	661,233
+MAPK13	GeneProduct	Entrez Gene	5603	738,233
+MAP2K1	GeneProduct	Entrez Gene	5604	738,184
+MAP2K2	GeneProduct	Entrez Gene	5605	738,184
+PRL	GeneProduct	Entrez Gene	5617	99,363	99,133
+PRLR	GeneProduct	Entrez Gene	5618	176,363	176,133	1028,815
+RAF1	GeneProduct	Entrez Gene	5894	661,184
+CCND1	GeneProduct	Entrez Gene	595	1025,213	931,267	931,464
+RELA	GeneProduct	Entrez Gene	5970	675,463
+MAPK12	GeneProduct	Entrez Gene	6300	738,233
+SHC1	GeneProduct	Entrez Gene	6464	331,267	331,133
+SLC2A2	GeneProduct	Entrez Gene	6514	1028,840	386,909
+SOS1	GeneProduct	Entrez Gene	6654	500,184
+SOS2	GeneProduct	Entrez Gene	6655	500,184
+SRC	GeneProduct	Entrez Gene	6714	424,267	424,133
+STAT1	GeneProduct	Entrez Gene	6772	426,363
+STAT3	GeneProduct	Entrez Gene	6774	426,363
+STAT5A	GeneProduct	Entrez Gene	6776	426,363
+STAT5B	GeneProduct	Entrez Gene	6777	426,363
+TH	GeneProduct	Entrez Gene	7054	1028,748	674,778
+PIK3R3	GeneProduct	Entrez Gene	8503	514,267	514,133
+TNFSF11	GeneProduct	Entrez Gene	8600	1028,379	307,463
+SOCS1	GeneProduct	Entrez Gene	8651	1028,321
+TNFRSF11A	GeneProduct	Entrez Gene	8792	384,463
+SOCS2	GeneProduct	Entrez Gene	8835	1028,321
+CCND2	GeneProduct	Entrez Gene	894	1028,910
+SOCS3	GeneProduct	Entrez Gene	9021	1028,321
+SOCS6	GeneProduct	Entrez Gene	9306	1028,321
+SOCS5	GeneProduct	Entrez Gene	9655	1028,321
+ATP	Metabolite	KEGG Compound	C00002	666,907
+D-Glucose	Metabolite	KEGG Compound	C00031	453,907
+L-Tyrosine	Metabolite	KEGG Compound	C00082	721,763
+D-Glucose 6-phosphate	Metabolite	KEGG Compound	C00092	559,907
+Androstenedione	Metabolite	KEGG Compound	C00280	704,659
+3,4-Dihydroxy-L-phenylalanine	Metabolite	KEGG Compound	C00355	624,764
+Progesterone	Metabolite	KEGG Compound	C00410	599,659
+Estrone	Metabolite	KEGG Compound	C00468	762,659
+Estradiol-17beta	Metabolite	KEGG Compound	C00951	819,659
+Dopamine	Metabolite	KEGG Compound	C03758	525,763
+Phosphatidylinositol-3,4,5-trisphosphate	Metabolite	KEGG Compound	C05981	589,266	589,132

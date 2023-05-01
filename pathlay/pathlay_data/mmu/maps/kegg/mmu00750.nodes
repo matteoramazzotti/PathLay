@@ -1,0 +1,49 @@
+TEXT	TYPE	DB	ID	X	Y
+Vitamin B6 metabolism	mmu	KEGG	mmu00750
+D-Glyceraldehyde 3-phosphate	Metabolite	KEGG Compound	C00118	922,277
+D-Ribose 5-phosphate	Metabolite	KEGG Compound	C00117	877,307
+Aox1	GeneProduct	Entrez Gene	11761	541,202
+Aox2	GeneProduct	Entrez Gene	213043	541,202
+Aox3	GeneProduct	Entrez Gene	71724	541,202
+Aox4	GeneProduct	Entrez Gene	71872	541,202
+Pnpo	GeneProduct	Entrez Gene	103711	623,136
+Succinate semialdehyde	Metabolite	KEGG Compound	C00232	70,136
+2-(Acetamidomethylene)succinate	Metabolite	KEGG Compound	C01215	70,212
+3-Hydroxy-2-methylpyridine-5-carboxylate	Metabolite	KEGG Compound	C01270	170,212
+3-Hydroxy-2-methylpyridine-4,5-dicarboxylate	Metabolite	KEGG Compound	C04604	270,212
+2-Methyl-3-hydroxy-5-formylpyridine-4-carboxylate	Metabolite	KEGG Compound	C06050	370,212
+4-Pyridoxolactone	Metabolite	KEGG Compound	C00971	470,159
+Pyridoxal	Metabolite	KEGG Compound	C00250	598,212
+Pyridoxamine	Metabolite	KEGG Compound	C00534	598,76
+Pyridoxamine phosphate	Metabolite	KEGG Compound	C00647	756,76
+Pyridoxal phosphate	Metabolite	KEGG Compound	C00018	756,212
+Pyridoxine phosphate	Metabolite	KEGG Compound	C00627	756,348
+Glycolaldehyde	Metabolite	KEGG Compound	C00266	457,348
+Pyridoxine	Metabolite	KEGG Compound	C00314	598,348
+3-Hydroxy-4-hydroxymethyl-2-methylpyridine-5-carboxylate	Metabolite	KEGG Compound	C04773	386,432
+2-(Hydroxymethyl)-3-(acetamidomethylene)succinate	Metabolite	KEGG Compound	C04690	251,432
+4-Phospho-D-erythronate	Metabolite	KEGG Compound	C03393	421,526
+D-Erythrose 4-phosphate	Metabolite	KEGG Compound	C00279	309,526
+Isopyridoxal	Metabolite	KEGG Compound	C06051	598,432
+5-Pyridoxolactone	Metabolite	KEGG Compound	C06052	494,432
+2-(Hydroxymethyl)-4-oxobutanoate	Metabolite	KEGG Compound	C04106	126,432
+2-Oxo-3-hydroxy-4-phosphobutanoate	Metabolite	KEGG Compound	C06054	533,526
+O-Phospho-4-hydroxy-L-threonine	Metabolite	KEGG Compound	C06055	646,526
+Pnpo	GeneProduct	Entrez Gene	103711	757,136
+Pdxp	GeneProduct	Entrez Gene	57028	682,86
+Phospho2	GeneProduct	Entrez Gene	73373	682,86
+Pdxk	GeneProduct	Entrez Gene	216134	682,67
+Pdxp	GeneProduct	Entrez Gene	57028	682,358
+Phospho2	GeneProduct	Entrez Gene	73373	682,358
+Pdxk	GeneProduct	Entrez Gene	216134	682,339
+Pdxp	GeneProduct	Entrez Gene	57028	682,222
+Phospho2	GeneProduct	Entrez Gene	73373	682,222
+Pdxk	GeneProduct	Entrez Gene	216134	682,203
+Psat1	GeneProduct	Entrez Gene	107272	592,527
+Pnpo	GeneProduct	Entrez Gene	103711	757,291
+2-Amino-3-oxo-4-phosphonooxybutyrate	Metabolite	KEGG Compound	C07335	756,526
+Pnpo	GeneProduct	Entrez Gene	103711	623,291
+4-Pyridoxate	Metabolite	KEGG Compound	C00847	470,212
+3-Amino-2-oxopropyl phosphate	Metabolite	KEGG Compound	C11638	756,438
+4-Hydroxy-L-threonine	Metabolite	KEGG Compound	C06056	646,458
+L-Glutamine	Metabolite	KEGG Compound	C00064	852,277

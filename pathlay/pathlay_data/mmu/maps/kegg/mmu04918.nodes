@@ -1,0 +1,142 @@
+TEXT	TYPE	DB	ID	X	Y
+Thyroid hormone synthesis	mmu	KEGG	mmu04918
+Slc5a5	GeneProduct	Entrez Gene	114479	244,556
+Triiodothyronine	Metabolite	KEGG Compound	C02465	113,828
+Triiodothyronine	Metabolite	KEGG Compound	C02465	113,852
+Triiodothyronine	Metabolite	KEGG Compound	C02465	113,878
+Atp1a1	GeneProduct	Entrez Gene	11928	245,654
+Atp1b1	GeneProduct	Entrez Gene	11931	245,654
+Atp1b2	GeneProduct	Entrez Gene	11932	245,654
+Atp1b3	GeneProduct	Entrez Gene	11933	245,654
+Fxyd2	GeneProduct	Entrez Gene	11936	245,654
+Atp1a3	GeneProduct	Entrez Gene	232975	245,654
+Atp1a4	GeneProduct	Entrez Gene	27222	245,654
+Atp1b4	GeneProduct	Entrez Gene	67821	245,654
+Atp1a2	GeneProduct	Entrez Gene	98660	245,654
+Slc26a4	GeneProduct	Entrez Gene	23985	770,556
+Duox2	GeneProduct	Entrez Gene	214593	770,645
+Duox1	GeneProduct	Entrez Gene	99439	770,645
+Tpo	GeneProduct	Entrez Gene	22018	770,592
+Iyd	GeneProduct	Entrez Gene	70337	409,627
+Diacylglycerol	Metabolite	KEGG Compound	C00165	446,386
+D-myo-Inositol 1,4,5-trisphosphate	Metabolite	KEGG Compound	C01245	446,424
+3',5'-Cyclic AMP	Metabolite	KEGG Compound	C00575	445,331
+Prkca	GeneProduct	Entrez Gene	18750	505,386
+Prkcb	GeneProduct	Entrez Gene	18751	505,386
+Prkcg	GeneProduct	Entrez Gene	18752	505,386
+Prkaca	GeneProduct	Entrez Gene	18747	505,331
+Prkacb	GeneProduct	Entrez Gene	18749	505,331
+Ttf1	GeneProduct	Entrez Gene	22130	602,326
+Ttf2	GeneProduct	Entrez Gene	74044	602,349
+Pax8	GeneProduct	Entrez Gene	18510	602,373
+Atf2	GeneProduct	Entrez Gene	11909	602,396
+Atf4	GeneProduct	Entrez Gene	11911	602,396
+Creb1	GeneProduct	Entrez Gene	12912	602,396
+Creb3	GeneProduct	Entrez Gene	12913	602,396
+Atf6b	GeneProduct	Entrez Gene	12915	602,396
+Creb3l2	GeneProduct	Entrez Gene	208647	602,396
+Creb3l3	GeneProduct	Entrez Gene	208677	602,396
+Creb5	GeneProduct	Entrez Gene	231991	602,396
+Creb3l1	GeneProduct	Entrez Gene	26427	602,396
+Creb3l4	GeneProduct	Entrez Gene	78284	602,396
+Sodium cation	Metabolite	KEGG Compound	C01330	306,561
+Iodide	Metabolite	KEGG Compound	C00708	171,551
+Iodide	Metabolite	KEGG Compound	C00708	832,554
+Tg	GeneProduct	Entrez Gene	21819	935,698
+3-Iodo-L-tyrosine	Metabolite	KEGG Compound	C02515	907,667
+3,5-Diiodo-L-tyrosine	Metabolite	KEGG Compound	C01060	961,667
+Cga	GeneProduct	Entrez Gene	12640	161,356
+Tshb	GeneProduct	Entrez Gene	22094	161,356
+Tg	GeneProduct	Entrez Gene	21819	935,782
+3-Iodo-L-tyrosine	Metabolite	KEGG Compound	C02515	907,753
+3,5-Diiodo-L-tyrosine	Metabolite	KEGG Compound	C01060	961,753
+Thyroxine	Metabolite	KEGG Compound	C01829	961,812
+Triiodothyronine	Metabolite	KEGG Compound	C02465	907,812
+Tg	GeneProduct	Entrez Gene	21819	453,786
+3-Iodo-L-tyrosine	Metabolite	KEGG Compound	C02515	425,757
+3,5-Diiodo-L-tyrosine	Metabolite	KEGG Compound	C01060	479,754
+Thyroxine	Metabolite	KEGG Compound	C01829	479,813
+Triiodothyronine	Metabolite	KEGG Compound	C02465	430,816
+Tshr	GeneProduct	Entrez Gene	22095	244,357
+Triiodothyronine	Metabolite	KEGG Compound	C02465	309,829
+Thyroxine	Metabolite	KEGG Compound	C01829	309,806
+Triiodothyronine	Metabolite	KEGG Compound	C02465	183,829
+Thyroxine	Metabolite	KEGG Compound	C01829	183,806
+3-Iodo-L-tyrosine	Metabolite	KEGG Compound	C02515	420,660
+3,5-Diiodo-L-tyrosine	Metabolite	KEGG Compound	C01060	454,661
+Sodium cation	Metabolite	KEGG Compound	C01330	169,650
+Potassium cation	Metabolite	KEGG Compound	C00238	302,655
+Gnaq	GeneProduct	Entrez Gene	14682	312,386
+Iodide	Metabolite	KEGG Compound	C00708	438,581
+Duoxa2	GeneProduct	Entrez Gene	66811	771,697
+NADPH	Metabolite	KEGG Compound	C00005	727,670
+NADP+	Metabolite	KEGG Compound	C00006	725,624
+Oxygen	Metabolite	KEGG Compound	C00007	813,671
+Hydrogen peroxide	Metabolite	KEGG Compound	C00027	816,623
+Tpo	GeneProduct	Entrez Gene	22018	903,593
+Hydrogen peroxide	Metabolite	KEGG Compound	C00027	915,624
+Itpr1	GeneProduct	Entrez Gene	16438	502,467
+Itpr2	GeneProduct	Entrez Gene	16439	502,467
+Itpr3	GeneProduct	Entrez Gene	16440	502,467
+Calcium cation	Metabolite	KEGG Compound	C00076	499,428
+Plcb1	GeneProduct	Entrez Gene	18795	387,386
+Plcb2	GeneProduct	Entrez Gene	18796	387,386
+Plcb3	GeneProduct	Entrez Gene	18797	387,386
+Plcb4	GeneProduct	Entrez Gene	18798	387,386
+Tpo	GeneProduct	Entrez Gene	22018	905,737
+Hydrogen peroxide	Metabolite	KEGG Compound	C00027	907,715
+Tg	GeneProduct	Entrez Gene	21819	674,506
+Tg	GeneProduct	Entrez Gene	21819	674,523
+Hspa5	GeneProduct	Entrez Gene	14828	643,456
+Hsp90b1	GeneProduct	Entrez Gene	22027	643,478
+Canx	GeneProduct	Entrez Gene	12330	708,456
+Pdia4	GeneProduct	Entrez Gene	12304	708,478
+Gnas	GeneProduct	Entrez Gene	14683	312,331
+Tg	GeneProduct	Entrez Gene	21819	540,614
+Tg	GeneProduct	Entrez Gene	21819	549,637
+Lrp2	GeneProduct	Entrez Gene	14725	768,818
+Tg	GeneProduct	Entrez Gene	21819	935,844
+Lrp2	GeneProduct	Entrez Gene	14725	683,818
+Tg	GeneProduct	Entrez Gene	21819	683,845
+Tg	GeneProduct	Entrez Gene	21819	168,896
+Hydrogen peroxide	Metabolite	KEGG Compound	C00027	720,765
+H2O	Metabolite	KEGG Compound	C00001	719,714
+Adcy4	GeneProduct	Entrez Gene	104110	388,331
+Adcy3	GeneProduct	Entrez Gene	104111	388,331
+Adcy6	GeneProduct	Entrez Gene	11512	388,331
+Adcy7	GeneProduct	Entrez Gene	11513	388,331
+Adcy8	GeneProduct	Entrez Gene	11514	388,331
+Adcy9	GeneProduct	Entrez Gene	11515	388,331
+Adcy2	GeneProduct	Entrez Gene	210044	388,331
+Adcy5	GeneProduct	Entrez Gene	224129	388,331
+Adcy1	GeneProduct	Entrez Gene	432530	388,331
+Glutathione	Metabolite	KEGG Compound	C00051	675,714
+Glutathione disulfide	Metabolite	KEGG Compound	C00127	675,765
+NADPH	Metabolite	KEGG Compound	C00005	631,765
+NADP+	Metabolite	KEGG Compound	C00006	629,714
+D-Glucose 6-phosphate	Metabolite	KEGG Compound	C00092	585,714
+D-Ribose 5-phosphate	Metabolite	KEGG Compound	C00117	586,765
+D-Xylulose 5-phosphate	Metabolite	KEGG Compound	C00231	586,765
+Gpx1	GeneProduct	Entrez Gene	14775	703,738
+Gpx2	GeneProduct	Entrez Gene	14776	703,738
+Gpx3	GeneProduct	Entrez Gene	14778	703,738
+Gpx5	GeneProduct	Entrez Gene	14780	703,738
+Gpx7	GeneProduct	Entrez Gene	67305	703,738
+Gpx8	GeneProduct	Entrez Gene	69590	703,738
+Gpx6	GeneProduct	Entrez Gene	75512	703,738
+Asgr1	GeneProduct	Entrez Gene	11889	628,528
+Asgr2	GeneProduct	Entrez Gene	11890	628,528
+Gsr	GeneProduct	Entrez Gene	14782	652,738
+Iodide	Metabolite	KEGG Compound	C00708	940,453
+Tg	GeneProduct	Entrez Gene	21819	676,430
+Triiodothyronine	Metabolite	KEGG Compound	C02465	1114,285
+Thyroxine	Metabolite	KEGG Compound	C01829	1114,285
+Alb	GeneProduct	Entrez Gene	11657	74,731
+Ttr	GeneProduct	Entrez Gene	22139	74,756
+Serpina7	GeneProduct	Entrez Gene	331535	74,781
+Alb	GeneProduct	Entrez Gene	11657	74,828
+Ttr	GeneProduct	Entrez Gene	22139	74,853
+Serpina7	GeneProduct	Entrez Gene	331535	74,878
+Thyroxine	Metabolite	KEGG Compound	C01829	113,731
+Thyroxine	Metabolite	KEGG Compound	C01829	113,755
+Thyroxine	Metabolite	KEGG Compound	C01829	113,781

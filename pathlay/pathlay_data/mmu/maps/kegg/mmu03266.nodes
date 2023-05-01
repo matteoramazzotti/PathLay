@@ -1,0 +1,12 @@
+TEXT	TYPE	DB	ID	X	Y
+Virion - Herpesvirus	mmu	KEGG	mmu03266
+Itga5	GeneProduct	Entrez Gene	16402	894,194
+Itgb3	GeneProduct	Entrez Gene	16416	894,211
+Pilrb1	GeneProduct	Entrez Gene	170741	894,171
+Pilra	GeneProduct	Entrez Gene	231805	894,171
+Pilrb2	GeneProduct	Entrez Gene	545812	894,171
+Ide	GeneProduct	Entrez Gene	15925	896,323
+Tnfrsf14	GeneProduct	Entrez Gene	230979	896,369
+Nectin1	GeneProduct	Entrez Gene	58235	896,393
+Igf2r	GeneProduct	Entrez Gene	16004	896,441
+Nectin2	GeneProduct	Entrez Gene	19294	896,417

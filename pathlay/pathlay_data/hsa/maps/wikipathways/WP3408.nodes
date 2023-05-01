@@ -1,0 +1,16 @@
+TEXT	TYPE	DB	ID	X	Y
+Evolocumab mechanism to reduce LDL cholesterol	Homo sapiens	WikiPathways	WP3408
+PCSK9	GeneProduct	Entrez Gene	255738	144.0,356.0
+LDL-Cholesterol	Metabolite	ChEBI	CHEBI:47774	409.0,424.0
+LDLR	GeneProduct	Entrez Gene	3949	545.0,424.0
+Evolocumab	Metabolite	Wikidata	Q15623825	299.0,61.0
+PCSK9	GeneProduct	Entrez Gene	255738	144.0,356.0
+LDLR	GeneProduct	Entrez Gene	3949	545.0,424.0
+LDL-Cholesterol	Metabolite	ChEBI	CHEBI:47774	409.0,424.0
+PCSK9	GeneProduct	Entrez Gene	255738	144.0,356.0
+LDLR	GeneProduct	Entrez Gene	3949	545.0,424.0
+LDL-Cholesterol	Metabolite	ChEBI	CHEBI:47774	409.0,424.0
+LDLR	GeneProduct	Entrez Gene	3949	545.0,424.0
+LDL-Cholesterol	Metabolite	ChEBI	CHEBI:47774	409.0,424.0
+LDLR	GeneProduct	Entrez Gene	3949	545.0,424.0
+LDL-Cholesterol	Metabolite	ChEBI	CHEBI:47774	409.0,424.0

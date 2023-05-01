@@ -1,0 +1,95 @@
+TEXT	TYPE	DB	ID	X	Y
+Fatty acid degradation	hsa	KEGG	hsa00071
+ACAA2	GeneProduct	Entrez Gene	10449	808,669	873,659	683,659	555,659	429,659	304,659	178,659
+ECI2	GeneProduct	Entrez Gene	10455	470,825
+CYP2U1	GeneProduct	Entrez Gene	113612	656,925
+ADH1A	GeneProduct	Entrez Gene	124	455,905
+ADH1B	GeneProduct	Entrez Gene	125	455,905
+ADH1C	GeneProduct	Entrez Gene	126	455,905
+CPT1C	GeneProduct	Entrez Gene	126129	143,268
+ADH4	GeneProduct	Entrez Gene	127	455,905
+ADH5	GeneProduct	Entrez Gene	128	455,905
+ADH6	GeneProduct	Entrez Gene	130	455,905
+ADH7	GeneProduct	Entrez Gene	131	455,905
+CPT1A	GeneProduct	Entrez Gene	1374	143,268
+CPT1B	GeneProduct	Entrez Gene	1375	143,268
+CPT2	GeneProduct	Entrez Gene	1376	143,330
+ECI1	GeneProduct	Entrez Gene	1632	470,825
+ECHS1	GeneProduct	Entrez Gene	1892	898,495	747,496	621,497	495,497	369,498	243,498	118,498
+EHHADH	GeneProduct	Entrez Gene	1962	898,578	898,495	470,825	747,580	747,496	621,581	621,497	495,581	495,497	369,582	369,498	243,498	243,582	118,582	118,498
+ALDH2	GeneProduct	Entrez Gene	217	557,905
+ACSL1	GeneProduct	Entrez Gene	2180	143,210
+ACSL3	GeneProduct	Entrez Gene	2181	143,210
+ACSL4	GeneProduct	Entrez Gene	2182	143,210
+ALDH1B1	GeneProduct	Entrez Gene	219	557,905
+ALDH9A1	GeneProduct	Entrez Gene	223	557,905
+ALDH3A2	GeneProduct	Entrez Gene	224	557,905
+ACSBG1	GeneProduct	Entrez Gene	23205	143,210
+ACSL6	GeneProduct	Entrez Gene	23305	143,210
+GCDH	GeneProduct	Entrez Gene	2639	977,421
+ACAA1	GeneProduct	Entrez Gene	30	808,669	873,659	683,659	555,659	429,659	304,659	178,659
+HADHA	GeneProduct	Entrez Gene	3030	898,495	747,496	797,580	621,497	671,581	495,497	545,581	369,498	419,582	243,498	293,582	118,498	168,582
+HADHB	GeneProduct	Entrez Gene	3032	808,669	873,659	683,659	555,659	429,659	304,659	178,659
+HADH	GeneProduct	Entrez Gene	3033	898,578	747,580	621,581	495,581	369,582	243,582	118,582
+ACADL	GeneProduct	Entrez Gene	33	797,404	671,417	545,418	419,418	293,404	168,404
+ACADM	GeneProduct	Entrez Gene	34	923,404	747,404	621,417	495,418	369,418	243,404	118,404
+ACADS	GeneProduct	Entrez Gene	35	873,404	747,385
+ACADSB	GeneProduct	Entrez Gene	36	747,423	923,385
+ACADVL	GeneProduct	Entrez Gene	37	143,423	268,423
+ACAT1	GeneProduct	Entrez Gene	38	808,648	923,659
+ACAT2	GeneProduct	Entrez Gene	39	808,648	923,659
+ALDH7A1	GeneProduct	Entrez Gene	501	557,905
+ACOX1	GeneProduct	Entrez Gene	51	873,385	797,385	621,398	495,399	369,399	243,385	118,385
+ACSL5	GeneProduct	Entrez Gene	51703	143,210
+ACSBG2	GeneProduct	Entrez Gene	81616	143,210
+ACOX3	GeneProduct	Entrez Gene	8310	873,385	797,385	621,398	495,399	369,399	243,385	118,385
+CoA	Metabolite	KEGG Compound	C00010	772,693	646,693	520,693	394,693	269,693	143,693
+Acetyl-CoA	Metabolite	KEGG Compound	C00024	898,780
+Aldehyde	Metabolite	KEGG Compound	C00071	506,914
+Butanoyl-CoA	Metabolite	KEGG Compound	C00136	898,362
+Palmitoyl-CoA	Metabolite	KEGG Compound	C00154	143,240	143,362
+Fatty acid	Metabolite	KEGG Compound	C00162	610,914
+Primary alcohol	Metabolite	KEGG Compound	C00226	401,914
+Acyl-carrier protein	Metabolite	KEGG Compound	C00229	430,802
+Hexadecanoic acid	Metabolite	KEGG Compound	C00249	143,178
+Acetoacetyl-CoA	Metabolite	KEGG Compound	C00332	898,622
+Reduced rubredoxin	Metabolite	KEGG Compound	C00340	292,947
+Oxidized rubredoxin	Metabolite	KEGG Compound	C00435	378,947
+Glutarate	Metabolite	KEGG Compound	C00489	978,322
+Hexadecanal	Metabolite	KEGG Compound	C00517	252,177
+Glutaryl-CoA	Metabolite	KEGG Compound	C00527	978,387
+Long-chain fatty acid	Metabolite	KEGG Compound	C00638	399,774
+1-Hexadecanol	Metabolite	KEGG Compound	C00823	361,177
+Crotonoyl-CoA	Metabolite	KEGG Compound	C00877	898,453
+(S)-3-Hydroxybutanoyl-CoA	Metabolite	KEGG Compound	C01144	898,538	536,849
+Alkane	Metabolite	KEGG Compound	C01371	271,914
+Lauroyl-CoA	Metabolite	KEGG Compound	C01832	394,362
+Octanoyl-CoA	Metabolite	KEGG Compound	C01944	646,362
+Tetradecanoyl-CoA	Metabolite	KEGG Compound	C02593	268,362
+L-Palmitoylcarnitine	Metabolite	KEGG Compound	C02990	143,301
+2-trans-Dodecenoyl-CoA	Metabolite	KEGG Compound	C03221	394,453
+omega-Hydroxy fatty acid	Metabolite	KEGG Compound	C03547	707,914
+(R)-3-Hydroxybutanoyl-CoA	Metabolite	KEGG Compound	C03561	399,849
+alpha-Hydroxy fatty acid	Metabolite	KEGG Compound	C05102	707,946
+(S)-3-Hydroxyhexadecanoyl-CoA	Metabolite	KEGG Compound	C05258	143,538
+3-Oxopalmitoyl-CoA	Metabolite	KEGG Compound	C05259	143,622
+(S)-3-Hydroxytetradecanoyl-CoA	Metabolite	KEGG Compound	C05260	268,538
+3-Oxotetradecanoyl-CoA	Metabolite	KEGG Compound	C05261	268,622
+(S)-3-Hydroxydodecanoyl-CoA	Metabolite	KEGG Compound	C05262	394,538
+3-Oxododecanoyl-CoA	Metabolite	KEGG Compound	C05263	394,622
+(S)-Hydroxydecanoyl-CoA	Metabolite	KEGG Compound	C05264	520,538
+3-Oxodecanoyl-CoA	Metabolite	KEGG Compound	C05265	520,622
+(S)-3-Hydroxyoctanoyl-CoA	Metabolite	KEGG Compound	C05266	646,538
+3-Oxooctanoyl-CoA	Metabolite	KEGG Compound	C05267	646,622
+(S)-Hydroxyhexanoyl-CoA	Metabolite	KEGG Compound	C05268	772,538
+3-Oxohexanoyl-CoA	Metabolite	KEGG Compound	C05269	772,622
+Hexanoyl-CoA	Metabolite	KEGG Compound	C05270	772,362
+trans-Hex-2-enoyl-CoA	Metabolite	KEGG Compound	C05271	772,453
+trans-Hexadec-2-enoyl-CoA	Metabolite	KEGG Compound	C05272	143,453
+trans-Tetradec-2-enoyl-CoA	Metabolite	KEGG Compound	C05273	268,453
+Decanoyl-CoA	Metabolite	KEGG Compound	C05274	520,362
+trans-Dec-2-enoyl-CoA	Metabolite	KEGG Compound	C05275	520,453
+trans-Oct-2-enoyl-CoA	Metabolite	KEGG Compound	C05276	646,453
+trans,cis-Lauro-2,6-dienoyl-CoA	Metabolite	KEGG Compound	C05279	536,824
+cis,cis-3,6-Dodecadienoyl-CoA	Metabolite	KEGG Compound	C05280	399,824
+Long-chain acyl-[acyl-carrier protein]	Metabolite	KEGG Compound	C20683	536,774

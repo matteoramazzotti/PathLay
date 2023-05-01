@@ -1,0 +1,39 @@
+TEXT	TYPE	DB	ID	X	Y
+Thyroid cancer	hsa	KEGG	hsa05216
+CDKN1A	GeneProduct	Entrez Gene	1026	893,575
+TFG	GeneProduct	Entrez Gene	10342	222,165
+GADD45G	GeneProduct	Entrez Gene	10912	945,575
+CTNNB1	GeneProduct	Entrez Gene	1499	490,683
+DDB2	GeneProduct	Entrez Gene	1643	893,619
+GADD45A	GeneProduct	Entrez Gene	1647	945,575
+HRAS	GeneProduct	Entrez Gene	3265	369,309	369,150
+KRAS	GeneProduct	Entrez Gene	3845	369,309	369,150
+MYC	GeneProduct	Entrez Gene	4609	835,671
+GADD45B	GeneProduct	Entrez Gene	4616	945,575
+NRAS	GeneProduct	Entrez Gene	4893	369,309	369,150
+NTRK1	GeneProduct	Entrez Gene	4914	222,165
+LEF1	GeneProduct	Entrez Gene	51176	722,683
+POLK	GeneProduct	Entrez Gene	51426	945,619
+PPARG	GeneProduct	Entrez Gene	5468	762,410	708,363
+MAPK1	GeneProduct	Entrez Gene	5594	602,309	602,167
+MAPK3	GeneProduct	Entrez Gene	5595	602,309	602,167
+MAP2K1	GeneProduct	Entrez Gene	5604	525,309	525,167
+MAP2K2	GeneProduct	Entrez Gene	5605	525,309	525,167
+BAK1	GeneProduct	Entrez Gene	578	945,597
+BAX	GeneProduct	Entrez Gene	581	893,597
+CCND1	GeneProduct	Entrez Gene	595	835,694
+RET	GeneProduct	Entrez Gene	5979	278,118
+RXRA	GeneProduct	Entrez Gene	6256	762,383
+RXRB	GeneProduct	Entrez Gene	6257	762,383
+RXRG	GeneProduct	Entrez Gene	6258	762,383
+BRAF	GeneProduct	Entrez Gene	673	447,309	447,186	447,151
+TCF7	GeneProduct	Entrez Gene	6932	722,683
+TCF7L2	GeneProduct	Entrez Gene	6934	722,683
+TP53	GeneProduct	Entrez Gene	7157	763,595
+TPM3	GeneProduct	Entrez Gene	7170	222,165
+TPR	GeneProduct	Entrez Gene	7175	222,165
+PAX8	GeneProduct	Entrez Gene	7849	708,363
+CCDC6	GeneProduct	Entrez Gene	8030	278,118
+NCOA4	GeneProduct	Entrez Gene	8031	278,118
+TCF7L1	GeneProduct	Entrez Gene	83439	722,683
+CDH1	GeneProduct	Entrez Gene	999	222,683

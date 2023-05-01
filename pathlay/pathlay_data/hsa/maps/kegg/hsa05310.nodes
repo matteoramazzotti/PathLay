@@ -1,0 +1,38 @@
+TEXT	TYPE	DB	ID	X	Y
+Asthma	hsa	KEGG	hsa05310
+LOC102723407	GeneProduct	Entrez Gene	102723407	682,205	592,253	782,177	783,151
+FCER1A	GeneProduct	Entrez Gene	2205	841,152	841,176
+MS4A2	GeneProduct	Entrez Gene	2206	841,152	841,176
+FCER1G	GeneProduct	Entrez Gene	2207	841,152	841,176
+HLA-DMA	GeneProduct	Entrez Gene	3108	165,296	549,307
+HLA-DMB	GeneProduct	Entrez Gene	3109	165,296	549,307
+HLA-DOA	GeneProduct	Entrez Gene	3111	165,296	549,307
+HLA-DOB	GeneProduct	Entrez Gene	3112	165,296	549,307
+HLA-DPA1	GeneProduct	Entrez Gene	3113	165,296	549,307
+HLA-DPB1	GeneProduct	Entrez Gene	3115	165,296	549,307
+HLA-DQA1	GeneProduct	Entrez Gene	3117	165,296	549,307
+HLA-DQA2	GeneProduct	Entrez Gene	3118	165,296	549,307
+HLA-DQB1	GeneProduct	Entrez Gene	3119	165,296	549,307
+HLA-DRA	GeneProduct	Entrez Gene	3122	165,296	549,307
+HLA-DRB1	GeneProduct	Entrez Gene	3123	165,296	549,307
+HLA-DRB3	GeneProduct	Entrez Gene	3125	165,296	549,307
+HLA-DRB4	GeneProduct	Entrez Gene	3126	165,296	549,307
+HLA-DRB5	GeneProduct	Entrez Gene	3127	165,296	549,307
+IL3	GeneProduct	Entrez Gene	3562	898,321
+IL4	GeneProduct	Entrez Gene	3565	703,68	503,355	467,436	204,237	797,337
+IL5	GeneProduct	Entrez Gene	3567	641,464	898,346
+IL9	GeneProduct	Entrez Gene	3578	703,90
+IL10	GeneProduct	Entrez Gene	3586	703,114
+IL13	GeneProduct	Entrez Gene	3596	503,381	467,459	797,360
+PRG2	GeneProduct	Entrez Gene	5553	1027,433
+RNASE3	GeneProduct	Entrez Gene	6037	1027,457
+CCL11	GeneProduct	Entrez Gene	6356	738,542
+TNF	GeneProduct	Entrez Gene	7124	797,384
+EPX	GeneProduct	Entrez Gene	8288	1027,481
+CD40	GeneProduct	Entrez Gene	958	549,283
+CD40LG	GeneProduct	Entrez Gene	959	468,283
+Histamine	Metabolite	KEGG Compound	C00388	1031,148
+Prostaglandin D2	Metabolite	KEGG Compound	C00696	1030,239
+Leukotriene C4	Metabolite	KEGG Compound	C02166	1030,179
+2-Acetyl-1-alkyl-sn-glycero-3-phosphocholine	Metabolite	KEGG Compound	C04598	1030,120	1027,560
+Leukotriene D4	Metabolite	KEGG Compound	C05951	1026,507	1030,209	1026,533

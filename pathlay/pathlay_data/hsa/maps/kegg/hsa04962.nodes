@@ -1,0 +1,48 @@
+TEXT	TYPE	DB	ID	X	Y
+Vasopressin-regulated water reabsorption	hsa	KEGG	hsa04962
+CREB3	GeneProduct	Entrez Gene	10488	464,429
+DCTN2	GeneProduct	Entrez Gene	10540	335,331
+DCTN6	GeneProduct	Entrez Gene	10671	335,331
+ADCY3	GeneProduct	Entrez Gene	109	582,365
+ADCY6	GeneProduct	Entrez Gene	112	582,365
+ADCY9	GeneProduct	Entrez Gene	115	582,365
+CREB1	GeneProduct	Entrez Gene	1385	464,429
+DYNLL2	GeneProduct	Entrez Gene	140735	335,314
+CREB3L4	GeneProduct	Entrez Gene	148327	464,429
+DCTN1	GeneProduct	Entrez Gene	1639	335,331
+DYNC1H1	GeneProduct	Entrez Gene	1778	335,314
+DYNC1I1	GeneProduct	Entrez Gene	1780	335,314
+DYNC1I2	GeneProduct	Entrez Gene	1781	335,314
+DYNC1LI2	GeneProduct	Entrez Gene	1783	335,314
+GNAS	GeneProduct	Entrez Gene	2778	530,333
+AQP2	GeneProduct	Entrez Gene	359	370,365	398,631	293,444	159,534	244,628	106,631
+AQP3	GeneProduct	Entrez Gene	360	580,547	465,718
+AQP4	GeneProduct	Entrez Gene	361	579,516
+ARHGDIA	GeneProduct	Entrez Gene	396	400,273
+ARHGDIB	GeneProduct	Entrez Gene	397	400,273
+ARHGDIG	GeneProduct	Entrez Gene	398	400,273
+NSF	GeneProduct	Entrez Gene	4905	200,462
+DYNC1LI1	GeneProduct	Entrez Gene	51143	335,314
+DCTN4	GeneProduct	Entrez Gene	51164	335,331
+DYNC2LI1	GeneProduct	Entrez Gene	51626	335,314
+AVP	GeneProduct	Entrez Gene	551	664,308
+AVPR2	GeneProduct	Entrez Gene	554	580,307
+PRKACA	GeneProduct	Entrez Gene	5566	463,365
+PRKACB	GeneProduct	Entrez Gene	5567	463,365
+PRKACG	GeneProduct	Entrez Gene	5568	463,365
+RAB5A	GeneProduct	Entrez Gene	5868	409,606
+RAB5B	GeneProduct	Entrez Gene	5869	409,606
+RAB5C	GeneProduct	Entrez Gene	5878	409,606
+CREB3L2	GeneProduct	Entrez Gene	64764	464,429
+STX4	GeneProduct	Entrez Gene	6810	159,445
+VAMP2	GeneProduct	Entrez Gene	6844	227,445
+DYNC2H1	GeneProduct	Entrez Gene	79659	335,314
+DCTN5	GeneProduct	Entrez Gene	84516	335,331
+CREB3L3	GeneProduct	Entrez Gene	84699	464,429
+DYNLL1	GeneProduct	Entrez Gene	8655	335,314
+RAB11A	GeneProduct	Entrez Gene	8766	386,343
+CREB3L1	GeneProduct	Entrez Gene	90993	464,429
+RAB11B	GeneProduct	Entrez Gene	9230	386,343
+CREB5	GeneProduct	Entrez Gene	9586	464,429
+H2O	Metabolite	KEGG Compound	C00001	105,531	637,514	637,548	655,748
+3',5'-Cyclic AMP	Metabolite	KEGG Compound	C00575	519,364

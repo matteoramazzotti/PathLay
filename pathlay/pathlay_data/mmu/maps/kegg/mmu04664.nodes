@@ -1,0 +1,82 @@
+TEXT	TYPE	DB	ID	X	Y
+Fc epsilon RI signaling pathway	mmu	KEGG	mmu04664
+Heparin	Metabolite	KEGG Compound	C00374	805,172
+Histamine	Metabolite	KEGG Compound	C00388	752,172
+Calcium cation	Metabolite	KEGG Compound	C00076	621,150
+Diacylglycerol	Metabolite	KEGG Compound	C00165	542,195
+Ms4a2	GeneProduct	Entrez Gene	14126	179,307
+Fcer1a	GeneProduct	Entrez Gene	14125	179,290
+Fyn	GeneProduct	Entrez Gene	14360	288,284
+Tnf	GeneProduct	Entrez Gene	21926	785,401
+Phosphatidylinositol-3,4,5-trisphosphate	Metabolite	KEGG Compound	C05981	339,190
+D-myo-Inositol 1,4,5-trisphosphate	Metabolite	KEGG Compound	C01245	542,149
+Fcer1g	GeneProduct	Entrez Gene	14127	179,398
+Il13	GeneProduct	Entrez Gene	16163	810,283
+Il4	GeneProduct	Entrez Gene	16189	756,283
+Akt1	GeneProduct	Entrez Gene	11651	621,257
+Akt2	GeneProduct	Entrez Gene	11652	621,257
+Akt3	GeneProduct	Entrez Gene	23797	621,257
+Csf2	GeneProduct	Entrez Gene	12981	783,342
+Mapk11	GeneProduct	Entrez Gene	19094	621,379
+Mapk13	GeneProduct	Entrez Gene	26415	621,379
+Mapk14	GeneProduct	Entrez Gene	26416	621,379
+Mapk12	GeneProduct	Entrez Gene	29857	621,379
+Map2k4	GeneProduct	Entrez Gene	26398	548,318
+Map2k7	GeneProduct	Entrez Gene	26400	548,318
+Map2k3	GeneProduct	Entrez Gene	26397	548,379
+Map2k6	GeneProduct	Entrez Gene	26399	548,379
+Pdpk1	GeneProduct	Entrez Gene	18607	510,256
+Pik3ca	GeneProduct	Entrez Gene	18706	423,311
+Pik3cd	GeneProduct	Entrez Gene	18707	423,311
+Pik3r1	GeneProduct	Entrez Gene	18708	423,311
+Pik3r2	GeneProduct	Entrez Gene	18709	423,311
+Pik3r3	GeneProduct	Entrez Gene	18710	423,311
+Pik3cb	GeneProduct	Entrez Gene	74769	423,311
+Prkca	GeneProduct	Entrez Gene	18750	625,198
+Ms4a2	GeneProduct	Entrez Gene	14126	179,381
+Gab2	GeneProduct	Entrez Gene	14389	332,232
+Lcp2	GeneProduct	Entrez Gene	16822	364,355
+Btk	GeneProduct	Entrez Gene	12229	305,140
+Syk	GeneProduct	Entrez Gene	20963	274,355
+Lyn	GeneProduct	Entrez Gene	17096	251,237
+Lat	GeneProduct	Entrez Gene	16797	303,510
+Plcg1	GeneProduct	Entrez Gene	18803	439,170
+Plcg2	GeneProduct	Entrez Gene	234779	439,170
+Inpp5d	GeneProduct	Entrez Gene	16331	233,181
+Fcer1g	GeneProduct	Entrez Gene	14127	179,324
+Mapk1	GeneProduct	Entrez Gene	26413	625,444
+Mapk3	GeneProduct	Entrez Gene	26417	625,444
+Fcer1a	GeneProduct	Entrez Gene	14125	179,364
+Map2k1	GeneProduct	Entrez Gene	26395	557,444
+Map2k2	GeneProduct	Entrez Gene	26396	557,444
+Raf1	GeneProduct	Entrez Gene	110157	489,444
+Hras	GeneProduct	Entrez Gene	15461	458,509
+Kras	GeneProduct	Entrez Gene	16653	458,509
+Nras	GeneProduct	Entrez Gene	18176	458,509
+Sos1	GeneProduct	Entrez Gene	20662	407,554
+Sos2	GeneProduct	Entrez Gene	20663	407,554
+Grb2	GeneProduct	Entrez Gene	14784	339,554
+Pla2g4a	GeneProduct	Entrez Gene	18783	671,491
+Pla2g4b	GeneProduct	Entrez Gene	211429	671,491
+Pla2g4c	GeneProduct	Entrez Gene	232889	671,491
+Pla2g4f	GeneProduct	Entrez Gene	271844	671,491
+Pla2g4e	GeneProduct	Entrez Gene	329502	671,491
+Pla2g4d	GeneProduct	Entrez Gene	78390	671,491
+Mapk10	GeneProduct	Entrez Gene	26414	621,318
+Mapk8	GeneProduct	Entrez Gene	26419	621,318
+Mapk9	GeneProduct	Entrez Gene	26420	621,318
+Rac3	GeneProduct	Entrez Gene	170758	472,349
+Rac1	GeneProduct	Entrez Gene	19353	472,349
+Rac2	GeneProduct	Entrez Gene	19354	472,349
+Vav1	GeneProduct	Entrez Gene	22324	407,444
+Vav2	GeneProduct	Entrez Gene	22325	407,444
+Vav3	GeneProduct	Entrez Gene	57257	407,444
+Il5	GeneProduct	Entrez Gene	16191	810,319
+Prostaglandin D2	Metabolite	KEGG Compound	C00696	818,563
+Il3	GeneProduct	Entrez Gene	16187	756,319
+Alox5	GeneProduct	Entrez Gene	11689	741,546
+Alox5ap	GeneProduct	Entrez Gene	11690	741,563
+Leukotriene E4	Metabolite	KEGG Compound	C05952	818,521
+Leukotriene D4	Metabolite	KEGG Compound	C05951	838,494
+Leukotriene C4	Metabolite	KEGG Compound	C02166	798,494
+Arachidonate	Metabolite	KEGG Compound	C00219	710,530

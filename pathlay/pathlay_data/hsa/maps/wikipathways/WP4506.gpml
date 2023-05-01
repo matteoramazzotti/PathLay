@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Pathway xmlns="http://pathvisio.org/GPML/2013a" Name="Tyrosine metabolism and related disorders" Version="20190121" Organism="Homo sapiens">
+  <Comment Source="WikiPathways-description">This pathway shows the tyrosine degradation pathway as presented in Edition 5, Chapter 21 of the book of Blau (ISBN 9783030677268); Ed.4 Ch.2. Disorders resulting from an enzyme defect are highlighted in pink. Red frames mark diagnostically important metabolites. </Comment>
+  <BiopaxRef>ac8</BiopaxRef>
+  <Graphics BoardWidth="1370.6345222396908" BoardHeight="875.0819945096981"/>
+  <DataNode TextLabel="PAL" GraphId="a066c" Type="Protein">
+    <Comment>PAL enzymes have side activity towards L-Tyr, mostly from fungi and monocotylic plants.</Comment>
+    <Graphics CenterX="718.3116208321482" CenterY="139.97879109225912" Width="58.379766244286266" Height="25.000000000000004" ZOrder="32768" FontSize="12" Valign="Middle"/>
+    <Xref Database="Enzyme Nomenclature" ID="4.3.1.25"/>
+  </DataNode>
+  <DataNode TextLabel="Cinnamic acid" GraphId="a3def" Type="Metabolite">
+    <BiopaxRef>cb5</BiopaxRef>
+    <Graphics CenterX="793.7946537059552" CenterY="96.31348724179833" Width="104.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="0000ff"/>
+    <Xref Database="ChEBI" ID="CHEBI:27386"/>
+  </DataNode>
+  <DataNode TextLabel="quinol acetate" GraphId="a48a3" Type="Metabolite">
+    <Comment>This compound is annotated with an example for quinol acetate (4-hydroxyphenyl acetate).</Comment>
+    <Graphics CenterX="651.1064692763129" CenterY="436.2305247147649" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff"/>
+    <Xref Database="ChEBI" ID="CHEBI:31128"/>
+  </DataNode>
+  <DataNode TextLabel="BH4" GraphId="b7256" Type="Metabolite">
+    <Comment>AKA tetrahydrobiopterin</Comment>
+    <Graphics CenterX="437.7946537059524" CenterY="120.0" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff"/>
+    <Xref Database="ChEBI" ID="CHEBI:59560"/>
+  </DataNode>
+  <DataNode TextLabel="Thiols" GraphId="c270f" Type="Metabolite">
+    <Graphics CenterX="725.592008213258" CenterY="454.9216212694405" Width="51.44745325596409" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff"/>
+    <Xref Database="ChEBI" ID="CHEBI:29256"/>
+  </DataNode>
+  <DataNode TextLabel="GSTZ1" GraphId="c7dd0" Type="GeneProduct">
+    <Graphics CenterX="718.3116208321483" CenterY="651.0" Width="58.3797662442862" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle"/>
+    <Xref Database="Uniprot-TrEMBL" ID="O43708"/>
+  </DataNode>
+  <DataNode TextLabel="Phenylalanine" GraphId="c9f7a" Type="Metabolite">
+    <Comment>AKA L-phenylalanine</Comment>
+    <BiopaxRef>cb5</BiopaxRef>
+    <Graphics CenterX="587.1767922235737" CenterY="96.31348724179833" Width="165.00000000000003" Height="25.000000000000004" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff"/>
+    <Xref Database="ChEBI" ID="CHEBI:17295"/>
+  </DataNode>
+  <DataNode TextLabel="Ammonia" GraphId="d8c8f" Type="Metabolite">
+    <BiopaxRef>cb5</BiopaxRef>
+    <Graphics CenterX="793.7946537059552" CenterY="165.0" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="0000ff"/>
+    <Xref Database="ChEBI" ID="CHEBI:16134"/>
+  </DataNode>
+  <DataNode TextLabel="Hawkinsin" GraphId="e927b" Type="Metabolite">
+    <Comment>aka 2-cystenyl-1,4-dihydroxycyclohexenylacetate</Comment>
+    <BiopaxRef>c54</BiopaxRef>
+    <Graphics CenterX="838.5175401281517" CenterY="436.2305247147649" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff"/>
+    <Xref Database="PubChem-compound" ID="173909"/>
+  </DataNode>
+  <DataNode TextLabel="RgPAL" GraphId="fca39" Type="Protein">
+    <Comment>Species: Rhodotorula glutinis</Comment>
+    <Graphics CenterX="653.094229527801" CenterY="139.9787910922591" Width="57.19512195121949" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle"/>
+    <Xref Database="Uniprot-TrEMBL" ID="Q2VMT1"/>
+  </DataNode>
+  <DataNode TextLabel="Homogentisate" GraphId="fbd1e" Type="Metabolite">
+    <Graphics CenterX="587.1767922235737" CenterY="532.034021871203" Width="165.00000000000003" Height="25.00000000000001" ZOrder="32803" FontSize="12" Valign="Middle" Color="0000ff"/>
+    <Xref Database="ChEBI" ID="CHEBI:16169"/>
+  </DataNode>
+  <DataNode TextLabel="[CO2]" GraphId="fce60" Type="Metabolite">
+    <Graphics CenterX="321.1767922235714" CenterY="699.2840218712029" Width="67.0" Height="26.5" ZOrder="32804" FontSize="12" Valign="Middle" Color="0000ff"/>
+    <Xref Database="ChEBI" ID="CHEBI:16526"/>
+  </DataNode>
+  <DataNode TextLabel="mutated HPD" GraphId="d149d" Type="Protein">
+    <Comment>HPD gene, with mutation p.Asn241Ser, leading to a change in function in the protein.</Comment>
+    <Comment>Another mutation found to be linked to hawkinsiburia:  A heterozygous missense mutation: Ala to Thr change at codon 33 (A33T) [PMID:11073718]</Comment>
+    <Comment>AKA 4-hydroxyphenylpyruvate dioxygenase</Comment>
+    <BiopaxRef>db1</BiopaxRef>
+    <BiopaxRef>db0</BiopaxRef>
+    <Graphics CenterX="718.3116208321483" CenterY="394.6865878942766" Width="111.8797662442862" Height="25.0" ZOrder="32805" FontSize="12" Valign="Middle"/>
+    <Xref Database="Uniprot-TrEMBL" ID="A0A0B4J1R4"/>
+  </DataNode>
+  <DataNode TextLabel="Succinylacetone" GraphId="ab977" Type="Metabolite">
+    <Graphics CenterX="250.67679222357313" CenterY="740.0340218712029" Width="140.0" Height="25.0" ZOrder="32806" FontSize="12" Valign="Middle" Color="0000ff"/>
+    <Xref Database="ChEBI" ID="CHEBI:87897"/>
+  </DataNode>
+  <DataNode TextLabel="HPD" GraphId="cab4b" Type="Protein">
+    <Comment>HPD gene, without mutation</Comment>
+    <Comment>AKA 4-hydroxyphenylpyruvate dioxygenase</Comment>
+    <BiopaxRef>db0</BiopaxRef>
+    <Graphics CenterX="718.3116208321483" CenterY="494.85329813103056" Width="58.3797662442862" Height="25.0" ZOrder="32807" FontSize="12" Valign="Middle"/>
+    <Xref Database="Uniprot-TrEMBL" ID="P32754"/>
+  </DataNode>
+  <DataNode TextLabel="Maleylacetoacetate" GraphId="d089f" Type="Metabolite">
+    <Comment>AKA 4-Maleylacetoacetate</Comment>
+    <Graphics CenterX="587.1767922235737" CenterY="616.0340218712029" Width="148.0" Height="25.0" ZOrder="32808" FontSize="12" Valign="Middle" Color="0000ff"/>
+    <Xref Database="ChEBI" ID="CHEBI:17105"/>
+  </DataNode>
+  <DataNode TextLabel="FAH" GraphId="eb6d3" Type="Protein">
+    <Comment>AKA Fumarylacetoacetase</Comment>
+    <Graphics CenterX="718.3116208321483" CenterY="735.0340218712029" Width="58.3797662442862" Height="25.0" ZOrder="32809" FontSize="12" Valign="Middle"/>
+    <Xref Database="Uniprot-TrEMBL" ID="P16930"/>
+  </DataNode>
+  <DataNode TextLabel="Fumarate" GraphId="a90b0" Type="Metabolite" GroupRef="e0f78">
+    <Graphics CenterX="587.1767922235737" CenterY="795.0340218712029" Width="90.0" Height="25.0" ZOrder="32810" FontSize="12" Valign="Middle" Color="0000ff"/>
+    <Xref Database="ChEBI" ID="CHEBI:29806"/>
+  </DataNode>
+  <DataNode TextLabel="Acetoacetate" GraphId="a943b" Type="Metabolite" GroupRef="e0f78">
+    <Graphics CenterX="587.1767922235737" CenterY="820.034021871203" Width="90.0" Height="25.0" ZOrder="32811" FontSize="12" Valign="Middle" Color="0000ff"/>
+    <Xref Database="ChEBI" ID="CHEBI:13705"/>
+  </DataNode>
+  <DataNode TextLabel="HGD" GraphId="f8694" Type="Protein">
+    <Comment>AKA Homogentisate 1,2-dioxygenase</Comment>
+    <Graphics CenterX="718.3116208321483" CenterY="567.034021871203" Width="58.3797662442862" Height="25.0" ZOrder="32812" FontSize="12" Valign="Middle"/>
+    <Xref Database="Uniprot-TrEMBL" ID="Q93099"/>
+  </DataNode>
+  <DataNode TextLabel="4-OH-phenylpyruvate" GraphId="aafd4" Type="Metabolite">
+    <Comment>aka 4-Hydroxyphenylpyruvate</Comment>
+    <Graphics CenterX="587.1767922235733" CenterY="358.034021871203" Width="165.0" Height="25.0" ZOrder="32813" FontSize="12" Valign="Middle" Color="0000ff"/>
+    <Xref Database="ChEBI" ID="CHEBI:36242"/>
+  </DataNode>
+  <DataNode TextLabel="L-tyrosine" GraphId="be224" Type="Metabolite">
+    <BiopaxRef>cb5</BiopaxRef>
+    <Graphics CenterX="587.1767922235733" CenterY="233.0" Width="165.0" Height="25.0" ZOrder="32814" FontSize="12" Valign="Middle" Color="0000ff"/>
+    <Xref Database="ChEBI" ID="CHEBI:58315"/>
+  </DataNode>
+  <DataNode TextLabel="NTBC" GraphId="c121c" Type="Metabolite">
+    <Comment>AKA nitisone</Comment>
+    <Graphics CenterX="469.08326198447094" CenterY="496.3136571295624" Width="90.0" Height="25.0" ZOrder="32815" FontSize="12" Valign="Middle" Color="0000ff"/>
+    <Xref Database="ChEBI" ID="CHEBI:50378"/>
+  </DataNode>
+  <DataNode TextLabel="TAT" GraphId="f262b" Type="Protein">
+    <Comment>aka Tyrosine aminotransferase</Comment>
+    <Graphics CenterX="718.3116208321483" CenterY="283.09446725826547" Width="58.3797662442862" Height="25.0" ZOrder="32816" FontSize="12" Valign="Middle"/>
+    <Xref Database="Uniprot-TrEMBL" ID="P17735"/>
+  </DataNode>
+  <DataNode TextLabel="4-OH-phenylacetate" GraphId="c1422" Type="Metabolite">
+    <Comment>AKA 4-Hydroxyphenylacetate</Comment>
+    <Graphics CenterX="814.1767922235737" CenterY="358.034021871203" Width="189.0" Height="25.0" ZOrder="32817" FontSize="12" Valign="Middle" Color="0000ff"/>
+    <Xref Database="ChEBI" ID="CHEBI:18101"/>
+  </DataNode>
+  <DataNode TextLabel="Succinylacetoacetate" GraphId="f6e79" Type="Metabolite">
+    <Graphics CenterX="251.17679222357316" CenterY="660.0340218712029" Width="140.0" Height="25.0" ZOrder="32818" FontSize="12" Valign="Middle" Color="0000ff"/>
+    <Xref Database="ChEBI" ID="CHEBI:87999"/>
+  </DataNode>
+  <DataNode TextLabel="fumarylacetoacetate" GraphId="a243b" Type="Metabolite">
+    <Comment>AKA 4-fumarylacetoacetate</Comment>
+    <Graphics CenterX="587.1767922235731" CenterY="698.0340218712029" Width="179.0" Height="25.0" ZOrder="32819" FontSize="12" Valign="Middle" Color="0000ff"/>
+    <Xref Database="HMDB" ID="HMDB0062563"/>
+  </DataNode>
+  <DataNode TextLabel="Porphobilinogen" GraphId="bbfe8" Type="Metabolite">
+    <Graphics CenterX="345.6767922235714" CenterY="820.034021871203" Width="100.0" Height="25.0" ZOrder="32820" FontSize="12" Valign="Middle" Color="0000ff"/>
+    <Xref Database="ChEBI" ID="CHEBI:17381"/>
+  </DataNode>
+  <DataNode TextLabel="4-OH-phenyllactate" GraphId="c0560" Type="Metabolite">
+    <Comment>aka p-Hydroxyphenyllactate </Comment>
+    <Graphics CenterX="314.735722964763" CenterY="358.034021871203" Width="189.8821385176185" Height="25.0" ZOrder="32821" FontSize="12" Valign="Middle" Color="0000ff"/>
+    <Xref Database="ChEBI" ID="CHEBI:36659"/>
+  </DataNode>
+  <DataNode TextLabel="5-Aminolevulinate" GraphId="cda75" Type="Metabolite">
+    <Graphics CenterX="162.67679222357256" CenterY="820.034021871203" Width="120.0" Height="25.0" ZOrder="32822" FontSize="12" Valign="Middle" Color="0000ff"/>
+    <Xref Database="ChEBI" ID="CHEBI:17549"/>
+  </DataNode>
+  <DataNode TextLabel="Coumaric acid" GraphId="fc8cc" Type="Metabolite">
+    <BiopaxRef>cb5</BiopaxRef>
+    <Graphics CenterX="793.7946537059552" CenterY="233.0" Width="104.0" Height="25.0" ZOrder="32911" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="0000ff"/>
+    <Xref Database="ChEBI" ID="CHEBI:36090"/>
+  </DataNode>
+  <DataNode TextLabel="BH2" GraphId="addf5" Type="Metabolite">
+    <Comment>AKA dihydrobiopterin</Comment>
+    <Graphics CenterX="437.7946537059524" CenterY="219.0" Width="90.0" Height="25.0" ZOrder="32914" FontSize="12" Valign="Middle" Color="0000ff"/>
+    <Xref Database="ChEBI" ID="CHEBI:15642"/>
+  </DataNode>
+  <DataNode TextLabel="TAL" GraphId="e5ed4" Type="Protein">
+    <Comment>PAL enzymes have side activity towards L-Tyr, mostly from fungi and monocotylic plants.</Comment>
+    <Graphics CenterX="718.3116208321482" CenterY="187.4570519618238" Width="58.379766244286266" Height="25.000000000000004" ZOrder="32916" FontSize="12" Valign="Middle"/>
+    <Xref Database="Enzyme Nomenclature" ID="4.3.1.25"/>
+  </DataNode>
+  <DataNode TextLabel="TcTAL" GraphId="e8b5b" Type="Protein">
+    <Comment>Species: Trichosporon cutaneum</Comment>
+    <Graphics CenterX="653.094229527801" CenterY="187.4570519618238" Width="57.19512195121949" Height="25.0" ZOrder="32918" FontSize="12" Valign="Middle"/>
+    <Xref Database="Uniprot-TrEMBL" ID="U5TV35"/>
+  </DataNode>
+  <Interaction GraphId="id1553644f">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="482.7946537059524" Y="120.0" GraphRef="b7256" RelX="1.0" RelY="0.0"/>
+      <Point X="587.1767922235736" Y="153.488092345079" GraphRef="c71b2" RelX="0.0" RelY="0.0" ArrowHead="mim-conversion"/>
+    </Graphics>
+    <Xref Database="Rhea" ID="20274"/>
+  </Interaction>
+  <Interaction GraphId="id2d081282">
+    <BiopaxRef>cb5</BiopaxRef>
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="669.6767922235733" Y="233.0" GraphRef="be224" RelX="1.0" RelY="0.0"/>
+      <Point X="741.7946537059552" Y="233.0" GraphRef="fc8cc" RelX="-1.0" RelY="0.0" ArrowHead="mim-conversion"/>
+      <Anchor Position="0.4" Shape="None" GraphId="f2a59"/>
+    </Graphics>
+    <Xref Database="Rhea" ID="24907"/>
+  </Interaction>
+  <Interaction GraphId="id4da77879">
+    <Comment>Change in reaction mechanism from 4-hydroxyphenylpyruvate froming quinol iso homogentisate.</Comment>
+    <BiopaxRef>c54</BiopaxRef>
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="628.4267922235733" Y="370.534021871203" GraphRef="aafd4" RelX="0.5" RelY="1.0"/>
+      <Point X="628.6064692763129" Y="423.7305247147649" GraphRef="a48a3" RelX="-0.5" RelY="-1.0" ArrowHead="mim-conversion"/>
+      <Anchor Position="0.43796328028810544" Shape="None" GraphId="bb04c"/>
+    </Graphics>
+    <Xref Database="" ID=""/>
+  </Interaction>
+  <Interaction GraphId="id4f6e215c">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="689.1217377100052" Y="651.0" GraphRef="c7dd0" RelX="-1.0" RelY="0.0"/>
+      <Point X="587.1767922235734" Y="651.3340218712028" GraphRef="de26f" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis"/>
+    </Graphics>
+    <Xref Database="" ID=""/>
+  </Interaction>
+  <Interaction GraphId="id6c8de097">
+    <BiopaxRef>c54</BiopaxRef>
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="696.1064692763129" Y="436.2305247147649" GraphRef="a48a3" RelX="1.0" RelY="0.0"/>
+      <Point X="793.5175401281517" Y="436.2305247147649" GraphRef="e927b" RelX="-1.0" RelY="0.0" ArrowHead="Arrow"/>
+      <Anchor Position="0.7166818574027326" Shape="None" GraphId="c66ce"/>
+    </Graphics>
+    <Xref Database="" ID=""/>
+  </Interaction>
+  <Interaction GraphId="id73a70182">
+    <BiopaxRef>cb5</BiopaxRef>
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="669.6767922235737" Y="96.31348724179833" GraphRef="c9f7a" RelX="1.0" RelY="0.0"/>
+      <Point X="741.7946537059552" Y="96.31348724179833" GraphRef="a3def" RelX="-1.0" RelY="0.0" ArrowHead="mim-conversion"/>
+      <Anchor Position="0.4" Shape="None" GraphId="c7f0c"/>
+    </Graphics>
+    <Xref Database="Rhea" ID="21385"/>
+  </Interaction>
+  <Interaction GraphId="idb0ac6f1">
+    <BiopaxRef>c54</BiopaxRef>
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="751.3157348412401" Y="454.9216212694405" GraphRef="c270f" RelX="1.0" RelY="0.0"/>
+      <Point X="765.9192164659979" Y="436.2305247147649" GraphRef="c66ce" RelX="0.0" RelY="0.0" ArrowHead="mim-conversion"/>
+    </Graphics>
+    <Xref Database="" ID=""/>
+  </Interaction>
+  <Interaction GraphId="idb6057e08">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="587.1767922235737" Y="108.81348724179833" GraphRef="c9f7a" RelX="0.0" RelY="1.0"/>
+      <Point X="587.1767922235733" Y="220.5" GraphRef="be224" RelX="0.0" RelY="-1.0" ArrowHead="mim-conversion"/>
+      <Anchor Position="0.4" Shape="None" GraphId="c71b2"/>
+    </Graphics>
+    <Xref Database="Rhea" ID="20274"/>
+  </Interaction>
+  <Interaction GraphId="idc780d34e">
+    <BiopaxRef>cb5</BiopaxRef>
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="698.5239368165263" Y="96.31348724179833" GraphRef="c7f0c" RelX="0.0" RelY="0.0"/>
+      <Point X="816.2946537059552" Y="152.5" GraphRef="d8c8f" RelX="0.5" RelY="-1.0" ArrowHead="mim-conversion"/>
+    </Graphics>
+    <Xref Database="Rhea" ID="21385"/>
+  </Interaction>
+  <Interaction GraphId="idf1d60888">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="703.7166792710767" Y="199.9570519618238" GraphRef="e5ed4" RelX="-0.5" RelY="1.0"/>
+      <Point X="698.5239368165261" Y="233.0" GraphRef="f2a59" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis"/>
+    </Graphics>
+    <Xref Database="" ID=""/>
+  </Interaction>
+  <Interaction GraphId="f5c66">
+    <Graphics ZOrder="32775" LineThickness="1.0">
+      <Point X="251.17679222357316" Y="672.5340218712029" GraphRef="f6e79" RelX="0.0" RelY="1.0"/>
+      <Point X="250.6767922235731" Y="727.5340218712029" GraphRef="ab977" RelX="0.0" RelY="-1.0" ArrowHead="mim-conversion"/>
+      <Anchor Position="0.4" Shape="None" GraphId="aecf0"/>
+    </Graphics>
+    <Xref Database="" ID=""/>
+  </Interaction>
+  <Interaction GraphId="d001c">
+    <Graphics ZOrder="32776" LineThickness="1.0">
+      <Point X="409.67679222357225" Y="351.784021871203" GraphRef="c0560" RelX="1.0" RelY="-0.5"/>
+      <Point X="504.67679222357333" Y="351.784021871203" GraphRef="aafd4" RelX="-1.0" RelY="-0.5" ArrowHead="mim-conversion"/>
+    </Graphics>
+    <Xref Database="" ID=""/>
+  </Interaction>
+  <Interaction GraphId="b6e87">
+    <Graphics ZOrder="32778" LineThickness="1.0">
+      <Point X="689.1217377100052" Y="567.034021871203" GraphRef="f8694" RelX="-1.0" RelY="0.0"/>
+      <Point X="587.1767922235737" Y="567.395366409018" GraphRef="e89a4" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis"/>
+    </Graphics>
+    <Xref Database="" ID=""/>
+  </Interaction>
+  <Interaction GraphId="dea65">
+    <Graphics ZOrder="32779" LineThickness="1.0">
+      <Point X="587.1767922235731" Y="710.5340218712029" GraphRef="a243b" RelX="0.0" RelY="1.0"/>
+      <Point X="587.1767922235737" Y="774.5340218712029" GraphRef="bf9b2" RelX="0.0" RelY="-1.0" ArrowHead="mim-conversion"/>
+      <Anchor Position="0.37309611344537785" Shape="None" GraphId="f9633"/>
+    </Graphics>
+    <Xref Database="Rhea" ID="10245"/>
+  </Interaction>
+  <Interaction GraphId="fe910">
+    <Graphics ZOrder="32780" LineThickness="1.0">
+      <Point X="513.1767922235737" Y="609.7840218712029" GraphRef="d089f" RelX="-1.0" RelY="-0.5"/>
+      <Point X="321.17679222357316" Y="653.7840218712029" GraphRef="f6e79" RelX="1.0" RelY="-0.5" ArrowHead="mim-conversion"/>
+    </Graphics>
+    <Xref Database="" ID=""/>
+  </Interaction>
+  <Interaction GraphId="e8cb2">
+    <Graphics ZOrder="32781" LineThickness="1.0">
+      <Point X="545.9267922235733" Y="345.534021871203" GraphRef="aafd4" RelX="-0.5" RelY="-1.0"/>
+      <Point X="545.9267922235733" Y="245.5" GraphRef="be224" RelX="-0.5" RelY="1.0" ArrowHead="mim-conversion"/>
+    </Graphics>
+    <Xref Database="" ID=""/>
+  </Interaction>
+  <Interaction GraphId="eb8f8">
+    <Graphics ZOrder="32783" LineThickness="1.0">
+      <Point X="497.6767922235731" Y="691.7840218712029" GraphRef="a243b" RelX="-1.0" RelY="-0.5"/>
+      <Point X="321.17679222357316" Y="666.2840218712029" GraphRef="f6e79" RelX="1.0" RelY="0.5" ArrowHead="mim-conversion"/>
+    </Graphics>
+    <Xref Database="" ID=""/>
+  </Interaction>
+  <Interaction GraphId="f0bec">
+    <Graphics ZOrder="32784" LineThickness="1.0">
+      <Point X="504.67679222357333" Y="364.284021871203" GraphRef="aafd4" RelX="-1.0" RelY="0.5"/>
+      <Point X="409.67679222357225" Y="364.284021871203" GraphRef="c0560" RelX="1.0" RelY="0.5" ArrowHead="Arrow"/>
+    </Graphics>
+    <Xref Database="" ID=""/>
+  </Interaction>
+  <Interaction GraphId="a2a0f">
+    <Graphics ZOrder="32785" LineThickness="1.0">
+      <Point X="689.1217377100052" Y="283.09446725826547" GraphRef="f262b" RelX="-1.0" RelY="0.0"/>
+      <Point X="587.1767922235733" Y="284.04502024093443" GraphRef="c87f8" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis"/>
+    </Graphics>
+    <Xref Database="" ID=""/>
+  </Interaction>
+  <Interaction GraphId="fa2d9">
+    <Graphics ZOrder="32787" LineThickness="1.0">
+      <Point X="669.6767922235733" Y="351.784021871203" GraphRef="aafd4" RelX="1.0" RelY="-0.5"/>
+      <Point X="719.6767922235737" Y="351.784021871203" GraphRef="c1422" RelX="-1.0" RelY="-0.5" ArrowHead="mim-conversion"/>
+    </Graphics>
+    <Xref Database="" ID=""/>
+  </Interaction>
+  <Interaction GraphId="dd274">
+    <Graphics ZOrder="32788" LineThickness="1.0">
+      <Point X="689.1217377100052" Y="494.85329813103056" GraphRef="cab4b" RelX="-1.0" RelY="0.0"/>
+      <Point X="545.9267922235737" Y="495.1644100580271" GraphRef="aa86b" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis"/>
+    </Graphics>
+    <Xref Database="" ID=""/>
+  </Interaction>
+  <Interaction GraphId="e050a">
+    <Graphics ZOrder="32789" LineThickness="1.0">
+      <Point X="250.97679222357314" Y="694.5340218712029" GraphRef="aecf0" RelX="0.0" RelY="0.0"/>
+      <Point X="287.6767922235714" Y="699.2840218712029" GraphRef="fce60" RelX="-1.0" RelY="0.0" ArrowHead="mim-conversion"/>
+    </Graphics>
+    <Xref Database="" ID=""/>
+  </Interaction>
+  <Interaction GraphId="cf884">
+    <Graphics ZOrder="32790" LineThickness="1.0">
+      <Point X="250.6767922235731" Y="752.5340218712029" GraphRef="ab977" RelX="0.0" RelY="1.0"/>
+      <Point X="251.8767922235721" Y="820.034021871203" GraphRef="ef591" RelX="0.0" RelY="0.0" ArrowHead="mim-inhibition"/>
+    </Graphics>
+    <Xref Database="" ID=""/>
+  </Interaction>
+  <Interaction GraphId="c9c1d">
+    <Graphics ZOrder="32792" LineThickness="1.0">
+      <Point X="587.1767922235737" Y="544.534021871203" GraphRef="fbd1e" RelX="0.0" RelY="1.0"/>
+      <Point X="587.1767922235737" Y="603.5340218712029" GraphRef="d089f" RelX="0.0" RelY="-1.0" ArrowHead="mim-conversion"/>
+      <Anchor Position="0.3874804158951714" Shape="None" GraphId="e89a4"/>
+    </Graphics>
+    <Xref Database="Rhea" ID="15450"/>
+  </Interaction>
+  <Interaction GraphId="a08ed">
+    <Graphics ZOrder="32793" LineThickness="1.0">
+      <Point X="719.6767922235737" Y="364.284021871203" GraphRef="c1422" RelX="-1.0" RelY="0.5"/>
+      <Point X="669.6767922235733" Y="364.284021871203" GraphRef="aafd4" RelX="1.0" RelY="0.5" ArrowHead="mim-conversion"/>
+    </Graphics>
+    <Xref Database="" ID=""/>
+  </Interaction>
+  <Interaction GraphId="d20a9">
+    <BiopaxRef>db1</BiopaxRef>
+    <Graphics ZOrder="32794" LineThickness="1.0">
+      <Point X="662.3717377100052" Y="394.6865878942766" GraphRef="d149d" RelX="-1.0" RelY="0.0"/>
+      <Point X="628.5054841749836" Y="393.8321367564249" GraphRef="bb04c" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis"/>
+    </Graphics>
+    <Xref Database="" ID=""/>
+  </Interaction>
+  <Interaction GraphId="d18df">
+    <Graphics ZOrder="32795" LineThickness="1.0">
+      <Point X="222.67679222357256" Y="820.034021871203" GraphRef="cda75" RelX="1.0" RelY="0.0"/>
+      <Point X="295.6767922235714" Y="820.034021871203" GraphRef="bbfe8" RelX="-1.0" RelY="0.0" ArrowHead="mim-conversion"/>
+      <Anchor Position="0.4" Shape="None" GraphId="ef591"/>
+    </Graphics>
+    <Xref Database="" ID=""/>
+  </Interaction>
+  <Interaction GraphId="e1078">
+    <Graphics ZOrder="32796" LineThickness="1.0">
+      <Point X="587.1767922235737" Y="628.5340218712029" GraphRef="d089f" RelX="0.0" RelY="1.0"/>
+      <Point X="587.1767922235731" Y="685.5340218712029" GraphRef="a243b" RelX="0.0" RelY="-1.0" ArrowHead="mim-conversion"/>
+      <Anchor Position="0.4" Shape="None" GraphId="de26f"/>
+    </Graphics>
+    <Xref Database="" ID=""/>
+  </Interaction>
+  <Interaction GraphId="a510f">
+    <Graphics ZOrder="32797" LineThickness="1.0">
+      <Point X="689.1217377100052" Y="735.0340218712029" GraphRef="eb6d3" RelX="-1.0" RelY="0.0"/>
+      <Point X="587.1767922235733" Y="734.412173131707" GraphRef="f9633" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis"/>
+    </Graphics>
+    <Xref Database="" ID=""/>
+  </Interaction>
+  <Interaction GraphId="ed4ff">
+    <Graphics ZOrder="32798" LineThickness="1.0">
+      <Point X="587.1767922235733" Y="245.5" GraphRef="be224" RelX="0.0" RelY="1.0"/>
+      <Point X="587.1767922235733" Y="345.534021871203" GraphRef="aafd4" RelX="0.0" RelY="-1.0" ArrowHead="mim-conversion"/>
+      <Anchor Position="0.385319109638143" Shape="None" GraphId="c87f8"/>
+    </Graphics>
+    <Xref Database="Rhea" ID="15094"/>
+  </Interaction>
+  <Interaction GraphId="fba06">
+    <Graphics ZOrder="32799" LineThickness="1.0">
+      <Point X="545.9267922235733" Y="370.534021871203" GraphRef="aafd4" RelX="-0.5" RelY="1.0"/>
+      <Point X="545.9267922235737" Y="519.534021871203" GraphRef="fbd1e" RelX="-0.5" RelY="-1.0" ArrowHead="mim-conversion"/>
+      <Anchor Position="0.836445558300833" Shape="None" GraphId="aa86b"/>
+    </Graphics>
+    <Xref Database="Rhea" ID="16190"/>
+  </Interaction>
+  <Interaction GraphId="d2aa2">
+    <Graphics ZOrder="32824" LineThickness="1.0">
+      <Point X="514.0832619844709" Y="496.3136571295624" GraphRef="c121c" RelX="1.0" RelY="0.0"/>
+      <Point X="545.9267922235737" Y="495.1644100580271" GraphRef="aa86b" RelX="0.0" RelY="0.0" ArrowHead="mim-inhibition"/>
+    </Graphics>
+    <Xref Database="" ID=""/>
+  </Interaction>
+  <Interaction GraphId="bb78d">
+    <BiopaxRef>cb5</BiopaxRef>
+    <Graphics ZOrder="32913" LineThickness="1.0">
+      <Point X="698.5239368165261" Y="233.0" GraphRef="f2a59" RelX="0.0" RelY="0.0"/>
+      <Point X="816.2946537059552" Y="177.5" GraphRef="d8c8f" RelX="0.5" RelY="1.0" ArrowHead="mim-conversion"/>
+    </Graphics>
+    <Xref Database="Rhea" ID="24907"/>
+  </Interaction>
+  <Interaction GraphId="fd325">
+    <Graphics ZOrder="32915" LineThickness="1.0">
+      <Point X="587.1767922235736" Y="153.488092345079" GraphRef="c71b2" RelX="0.0" RelY="0.0"/>
+      <Point X="482.7946537059524" Y="219.0" GraphRef="addf5" RelX="1.0" RelY="0.0" ArrowHead="mim-conversion"/>
+    </Graphics>
+    <Xref Database="Rhea" ID="20274"/>
+  </Interaction>
+  <Interaction GraphId="ffb37">
+    <Graphics ZOrder="32917" LineThickness="1.0">
+      <Point X="703.7166792710767" Y="127.47879109225912" GraphRef="a066c" RelX="-0.5" RelY="-1.0"/>
+      <Point X="698.5239368165263" Y="96.31348724179833" GraphRef="c7f0c" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis"/>
+    </Graphics>
+    <Xref Database="" ID=""/>
+  </Interaction>
+  <Interaction GraphId="ccf9a">
+    <Graphics ZOrder="32919" LineThickness="1.0">
+      <Point X="667.3930100156058" Y="127.47879109225909" GraphRef="fca39" RelX="0.5" RelY="-1.0"/>
+      <Point X="698.5239368165263" Y="96.31348724179833" GraphRef="c7f0c" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis"/>
+    </Graphics>
+    <Xref Database="" ID=""/>
+  </Interaction>
+  <Interaction GraphId="f5632">
+    <Graphics ZOrder="32920" LineThickness="1.0">
+      <Point X="667.3930100156058" Y="199.9570519618238" GraphRef="e8b5b" RelX="0.5" RelY="1.0"/>
+      <Point X="698.5239368165261" Y="233.0" GraphRef="f2a59" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis"/>
+    </Graphics>
+    <Xref Database="" ID=""/>
+  </Interaction>
+  <GraphicalLine GraphId="a67a2">
+    <Graphics ConnectorType="Elbow" ZOrder="32774" LineStyle="Broken" LineThickness="1.0">
+      <Point X="587.1767922235733" Y="284.04502024093443" GraphRef="c87f8" RelX="0.0" RelY="0.0"/>
+      <Point X="618.1473804588677" Y="270.58994122413594"/>
+      <Point X="889.3580921967061" Y="257.1348622073375" GraphRef="cec3c" RelX="-1.0" RelY="0.0" ArrowHead="Arrow"/>
+    </Graphics>
+  </GraphicalLine>
+  <GraphicalLine GraphId="c6844">
+    <Graphics ConnectorType="Elbow" ZOrder="32777" LineStyle="Broken" LineThickness="1.0">
+      <Point X="545.9267922235737" Y="495.1644100580271" GraphRef="aa86b" RelX="0.0" RelY="0.0"/>
+      <Point X="618.1473804588677" Y="496.1180554846485"/>
+      <Point X="889.3580921967093" Y="510.10685100285593" GraphRef="e662a" RelX="-1.0" RelY="0.0" ArrowHead="Arrow"/>
+    </Graphics>
+  </GraphicalLine>
+  <GraphicalLine GraphId="db829">
+    <Graphics ConnectorType="Elbow" ZOrder="32782" LineStyle="Broken" LineThickness="1.0">
+      <Point X="628.5054841749836" Y="393.8321367564249" GraphRef="bb04c" RelX="0.0" RelY="0.0"/>
+      <Point X="638.7528156153866" Y="405.26842967886347"/>
+      <Point X="889.3580921967095" Y="416.704722601302" GraphRef="d03cc" RelX="-1.0" RelY="0.0" ArrowHead="Arrow"/>
+    </Graphics>
+  </GraphicalLine>
+  <GraphicalLine GraphId="bc1a8">
+    <Graphics ConnectorType="Elbow" ZOrder="32786" LineStyle="Broken" LineThickness="1.0">
+      <Point X="587.1767922235733" Y="734.412173131707" GraphRef="f9633" RelX="0.0" RelY="0.0"/>
+      <Point X="641.2566241563467" Y="770.725198341791"/>
+      <Point X="889.3580921967093" Y="807.038223551875" GraphRef="e0f80" RelX="-1.0" RelY="-0.5" ArrowHead="Arrow"/>
+    </Graphics>
+  </GraphicalLine>
+  <GraphicalLine GraphId="ec36f">
+    <Graphics ConnectorType="Elbow" ZOrder="32826" LineStyle="Broken" LineThickness="1.0">
+      <Point X="587.1767922235737" Y="567.395366409018" GraphRef="e89a4" RelX="0.0" RelY="0.0"/>
+      <Point X="621.2986409630694" Y="578.0172151485136"/>
+      <Point X="889.3580921967093" Y="588.6390638880092" GraphRef="d442b" RelX="-1.0" RelY="0.0" ArrowHead="Arrow"/>
+    </Graphics>
+  </GraphicalLine>
+  <GraphicalLine GraphId="cfb79">
+    <Graphics ZOrder="32895" LineThickness="1.0">
+      <Point X="1132.1197517318833" Y="495.6330908221629"/>
+      <Point X="1206.1197517318863" Y="495.6330908221629" ArrowHead="mim-conversion"/>
+    </Graphics>
+  </GraphicalLine>
+  <GraphicalLine GraphId="cf896">
+    <Graphics ZOrder="32896" LineStyle="Broken" LineThickness="1.0">
+      <Point X="1133.469727317821" Y="608.6330908221627"/>
+      <Point X="1207.4697273178238" Y="608.6330908221627" ArrowHead="Arrow"/>
+    </Graphics>
+  </GraphicalLine>
+  <GraphicalLine GraphId="b9c02">
+    <Graphics ZOrder="32897" LineThickness="1.0">
+      <Point X="1133.634522239696" Y="568.6330908221627"/>
+      <Point X="1207.6345222396988" Y="568.6330908221627" ArrowHead="mim-catalysis"/>
+    </Graphics>
+  </GraphicalLine>
+  <GraphicalLine GraphId="ac24e">
+    <Graphics ZOrder="32898" LineThickness="1.0">
+      <Point X="1131.6197517318833" Y="532.6330908221628"/>
+      <Point X="1206.6197517318863" Y="532.6330908221628" ArrowHead="mim-stimulation"/>
+    </Graphics>
+  </GraphicalLine>
+  <GraphicalLine GraphId="d02e1">
+    <Graphics ConnectorType="Elbow" ZOrder="32910" LineStyle="Broken" LineThickness="1.0">
+      <Point X="587.1767922235734" Y="651.3340218712028" GraphRef="de26f" RelX="0.0" RelY="0.0"/>
+      <Point X="585.7946537059552" Y="664.4865428796061"/>
+      <Point X="890.3580921967093" Y="677.6390638880092" GraphRef="b717a" RelX="-1.0" RelY="0.0" ArrowHead="Arrow"/>
+    </Graphics>
+  </GraphicalLine>
+  <Label TextLabel="Tyrosinaemia Type II" GraphId="cec3c" Href="https://www.omim.org/entry/276600">
+    <Comment>AKA Tyrosine aminotransferase deficiency; TT2</Comment>
+    <Graphics CenterX="961.4505291714961" CenterY="257.1348622073375" Width="144.18487394957972" Height="32.016806722688855" ZOrder="28672" FillColor="ffcccc" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="0000ff"/>
+  </Label>
+  <Label TextLabel="Hawkinsinuria " GraphId="d03cc" Href="https://www.omim.org/entry/140350">
+    <Comment>AKA 4-hydroxyphenylpyruvate dioxygenase change of function; HAWK</Comment>
+    <Graphics CenterX="961.4505291714993" CenterY="416.704722601302" Width="144.18487394957958" Height="32.016806722688855" ZOrder="28672" FillColor="ffcccc" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="0000ff"/>
+  </Label>
+  <Label TextLabel="Tyrosinaemia Type I" GraphId="e0f80" Href="https://www.omim.org/entry/276700">
+    <Comment>AKA Fumarylacetoacetase deficiency, TT1</Comment>
+    <Graphics CenterX="961.450529171499" CenterY="815.0424252325473" Width="144.18487394957958" Height="32.016806722688855" ZOrder="28672" FillColor="ffcccc" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="0000ff"/>
+  </Label>
+  <Label TextLabel="Tyrosinaemia Type III" GraphId="e662a" Href="https://www.omim.org/entry/276710">
+    <Comment>aka 4-hydroxyphenylpyruvate dioxygenase deficiency; TT3</Comment>
+    <Graphics CenterX="961.450529171499" CenterY="510.10685100285593" Width="144.18487394957958" Height="32.016806722688855" ZOrder="28672" FillColor="ffcccc" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="0000ff"/>
+  </Label>
+  <Label TextLabel="Alkaptonuria" GraphId="d442b" Href="https://www.omim.org/entry/203500">
+    <Comment>AKA Homogentisate 1,2-dioxygenase deficiency</Comment>
+    <Graphics CenterX="961.450529171499" CenterY="588.6390638880092" Width="144.18487394957958" Height="32.016806722688855" ZOrder="32825" FillColor="ffcccc" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="0000ff"/>
+  </Label>
+  <Label TextLabel="Disease" GraphId="bf35f">
+    <Graphics CenterX="1173.2604603726516" CenterY="316.09099333324093" Width="90.0" Height="25.0" ZOrder="32900" FillColor="ffcccc" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="0000ff"/>
+  </Label>
+  <Label TextLabel="Catalysis" GraphId="e997e">
+    <Graphics CenterX="1292.6345222396994" CenterY="568.6330908221628" Width="90.0" Height="25.0" ZOrder="32901" FillColor="ffffff" FontSize="12" Valign="Middle"/>
+  </Label>
+  <Label TextLabel="Pathway" GraphId="f32da">
+    <Graphics CenterX="1173.2604603726516" CenterY="403.31827600734766" Width="90.0" Height="25.0" ZOrder="32902" FillColor="ffffff" FontWeight="Bold" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="009933"/>
+  </Label>
+  <Label TextLabel="Stimulation" GraphId="df809">
+    <Graphics CenterX="1292.6345222396994" CenterY="532.6327093524364" Width="90.0" Height="25.0" ZOrder="32903" FillColor="ffffff" FontSize="12" Valign="Middle"/>
+  </Label>
+  <Label TextLabel="Protein" GraphId="f2333">
+    <Graphics CenterX="1173.2604603726516" CenterY="373.94790563697745" Width="90.0" Height="25.0" ZOrder="32904" FillColor="ffffff" FontSize="12" Valign="Middle" ShapeType="Rectangle"/>
+  </Label>
+  <Label TextLabel="Metabolite" GraphId="b4ed2">
+    <Graphics CenterX="1173.2604603726516" CenterY="345.09099333324093" Width="90.0" Height="25.0" ZOrder="32905" FillColor="ffffff" FontSize="12" Valign="Middle" ShapeType="Rectangle" Color="0000ff"/>
+  </Label>
+  <Label TextLabel="Conversion" GraphId="f1a82">
+    <Graphics CenterX="1292.6345222396994" CenterY="495.632709352436" Width="90.0" Height="25.0" ZOrder="32906" FillColor="ffffff" FontSize="12" Valign="Middle"/>
+  </Label>
+  <Label TextLabel="Connection &#10;to disease&#10;" GraphId="bc849">
+    <Graphics CenterX="1292.6345222396994" CenterY="608.6327093524361" Width="90.0" Height="25.0" ZOrder="32907" FillColor="ffffff" FontSize="12" Valign="Middle"/>
+  </Label>
+  <Label TextLabel="Legend" GraphId="ae486">
+    <Graphics CenterX="1223.634522239696" CenterY="281.01658316990165" Width="90.0" Height="25.0" ZOrder="32908" FillColor="ffffff" FontWeight="Bold" FontSize="16" Valign="Middle"/>
+  </Label>
+  <Label TextLabel="Maleylacetoacetate&#10;isomerase decifiency" GraphId="b717a" Href="https://www.omim.org/entry/617596">
+    <Comment>AKA MAAI</Comment>
+    <Comment>"Reported patients are without symptoms, signs being found
+with mildly increased SA concentrations at newborn screen-
+ing for TT1. These patients do not seem to need treatment"</Comment>
+    <BiopaxRef>f1b</BiopaxRef>
+    <Graphics CenterX="962.450529171499" CenterY="677.6390638880092" Width="144.18487394957958" Height="32.016806722688855" ZOrder="32909" FillColor="ffcccc" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="0000ff"/>
+  </Label>
+  <Label TextLabel="Product of&#10;potential&#10;treatment" GraphId="e5c49">
+    <Graphics CenterX="1173.2604603726516" CenterY="450.29549666662047" Width="100.5341933332993" Height="55.40900666675907" ZOrder="32912" FillColor="ffffff" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="0000ff"/>
+  </Label>
+  <Shape GraphId="dfe0d">
+    <Attribute Key="org.pathvisio.CellularComponentProperty" Value="Extracellular region"/>
+    <Graphics CenterX="1228.3845222396908" CenterY="452.3165454110811" Width="224.5" Height="392.6330908221622" ZOrder="32899" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" LineStyle="Broken" Color="c0c0c0" Rotation="0.0"/>
+  </Shape>
+  <Group GroupId="e0f78" GraphId="bf9b2" Style="Group"/>
+  <InfoBox CenterX="0.0" CenterY="0.0"/>
+  <Biopax>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="cb5">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">31992763</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Exploring the therapeutic potential of modern and ancestral phenylalanine/tyrosine ammonia-lyases as supplementary treatment of hereditary tyrosinemia</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sci Rep . </bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Natalie M Hendrikse</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Albin Holmberg Larsson</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stefan Svensson Gelius</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sergei Kuprin</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Erik Nordling</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Per-Olof Syrén</bp:AUTHORS>
+    </bp:PublicationXref>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tyrosine metabolic pathway</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000052</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inherited metabolic disorder</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:655</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tyrosinemia type I pathway</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0001608</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="ac8">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9783642403361</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physician's Guide to the Diagnosis, Treatment, and Follow-Up of Inherited Metabolic Diseases</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2014</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blau, Nenad</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Duran, Marinus</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gibson, K. Michael</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dionisi-Vici, Carlo</bp:AUTHORS>
+    </bp:PublicationXref>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alkaptonuria</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:9270</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="c54">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20677779</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Product analysis and inhibition studies of a causative Asn to Ser variant of 4-hydroxyphenylpyruvate dioxygenase suggest a simple route to the treatment of Hawkinsinuria.</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biochemistry</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010</bp:YEAR>
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20677779</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Product analysis and inhibition studies of a causative Asn to Ser variant of 4-hydroxyphenylpyruvate dioxygenase suggest a simple route to the treatment of Hawkinsinuria.</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biochemistry</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010</bp:YEAR>
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20677779</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Product analysis and inhibition studies of a causative Asn to Ser variant of 4-hydroxyphenylpyruvate dioxygenase suggest a simple route to the treatment of Hawkinsinuria.</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biochemistry</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010</bp:YEAR>
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20677779</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Product analysis and inhibition studies of a causative Asn to Ser variant of 4-hydroxyphenylpyruvate dioxygenase suggest a simple route to the treatment of Hawkinsinuria.</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biochemistry</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010</bp:YEAR>
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20677779</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Product analysis and inhibition studies of a causative Asn to Ser variant of 4-hydroxyphenylpyruvate dioxygenase suggest a simple route to the treatment of Hawkinsinuria.</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biochemistry</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010</bp:YEAR>
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20677779</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Product analysis and inhibition studies of a causative Asn to Ser variant of 4-hydroxyphenylpyruvate dioxygenase suggest a simple route to the treatment of Hawkinsinuria.</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biochemistry</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brownlee JM</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Heinz B</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bates J</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Moran GR</bp:AUTHORS>
+    </bp:PublicationXref>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alkaptonuria pathway</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0002277</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tyrosinemia type II pathway</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0001609</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tyrosinemia type III</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0050727</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tyrosine degradation pathway</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0001284</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tyrosinemia type I</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0050726</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="db1">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17560158</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manifestation of hawkinsinuria in a patient compound heterozygous for hawkinsinuria and tyrosinemia III.</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mol Genet Metab</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2007</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Item CB</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mihalek I</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lichtarge O</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jalan A</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vodopiutz J</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Muhl A</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bodamer OA</bp:AUTHORS>
+    </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="db0">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11073718</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mutations in the 4-hydroxyphenylpyruvic acid dioxygenase gene are responsible for tyrosinemia type III and hawkinsinuria </bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mol Genet Metab .</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2000</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K Tomoeda</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">H Awata</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T Matsuura</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">I Matsuda</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E Ploechl</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T Milovac</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Boneh</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C R Scott</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D M Danks</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">F Endo</bp:AUTHORS>
+    </bp:PublicationXref>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tyrosinemia type III pathway</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0001610</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="f1b">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">27876694</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hypersuccinylacetonaemia and normal liver function in maleylacetoacetate isomerase deficiency</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">J Med Genet .</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2017</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hao Yang</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Walla Al-Hertani</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Denis Cyr</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rachel Laframboise</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Guy Parizeault</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shu Pei Wang</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Francis Rossignol</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marie-Thérèse Berthier</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yves Giguère</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paula J Waters</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grant A Mitchell</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Québec NTBC Study Group</bp:AUTHORS>
+    </bp:PublicationXref>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tyrosinemia pathway</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0001607</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tyrosinemia type II</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0050725</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease</bp:Ontology>
+    </bp:openControlledVocabulary>
+  <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"><bp:TERM>hawkinsinuria</bp:TERM><bp:ID>DOID:0111362</bp:ID><bp:Ontology>Disease</bp:Ontology></bp:openControlledVocabulary><bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"><bp:TERM>hawkinsinuria pathway</bp:TERM><bp:ID>PW:0002380</bp:ID><bp:Ontology>Pathway Ontology</bp:Ontology></bp:openControlledVocabulary></Biopax>
+</Pathway>

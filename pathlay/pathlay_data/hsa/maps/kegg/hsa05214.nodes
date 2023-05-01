@@ -1,0 +1,81 @@
+TEXT	TYPE	DB	ID	X	Y
+Glioma	hsa	KEGG	hsa05214
+AKT3	GeneProduct	Entrez Gene	10000	653,294	650,711
+CDK4	GeneProduct	Entrez Gene	1019	959,427	905,776
+CDK6	GeneProduct	Entrez Gene	1021	959,427	905,776
+CDKN1A	GeneProduct	Entrez Gene	1026	895,384	1081,569
+CDKN2A	GeneProduct	Entrez Gene	1029	1026,287	896,452
+GADD45G	GeneProduct	Entrez Gene	10912	1133,569
+CALML6	GeneProduct	Entrez Gene	163688	515,162	514,579
+DDB2	GeneProduct	Entrez Gene	1643	1081,613
+GADD45A	GeneProduct	Entrez Gene	1647	1133,569
+E2F1	GeneProduct	Entrez Gene	1869	1042,457	988,807
+E2F2	GeneProduct	Entrez Gene	1870	1042,457	988,807
+E2F3	GeneProduct	Entrez Gene	1871	1042,457	988,807
+EGF	GeneProduct	Entrez Gene	1950	195,196	196,613
+EGFR	GeneProduct	Entrez Gene	1956	279,217	280,633
+AKT1	GeneProduct	Entrez Gene	207	653,294	650,711
+AKT2	GeneProduct	Entrez Gene	208	653,294	650,711
+MTOR	GeneProduct	Entrez Gene	2475	722,294	720,711
+SHC2	GeneProduct	Entrez Gene	25759	356,246	353,663
+GRB2	GeneProduct	Entrez Gene	2885	428,246	426,663
+HRAS	GeneProduct	Entrez Gene	3265	574,663	575,246
+IGF1	GeneProduct	Entrez Gene	3479	195,271	196,688
+IGF1R	GeneProduct	Entrez Gene	3480	279,271	280,688
+ARAF	GeneProduct	Entrez Gene	369	649,246	647,663
+KRAS	GeneProduct	Entrez Gene	3845	574,663	575,246
+SHC4	GeneProduct	Entrez Gene	399694	356,246	353,663
+MDM2	GeneProduct	Entrez Gene	4193	943,287
+GADD45B	GeneProduct	Entrez Gene	4616	1133,569
+NRAS	GeneProduct	Entrez Gene	4893	574,663	575,246
+POLK	GeneProduct	Entrez Gene	51426	1133,613
+PDGFA	GeneProduct	Entrez Gene	5154	195,246	196,663
+PDGFB	GeneProduct	Entrez Gene	5155	195,246	196,663
+PDGFRA	GeneProduct	Entrez Gene	5156	279,246	280,663
+PDGFRB	GeneProduct	Entrez Gene	5159	279,246	280,663
+CALML5	GeneProduct	Entrez Gene	51806	515,162	514,579
+PIK3CA	GeneProduct	Entrez Gene	5290	546,294	544,711
+PIK3CB	GeneProduct	Entrez Gene	5291	546,294	544,711
+PIK3CD	GeneProduct	Entrez Gene	5293	546,294	544,711
+PIK3R1	GeneProduct	Entrez Gene	5295	546,294	544,711
+PIK3R2	GeneProduct	Entrez Gene	5296	546,294	544,711
+PLCG1	GeneProduct	Entrez Gene	5335	352,603	354,186
+SHC3	GeneProduct	Entrez Gene	53358	356,246	353,663
+PLCG2	GeneProduct	Entrez Gene	5336	352,603	354,186
+PRKCA	GeneProduct	Entrez Gene	5578	493,207	491,624
+PRKCB	GeneProduct	Entrez Gene	5579	493,207	491,624
+PRKCG	GeneProduct	Entrez Gene	5582	493,207	491,624
+MAPK1	GeneProduct	Entrez Gene	5594	796,246	793,663
+MAPK3	GeneProduct	Entrez Gene	5595	796,246	793,663
+MAP2K1	GeneProduct	Entrez Gene	5604	722,246	720,663
+MAP2K2	GeneProduct	Entrez Gene	5605	722,246	720,663
+CAMK1D	GeneProduct	Entrez Gene	57118	568,183	566,600
+CAMK1G	GeneProduct	Entrez Gene	57172	568,183	566,600
+PTEN	GeneProduct	Entrez Gene	5728	570,338	415,862
+BAK1	GeneProduct	Entrez Gene	578	1133,591
+BAX	GeneProduct	Entrez Gene	581	1081,591
+RAF1	GeneProduct	Entrez Gene	5894	649,246	647,663
+RB1	GeneProduct	Entrez Gene	5925	1042,420	988,769
+CCND1	GeneProduct	Entrez Gene	595	959,410	905,759
+SHC1	GeneProduct	Entrez Gene	6464	356,246	353,663
+SOS1	GeneProduct	Entrez Gene	6654	502,246	500,663
+SOS2	GeneProduct	Entrez Gene	6655	502,246	500,663
+BRAF	GeneProduct	Entrez Gene	673	649,246	647,663
+TGFA	GeneProduct	Entrez Gene	7039	195,219	196,636
+TP53	GeneProduct	Entrez Gene	7157	895,318	951,589
+CALM1	GeneProduct	Entrez Gene	801	515,162	514,579
+CALM2	GeneProduct	Entrez Gene	805	515,162	514,579
+CALM3	GeneProduct	Entrez Gene	808	515,162	514,579
+CALML3	GeneProduct	Entrez Gene	810	515,162	514,579
+CAMK4	GeneProduct	Entrez Gene	814	568,183	566,600
+CAMK2A	GeneProduct	Entrez Gene	815	568,183	566,600
+CAMK2B	GeneProduct	Entrez Gene	816	568,183	566,600
+CAMK2D	GeneProduct	Entrez Gene	817	568,183	566,600
+CAMK2G	GeneProduct	Entrez Gene	818	568,183	566,600
+PIK3R3	GeneProduct	Entrez Gene	8503	546,294	544,711
+CAMK1	GeneProduct	Entrez Gene	8536	568,183	566,600
+CALML4	GeneProduct	Entrez Gene	91860	515,162	514,579
+Calcium cation	Metabolite	KEGG Compound	C00076	455,160	450,577
+Diacylglycerol	Metabolite	KEGG Compound	C00165	413,205	410,622
+D-myo-Inositol 1,4,5-trisphosphate	Metabolite	KEGG Compound	C01245	411,160	409,577
+Phosphatidylinositol-3,4,5-trisphosphate	Metabolite	KEGG Compound	C05981	600,292	599,709

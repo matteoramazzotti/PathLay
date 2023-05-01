@@ -1,0 +1,69 @@
+TEXT	TYPE	DB	ID	X	Y
+Terpenoid backbone biosynthesis	hsa	KEGG	hsa00900
+ZMPSTE24	GeneProduct	Entrez Gene	10269	259,1041
+PMVK	GeneProduct	Entrez Gene	10654	434,477
+NUS1	GeneProduct	Entrez Gene	116150	379,1173
+FDPS	GeneProduct	Entrez Gene	2224	673,727	493,915
+FNTA	GeneProduct	Entrez Gene	2339	379,1052
+FNTB	GeneProduct	Entrez Gene	2342	379,1052
+ICMT	GeneProduct	Entrez Gene	23463	147,1052
+PDSS1	GeneProduct	Entrez Gene	23590	553,1234
+HMGCR	GeneProduct	Entrez Gene	3156	409,339
+HMGCS1	GeneProduct	Entrez Gene	3157	434,270
+HMGCS2	GeneProduct	Entrez Gene	3158	434,270
+IDI1	GeneProduct	Entrez Gene	3422	613,668
+ACAT1	GeneProduct	Entrez Gene	38	499,202
+ACAT2	GeneProduct	Entrez Gene	39	499,202
+MVD	GeneProduct	Entrez Gene	4597	435,548
+MVK	GeneProduct	Entrez Gene	4598	434,408
+PCYOX1	GeneProduct	Entrez Gene	51449	116,970	66,970
+PDSS2	GeneProduct	Entrez Gene	57107	553,1234
+DHDDS	GeneProduct	Entrez Gene	79947	379,1173
+IDI2	GeneProduct	Entrez Gene	91734	613,668
+GGPS1	GeneProduct	Entrez Gene	9453	673,727	493,915	552,982
+RCE1	GeneProduct	Entrez Gene	9986	259,1062
+Pyruvate	Metabolite	KEGG Compound	C00022	644,183
+Acetyl-CoA	Metabolite	KEGG Compound	C00024	434,172
+D-Glyceraldehyde 3-phosphate	Metabolite	KEGG Compound	C00118	672,172
+Isopentenyl diphosphate	Metabolite	KEGG Compound	C00129	553,666
+Dimethylallyl diphosphate	Metabolite	KEGG Compound	C00235	672,666
+Acetoacetyl-CoA	Metabolite	KEGG Compound	C00332	499,241
+Geranyl diphosphate	Metabolite	KEGG Compound	C00341	672,755
+Geranylgeranyl diphosphate	Metabolite	KEGG Compound	C00353	672,982
+(S)-3-Hydroxy-3-methylglutaryl-CoA	Metabolite	KEGG Compound	C00356	434,310
+(R)-Mevalonate	Metabolite	KEGG Compound	C00418	434,379
+trans,trans-Farnesyl diphosphate	Metabolite	KEGG Compound	C00448	434,914
+(R)-5-Phosphomevalonate	Metabolite	KEGG Compound	C01107	434,448
+(2E,6E)-Farnesol	Metabolite	KEGG Compound	C01126	201,914
+(R)-5-Diphosphomevalonate	Metabolite	KEGG Compound	C01143	434,517
+all-trans-Hexaprenyl diphosphate	Metabolite	KEGG Compound	C01230	672,1050
+cis-1,4-Polyisoprene	Metabolite	KEGG Compound	C02321	397,666
+2-trans,6-trans-Farnesal	Metabolite	KEGG Compound	C03461	91,914
+all-trans-Nonaprenyl diphosphate	Metabolite	KEGG Compound	C04145	913,1097
+all-trans-Octaprenyl diphosphate	Metabolite	KEGG Compound	C04146	672,1172
+all-trans-Heptaprenyl diphosphate	Metabolite	KEGG Compound	C04216	672,1111
+Protein C-terminal S-farnesyl-L-cysteine	Metabolite	KEGG Compound	C04506	201,1051
+di-trans,poly-cis-Undecaprenyl diphosphate	Metabolite	KEGG Compound	C04574	252,1233
+Protein C-terminal S-farnesyl-L-cysteine methyl ester	Metabolite	KEGG Compound	C04748	91,1051
+Phytyl diphosphate	Metabolite	KEGG Compound	C05427	853,1097
+Dehydrodolichol diphosphate	Metabolite	KEGG Compound	C05859	324,1172
+Polyprenol	Metabolite	KEGG Compound	C06081	252,1172
+2-C-Methyl-D-erythritol 4-phosphate	Metabolite	KEGG Compound	C11434	672,310
+4-(Cytidine 5'-diphospho)-2-C-methyl-D-erythritol	Metabolite	KEGG Compound	C11435	672,379
+2-Phospho-4-(cytidine 5'-diphospho)-2-C-methyl-D-erythritol	Metabolite	KEGG Compound	C11436	672,448
+1-Deoxy-D-xylulose 5-phosphate	Metabolite	KEGG Compound	C11437	672,241
+2-C-Methyl-D-erythritol 2,4-cyclodiphosphate	Metabolite	KEGG Compound	C11453	672,517
+1-Hydroxy-2-methyl-2-butenyl 4-diphosphate	Metabolite	KEGG Compound	C11811	672,586
+Isoprene	Metabolite	KEGG Compound	C16521	821,666
+2-cis,6-trans-Farnesyl diphosphate	Metabolite	KEGG Compound	C16826	434,834
+all-trans-Decaprenyl diphosphate	Metabolite	KEGG Compound	C17432	672,1233
+trans,octacis-Decaprenyl diphosphate	Metabolite	KEGG Compound	C18321	341,781
+Farnesylcysteine	Metabolite	KEGG Compound	C19691	91,992
+(2Z,6Z)-Farnesyl diphosphate	Metabolite	KEGG Compound	C19760	436,754
+tritrans,heptacis-Undecaprenyl diphosphate	Metabolite	KEGG Compound	C19852	777,1097
+trans,polycis-Polyprenyl diphosphate	Metabolite	KEGG Compound	C19853	342,808
+S-Farnesyl protein	Metabolite	KEGG Compound	C20120	311,1051
+trans,trans-Farnesyl phosphate	Metabolite	KEGG Compound	C20121	312,914
+Isopentenyl phosphate	Metabolite	KEGG Compound	C20345	370,613
+(R)-Mevalonate 3-phosphate	Metabolite	KEGG Compound	C20847	302,448
+(R)-Mevalonate 3,5-bisphosphate	Metabolite	KEGG Compound	C20848	302,517

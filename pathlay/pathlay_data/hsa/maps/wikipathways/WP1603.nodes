@@ -1,0 +1,15 @@
+TEXT	TYPE	DB	ID	X	Y
+Nicotine effect on chromaffin cells	Homo sapiens	WikiPathways	WP1603
+Na+	Metabolite	HMDB	HMDB0000588	83.5,263.0
+K+	Metabolite	HMDB	HMDB0000586	83.5,300.0
+Na+	Metabolite	HMDB	HMDB0000588	83.5,263.0
+Nicotine	Metabolite	HMDB	HMDB0001934	53.5,182.0
+K+	Metabolite	HMDB	HMDB0000586	83.5,300.0
+Ca++	Metabolite	HMDB	HMDB0000464	415.0,226.0
+CHRNB4	GeneProduct	Entrez Gene	1143	137.5,233.0
+Epinephrine	Metabolite	HMDB	HMDB0000068	415.0,361.0
+Epinephrine	Metabolite	HMDB	HMDB0000068	415.0,361.0
+CACNA1G	GeneProduct	Entrez Gene	8913	338.5,129.0
+CACNA1C	GeneProduct	Entrez Gene	775	338.5,149.0
+CHRNA3	GeneProduct	Entrez Gene	1136	137.5,213.0
+Ca++	Metabolite	HMDB	HMDB0000464	415.0,226.0

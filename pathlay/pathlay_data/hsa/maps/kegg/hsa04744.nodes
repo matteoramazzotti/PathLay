@@ -1,0 +1,39 @@
+TEXT	TYPE	DB	ID	X	Y
+Phototransduction	hsa	KEGG	hsa04744
+LOC118142757	GeneProduct	Entrez Gene	118142757	618,672	653,280
+CNGB1	GeneProduct	Entrez Gene	1258	740,412	740,896
+CNGA1	GeneProduct	Entrez Gene	1259	740,412	740,896
+GRK7	GeneProduct	Entrez Gene	131890	256,267	279,701	504,800
+CALML6	GeneProduct	Entrez Gene	163688	688,365	674,856
+GNAT1	GeneProduct	Entrez Gene	2779	403,669	402,265
+GNAT2	GeneProduct	Entrez Gene	2780	403,669	402,265
+GNB1	GeneProduct	Entrez Gene	2782	403,669	402,265
+GNGT1	GeneProduct	Entrez Gene	2792	403,669	402,265
+GUCA1A	GeneProduct	Entrez Gene	2978	618,672	653,280
+GUCA1B	GeneProduct	Entrez Gene	2979	618,672	653,280
+GUCY2F	GeneProduct	Entrez Gene	2986	594,655	581,251
+GUCY2D	GeneProduct	Entrez Gene	3000	594,655	581,251
+PDE6A	GeneProduct	Entrez Gene	5145	490,266	507,669
+PDE6G	GeneProduct	Entrez Gene	5148	490,266	507,669
+PDE6B	GeneProduct	Entrez Gene	5158	490,266	507,669
+CALML5	GeneProduct	Entrez Gene	51806	688,365	674,856
+RCVRN	GeneProduct	Entrez Gene	5957	267,314	193,722
+RHO	GeneProduct	Entrez Gene	6010	318,252	289,656	436,851	203,851
+GRK1	GeneProduct	Entrez Gene	6011	256,267	279,701	504,800
+SAG	GeneProduct	Entrez Gene	6295	347,295	332,701	504,822
+CALM1	GeneProduct	Entrez Gene	801	688,365	674,856
+CALM2	GeneProduct	Entrez Gene	805	688,365	674,856
+CALM3	GeneProduct	Entrez Gene	808	688,365	674,856
+CALML3	GeneProduct	Entrez Gene	810	688,365	674,856
+RGS9	GeneProduct	Entrez Gene	8787	435,302	410,712
+CALML4	GeneProduct	Entrez Gene	91860	688,365	674,856
+SLC24A1	GeneProduct	Entrez Gene	9187	740,314	740,797
+GUCA1C	GeneProduct	Entrez Gene	9626	618,672	653,280
+Calcium cation	Metabolite	KEGG Compound	C00076	800,406	650,316	661,802	606,285	312,313	252,721	646,363
+GMP	Metabolite	KEGG Compound	C00144	465,689
+Potassium cation	Metabolite	KEGG Compound	C00238	671,334	676,820
+Magnesium cation	Metabolite	KEGG Compound	C00305	600,699
+Retinal	Metabolite	KEGG Compound	C00376	371,844
+3',5'-Cyclic GMP	Metabolite	KEGG Compound	C00942	535,689	686,451	684,930	532,281
+Sodium cation	Metabolite	KEGG Compound	C01330	800,418	798,307	804,792
+11-cis-Retinal	Metabolite	KEGG Compound	C02110	267,844

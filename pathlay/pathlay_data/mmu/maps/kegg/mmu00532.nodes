@@ -1,0 +1,67 @@
+TEXT	TYPE	DB	ID	X	Y
+Glycosaminoglycan biosynthesis - chondroitin sulfate / dermatan sulfate	mmu	KEGG	mmu00532
+Adenosine 3',5'-bisphosphate	Metabolite	KEGG Compound	C00054	1165,610
+3'-Phosphoadenylyl sulfate	Metabolite	KEGG Compound	C00053	1164,586
+Xylt2	GeneProduct	Entrez Gene	217119	1135,133
+Xylt1	GeneProduct	Entrez Gene	233781	1135,133
+B4galt7	GeneProduct	Entrez Gene	218271	1135,184
+[Protein]-L-serine	Metabolite	KEGG Compound	C02189	1134,113
+Chondroitin	Metabolite	KEGG Compound	C00401	1134,561
+Csgalnact1	GeneProduct	Entrez Gene	234356	345.5,151
+Chsy1	GeneProduct	Entrez Gene	269941	345.5,151
+Chpf	GeneProduct	Entrez Gene	74241	345.5,151
+Csgalnact2	GeneProduct	Entrez Gene	78752	345.5,151
+Chsy3	GeneProduct	Entrez Gene	78923	345.5,151
+Chpf2	GeneProduct	Entrez Gene	100910	436.5,151
+Chsy1	GeneProduct	Entrez Gene	269941	436.5,151
+Chpf	GeneProduct	Entrez Gene	74241	436.5,151
+Chsy3	GeneProduct	Entrez Gene	78923	436.5,151
+Csgalnact1	GeneProduct	Entrez Gene	234356	540.5,151
+Csgalnact2	GeneProduct	Entrez Gene	78752	540.5,151
+B3gat3	GeneProduct	Entrez Gene	72727	632.5,151
+B3galt6	GeneProduct	Entrez Gene	117592	719.5,151
+B4galt7	GeneProduct	Entrez Gene	218271	805.5,151
+Xylt2	GeneProduct	Entrez Gene	217119	892.5,151
+Xylt1	GeneProduct	Entrez Gene	233781	892.5,151
+Chpf2	GeneProduct	Entrez Gene	100910	235,151
+Csgalnact1	GeneProduct	Entrez Gene	234356	235,151
+Chsy1	GeneProduct	Entrez Gene	269941	235,151
+Chpf	GeneProduct	Entrez Gene	74241	235,151
+Csgalnact2	GeneProduct	Entrez Gene	78752	235,151
+Chsy3	GeneProduct	Entrez Gene	78923	235,151
+Chpf2	GeneProduct	Entrez Gene	100910	129.5,151
+Chsy1	GeneProduct	Entrez Gene	269941	129.5,151
+Chpf	GeneProduct	Entrez Gene	74241	129.5,151
+Chsy3	GeneProduct	Entrez Gene	78923	129.5,151
+Chst11	GeneProduct	Entrez Gene	58250	199,397
+Chst12	GeneProduct	Entrez Gene	59031	199,397
+Chst13	GeneProduct	Entrez Gene	71797	199,397
+Chst3	GeneProduct	Entrez Gene	53374	370,397
+Chst7	GeneProduct	Entrez Gene	60322	370,397
+Chst15	GeneProduct	Entrez Gene	77590	197,605
+Ust	GeneProduct	Entrez Gene	338362	368,605
+Dse	GeneProduct	Entrez Gene	212898	544,303
+Ust	GeneProduct	Entrez Gene	338362	890,605
+B3galt6	GeneProduct	Entrez Gene	117592	1135,234
+Csgalnact1	GeneProduct	Entrez Gene	234356	1135,332
+Csgalnact2	GeneProduct	Entrez Gene	78752	1135,332
+Chpf2	GeneProduct	Entrez Gene	100910	1135,383
+Chsy1	GeneProduct	Entrez Gene	269941	1135,383
+Chpf	GeneProduct	Entrez Gene	74241	1135,383
+Chsy3	GeneProduct	Entrez Gene	78923	1135,383
+Csgalnact1	GeneProduct	Entrez Gene	234356	1135,434
+Chsy1	GeneProduct	Entrez Gene	269941	1135,434
+Chpf	GeneProduct	Entrez Gene	74241	1135,434
+Csgalnact2	GeneProduct	Entrez Gene	78752	1135,434
+Chsy3	GeneProduct	Entrez Gene	78923	1135,434
+Dermatan	Metabolite	KEGG Compound	C01490	1061,632
+Dse	GeneProduct	Entrez Gene	212898	1062,593
+Ust	GeneProduct	Entrez Gene	338362	544,605
+Chst15	GeneProduct	Entrez Gene	77590	719,605
+Chst14	GeneProduct	Entrez Gene	72136	694,397
+Chst3	GeneProduct	Entrez Gene	53374	890,397
+Chst7	GeneProduct	Entrez Gene	60322	890,397
+Adenosine 3',5'-bisphosphate	Metabolite	KEGG Compound	C00054	1092,678
+3'-Phosphoadenylyl sulfate	Metabolite	KEGG Compound	C00053	1091,653
+Chst12	GeneProduct	Entrez Gene	59031	744,397
+B3gat3	GeneProduct	Entrez Gene	72727	1135,283

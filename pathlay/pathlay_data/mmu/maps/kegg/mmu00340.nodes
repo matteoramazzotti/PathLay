@@ -1,0 +1,76 @@
+TEXT	TYPE	DB	ID	X	Y
+Histidine metabolism	mmu	KEGG	mmu00340
+Aldh7a1	GeneProduct	Entrez Gene	110695	422,341
+Aldh2	GeneProduct	Entrez Gene	11669	422,341
+Aldh3a2	GeneProduct	Entrez Gene	11671	422,341
+Aldh9a1	GeneProduct	Entrez Gene	56752	422,341
+Aldh1b1	GeneProduct	Entrez Gene	72535	422,341
+Maob	GeneProduct	Entrez Gene	109731	574,445
+Maoa	GeneProduct	Entrez Gene	17161	574,445
+Aldh3a1	GeneProduct	Entrez Gene	11670	574,520
+Aldh3b2	GeneProduct	Entrez Gene	621603	574,520
+Aldh3b1	GeneProduct	Entrez Gene	67689	574,520
+Aldh3b3	GeneProduct	Entrez Gene	73458	574,520
+Aoc1l1	GeneProduct	Entrez Gene	243376	523,341
+Aoc1l3	GeneProduct	Entrez Gene	243377	523,341
+Aoc1l2	GeneProduct	Entrez Gene	69761	523,341
+Aoc1	GeneProduct	Entrez Gene	76507	523,341
+Hnmt	GeneProduct	Entrez Gene	140483	574,373
+Ftcd	GeneProduct	Entrez Gene	14317	849,590
+Cndp1	GeneProduct	Entrez Gene	338403	709,297
+Carns1	GeneProduct	Entrez Gene	107239	733,230
+Aspa	GeneProduct	Entrez Gene	11484	67,373
+5-Phospho-alpha-D-ribose 1-diphosphate	Metabolite	KEGG Compound	C00119	104,135
+1-(5-Phospho-D-ribosyl)-ATP	Metabolite	KEGG Compound	C02739	192,135
+Phosphoribosyl-AMP	Metabolite	KEGG Compound	C02741	280,135
+5-(5-Phospho-D-ribosylaminoformimino)-1-(5-phosphoribosyl)-imidazole-4-carboxamide	Metabolite	KEGG Compound	C04896	368,135
+N-(5'-Phospho-D-1'-ribulosylformimino)-5-amino-1-(5''-phospho-D-ribosyl)-4-imidazolecarboxamide	Metabolite	KEGG Compound	C04916	456,135
+1-(5'-Phosphoribosyl)-5-amino-4-imidazolecarboxamide	Metabolite	KEGG Compound	C04677	537,192
+D-erythro-1-(Imidazol-4-yl)glycerol 3-phosphate	Metabolite	KEGG Compound	C04666	564,135
+Amdhd1	GeneProduct	Entrez Gene	71761	829,518
+3-(Imidazol-4-yl)-2-oxopropyl phosphate	Metabolite	KEGG Compound	C01267	652,135
+L-Histidinol phosphate	Metabolite	KEGG Compound	C01100	740,135
+L-Histidinol	Metabolite	KEGG Compound	C00860	828,135
+L-Aspartate	Metabolite	KEGG Compound	C00049	92,413
+N-Formyl-L-aspartate	Metabolite	KEGG Compound	C01044	92,340
+N-Formimino-L-aspartate	Metabolite	KEGG Compound	C03409	185,340
+4-Imidazolone-5-acetate	Metabolite	KEGG Compound	C05133	278,340
+(1-Ribosylimidazole)-4-acetate	Metabolite	KEGG Compound	C05131	371,486
+1-(5-Phosphoribosyl)imidazole-4-acetate	Metabolite	KEGG Compound	C04437	371,413
+Imidazole-4-acetate	Metabolite	KEGG Compound	C02835	371,340
+Uroc1	GeneProduct	Entrez Gene	243537	829,445
+Imidazole-4-acetaldehyde	Metabolite	KEGG Compound	C05130	464,340
+Histamine	Metabolite	KEGG Compound	C00388	573,340
+L-Histidinal	Metabolite	KEGG Compound	C01929	828,208
+N(pi)-Methyl-L-histidine	Metabolite	KEGG Compound	C01152	783,221
+beta-Alanyl-N(pi)-methyl-L-histidine	Metabolite	KEGG Compound	C01262	684,221
+Carnosine	Metabolite	KEGG Compound	C00386	684,266
+L-Histidine	Metabolite	KEGG Compound	C00135	828,340
+N-Methylhistamine	Metabolite	KEGG Compound	C05127	573,413
+4-(beta-Acetylaminoethyl)imidazole	Metabolite	KEGG Compound	C05135	527,286
+Imidazol-5-yl-pyruvate	Metabolite	KEGG Compound	C03277	684,605
+Hal	GeneProduct	Entrez Gene	15109	829,373
+Imidazole lactate	Metabolite	KEGG Compound	C05568	684,662
+Thiourocanic acid	Metabolite	KEGG Compound	C05571	1190,413
+Ergothioneine	Metabolite	KEGG Compound	C05570	1190,341
+Hercynine	Metabolite	KEGG Compound	C05575	920,340
+Urocanate	Metabolite	KEGG Compound	C00785	828,413
+4-Oxoglutaramate	Metabolite	KEGG Compound	C05572	958,481
+2-Oxoglutarate	Metabolite	KEGG Compound	C00026	1032,481
+Isoglutamine	Metabolite	KEGG Compound	C16673	998,492
+Formylisoglutamine	Metabolite	KEGG Compound	C16674	924,492
+4-Imidazolone-5-propanoate	Metabolite	KEGG Compound	C03680	828,486
+Carnmt1	GeneProduct	Entrez Gene	67383	685,249
+N-Formimino-L-glutamate	Metabolite	KEGG Compound	C00439	828,559
+Hydantoin-5-propionate	Metabolite	KEGG Compound	C05565	735,486
+N-Formyl-L-glutamate	Metabolite	KEGG Compound	C01045	943,560
+L-Glutamate	Metabolite	KEGG Compound	C00025	828,638
+Methylimidazole acetaldehyde	Metabolite	KEGG Compound	C05827	573,486
+Methylimidazoleacetic acid	Metabolite	KEGG Compound	C05828	573,559
+N-Carbamyl-L-glutamate	Metabolite	KEGG Compound	C05829	735,638
+Dihydrourocanate	Metabolite	KEGG Compound	C20522	976,413
+Cndp2	GeneProduct	Entrez Gene	66054	659,297
+gamma-L-Glutamyl-S-(hercyn-2-yl)-L-cysteine S-oxide	Metabolite	KEGG Compound	C20995	1011,340
+S-(Hercyn-2-yl)-L-cysteine S-oxide	Metabolite	KEGG Compound	C20994	1101,340
+Hdc	GeneProduct	Entrez Gene	15186	657,341
+Carns1	GeneProduct	Entrez Gene	107239	758,267

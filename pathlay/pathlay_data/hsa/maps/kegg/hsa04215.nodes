@@ -1,0 +1,34 @@
+TEXT	TYPE	DB	ID	X	Y
+Apoptosis - multiple species	hsa	KEGG	hsa04215
+BCL2L11	GeneProduct	Entrez Gene	10018	230,243
+BBC3	GeneProduct	Entrez Gene	27113	230,243
+HTRA2	GeneProduct	Entrez Gene	27429	535,243
+APAF1	GeneProduct	Entrez Gene	317	685,408	685,173	685,837
+BIRC2	GeneProduct	Entrez Gene	329	638,243
+BIRC3	GeneProduct	Entrez Gene	330	638,243
+XIAP	GeneProduct	Entrez Gene	331	638,243
+BIRC5	GeneProduct	Entrez Gene	332	638,243	638,909	638,669
+BECN2	GeneProduct	Entrez Gene	441925	230,911
+NGFR	GeneProduct	Entrez Gene	4804	230,784
+PMAIP1	GeneProduct	Entrez Gene	5366	230,243
+SEPTIN4	GeneProduct	Entrez Gene	5414	535,266
+CYCS	GeneProduct	Entrez Gene	54205	590,173	1,1	590,837
+MAPK8	GeneProduct	Entrez Gene	5599	459,364
+MAPK9	GeneProduct	Entrez Gene	5601	459,364
+MAPK10	GeneProduct	Entrez Gene	5602	459,364
+DIABLO	GeneProduct	Entrez Gene	56616	535,220
+BIRC6	GeneProduct	Entrez Gene	57448	638,909
+BAK1	GeneProduct	Entrez Gene	578	380,256	380,911
+BAX	GeneProduct	Entrez Gene	581	380,234
+BCL2	GeneProduct	Entrez Gene	596	305,243
+BCL2L1	GeneProduct	Entrez Gene	598	305,243	305,911
+BID	GeneProduct	Entrez Gene	637	230,243
+BOK	GeneProduct	Entrez Gene	666	305,499
+TNFRSF1A	GeneProduct	Entrez Gene	7132	230,130
+BIRC7	GeneProduct	Entrez Gene	79444	638,495
+CASP3	GeneProduct	Entrez Gene	836	844,256	844,908
+CASP7	GeneProduct	Entrez Gene	840	844,484	844,233	746,931	746,852
+CASP8	GeneProduct	Entrez Gene	841	746,196	746,830
+CASP9	GeneProduct	Entrez Gene	842	746,243	746,908
+BECN1	GeneProduct	Entrez Gene	8678	230,911
+FADD	GeneProduct	Entrez Gene	8772	685,130	685,784

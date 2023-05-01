@@ -1,0 +1,31 @@
+TEXT	TYPE	DB	ID	X	Y
+One carbon pool by folate	hsa	KEGG	hsa00670
+ST20-MTHFS	GeneProduct	Entrez Gene	100528021	534,239
+MTHFS	GeneProduct	Entrez Gene	10588	534,239
+MTHFD2	GeneProduct	Entrez Gene	10797	554,353	424,302
+ALDH1L1	GeneProduct	Entrez Gene	10840	284,373
+FTCD	GeneProduct	Entrez Gene	10841	333,454	487,378	337,214
+MTFMT	GeneProduct	Entrez Gene	123263	284,393
+ALDH1L2	GeneProduct	Entrez Gene	160428	284,373
+DHFR	GeneProduct	Entrez Gene	1719	158,298	121,266	152,243
+DHFR2	GeneProduct	Entrez Gene	200895	158,298	121,266	152,243
+MTHFD1L	GeneProduct	Entrez Gene	25902	283,302
+GART	GeneProduct	Entrez Gene	2618	333,411	283,258
+AMT	GeneProduct	Entrez Gene	275	490,260	398,127
+MTHFD2L	GeneProduct	Entrez Gene	441024	554,353	424,302
+MTHFD1	GeneProduct	Entrez Gene	4522	424,302	554,302	283,302
+MTHFR	GeneProduct	Entrez Gene	4524	594,393
+MTR	GeneProduct	Entrez Gene	4548	397,477
+ATIC	GeneProduct	Entrez Gene	471	283,238
+SHMT1	GeneProduct	Entrez Gene	6470	398,191
+SHMT2	GeneProduct	Entrez Gene	6472	398,191
+TYMS	GeneProduct	Entrez Gene	7298	397,520
+Tetrahydrofolate	Metabolite	KEGG Compound	C00101	204,301
+5,10-Methylenetetrahydrofolate	Metabolite	KEGG Compound	C00143	619,301
+10-Formyltetrahydrofolate	Metabolite	KEGG Compound	C00234	359,301
+Dihydrofolate	Metabolite	KEGG Compound	C00415	120,298
+5-Methyltetrahydrofolate	Metabolite	KEGG Compound	C00440	619,436
+5,10-Methenyltetrahydrofolate	Metabolite	KEGG Compound	C00445	489,301
+Folate	Metabolite	KEGG Compound	C00504	120,206
+5-Formiminotetrahydrofolate	Metabolite	KEGG Compound	C00664	486,444
+Folinic acid	Metabolite	KEGG Compound	C03479	488,216

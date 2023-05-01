@@ -1,0 +1,48 @@
+TEXT	TYPE	DB	ID	X	Y
+Type I diabetes mellitus	hsa	KEGG	hsa04940
+CPE	GeneProduct	Entrez Gene	1363	166,246
+GAD1	GeneProduct	Entrez Gene	2571	166,205
+GAD2	GeneProduct	Entrez Gene	2572	166,205
+GZMB	GeneProduct	Entrez Gene	3002	263,477
+HLA-A	GeneProduct	Entrez Gene	3105	209,402
+HLA-B	GeneProduct	Entrez Gene	3106	209,402
+HLA-C	GeneProduct	Entrez Gene	3107	209,402
+HLA-DMA	GeneProduct	Entrez Gene	3108	460,214
+HLA-DMB	GeneProduct	Entrez Gene	3109	460,214
+HLA-DOA	GeneProduct	Entrez Gene	3111	460,214
+HLA-DOB	GeneProduct	Entrez Gene	3112	460,214
+HLA-DPA1	GeneProduct	Entrez Gene	3113	460,214
+HLA-DPB1	GeneProduct	Entrez Gene	3115	460,214
+HLA-DQA1	GeneProduct	Entrez Gene	3117	460,214
+HLA-DQA2	GeneProduct	Entrez Gene	3118	460,214
+HLA-DQB1	GeneProduct	Entrez Gene	3119	460,214
+HLA-DRA	GeneProduct	Entrez Gene	3122	460,214
+HLA-DRB1	GeneProduct	Entrez Gene	3123	460,214
+HLA-DRB3	GeneProduct	Entrez Gene	3125	460,214
+HLA-DRB4	GeneProduct	Entrez Gene	3126	460,214
+HLA-DRB5	GeneProduct	Entrez Gene	3127	460,214
+HLA-E	GeneProduct	Entrez Gene	3133	209,402
+HLA-F	GeneProduct	Entrez Gene	3134	209,402
+HLA-G	GeneProduct	Entrez Gene	3135	209,402
+HSPD1	GeneProduct	Entrez Gene	3329	166,266
+ICA1	GeneProduct	Entrez Gene	3382	166,286
+IFNG	GeneProduct	Entrez Gene	3458	263,499	599,357
+FAS	GeneProduct	Entrez Gene	355	209,425
+IL1A	GeneProduct	Entrez Gene	3552	263,559
+IL1B	GeneProduct	Entrez Gene	3553	263,559
+IL2	GeneProduct	Entrez Gene	3558	542,357
+FASLG	GeneProduct	Entrez Gene	356	317,425
+IL12A	GeneProduct	Entrez Gene	3592	514,278
+IL12B	GeneProduct	Entrez Gene	3593	514,278
+INS	GeneProduct	Entrez Gene	3630	166,185
+LTA	GeneProduct	Entrez Gene	4049	263,518
+PRF1	GeneProduct	Entrez Gene	5551	263,458
+PTPRN	GeneProduct	Entrez Gene	5798	166,226
+PTPRN2	GeneProduct	Entrez Gene	5799	166,226
+TNF	GeneProduct	Entrez Gene	7124	263,540
+CD28	GeneProduct	Entrez Gene	940	568,237
+CD80	GeneProduct	Entrez Gene	941	460,237
+CD86	GeneProduct	Entrez Gene	942	460,237
+Hydrogen peroxide	Metabolite	KEGG Compound	C00027	264,577
+Nitric oxide	Metabolite	KEGG Compound	C00533	264,577
+Superoxide	Metabolite	KEGG Compound	C00704	264,577

@@ -1,0 +1,199 @@
+TEXT	TYPE	DB	ID	X	Y
+Porphyrin metabolism	mmu	KEGG	mmu00860
+D-1-Aminopropan-2-ol O-phosphate	Metabolite	KEGG Compound	C04122	309,1313
+Cob(II)yrinate a,c diamide	Metabolite	KEGG Compound	C06504	412,1069
+Chlorophyll a	Metabolite	KEGG Compound	C05306	745,1269
+Gusb	GeneProduct	Entrez Gene	110006	1135,600
+Ugt2b38	GeneProduct	Entrez Gene	100559	1033,600
+Ugt2b34	GeneProduct	Entrez Gene	100727	1033,600
+Ugt2b37	GeneProduct	Entrez Gene	112417	1033,600
+Ugt1a2	GeneProduct	Entrez Gene	22236	1033,600
+Ugt2b5	GeneProduct	Entrez Gene	22238	1033,600
+Ugt2b36	GeneProduct	Entrez Gene	231396	1033,600
+Ugt2b35	GeneProduct	Entrez Gene	243085	1033,600
+Ugt1a10	GeneProduct	Entrez Gene	394430	1033,600
+Ugt1a7c	GeneProduct	Entrez Gene	394432	1033,600
+Ugt1a5	GeneProduct	Entrez Gene	394433	1033,600
+Ugt1a9	GeneProduct	Entrez Gene	394434	1033,600
+Ugt1a6b	GeneProduct	Entrez Gene	394435	1033,600
+Ugt1a1	GeneProduct	Entrez Gene	394436	1033,600
+Ugt2a2	GeneProduct	Entrez Gene	552899	1033,600
+Ugt1a8	GeneProduct	Entrez Gene	613123	1033,600
+Ugt2b1	GeneProduct	Entrez Gene	71773	1033,600
+Ugt2a3	GeneProduct	Entrez Gene	72094	1033,600
+Ugt2a1	GeneProduct	Entrez Gene	94215	1033,600
+Ugt1a6a	GeneProduct	Entrez Gene	94284	1033,600
+Blvra	GeneProduct	Entrez Gene	109778	913,538
+Blvrb	GeneProduct	Entrez Gene	233016	913,538
+L-Threonine O-3-phosphate	Metabolite	KEGG Compound	C12147	199,1313
+Hemoglobin	Metabolite	KEGG Compound	C01708	806,584
+Oxyhemoglobin	Metabolite	KEGG Compound	C05781	868,585
+Peroxidase	Metabolite	KEGG Compound	C05785	755,410
+Cytochrome c	Metabolite	KEGG Compound	C00524	906,493
+Myoglobin	Metabolite	KEGG Compound	C05782	755,453
+Cytochrome a	Metabolite	KEGG Compound	C05783	755,493
+Catalase	Metabolite	KEGG Compound	C05784	851,537
+Hccs	GeneProduct	Entrez Gene	15159	855,494
+Zn-Bacteriochlorophyll a	Metabolite	KEGG Compound	C11851	602,627
+Cox10	GeneProduct	Entrez Gene	70383	886,326
+Fech	GeneProduct	Entrez Gene	14151	745,357
+Cp	GeneProduct	Entrez Gene	12870	599,150
+Fxn	GeneProduct	Entrez Gene	14297	599,150
+Heph	GeneProduct	Entrez Gene	15203	599,150
+Hephl1	GeneProduct	Entrez Gene	244698	599,150
+Ppox	GeneProduct	Entrez Gene	19044	626,337
+Urod	GeneProduct	Entrez Gene	22275	474,355
+Uros	GeneProduct	Entrez Gene	22276	392,355
+Urod	GeneProduct	Entrez Gene	22275	474,259
+Hmbs	GeneProduct	Entrez Gene	15288	302,356
+Alad	GeneProduct	Entrez Gene	17025	219,356
+Alas1	GeneProduct	Entrez Gene	11655	80,458
+Alas2	GeneProduct	Entrez Gene	11656	80,458
+Eprs	GeneProduct	Entrez Gene	107508	135,604
+Ears2	GeneProduct	Entrez Gene	67417	135,604
+Mmab	GeneProduct	Entrez Gene	77697	413,1135
+Mmab	GeneProduct	Entrez Gene	77697	532,1266
+Mmab	GeneProduct	Entrez Gene	77697	325,1432
+Cox15	GeneProduct	Entrez Gene	226139	1037,326
+Hmox1	GeneProduct	Entrez Gene	15368	874,443
+Hmox2	GeneProduct	Entrez Gene	15369	874,443
+Protoporphyrin	Metabolite	KEGG Compound	C02191	668,355
+Divinyl chlorophyllide a	Metabolite	KEGG Compound	C11832	668,1116
+Divinylprotochlorophyllide	Metabolite	KEGG Compound	C11831	668,782
+Pheophorbide a	Metabolite	KEGG Compound	C18021	1049,1116
+Red chlorophyll catabolite	Metabolite	KEGG Compound	C18022	1141,1116
+Primary fluorescent chlorophyll catabolite	Metabolite	KEGG Compound	C18098	1141,1234
+Chlorophyllide b	Metabolite	KEGG Compound	C16541	961,1172
+7(1)-Hydroxychlorophyll a	Metabolite	KEGG Compound	C18151	850,1269
+7(1)-Hydroxychlorophyllide a	Metabolite	KEGG Compound	C16540	850,1172
+3-Vinylbacteriochlorophyllide a	Metabolite	KEGG Compound	C18152	827,1084
+3-Hydroxyethylchlorophyllide a	Metabolite	KEGG Compound	C18154	827,1023
+3-Hydroxyethylbacteriochlorophyllide a	Metabolite	KEGG Compound	C18153	910,1054
+Cobinamide	Metabolite	KEGG Compound	C05774	575,1265
+Divinylchlorophyll a	Metabolite	KEGG Compound	C11850	668,1269
+8-Ethyl-12-methyl-3-vinylbacteriochlorophyllide d	Metabolite	KEGG Compound	C18157	887,939
+Pyropheophorbide a	Metabolite	KEGG Compound	C18064	1049,1234
+Bacteriochlorophyllide a	Metabolite	KEGG Compound	C18155	1052,1054
+13(1)-Oxo-magnesium-protoporphyrin IX 13-monomethyl ester	Metabolite	KEGG Compound	C11830	668,705
+Bacteriochlorophyll a	Metabolite	KEGG Compound	C11242	1280,1054
+Bacteriochlorophyllide d	Metabolite	KEGG Compound	C18160	1052,938
+8-Ethyl-12-methylbacteriochlorophyllide d	Metabolite	KEGG Compound	C21431	1052,938
+8,12-Diethylbacteriochlorophyllide d	Metabolite	KEGG Compound	C21432	1052,938
+12-Ethyl-8-propylbacteriochlorophyllide d	Metabolite	KEGG Compound	C21433	1052,938
+12-Ethyl-8-isobutylbacteriochlorophyllide d	Metabolite	KEGG Compound	C21434	1052,938
+Bacteriochlorophyll d	Metabolite	KEGG Compound	C18162	1279,937
+Bacteriochlorophyll c	Metabolite	KEGG Compound	C18163	1279,876
+Bacteriochlorophyllide b	Metabolite	KEGG Compound	C18156	1052,1009
+Bacteriochlorophyll b	Metabolite	KEGG Compound	C11243	1280,1009
+13(1)-Hydroxy-magnesium-protoporphyrin IX 13-monomethyl ester	Metabolite	KEGG Compound	C11829	668,641
+Geranylgeranyl bacteriochlorophyllide a	Metabolite	KEGG Compound	C21217	1166,1054
+Geranylgeranyl bacteriochlorophyllide b	Metabolite	KEGG Compound	C21435	1166,1009
+8,12-Diethyl-3-vinylbacteriochlorophyllide d	Metabolite	KEGG Compound	C21427	887,878
+12-Ethyl-8-propyl-3-vinylbacteriochlorophyllide d	Metabolite	KEGG Compound	C21428	887,818
+L-Urobilin	Metabolite	KEGG Compound	C05793	1261,719
+12-Ethyl-8-isobutyl-3-vinylbacteriochlorophyllide d	Metabolite	KEGG Compound	C21429	887,757
+Ppox	GeneProduct	Entrez Gene	19044	578,278
+Fech	GeneProduct	Entrez Gene	14151	745,278
+Urobilin	Metabolite	KEGG Compound	C05794	1261,654
+5-Oxo-delta-bilirubin	Metabolite	KEGG Compound	C20666	961,400
+L-Urobilinogen	Metabolite	KEGG Compound	C05789	1187,719
+Nickel-sirohydrochlorin	Metabolite	KEGG Compound	C21510	283,549
+Nickel-sirohydrochlorin a,c-diamide	Metabolite	KEGG Compound	C21511	283,638
+I-Urobilinogen	Metabolite	KEGG Compound	C05790	1187,654
+15,17(3)-Seco-F430-17(3)-acid	Metabolite	KEGG Compound	C21512	283,728
+Bacteriochlorophyllide e	Metabolite	KEGG Compound	C21582	1052,814
+Bacteriochlorophyllide c	Metabolite	KEGG Compound	C18161	1052,876
+Biliverdin-IX-delta	Metabolite	KEGG Compound	C21723	961,355
+Biliverdin-IX-beta	Metabolite	KEGG Compound	C21724	961,377
+Coenzyme F430	Metabolite	KEGG Compound	C05777	283,818
+Siroheme	Metabolite	KEGG Compound	C00748	188,453
+L-Threonine	Metabolite	KEGG Compound	C00188	80,1313
+Mmab	GeneProduct	Entrez Gene	77697	351,1107
+15,16-Dihydrobiliverdin	Metabolite	KEGG Compound	C11630	1090,515
+Dihydro-heme d1	Metabolite	KEGG Compound	C22338	568,193
+Heme d1	Metabolite	KEGG Compound	C22339	806,193
+Fe-coproporphyrin III	Metabolite	KEGG Compound	C21284	806,227
+Coproporphyrin III	Metabolite	KEGG Compound	C05770	634,277
+Coproporphyrinogen III	Metabolite	KEGG Compound	C03263	519,355
+Uroporphyrinogen III	Metabolite	KEGG Compound	C01051	438,355
+12,18-Didecarboxysiroheme	Metabolite	KEGG Compound	C21835	188,228
+Transferrin[Fe(II)]2	Metabolite	KEGG Compound	C03029	692,80
+Porphobilinogen	Metabolite	KEGG Compound	C00931	264,355
+5-Methoxy-6-methylbenzimidazole	Metabolite	KEGG Compound	C22451	766,1394
+5-Methoxybenzimidazole	Metabolite	KEGG Compound	C22450	858,1394
+5-Hydroxybenzimidazole	Metabolite	KEGG Compound	C21764	950,1394
+Aminoimidazole ribotide	Metabolite	KEGG Compound	C03373	1042,1394
+Heme	Metabolite	KEGG Compound	C00032	806,355
+Cobalt-precorrin 5B	Metabolite	KEGG Compound	C16243	337,728
+Aquacob(III)alamin	Metabolite	KEGG Compound	C00992	93,1442
+D-Urobilin	Metabolite	KEGG Compound	C05795	1261,599
+Bilirubin beta-diglucuronide	Metabolite	KEGG Compound	C05787	1089,599
+Adenosyl cobinamide	Metabolite	KEGG Compound	C06508	412,1265
+D-Urobilinogen	Metabolite	KEGG Compound	C05791	1187,599
+Cpox	GeneProduct	Entrez Gene	12892	551,345
+(R)-1-Aminopropan-2-ol	Metabolite	KEGG Compound	C03194	290,1221
+Precorrin 6X	Metabolite	KEGG Compound	C06320	495,776
+Cobalt-precorrin 7	Metabolite	KEGG Compound	C16244	337,874
+Magnesium protoporphyrin	Metabolite	KEGG Compound	C03516	668,478
+Cobalt-sirohydrochlorin	Metabolite	KEGG Compound	C11538	337,500
+Precorrin 3B	Metabolite	KEGG Compound	C06406	495,590
+Adenosyl cobinamide phosphate	Metabolite	KEGG Compound	C06509	412,1313
+Adenosine-GDP-cobinamide	Metabolite	KEGG Compound	C06510	412,1378
+Cobamide coenzyme	Metabolite	KEGG Compound	C00194	412,1442
+Dimethylbenzimidazole	Metabolite	KEGG Compound	C03114	674,1394
+N1-(5-Phospho-alpha-D-ribosyl)-5,6-dimethylbenzimidazole	Metabolite	KEGG Compound	C04778	582,1394
+alpha-Ribazole	Metabolite	KEGG Compound	C05775	490,1394
+Cob(II)alamin	Metabolite	KEGG Compound	C00541	183,1442
+Heme A	Metabolite	KEGG Compound	C15670	1107,325
+Precorrin 2	Metabolite	KEGG Compound	C02463	438,453
+L-Glutamate	Metabolite	KEGG Compound	C00025	135,631
+L-Glutamyl-tRNA(Glu)	Metabolite	KEGG Compound	C02987	135,562
+(S)-4-Amino-5-oxopentanoate	Metabolite	KEGG Compound	C03741	135,491
+4,5-Dioxopentanoate	Metabolite	KEGG Compound	C02800	135,272
+Hydroxymethylbilane	Metabolite	KEGG Compound	C01024	349,355
+Uroporphyrinogen I	Metabolite	KEGG Compound	C05766	438,258
+Uroporphyrin I	Metabolite	KEGG Compound	C05767	438,208
+Coproporphyrin I	Metabolite	KEGG Compound	C05769	634,258
+Coproporphyrinogen I	Metabolite	KEGG Compound	C05768	519,258
+Heme O	Metabolite	KEGG Compound	C15672	976,325
+Uroporphyrin III	Metabolite	KEGG Compound	C02469	438,309
+Protoporphyrinogen IX	Metabolite	KEGG Compound	C01079	594,355
+Fe2+	Metabolite	KEGG Compound	C14818	692,149
+Apoferritin	Metabolite	KEGG Compound	C05779	428,179
+Transferrin[Fe(III)]2	Metabolite	KEGG Compound	C03179	509,80
+Biliverdin	Metabolite	KEGG Compound	C00500	990,453
+(3Z)-Phytochromobilin	Metabolite	KEGG Compound	C05913	1183,422
+(3Z)-Phycocyanobilin	Metabolite	KEGG Compound	C05786	1183,453
+Bilirubin	Metabolite	KEGG Compound	C00486	988,599
+(3Z)-Phycoerythrobilin	Metabolite	KEGG Compound	C05912	1183,515
+Glycine	Metabolite	KEGG Compound	C00037	80,518
+Fe3+	Metabolite	KEGG Compound	C14819	509,149
+Magnesium protoporphyrin monomethyl ester	Metabolite	KEGG Compound	C04536	668,558
+Precorrin 3A	Metabolite	KEGG Compound	C05772	495,545
+Precorrin 5	Metabolite	KEGG Compound	C06416	495,680
+5-Aminolevulinate	Metabolite	KEGG Compound	C00430	135,355
+Cobalt-precorrin 5A	Metabolite	KEGG Compound	C16242	337,680
+Cobalt-precorrin 4	Metabolite	KEGG Compound	C11540	337,635
+Protochlorophyllide	Metabolite	KEGG Compound	C02880	743,782
+Cobalt-precorrin 8	Metabolite	KEGG Compound	C11545	337,923
+Bacteriopheophytin	Metabolite	KEGG Compound	C05798	704,1086
+Precorrin 4	Metabolite	KEGG Compound	C06407	495,635
+Cob(I)yrinate a,c diamide	Metabolite	KEGG Compound	C06505	412,1114
+Cobalt-factor III	Metabolite	KEGG Compound	C17401	337,590
+Sirohydrochlorin	Metabolite	KEGG Compound	C05778	337,453
+Adenosyl cobyrinate hexaamide	Metabolite	KEGG Compound	C06507	412,1212
+Pheophytin a	Metabolite	KEGG Compound	C05797	745,1332
+Chlorophyll b	Metabolite	KEGG Compound	C05307	961,1269
+Precorrin 6Y	Metabolite	KEGG Compound	C06319	495,824
+Cobalt-dihydro-precorrin 6	Metabolite	KEGG Compound	C11543	337,824
+Cobalt-precorrin 6	Metabolite	KEGG Compound	C11542	337,776
+Precorrin 8X	Metabolite	KEGG Compound	C06408	495,923
+Chlorophyllide	Metabolite	KEGG Compound	C02139	743,1116
+Hydrogenobyrinate	Metabolite	KEGG Compound	C06399	495,971
+Adenosyl cobyrinate a,c diamide	Metabolite	KEGG Compound	C06506	412,1164
+Cyanocobalamin	Metabolite	KEGG Compound	C02823	273,1369
+Hydrogenobyrinate a,c diamide	Metabolite	KEGG Compound	C06503	495,1018
+Cobyrinate	Metabolite	KEGG Compound	C05773	337,971
+Apotransferrin	Metabolite	KEGG Compound	C05780	601,124
+Ferritin	Metabolite	KEGG Compound	C19608	428,80
+Cob(I)alamin	Metabolite	KEGG Compound	C00853	273,1442

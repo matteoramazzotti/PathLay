@@ -1,0 +1,79 @@
+TEXT	TYPE	DB	ID	X	Y
+Cortisol synthesis and secretion	hsa	KEGG	hsa04927
+CREB3	GeneProduct	Entrez Gene	10488	793,375
+ADCY1	GeneProduct	Entrez Gene	107	244,213
+ADCY2	GeneProduct	Entrez Gene	108	244,213
+ADCY3	GeneProduct	Entrez Gene	109	244,213
+ADCY5	GeneProduct	Entrez Gene	111	244,213
+ADCY6	GeneProduct	Entrez Gene	112	244,213
+ADCY7	GeneProduct	Entrez Gene	113	244,213
+ADCY8	GeneProduct	Entrez Gene	114	244,213
+ADCY9	GeneProduct	Entrez Gene	115	244,213
+CREB1	GeneProduct	Entrez Gene	1385	793,375
+ATF2	GeneProduct	Entrez Gene	1386	793,375
+ATF6B	GeneProduct	Entrez Gene	1388	793,375
+CREB3L4	GeneProduct	Entrez Gene	148327	793,375
+CYP11A1	GeneProduct	Entrez Gene	1583	811,590
+CYP11B1	GeneProduct	Entrez Gene	1584	995,307	802,787
+CYP17A1	GeneProduct	Entrez Gene	1586	995,331	961,566	961,654
+CYP21A2	GeneProduct	Entrez Gene	1589	1032,703
+AGT	GeneProduct	Entrez Gene	183	163,261
+AGTR1	GeneProduct	Entrez Gene	185	244,261
+NR0B1	GeneProduct	Entrez Gene	190	723,265
+ADCY4	GeneProduct	Entrez Gene	196883	244,213
+PLCB1	GeneProduct	Entrez Gene	23236	479,290
+NR5A1	GeneProduct	Entrez Gene	2516	793,287
+GNA11	GeneProduct	Entrez Gene	2767	396,290
+GNAQ	GeneProduct	Entrez Gene	2776	396,290
+GNAS	GeneProduct	Entrez Gene	2778	343,162
+NR4A1	GeneProduct	Entrez Gene	3164	793,309
+HSD3B1	GeneProduct	Entrez Gene	3283	948,617	1032,617
+HSD3B2	GeneProduct	Entrez Gene	3284	948,617	1032,617
+ITPR1	GeneProduct	Entrez Gene	3708	562,355
+ITPR2	GeneProduct	Entrez Gene	3709	562,355
+ITPR3	GeneProduct	Entrez Gene	3710	562,355
+KCNA4	GeneProduct	Entrez Gene	3739	244,565
+KCNK2	GeneProduct	Entrez Gene	3776	244,331
+KCNK3	GeneProduct	Entrez Gene	3777	244,608
+LDLR	GeneProduct	Entrez Gene	3949	244,714
+MC2R	GeneProduct	Entrez Gene	4158	244,162	786,125
+ATF4	GeneProduct	Entrez Gene	468	793,375
+PBX1	GeneProduct	Entrez Gene	5087	793,353
+PDE8A	GeneProduct	Entrez Gene	5151	435,201
+PLCB2	GeneProduct	Entrez Gene	5330	479,290
+PLCB3	GeneProduct	Entrez Gene	5331	479,290
+PLCB4	GeneProduct	Entrez Gene	5332	479,290
+POMC	GeneProduct	Entrez Gene	5443	163,162
+PRKACA	GeneProduct	Entrez Gene	5566	435,251
+PRKACB	GeneProduct	Entrez Gene	5567	435,251
+PRKACG	GeneProduct	Entrez Gene	5568	435,251
+MRAP	GeneProduct	Entrez Gene	56246	786,142	244,179
+NCEH1	GeneProduct	Entrez Gene	57552	995,380	694,475
+CREB3L2	GeneProduct	Entrez Gene	64764	793,375
+SP1	GeneProduct	Entrez Gene	6667	793,331
+STAR	GeneProduct	Entrez Gene	6770	995,355	759,548
+CACNA1C	GeneProduct	Entrez Gene	775	244,460
+CACNA1D	GeneProduct	Entrez Gene	776	244,460
+CACNA1F	GeneProduct	Entrez Gene	778	244,460
+CACNA1S	GeneProduct	Entrez Gene	779	244,460
+CREB3L3	GeneProduct	Entrez Gene	84699	793,375
+ORAI1	GeneProduct	Entrez Gene	84876	244,505
+PDE8B	GeneProduct	Entrez Gene	8622	435,201
+CACNA1I	GeneProduct	Entrez Gene	8911	244,436
+CACNA1H	GeneProduct	Entrez Gene	8912	244,436
+CACNA1G	GeneProduct	Entrez Gene	8913	244,436
+CREB3L1	GeneProduct	Entrez Gene	90993	793,375
+SCARB1	GeneProduct	Entrez Gene	949	244,748
+CREB5	GeneProduct	Entrez Gene	9586	793,375
+AMP	Metabolite	KEGG Compound	C00020	549,214
+Calcium cation	Metabolite	KEGG Compound	C00076	509,353	186,436	186,458	386,456	186,505
+Cholesterol	Metabolite	KEGG Compound	C00187	761,503
+Potassium cation	Metabolite	KEGG Compound	C00238	186,331	302,565	303,607
+Progesterone	Metabolite	KEGG Compound	C00410	921,666
+3',5'-Cyclic AMP	Metabolite	KEGG Compound	C00575	359,214
+Cortisol	Metabolite	KEGG Compound	C00735	723,817
+17alpha-Hydroxyprogesterone	Metabolite	KEGG Compound	C01176	1005,666
+D-myo-Inositol 1,4,5-trisphosphate	Metabolite	KEGG Compound	C01245	516,323
+Pregnenolone	Metabolite	KEGG Compound	C01953	921,579
+17alpha-Hydroxypregnenolone	Metabolite	KEGG Compound	C05138	1005,579
+11-Deoxycortisol	Metabolite	KEGG Compound	C05488	921,736	846,736

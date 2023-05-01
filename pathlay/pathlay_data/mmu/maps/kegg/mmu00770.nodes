@@ -1,0 +1,60 @@
+TEXT	TYPE	DB	ID	X	Y
+Pantothenate and CoA biosynthesis	mmu	KEGG	mmu00770
+Apo-[acyl-carrier-protein]	Metabolite	KEGG Compound	C03688	740,560
+L-Valine	Metabolite	KEGG Compound	C00183	664,195
+2-Dehydropantoate	Metabolite	KEGG Compound	C00966	298,195
+(R)-Pantoate	Metabolite	KEGG Compound	C00522	298,338
+Pantothenate	Metabolite	KEGG Compound	C00864	444,338
+L-Cysteine	Metabolite	KEGG Compound	C00097	691,358
+(R)-4'-Phosphopantothenoyl-L-cysteine	Metabolite	KEGG Compound	C04352	621,416
+Pantetheine 4'-phosphate	Metabolite	KEGG Compound	C01134	621,481
+Dephospho-CoA	Metabolite	KEGG Compound	C00882	621,590
+Adenosine 3',5'-bisphosphate	Metabolite	KEGG Compound	C00054	740,499
+Acyl-carrier protein	Metabolite	KEGG Compound	C00229	796,481
+CoA	Metabolite	KEGG Compound	C00010	796,589
+Pantetheine	Metabolite	KEGG Compound	C00831	502,481
+beta-Alanine	Metabolite	KEGG Compound	C00099	320,502
+3-Ureidopropionate	Metabolite	KEGG Compound	C02642	233,502
+5,6-Dihydrouracil	Metabolite	KEGG Compound	C00429	147,502
+Uracil	Metabolite	KEGG Compound	C00106	50,502
+N-((R)-Pantothenoyl)-L-cysteine	Metabolite	KEGG Compound	C04079	502,416
+(R)-4-Dehydropantoate	Metabolite	KEGG Compound	C01053	388,269
+(R)-3,3-Dimethylmalate	Metabolite	KEGG Compound	C01088	478,269
+Coasy	GeneProduct	Entrez Gene	71743	701,579
+Enpp1	GeneProduct	Entrez Gene	18605	646,540
+Enpp3	GeneProduct	Entrez Gene	209558	646,540
+Pank3	GeneProduct	Entrez Gene	211347	561,471
+Pank2	GeneProduct	Entrez Gene	74450	561,471
+Pank1	GeneProduct	Entrez Gene	75735	561,471
+Ppcdc	GeneProduct	Entrez Gene	66812	622,445
+Pank3	GeneProduct	Entrez Gene	211347	560,417
+Pank2	GeneProduct	Entrez Gene	74450	560,417
+Pank1	GeneProduct	Entrez Gene	75735	560,417
+Pank3	GeneProduct	Entrez Gene	211347	519,339
+Pank2	GeneProduct	Entrez Gene	74450	519,339
+Pank1	GeneProduct	Entrez Gene	75735	519,339
+Upb1	GeneProduct	Entrez Gene	103149	273,503
+Dpys	GeneProduct	Entrez Gene	64705	186,502
+Dpyd	GeneProduct	Entrez Gene	99586	100,513
+Vnn1	GeneProduct	Entrez Gene	22361	445,432
+Vnn3	GeneProduct	Entrez Gene	26464	445,432
+Bcat1	GeneProduct	Entrez Gene	12035	591,206
+Bcat2	GeneProduct	Entrez Gene	12036	591,206
+Coasy	GeneProduct	Entrez Gene	71743	596,540
+L-Aspartate	Metabolite	KEGG Compound	C00049	318,587
+Csad	GeneProduct	Entrez Gene	246277	318,560
+Gadl1	GeneProduct	Entrez Gene	73748	318,560
+(R)-4-Phosphopantoate	Metabolite	KEGG Compound	C18911	444,305
+D-4'-Phosphopantothenate	Metabolite	KEGG Compound	C03492	621,338
+Aasdhppt	GeneProduct	Entrez Gene	67618	821,540
+Pantothenol	Metabolite	KEGG Compound	C05944	382,396
+Ppcs	GeneProduct	Entrez Gene	106564	646,385
+(S)-2-Acetolactate	Metabolite	KEGG Compound	C06010	297,129
+3-Aminopropanal	Metabolite	KEGG Compound	C05665	410,537
+Spermine	Metabolite	KEGG Compound	C00750	499,537
+Aldh2	GeneProduct	Entrez Gene	11669	369,538
+Aldh3a2	GeneProduct	Entrez Gene	11671	369,538
+Aldh1b1	GeneProduct	Entrez Gene	72535	369,538
+Pyruvate	Metabolite	KEGG Compound	C00022	173,129
+(R)-2,3-Dihydroxy-3-methylbutanoate	Metabolite	KEGG Compound	C04272	478,129
+3-Methyl-2-oxobutanoic acid	Metabolite	KEGG Compound	C00141	478,195

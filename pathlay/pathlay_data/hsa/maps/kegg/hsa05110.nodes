@@ -1,0 +1,61 @@
+TEXT	TYPE	DB	ID	X	Y
+Vibrio cholerae infection	hsa	KEGG	hsa05110
+TCIRG1	GeneProduct	Entrez Gene	10312	524,116
+CFTR	GeneProduct	Entrez Gene	1080	307,441
+ADCY3	GeneProduct	Entrez Gene	109	746,287
+KDELR1	GeneProduct	Entrez Gene	10945	382,245
+SEC61B	GeneProduct	Entrez Gene	10952	585,287
+KDELR2	GeneProduct	Entrez Gene	11014	382,245
+KDELR3	GeneProduct	Entrez Gene	11015	382,245
+ADCY9	GeneProduct	Entrez Gene	115	746,287
+ATP6V1G3	GeneProduct	Entrez Gene	127124	524,116
+ATP6V0E2	GeneProduct	Entrez Gene	155066	524,116
+SEC61G	GeneProduct	Entrez Gene	23480	585,287
+ATP6V0A2	GeneProduct	Entrez Gene	23545	524,116
+ATP6V0D2	GeneProduct	Entrez Gene	245972	524,116
+ATP6V1C2	GeneProduct	Entrez Gene	245973	524,116
+GNAS	GeneProduct	Entrez Gene	2778	668,287
+SEC61A1	GeneProduct	Entrez Gene	29927	585,287
+ERO1A	GeneProduct	Entrez Gene	30001	542,223
+ARF1	GeneProduct	Entrez Gene	375	598,245
+KCNQ1	GeneProduct	Entrez Gene	3784	746,353
+ATP6V0A4	GeneProduct	Entrez Gene	50617	524,116
+ATP6V1D	GeneProduct	Entrez Gene	51382	524,116
+ATP6V1H	GeneProduct	Entrez Gene	51606	524,116
+ATP6V1A	GeneProduct	Entrez Gene	523	524,116
+ATP6V1B1	GeneProduct	Entrez Gene	525	524,116
+ATP6V1B2	GeneProduct	Entrez Gene	526	524,116
+ATP6V0C	GeneProduct	Entrez Gene	527	524,116
+ATP6V1C1	GeneProduct	Entrez Gene	528	524,116
+ATP6V1E1	GeneProduct	Entrez Gene	529	524,116
+ATP6V0B	GeneProduct	Entrez Gene	533	524,116
+PLCG1	GeneProduct	Entrez Gene	5335	404,621
+PLCG2	GeneProduct	Entrez Gene	5336	404,621
+ATP6V1G2	GeneProduct	Entrez Gene	534	524,116
+ATP6V0A1	GeneProduct	Entrez Gene	535	524,116
+ATP6AP1	GeneProduct	Entrez Gene	537	524,116
+SEC61A2	GeneProduct	Entrez Gene	55176	585,287
+PRKACA	GeneProduct	Entrez Gene	5566	517,395
+PRKACB	GeneProduct	Entrez Gene	5567	517,395
+PRKACG	GeneProduct	Entrez Gene	5568	517,395
+PRKCA	GeneProduct	Entrez Gene	5578	525,621
+ACTB	GeneProduct	Entrez Gene	60	642,574
+SLC12A2	GeneProduct	Entrez Gene	6558	746,403
+TJP1	GeneProduct	Entrez Gene	7082	610,648
+ACTG1	GeneProduct	Entrez Gene	71	642,574
+ATP6V0E1	GeneProduct	Entrez Gene	8992	524,116
+ATP6V1E2	GeneProduct	Entrez Gene	90423	524,116
+ATP6V0D1	GeneProduct	Entrez Gene	9114	524,116
+ATP6V1F	GeneProduct	Entrez Gene	9296	524,116
+TJP2	GeneProduct	Entrez Gene	9414	659,648
+ATP6V1G1	GeneProduct	Entrez Gene	9550	524,116
+PDIA4	GeneProduct	Entrez Gene	9601	482,245
+Ammonia	Metabolite	KEGG Compound	C00014	496,180
+H+	Metabolite	KEGG Compound	C00080	524,152
+Diacylglycerol	Metabolite	KEGG Compound	C00165	464,635
+Potassium cation	Metabolite	KEGG Compound	C00238	806,352	798,389
+3',5'-Cyclic AMP	Metabolite	KEGG Compound	C00575	632,375
+Cl-	Metabolite	KEGG Compound	C00698	798,415	248,440	496,152
+D-myo-Inositol 1,4,5-trisphosphate	Metabolite	KEGG Compound	C01245	464,599
+Sodium cation	Metabolite	KEGG Compound	C01330	798,402
+D-Galactosyl-N-acetyl-D-galactosaminyl-(N-acetylneuraminyl)-D-galactosyl-D-glucosylceramide	Metabolite	KEGG Compound	C04911	306,323

@@ -1,0 +1,67 @@
+TEXT	TYPE	DB	ID	X	Y
+Inflammatory bowel disease	hsa	KEGG	hsa05321
+IL17F	GeneProduct	Entrez Gene	112744	1064,1071
+IL23R	GeneProduct	Entrez Gene	149233	636,1070
+GATA3	GeneProduct	Entrez Gene	2625	884,1324
+TBX21	GeneProduct	Entrez Gene	30009	884,585
+HLA-DMA	GeneProduct	Entrez Gene	3108	299,1026
+HLA-DMB	GeneProduct	Entrez Gene	3109	299,1026
+HLA-DOA	GeneProduct	Entrez Gene	3111	299,1026
+HLA-DOB	GeneProduct	Entrez Gene	3112	299,1026
+HLA-DPA1	GeneProduct	Entrez Gene	3113	299,1026
+HLA-DPB1	GeneProduct	Entrez Gene	3115	299,1026
+HLA-DQA1	GeneProduct	Entrez Gene	3117	299,1026
+HLA-DQA2	GeneProduct	Entrez Gene	3118	299,1026
+HLA-DQB1	GeneProduct	Entrez Gene	3119	299,1026
+HLA-DRA	GeneProduct	Entrez Gene	3122	299,1026
+HLA-DRB1	GeneProduct	Entrez Gene	3123	299,1026
+HLA-DRB3	GeneProduct	Entrez Gene	3125	299,1026
+HLA-DRB4	GeneProduct	Entrez Gene	3126	299,1026
+HLA-DRB5	GeneProduct	Entrez Gene	3127	299,1026
+IFNG	GeneProduct	Entrez Gene	3458	546,585	990,761	884,1371
+IFNGR1	GeneProduct	Entrez Gene	3459	636,585
+IFNGR2	GeneProduct	Entrez Gene	3460	636,585
+IL1A	GeneProduct	Entrez Gene	3552	1332,781
+IL1B	GeneProduct	Entrez Gene	3553	1332,781
+IL2	GeneProduct	Entrez Gene	3558	990,669
+IL2RG	GeneProduct	Entrez Gene	3561	636,1337
+IL4	GeneProduct	Entrez Gene	3565	546,1323	1064,1312	990,573
+IL4R	GeneProduct	Entrez Gene	3566	636,1312
+IL5	GeneProduct	Entrez Gene	3567	1064,1336	990,597
+IL6	GeneProduct	Entrez Gene	3569	546,968	1332,761
+IL10	GeneProduct	Entrez Gene	3586	884,1582	1064,1390
+IL12A	GeneProduct	Entrez Gene	3592	546,668
+IL12B	GeneProduct	Entrez Gene	3593	546,668
+IL12RB1	GeneProduct	Entrez Gene	3594	636,680	636,1093
+IL12RB2	GeneProduct	Entrez Gene	3595	636,654
+IL13	GeneProduct	Entrez Gene	3596	884,1497	1064,1361
+IL17A	GeneProduct	Entrez Gene	3605	1064,1071
+IL18	GeneProduct	Entrez Gene	3606	546,755
+JUN	GeneProduct	Entrez Gene	3725	813,737
+SMAD2	GeneProduct	Entrez Gene	4087	813,945
+SMAD3	GeneProduct	Entrez Gene	4088	813,945
+MAF	GeneProduct	Entrez Gene	4094	884,1259
+NFATC1	GeneProduct	Entrez Gene	4772	884,1284
+NFKB1	GeneProduct	Entrez Gene	4790	226,983	508,330	813,780
+IL21R	GeneProduct	Entrez Gene	50615	636,1021
+IL22	GeneProduct	Entrez Gene	50616	1064,1094
+FOXP3	GeneProduct	Entrez Gene	50943	884,1024	748,1594
+IL23A	GeneProduct	Entrez Gene	51561	546,1081
+IL21	GeneProduct	Entrez Gene	59067	990,958
+RELA	GeneProduct	Entrez Gene	5970	226,983	508,330	813,780
+RORA	GeneProduct	Entrez Gene	6095	884,1096
+RORC	GeneProduct	Entrez Gene	6097	884,1069
+NOD2	GeneProduct	Entrez Gene	64127	268,955	1186,796
+STAT1	GeneProduct	Entrez Gene	6772	725,585
+STAT3	GeneProduct	Entrez Gene	6774	813,969	725,1083	725,1022
+STAT4	GeneProduct	Entrez Gene	6775	813,668
+STAT6	GeneProduct	Entrez Gene	6778	725,1324
+TGFB1	GeneProduct	Entrez Gene	7040	546,945	884,1605	541,1594
+TGFB2	GeneProduct	Entrez Gene	7042	546,945	884,1605	541,1594
+TGFB3	GeneProduct	Entrez Gene	7043	546,945	884,1605	541,1594
+TLR2	GeneProduct	Entrez Gene	7097	226,923	508,261	1186,737
+TLR4	GeneProduct	Entrez Gene	7099	1186,737	578,260
+TLR5	GeneProduct	Entrez Gene	7100	458,261	1186,737
+TNF	GeneProduct	Entrez Gene	7124	573,376	1332,741
+IL18RAP	GeneProduct	Entrez Gene	8807	636,756
+IL18R1	GeneProduct	Entrez Gene	8809	636,756

@@ -1,0 +1,297 @@
+TEXT	TYPE	DB	ID	X	Y
+Cytokine-cytokine receptor interaction	hsa	KEGG	hsa04060
+EBI3	GeneProduct	Entrez Gene	10148	795,337	795,433
+GDF11	GeneProduct	Entrez Gene	10220	1444,579
+CCL26	GeneProduct	Entrez Gene	10344	143,896
+CXCL13	GeneProduct	Entrez Gene	10563	364,468
+CXCR6	GeneProduct	Entrez Gene	10663	450,583
+TNFSF13B	GeneProduct	Entrez Gene	10673	1227,937
+CCR9	GeneProduct	Entrez Gene	10803	236,187
+CCL27	GeneProduct	Entrez Gene	10850	143,943
+EDAR	GeneProduct	Entrez Gene	10913	1314,510
+IL24	GeneProduct	Entrez Gene	11009	794,934
+IL17F	GeneProduct	Entrez Gene	112744	1010,764
+TNFRSF13C	GeneProduct	Entrez Gene	115650	1314,950
+CCR1	GeneProduct	Entrez Gene	1230	236,611
+CCR3	GeneProduct	Entrez Gene	1232	236,879	236,446	236,698
+CCR4	GeneProduct	Entrez Gene	1233	236,350
+CCR5	GeneProduct	Entrez Gene	1234	236,399
+CCR6	GeneProduct	Entrez Gene	1235	236,1028
+CCR7	GeneProduct	Entrez Gene	1236	236,245
+CCR8	GeneProduct	Entrez Gene	1237	236,157
+CNTF	GeneProduct	Entrez Gene	1270	795,506
+CNTFR	GeneProduct	Entrez Gene	1271	881,477
+ACVR1C	GeneProduct	Entrez Gene	130399	1531,719	1531,763
+IL17RE	GeneProduct	Entrez Gene	132014	1097,835
+IL31RA	GeneProduct	Entrez Gene	133396	881,377
+CSF1	GeneProduct	Entrez Gene	1435	1010,1092
+CSF1R	GeneProduct	Entrez Gene	1436	1097,1080
+CSF2	GeneProduct	Entrez Gene	1437	580,674
+CSF2RA	GeneProduct	Entrez Gene	1438	667,666
+CSF2RB	GeneProduct	Entrez Gene	1439	666,639	666,596	667,683
+CSF3	GeneProduct	Entrez Gene	1440	580,1052
+CSF3R	GeneProduct	Entrez Gene	1441	666,1052
+CSH1	GeneProduct	Entrez Gene	1442	580,970	580,947
+CSH2	GeneProduct	Entrez Gene	1443	580,970	580,947
+IL34	GeneProduct	Entrez Gene	146433	1010,1067
+CTF1	GeneProduct	Entrez Gene	1489	795,560
+IL23R	GeneProduct	Entrez Gene	149233	881,281
+GDF7	GeneProduct	Entrez Gene	151449	1661,318
+CX3CR1	GeneProduct	Entrez Gene	1524	451,925
+IFNLR1	GeneProduct	Entrez Gene	163702	881,1069
+EDA	GeneProduct	Entrez Gene	1896	1227,546	1227,510
+EPO	GeneProduct	Entrez Gene	2056	580,916
+EPOR	GeneProduct	Entrez Gene	2057	667,916
+TNFRSF13B	GeneProduct	Entrez Gene	23495	1314,923
+CLCF1	GeneProduct	Entrez Gene	23529	795,484
+IL17RA	GeneProduct	Entrez Gene	23765	1097,897	1097,745
+IL27	GeneProduct	Entrez Gene	246778	795,337
+IL36RN	GeneProduct	Entrez Gene	26525	1012,437
+GDF1	GeneProduct	Entrez Gene	2657	1444,697
+GDF2	GeneProduct	Entrez Gene	2658	1444,329
+MSTN	GeneProduct	Entrez Gene	2660	1444,609
+GDF9	GeneProduct	Entrez Gene	2661	1444,827
+GDF10	GeneProduct	Entrez Gene	2662	1444,544
+AMH	GeneProduct	Entrez Gene	268	1444,980
+GH1	GeneProduct	Entrez Gene	2688	580,970	580,947
+GH2	GeneProduct	Entrez Gene	2689	580,970	580,947
+AMHR2	GeneProduct	Entrez Gene	269	1531,963	1531,1014
+GHR	GeneProduct	Entrez Gene	2690	667,959
+IL36B	GeneProduct	Entrez Gene	27177	1012,483
+IL37	GeneProduct	Entrez Gene	27178	1012,573
+IL36A	GeneProduct	Entrez Gene	27179	1012,460
+IL17C	GeneProduct	Entrez Gene	27189	1010,836
+IL17B	GeneProduct	Entrez Gene	27190	1010,797
+TNFRSF21	GeneProduct	Entrez Gene	27242	1314,467
+BMP10	GeneProduct	Entrez Gene	27302	1444,353
+CCR10	GeneProduct	Entrez Gene	2826	236,962
+IFNL2	GeneProduct	Entrez Gene	282616	794,1077	794,1056
+IFNL3	GeneProduct	Entrez Gene	282617	794,1077	794,1056
+IFNL1	GeneProduct	Entrez Gene	282618	794,1098
+XCR1	GeneProduct	Entrez Gene	2829	451,792
+CXCR3	GeneProduct	Entrez Gene	2833	450,390
+CXCL17	GeneProduct	Entrez Gene	284340	364,674
+CXCL1	GeneProduct	Entrez Gene	2919	364,284	364,262	364,155
+CXCL2	GeneProduct	Entrez Gene	2920	364,284	364,262	364,155
+CXCL3	GeneProduct	Entrez Gene	2921	364,284	364,262	364,155
+IL19	GeneProduct	Entrez Gene	29949	794,864
+IFNE	GeneProduct	Entrez Gene	338376	1010,218
+IFNA1	GeneProduct	Entrez Gene	3439	1010,131
+IFNA2	GeneProduct	Entrez Gene	3440	1010,131
+IFNA4	GeneProduct	Entrez Gene	3441	1010,131
+IFNA5	GeneProduct	Entrez Gene	3442	1010,131
+IFNA6	GeneProduct	Entrez Gene	3443	1010,131
+IFNA7	GeneProduct	Entrez Gene	3444	1010,131
+IFNA8	GeneProduct	Entrez Gene	3445	1010,131
+IFNA10	GeneProduct	Entrez Gene	3446	1010,131
+IFNA13	GeneProduct	Entrez Gene	3447	1010,131
+IFNA14	GeneProduct	Entrez Gene	3448	1010,131
+IFNA16	GeneProduct	Entrez Gene	3449	1010,131
+IFNA17	GeneProduct	Entrez Gene	3451	1010,131
+IFNA21	GeneProduct	Entrez Gene	3452	1010,131
+IFNAR1	GeneProduct	Entrez Gene	3454	1097,164
+IFNAR2	GeneProduct	Entrez Gene	3455	1097,181
+IFNB1	GeneProduct	Entrez Gene	3456	1010,152
+IFNG	GeneProduct	Entrez Gene	3458	1010,249
+IFNGR1	GeneProduct	Entrez Gene	3459	1097,240
+IFNGR2	GeneProduct	Entrez Gene	3460	1097,257
+IFNW1	GeneProduct	Entrez Gene	3467	1010,174
+BMP8A	GeneProduct	Entrez Gene	353500	1661,713
+FAS	GeneProduct	Entrez Gene	355	1314,295
+IL1A	GeneProduct	Entrez Gene	3552	1012,347
+IL1B	GeneProduct	Entrez Gene	3553	1012,371
+IL1R1	GeneProduct	Entrez Gene	3554	1097,355
+IL1RAP	GeneProduct	Entrez Gene	3556	1097,372	1097,492	1097,653
+IL1RN	GeneProduct	Entrez Gene	3557	1012,403
+IL2	GeneProduct	Entrez Gene	3558	580,177
+IL2RA	GeneProduct	Entrez Gene	3559	666,135
+FASLG	GeneProduct	Entrez Gene	356	1227,290
+IL2RB	GeneProduct	Entrez Gene	3560	666,395	666,196	666,152
+IL2RG	GeneProduct	Entrez Gene	3561	666,455	666,412	666,351	666,306	666,262	666,213	666,169
+IL3	GeneProduct	Entrez Gene	3562	580,588
+IL3RA	GeneProduct	Entrez Gene	3563	666,579
+IL4	GeneProduct	Entrez Gene	3565	580,739	580,254
+IL4R	GeneProduct	Entrez Gene	3566	666,245	666,779	665,731	666,706
+IL5	GeneProduct	Entrez Gene	3567	580,631
+IL5RA	GeneProduct	Entrez Gene	3568	666,622
+IL6	GeneProduct	Entrez Gene	3569	795,146
+IL6R	GeneProduct	Entrez Gene	3570	881,137
+IL6ST	GeneProduct	Entrez Gene	3572	881,576	881,511	881,624	881,698	881,201	881,154	881,346	881,442
+IL7	GeneProduct	Entrez Gene	3574	580,297
+IL7R	GeneProduct	Entrez Gene	3575	666,482	666,289
+CXCL8	GeneProduct	Entrez Gene	3576	364,221
+CXCR1	GeneProduct	Entrez Gene	3577	450,190
+IL9	GeneProduct	Entrez Gene	3578	580,343
+CXCR2	GeneProduct	Entrez Gene	3579	450,263
+IL9R	GeneProduct	Entrez Gene	3581	666,334
+IL10	GeneProduct	Entrez Gene	3586	794,823
+IL10RA	GeneProduct	Entrez Gene	3587	881,814
+IL10RB	GeneProduct	Entrez Gene	3588	881,976	881,1086	881,831	881,1023
+IL11	GeneProduct	Entrez Gene	3589	795,193
+IL11RA	GeneProduct	Entrez Gene	3590	881,184
+IL12A	GeneProduct	Entrez Gene	3592	795,241	795,433
+IL12B	GeneProduct	Entrez Gene	3593	795,241
+IL12RB1	GeneProduct	Entrez Gene	3594	881,298	881,232
+IL12RB2	GeneProduct	Entrez Gene	3595	881,249	881,425
+IL13	GeneProduct	Entrez Gene	3596	580,788
+IL13RA1	GeneProduct	Entrez Gene	3597	665,747	666,825
+IL13RA2	GeneProduct	Entrez Gene	3598	666,796	666,850
+IL15	GeneProduct	Entrez Gene	3600	580,394
+IL15RA	GeneProduct	Entrez Gene	3601	666,378
+IL16	GeneProduct	Entrez Gene	3603	1010,1003
+TNFRSF9	GeneProduct	Entrez Gene	3604	1314,803
+IL17A	GeneProduct	Entrez Gene	3605	1010,742
+IL18	GeneProduct	Entrez Gene	3606	1012,598
+INHA	GeneProduct	Entrez Gene	3623	1444,418
+INHBA	GeneProduct	Entrez Gene	3624	1444,644
+INHBB	GeneProduct	Entrez Gene	3625	1444,676
+INHBC	GeneProduct	Entrez Gene	3626	1444,874
+CXCL10	GeneProduct	Entrez Gene	3627	364,414
+IL31	GeneProduct	Entrez Gene	386653	795,386
+CCL4L1	GeneProduct	Entrez Gene	388372	143,295	143,316	143,338
+GDF6	GeneProduct	Entrez Gene	392255	1661,295
+LEP	GeneProduct	Entrez Gene	3952	580,1086
+LEPR	GeneProduct	Entrez Gene	3953	666,1086
+LIF	GeneProduct	Entrez Gene	3976	795,598
+LIFR	GeneProduct	Entrez Gene	3977	881,559	881,494	881,607
+LTA	GeneProduct	Entrez Gene	4049	1227,178
+LTB	GeneProduct	Entrez Gene	4050	1227,203
+LTBR	GeneProduct	Entrez Gene	4055	1314,189
+CCL3L3	GeneProduct	Entrez Gene	414062	143,274	143,479
+CXCL9	GeneProduct	Entrez Gene	4283	364,391
+MPL	GeneProduct	Entrez Gene	4352	667,1021
+NGF	GeneProduct	Entrez Gene	4803	1227,584
+NGFR	GeneProduct	Entrez Gene	4804	1314,584
+NODAL	GeneProduct	Entrez Gene	4838	1444,739
+TNFRSF11B	GeneProduct	Entrez Gene	4982	1271,608
+OSM	GeneProduct	Entrez Gene	5008	795,690	795,635
+IL20	GeneProduct	Entrez Gene	50604	794,911
+IL21R	GeneProduct	Entrez Gene	50615	666,438
+IL22	GeneProduct	Entrez Gene	50616	794,967
+TNFRSF12A	GeneProduct	Entrez Gene	51330	1314,682
+ACKR4	GeneProduct	Entrez Gene	51554	236,216	236,737	236,480
+IL23A	GeneProduct	Entrez Gene	51561	795,289
+PF4	GeneProduct	Entrez Gene	5196	364,346	364,369
+PF4V1	GeneProduct	Entrez Gene	5197	364,346	364,369
+IL17D	GeneProduct	Entrez Gene	53342	1010,868
+IL20RA	GeneProduct	Entrez Gene	53832	881,869	881,1006
+IL20RB	GeneProduct	Entrez Gene	53833	881,929	881,886
+PPBP	GeneProduct	Entrez Gene	5473	364,307
+TNFRSF19	GeneProduct	Entrez Gene	55504	1314,983
+IL17RB	GeneProduct	Entrez Gene	55540	1097,914	1097,797
+IL26	GeneProduct	Entrez Gene	55801	794,1014
+PRL	GeneProduct	Entrez Gene	5617	580,995
+PRLR	GeneProduct	Entrez Gene	5618	667,995
+IL36G	GeneProduct	Entrez Gene	56300	1012,506
+CCL28	GeneProduct	Entrez Gene	56477	143,972
+IFNK	GeneProduct	Entrez Gene	56832	1010,196
+ACKR3	GeneProduct	Entrez Gene	57007	450,540
+CXCL16	GeneProduct	Entrez Gene	58191	364,583
+IL22RA1	GeneProduct	Entrez Gene	58985	881,959	881,912
+IL21	GeneProduct	Entrez Gene	59067	580,447
+EDA2R	GeneProduct	Entrez Gene	60401	1314,546
+TNFRSF17	GeneProduct	Entrez Gene	608	1314,896
+CCL1	GeneProduct	Entrez Gene	6346	143,157
+CCL2	GeneProduct	Entrez Gene	6347	143,792	143,815
+CCL3	GeneProduct	Entrez Gene	6348	143,274	143,479
+CCL3L1	GeneProduct	Entrez Gene	6349	143,274	143,479
+CCL4	GeneProduct	Entrez Gene	6351	143,295	143,316	143,338
+CCL5	GeneProduct	Entrez Gene	6352	143,445
+CCL7	GeneProduct	Entrez Gene	6354	143,758
+CCL8	GeneProduct	Entrez Gene	6355	143,519
+CCL11	GeneProduct	Entrez Gene	6356	143,852
+CCL13	GeneProduct	Entrez Gene	6357	143,698
+CCL14	GeneProduct	Entrez Gene	6358	143,584
+CCL15	GeneProduct	Entrez Gene	6359	143,671	143,630
+CCL16	GeneProduct	Entrez Gene	6360	143,607
+CCL17	GeneProduct	Entrez Gene	6361	143,373
+CCL18	GeneProduct	Entrez Gene	6362	143,999
+CCL19	GeneProduct	Entrez Gene	6363	143,217
+CCL20	GeneProduct	Entrez Gene	6364	143,1028
+CCL21	GeneProduct	Entrez Gene	6366	143,240
+CCL22	GeneProduct	Entrez Gene	6367	143,396
+CCL23	GeneProduct	Entrez Gene	6368	143,671	143,630
+CCL24	GeneProduct	Entrez Gene	6369	143,874
+CCL25	GeneProduct	Entrez Gene	6370	143,187
+CXCL6	GeneProduct	Entrez Gene	6372	364,199	364,177
+CXCL11	GeneProduct	Entrez Gene	6373	364,436
+CXCL5	GeneProduct	Entrez Gene	6374	364,199	364,177
+XCL1	GeneProduct	Entrez Gene	6375	364,781
+CX3CL1	GeneProduct	Entrez Gene	6376	364,925
+CXCL12	GeneProduct	Entrez Gene	6387	364,521
+CRLF2	GeneProduct	Entrez Gene	64109	666,499
+CXCR5	GeneProduct	Entrez Gene	643	450,468
+IL25	GeneProduct	Entrez Gene	64806	1010,907
+BMP2	GeneProduct	Entrez Gene	650	1661,227
+BMP3	GeneProduct	Entrez Gene	651	1444,448
+BMP4	GeneProduct	Entrez Gene	652	1661,249
+BMP5	GeneProduct	Entrez Gene	653	1661,641
+BMP6	GeneProduct	Entrez Gene	654	1661,664
+BMP7	GeneProduct	Entrez Gene	655	1661,688
+BMP8B	GeneProduct	Entrez Gene	656	1661,713
+BMPR1A	GeneProduct	Entrez Gene	657	1748,154	1531,997	1748,199	1748,244	1748,620	1748,665	1748,710
+BMPR1B	GeneProduct	Entrez Gene	658	1748,289	1748,335	1748,383	1748,755	1748,801	1748,849
+BMPR2	GeneProduct	Entrez Gene	659	1748,399	1531,835	1531,375	1748,260	1748,587	1748,865	1748,726
+XCL2	GeneProduct	Entrez Gene	6846	364,804
+TGFB1	GeneProduct	Entrez Gene	7040	1444,154
+TGFB2	GeneProduct	Entrez Gene	7042	1444,178
+TGFB3	GeneProduct	Entrez Gene	7043	1444,201
+TGFBR1	GeneProduct	Entrez Gene	7046	1531,144	1531,492	1531,543
+TGFBR2	GeneProduct	Entrez Gene	7048	1531,161	1531,211	1531,269
+THPO	GeneProduct	Entrez Gene	7066	580,1021
+TNF	GeneProduct	Entrez Gene	7124	1227,147
+TNFRSF1A	GeneProduct	Entrez Gene	7132	1314,136
+TNFRSF1B	GeneProduct	Entrez Gene	7133	1314,162
+TNFSF4	GeneProduct	Entrez Gene	7292	1227,833
+CCR2	GeneProduct	Entrez Gene	729230	236,783	236,518
+TNFRSF4	GeneProduct	Entrez Gene	7293	1314,833
+IL1R2	GeneProduct	Entrez Gene	7850	1097,398
+CXCR4	GeneProduct	Entrez Gene	7852	450,504
+GDF5	GeneProduct	Entrez Gene	8200	1661,272
+INHBE	GeneProduct	Entrez Gene	83729	1444,903
+IL1F10	GeneProduct	Entrez Gene	84639	1012,528
+IL17RC	GeneProduct	Entrez Gene	84818	1097,762
+RELT	GeneProduct	Entrez Gene	84957	1314,1012
+TSLP	GeneProduct	Entrez Gene	85480	580,490
+TNFSF11	GeneProduct	Entrez Gene	8600	1227,637
+TNFRSF25	GeneProduct	Entrez Gene	8718	1314,327
+TNFSF14	GeneProduct	Entrez Gene	8740	1227,228
+TNFSF13	GeneProduct	Entrez Gene	8741	1227,909
+TNFSF12	GeneProduct	Entrez Gene	8742	1227,682
+TNFSF10	GeneProduct	Entrez Gene	8743	1227,400
+TNFSF9	GeneProduct	Entrez Gene	8744	1227,803
+TNFRSF14	GeneProduct	Entrez Gene	8764	1314,215
+TNFRSF6B	GeneProduct	Entrez Gene	8771	1271,255
+TNFRSF18	GeneProduct	Entrez Gene	8784	1314,864
+TNFRSF11A	GeneProduct	Entrez Gene	8792	1314,652
+TNFRSF10D	GeneProduct	Entrez Gene	8793	1314,432
+TNFRSF10C	GeneProduct	Entrez Gene	8794	1314,409
+TNFRSF10B	GeneProduct	Entrez Gene	8795	1314,385	1314,361
+TNFRSF10A	GeneProduct	Entrez Gene	8797	1314,385	1314,361
+IL18RAP	GeneProduct	Entrez Gene	8807	1097,594
+IL1RL2	GeneProduct	Entrez Gene	8808	1097,475
+IL18R1	GeneProduct	Entrez Gene	8809	1097,577
+TNFSF18	GeneProduct	Entrez Gene	8995	1227,864
+ACVR1	GeneProduct	Entrez Gene	90	1748,475	1531,946	1748,523	1748,570
+IL33	GeneProduct	Entrez Gene	90865	1012,645
+ACVR1B	GeneProduct	Entrez Gene	91	1531,675	1531,599	1531,818
+IL1RL1	GeneProduct	Entrez Gene	9173	1097,636
+OSMR	GeneProduct	Entrez Gene	9180	881,681	881,394
+ACVR2A	GeneProduct	Entrez Gene	92	1531,735	1748,171	1531,616	1531,418	1531,509	1531,328	1748,306	1748,492	1748,637	1748,772
+CD4	GeneProduct	Entrez Gene	920	1097,1003
+BMP15	GeneProduct	Entrez Gene	9210	1661,425
+IL32	GeneProduct	Entrez Gene	9235	1010,1032
+ACVR2B	GeneProduct	Entrez Gene	93	1531,779	1531,691	1531,447	1531,560	1748,216	1748,352	1748,540	1748,682	1748,818
+CD27	GeneProduct	Entrez Gene	939	1314,712
+ACVRL1	GeneProduct	Entrez Gene	94	1531,194	1531,311	1531,358
+TNFRSF8	GeneProduct	Entrez Gene	943	1314,742
+TNFSF8	GeneProduct	Entrez Gene	944	1227,742
+IL27RA	GeneProduct	Entrez Gene	9466	881,329
+GDF15	GeneProduct	Entrez Gene	9518	1444,261
+CXCL14	GeneProduct	Entrez Gene	9547	364,624
+CCL4L2	GeneProduct	Entrez Gene	9560	143,295	143,316	143,338
+GDF3	GeneProduct	Entrez Gene	9573	1444,718
+CD40	GeneProduct	Entrez Gene	958	1314,773
+CD40LG	GeneProduct	Entrez Gene	959	1227,773
+CD70	GeneProduct	Entrez Gene	970	1227,712
+TNFSF15	GeneProduct	Entrez Gene	9966	1227,319

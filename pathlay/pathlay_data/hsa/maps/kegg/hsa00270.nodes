@@ -1,0 +1,115 @@
+TEXT	TYPE	DB	ID	X	Y
+Cysteine and methionine metabolism	hsa	KEGG	hsa00270
+CBSL	GeneProduct	Entrez Gene	102724560	452,772
+CDO1	GeneProduct	Entrez Gene	1036	398,472
+AHCYL1	GeneProduct	Entrez Gene	10768	694,851
+SDS	GeneProduct	Entrez Gene	10993	614,133
+SDSL	GeneProduct	Entrez Gene	113675	614,133
+GOT1L1	GeneProduct	Entrez Gene	137362	766,415	358,560	91,472
+CTH	GeneProduct	Entrez Gene	1491	515,541	112,268	242,472
+LDHAL6A	GeneProduct	Entrez Gene	160287	116,615
+DNMT1	GeneProduct	Entrez Gene	1786	669,919
+DNMT3A	GeneProduct	Entrez Gene	1788	669,919
+DNMT3B	GeneProduct	Entrez Gene	1789	669,919
+AHCY	GeneProduct	Entrez Gene	191	694,851
+AHCYL2	GeneProduct	Entrez Gene	23382	694,851
+BHMT2	GeneProduct	Entrez Gene	23743	542,877
+IL4I1	GeneProduct	Entrez Gene	259307	550,1117
+AMD1	GeneProduct	Entrez Gene	262	797,966
+PHGDH	GeneProduct	Entrez Gene	26227	422,349
+GCLC	GeneProduct	Entrez Gene	2729	965,516
+GCLM	GeneProduct	Entrez Gene	2730	965,516
+MAT2B	GeneProduct	Entrez Gene	27430	616,966
+GOT1	GeneProduct	Entrez Gene	2805	766,415	358,560	91,472
+GOT2	GeneProduct	Entrez Gene	2806	766,415	358,560	91,472
+GSS	GeneProduct	Entrez Gene	2937	1068,516
+PSAT1	GeneProduct	Entrez Gene	29968	421,293
+LDHA	GeneProduct	Entrez Gene	3939	116,615
+LDHB	GeneProduct	Entrez Gene	3945	116,615
+LDHC	GeneProduct	Entrez Gene	3948	116,615
+MAT1A	GeneProduct	Entrez Gene	4143	616,966
+MAT2A	GeneProduct	Entrez Gene	4144	616,966
+MDH1	GeneProduct	Entrez Gene	4190	861,404
+MDH2	GeneProduct	Entrez Gene	4191	861,404
+MPST	GeneProduct	Entrez Gene	4357	163,571
+MTAP	GeneProduct	Entrez Gene	4507	1051,1053
+MTR	GeneProduct	Entrez Gene	4548	492,896
+APIP	GeneProduct	Entrez Gene	51074	939,1190
+ADI1	GeneProduct	Entrez Gene	55256	605,1190	649,1149
+KYAT3	GeneProduct	Entrez Gene	56267	517,772	192,472	62,268
+ENOPH1	GeneProduct	Entrez Gene	58478	767,1162
+BCAT1	GeneProduct	Entrez Gene	586	863,505
+BCAT2	GeneProduct	Entrez Gene	587	863,505
+BHMT	GeneProduct	Entrez Gene	635	492,877
+AGXT2	GeneProduct	Entrez Gene	64902	863,526
+SMS	GeneProduct	Entrez Gene	6611	939,976
+SRM	GeneProduct	Entrez Gene	6723	939,955
+TAT	GeneProduct	Entrez Gene	6898	492,1074
+TST	GeneProduct	Entrez Gene	7263	163,571
+MRI1	GeneProduct	Entrez Gene	84245	993,1158
+CBS	GeneProduct	Entrez Gene	875	452,772
+KYAT1	GeneProduct	Entrez Gene	883	517,772	192,472	62,268
+LDHAL6B	GeneProduct	Entrez Gene	92483	116,615
+S-Adenosyl-L-methionine	Metabolite	KEGG Compound	C00019	696,965
+S-Adenosyl-L-homocysteine	Metabolite	KEGG Compound	C00021	694,885
+Pyruvate	Metabolite	KEGG Compound	C00022	1007,414	220,570
+L-Alanine	Metabolite	KEGG Compound	C00041	469,610
+L-Aspartate	Metabolite	KEGG Compound	C00049	546,663
+Glutathione	Metabolite	KEGG Compound	C00051	278,359
+Sulfate	Metabolite	KEGG Compound	C00059	206,226
+L-Serine	Metabolite	KEGG Compound	C00065	421,803	516,132
+L-Methionine	Metabolite	KEGG Compound	C00073	517,966
+Sulfite	Metabolite	KEGG Compound	C00094	268,618
+L-Cysteine	Metabolite	KEGG Compound	C00097	516,414
+2-Oxobutanoate	Metabolite	KEGG Compound	C00109	808,515	786,1031
+L-Homocysteine	Metabolite	KEGG Compound	C00155	517,826
+5'-Methylthioadenosine	Metabolite	KEGG Compound	C00170	991,965
+3-Phospho-D-glycerate	Metabolite	KEGG Compound	C00197	421,377
+L-Homoserine	Metabolite	KEGG Compound	C00263	808,663
+Hydrogen sulfide	Metabolite	KEGG Compound	C00283	586,204
+Methanethiol	Metabolite	KEGG Compound	C00409	418,1044
+L-Aspartate 4-semialdehyde	Metabolite	KEGG Compound	C00441	718,663
+L-Cystine	Metabolite	KEGG Compound	C00491	153,329
+L-Cysteate	Metabolite	KEGG Compound	C00506	720,414
+3-Sulfino-L-alanine	Metabolite	KEGG Compound	C00606	397,570
+D-Cysteine	Metabolite	KEGG Compound	C00793	345,515
+Mercaptopyruvate	Metabolite	KEGG Compound	C00957	116,570
+O-Acetyl-L-serine	Metabolite	KEGG Compound	C00979	516,191
+O-Phospho-L-serine	Metabolite	KEGG Compound	C01005	421,260
+O-Acetyl-L-homoserine	Metabolite	KEGG Compound	C01077	808,725
+O-Succinyl-L-homoserine	Metabolite	KEGG Compound	C01118	808,601
+S-Adenosylmethioninamine	Metabolite	KEGG Compound	C01137	879,965
+4-Methylthio-2-oxobutanoic acid	Metabolite	KEGG Compound	C01180	517,1189
+1-Aminocyclopropane-1-carboxylate	Metabolite	KEGG Compound	C01234	696,1031
+L-Homocystine	Metabolite	KEGG Compound	C01817	323,881
+Thiocysteine	Metabolite	KEGG Compound	C01962	87,240
+Dehydroalanine	Metabolite	KEGG Compound	C02218	715,132
+L-Cystathionine	Metabolite	KEGG Compound	C02291	517,725
+(S)-2-Aminobutanoate	Metabolite	KEGG Compound	C02356	915,515
+L-Methionine S-oxide	Metabolite	KEGG Compound	C02989	323,923
+4-Phospho-L-aspartate	Metabolite	KEGG Compound	C03082	633,663
+5-Methylthio-D-ribose	Metabolite	KEGG Compound	C03089	993,1053
+N-Formylmethionine	Metabolite	KEGG Compound	C03145	323,968
+3-Phosphonooxypyruvate	Metabolite	KEGG Compound	C03232	421,320
+S-Ribosyl-L-homocysteine	Metabolite	KEGG Compound	C03539	833,885
+S-Methyl-5-thio-D-ribose 1-phosphate	Metabolite	KEGG Compound	C04188	993,1117
+S-Methyl-5-thio-D-ribulose 1-phosphate	Metabolite	KEGG Compound	C04582	993,1189
+Aminoacyl-L-methionine	Metabolite	KEGG Compound	C05524	418,1007
+S-Glutathionyl-L-cysteine	Metabolite	KEGG Compound	C05526	186,302
+3-Sulfinylpyruvate	Metabolite	KEGG Compound	C05527	303,570
+3-Sulfopyruvate	Metabolite	KEGG Compound	C05528	815,414
+3-Mercaptolactate	Metabolite	KEGG Compound	C05823	116,670
+S-Sulfo-L-cysteine	Metabolite	KEGG Compound	C05824	292,191
+Ethylene	Metabolite	KEGG Compound	C06547	696,1103
+3-(Methylthio)propanoate	Metabolite	KEGG Compound	C08276	649,1102
+Sulfur dioxide	Metabolite	KEGG Compound	C09306	492,570
+HSO3-	Metabolite	KEGG Compound	C11481	986,374
+(S)-3-Sulfolactate	Metabolite	KEGG Compound	C11499	910,374
+(2R)-3-Sulfolactate	Metabolite	KEGG Compound	C11537	910,414
+1,2-Dihydroxy-5-(methylthio)pent-1-en-3-one	Metabolite	KEGG Compound	C15606	653,1189
+2,3-Diketo-5-methylthiopentyl-1-phosphate	Metabolite	KEGG Compound	C15650	879,1189
+2-Hydroxy-3-keto-5-methylthiopentenyl-1-phosphate	Metabolite	KEGG Compound	C15651	764,1189
+N-Acyl-L-homoserine lactone	Metabolite	KEGG Compound	C18049	948,885
+5'-S-Methyl-5'-thioinosine	Metabolite	KEGG Compound	C19787	1121,963
+gamma-L-Glutamyl-L-2-aminobutyrate	Metabolite	KEGG Compound	C21015	1019,515
+Ophthalmate	Metabolite	KEGG Compound	C21016	1123,515

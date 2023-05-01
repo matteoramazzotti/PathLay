@@ -1,0 +1,88 @@
+TEXT	TYPE	DB	ID	X	Y
+Neomycin, kanamycin and gentamicin biosynthesis	hsa	KEGG	hsa00524
+GCK	GeneProduct	Entrez Gene	2645	459,139
+HK1	GeneProduct	Entrez Gene	3098	409,139
+HK2	GeneProduct	Entrez Gene	3099	409,139
+HK3	GeneProduct	Entrez Gene	3101	409,139
+HKDC1	GeneProduct	Entrez Gene	80201	409,139
+L-Glutamate	Metabolite	KEGG Compound	C00025	557,1194
+UDP-glucose	Metabolite	KEGG Compound	C00029	961,742
+D-Glucose	Metabolite	KEGG Compound	C00031	434,110
+UDP-N-acetyl-alpha-D-glucosamine	Metabolite	KEGG Compound	C00043	961,989	406,602
+D-Glucose 6-phosphate	Metabolite	KEGG Compound	C00092	434,171
+Acyl-carrier protein	Metabolite	KEGG Compound	C00229	571,1235
+Tobramycin	Metabolite	KEGG Compound	C00397	512,864
+Kanamycin B	Metabolite	KEGG Compound	C00825	1012,803
+Paromomycin	Metabolite	KEGG Compound	C00832	1123,1283
+Gentamicin C1a	Metabolite	KEGG Compound	C00908	343,1109
+Neamine	Metabolite	KEGG Compound	C01441	736,803
+Apramycin	Metabolite	KEGG Compound	C01555	422,770
+Neomycin B	Metabolite	KEGG Compound	C01737	834,1283
+Paromamine	Metabolite	KEGG Compound	C01743	736,676
+Ribostamycin	Metabolite	KEGG Compound	C01759	736,977
+Kanamycin A	Metabolite	KEGG Compound	C01822	1012,537
+Kanamycin C	Metabolite	KEGG Compound	C01823	1012,681
+Gentamicin A	Metabolite	KEGG Compound	C01917	343,864
+Gentamicin C2	Metabolite	KEGG Compound	C02033	119,1109
+2-Deoxystreptamine	Metabolite	KEGG Compound	C02627	434,415
+Gentamicin C1	Metabolite	KEGG Compound	C07656	119,1170
+UDP-3-ketoglucose	Metabolite	KEGG Compound	C12210	880,742
+UDP-kanosamine	Metabolite	KEGG Compound	C12211	799,476	799,742
+Neomycin C	Metabolite	KEGG Compound	C15652	834,1222
+2-Deoxy-scyllo-inosose	Metabolite	KEGG Compound	C17209	434,232
+2-Deoxy-scyllo-inosamine	Metabolite	KEGG Compound	C17580	434,293
+3-Amino-2,3-dideoxy-scyllo-inosose	Metabolite	KEGG Compound	C17581	434,354
+2'-N-Acetylparomamine	Metabolite	KEGG Compound	C17582	736,602
+6'-Dehydro-6'-oxoparomamine	Metabolite	KEGG Compound	C17583	736,742
+Xylostasin	Metabolite	KEGG Compound	C17584	736,1100
+Butirosin A	Metabolite	KEGG Compound	C17585	474,1100
+Butirosin B	Metabolite	KEGG Compound	C17586	474,977
+2'''-N-Acetyl-6'''-deamino-6'''-hydroxyneomycin C	Metabolite	KEGG Compound	C17587	834,1039
+6'''-Deamino-6'''-hydroxyneomycin C	Metabolite	KEGG Compound	C17588	834,1100
+6'''-Deamino-6'''-oxoneomycin C	Metabolite	KEGG Compound	C17589	834,1161
+Gentamicin A2	Metabolite	KEGG Compound	C17701	343,671
+Gentamicin X2	Metabolite	KEGG Compound	C17702	343,926
+Antibiotic G-418	Metabolite	KEGG Compound	C17703	232,926
+Antibiotic JI-20A	Metabolite	KEGG Compound	C17704	343,1048
+Antibiotic JI-20B	Metabolite	KEGG Compound	C17705	119,1048
+Gentamicin C2b	Metabolite	KEGG Compound	C17706	343,1170
+Lividomycin A	Metabolite	KEGG Compound	C17707	1235,1344
+Paromomycin II	Metabolite	KEGG Compound	C17712	1123,1222
+Oxyapramycin	Metabolite	KEGG Compound	C17997	623,742
+Nebramycin factor 4	Metabolite	KEGG Compound	C18000	1012,864
+Nebramycin 5'	Metabolite	KEGG Compound	C18001	512,926
+5-Ribosylparomamine	Metabolite	KEGG Compound	C18002	1123,977
+Lividomycin B	Metabolite	KEGG Compound	C18003	1235,1283
+5''-Phosphoribostamycin	Metabolite	KEGG Compound	C18004	736,916
+gamma-L-Glutamyl-butirosin B	Metabolite	KEGG Compound	C18005	585,977
+gamma-L-Glutamyl-[acp]	Metabolite	KEGG Compound	C18006	669,1194
+4-Aminobutyryl-[acp]	Metabolite	KEGG Compound	C18007	669,1133
+4-(gamma-L-Glutamylamino)butanoyl-[acp]	Metabolite	KEGG Compound	C18008	669,1072
+4-(gamma-L-Glutamylamino)-(2S)-2-hydroxybutanoyl-[acp]	Metabolite	KEGG Compound	C18009	669,1011
+2'-Deamino-2'-hydroxyneamine	Metabolite	KEGG Compound	C20350	736,537
+2'-Deamino-2'-hydroxy-6'-dehydroparomamine	Metabolite	KEGG Compound	C20351	736,476
+2'-Deamino-2'-hydroxyparomamine	Metabolite	KEGG Compound	C20353	736,415
+2'-Dehydrokanamycin A	Metabolite	KEGG Compound	C20509	1178,637
+Kanamycin X	Metabolite	KEGG Compound	C20614	1012,415
+6''-O-Carbamoylkanamycin A	Metabolite	KEGG Compound	C20699	1012,598
+3''-Oxoribostamycin	Metabolite	KEGG Compound	C21176	736,1039
+6'-Oxokanamycin X	Metabolite	KEGG Compound	C21251	1012,476
+6'-Oxokanamycin C	Metabolite	KEGG Compound	C21252	1012,742
+Kanamycin D	Metabolite	KEGG Compound	C21253	903,574
+3''-Deamino-3''-hydroxykanamycin B	Metabolite	KEGG Compound	C21254	903,838
+Lividamine	Metabolite	KEGG Compound	C21255	512,681
+6'-Oxolividamine	Metabolite	KEGG Compound	C21256	512,742
+4'-Oxolividamine	Metabolite	KEGG Compound	C21257	623,681
+4'-Oxonebramine	Metabolite	KEGG Compound	C21258	623,803
+Nebramine	Metabolite	KEGG Compound	C21259	512,803
+5''-Phosphoribosylparomamine	Metabolite	KEGG Compound	C21260	1123,916
+2'''-N-Acetyl-6'''-deamino-6'''-hydroxyparomomycin II	Metabolite	KEGG Compound	C21261	1123,1039
+6'''-Deamino-6'''-hydroxyparomomycin II	Metabolite	KEGG Compound	C21262	1123,1100
+6'''-Deamino-6'''-oxoparomomycin II	Metabolite	KEGG Compound	C21263	1123,1161
+5'''-epi-Lividomycin B	Metabolite	KEGG Compound	C21264	1235,1222
+3''-Oxogentamicin A2	Metabolite	KEGG Compound	C21265	343,742
+3''-Amino-3''-deoxygentamicin A2	Metabolite	KEGG Compound	C21266	343,803
+6'-Oxogentamicin X2	Metabolite	KEGG Compound	C21267	343,987
+6'-Oxo-G418	Metabolite	KEGG Compound	C21268	232,987
+Antibiotic JI-20Ba	Metabolite	KEGG Compound	C21269	232,1048
+Gentamicin C2a	Metabolite	KEGG Compound	C21270	232,1109

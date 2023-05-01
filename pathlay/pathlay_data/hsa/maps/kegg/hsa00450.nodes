@@ -1,0 +1,46 @@
+TEXT	TYPE	DB	ID	X	Y
+Selenocompound metabolism	hsa	KEGG	hsa00450
+TXNRD2	GeneProduct	Entrez Gene	10587	570,459	472,176
+INMT	GeneProduct	Entrez Gene	11185	570,238
+TXNRD3	GeneProduct	Entrez Gene	114112	570,459	472,176
+PSTK	GeneProduct	Entrez Gene	118672	170,525
+CTH	GeneProduct	Entrez Gene	1491	248,164	257,219
+SEPHS2	GeneProduct	Entrez Gene	22928	328,459
+SEPHS1	GeneProduct	Entrez Gene	22929	328,459
+MARS1	GeneProduct	Entrez Gene	4141	118,176
+MTR	GeneProduct	Entrez Gene	4548	199,219
+SEPSECS	GeneProduct	Entrez Gene	51091	125,469
+SCLY	GeneProduct	Entrez Gene	51540	328,395
+KYAT3	GeneProduct	Entrez Gene	56267	328,331	307,219	199,299
+TXNRD1	GeneProduct	Entrez Gene	7296	570,459	472,176
+KYAT1	GeneProduct	Entrez Gene	883	328,331	307,219	199,299
+PAPSS2	GeneProduct	Entrez Gene	9060	800,365
+PAPSS1	GeneProduct	Entrez Gene	9061	800,365
+MARS2	GeneProduct	Entrez Gene	92935	118,176
+Protein	Metabolite	KEGG Compound	C00017	65,331
+L-Alanine	Metabolite	KEGG Compound	C00041	380,422
+Hydrogen selenide	Metabolite	KEGG Compound	C01528	422,391
+Dimethyl selenide	Metabolite	KEGG Compound	C02535	524,238
+Selenophosphoric acid	Metabolite	KEGG Compound	C05172	198,458
+L-Selenomethionine	Metabolite	KEGG Compound	C05335	198,176
+Selenomethionyl-tRNA(Met)	Metabolite	KEGG Compound	C05336	65,176
+Selenite	Metabolite	KEGG Compound	C05684	714,391
+Adenylylselenate	Metabolite	KEGG Compound	C05686	799,331
+L-Selenocysteine	Metabolite	KEGG Compound	C05688	198,391
+Se-Methyl-L-selenocysteine	Metabolite	KEGG Compound	C05689	286,331
+Se-Methylselenomethionine	Metabolite	KEGG Compound	C05690	198,107
+gamma-Glutamyl-Se-methylselenocysteine	Metabolite	KEGG Compound	C05695	380,287
+Selenate	Metabolite	KEGG Compound	C05697	799,391
+Selenohomocysteine	Metabolite	KEGG Compound	C05698	198,254
+L-Selenocystathionine	Metabolite	KEGG Compound	C05699	198,331
+Methaneselenol	Metabolite	KEGG Compound	C05703	422,176
+L-Seryl-tRNA(Sec)	Metabolite	KEGG Compound	C06481	169,427	169,550
+L-Selenocysteinyl-tRNA(Sec)	Metabolite	KEGG Compound	C06482	65,458
+O-Phosphoseryl-tRNA(Sec)	Metabolite	KEGG Compound	C16638	169,489
+Selenodiglutathione	Metabolite	KEGG Compound	C18870	619,391
+Glutathioselenol	Metabolite	KEGG Compound	C18871	524,391
+Trimethylselenonium	Metabolite	KEGG Compound	C18872	619,238
+1-Methylseleno-N-acetyl-D-galactosamine	Metabolite	KEGG Compound	C18893	524,331
+Methylselenic acid	Metabolite	KEGG Compound	C18902	524,176
+Methylselenopyruvate	Metabolite	KEGG Compound	C18904	380,331
+Methylselenocysteine Se-oxide	Metabolite	KEGG Compound	C18905	380,238

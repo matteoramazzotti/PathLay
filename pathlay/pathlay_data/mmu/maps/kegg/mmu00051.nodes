@@ -1,0 +1,103 @@
+TEXT	TYPE	DB	ID	X	Y
+Fructose and mannose metabolism	mmu	KEGG	mmu00051
+L-Sorbose	Metabolite	KEGG Compound	C00247	1070,534
+D-Allulose 6-phosphate	Metabolite	KEGG Compound	C18096	1048,257
+D-Allose 6-phosphate	Metabolite	KEGG Compound	C02962	1048,192
+D-Allose	Metabolite	KEGG Compound	C01487	1048,129
+L-Fucono-1,5-lactone	Metabolite	KEGG Compound	C18028	332,788
+L-Fuconate	Metabolite	KEGG Compound	C01720	427,788
+2-Dehydro-3-deoxy-L-fuconate	Metabolite	KEGG Compound	C03827	522,788
+2,4-Diketo-3-deoxy-L-fuconate	Metabolite	KEGG Compound	C20781	617,788
+(S)-Lactaldehyde	Metabolite	KEGG Compound	C00424	712,862
+Hk1	GeneProduct	Entrez Gene	15275	333,328
+Hk2	GeneProduct	Entrez Gene	15277	333,328
+Hk3	GeneProduct	Entrez Gene	212032	333,328
+Hkdc1	GeneProduct	Entrez Gene	216019	333,328
+(S)-Lactate	Metabolite	KEGG Compound	C00186	712,788
+2-O-(alpha-D-Mannosyl)-D-glycerate	Metabolite	KEGG Compound	C11544	733,475
+2-(alpha-D-Mannosyl)-3-phosphoglycerate	Metabolite	KEGG Compound	C11516	636,475
+(beta-D-Mannuronate)n	Metabolite	KEGG Compound	C05144	645,415
+Hk1	GeneProduct	Entrez Gene	15275	495,287
+Hk2	GeneProduct	Entrez Gene	15277	495,287
+Hk3	GeneProduct	Entrez Gene	212032	495,287
+Hkdc1	GeneProduct	Entrez Gene	216019	495,287
+Pfkfb3	GeneProduct	Entrez Gene	170768	923,274
+Pfkfb1	GeneProduct	Entrez Gene	18639	923,274
+Pfkfb2	GeneProduct	Entrez Gene	18640	923,274
+Pfkfb4	GeneProduct	Entrez Gene	270198	923,274
+Tigar	GeneProduct	Entrez Gene	319801	923,274
+Mpi	GeneProduct	Entrez Gene	110119	705,329
+Pmm1	GeneProduct	Entrez Gene	29858	420,360
+Pmm2	GeneProduct	Entrez Gene	54128	420,360
+Fpgt	GeneProduct	Entrez Gene	75540	420,655
+Gfus	GeneProduct	Entrez Gene	22122	420,588
+Gmds	GeneProduct	Entrez Gene	218138	420,523
+Gmppb	GeneProduct	Entrez Gene	331026	395,431
+Gmppa	GeneProduct	Entrez Gene	69080	395,431
+Pfkl	GeneProduct	Entrez Gene	18641	986,423
+Pfkm	GeneProduct	Entrez Gene	18642	986,423
+Pfkp	GeneProduct	Entrez Gene	56421	986,423
+Akr1b3	GeneProduct	Entrez Gene	11677	202,153
+Akr1b7	GeneProduct	Entrez Gene	11997	202,153
+Akr1b8	GeneProduct	Entrez Gene	14187	202,153
+Akr1b10	GeneProduct	Entrez Gene	67861	202,153
+Tpi1	GeneProduct	Entrez Gene	21991	945,692
+Aldoa	GeneProduct	Entrez Gene	11674	612,994
+Aldoc	GeneProduct	Entrez Gene	11676	612,994
+Aldob	GeneProduct	Entrez Gene	230163	612,994
+Aldoart1	GeneProduct	Entrez Gene	353204	612,994
+Aldoart2	GeneProduct	Entrez Gene	79459	612,994
+Tkfc	GeneProduct	Entrez Gene	225913	999,743
+Aldoa	GeneProduct	Entrez Gene	11674	945,598
+Aldoc	GeneProduct	Entrez Gene	11676	945,598
+Aldob	GeneProduct	Entrez Gene	230163	945,598
+Aldoart1	GeneProduct	Entrez Gene	353204	945,598
+Aldoart2	GeneProduct	Entrez Gene	79459	945,598
+Sord	GeneProduct	Entrez Gene	20322	221,206
+Fbp2	GeneProduct	Entrez Gene	14120	901,423
+Fbp1	GeneProduct	Entrez Gene	14121	901,423
+Fcsk	GeneProduct	Entrez Gene	234730	333,688
+L-Sorbose	Metabolite	KEGG Compound	C00247	246,97
+alpha-D-Glucose	Metabolite	KEGG Compound	C00267	158,152
+D-Fructose 1-phosphate	Metabolite	KEGG Compound	C01094	420,1000
+D-Mannose	Metabolite	KEGG Compound	C00159	246,328
+D-Mannose 6-phosphate	Metabolite	KEGG Compound	C00275	420,328
+Mannitol	Metabolite	KEGG Compound	C00392	528,196
+D-Mannitol 1-phosphate	Metabolite	KEGG Compound	C00644	1000,196
+beta-D-Fructose 2-phosphate	Metabolite	KEGG Compound	C03267	571,243
+Khk	GeneProduct	Entrez Gene	16548	333,990
+beta-D-Fructose 2,6-bisphosphate	Metabolite	KEGG Compound	C00665	944,243
+D-Sorbitol	Metabolite	KEGG Compound	C00794	1017,491
+Mannan	Metabolite	KEGG Compound	C00464	246,432
+1,4-beta-D-Mannan	Metabolite	KEGG Compound	C02492	172,473
+Sorbitol 6-phosphate	Metabolite	KEGG Compound	C01096	1017,401
+GDP-L-fucose	Metabolite	KEGG Compound	C00325	420,620
+(Alginate)n	Metabolite	KEGG Compound	C01768	746,415
+D-Glyceraldehyde	Metabolite	KEGG Compound	C00577	999,840
+L-Rhamnose	Metabolite	KEGG Compound	C00507	246,905
+L-Rhamnulose	Metabolite	KEGG Compound	C00861	246,964
+L-Rhamnulose 1-phosphate	Metabolite	KEGG Compound	C01131	420,964
+L-Rhamnofuranose	Metabolite	KEGG Compound	C02431	246,862
+L-Rhamnonate	Metabolite	KEGG Compound	C01934	427,862
+2-Dehydro-3-deoxy-L-rhamnonate	Metabolite	KEGG Compound	C03979	522,862
+D-Glyceraldehyde 3-phosphate	Metabolite	KEGG Compound	C00118	945,640
+GDP-mannose	Metabolite	KEGG Compound	C00096	420,472
+beta-D-Fructose 6-phosphate	Metabolite	KEGG Compound	C05345	945,328
+GDP-D-mannuronate	Metabolite	KEGG Compound	C00976	545,415
+GDP-4-dehydro-6-deoxy-D-mannose	Metabolite	KEGG Compound	C01222	420,562
+L-Fucose 1-phosphate	Metabolite	KEGG Compound	C02985	420,687
+Oligouronide with 4-deoxy-alpha-L-erythro-hex-4-enopyranuronosyl group	Metabolite	KEGG Compound	C05392	846,415
+GDP-6-deoxy-D-talose	Metabolite	KEGG Compound	C02977	631,561
+GDP-6-deoxy-D-mannose	Metabolite	KEGG Compound	C03117	631,622
+D-Fructose	Metabolite	KEGG Compound	C00095	246,243
+D-Sorbitol	Metabolite	KEGG Compound	C00794	246,152
+D-Mannose 1-phosphate	Metabolite	KEGG Compound	C00636	420,392
+beta-D-Fructose 1,6-bisphosphate	Metabolite	KEGG Compound	C05378	945,552
+L-Rhamnono-1,4-lactone	Metabolite	KEGG Compound	C02991	332,862
+Fructan	Metabolite	KEGG Compound	C01355	346,275
+L-Fucose	Metabolite	KEGG Compound	C01019	246,687
+Glycerone phosphate	Metabolite	KEGG Compound	C00111	945,746
+L-Fuculose 1-phosphate	Metabolite	KEGG Compound	C01099	420,746
+L-Fuculose	Metabolite	KEGG Compound	C01721	246,746
+ADP-mannose	Metabolite	KEGG Compound	C06192	325,392
+Sorbose 1-phosphate	Metabolite	KEGG Compound	C02888	1070,458

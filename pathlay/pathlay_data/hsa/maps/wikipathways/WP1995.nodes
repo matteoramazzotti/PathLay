@@ -1,0 +1,17 @@
+TEXT	TYPE	DB	ID	X	Y
+Effects of nitric oxide	Homo sapiens	WikiPathways	WP1995
+NOS3 (endothelial)	GeneProduct	Entrez Gene	4846	205.5,125.0
+Nitric oxide	Metabolite	HMDB	HMDB0003378	424.0,162.0
+AOX1	Protein	Ensembl	ENSG00000138356	728.6451612903226,229.4277894478414
+deoxy-hemoglobin	GeneProduct	Ensembl	ENSG00000206172	620.4394917218366,68.61514257834338
+deoxy-myoglobin	GeneProduct	Entrez Gene	4151	515.5322580645161,98.06451612903224
+Nitrate	Metabolite	HMDB	HMDB0002878	818.0,162.0
+NOS1 (neuronal)	GeneProduct	Entrez Gene	4842	205.5,85.0
+COX1	GeneProduct	Entrez Gene	4512	616.6451612903226,229.4277894478414
+NOS2 (inducible)	GeneProduct	Entrez Gene	4843	205.5,105.0
+Citrulline	Metabolite	HMDB	HMDB0000904	285.0,204.0
+VItamin C	Metabolite	HMDB	HMDB0000044	842.7096774193544,229.4277894478414
+Nitrite	Metabolite	HMDB	HMDB0002786	613.0,162.0
+XDH	GeneProduct	Entrez Gene	7498	207.8333870967741,359.10064516129023
+L-Arginine	Metabolite	HMDB	HMDB0000517	61.0,161.0
+Oxygen	Metabolite	HMDB	HMDB0001377	61.0,204.0

@@ -1,0 +1,6 @@
+TEXT	TYPE	DB	ID	X	Y
+Virion - Lyssavirus	mmu	KEGG	mmu03265
+Ngfr	GeneProduct	Entrez Gene	18053	625,403
+Chrna1	GeneProduct	Entrez Gene	11435	518,403
+Ncam1	GeneProduct	Entrez Gene	17967	571,403
+Ncam2	GeneProduct	Entrez Gene	17968	571,403

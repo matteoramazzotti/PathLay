@@ -1,0 +1,144 @@
+TEXT	TYPE	DB	ID	X	Y
+Inositol phosphate metabolism	mmu	KEGG	mmu00562
+1-Phosphatidyl-1D-myo-inositol 5-phosphate	Metabolite	KEGG Compound	C11557	558,68
+Pip4k2b	GeneProduct	Entrez Gene	108083	558,103
+Pip4k2c	GeneProduct	Entrez Gene	117150	558,103
+Pip4k2a	GeneProduct	Entrez Gene	18718	558,103
+Itpk1	GeneProduct	Entrez Gene	217837	174,373
+Mtmr4	GeneProduct	Entrez Gene	170749	711,69
+Mtm1	GeneProduct	Entrez Gene	17772	711,69
+Mtmr6	GeneProduct	Entrez Gene	219135	711,69
+Mtmr1	GeneProduct	Entrez Gene	53332	711,69
+Mtmr7	GeneProduct	Entrez Gene	54384	711,69
+Mtmr3	GeneProduct	Entrez Gene	74302	711,69
+Mtmr2	GeneProduct	Entrez Gene	77116	711,69
+Mtmr14	GeneProduct	Entrez Gene	97287	711,69
+Inpp5f	GeneProduct	Entrez Gene	101490	711,275
+Sacm1l	GeneProduct	Entrez Gene	83493	711,275
+2,4,6/3,5-Pentahydroxycyclohexanone	Metabolite	KEGG Compound	C00691	666,487
+3-Dehydro-scyllo-inosose	Metabolite	KEGG Compound	C21643	779,453
+D-Tagaturonate	Metabolite	KEGG Compound	C00558	967,453
+5-Dehydro-L-gluconate	Metabolite	KEGG Compound	C21644	871,453
+Fig4	GeneProduct	Entrez Gene	103199	895,122
+1-Phosphatidyl-1D-myo-inositol 3-phosphate	Metabolite	KEGG Compound	C04549	845,175
+Itpk1	GeneProduct	Entrez Gene	217837	229,384
+Ipmk	GeneProduct	Entrez Gene	69718	229,440
+Itpk1	GeneProduct	Entrez Gene	217837	229,509
+Inpp5j	GeneProduct	Entrez Gene	170835	284,258
+Inpp5k	GeneProduct	Entrez Gene	19062	284,258
+Inpp5a	GeneProduct	Entrez Gene	212111	284,258
+Inpp1	GeneProduct	Entrez Gene	16329	284,341
+Inpp1	GeneProduct	Entrez Gene	16329	389,258
+Inpp4b	GeneProduct	Entrez Gene	234515	389,341
+Inpp4a	GeneProduct	Entrez Gene	269180	389,341
+1D-myo-Inositol 1,4,5,6-tetrakisphosphate	Metabolite	KEGG Compound	C11555	53,414
+Mtm1	GeneProduct	Entrez Gene	17772	716,376
+Isyna1	GeneProduct	Entrez Gene	71780	389,308
+Impa2	GeneProduct	Entrez Gene	114663	498,258
+Impa1	GeneProduct	Entrez Gene	55980	498,258
+Impa2	GeneProduct	Entrez Gene	114663	498,341
+Impa1	GeneProduct	Entrez Gene	55980	498,341
+Miox	GeneProduct	Entrez Gene	56727	510,529
+Pi4kb	GeneProduct	Entrez Gene	107650	711,248
+Pi4ka	GeneProduct	Entrez Gene	224020	711,248
+Pi4k2b	GeneProduct	Entrez Gene	67073	711,248
+Pi4k2a	GeneProduct	Entrez Gene	84095	711,248
+Pip5k1c	GeneProduct	Entrez Gene	18717	558,209
+Pip5k1b	GeneProduct	Entrez Gene	18719	558,209
+Pip5k1a	GeneProduct	Entrez Gene	18720	558,209
+Pip5kl1	GeneProduct	Entrez Gene	227733	558,209
+Synj1	GeneProduct	Entrez Gene	104015	508,209
+Inpp5b	GeneProduct	Entrez Gene	16330	508,209
+Synj2	GeneProduct	Entrez Gene	20975	508,209
+Ocrl	GeneProduct	Entrez Gene	320634	508,209
+Inpp5e	GeneProduct	Entrez Gene	64436	508,209
+Pik3c3	GeneProduct	Entrez Gene	225326	845,236
+Mtmr4	GeneProduct	Entrez Gene	170749	895,236
+Mtm1	GeneProduct	Entrez Gene	17772	895,236
+Mtmr6	GeneProduct	Entrez Gene	219135	895,236
+Mtmr1	GeneProduct	Entrez Gene	53332	895,236
+Mtmr7	GeneProduct	Entrez Gene	54384	895,236
+Mtmr3	GeneProduct	Entrez Gene	74302	895,236
+Mtmr2	GeneProduct	Entrez Gene	77116	895,236
+Mtmr14	GeneProduct	Entrez Gene	97287	895,236
+Impa2	GeneProduct	Entrez Gene	114663	642,341
+Impa1	GeneProduct	Entrez Gene	55980	642,341
+Plcz1	GeneProduct	Entrez Gene	114875	397,170
+Plcb1	GeneProduct	Entrez Gene	18795	397,170
+Plcb2	GeneProduct	Entrez Gene	18796	397,170
+Plcb3	GeneProduct	Entrez Gene	18797	397,170
+Plcb4	GeneProduct	Entrez Gene	18798	397,170
+Plcd1	GeneProduct	Entrez Gene	18799	397,170
+Plcd4	GeneProduct	Entrez Gene	18802	397,170
+Plcg1	GeneProduct	Entrez Gene	18803	397,170
+Plcg2	GeneProduct	Entrez Gene	234779	397,170
+Plch1	GeneProduct	Entrez Gene	269437	397,170
+Plch2	GeneProduct	Entrez Gene	269615	397,170
+Plcd3	GeneProduct	Entrez Gene	72469	397,170
+Plce1	GeneProduct	Entrez Gene	74055	397,170
+Ippk	GeneProduct	Entrez Gene	75678	168,510
+Pik3ca	GeneProduct	Entrez Gene	18706	617,170
+Pik3cd	GeneProduct	Entrez Gene	18707	617,170
+Pik3cg	GeneProduct	Entrez Gene	30955	617,170
+Pik3cb	GeneProduct	Entrez Gene	74769	617,170
+Ipmk	GeneProduct	Entrez Gene	69718	53,373
+1D-myo-Inositol 1,3,4,5-tetrakisphosphate	Metabolite	KEGG Compound	C01272	115,340
+Phytic acid	Metabolite	KEGG Compound	C01204	167,550
+D-myo-Inositol 1,4,5-trisphosphate	Metabolite	KEGG Compound	C01245	229,257
+1D-myo-Inositol 1,3,4-trisphosphate	Metabolite	KEGG Compound	C01243	229,340
+1D-myo-Inositol 1,3,4,5,6-pentakisphosphate	Metabolite	KEGG Compound	C01284	229,472
+1D-myo-Inositol 3,4,5,6-tetrakisphosphate	Metabolite	KEGG Compound	C04520	229,550
+D-myo-Inositol 1,2,4,5,6-pentakisphosphate	Metabolite	KEGG Compound	C04563	167,615
+1D-myo-Inositol 1,3,4,6-tetrakisphosphate	Metabolite	KEGG Compound	C04477	229,414
+Inositol 1,2,3,5,6-pentakisphosphate	Metabolite	KEGG Compound	C04579	109,615
+Ipmk	GeneProduct	Entrez Gene	69718	136,470
+D-myo-Inositol 3,4-bisphosphate	Metabolite	KEGG Compound	C04063	343,340
+D-myo-Inositol 1,3-bisphosphate	Metabolite	KEGG Compound	C04062	716,404
+1D-myo-Inositol 1,4-bisphosphate	Metabolite	KEGG Compound	C01220	343,257
+D-Glucose 6-phosphate	Metabolite	KEGG Compound	C00092	343,307
+1D-myo-Inositol 3-phosphate	Metabolite	KEGG Compound	C04006	443,340
+myo-Inositol 4-phosphate	Metabolite	KEGG Compound	C03546	443,257
+D-Glucuronate	Metabolite	KEGG Compound	C00191	458,528
+Inositol 1-phosphate	Metabolite	KEGG Compound	C01177	716,340
+1-Phosphatidyl-D-myo-inositol 4,5-bisphosphate	Metabolite	KEGG Compound	C04637	558,169
+1-Phosphatidyl-1D-myo-inositol 4-phosphate	Metabolite	KEGG Compound	C01277	558,245
+Pten	GeneProduct	Entrez Gene	19211	617,115
+Phosphatidylinositol-3,4,5-trisphosphate	Metabolite	KEGG Compound	C05981	679,115
+1-Phosphatidyl-D-myo-inositol	Metabolite	KEGG Compound	C01194	845,341
+1,2-Diacyl-sn-glycerol	Metabolite	KEGG Compound	C00641	342,201
+D-Bornesitol	Metabolite	KEGG Compound	C03659	657,420
+L-Bornesitol	Metabolite	KEGG Compound	C03660	657,380
+3D-3,5/4-Trihydroxycyclohexane-1,2-dione	Metabolite	KEGG Compound	C04287	779,487
+5-Deoxy-D-glucuronate	Metabolite	KEGG Compound	C16737	871,487
+2-Deoxy-5-keto-D-gluconic acid	Metabolite	KEGG Compound	C06892	967,487
+Minpp1	GeneProduct	Entrez Gene	17330	174,291
+2-Deoxy-5-keto-D-gluconic acid 6-phosphate	Metabolite	KEGG Compound	C06893	1061,487
+3-Oxopropanoate	Metabolite	KEGG Compound	C00222	1000,563
+Acetyl-CoA	Metabolite	KEGG Compound	C00024	904,563
+Glycerone phosphate	Metabolite	KEGG Compound	C00111	1000,610
+D-Glyceraldehyde 3-phosphate	Metabolite	KEGG Compound	C00118	904,610
+Aldh6a1	GeneProduct	Entrez Gene	104776	959,564
+Tpi1	GeneProduct	Entrez Gene	21991	959,611
+Inpp5j	GeneProduct	Entrez Gene	170835	174,341
+Inpp5k	GeneProduct	Entrez Gene	19062	174,341
+Inpp5a	GeneProduct	Entrez Gene	212111	174,341
+1-Phosphatidyl-1D-myo-inositol 3,5-bisphosphate	Metabolite	KEGG Compound	C11556	845,68
+Pikfyve	GeneProduct	Entrez Gene	18711	844,122
+Cdipt	GeneProduct	Entrez Gene	52858	711,301
+1-Phosphatidyl-1D-myo-inositol 3,4-bisphosphate	Metabolite	KEGG Compound	C11554	679,175
+Inpp4b	GeneProduct	Entrez Gene	234515	765,176
+Inpp4a	GeneProduct	Entrez Gene	269180	765,176
+Pik3c2a	GeneProduct	Entrez Gene	18704	617,236
+Pik3c2g	GeneProduct	Entrez Gene	18705	617,236
+Pik3c2b	GeneProduct	Entrez Gene	240752	617,236
+Inpp5d	GeneProduct	Entrez Gene	16331	679,143
+Inppl1	GeneProduct	Entrez Gene	16332	679,143
+1-Keto-D-chiro-inositol	Metabolite	KEGG Compound	C20251	666,626
+myo-Inositol	Metabolite	KEGG Compound	C00137	558,340
+Itpka	GeneProduct	Entrez Gene	228550	174,258
+Itpkc	GeneProduct	Entrez Gene	233011	174,258
+Itpkb	GeneProduct	Entrez Gene	320404	174,258
+1D-chiro-Inositol	Metabolite	KEGG Compound	C19891	558,626
+scyllo-Inositol	Metabolite	KEGG Compound	C06153	558,558
+CDP-1L-myo-inositol	Metabolite	KEGG Compound	C19794	443,414
+Bis(1L-myo-inositol)-3,1'-phosphate 1-phosphate	Metabolite	KEGG Compound	C19799	443,476

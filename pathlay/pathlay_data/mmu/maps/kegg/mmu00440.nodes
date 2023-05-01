@@ -1,0 +1,65 @@
+TEXT	TYPE	DB	ID	X	Y
+Phosphonate and phosphinate metabolism	mmu	KEGG	mmu00440
+Rhizocticin B	Metabolite	KEGG Compound	C17940	398,254
+Rhizocticin A	Metabolite	KEGG Compound	C17944	398,254
+Rhizocticin C	Metabolite	KEGG Compound	C17960	398,254
+Rhizocticin D	Metabolite	KEGG Compound	C17961	398,254
+Hydroxymethylphosphonate	Metabolite	KEGG Compound	C06455	303,483
+Formylphosphonate	Metabolite	KEGG Compound	C17943	303,548
+N-Monomethyl-2-aminoethylphosphonate	Metabolite	KEGG Compound	C05679	430,483
+Ciliatocholate	Metabolite	KEGG Compound	C05683	545,385
+(2-Amino-1-hydroxyethyl)phosphonate	Metabolite	KEGG Compound	C05678	542,322
+CMP-2-aminoethylphosphonate	Metabolite	KEGG Compound	C05673	542,450
+Lipophosphonoglycan	Metabolite	KEGG Compound	C05677	642,357
+Ceramide 2-aminoethylphosphonate	Metabolite	KEGG Compound	C05681	642,415
+N-Dimethyl-2-aminoethylphosphonate	Metabolite	KEGG Compound	C05680	430,523
+Phosphoenolpyruvate	Metabolite	KEGG Compound	C00074	303,125
+N-Trimethyl-2-aminoethylphosphonate	Metabolite	KEGG Compound	C06459	430,563
+Diacylglyceryl-N-trimethyl-2-aminoethylphosphonate	Metabolite	KEGG Compound	C05676	642,563
+Phosphonoformate	Metabolite	KEGG Compound	C06456	303,613
+Phosphonoformyl-CMP	Metabolite	KEGG Compound	C17945	303,678
+1-Carboxyvinyl carboxyphosphonate	Metabolite	KEGG Compound	C06367	303,736
+3-(Hydrohydroxyphosphoryl)pyruvate	Metabolite	KEGG Compound	C06368	388,736
+2-Phosphinomethylmalate	Metabolite	KEGG Compound	C17947	473,736
+Deamino-alpha-keto-demethylphosphinothricin	Metabolite	KEGG Compound	C17948	638,736
+N-Acetyldemethylphosphinothricin	Metabolite	KEGG Compound	C17949	803,736
+N-Acetyldemethylphosphinothricin tripeptide	Metabolite	KEGG Compound	C17950	924,736
+3-Phosphonopyruvate	Metabolite	KEGG Compound	C02798	303,214
+N-Acetylphosphinothricin	Metabolite	KEGG Compound	C17952	803,830
+N-Acetylbialaphos	Metabolite	KEGG Compound	C17951	924,830
+L-Phosphinothricin	Metabolite	KEGG Compound	C04650	803,895
+Bialaphos	Metabolite	KEGG Compound	C06457	924,895
+Demethylphosphinothricin	Metabolite	KEGG Compound	C17962	718,736
+2-Amino-3-phosphonopropanoate	Metabolite	KEGG Compound	C05672	203,214
+Pcyt1a	GeneProduct	Entrez Gene	13026	485,564
+Pcyt1b	GeneProduct	Entrez Gene	236899	485,564
+Selenoi	GeneProduct	Entrez Gene	28042	588,451
+Cept1	GeneProduct	Entrez Gene	99712	588,451
+Chpt1	GeneProduct	Entrez Gene	212862	588,564
+Cept1	GeneProduct	Entrez Gene	99712	588,564
+FR 900098	Metabolite	KEGG Compound	C17942	585,214
+Phosphonoacetaldehyde	Metabolite	KEGG Compound	C03167	303,322
+Pcyt2	GeneProduct	Entrez Gene	68671	485,440
+2-Oxo-4-phosphonobutanoate	Metabolite	KEGG Compound	C17941	491,214
+CMP-N-trimethyl-2-aminoethylphosphonate	Metabolite	KEGG Compound	C05674	542,563
+Diacylglyceryl-2-aminoethylphosphonate	Metabolite	KEGG Compound	C05675	642,450
+Acetaldehyde	Metabolite	KEGG Compound	C00084	93,263
+2-Hydroxyethylphosphonate	Metabolite	KEGG Compound	C06451	303,388
+Methylphosphonate	Metabolite	KEGG Compound	C20396	202,483
+alpha-D-Ribose 1-methylphosphonate 5-triphosphate	Metabolite	KEGG Compound	C20422	202,548
+2-Aminoethylphosphonate	Metabolite	KEGG Compound	C03557	432,322
+alpha-D-Ribose 1-methylphosphonate 5-phosphate	Metabolite	KEGG Compound	C20423	202,613
+alpha-D-Ribose 1,2-cyclic phosphate 5-phosphate	Metabolite	KEGG Compound	C20440	202,678
+Pyruvate	Metabolite	KEGG Compound	C00022	116,182
+D-Ribose 1,5-bisphosphate	Metabolite	KEGG Compound	C01151	202,789
+Phosphonoacetate	Metabolite	KEGG Compound	C05682	206,322
+D-Ribose 2,5-bisphosphate	Metabolite	KEGG Compound	C20986	138,729
+D-Ribose 5-phosphate	Metabolite	KEGG Compound	C00117	138,789
+3-Phosphinomethylmalate	Metabolite	KEGG Compound	C21372	558,736
+Glycine	Metabolite	KEGG Compound	C00037	642,322
+2-Acetamidoethylphosphonate	Metabolite	KEGG Compound	C21403	542,263
+Acetate	Metabolite	KEGG Compound	C00033	70,322
+N-Ethylacetamide	Metabolite	KEGG Compound	C21404	642,263
+Methane	Metabolite	KEGG Compound	C01438	250,659
+(R)-2-(Phosphonomethyl)malate	Metabolite	KEGG Compound	C21613	398,214
+Formate	Metabolite	KEGG Compound	C00058	394,483

@@ -1,0 +1,103 @@
+TEXT	TYPE	DB	ID	X	Y
+Gastric acid secretion	mmu	KEGG	mmu04971
+Histamine	Metabolite	KEGG Compound	C00388	149,483
+D-myo-Inositol 1,4,5-trisphosphate	Metabolite	KEGG Compound	C01245	439,349
+Calcium cation	Metabolite	KEGG Compound	C00076	391,392
+Hrh2	GeneProduct	Entrez Gene	15466	224,484
+Diacylglycerol	Metabolite	KEGG Compound	C00165	467,294
+Prkca	GeneProduct	Entrez Gene	18750	539,297
+Prkcb	GeneProduct	Entrez Gene	18751	539,297
+Prkcg	GeneProduct	Entrez Gene	18752	539,297
+Atp4a	GeneProduct	Entrez Gene	11944	736,548
+Atp4b	GeneProduct	Entrez Gene	11945	736,548
+H+	Metabolite	KEGG Compound	C00080	671,552
+Acetylcholine	Metabolite	KEGG Compound	C01996	149,287
+Gast	GeneProduct	Entrez Gene	14459	143,376
+H2O	Metabolite	KEGG Compound	C00001	575,713
+Cckbr	GeneProduct	Entrez Gene	12426	224,376
+CO2	Metabolite	KEGG Compound	C00011	577,755
+Gnas	GeneProduct	Entrez Gene	14683	297,515
+Potassium cation	Metabolite	KEGG Compound	C00238	786,542
+Cftr	GeneProduct	Entrez Gene	12638	736,594
+Cl-	Metabolite	KEGG Compound	C00698	672,594
+Kcnk2	GeneProduct	Entrez Gene	16526	224,642
+Kcnk10	GeneProduct	Entrez Gene	72258	224,642
+Atp1a1	GeneProduct	Entrez Gene	11928	224,681
+Atp1b1	GeneProduct	Entrez Gene	11931	224,681
+Atp1b2	GeneProduct	Entrez Gene	11932	224,681
+Atp1b3	GeneProduct	Entrez Gene	11933	224,681
+Atp1a3	GeneProduct	Entrez Gene	232975	224,681
+Atp1a4	GeneProduct	Entrez Gene	27222	224,681
+Atp1b4	GeneProduct	Entrez Gene	67821	224,681
+Atp1a2	GeneProduct	Entrez Gene	98660	224,681
+Slc9a4	GeneProduct	Entrez Gene	110895	224,720
+Slc9a1	GeneProduct	Entrez Gene	20544	224,720
+Slc4a2	GeneProduct	Entrez Gene	20535	224,765
+Slc26a7	GeneProduct	Entrez Gene	208890	224,765
+Potassium cation	Metabolite	KEGG Compound	C00238	276,640
+Chrm3	GeneProduct	Entrez Gene	12671	224,288
+Potassium cation	Metabolite	KEGG Compound	C00238	170,676
+Sodium cation	Metabolite	KEGG Compound	C01330	276,685
+Sodium cation	Metabolite	KEGG Compound	C01330	170,717
+H+	Metabolite	KEGG Compound	C00080	276,725
+HCO3-	Metabolite	KEGG Compound	C00288	276,768
+Cl-	Metabolite	KEGG Compound	C00698	170,760
+Kcnq1	GeneProduct	Entrez Gene	16535	736,468
+Kcne2	GeneProduct	Entrez Gene	246133	736,468
+Potassium cation	Metabolite	KEGG Compound	C00238	675,466
+Ezr	GeneProduct	Entrez Gene	22350	483,543
+Carbonic acid	Metabolite	KEGG Compound	C01353	474,735
+Adcy4	GeneProduct	Entrez Gene	104110	224,538
+Adcy3	GeneProduct	Entrez Gene	104111	224,538
+Adcy6	GeneProduct	Entrez Gene	11512	224,538
+Adcy7	GeneProduct	Entrez Gene	11513	224,538
+Adcy8	GeneProduct	Entrez Gene	11514	224,538
+Adcy9	GeneProduct	Entrez Gene	11515	224,538
+Adcy2	GeneProduct	Entrez Gene	210044	224,538
+Adcy5	GeneProduct	Entrez Gene	224129	224,538
+Adcy1	GeneProduct	Entrez Gene	432530	224,538
+Car2	GeneProduct	Entrez Gene	12349	562,735
+CO2	Metabolite	KEGG Compound	C00011	148,811
+H+	Metabolite	KEGG Compound	C00080	387,711
+Gnai1	GeneProduct	Entrez Gene	14677	298,573
+Gnai2	GeneProduct	Entrez Gene	14678	298,573
+Gnai3	GeneProduct	Entrez Gene	14679	298,573
+Sstr2	GeneProduct	Entrez Gene	20606	224,594
+Sst	GeneProduct	Entrez Gene	20604	144,594
+Atp4a	GeneProduct	Entrez Gene	11944	581,544
+Atp4b	GeneProduct	Entrez Gene	11945	581,544
+Kcnj10	GeneProduct	Entrez Gene	16513	736,507
+Kcnj15	GeneProduct	Entrez Gene	16516	736,507
+Kcnj16	GeneProduct	Entrez Gene	16517	736,507
+Kcnj2	GeneProduct	Entrez Gene	16518	736,507
+Kcnj1	GeneProduct	Entrez Gene	56379	736,507
+Potassium cation	Metabolite	KEGG Compound	C00238	675,504
+3',5'-Cyclic AMP	Metabolite	KEGG Compound	C00575	338,540
+Ezr	GeneProduct	Entrez Gene	22350	630,355
+Actb	GeneProduct	Entrez Gene	11461	698,323
+Actg1	GeneProduct	Entrez Gene	11465	698,323
+Calm1	GeneProduct	Entrez Gene	12313	423,427
+Calm2	GeneProduct	Entrez Gene	12314	423,427
+Calm3	GeneProduct	Entrez Gene	12315	423,427
+Calm5	GeneProduct	Entrez Gene	494124	423,427
+Calml3	GeneProduct	Entrez Gene	70405	423,427
+Calml4	GeneProduct	Entrez Gene	75600	423,427
+Calm4	GeneProduct	Entrez Gene	80796	423,427
+Mylk	GeneProduct	Entrez Gene	107589	479,462
+Mylk3	GeneProduct	Entrez Gene	213435	479,462
+Mylk2	GeneProduct	Entrez Gene	228785	479,462
+Mylk4	GeneProduct	Entrez Gene	238564	479,462
+Camk2d	GeneProduct	Entrez Gene	108058	423,462
+Camk2a	GeneProduct	Entrez Gene	12322	423,462
+Camk2b	GeneProduct	Entrez Gene	12323	423,462
+Camk2g	GeneProduct	Entrez Gene	12325	423,462
+Prkaca	GeneProduct	Entrez Gene	18747	401,542
+Prkacb	GeneProduct	Entrez Gene	18749	401,542
+Gnaq	GeneProduct	Entrez Gene	14682	302,327
+Plcb1	GeneProduct	Entrez Gene	18795	382,327
+Plcb2	GeneProduct	Entrez Gene	18796	382,327
+Plcb3	GeneProduct	Entrez Gene	18797	382,327
+Plcb4	GeneProduct	Entrez Gene	18798	382,327
+Itpr1	GeneProduct	Entrez Gene	16438	499,392
+Itpr2	GeneProduct	Entrez Gene	16439	499,392
+Itpr3	GeneProduct	Entrez Gene	16440	499,392

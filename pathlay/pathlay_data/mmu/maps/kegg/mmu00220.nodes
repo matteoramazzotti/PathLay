@@ -1,0 +1,45 @@
+TEXT	TYPE	DB	ID	X	Y
+Arginine biosynthesis	mmu	KEGG	mmu00220
+N-(L-Arginino)succinate	Metabolite	KEGG Compound	C03406	802,77
+L-Citrulline	Metabolite	KEGG Compound	C00327	685,199
+N-Acetyl-L-glutamate 5-semialdehyde	Metabolite	KEGG Compound	C01250	480,363
+L-Glutamine	Metabolite	KEGG Compound	C00064	180,151
+Urea	Metabolite	KEGG Compound	C00086	882,342
+Urea-1-carboxylate	Metabolite	KEGG Compound	C01010	989,342
+CO2	Metabolite	KEGG Compound	C00011	1094,342
+Gls	GeneProduct	Entrez Gene	14660	155,203
+Gls2	GeneProduct	Entrez Gene	216456	155,203
+Glul	GeneProduct	Entrez Gene	14645	102,203
+Cps1	GeneProduct	Entrez Gene	227231	283,265
+Otc	GeneProduct	Entrez Gene	18416	690,238
+L-Arginine	Metabolite	KEGG Compound	C00062	937,198
+Ass1	GeneProduct	Entrez Gene	11898	724,111
+Asl	GeneProduct	Entrez Gene	109900	894,109
+Arg1	GeneProduct	Entrez Gene	11846	891,297
+Arg2	GeneProduct	Entrez Gene	11847	891,297
+Nags	GeneProduct	Entrez Gene	217214	228,363
+Acy1	GeneProduct	Entrez Gene	109652	631,353
+L-Ornithine	Metabolite	KEGG Compound	C00077	745,308
+Nos1	GeneProduct	Entrez Gene	18125	780,207
+Nos2	GeneProduct	Entrez Gene	18126	780,207
+Nos3	GeneProduct	Entrez Gene	18127	780,207
+Glud1	GeneProduct	Entrez Gene	14661	155,324
+Carbamoyl phosphate	Metabolite	KEGG Compound	C00169	396,263
+N-Acetyl-L-citrulline	Metabolite	KEGG Compound	C15532	580,199
+2-Oxoglutarate	Metabolite	KEGG Compound	C00026	67,363
+L-Aspartate	Metabolite	KEGG Compound	C00049	671,133
+Got1	GeneProduct	Entrez Gene	14718	124,353
+Got2	GeneProduct	Entrez Gene	14719	124,353
+Got1l1	GeneProduct	Entrez Gene	76615	124,353
+Gpt2	GeneProduct	Entrez Gene	108682	124,374
+Gpt	GeneProduct	Entrez Gene	76282	124,374
+N-Acetylornithine	Metabolite	KEGG Compound	C00437	580,363
+LysW-L-glutamate	Metabolite	KEGG Compound	C20948	280,413
+LysW-L-glutamyl 5-phosphate	Metabolite	KEGG Compound	C20949	380,413
+LysW-L-glutamate 5-semialdehyde	Metabolite	KEGG Compound	C20950	480,413
+LysW-L-ornithine	Metabolite	KEGG Compound	C20951	580,413
+Fumarate	Metabolite	KEGG Compound	C00122	937,131
+L-Glutamate	Metabolite	KEGG Compound	C00025	180,363
+Ammonia	Metabolite	KEGG Compound	C00014	180,263
+N-Acetyl-L-glutamate	Metabolite	KEGG Compound	C00624	280,363
+N-Acetyl-L-glutamate 5-phosphate	Metabolite	KEGG Compound	C04133	380,363

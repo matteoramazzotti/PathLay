@@ -1,0 +1,20 @@
+TEXT	TYPE	DB	ID	X	Y
+Virion - Human immunodeficiency virus	mmu	KEGG	mmu03260
+Cxcr4	GeneProduct	Entrez Gene	12767	199,516
+Cd209c	GeneProduct	Entrez Gene	170776	251,516
+Cd209d	GeneProduct	Entrez Gene	170779	251,516
+Cd209e	GeneProduct	Entrez Gene	170780	251,516
+Cd209a	GeneProduct	Entrez Gene	170786	251,516
+Cd209f	GeneProduct	Entrez Gene	69142	251,516
+Cd209b	GeneProduct	Entrez Gene	69165	251,516
+Cd209g	GeneProduct	Entrez Gene	70192	251,516
+Cd209c	GeneProduct	Entrez Gene	170776	307,516
+Cd209d	GeneProduct	Entrez Gene	170779	307,516
+Cd209e	GeneProduct	Entrez Gene	170780	307,516
+Cd209a	GeneProduct	Entrez Gene	170786	307,516
+Cd209f	GeneProduct	Entrez Gene	69142	307,516
+Cd209b	GeneProduct	Entrez Gene	69165	307,516
+Cd209g	GeneProduct	Entrez Gene	70192	307,516
+Heparan sulfate	Metabolite	KEGG Compound	C00925	94,546
+Cd4	GeneProduct	Entrez Gene	12504	96,516
+Ccr5	GeneProduct	Entrez Gene	12774	148,516

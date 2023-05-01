@@ -1,0 +1,83 @@
+TEXT	TYPE	DB	ID	X	Y
+Glycosphingolipid biosynthesis - lacto and neolacto series	hsa	KEGG	hsa00601
+B3GALT5	GeneProduct	Entrez Gene	10317	385,203	486,1118
+B3GNT3	GeneProduct	Entrez Gene	10331	638,640	900,333	670,1394	543,1282
+ST3GAL6	GeneProduct	Entrez Gene	10402	1022,532	761,193	645.5,1476	568,1272
+B3GNT2	GeneProduct	Entrez Gene	10678	638,640	900,333	670,1394	543,1282
+FUT9	GeneProduct	Entrez Gene	10690	921,569	531,946	531,875	991,875	725,875	725,804	531,804	991,804	661,325	725,446	757,1481	609,1367	470.5,1278.5
+FUT1	GeneProduct	Entrez Gene	2523	1120,744	832,883	701,376	832,376	967,744	570,532	318,376	448,376	448,1148	683,1482	491.5,1468.5	573,1333	395.5,1354.5	707,1319
+FUT2	GeneProduct	Entrez Gene	2524	1120,744	832,883	701,376	832,376	967,744	570,532	318,376	448,376	448,1148	683,1482	491.5,1468.5	573,1333	395.5,1354.5	707,1319
+FUT3	GeneProduct	Entrez Gene	2525	675,875	481,875	481,946	873,569	941,875	675,804	481,804	941,804	675,446	613,325	900,182	318,454	448,454	185,454	250,333	507,258	449,1087	526,1087	757,1481	609,1367	470.5,1278.5
+FUT4	GeneProduct	Entrez Gene	2526	701,894	507,823	701,823	967,823	701,466	900,203	638,346	507,894	900,590	507,965	967,894	757,1481	609,1367	470.5,1278.5
+FUT5	GeneProduct	Entrez Gene	2527	675,875	481,875	481,946	873,569	941,875	675,804	481,804	941,804	675,446	613,325	900,182	757,1481	609,1367	470.5,1278.5
+FUT6	GeneProduct	Entrez Gene	2528	675,875	481,875	481,946	873,569	941,875	675,804	481,804	941,804	675,446	613,325	900,182	757,1481	609,1367	470.5,1278.5
+FUT7	GeneProduct	Entrez Gene	2529	900,203	757,1481
+GCNT2	GeneProduct	Entrez Gene	2651	1022,639	675,1410
+B4GALT1	GeneProduct	Entrez Gene	2683	962,392	613,182	711,1447	601.5,1325
+ABO	GeneProduct	Entrez Gene	28	1151,781	800,922	900,781	1022,781	761,411	638,411	536,579	385,411	250,411	411,1118	416,1145	640,1454	675,1482	491.5,1441.5	542,1324	537,1304	396.5,1326.5
+A4GALT	GeneProduct	Entrez Gene	53947	761,269	629.5,1445
+ST3GAL4	GeneProduct	Entrez Gene	6484	385,268	417,1089
+ST3GAL3	GeneProduct	Entrez Gene	6487	385,247	417,1089
+ST8SIA1	GeneProduct	Entrez Gene	6489	831,157	545,1496
+B3GNT4	GeneProduct	Entrez Gene	79369	900,333	670,1394
+B3GNT5	GeneProduct	Entrez Gene	84002	507,153	574,1118	799,1447
+B4GALT4	GeneProduct	Entrez Gene	8702	988,411	661,203	711,1447	601.5,1325
+B4GALT3	GeneProduct	Entrez Gene	8703	938,411	613,203	711,1447	601.5,1325
+B4GALT2	GeneProduct	Entrez Gene	8704	661,182	711,1447
+B3GALNT1	GeneProduct	Entrez Gene	8706	761,303	663,1416.5
+B3GALT2	GeneProduct	Entrez Gene	8707	408,182	486,1118
+B3GALT1	GeneProduct	Entrez Gene	8708	360,182	486,1118
+	Metabolite	KEGG Compound	gl:G00036	506,192
+	Metabolite	KEGG Compound	gl:G00037	317,335
+	Metabolite	KEGG Compound	gl:G00038	448,335
+	Metabolite	KEGG Compound	gl:G00039	448,411
+	Metabolite	KEGG Compound	gl:G00040	448,502
+	Metabolite	KEGG Compound	gl:G00042	185,411
+	Metabolite	KEGG Compound	gl:G00043	185,502
+	Metabolite	KEGG Compound	gl:G00044	317,411
+	Metabolite	KEGG Compound	gl:G00045	317,502
+	Metabolite	KEGG Compound	gl:G00046	185,335
+	Metabolite	KEGG Compound	gl:G00047	448,257
+	Metabolite	KEGG Compound	gl:G00048	569,257
+	Metabolite	KEGG Compound	gl:G00050	700,335
+	Metabolite	KEGG Compound	gl:G00051	832,340
+	Metabolite	KEGG Compound	gl:G00052	832,411
+	Metabolite	KEGG Compound	gl:G00054	569,411
+	Metabolite	KEGG Compound	gl:G00055	700,411
+	Metabolite	KEGG Compound	gl:G00056	700,502
+	Metabolite	KEGG Compound	gl:G00057	569,502
+	Metabolite	KEGG Compound	gl:G00058	569,579
+	Metabolite	KEGG Compound	gl:G00059	493,579
+	Metabolite	KEGG Compound	gl:G00060	569,335
+	Metabolite	KEGG Compound	gl:G00061	832,236
+	Metabolite	KEGG Compound	gl:G00062	832,192
+	Metabolite	KEGG Compound	gl:G00063	963,192
+	Metabolite	KEGG Compound	gl:G00064	832,118
+	Metabolite	KEGG Compound	gl:G00066	963,333
+	Metabolite	KEGG Compound	gl:G00067	966,639
+	Metabolite	KEGG Compound	gl:G00068	506,639
+	Metabolite	KEGG Compound	gl:G00069	506,781
+	Metabolite	KEGG Compound	gl:G00071	966,781
+	Metabolite	KEGG Compound	gl:G00072	832,781
+	Metabolite	KEGG Compound	gl:G00073	832,852
+	Metabolite	KEGG Compound	gl:G00074	832,923
+	Metabolite	KEGG Compound	gl:G00075	756,923
+	Metabolite	KEGG Compound	gl:G00076	832,579
+	Metabolite	KEGG Compound	gl:G00077	1120,639
+	Metabolite	KEGG Compound	gl:G00078	1120,711
+	Metabolite	KEGG Compound	gl:G00079	1120,781
+	Metabolite	KEGG Compound	gl:G00080	1195,781
+	Metabolite	KEGG Compound	gl:G00081	966,852
+	Metabolite	KEGG Compound	gl:G00082	966,923
+	Metabolite	KEGG Compound	gl:G00083	1077,781
+	Metabolite	KEGG Compound	gl:G00084	506,852
+	Metabolite	KEGG Compound	gl:G00085	506,923
+	Metabolite	KEGG Compound	gl:G00086	506,994
+	Metabolite	KEGG Compound	gl:G00087	1077,579
+	Metabolite	KEGG Compound	gl:G00088	1077,531
+	Metabolite	KEGG Compound	gl:G00089	700,852
+	Metabolite	KEGG Compound	gl:G00090	700,923
+	Metabolite	KEGG Compound	gl:G00091	623,852
+	Metabolite	KEGG Compound	gl:G00092	506,121
+	Metabolite	KEGG Compound	gl:G00428	832,270
+	Metabolite	KEGG Compound	gl:G00889	832,301

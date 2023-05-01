@@ -1,0 +1,61 @@
+TEXT	TYPE	DB	ID	X	Y
+Antifolate resistance	hsa	KEGG	hsa01523
+ABCC5	GeneProduct	Entrez Gene	10057	402,741
+ABCC4	GeneProduct	Entrez Gene	10257	402,709
+SLC46A1	GeneProduct	Entrez Gene	113235	640,490	402,566
+CHUK	GeneProduct	Entrez Gene	1147	945,778
+ABCC2	GeneProduct	Entrez Gene	1244	402,644
+DHFR	GeneProduct	Entrez Gene	1719	1039,325
+DHFR2	GeneProduct	Entrez Gene	200895	1039,325
+FOLR1	GeneProduct	Entrez Gene	2348	402,139
+FOLR2	GeneProduct	Entrez Gene	2350	402,139
+FOLR3	GeneProduct	Entrez Gene	2352	402,139
+FPGS	GeneProduct	Entrez Gene	2356	710,398
+ALOX12	GeneProduct	Entrez Gene	239	1232,374
+GART	GeneProduct	Entrez Gene	2618	1127,489
+IKBKB	GeneProduct	Entrez Gene	3551	945,778
+IL1B	GeneProduct	Entrez Gene	3553	1158,788
+IL6	GeneProduct	Entrez Gene	3569	1213,788
+IZUMO1R	GeneProduct	Entrez Gene	390243	402,139
+ABCC1	GeneProduct	Entrez Gene	4363	402,609
+MTHFR	GeneProduct	Entrez Gene	4524	1242,278
+ATIC	GeneProduct	Entrez Gene	471	1127,614
+NFKB1	GeneProduct	Entrez Gene	4790	1029,778
+RELA	GeneProduct	Entrez Gene	5970	1029,778
+SHMT1	GeneProduct	Entrez Gene	6470	1182,333
+SHMT2	GeneProduct	Entrez Gene	6472	1182,333
+SLC19A1	GeneProduct	Entrez Gene	6573	402,411	402,239	402,185
+TNF	GeneProduct	Entrez Gene	7124	1158,766
+TYMS	GeneProduct	Entrez Gene	7298	1112,187
+IKBKG	GeneProduct	Entrez Gene	8517	945,778
+ABCC3	GeneProduct	Entrez Gene	8714	402,677
+GGH	GeneProduct	Entrez Gene	8836	708,537
+ABCG2	GeneProduct	Entrez Gene	9429	402,786
+AMP	Metabolite	KEGG Compound	C00020	1191,671
+L-Methionine	Metabolite	KEGG Compound	C00073	1193,445
+Tetrahydrofolate	Metabolite	KEGG Compound	C00101	1101,380	1100,535	1100,691
+5-Phospho-alpha-D-ribose 1-diphosphate	Metabolite	KEGG Compound	C00119	1131,438
+IMP	Metabolite	KEGG Compound	C00130	1131,691
+5,10-Methylenetetrahydrofolate	Metabolite	KEGG Compound	C00143	1198,257
+GMP	Metabolite	KEGG Compound	C00144	1191,708
+L-Homocysteine	Metabolite	KEGG Compound	C00155	1301,356
+10-Formyltetrahydrofolate	Metabolite	KEGG Compound	C00234	1100,438	1100,574
+dTMP	Metabolite	KEGG Compound	C00364	1036,123
+dUMP	Metabolite	KEGG Compound	C00365	1188,136
+Dihydrofolate	Metabolite	KEGG Compound	C00415	1025,267
+5-Methyltetrahydrofolate	Metabolite	KEGG Compound	C00440	1284,295
+Folate	Metabolite	KEGG Compound	C00504	935,267
+GW1843	Metabolite	KEGG Compound	C11374	269,430
+BGC 945	Metabolite	KEGG Compound	C21279	246,138
+AG 2034	Metabolite	KEGG Compound	C21280	269,396
+	Metabolite	KEGG Compound	dr:D00142	545,410	219,326	642,522	549,686
+	Metabolite	KEGG Compound	dr:D01064	545,410	642,522	181,430	549,686
+	Metabolite	KEGG Compound	dr:D02527	545,410	642,522	254,515	549,686
+	Metabolite	KEGG Compound	dr:D03942	545,410	642,522	181,498	549,686
+	Metabolite	KEGG Compound	dr:D04766	545,410	181,396	642,522	549,686
+	Metabolite	KEGG Compound	dr:D05400	545,410	269,464	549,686
+	Metabolite	KEGG Compound	dr:D05589	545,410	219,358	642,522	549,686
+	Metabolite	KEGG Compound	dr:D05999	246,236	549,686
+	Metabolite	KEGG Compound	dr:D06238	246,279	549,686
+	Metabolite	KEGG Compound	dr:D07472	545,410	181,464	642,522	269,564	549,686
+	Metabolite	KEGG Compound	dr:D10803	246,183

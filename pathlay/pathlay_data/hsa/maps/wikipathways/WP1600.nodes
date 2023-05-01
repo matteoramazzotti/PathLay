@@ -1,0 +1,33 @@
+TEXT	TYPE	DB	ID	X	Y
+Nicotine metabolism in liver cells	Homo sapiens	WikiPathways	WP1600
+3'-Hydroxycotinine	Metabolite	HMDB	HMDB0001390	676.3333333333335,426.33333333333337
+CYP2B6	GeneProduct	Entrez Gene	1555	504.0,244.0
+Cotinine	Metabolite	HMDB	HMDB0001046	417.0,392.0
+3'-Hydroxycotinine glucuronide	Metabolite	HMDB	HMDB0001204	925.0,288.0
+5'-Hydroxycotinine	Metabolite	HMDB	HMDB0001427	600.0,517.0
+3'-Hydroxycotinine glucuronide	Metabolite	HMDB	HMDB0001204	925.0,288.0
+5'-Hydroxycotinine	Metabolite	HMDB	HMDB0001427	600.0,517.0
+Nicotine-Gluc	Metabolite	HMDB	HMDB0001272	257.0,193.0
+Nornicotine	Metabolite	HMDB	HMDB0001126	786.0,43.0
+Nicotine-N-oxide	Metabolite	HMDB	HMDB0001497	416.1666666666667,40.0
+FMO3	GeneProduct	Entrez Gene	2328	478.0,164.0
+CYP2A6	GeneProduct	Entrez Gene	1548	565.6666666666665,326.66666666666663
+Nicotine	Metabolite	HMDB	HMDB0001934	417.0,197.0
+Cotinine N-oxide	Metabolite	HMDB	HMDB0001411	417.5,476.0
+Cotinine N-oxide	Metabolite	HMDB	HMDB0001411	417.5,476.0
+CYP2A6	GeneProduct	Entrez Gene	1548	565.6666666666665,326.66666666666663
+Nornicotine	Metabolite	HMDB	HMDB0001126	786.0,43.0
+UGT1A4	GeneProduct	Entrez Gene	54657	280.5,298.0
+Nicotine-N-oxide	Metabolite	HMDB	HMDB0001497	416.1666666666667,40.0
+Nicotine-Gluc	Metabolite	HMDB	HMDB0001272	257.0,193.0
+Nicotine	Metabolite	HMDB	HMDB0001934	417.0,197.0
+Nornicotine	Metabolite	HMDB	HMDB0001126	786.0,43.0
+AOX1	GeneProduct	Entrez Gene	316	476.0,330.0
+CYP2A6	GeneProduct	Entrez Gene	1548	565.6666666666665,326.66666666666663
+Nicotine iminium ion	Metabolite	HMDB	HMDB0001010	417.0,286.0
+Cotinineglucuronide	Metabolite	HMDB	HMDB0001013	261.5,423.0
+Nornicotine	Metabolite	HMDB	HMDB0001126	786.0,43.0
+3'-Hydroxycotinine	Metabolite	HMDB	HMDB0001390	676.3333333333335,426.33333333333337
+Cotinineglucuronide	Metabolite	HMDB	HMDB0001013	261.5,423.0
+Cotinine	Metabolite	HMDB	HMDB0001046	417.0,392.0
+UGT1A9	GeneProduct	Entrez Gene	54600	280.5,318.0

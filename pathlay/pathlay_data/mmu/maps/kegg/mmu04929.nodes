@@ -1,0 +1,91 @@
+TEXT	TYPE	DB	ID	X	Y
+GnRH secretion	mmu	KEGG	mmu04929
+Gna11	GeneProduct	Entrez Gene	14672	559,270
+Gnaq	GeneProduct	Entrez Gene	14682	559,270
+Akt1	GeneProduct	Entrez Gene	11651	739,502
+Akt2	GeneProduct	Entrez Gene	11652	739,502
+Akt3	GeneProduct	Entrez Gene	23797	739,502
+Cacna1g	GeneProduct	Entrez Gene	12291	659,104
+Cacna1i	GeneProduct	Entrez Gene	239556	659,104
+Cacna1h	GeneProduct	Entrez Gene	58226	659,104
+Calcium cation	Metabolite	KEGG Compound	C00076	658,61
+Hras	GeneProduct	Entrez Gene	15461	595,459
+Kras	GeneProduct	Entrez Gene	16653	595,459
+Nras	GeneProduct	Entrez Gene	18176	595,459
+Map2k1	GeneProduct	Entrez Gene	26395	739,459
+Map2k2	GeneProduct	Entrez Gene	26396	739,459
+Mapk1	GeneProduct	Entrez Gene	26413	812,459
+Mapk3	GeneProduct	Entrez Gene	26417	812,459
+Kcnj11	GeneProduct	Entrez Gene	16514	790,104
+Kcnj3	GeneProduct	Entrez Gene	16519	790,104
+Kcnj5	GeneProduct	Entrez Gene	16521	790,104
+Kcnj6	GeneProduct	Entrez Gene	16522	790,104
+Kcnj9	GeneProduct	Entrez Gene	16524	790,104
+Potassium cation	Metabolite	KEGG Compound	C00238	789,154
+1-Phosphatidyl-D-myo-inositol 4,5-bisphosphate	Metabolite	KEGG Compound	C04637	622,286
+Plcb1	GeneProduct	Entrez Gene	18795	662,270
+Plcb2	GeneProduct	Entrez Gene	18796	662,270
+Plcb3	GeneProduct	Entrez Gene	18797	662,270
+Plcb4	GeneProduct	Entrez Gene	18798	662,270
+Kiss1r	GeneProduct	Entrez Gene	114229	455,270
+Arrb1	GeneProduct	Entrez Gene	109689	616,327
+Arrb2	GeneProduct	Entrez Gene	216869	616,327
+Arrb1	GeneProduct	Entrez Gene	109689	616,352
+Arrb2	GeneProduct	Entrez Gene	216869	616,352
+Kiss1	GeneProduct	Entrez Gene	280287	377,270
+Trpc1	GeneProduct	Entrez Gene	22063	714,104
+Trpc4	GeneProduct	Entrez Gene	22066	714,104
+Trpc5	GeneProduct	Entrez Gene	22067	714,104
+Estradiol-17beta	Metabolite	KEGG Compound	C00951	90,303
+Calcium cation	Metabolite	KEGG Compound	C00076	715,61
+Sodium cation	Metabolite	KEGG Compound	C01330	715,61
+Gnrh1	GeneProduct	Entrez Gene	14714	1091,477
+Gnrh1	GeneProduct	Entrez Gene	14714	1384,477
+D-myo-Inositol 1,4,5-trisphosphate	Metabolite	KEGG Compound	C01245	732,310
+Gnrh1	GeneProduct	Entrez Gene	14714	972,477
+Kiss1	GeneProduct	Entrez Gene	280287	241,215
+Kiss1	GeneProduct	Entrez Gene	280287	241,414
+Gabbr2	GeneProduct	Entrez Gene	242425	850,104
+Gabbr1	GeneProduct	Entrez Gene	54393	850,104
+Hcn1	GeneProduct	Entrez Gene	15165	455,191
+Hcn2	GeneProduct	Entrez Gene	15166	455,191
+Hcn3	GeneProduct	Entrez Gene	15168	455,191
+Potassium cation	Metabolite	KEGG Compound	C00238	506,187
+Sodium cation	Metabolite	KEGG Compound	C01330	404,195
+Cga	GeneProduct	Entrez Gene	12640	760,749
+Spp1	GeneProduct	Entrez Gene	20750	760,749
+Diacylglycerol	Metabolite	KEGG Compound	C00165	732,259
+Cga	GeneProduct	Entrez Gene	12640	760,727
+Lhb	GeneProduct	Entrez Gene	16866	760,727
+Estradiol-17beta	Metabolite	KEGG Compound	C00951	373,569
+Gper1	GeneProduct	Entrez Gene	76854	457,615
+Esr2	GeneProduct	Entrez Gene	13983	671,568
+Cacna1g	GeneProduct	Entrez Gene	12291	972,570
+Cacna1h	GeneProduct	Entrez Gene	58226	972,592
+Cacna1i	GeneProduct	Entrez Gene	239556	972,614
+Kcnn2	GeneProduct	Entrez Gene	140492	985,104
+Kcnn3	GeneProduct	Entrez Gene	140493	985,104
+Kcnn4	GeneProduct	Entrez Gene	16534	985,104
+Kcnn1	GeneProduct	Entrez Gene	84036	985,104
+Potassium cation	Metabolite	KEGG Compound	C00238	986,155
+Itpr1	GeneProduct	Entrez Gene	16438	847,341
+Itpr2	GeneProduct	Entrez Gene	16439	847,341
+Itpr3	GeneProduct	Entrez Gene	16440	847,341
+Testosterone	Metabolite	KEGG Compound	C00535	149,424
+Cacna1c	GeneProduct	Entrez Gene	12288	1149,104
+Cacna1d	GeneProduct	Entrez Gene	12289	1149,104
+Cacna1s	GeneProduct	Entrez Gene	12292	1149,104
+Cacna1f	GeneProduct	Entrez Gene	54652	1149,104
+Calcium cation	Metabolite	KEGG Compound	C00076	1148,61
+Raf1	GeneProduct	Entrez Gene	110157	668,459
+4-Aminobutanoate	Metabolite	KEGG Compound	C00334	849,58
+Calcium cation	Metabolite	KEGG Compound	C00076	846,305
+Prkca	GeneProduct	Entrez Gene	18750	847,261
+Prkcb	GeneProduct	Entrez Gene	18751	847,261
+Prkcg	GeneProduct	Entrez Gene	18752	847,261
+Pik3ca	GeneProduct	Entrez Gene	18706	668,502
+Pik3cd	GeneProduct	Entrez Gene	18707	668,502
+Pik3r1	GeneProduct	Entrez Gene	18708	668,502
+Pik3r2	GeneProduct	Entrez Gene	18709	668,502
+Pik3r3	GeneProduct	Entrez Gene	18710	668,502
+Pik3cb	GeneProduct	Entrez Gene	74769	668,502

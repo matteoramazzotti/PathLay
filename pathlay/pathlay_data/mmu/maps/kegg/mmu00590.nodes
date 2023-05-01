@@ -1,0 +1,349 @@
+TEXT	TYPE	DB	ID	X	Y
+Arachidonic acid metabolism	mmu	KEGG	mmu00590
+Ephx2	GeneProduct	Entrez Gene	13850	970,501
+12-OxoETE	Metabolite	KEGG Compound	C14807	1158,284
+15(S)-HPETE	Metabolite	KEGG Compound	C05966	629,493
+12(S)-HPETE	Metabolite	KEGG Compound	C05965	1233,284
+Prostaglandin G2	Metabolite	KEGG Compound	C05956	466,347
+12-Keto-leukotriene B4	Metabolite	KEGG Compound	C05949	360,282
+20-OH-Leukotriene B4	Metabolite	KEGG Compound	C04853	442,229
+20-COOH-Leukotriene B4	Metabolite	KEGG Compound	C05950	442,176
+Leukotriene D4	Metabolite	KEGG Compound	C05951	527,172
+Leukotriene E4	Metabolite	KEGG Compound	C05952	527,122
+Thromboxane B2	Metabolite	KEGG Compound	C05963	312,225
+11-Dehydro-thromboxane B2	Metabolite	KEGG Compound	C05964	312,172
+12(S)-HETE	Metabolite	KEGG Compound	C14777	1233,219
+Delta-12-Prostaglandin J2	Metabolite	KEGG Compound	C05958	110,470
+Prostaglandin D2	Metabolite	KEGG Compound	C00696	214,403
+11-epi-Prostaglandin F2alpha	Metabolite	KEGG Compound	C05959	153,470
+15-Keto-prostaglandin F2alpha	Metabolite	KEGG Compound	C05960	215,225
+Prostaglandin A2	Metabolite	KEGG Compound	C05953	163,347
+Prostaglandin C2	Metabolite	KEGG Compound	C05955	108,347
+Prostaglandin B2	Metabolite	KEGG Compound	C05954	60,347
+6-Keto-prostaglandin F1alpha	Metabolite	KEGG Compound	C05961	312,532
+6-Keto-prostaglandin E1	Metabolite	KEGG Compound	C05962	312,590
+Leukotriene F4	Metabolite	KEGG Compound	C06462	527,68
+12(R)-HETE	Metabolite	KEGG Compound	C14822	1083,218
+Cyp2j11	GeneProduct	Entrez Gene	100066	765,233
+Cyp2j5	GeneProduct	Entrez Gene	13109	765,233
+Cyp2j6	GeneProduct	Entrez Gene	13110	765,233
+Cyp2j13	GeneProduct	Entrez Gene	230459	765,233
+Cyp2j12	GeneProduct	Entrez Gene	242546	765,233
+Cyp2j8	GeneProduct	Entrez Gene	665095	765,233
+Cyp2j9	GeneProduct	Entrez Gene	74519	765,233
+Prxl2b	GeneProduct	Entrez Gene	66469	268,274
+Cyp4a32	GeneProduct	Entrez Gene	100040843	765,252
+Cyp4a10	GeneProduct	Entrez Gene	13117	765,252
+Cyp4a12b	GeneProduct	Entrez Gene	13118	765,252
+Cyp4a14	GeneProduct	Entrez Gene	13119	765,252
+Cyp4a29	GeneProduct	Entrez Gene	230639	765,252
+Cyp4a12a	GeneProduct	Entrez Gene	277753	765,252
+Cyp4a30b	GeneProduct	Entrez Gene	435802	765,252
+Cyp4a31	GeneProduct	Entrez Gene	666168	765,252
+Cyp4a32	GeneProduct	Entrez Gene	100040843	826,431
+Cyp4a10	GeneProduct	Entrez Gene	13117	826,431
+Cyp4a12b	GeneProduct	Entrez Gene	13118	826,431
+Cyp4a14	GeneProduct	Entrez Gene	13119	826,431
+Cyp4a29	GeneProduct	Entrez Gene	230639	826,431
+Cyp4a12a	GeneProduct	Entrez Gene	277753	826,431
+Cyp4a30b	GeneProduct	Entrez Gene	435802	826,431
+Cyp4a31	GeneProduct	Entrez Gene	666168	826,431
+Cyp2e1	GeneProduct	Entrez Gene	13106	717,233
+Gpx4	GeneProduct	Entrez Gene	625249	1234,254
+(5Z,13E)-9alpha-Hydroxy-11,15-dioxoprosta-5,13-dienoate	Metabolite	KEGG Compound	C04758	214,470
+11(R)-HPETE	Metabolite	KEGG Compound	C14820	1023,284
+(5Z,13E)-11alpha-Hydroxy-9,15-dioxoprost-5,13-dienoate	Metabolite	KEGG Compound	C04707	131,225
+Hpgd	GeneProduct	Entrez Gene	15446	131,259
+Zadh2	GeneProduct	Entrez Gene	225791	132,203
+Ptgr1	GeneProduct	Entrez Gene	67103	132,203
+Ptgr2	GeneProduct	Entrez Gene	77219	132,203
+(5Z)-11alpha-Hydroxy-9,15-dioxoprostanoate	Metabolite	KEGG Compound	C04671	131,172
+(5Z,13E)-6,9alpha-Epoxy-11alpha-hydroxy-15-oxoprosta-5,13-dienoate	Metabolite	KEGG Compound	C04835	356,540
+Aloxe3	GeneProduct	Entrez Gene	23801	1202,284
+12(R)-HPETE	Metabolite	KEGG Compound	C14812	1083,284
+Aloxe3	GeneProduct	Entrez Gene	23801	1115,285
+Zadh2	GeneProduct	Entrez Gene	225791	407,284
+Ptgr1	GeneProduct	Entrez Gene	67103	407,284
+Ptgr2	GeneProduct	Entrez Gene	77219	407,284
+11(R)-HETE	Metabolite	KEGG Compound	C14780	1023,218
+9(S)-HPETE	Metabolite	KEGG Compound	C14821	966,284
+9(S)-HETE	Metabolite	KEGG Compound	C14779	966,218
+8(S)-HPETE	Metabolite	KEGG Compound	C14823	907,284
+8(S)-HETE	Metabolite	KEGG Compound	C14776	907,218
+8(R)-HPETE	Metabolite	KEGG Compound	C04822	847,284
+Ephx2	GeneProduct	Entrez Gene	13850	899,501
+8(R)-HETE	Metabolite	KEGG Compound	C14824	847,218
+20-HETE	Metabolite	KEGG Compound	C14748	667,169
+19(S)-HETE	Metabolite	KEGG Compound	C14749	667,232
+2,3-Dinor-8-iso prostaglandin F1alpha	Metabolite	KEGG Compound	C14795	1089,532
+2,3-Dinor-8-iso prostaglandin F2alpha	Metabolite	KEGG Compound	C14794	1167,532
+9,11,15-Trihydroxy-prosta-5,13-dien-1-oic acid	Metabolite	KEGG Compound	C13809	1089,469
+5,6-DHET	Metabolite	KEGG Compound	C14772	970,532
+8,9-DHET	Metabolite	KEGG Compound	C14773	899,532
+11,12-DHET	Metabolite	KEGG Compound	C14774	801,532
+14,15-DHET	Metabolite	KEGG Compound	C14775	722,532
+Ephx2	GeneProduct	Entrez Gene	13850	801,501
+5,6-EET	Metabolite	KEGG Compound	C14768	970,470
+8,9-EET	Metabolite	KEGG Compound	C14769	899,470
+11,12-EET	Metabolite	KEGG Compound	C14770	801,470
+14,15-EET	Metabolite	KEGG Compound	C14771	722,470
+16(R)-HETE	Metabolite	KEGG Compound	C14778	667,122
+5-OxoETE	Metabolite	KEGG Compound	C14732	629,172
+11,12,15-THETA	Metabolite	KEGG Compound	C14782	546,608
+11,14,15-THETA	Metabolite	KEGG Compound	C14814	488,608
+15H-11,12-EETA	Metabolite	KEGG Compound	C14781	546,552
+11H-14,15-EETA	Metabolite	KEGG Compound	C14813	488,552
+Ephx2	GeneProduct	Entrez Gene	13850	723,501
+5,6-Epoxytetraene	Metabolite	KEGG Compound	C14815	527,439
+15-OxoETE	Metabolite	KEGG Compound	C04577	629,630
+(15S)-15-Hydroxy-5,8,11-cis-13-trans-eicosatetraenoate	Metabolite	KEGG Compound	C04742	629,565
+Lipoxin B4	Metabolite	KEGG Compound	C06315	399,439
+Lipoxin A4	Metabolite	KEGG Compound	C06314	399,404
+Cyp2j11	GeneProduct	Entrez Gene	100066	970,431
+Cyp2c50	GeneProduct	Entrez Gene	107141	970,431
+Cyp2b10	GeneProduct	Entrez Gene	13088	970,431
+Cyp2b13	GeneProduct	Entrez Gene	13089	970,431
+Cyp2b19	GeneProduct	Entrez Gene	13090	970,431
+Cyp2b9	GeneProduct	Entrez Gene	13094	970,431
+Cyp2c29	GeneProduct	Entrez Gene	13095	970,431
+Cyp2c37	GeneProduct	Entrez Gene	13096	970,431
+Cyp2c38	GeneProduct	Entrez Gene	13097	970,431
+Cyp2c39	GeneProduct	Entrez Gene	13098	970,431
+Cyp2c40	GeneProduct	Entrez Gene	13099	970,431
+Cyp2j5	GeneProduct	Entrez Gene	13109	970,431
+Cyp2j6	GeneProduct	Entrez Gene	13110	970,431
+Cyp2c70	GeneProduct	Entrez Gene	226105	970,431
+Cyp2c23	GeneProduct	Entrez Gene	226143	970,431
+Cyp2j13	GeneProduct	Entrez Gene	230459	970,431
+Cyp2j12	GeneProduct	Entrez Gene	242546	970,431
+Cyp2b23	GeneProduct	Entrez Gene	243881	970,431
+Cyp2c54	GeneProduct	Entrez Gene	404195	970,431
+Cyp2c68	GeneProduct	Entrez Gene	433247	970,431
+Cyp2j8	GeneProduct	Entrez Gene	665095	970,431
+Cyp2c66	GeneProduct	Entrez Gene	69888	970,431
+Cyp2c55	GeneProduct	Entrez Gene	72082	970,431
+Cyp2c65	GeneProduct	Entrez Gene	72303	970,431
+Cyp2j9	GeneProduct	Entrez Gene	74519	970,431
+Cyp2j11	GeneProduct	Entrez Gene	100066	899,431
+Cyp2c50	GeneProduct	Entrez Gene	107141	899,431
+Cyp2b10	GeneProduct	Entrez Gene	13088	899,431
+Cyp2b13	GeneProduct	Entrez Gene	13089	899,431
+Cyp2b19	GeneProduct	Entrez Gene	13090	899,431
+Cyp2b9	GeneProduct	Entrez Gene	13094	899,431
+Cyp2c29	GeneProduct	Entrez Gene	13095	899,431
+Cyp2c37	GeneProduct	Entrez Gene	13096	899,431
+Cyp2c38	GeneProduct	Entrez Gene	13097	899,431
+Cyp2c39	GeneProduct	Entrez Gene	13098	899,431
+Cyp2c40	GeneProduct	Entrez Gene	13099	899,431
+Cyp2j5	GeneProduct	Entrez Gene	13109	899,431
+Cyp2j6	GeneProduct	Entrez Gene	13110	899,431
+Cyp2c70	GeneProduct	Entrez Gene	226105	899,431
+Cyp2c23	GeneProduct	Entrez Gene	226143	899,431
+Cyp2j13	GeneProduct	Entrez Gene	230459	899,431
+Cyp2j12	GeneProduct	Entrez Gene	242546	899,431
+Cyp2b23	GeneProduct	Entrez Gene	243881	899,431
+Cyp2c54	GeneProduct	Entrez Gene	404195	899,431
+Cyp2c68	GeneProduct	Entrez Gene	433247	899,431
+Cyp2j8	GeneProduct	Entrez Gene	665095	899,431
+Cyp2c66	GeneProduct	Entrez Gene	69888	899,431
+Cyp2c55	GeneProduct	Entrez Gene	72082	899,431
+Cyp2c65	GeneProduct	Entrez Gene	72303	899,431
+Cyp2j9	GeneProduct	Entrez Gene	74519	899,431
+Cyp2j11	GeneProduct	Entrez Gene	100066	776,431
+Cyp2c50	GeneProduct	Entrez Gene	107141	776,431
+Cyp2b10	GeneProduct	Entrez Gene	13088	776,431
+Cyp2b13	GeneProduct	Entrez Gene	13089	776,431
+Cyp2b19	GeneProduct	Entrez Gene	13090	776,431
+Cyp2b9	GeneProduct	Entrez Gene	13094	776,431
+Cyp2c29	GeneProduct	Entrez Gene	13095	776,431
+Cyp2c37	GeneProduct	Entrez Gene	13096	776,431
+Cyp2c38	GeneProduct	Entrez Gene	13097	776,431
+Cyp2c39	GeneProduct	Entrez Gene	13098	776,431
+Cyp2c40	GeneProduct	Entrez Gene	13099	776,431
+Cyp2j5	GeneProduct	Entrez Gene	13109	776,431
+Cyp2j6	GeneProduct	Entrez Gene	13110	776,431
+Cyp2c70	GeneProduct	Entrez Gene	226105	776,431
+Cyp2c23	GeneProduct	Entrez Gene	226143	776,431
+Cyp2j13	GeneProduct	Entrez Gene	230459	776,431
+Cyp2j12	GeneProduct	Entrez Gene	242546	776,431
+Cyp2b23	GeneProduct	Entrez Gene	243881	776,431
+Cyp2c54	GeneProduct	Entrez Gene	404195	776,431
+Cyp2c68	GeneProduct	Entrez Gene	433247	776,431
+Cyp2j8	GeneProduct	Entrez Gene	665095	776,431
+Cyp2c66	GeneProduct	Entrez Gene	69888	776,431
+Cyp2c55	GeneProduct	Entrez Gene	72082	776,431
+Cyp2c65	GeneProduct	Entrez Gene	72303	776,431
+Cyp2j9	GeneProduct	Entrez Gene	74519	776,431
+Cyp2j11	GeneProduct	Entrez Gene	100066	723,431
+Cyp2c50	GeneProduct	Entrez Gene	107141	723,431
+Cyp2b10	GeneProduct	Entrez Gene	13088	723,431
+Cyp2b13	GeneProduct	Entrez Gene	13089	723,431
+Cyp2b19	GeneProduct	Entrez Gene	13090	723,431
+Cyp2b9	GeneProduct	Entrez Gene	13094	723,431
+Cyp2c29	GeneProduct	Entrez Gene	13095	723,431
+Cyp2c37	GeneProduct	Entrez Gene	13096	723,431
+Cyp2c38	GeneProduct	Entrez Gene	13097	723,431
+Cyp2c39	GeneProduct	Entrez Gene	13098	723,431
+Cyp2c40	GeneProduct	Entrez Gene	13099	723,431
+Cyp2j5	GeneProduct	Entrez Gene	13109	723,431
+Cyp2j6	GeneProduct	Entrez Gene	13110	723,431
+Cyp2c70	GeneProduct	Entrez Gene	226105	723,431
+Cyp2c23	GeneProduct	Entrez Gene	226143	723,431
+Cyp2j13	GeneProduct	Entrez Gene	230459	723,431
+Cyp2j12	GeneProduct	Entrez Gene	242546	723,431
+Cyp2b23	GeneProduct	Entrez Gene	243881	723,431
+Cyp2c54	GeneProduct	Entrez Gene	404195	723,431
+Cyp2c68	GeneProduct	Entrez Gene	433247	723,431
+Cyp2j8	GeneProduct	Entrez Gene	665095	723,431
+Cyp2c66	GeneProduct	Entrez Gene	69888	723,431
+Cyp2c55	GeneProduct	Entrez Gene	72082	723,431
+Cyp2c65	GeneProduct	Entrez Gene	72303	723,431
+Cyp2j9	GeneProduct	Entrez Gene	74519	723,431
+Cyp2j11	GeneProduct	Entrez Gene	100066	548,575
+Cyp2j5	GeneProduct	Entrez Gene	13109	548,575
+Cyp2j6	GeneProduct	Entrez Gene	13110	548,575
+Cyp2j13	GeneProduct	Entrez Gene	230459	548,575
+Cyp2j12	GeneProduct	Entrez Gene	242546	548,575
+Cyp2j8	GeneProduct	Entrez Gene	665095	548,575
+Cyp2j9	GeneProduct	Entrez Gene	74519	548,575
+20-Hydroxyleukotriene E4	Metabolite	KEGG Compound	C03577	432,122
+Cyp2j11	GeneProduct	Entrez Gene	100066	489,575
+Cyp2j5	GeneProduct	Entrez Gene	13109	489,575
+Cyp2j6	GeneProduct	Entrez Gene	13110	489,575
+Cyp2j13	GeneProduct	Entrez Gene	230459	489,575
+Cyp2j12	GeneProduct	Entrez Gene	242546	489,575
+Cyp2j8	GeneProduct	Entrez Gene	665095	489,575
+Cyp2j9	GeneProduct	Entrez Gene	74519	489,575
+Cyp2j11	GeneProduct	Entrez Gene	100066	546,519
+Cyp2c50	GeneProduct	Entrez Gene	107141	546,519
+Cyp2c29	GeneProduct	Entrez Gene	13095	546,519
+Cyp2c37	GeneProduct	Entrez Gene	13096	546,519
+Cyp2c38	GeneProduct	Entrez Gene	13097	546,519
+Cyp2c39	GeneProduct	Entrez Gene	13098	546,519
+Cyp2c40	GeneProduct	Entrez Gene	13099	546,519
+Cyp2j5	GeneProduct	Entrez Gene	13109	546,519
+Cyp2j6	GeneProduct	Entrez Gene	13110	546,519
+Cyp2c70	GeneProduct	Entrez Gene	226105	546,519
+Cyp2c23	GeneProduct	Entrez Gene	226143	546,519
+Cyp2j13	GeneProduct	Entrez Gene	230459	546,519
+Cyp2j12	GeneProduct	Entrez Gene	242546	546,519
+Cyp2c54	GeneProduct	Entrez Gene	404195	546,519
+Cyp2c68	GeneProduct	Entrez Gene	433247	546,519
+Cyp2j8	GeneProduct	Entrez Gene	665095	546,519
+Cyp2c66	GeneProduct	Entrez Gene	69888	546,519
+Cyp2c55	GeneProduct	Entrez Gene	72082	546,519
+Cyp2c65	GeneProduct	Entrez Gene	72303	546,519
+Cyp2j9	GeneProduct	Entrez Gene	74519	546,519
+Cyp2j11	GeneProduct	Entrez Gene	100066	488,519
+Cyp2c50	GeneProduct	Entrez Gene	107141	488,519
+Cyp2c29	GeneProduct	Entrez Gene	13095	488,519
+Cyp2c37	GeneProduct	Entrez Gene	13096	488,519
+Cyp2c38	GeneProduct	Entrez Gene	13097	488,519
+Cyp2c39	GeneProduct	Entrez Gene	13098	488,519
+Cyp2c40	GeneProduct	Entrez Gene	13099	488,519
+Cyp2j5	GeneProduct	Entrez Gene	13109	488,519
+Cyp2j6	GeneProduct	Entrez Gene	13110	488,519
+Cyp2c70	GeneProduct	Entrez Gene	226105	488,519
+Cyp2c23	GeneProduct	Entrez Gene	226143	488,519
+Cyp2j13	GeneProduct	Entrez Gene	230459	488,519
+Cyp2j12	GeneProduct	Entrez Gene	242546	488,519
+Cyp2c54	GeneProduct	Entrez Gene	404195	488,519
+Cyp2c68	GeneProduct	Entrez Gene	433247	488,519
+Cyp2j8	GeneProduct	Entrez Gene	665095	488,519
+Cyp2c66	GeneProduct	Entrez Gene	69888	488,519
+Cyp2c55	GeneProduct	Entrez Gene	72082	488,519
+Cyp2c65	GeneProduct	Entrez Gene	72303	488,519
+Cyp2j9	GeneProduct	Entrez Gene	74519	488,519
+Cyp2c50	GeneProduct	Entrez Gene	107141	742,122
+Cyp2c29	GeneProduct	Entrez Gene	13095	742,122
+Cyp2c37	GeneProduct	Entrez Gene	13096	742,122
+Cyp2c38	GeneProduct	Entrez Gene	13097	742,122
+Cyp2c39	GeneProduct	Entrez Gene	13098	742,122
+Cyp2c40	GeneProduct	Entrez Gene	13099	742,122
+Cyp2c70	GeneProduct	Entrez Gene	226105	742,122
+Cyp2c23	GeneProduct	Entrez Gene	226143	742,122
+Cyp2c54	GeneProduct	Entrez Gene	404195	742,122
+Cyp2c68	GeneProduct	Entrez Gene	433247	742,122
+Cyp2c66	GeneProduct	Entrez Gene	69888	742,122
+Cyp2c55	GeneProduct	Entrez Gene	72082	742,122
+Cyp2c65	GeneProduct	Entrez Gene	72303	742,122
+Alox8	GeneProduct	Entrez Gene	11688	908,323
+Alox12b	GeneProduct	Entrez Gene	11686	1083,323
+Cyp2u1	GeneProduct	Entrez Gene	71519	742,189
+Gpx4	GeneProduct	Entrez Gene	625249	629,528
+Aloxe3	GeneProduct	Entrez Gene	23801	1313,350
+Trioxilin B3	Metabolite	KEGG Compound	C14811	1312,469
+Aloxe3	GeneProduct	Entrez Gene	23801	1262,350
+Cyp2u1	GeneProduct	Entrez Gene	71519	717,252
+Cyp4a32	GeneProduct	Entrez Gene	100040843	742,151
+Cyp4a10	GeneProduct	Entrez Gene	13117	742,151
+Cyp4a12b	GeneProduct	Entrez Gene	13118	742,151
+Cyp4a14	GeneProduct	Entrez Gene	13119	742,151
+Cyp4a29	GeneProduct	Entrez Gene	230639	742,151
+Cyp4a12a	GeneProduct	Entrez Gene	277753	742,151
+Cyp4a30b	GeneProduct	Entrez Gene	435802	742,151
+Cyp4a31	GeneProduct	Entrez Gene	666168	742,151
+5(S)-HETE	Metabolite	KEGG Compound	C04805	629,225
+Gpx4	GeneProduct	Entrez Gene	625249	629,259
+Alox12	GeneProduct	Entrez Gene	11684	1233,323
+Alox12e	GeneProduct	Entrez Gene	11685	1233,323
+Alox15	GeneProduct	Entrez Gene	11687	632,407
+Alox8	GeneProduct	Entrez Gene	11688	632,407
+Trioxilin A3	Metabolite	KEGG Compound	C14809	1262,469
+Ptgs1	GeneProduct	Entrez Gene	19224	398,347
+Ptgs2	GeneProduct	Entrez Gene	19225	398,347
+Pla2g1b	GeneProduct	Entrez Gene	18778	894,154
+Pla2g2a	GeneProduct	Entrez Gene	18780	894,154
+Pla2g2c	GeneProduct	Entrez Gene	18781	894,154
+Pla2g2d	GeneProduct	Entrez Gene	18782	894,154
+Pla2g4a	GeneProduct	Entrez Gene	18783	894,154
+Pla2g5	GeneProduct	Entrez Gene	18784	894,154
+Pla2g4b	GeneProduct	Entrez Gene	211429	894,154
+Plaat3	GeneProduct	Entrez Gene	225845	894,154
+Pla2g4c	GeneProduct	Entrez Gene	232889	894,154
+Pla2g3	GeneProduct	Entrez Gene	237625	894,154
+Pla2g10	GeneProduct	Entrez Gene	26565	894,154
+Pla2g2e	GeneProduct	Entrez Gene	26970	894,154
+Pla2g2f	GeneProduct	Entrez Gene	26971	894,154
+Pla2g4f	GeneProduct	Entrez Gene	271844	894,154
+Pla2g4e	GeneProduct	Entrez Gene	329502	894,154
+Pla2g6	GeneProduct	Entrez Gene	53357	894,154
+Pla2g12a	GeneProduct	Entrez Gene	66350	894,154
+Plb1	GeneProduct	Entrez Gene	665270	894,154
+Pla2g12b	GeneProduct	Entrez Gene	69836	894,154
+Pla2g4d	GeneProduct	Entrez Gene	78390	894,154
+Alox5	GeneProduct	Entrez Gene	11689	585,284
+Alox5	GeneProduct	Entrez Gene	11689	717,283
+Lta4h	GeneProduct	Entrez Gene	16993	490,284
+Ltc4s	GeneProduct	Entrez Gene	17001	527,261
+Ggt1	GeneProduct	Entrez Gene	14598	527,204
+Ggt5	GeneProduct	Entrez Gene	23887	527,204
+Ptgs1	GeneProduct	Entrez Gene	19224	579,348
+Ptgs2	GeneProduct	Entrez Gene	19225	579,348
+Ptgis	GeneProduct	Entrez Gene	19223	312,431
+Hepoxilin B3	Metabolite	KEGG Compound	C14810	1312,403
+Ptges3	GeneProduct	Entrez Gene	56351	268,347
+Ptges	GeneProduct	Entrez Gene	64292	268,347
+Ptges2	GeneProduct	Entrez Gene	96979	268,347
+Tbxas1	GeneProduct	Entrez Gene	21391	332,318
+Ptgds	GeneProduct	Entrez Gene	19215	267,403
+Hpgds	GeneProduct	Entrez Gene	54486	267,403
+Hpgd	GeneProduct	Entrez Gene	15446	215,259
+Cbr3	GeneProduct	Entrez Gene	109857	190,318
+Cbr1	GeneProduct	Entrez Gene	12408	190,318
+Cbr2	GeneProduct	Entrez Gene	12409	190,318
+Cbr1	GeneProduct	Entrez Gene	12408	240,318
+Arachidonate	Metabolite	KEGG Compound	C00219	801,354
+Thromboxane A2	Metabolite	KEGG Compound	C02198	312,278
+Phosphatidylcholine	Metabolite	KEGG Compound	C00157	986,153
+Hepoxilin A3	Metabolite	KEGG Compound	C14808	1262,403
+Leukotriene B4	Metabolite	KEGG Compound	C02165	442,283
+Leukotriene A4	Metabolite	KEGG Compound	C00909	527,283
+5(S)-HPETE	Metabolite	KEGG Compound	C05356	629,283
+Leukotriene C4	Metabolite	KEGG Compound	C02166	527,225
+Prostaglandin I2	Metabolite	KEGG Compound	C01312	312,470
+Prostaglandin E2	Metabolite	KEGG Compound	C00584	215,347
+Prostaglandin F2alpha	Metabolite	KEGG Compound	C00639	215,284
+Prostaglandin H2	Metabolite	KEGG Compound	C00427	312,347
+Prostaglandin J2	Metabolite	KEGG Compound	C05957	110,403
+15-Deoxy-Delta12,14-PGJ2	Metabolite	KEGG Compound	C14717	110,532

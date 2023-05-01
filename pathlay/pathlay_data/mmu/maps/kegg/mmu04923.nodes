@@ -1,0 +1,101 @@
+TEXT	TYPE	DB	ID	X	Y
+Regulation of lipolysis in adipocytes	mmu	KEGG	mmu04923
+Gnas	GeneProduct	Entrez Gene	14683	384,214
+Prkg1	GeneProduct	Entrez Gene	19091	515,363
+Prkg2	GeneProduct	Entrez Gene	19092	515,363
+3',5'-Cyclic GMP	Metabolite	KEGG Compound	C00942	413,364
+Plin1	GeneProduct	Entrez Gene	103968	698,222
+Aqp7	GeneProduct	Entrez Gene	11832	278,459
+Glycerol	Metabolite	KEGG Compound	C00116	216,459
+Fatty acid	Metabolite	KEGG Compound	C00162	217,509
+Diacylglycerol	Metabolite	KEGG Compound	C00165	803,283
+Adcy4	GeneProduct	Entrez Gene	104110	278,271
+Adcy3	GeneProduct	Entrez Gene	104111	278,271
+Adcy6	GeneProduct	Entrez Gene	11512	278,271
+Adcy7	GeneProduct	Entrez Gene	11513	278,271
+Adcy8	GeneProduct	Entrez Gene	11514	278,271
+Adcy9	GeneProduct	Entrez Gene	11515	278,271
+Adcy2	GeneProduct	Entrez Gene	210044	278,271
+Adcy5	GeneProduct	Entrez Gene	224129	278,271
+Adcy1	GeneProduct	Entrez Gene	432530	278,271
+1-Acylglycerol	Metabolite	KEGG Compound	C01885	803,390
+Glycerol	Metabolite	KEGG Compound	C00116	803,459
+Triacylglycerol	Metabolite	KEGG Compound	C00422	803,199
+Mgll	GeneProduct	Entrez Gene	23945	776,426
+Pnpla2	GeneProduct	Entrez Gene	66853	776,227
+Abhd5	GeneProduct	Entrez Gene	67469	759,244
+Ptger3	GeneProduct	Entrez Gene	19218	278,796
+Gnai1	GeneProduct	Entrez Gene	14677	387,800
+Gnai2	GeneProduct	Entrez Gene	14678	387,800
+Gnai3	GeneProduct	Entrez Gene	14679	387,800
+Adcy4	GeneProduct	Entrez Gene	104110	278,896
+Adcy3	GeneProduct	Entrez Gene	104111	278,896
+Adcy6	GeneProduct	Entrez Gene	11512	278,896
+Adcy7	GeneProduct	Entrez Gene	11513	278,896
+Adcy8	GeneProduct	Entrez Gene	11514	278,896
+Adcy9	GeneProduct	Entrez Gene	11515	278,896
+Adcy2	GeneProduct	Entrez Gene	210044	278,896
+Adcy5	GeneProduct	Entrez Gene	224129	278,896
+Adcy1	GeneProduct	Entrez Gene	432530	278,896
+Prkaca	GeneProduct	Entrez Gene	18747	514,896
+Prkacb	GeneProduct	Entrez Gene	18749	514,896
+Prkaca	GeneProduct	Entrez Gene	18747	511,271
+Prkacb	GeneProduct	Entrez Gene	18749	511,271
+3',5'-Cyclic AMP	Metabolite	KEGG Compound	C00575	412,895
+Adenosine	Metabolite	KEGG Compound	C00212	170,760
+AMP	Metabolite	KEGG Compound	C00020	557,787
+Prostaglandin E2	Metabolite	KEGG Compound	C00584	170,795
+Ins1	GeneProduct	Entrez Gene	16333	170,619
+Ins2	GeneProduct	Entrez Gene	16334	170,619
+Insr	GeneProduct	Entrez Gene	16337	278,619
+Pde3b	GeneProduct	Entrez Gene	18576	473,807
+Pik3ca	GeneProduct	Entrez Gene	18706	430,619
+Pik3cd	GeneProduct	Entrez Gene	18707	430,619
+Pik3r1	GeneProduct	Entrez Gene	18708	430,619
+Pik3r2	GeneProduct	Entrez Gene	18709	430,619
+Pik3r3	GeneProduct	Entrez Gene	18710	430,619
+Pik3cb	GeneProduct	Entrez Gene	74769	430,619
+Irs1	GeneProduct	Entrez Gene	16367	356,619
+Irs3	GeneProduct	Entrez Gene	16369	356,619
+Irs4	GeneProduct	Entrez Gene	16370	356,619
+Irs2	GeneProduct	Entrez Gene	384783	356,619
+3',5'-Cyclic AMP	Metabolite	KEGG Compound	C00575	413,270
+Plaat3	GeneProduct	Entrez Gene	225845	355,680
+Arachidonate	Metabolite	KEGG Compound	C00219	436,679
+Prostaglandin E2	Metabolite	KEGG Compound	C00584	436,733
+Ptgs1	GeneProduct	Entrez Gene	19224	409,705
+Ptgs2	GeneProduct	Entrez Gene	19225	409,705
+Lipe	GeneProduct	Entrez Gene	16890	642,834
+Plin1	GeneProduct	Entrez Gene	103968	696,738
+Diacylglycerol	Metabolite	KEGG Compound	C00165	804,803
+Triacylglycerol	Metabolite	KEGG Compound	C00422	803,706
+Mgll	GeneProduct	Entrez Gene	23945	776,920
+Adrb1	GeneProduct	Entrez Gene	11554	278,214
+Adrb2	GeneProduct	Entrez Gene	11555	278,214
+Adrb3	GeneProduct	Entrez Gene	11556	278,214
+Pnpla2	GeneProduct	Entrez Gene	66853	769,737
+Abhd5	GeneProduct	Entrez Gene	67469	752,754
+Corticosterone	Metabolite	KEGG Compound	C02140	170,129
+Adora1	GeneProduct	Entrez Gene	11539	278,760
+Tshr	GeneProduct	Entrez Gene	22095	278,171
+Fatty acid	Metabolite	KEGG Compound	C00162	952,238
+Fatty acid	Metabolite	KEGG Compound	C00162	952,345
+Fatty acid	Metabolite	KEGG Compound	C00162	952,423
+Fabp4	GeneProduct	Entrez Gene	11770	952,206
+Fabp4	GeneProduct	Entrez Gene	11770	952,316
+L-Adrenaline	Metabolite	KEGG Compound	C00788	170,193
+Fabp4	GeneProduct	Entrez Gene	11770	952,395
+Cga	GeneProduct	Entrez Gene	12640	170,171
+Tshb	GeneProduct	Entrez Gene	22094	170,171
+Npy1r	GeneProduct	Entrez Gene	18166	278,836
+Npy	GeneProduct	Entrez Gene	109648	170,836
+Lipe	GeneProduct	Entrez Gene	16890	645,322
+Akt1	GeneProduct	Entrez Gene	11651	527,619
+Akt2	GeneProduct	Entrez Gene	11652	527,619
+Akt3	GeneProduct	Entrez Gene	23797	527,619
+Nppa	GeneProduct	Entrez Gene	230899	170,363
+Cidec	GeneProduct	Entrez Gene	14311	696,721
+Lipe	GeneProduct	Entrez Gene	16890	776,322
+Cidec	GeneProduct	Entrez Gene	14311	698,205
+L-Noradrenaline	Metabolite	KEGG Compound	C00547	170,238
+Npr1	GeneProduct	Entrez Gene	18160	278,363

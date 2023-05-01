@@ -1,0 +1,55 @@
+TEXT	TYPE	DB	ID	X	Y
+Asthma	mmu	KEGG	mmu05310
+Il10	GeneProduct	Entrez Gene	16153	703,114
+Il9	GeneProduct	Entrez Gene	16198	703,90
+Fcer1a	GeneProduct	Entrez Gene	14125	841,152
+Ms4a2	GeneProduct	Entrez Gene	14126	841,152
+Fcer1g	GeneProduct	Entrez Gene	14127	841,152
+Fcer1a	GeneProduct	Entrez Gene	14125	841,176
+Ms4a2	GeneProduct	Entrez Gene	14126	841,176
+Fcer1g	GeneProduct	Entrez Gene	14127	841,176
+Il4	GeneProduct	Entrez Gene	16189	703,68
+Il4	GeneProduct	Entrez Gene	16189	503,355
+Il13	GeneProduct	Entrez Gene	16163	503,381
+Prg2	GeneProduct	Entrez Gene	19074	1027,433
+Il4	GeneProduct	Entrez Gene	16189	467,436
+Il13	GeneProduct	Entrez Gene	16163	467,459
+Il4	GeneProduct	Entrez Gene	16189	204,237
+Epx	GeneProduct	Entrez Gene	13861	1027,481
+Histamine	Metabolite	KEGG Compound	C00388	1031,148
+Leukotriene C4	Metabolite	KEGG Compound	C02166	1030,179
+Prostaglandin D2	Metabolite	KEGG Compound	C00696	1030,239
+2-Acetyl-1-alkyl-sn-glycero-3-phosphocholine	Metabolite	KEGG Compound	C04598	1030,120
+Leukotriene D4	Metabolite	KEGG Compound	C05951	1026,507
+2-Acetyl-1-alkyl-sn-glycero-3-phosphocholine	Metabolite	KEGG Compound	C04598	1027,560
+Ccl11	GeneProduct	Entrez Gene	20292	738,542
+Il5	GeneProduct	Entrez Gene	16191	641,464
+Il3	GeneProduct	Entrez Gene	16187	898,321
+Il5	GeneProduct	Entrez Gene	16191	898,346
+H2-Ea	GeneProduct	Entrez Gene	100504404	165,296
+H2-Aa	GeneProduct	Entrez Gene	14960	165,296
+H2-Ab1	GeneProduct	Entrez Gene	14961	165,296
+H2-Eb1	GeneProduct	Entrez Gene	14969	165,296
+H2-DMa	GeneProduct	Entrez Gene	14998	165,296
+H2-DMb1	GeneProduct	Entrez Gene	14999	165,296
+H2-DMb2	GeneProduct	Entrez Gene	15000	165,296
+H2-Oa	GeneProduct	Entrez Gene	15001	165,296
+H2-Ob	GeneProduct	Entrez Gene	15002	165,296
+H2-Eb2	GeneProduct	Entrez Gene	381091	165,296
+Leukotriene D4	Metabolite	KEGG Compound	C05951	1030,209
+Leukotriene D4	Metabolite	KEGG Compound	C05951	1026,533
+Il4	GeneProduct	Entrez Gene	16189	797,337
+Tnf	GeneProduct	Entrez Gene	21926	797,384
+Il13	GeneProduct	Entrez Gene	16163	797,360
+Cd40lg	GeneProduct	Entrez Gene	21947	468,283
+Cd40	GeneProduct	Entrez Gene	21939	549,283
+H2-Ea	GeneProduct	Entrez Gene	100504404	549,307
+H2-Aa	GeneProduct	Entrez Gene	14960	549,307
+H2-Ab1	GeneProduct	Entrez Gene	14961	549,307
+H2-Eb1	GeneProduct	Entrez Gene	14969	549,307
+H2-DMa	GeneProduct	Entrez Gene	14998	549,307
+H2-DMb1	GeneProduct	Entrez Gene	14999	549,307
+H2-DMb2	GeneProduct	Entrez Gene	15000	549,307
+H2-Oa	GeneProduct	Entrez Gene	15001	549,307
+H2-Ob	GeneProduct	Entrez Gene	15002	549,307
+H2-Eb2	GeneProduct	Entrez Gene	381091	549,307

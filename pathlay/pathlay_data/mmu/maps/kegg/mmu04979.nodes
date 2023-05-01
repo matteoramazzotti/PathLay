@@ -1,0 +1,144 @@
+TEXT	TYPE	DB	ID	X	Y
+Cholesterol metabolism	mmu	KEGG	mmu04979
+Cholest-5-ene-3beta,26-diol	Metabolite	KEGG Compound	C15610	1062,637
+Apoa1	GeneProduct	Entrez Gene	11806	981,1056
+Sort1	GeneProduct	Entrez Gene	20661	869,714
+Apob	GeneProduct	Entrez Gene	238055	869,731
+Apob	GeneProduct	Entrez Gene	238055	1122,428
+Cyp27a1	GeneProduct	Entrez Gene	104086	986,626
+Cyp7a1	GeneProduct	Entrez Gene	13122	919,811
+Cholesterol ester	Metabolite	KEGG Compound	C02530	581,491
+Cholesterol ester	Metabolite	KEGG Compound	C02530	545,554
+Cholesterol	Metabolite	KEGG Compound	C00187	377,494
+Cholesterol	Metabolite	KEGG Compound	C00187	545,635
+Cholesterol	Metabolite	KEGG Compound	C00187	926,637
+Cholesterol ester	Metabolite	KEGG Compound	C02530	914,1095
+Cholesterol ester	Metabolite	KEGG Compound	C02530	678,739
+Cholesterol ester	Metabolite	KEGG Compound	C02530	755,739
+Cholesterol	Metabolite	KEGG Compound	C00187	678,822
+Triacylglycerol	Metabolite	KEGG Compound	C00422	771,762
+Taurocholate	Metabolite	KEGG Compound	C05122	1062,822
+Glycocholate	Metabolite	KEGG Compound	C01921	1062,822
+Taurochenodeoxycholate	Metabolite	KEGG Compound	C05465	1062,822
+Glycochenodeoxycholate	Metabolite	KEGG Compound	C05466	1062,822
+Phospholipid	Metabolite	KEGG Compound	C00865	357,399
+Triacylglycerol	Metabolite	KEGG Compound	C00422	914,1110
+Abcg5	GeneProduct	Entrez Gene	27409	1300,854
+Abcg8	GeneProduct	Entrez Gene	67470	1300,854
+Abcb11	GeneProduct	Entrez Gene	27413	1300,824
+Sort1	GeneProduct	Entrez Gene	20661	1097,465
+Lrp2	GeneProduct	Entrez Gene	14725	275,555
+Lrp1	GeneProduct	Entrez Gene	16971	275,555
+Lrpap1	GeneProduct	Entrez Gene	16976	273,592
+Apoe	GeneProduct	Entrez Gene	11816	229,555
+Cideb	GeneProduct	Entrez Gene	12684	823,731
+Apoa2	GeneProduct	Entrez Gene	11807	981,1076
+Apoa4	GeneProduct	Entrez Gene	11808	981,1096
+Apoe	GeneProduct	Entrez Gene	11816	919,1076
+Apob	GeneProduct	Entrez Gene	238055	919,1056
+Apob	GeneProduct	Entrez Gene	238055	857,1056
+Apoc2l	GeneProduct	Entrez Gene	105886299	857,1076
+Apoc1	GeneProduct	Entrez Gene	11812	857,1076
+Apoc2	GeneProduct	Entrez Gene	11813	857,1076
+Apoc3	GeneProduct	Entrez Gene	11814	857,1076
+Apoe	GeneProduct	Entrez Gene	11816	857,1096
+Triacylglycerol	Metabolite	KEGG Compound	C00422	998,1115
+Apob	GeneProduct	Entrez Gene	238055	796,1056
+Apob	GeneProduct	Entrez Gene	238055	736,1076
+Apob	GeneProduct	Entrez Gene	238055	678,1056
+Apoa1	GeneProduct	Entrez Gene	11806	620,1056
+Apoa2	GeneProduct	Entrez Gene	11807	620,1076
+Apoc2l	GeneProduct	Entrez Gene	105886299	620,1096
+Apoc1	GeneProduct	Entrez Gene	11812	620,1096
+Apoc2	GeneProduct	Entrez Gene	11813	620,1096
+Apoc3	GeneProduct	Entrez Gene	11814	620,1096
+Apoe	GeneProduct	Entrez Gene	11816	620,1116
+Apoe	GeneProduct	Entrez Gene	11816	796,1076
+Phospholipid	Metabolite	KEGG Compound	C00865	632,1135
+Cholesterol ester	Metabolite	KEGG Compound	C02530	601,1135
+Apob	GeneProduct	Entrez Gene	238055	1031,1056
+Cholesterol ester	Metabolite	KEGG Compound	C02530	670,1077
+Angptl3	GeneProduct	Entrez Gene	30924	122,353
+Angptl4	GeneProduct	Entrez Gene	57875	122,353
+Angptl8	GeneProduct	Entrez Gene	624219	122,392
+Apoh	GeneProduct	Entrez Gene	11818	70,319
+Apoc2l	GeneProduct	Entrez Gene	105886299	70,299
+Apoc2	GeneProduct	Entrez Gene	11813	70,299
+Lpl	GeneProduct	Entrez Gene	16956	143,309
+Abca1	GeneProduct	Entrez Gene	11303	377,177
+Abca1	GeneProduct	Entrez Gene	11303	377,434
+Abca1	GeneProduct	Entrez Gene	11303	1111,152
+Triacylglycerol	Metabolite	KEGG Compound	C00422	171,266
+Apoc2l	GeneProduct	Entrez Gene	105886299	1031,1076
+Apoc1	GeneProduct	Entrez Gene	11812	1031,1076
+Apoc2	GeneProduct	Entrez Gene	11813	1031,1076
+Apoc3	GeneProduct	Entrez Gene	11814	1031,1076
+Fatty acid	Metabolite	KEGG Compound	C00162	172,416
+Apoa1	GeneProduct	Entrez Gene	11806	334,214
+Apoa1	GeneProduct	Entrez Gene	11806	1053,183
+Apoa1	GeneProduct	Entrez Gene	11806	417,401
+Phospholipid	Metabolite	KEGG Compound	C00865	400,213
+Cholesterol	Metabolite	KEGG Compound	C00187	377,134
+Cholesterol	Metabolite	KEGG Compound	C00187	434,277
+Phospholipid	Metabolite	KEGG Compound	C00865	434,290
+Cholesterol ester	Metabolite	KEGG Compound	C02530	532,284
+Phospholipid	Metabolite	KEGG Compound	C00865	638,261
+Apoe	GeneProduct	Entrez Gene	11816	1031,1096
+Triacylglycerol	Metabolite	KEGG Compound	C00422	638,346
+Fatty acid	Metabolite	KEGG Compound	C00162	770,261
+Phospholipid	Metabolite	KEGG Compound	C00865	770,298
+Cholesterol ester	Metabolite	KEGG Compound	C02530	770,346
+Triacylglycerol	Metabolite	KEGG Compound	C00422	883,292
+Fatty acid	Metabolite	KEGG Compound	C00162	999,292
+Triacylglycerol	Metabolite	KEGG Compound	C00422	1110,292
+Fatty acid	Metabolite	KEGG Compound	C00162	1225,292
+Phospholipid	Metabolite	KEGG Compound	C00865	1053,130
+Cholesterol ester	Metabolite	KEGG Compound	C02530	1260,151
+Cholesterol ester	Metabolite	KEGG Compound	C02530	788,1097
+Cholesterol	Metabolite	KEGG Compound	C00187	1153,151
+Nceh1	GeneProduct	Entrez Gene	320024	1209,135
+Soat1	GeneProduct	Entrez Gene	20652	1209,167
+Soat2	GeneProduct	Entrez Gene	223920	1209,167
+Ldlr	GeneProduct	Entrez Gene	16835	1260,212
+Cd36	GeneProduct	Entrez Gene	12491	1165,212
+Apoc1	GeneProduct	Entrez Gene	11812	483,233
+Lcat	GeneProduct	Entrez Gene	16816	483,271
+Apoa1	GeneProduct	Entrez Gene	11806	483,213
+Pltp	GeneProduct	Entrez Gene	18830	703,299
+Triacylglycerol	Metabolite	KEGG Compound	C00422	788,1112
+Apoc1	GeneProduct	Entrez Gene	11812	703,385
+Lipg	GeneProduct	Entrez Gene	16891	703,250
+Lpl	GeneProduct	Entrez Gene	16956	942,281
+Lipc	GeneProduct	Entrez Gene	15450	1162,281
+Scarb1	GeneProduct	Entrez Gene	20778	581,434
+Sort1	GeneProduct	Entrez Gene	20661	857,434
+Pcsk9	GeneProduct	Entrez Gene	100102	1179,448
+Ldlr	GeneProduct	Entrez Gene	16835	1152,465
+Pcsk9	GeneProduct	Entrez Gene	100102	983,550
+Triacylglycerol	Metabolite	KEGG Compound	C00422	854,1117
+Ldlr	GeneProduct	Entrez Gene	16835	956,567
+Pcsk9	GeneProduct	Entrez Gene	100102	736,557
+Ldlr	GeneProduct	Entrez Gene	16835	709,574
+Sort1	GeneProduct	Entrez Gene	20661	891,515
+Ldlr	GeneProduct	Entrez Gene	16835	1263,434
+Ldlrap1	GeneProduct	Entrez Gene	100017	1320,434
+Mylip	GeneProduct	Entrez Gene	218203	1372,497
+Lipa	GeneProduct	Entrez Gene	16889	572,589
+Stard3	GeneProduct	Entrez Gene	59045	519,696
+Cholesterol ester	Metabolite	KEGG Compound	C02530	731,1096
+Npc1	GeneProduct	Entrez Gene	18145	569,696
+Vapa	GeneProduct	Entrez Gene	30960	519,713
+Vapb	GeneProduct	Entrez Gene	56491	519,713
+Osbpl5	GeneProduct	Entrez Gene	79196	569,713
+Npc2	GeneProduct	Entrez Gene	67963	614,668
+Star	GeneProduct	Entrez Gene	20845	963,660
+Vdac1	GeneProduct	Entrez Gene	22333	917,672
+Vdac2	GeneProduct	Entrez Gene	22334	917,672
+Vdac3	GeneProduct	Entrez Gene	22335	917,672
+Stard3	GeneProduct	Entrez Gene	59045	798,638
+Vdac1	GeneProduct	Entrez Gene	22333	844,638
+Vdac2	GeneProduct	Entrez Gene	22334	844,638
+Vdac3	GeneProduct	Entrez Gene	22335	844,638
+Tspo	GeneProduct	Entrez Gene	12257	879,655
+Soat1	GeneProduct	Entrez Gene	20652	652,782
+Soat2	GeneProduct	Entrez Gene	223920	652,782

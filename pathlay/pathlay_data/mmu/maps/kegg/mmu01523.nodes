@@ -1,0 +1,54 @@
+TEXT	TYPE	DB	ID	X	Y
+Antifolate resistance	mmu	KEGG	mmu01523
+Folr1	GeneProduct	Entrez Gene	14275	402,139
+Folr2	GeneProduct	Entrez Gene	14276	402,139
+AG 2034	Metabolite	KEGG Compound	C21280	269,396
+GW1843	Metabolite	KEGG Compound	C11374	269,430
+BGC 945	Metabolite	KEGG Compound	C21279	246,138
+Fpgs	GeneProduct	Entrez Gene	14287	710,398
+Slc19a1	GeneProduct	Entrez Gene	20509	402,411
+Tetrahydrofolate	Metabolite	KEGG Compound	C00101	1101,380
+5,10-Methylenetetrahydrofolate	Metabolite	KEGG Compound	C00143	1198,257
+dTMP	Metabolite	KEGG Compound	C00364	1036,123
+Dihydrofolate	Metabolite	KEGG Compound	C00415	1025,267
+dUMP	Metabolite	KEGG Compound	C00365	1188,136
+Slc46a1	GeneProduct	Entrez Gene	52466	640,490
+AMP	Metabolite	KEGG Compound	C00020	1191,671
+Ggh	GeneProduct	Entrez Gene	14590	708,537
+Abcc1	GeneProduct	Entrez Gene	17250	402,609
+Tyms	GeneProduct	Entrez Gene	22171	1112,187
+Folate	Metabolite	KEGG Compound	C00504	935,267
+Dhfr	GeneProduct	Entrez Gene	13361	1039,325
+10-Formyltetrahydrofolate	Metabolite	KEGG Compound	C00234	1100,438
+5-Phospho-alpha-D-ribose 1-diphosphate	Metabolite	KEGG Compound	C00119	1131,438
+IMP	Metabolite	KEGG Compound	C00130	1131,691
+Tetrahydrofolate	Metabolite	KEGG Compound	C00101	1100,535
+10-Formyltetrahydrofolate	Metabolite	KEGG Compound	C00234	1100,574
+Atic	GeneProduct	Entrez Gene	108147	1127,614
+Tetrahydrofolate	Metabolite	KEGG Compound	C00101	1100,691
+Abcc2	GeneProduct	Entrez Gene	12780	402,644
+GMP	Metabolite	KEGG Compound	C00144	1191,708
+5-Methyltetrahydrofolate	Metabolite	KEGG Compound	C00440	1284,295
+L-Homocysteine	Metabolite	KEGG Compound	C00155	1301,356
+L-Methionine	Metabolite	KEGG Compound	C00073	1193,445
+Slc19a1	GeneProduct	Entrez Gene	20509	402,239
+Abcc3	GeneProduct	Entrez Gene	76408	402,677
+Slc19a1	GeneProduct	Entrez Gene	20509	402,185
+Abcg2	GeneProduct	Entrez Gene	26357	402,786
+Slc46a1	GeneProduct	Entrez Gene	52466	402,566
+Chuk	GeneProduct	Entrez Gene	12675	945,778
+Ikbkb	GeneProduct	Entrez Gene	16150	945,778
+Ikbkg	GeneProduct	Entrez Gene	16151	945,778
+Nfkb1	GeneProduct	Entrez Gene	18033	1029,778
+Rela	GeneProduct	Entrez Gene	19697	1029,778
+Il6	GeneProduct	Entrez Gene	16193	1213,788
+Abcc4	GeneProduct	Entrez Gene	239273	402,709
+Il1b	GeneProduct	Entrez Gene	16176	1158,788
+Tnf	GeneProduct	Entrez Gene	21926	1158,766
+Shmt2	GeneProduct	Entrez Gene	108037	1182,333
+Shmt1	GeneProduct	Entrez Gene	20425	1182,333
+Alox12	GeneProduct	Entrez Gene	11684	1232,374
+Alox12e	GeneProduct	Entrez Gene	11685	1232,374
+Mthfr	GeneProduct	Entrez Gene	17769	1242,278
+Abcc5	GeneProduct	Entrez Gene	27416	402,741
+Gart	GeneProduct	Entrez Gene	14450	1127,489

@@ -1,0 +1,16 @@
+TEXT	TYPE	DB	ID	X	Y
+Dual hijack model of Vif in HIV infection	Homo sapiens	WikiPathways	WP3300
+CUL5	GeneProduct	Entrez Gene	8065	494.5,206.0
+RUNX1	GeneProduct	Entrez Gene	861	165.5,284.0
+ELOC	GeneProduct	Entrez Gene	6921	419.0,190.0
+A3G	GeneProduct	Ensembl	ENSG00000239713	491.5,143.0
+CBFB	GeneProduct	Entrez Gene	865	420.0,149.0
+UBB	GeneProduct	Entrez Gene	7314	578.5,206.0
+ELOB	GeneProduct	Entrez Gene	6923	408.0,209.0
+Vif	GeneProduct	Uniprot-TrEMBL	P69723	440.5,170.0
+RBX1	GeneProduct	Entrez Gene	9978	514.0,225.0
+CBFB	GeneProduct	Entrez Gene	865	420.0,149.0
+E2	GeneProduct	Ensembl	ENSG00000067955	535.5,206.0
+Vif	GeneProduct	Uniprot-TrEMBL	P69723	440.5,170.0
+CBFB	GeneProduct	Entrez Gene	865	420.0,149.0
+Vif	GeneProduct	Uniprot-TrEMBL	P69723	440.5,170.0

@@ -1,0 +1,116 @@
+TEXT	TYPE	DB	ID	X	Y
+Tyrosine metabolism	hsa	KEGG	hsa00350
+ADH1A	GeneProduct	Entrez Gene	124	1144,428
+ADH1B	GeneProduct	Entrez Gene	125	1144,428
+ADH1C	GeneProduct	Entrez Gene	126	1144,428
+ADH4	GeneProduct	Entrez Gene	127	1144,428
+ADH5	GeneProduct	Entrez Gene	128	1144,428
+ADH6	GeneProduct	Entrez Gene	130	1144,428
+ADH7	GeneProduct	Entrez Gene	131	1144,428
+COMT	GeneProduct	Entrez Gene	1312	1266,298	1368,298	1228,544	1144,544	961,544	1048,298
+GOT1L1	GeneProduct	Entrez Gene	137362	475,309
+DBH	GeneProduct	Entrez Gene	1621	1144,265
+DCT	GeneProduct	Entrez Gene	1638	1056,143
+DDC	GeneProduct	Entrez Gene	1644	325,293	915,275
+ALDH3A1	GeneProduct	Entrez Gene	218	275,455	1368,544	1228,428	935,428	1048,544
+FAH	GeneProduct	Entrez Gene	2184	500,718
+LRTOMT	GeneProduct	Entrez Gene	220074	1266,298	1368,298	1228,544	1144,544	961,544	1048,298
+ALDH3B1	GeneProduct	Entrez Gene	221	275,455	1368,544	1228,428	935,428	1048,544
+ALDH3B2	GeneProduct	Entrez Gene	222	275,455	1368,544	1228,428	935,428	1048,544
+IL4I1	GeneProduct	Entrez Gene	259307	561,369
+GOT1	GeneProduct	Entrez Gene	2805	475,309
+GOT2	GeneProduct	Entrez Gene	2806	475,309
+GSTZ1	GeneProduct	Entrez Gene	2954	500,636
+HGD	GeneProduct	Entrez Gene	3081	500,541
+AOC2	GeneProduct	Entrez Gene	314	275,369	935,328
+AOX1	GeneProduct	Entrez Gene	316	654,540
+HPD	GeneProduct	Entrez Gene	3242	500,453
+MAOA	GeneProduct	Entrez Gene	4128	299,350	1304,390	1228,328	1368,390	1445,390	961,309	1048,428
+MAOB	GeneProduct	Entrez Gene	4129	299,350	1304,390	1228,328	1368,390	1445,390	961,309	1048,428
+MIF	GeneProduct	Entrez Gene	4282	560,428
+PNMT	GeneProduct	Entrez Gene	5409	1313,265
+TAT	GeneProduct	Entrez Gene	6898	525,309
+TH	GeneProduct	Entrez Gene	7054	701,275
+TPO	GeneProduct	Entrez Gene	7173	103,292	188,267	271,267	103,267
+TYR	GeneProduct	Entrez Gene	7299	617,141	1172,97	749,254	772,141
+TYRP1	GeneProduct	Entrez Gene	7306	1172,143
+FAHD1	GeneProduct	Entrez Gene	81889	604,718
+AOC3	GeneProduct	Entrez Gene	8639	275,369	935,328
+Pyruvate	Metabolite	KEGG Compound	C00022	629,784
+Succinate	Metabolite	KEGG Compound	C00042	382,878
+L-Tyrosine	Metabolite	KEGG Compound	C00082	500,267
+Fumarate	Metabolite	KEGG Compound	C00122	564,750
+Phenol	Metabolite	KEGG Compound	C00146	674,198
+Acetoacetate	Metabolite	KEGG Compound	C00164	500,782
+Succinate semialdehyde	Metabolite	KEGG Compound	C00232	382,823
+3,4-Dihydroxy-L-phenylalanine	Metabolite	KEGG Compound	C00355	798,264
+Tyramine	Metabolite	KEGG Compound	C00483	300,321
+Hydroquinone	Metabolite	KEGG Compound	C00530	564,654
+Homogentisate	Metabolite	KEGG Compound	C00544	500,501
+L-Noradrenaline	Metabolite	KEGG Compound	C00547	1228,264
+2,5-Dihydroxybenzoate	Metabolite	KEGG Compound	C00628	629,571
+4-Hydroxyphenylacetate	Metabolite	KEGG Compound	C00642	300,497
+L-Adrenaline	Metabolite	KEGG Compound	C00788	1367,264
+4-Coumarate	Metabolite	KEGG Compound	C00811	593,333
+Dopaquinone	Metabolite	KEGG Compound	C00822	797,96
+4-Maleylacetoacetate	Metabolite	KEGG Compound	C01036	500,594
+3,5-Diiodo-L-tyrosine	Metabolite	KEGG Compound	C01060	143,266
+4-Fumarylacetoacetate	Metabolite	KEGG Compound	C01061	500,688
+3,4-Dihydroxyphenylacetate	Metabolite	KEGG Compound	C01161	174,501	960,500
+3-(4-Hydroxyphenyl)pyruvate	Metabolite	KEGG Compound	C01179	500,400
+Maleic acid	Metabolite	KEGG Compound	C01384	723,812
+L-Dopachrome	Metabolite	KEGG Compound	C01693	1012,96
+Thyroxine	Metabolite	KEGG Compound	C01829	51,266
+Rosmarinate	Metabolite	KEGG Compound	C01850	798,589
+Maleylpyruvate	Metabolite	KEGG Compound	C02167	629,629
+N-Methyltyramine	Metabolite	KEGG Compound	C02442	394,321
+Triiodothyronine	Metabolite	KEGG Compound	C02465	51,292
+3-Fumarylpyruvate	Metabolite	KEGG Compound	C02514	629,688
+3-Iodo-L-tyrosine	Metabolite	KEGG Compound	C02515	223,266
+2-Oxohept-3-enedioate	Metabolite	KEGG Compound	C03063	281,755
+4-Chlorophenylacetate	Metabolite	KEGG Compound	C03077	230,581
+Dopamine	Metabolite	KEGG Compound	C03758	960,264
+4-Hydroxyphenylacetaldehyde	Metabolite	KEGG Compound	C03765	300,400
+(R)-3-(4-Hydroxyphenyl)lactate	Metabolite	KEGG Compound	C03964	659,399
+3,4-Dihydroxyphenylacetaldehyde	Metabolite	KEGG Compound	C04043	960,381
+3-(3,4-Dihydroxyphenyl)pyruvate	Metabolite	KEGG Compound	C04045	798,368
+5-Carboxy-2-oxohept-3-enedioate	Metabolite	KEGG Compound	C04052	174,696
+5,6-Dihydroxyindole-2-carboxylate	Metabolite	KEGG Compound	C04185	1113,142
+5-Carboxymethyl-2-hydroxymuconate	Metabolite	KEGG Compound	C04186	174,640
+3-Amino-3-(4-hydroxyphenyl)propanoate	Metabolite	KEGG Compound	C04368	642,333
+2-Hydroxy-5-carboxymethylmuconate semialdehyde	Metabolite	KEGG Compound	C04642	174,574
+4-(L-Alanin-3-yl)-2-hydroxy-cis,cis-muconate 6-semialdehyde	Metabolite	KEGG Compound	C04796	982,194
+5-(L-Alanin-3-yl)-2-hydroxy-cis,cis-muconate 6-semialdehyde	Metabolite	KEGG Compound	C04797	981,231
+4-Hydroxyphenylacetyl-CoA	Metabolite	KEGG Compound	C05338	300,598
+2-Hydroxy-3-(4-hydroxyphenyl)propenoate	Metabolite	KEGG Compound	C05350	561,465
+3,4-Dihydroxyphenylethyleneglycol	Metabolite	KEGG Compound	C05576	1143,472
+3,4-Dihydroxymandelaldehyde	Metabolite	KEGG Compound	C05577	1228,381
+5,6-Dihydroxyindole	Metabolite	KEGG Compound	C05578	1113,96
+Indole-5,6-quinone	Metabolite	KEGG Compound	C05579	1236,96
+3,4-Dihydroxymandelate	Metabolite	KEGG Compound	C05580	1228,472
+3-Methoxy-4-hydroxyphenylacetaldehyde	Metabolite	KEGG Compound	C05581	1047,500
+Homovanillate	Metabolite	KEGG Compound	C05582	960,596
+3-Methoxy-4-hydroxyphenylglycolaldehyde	Metabolite	KEGG Compound	C05583	1367,439
+3-Methoxy-4-hydroxymandelate	Metabolite	KEGG Compound	C05584	1228,596
+Gentisate aldehyde	Metabolite	KEGG Compound	C05585	629,501
+3-Methoxytyramine	Metabolite	KEGG Compound	C05587	1047,381
+L-Metanephrine	Metabolite	KEGG Compound	C05588	1367,350
+L-Normetanephrine	Metabolite	KEGG Compound	C05589	1304,350
+3-Hydroxyphenylacetate	Metabolite	KEGG Compound	C05593	84,501
+3-Methoxy-4-hydroxyphenylethyleneglycol	Metabolite	KEGG Compound	C05594	1143,596
+4-Hydroxyphenylacetylglutamic acid	Metabolite	KEGG Compound	C05595	300,690
+p-Hydroxyphenylacetylglycine	Metabolite	KEGG Compound	C05596	360,691
+2-Hydroxyhepta-2,4-dienedioate	Metabolite	KEGG Compound	C05600	174,755
+2-Carboxy-2,3-dihydro-5,6-dihydroxyindole	Metabolite	KEGG Compound	C05604	895,96
+4-Hydroxyphenylethanol	Metabolite	KEGG Compound	C06044	164,398
+Salidroside	Metabolite	KEGG Compound	C06046	87,398
+Stizolobate	Metabolite	KEGG Compound	C06047	1206,194
+Stizolobinate	Metabolite	KEGG Compound	C06048	1207,231
+Hordenine	Metabolite	KEGG Compound	C06199	394,372
+2,4-Dihydroxyhept-2-enedioate	Metabolite	KEGG Compound	C06201	379,756
+3,4-Dihydroxyphenylpropanoate	Metabolite	KEGG Compound	C10447	854,368
+Cysteinyldopa	Metabolite	KEGG Compound	C17935	1022,50
+Phaeomelanin	Metabolite	KEGG Compound	C17936	1343,50
+Eumelanin	Metabolite	KEGG Compound	C17937	1343,96
+5,6-Indolequinone-2-carboxylic acid	Metabolite	KEGG Compound	C17938	1236,142
+(R)-3-(3,4-Dihydroxyphenyl)lactate	Metabolite	KEGG Compound	C22038	798,458

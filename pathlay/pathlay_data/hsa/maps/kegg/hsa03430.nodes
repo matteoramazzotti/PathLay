@@ -1,0 +1,25 @@
+TEXT	TYPE	DB	ID	X	Y
+Mismatch repair	hsa	KEGG	hsa03430
+POLD3	GeneProduct	Entrez Gene	10714	755,643
+MLH3	GeneProduct	Entrez Gene	27030	624,346
+MSH6	GeneProduct	Entrez Gene	2956	578,250
+RPA4	GeneProduct	Entrez Gene	29935	624,643
+LIG1	GeneProduct	Entrez Gene	3978	624,775
+MLH1	GeneProduct	Entrez Gene	4292	578,346	624,233	578,289
+MSH2	GeneProduct	Entrez Gene	4436	578,363	578,306	624,250
+MSH3	GeneProduct	Entrez Gene	4437	624,306	624,363
+PCNA	GeneProduct	Entrez Gene	5111	755,261
+PMS2	GeneProduct	Entrez Gene	5395	624,289	578,233
+POLD1	GeneProduct	Entrez Gene	5424	755,643
+POLD2	GeneProduct	Entrez Gene	5425	755,643
+POLD4	GeneProduct	Entrez Gene	57804	755,643
+RFC1	GeneProduct	Entrez Gene	5981	755,233
+RFC2	GeneProduct	Entrez Gene	5982	755,233
+RFC3	GeneProduct	Entrez Gene	5983	755,233
+RFC4	GeneProduct	Entrez Gene	5984	755,233
+RFC5	GeneProduct	Entrez Gene	5985	755,233
+RPA1	GeneProduct	Entrez Gene	6117	624,643
+RPA2	GeneProduct	Entrez Gene	6118	624,643
+RPA3	GeneProduct	Entrez Gene	6119	624,643
+SSBP1	GeneProduct	Entrez Gene	6742	146,643
+EXO1	GeneProduct	Entrez Gene	9156	755,499

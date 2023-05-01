@@ -1,0 +1,79 @@
+TEXT	TYPE	DB	ID	X	Y
+Phenylalanine metabolism	hsa	KEGG	hsa00360
+GLYAT	GeneProduct	Entrez Gene	10249	1063,129
+GOT1L1	GeneProduct	Entrez Gene	137362	466,231
+DDC	GeneProduct	Entrez Gene	1644	268,250
+ALDH3A1	GeneProduct	Entrez Gene	218	292,455
+ALDH3B1	GeneProduct	Entrez Gene	221	292,455
+ALDH3B2	GeneProduct	Entrez Gene	222	292,455
+IL4I1	GeneProduct	Entrez Gene	259307	520,250
+GOT1	GeneProduct	Entrez Gene	2805	466,231
+GOT2	GeneProduct	Entrez Gene	2806	466,231
+AOC2	GeneProduct	Entrez Gene	314	268,367
+HPD	GeneProduct	Entrez Gene	3242	441,393
+MAOA	GeneProduct	Entrez Gene	4128	292,348
+MAOB	GeneProduct	Entrez Gene	4129	292,348
+MIF	GeneProduct	Entrez Gene	4282	608,360
+PAH	GeneProduct	Entrez Gene	5053	142,175
+TAT	GeneProduct	Entrez Gene	6898	416,250
+AOC3	GeneProduct	Entrez Gene	8639	268,367
+Pyruvate	Metabolite	KEGG Compound	C00022	924,727
+Acetyl-CoA	Metabolite	KEGG Compound	C00024	731,718	868,825
+Succinate	Metabolite	KEGG Compound	C00042	924,592
+L-Phenylalanine	Metabolite	KEGG Compound	C00079	441,181
+L-Tyrosine	Metabolite	KEGG Compound	C00082	93,174
+Acetaldehyde	Metabolite	KEGG Compound	C00084	868,751
+Succinyl-CoA	Metabolite	KEGG Compound	C00091	482,825
+Fumarate	Metabolite	KEGG Compound	C00122	788,651
+Phenylpyruvate	Metabolite	KEGG Compound	C00166	441,319
+Benzoate	Metabolite	KEGG Compound	C00180	1119,195
+trans-Cinnamate	Metabolite	KEGG Compound	C00423	788,234
+Benzoyl-CoA	Metabolite	KEGG Compound	C00512	1015,128	613,613
+Phenylacetyl-CoA	Metabolite	KEGG Compound	C00582	297,613
+2-Hydroxy-2,4-pentadienoate	Metabolite	KEGG Compound	C00596	868,619
+Phenylacetaldehyde	Metabolite	KEGG Compound	C00601	293,413
+4-Hydroxyphenylacetate	Metabolite	KEGG Compound	C00642	219,519
+Salicylate	Metabolite	KEGG Compound	C00805	1206,195
+3-(2-Hydroxyphenyl)propanoate	Metabolite	KEGG Compound	C01198	1030,299
+Ephedrine	Metabolite	KEGG Compound	C01575	1119,551
+Hippurate	Metabolite	KEGG Compound	C01586	1119,128
+trans-2-Hydroxycinnamate	Metabolite	KEGG Compound	C01772	1030,233
+alpha-Oxo-benzeneacetic acid	Metabolite	KEGG Compound	C02137	518,613
+3-Oxoadipyl-CoA	Metabolite	KEGG Compound	C02232	482,748
+D-Phenylalanine	Metabolite	KEGG Compound	C02265	597,181
+2-Phenylacetamide	Metabolite	KEGG Compound	C02505	169,498
+2-Hydroxy-3-phenylpropenoate	Metabolite	KEGG Compound	C02763	609,401
+(+)-(1S,2S)-Pseudoephedrine	Metabolite	KEGG Compound	C02765	1170,551
+N-Acetyl-L-phenylalanine	Metabolite	KEGG Compound	C03519	360,264
+4-Hydroxy-2-oxopentanoate	Metabolite	KEGG Compound	C03589	868,684
+3-(2,3-Dihydroxyphenyl)propanoate	Metabolite	KEGG Compound	C04044	868,463
+Phenylacetylglutamine	Metabolite	KEGG Compound	C04148	297,732
+(R)-2-Methylimino-1-phenylpropan-1-ol	Metabolite	KEGG Compound	C04351	1119,659
+2-Hydroxy-6-oxonona-2,4-diene-1,9-dioate	Metabolite	KEGG Compound	C04479	868,543
+Phenethylamine	Metabolite	KEGG Compound	C05332	293,301
+3-Hydroxyphenylacetate	Metabolite	KEGG Compound	C05593	219,558
+Phenylacetylglycine	Metabolite	KEGG Compound	C05598	223,732
+Phenyllactate	Metabolite	KEGG Compound	C05607	530,421
+N-Acetyl-D-phenylalanine	Metabolite	KEGG Compound	C05620	729,181
+Phenylpropanoate	Metabolite	KEGG Compound	C05629	868,303
+2-Hydroxyphenylacetate	Metabolite	KEGG Compound	C05852	441,501
+Phenylethyl alcohol	Metabolite	KEGG Compound	C05853	400,460
+2,6-Dihydroxyphenylacetate	Metabolite	KEGG Compound	C06207	441,551
+Phenylacetic acid	Metabolite	KEGG Compound	C07086	293,498
+D-Cathine	Metabolite	KEGG Compound	C08300	1170,465
+D-Cathinone	Metabolite	KEGG Compound	C08301	1119,375
+3-(3-Hydroxyphenyl)propanoic acid	Metabolite	KEGG Compound	C11457	962,308
+cis-3-(Carboxy-ethyl)-3,5-cyclo-hexadiene-1,2-diol	Metabolite	KEGG Compound	C11588	868,385
+trans-3-Hydroxycinnamate	Metabolite	KEGG Compound	C12621	735,335
+cis-3-(3-Carboxyethenyl)-3,5-cyclohexadiene-1,2-diol	Metabolite	KEGG Compound	C12622	788,385
+trans-2,3-Dihydroxycinnamate	Metabolite	KEGG Compound	C12623	788,463
+2-Hydroxy-6-ketononatrienedioate	Metabolite	KEGG Compound	C12624	788,543
+5-Carboxy-2-pentenoyl-CoA	Metabolite	KEGG Compound	C14144	671,748
+(3S)-3-Hydroxyadipyl-CoA	Metabolite	KEGG Compound	C14145	576,748
+Phenylglyoxylyl-CoA	Metabolite	KEGG Compound	C15524	418,613
+(-)-Norephedrine	Metabolite	KEGG Compound	C16719	1119,465
+Pyruvophenone	Metabolite	KEGG Compound	C17268	1119,257
+3-Oxo-5,6-dehydrosuberyl-CoA	Metabolite	KEGG Compound	C19945	671,670
+3-Oxo-5,6-dehydrosuberyl-CoA semialdehyde	Metabolite	KEGG Compound	C19946	577,670
+2-Oxepin-2(3H)-ylideneacetyl-CoA	Metabolite	KEGG Compound	C19975	483,670
+2-(1,2-Epoxy-1,2-dihydrophenyl)acetyl-CoA	Metabolite	KEGG Compound	C20062	389,670

@@ -1,0 +1,56 @@
+TEXT	TYPE	DB	ID	X	Y
+Fanconi anemia pathway	hsa	KEGG	hsa03460
+CENPS-CORT	GeneProduct	Entrez Gene	100526739	348,136	367,397
+POLI	GeneProduct	Entrez Gene	11201	188,511
+RMI2	GeneProduct	Entrez Gene	116028	463,359
+EME1	GeneProduct	Entrez Gene	146956	463,241
+EME2	GeneProduct	Entrez Gene	197342	463,241
+CENPX	GeneProduct	Entrez Gene	201254	348,136	367,397
+ERCC1	GeneProduct	Entrez Gene	2067	463,296
+ERCC4	GeneProduct	Entrez Gene	2072	463,279
+FANCA	GeneProduct	Entrez Gene	2175	316,329
+FANCC	GeneProduct	Entrez Gene	2176	302,346
+FANCD2	GeneProduct	Entrez Gene	2177	155,353
+FANCE	GeneProduct	Entrez Gene	2178	302,363
+FANCB	GeneProduct	Entrez Gene	2187	326,312
+FANCF	GeneProduct	Entrez Gene	2188	321,380
+FANCG	GeneProduct	Entrez Gene	2189	348,363
+FAN1	GeneProduct	Entrez Gene	22909	154,612
+UBE2T	GeneProduct	Entrez Gene	29089	247,372
+RPA4	GeneProduct	Entrez Gene	29935	463,438
+HES1	GeneProduct	Entrez Gene	3280	376,329
+POLN	GeneProduct	Entrez Gene	353497	288,511
+CENPS	GeneProduct	Entrez Gene	378708	348,136	367,397
+MLH1	GeneProduct	Entrez Gene	4292	272,606
+POLK	GeneProduct	Entrez Gene	51426	238,511
+REV1	GeneProduct	Entrez Gene	51455	188,489
+PMS2	GeneProduct	Entrez Gene	5395	272,623
+POLH	GeneProduct	Entrez Gene	5429	288,489
+ATR	GeneProduct	Entrez Gene	545	146,172
+SLX1A	GeneProduct	Entrez Gene	548593	521,279
+FANCL	GeneProduct	Entrez Gene	55120	256,346
+FANCI	GeneProduct	Entrez Gene	55215	155,336
+WDR48	GeneProduct	Entrez Gene	57599	191,276
+FANCM	GeneProduct	Entrez Gene	57697	321,397	302,136
+RAD51	GeneProduct	Entrez Gene	5888	425,524
+RAD51C	GeneProduct	Entrez Gene	5889	425,501
+REV3L	GeneProduct	Entrez Gene	5980	238,489
+RPA1	GeneProduct	Entrez Gene	6117	463,438
+RPA2	GeneProduct	Entrez Gene	6118	463,438
+RPA3	GeneProduct	Entrez Gene	6119	463,438
+BLM	GeneProduct	Entrez Gene	641	463,376
+BRCA1	GeneProduct	Entrez Gene	672	226,563
+BRCA2	GeneProduct	Entrez Gene	675	346,502
+TOP3A	GeneProduct	Entrez Gene	7156	417,376
+USP1	GeneProduct	Entrez Gene	7398	191,293
+SLX1B	GeneProduct	Entrez Gene	79008	521,279
+PALB2	GeneProduct	Entrez Gene	79728	346,518
+RMI1	GeneProduct	Entrez Gene	80010	417,359
+MUS81	GeneProduct	Entrez Gene	80198	463,224
+FAAP100	GeneProduct	Entrez Gene	80233	270,329
+BRIP1	GeneProduct	Entrez Gene	83990	272,563
+ATRIP	GeneProduct	Entrez Gene	84126	146,155
+SLX4	GeneProduct	Entrez Gene	84464	521,296
+TOP3B	GeneProduct	Entrez Gene	8940	417,376
+FAAP24	GeneProduct	Entrez Gene	91442	302,153	321,414
+TELO2	GeneProduct	Entrez Gene	9894	256,162

@@ -1,0 +1,80 @@
+TEXT	TYPE	DB	ID	X	Y
+alpha-Linolenic acid metabolism	mmu	KEGG	mmu00592
+Methyl jasmonate	Metabolite	KEGG Compound	C11512	556,755
+(+)-7-Isomethyljasmonate	Metabolite	KEGG Compound	C16318	460,755
+(-)-Jasmonic acid	Metabolite	KEGG Compound	C08491	556,700
+(+)-7-Isojasmonic acid	Metabolite	KEGG Compound	C16317	460,700
+(+)-7-Isojasmonic acid CoA	Metabolite	KEGG Compound	C16339	353,700
+3-Oxo-OPC4-CoA	Metabolite	KEGG Compound	C16338	245,700
+trans-2-Enoyl-OPC4-CoA	Metabolite	KEGG Compound	C16336	137,700
+OPC4-CoA	Metabolite	KEGG Compound	C16335	137,628
+3-Oxo-OPC6-CoA	Metabolite	KEGG Compound	C16334	245,628
+trans-2-Enoyl-OPC6-CoA	Metabolite	KEGG Compound	C16332	353,628
+OPC6-CoA	Metabolite	KEGG Compound	C16331	460,628
+3-Oxo-OPC8-CoA	Metabolite	KEGG Compound	C16330	556,628
+10-OPDA	Metabolite	KEGG Compound	C16325	461,376
+OPC8-CoA	Metabolite	KEGG Compound	C16327	644,556
+trans-2-Enoyl-OPC8-CoA	Metabolite	KEGG Compound	C16328	644,628
+Stearidonic acid	Metabolite	KEGG Compound	C16300	353,190
+Traumatin	Metabolite	KEGG Compound	C16309	556,484
+9(S)-HOT	Metabolite	KEGG Compound	C16326	353,252
+(9Z,15Z)-(13S)-12,13-Epoxyoctadeca-9,11,15-trienoic acid	Metabolite	KEGG Compound	C04672	353,556
+12-OPDA	Metabolite	KEGG Compound	C01226	460,556
+Etherolenic acid	Metabolite	KEGG Compound	C16319	461,509
+8-[(1S,2S)-3-Oxo-2-{(Z)-pent-2-enyl}cyclopentyl]octanoate	Metabolite	KEGG Compound	C04780	556,556
+12-Oxo-9(Z)-dodecenoic acid	Metabolite	KEGG Compound	C16311	461,484
+13(S)-HOT	Metabolite	KEGG Compound	C16316	353,431
+Acaa1a	GeneProduct	Entrez Gene	113868	505,628
+Acaa1b	GeneProduct	Entrez Gene	235674	505,628
+Acox1	GeneProduct	Entrez Gene	11430	644,590
+Acox3	GeneProduct	Entrez Gene	80911	644,590
+9-Oxononanoic acid	Metabolite	KEGG Compound	C16322	461,304
+Acox1	GeneProduct	Entrez Gene	11430	139,661
+Acox3	GeneProduct	Entrez Gene	80911	139,661
+Pla2g1b	GeneProduct	Entrez Gene	18778	221,148
+Pla2g2a	GeneProduct	Entrez Gene	18780	221,148
+Pla2g2c	GeneProduct	Entrez Gene	18781	221,148
+Pla2g2d	GeneProduct	Entrez Gene	18782	221,148
+Pla2g4a	GeneProduct	Entrez Gene	18783	221,148
+Pla2g5	GeneProduct	Entrez Gene	18784	221,148
+Pla2g4b	GeneProduct	Entrez Gene	211429	221,148
+Plaat3	GeneProduct	Entrez Gene	225845	221,148
+Pla2g4c	GeneProduct	Entrez Gene	232889	221,148
+Pla2g3	GeneProduct	Entrez Gene	237625	221,148
+Pla2g10	GeneProduct	Entrez Gene	26565	221,148
+Pla2g2e	GeneProduct	Entrez Gene	26970	221,148
+Pla2g2f	GeneProduct	Entrez Gene	26971	221,148
+Pla2g4f	GeneProduct	Entrez Gene	271844	221,148
+Pla2g4e	GeneProduct	Entrez Gene	329502	221,148
+Pla2g6	GeneProduct	Entrez Gene	53357	221,148
+Pla2g12a	GeneProduct	Entrez Gene	66350	221,148
+Plb1	GeneProduct	Entrez Gene	665270	221,148
+Pla2g12b	GeneProduct	Entrez Gene	69836	221,148
+Pla2g4d	GeneProduct	Entrez Gene	78390	221,148
+Fads2	GeneProduct	Entrez Gene	56473	299,190
+Plaat3	GeneProduct	Entrez Gene	225845	271,148
+Volicitin	Metabolite	KEGG Compound	C16345	68,230
+Acox1	GeneProduct	Entrez Gene	11430	403,628
+Acox3	GeneProduct	Entrez Gene	80911	403,628
+Phosphatidylcholine	Metabolite	KEGG Compound	C00157	246,118
+Norlinolenic acid	Metabolite	KEGG Compound	C16344	137,431
+3,6-Nonadienal	Metabolite	KEGG Compound	C16323	439,252
+9,10-EOT	Metabolite	KEGG Compound	C16324	353,376
+9(S)-HPOT	Metabolite	KEGG Compound	C16321	353,304
+2(R)-HOT	Metabolite	KEGG Compound	C16342	68,304
+2(R)-HPOT	Metabolite	KEGG Compound	C16341	137,304
+Traumatic acid	Metabolite	KEGG Compound	C16308	644,484
+Colnelenic acid	Metabolite	KEGG Compound	C16320	461,329
+(9Z,12Z,15Z)-Octadecatrienoic acid	Metabolite	KEGG Compound	C06427	246,190
+Acaa1a	GeneProduct	Entrez Gene	113868	299,701
+Acaa1b	GeneProduct	Entrez Gene	235674	299,701
+Heptadecatrienal	Metabolite	KEGG Compound	C16343	137,376
+17-Hydroxylinolenic acid	Metabolite	KEGG Compound	C16346	137,230
+3-Hexenal	Metabolite	KEGG Compound	C16310	435,421
+13(S)-HPOT	Metabolite	KEGG Compound	C04785	353,484
+3-Hexenol	Metabolite	KEGG Compound	C08492	545,421
+(3Z)-Hex-3-en-1-yl acetate	Metabolite	KEGG Compound	C19757	655,421
+9-Hydroxy-12-oxo-10(E),15(Z)-octadecadienoic acid	Metabolite	KEGG Compound	C21923	253,556
+Acaa1a	GeneProduct	Entrez Gene	113868	191,628
+Acaa1b	GeneProduct	Entrez Gene	235674	191,628
+9-Hydroxy-12-oxo-15(Z)-octadecenoic acid	Metabolite	KEGG Compound	C21924	162,556

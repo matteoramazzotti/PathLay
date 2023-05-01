@@ -1,0 +1,59 @@
+TEXT	TYPE	DB	ID	X	Y
+Autoimmune thyroid disease	hsa	KEGG	hsa05320
+LOC102723407	GeneProduct	Entrez Gene	102723407	849,603	849,396	962,687	978,337	962,593
+CGA	GeneProduct	Entrez Gene	1081	962,721
+CTLA4	GeneProduct	Entrez Gene	1493	276,188
+GZMB	GeneProduct	Entrez Gene	3002	992,268
+HLA-A	GeneProduct	Entrez Gene	3105	1029,177
+HLA-B	GeneProduct	Entrez Gene	3106	1029,177
+HLA-C	GeneProduct	Entrez Gene	3107	1029,177
+HLA-DMA	GeneProduct	Entrez Gene	3108	425,634	808,657	425,267	808,366	215,188
+HLA-DMB	GeneProduct	Entrez Gene	3109	425,634	808,657	425,267	808,366	215,188
+HLA-DOA	GeneProduct	Entrez Gene	3111	425,634	808,657	425,267	808,366	215,188
+HLA-DOB	GeneProduct	Entrez Gene	3112	425,634	808,657	425,267	808,366	215,188
+HLA-DPA1	GeneProduct	Entrez Gene	3113	425,634	808,657	425,267	808,366	215,188
+HLA-DPB1	GeneProduct	Entrez Gene	3115	425,634	808,657	425,267	808,366	215,188
+HLA-DQA1	GeneProduct	Entrez Gene	3117	425,634	808,657	425,267	808,366	215,188
+HLA-DQA2	GeneProduct	Entrez Gene	3118	425,634	808,657	425,267	808,366	215,188
+HLA-DQB1	GeneProduct	Entrez Gene	3119	425,634	808,657	425,267	808,366	215,188
+HLA-DRA	GeneProduct	Entrez Gene	3122	425,634	808,657	425,267	808,366	215,188
+HLA-DRB1	GeneProduct	Entrez Gene	3123	425,634	808,657	425,267	808,366	215,188
+HLA-DRB3	GeneProduct	Entrez Gene	3125	425,634	808,657	425,267	808,366	215,188
+HLA-DRB4	GeneProduct	Entrez Gene	3126	425,634	808,657	425,267	808,366	215,188
+HLA-DRB5	GeneProduct	Entrez Gene	3127	425,634	808,657	425,267	808,366	215,188
+HLA-E	GeneProduct	Entrez Gene	3133	1029,177
+HLA-F	GeneProduct	Entrez Gene	3134	1029,177
+HLA-G	GeneProduct	Entrez Gene	3135	1029,177
+IFNA1	GeneProduct	Entrez Gene	3439	329,135
+IFNA2	GeneProduct	Entrez Gene	3440	329,135
+IFNA4	GeneProduct	Entrez Gene	3441	329,135
+IFNA5	GeneProduct	Entrez Gene	3442	329,135
+IFNA6	GeneProduct	Entrez Gene	3443	329,135
+IFNA7	GeneProduct	Entrez Gene	3444	329,135
+IFNA8	GeneProduct	Entrez Gene	3445	329,135
+IFNA10	GeneProduct	Entrez Gene	3446	329,135
+IFNA13	GeneProduct	Entrez Gene	3447	329,135
+IFNA14	GeneProduct	Entrez Gene	3448	329,135
+IFNA16	GeneProduct	Entrez Gene	3449	329,135
+IFNA17	GeneProduct	Entrez Gene	3451	329,135
+IFNA21	GeneProduct	Entrez Gene	3452	329,135
+FAS	GeneProduct	Entrez Gene	355	1029,205
+IL2	GeneProduct	Entrez Gene	3558	790,196
+FASLG	GeneProduct	Entrez Gene	356	952,205
+IL4	GeneProduct	Entrez Gene	3565	770,263	770,702
+IL5	GeneProduct	Entrez Gene	3567	770,285	770,729
+IL10	GeneProduct	Entrez Gene	3586	770,753	770,308
+PRF1	GeneProduct	Entrez Gene	5551	992,243
+TG	GeneProduct	Entrez Gene	7038	240,439
+TPO	GeneProduct	Entrez Gene	7173	240,411
+TSHB	GeneProduct	Entrez Gene	7252	962,721
+TSHR	GeneProduct	Entrez Gene	7253	240,501	1034,593	1031,691
+CD28	GeneProduct	Entrez Gene	940	505,290	506,657
+CD80	GeneProduct	Entrez Gene	941	425,289
+CD86	GeneProduct	Entrez Gene	942	425,289	425,657
+CD40	GeneProduct	Entrez Gene	958	808,634	808,341
+CD40LG	GeneProduct	Entrez Gene	959	725,634	724,341
+Iodine	Metabolite	KEGG Compound	C01382	212,131
+Thyroxine	Metabolite	KEGG Compound	C01829	1201,606
+Triiodothyronine	Metabolite	KEGG Compound	C02465	1201,572
+	Metabolite	KEGG Compound	dr:D00636	260,131

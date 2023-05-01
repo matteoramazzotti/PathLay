@@ -1,0 +1,62 @@
+TEXT	TYPE	DB	ID	X	Y
+Nitrogen metabolism	mmu	KEGG	mmu00910
+Formate	Metabolite	KEGG Compound	C00058	713,158
+Formamide	Metabolite	KEGG Compound	C00488	640,102
+Nitric oxide	Metabolite	KEGG Compound	C00533	390,875
+Nitrogen	Metabolite	KEGG Compound	C00697	550,161
+Hydrazine	Metabolite	KEGG Compound	C05361	550,226
+Nitrous oxide	Metabolite	KEGG Compound	C00887	441,161
+Nitric oxide	Metabolite	KEGG Compound	C00533	332,161
+Nitrite	Metabolite	KEGG Compound	C00088	332,276
+Nitrate	Metabolite	KEGG Compound	C00244	168,276
+Ammonia	Metabolite	KEGG Compound	C00014	640,276
+Nitrile	Metabolite	KEGG Compound	C00726	640,402
+Cyanate	Metabolite	KEGG Compound	C01417	915,215
+Carbamate	Metabolite	KEGG Compound	C01563	803,215
+HCO3-	Metabolite	KEGG Compound	C00288	902,188
+CO2	Metabolite	KEGG Compound	C00011	761,188
+Car8	GeneProduct	Entrez Gene	12319	831,189
+Car1	GeneProduct	Entrez Gene	12346	831,189
+Car2	GeneProduct	Entrez Gene	12349	831,189
+Car3	GeneProduct	Entrez Gene	12350	831,189
+Car4	GeneProduct	Entrez Gene	12351	831,189
+Car5a	GeneProduct	Entrez Gene	12352	831,189
+Car6	GeneProduct	Entrez Gene	12353	831,189
+Car7	GeneProduct	Entrez Gene	12354	831,189
+Car9	GeneProduct	Entrez Gene	230099	831,189
+Car14	GeneProduct	Entrez Gene	23831	831,189
+Car5b	GeneProduct	Entrez Gene	56078	831,189
+Car13	GeneProduct	Entrez Gene	71934	831,189
+Car12	GeneProduct	Entrez Gene	76459	831,189
+Car15	GeneProduct	Entrez Gene	80733	831,189
+Hydroxylamine	Metabolite	KEGG Compound	C00192	499,356
+Carbamoyl phosphate	Metabolite	KEGG Compound	C00169	803,276
+Cps1	GeneProduct	Entrez Gene	227231	730,277
+Nitrate	Metabolite	KEGG Compound	C00244	50,276
+Nitrite	Metabolite	KEGG Compound	C00088	50,340
+Glul	GeneProduct	Entrez Gene	14645	688,357
+Nitroalkane	Metabolite	KEGG Compound	C06058	332,402
+L-Glutamine	Metabolite	KEGG Compound	C00064	739,356
+L-Glutamate	Metabolite	KEGG Compound	C00025	890,356
+Glud1	GeneProduct	Entrez Gene	14661	713,324
+Nitrate	Metabolite	KEGG Compound	C00244	166,515
+Nitrite	Metabolite	KEGG Compound	C00088	278,515
+Ammonia	Metabolite	KEGG Compound	C00014	950,515
+Nitrate	Metabolite	KEGG Compound	C00244	166,582
+Nitrite	Metabolite	KEGG Compound	C00088	278,582
+Nitrate	Metabolite	KEGG Compound	C00244	166,649
+Nitrite	Metabolite	KEGG Compound	C00088	278,649
+Nitrogen	Metabolite	KEGG Compound	C00697	614,649
+Nitrous oxide	Metabolite	KEGG Compound	C00887	502,649
+Nitric oxide	Metabolite	KEGG Compound	C00533	390,649
+Nitrogen	Metabolite	KEGG Compound	C00697	614,713
+Ammonia	Metabolite	KEGG Compound	C00014	950,713
+Ammonia	Metabolite	KEGG Compound	C00014	950,776
+Nitrite	Metabolite	KEGG Compound	C00088	278,776
+Nitrate	Metabolite	KEGG Compound	C00244	166,776
+Ammonia	Metabolite	KEGG Compound	C00014	950,582
+Hydroxylamine	Metabolite	KEGG Compound	C00192	726,776
+Ammonia	Metabolite	KEGG Compound	C00014	950,837
+Nitrogen	Metabolite	KEGG Compound	C00697	614,837
+Nitrite	Metabolite	KEGG Compound	C00088	278,875
+Hydrazine	Metabolite	KEGG Compound	C05361	838,837

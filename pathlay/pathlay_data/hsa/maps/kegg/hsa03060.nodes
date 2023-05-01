@@ -1,0 +1,25 @@
+TEXT	TYPE	DB	ID	X	Y
+Protein export	hsa	KEGG	hsa03060
+SEC61B	GeneProduct	Entrez Gene	10952	343,154
+SEC63	GeneProduct	Entrez Gene	11231	343,181
+IMMP1L	GeneProduct	Entrez Gene	196294	295,535
+SEC11A	GeneProduct	Entrez Gene	23478	432,513
+SEC61G	GeneProduct	Entrez Gene	23480	389,154
+SPCS1	GeneProduct	Entrez Gene	28972	295,513
+SEC61A1	GeneProduct	Entrez Gene	29927	297,154
+HSPA5	GeneProduct	Entrez Gene	3309	297,208
+OXA1L	GeneProduct	Entrez Gene	5018	105,196
+SEC61A2	GeneProduct	Entrez Gene	55176	297,154
+SRPRB	GeneProduct	Entrez Gene	58477	297,322
+SPCS3	GeneProduct	Entrez Gene	60559	386,513
+SRP9	GeneProduct	Entrez Gene	6726	297,257
+SRP14	GeneProduct	Entrez Gene	6727	297,274
+SRP19	GeneProduct	Entrez Gene	6728	395,257
+SRP54	GeneProduct	Entrez Gene	6729	395,274	105,257
+SRP68	GeneProduct	Entrez Gene	6730	346,274
+SRP72	GeneProduct	Entrez Gene	6731	346,257
+SRPRA	GeneProduct	Entrez Gene	6734	297,305
+SEC62	GeneProduct	Entrez Gene	7095	297,181
+IMMP2L	GeneProduct	Entrez Gene	83943	341,535
+SEC11C	GeneProduct	Entrez Gene	90701	432,513
+SPCS2	GeneProduct	Entrez Gene	9789	340,513

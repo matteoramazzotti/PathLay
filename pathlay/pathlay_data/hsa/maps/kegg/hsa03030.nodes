@@ -1,0 +1,38 @@
+TEXT	TYPE	DB	ID	X	Y
+DNA replication	hsa	KEGG	hsa03030
+RNASEH2A	GeneProduct	Entrez Gene	10535	1067,1174
+POLD3	GeneProduct	Entrez Gene	10714	1113,918
+DNA2	GeneProduct	Entrez Gene	1763	1003,1230	1003,753
+FEN1	GeneProduct	Entrez Gene	2237	1081,1231	1081,753
+POLA2	GeneProduct	Entrez Gene	23649	1067,862
+RNASEH1	GeneProduct	Entrez Gene	246243	1003,366	1158,679	1003,1174
+RPA4	GeneProduct	Entrez Gene	29935	1159,1048
+LIG1	GeneProduct	Entrez Gene	3978	1158,1231	1158,753
+MCM2	GeneProduct	Entrez Gene	4171	1022,1031
+MCM3	GeneProduct	Entrez Gene	4172	1068,1031
+MCM4	GeneProduct	Entrez Gene	4173	1022,1048
+MCM5	GeneProduct	Entrez Gene	4174	1068,1048
+MCM6	GeneProduct	Entrez Gene	4175	1022,1065
+MCM7	GeneProduct	Entrez Gene	4176	1068,1065
+PCNA	GeneProduct	Entrez Gene	5111	1003,1116	1003,679
+POLE3	GeneProduct	Entrez Gene	54107	1113,976
+POLA1	GeneProduct	Entrez Gene	5422	1021,862
+POLD1	GeneProduct	Entrez Gene	5424	1021,918
+POLD2	GeneProduct	Entrez Gene	5425	1067,918
+POLE	GeneProduct	Entrez Gene	5426	1021,976
+POLE2	GeneProduct	Entrez Gene	5427	1067,976
+PRIM1	GeneProduct	Entrez Gene	5557	1113,862
+PRIM2	GeneProduct	Entrez Gene	5558	1159,862
+POLE4	GeneProduct	Entrez Gene	56655	1159,976
+POLD4	GeneProduct	Entrez Gene	57804	1159,918
+RFC1	GeneProduct	Entrez Gene	5981	1067,1116
+RFC2	GeneProduct	Entrez Gene	5982	1113,1116
+RFC3	GeneProduct	Entrez Gene	5983	1159,1116
+RFC4	GeneProduct	Entrez Gene	5984	1113,1116
+RFC5	GeneProduct	Entrez Gene	5985	1159,1116
+RPA1	GeneProduct	Entrez Gene	6117	1159,1031	1158,609
+RPA2	GeneProduct	Entrez Gene	6118	1159,1048
+RPA3	GeneProduct	Entrez Gene	6119	1159,1065
+SSBP1	GeneProduct	Entrez Gene	6742	1158,309
+RNASEH2B	GeneProduct	Entrez Gene	79621	1113,1174
+RNASEH2C	GeneProduct	Entrez Gene	84153	1159,1174

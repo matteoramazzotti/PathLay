@@ -1,0 +1,20 @@
+TEXT	TYPE	DB	ID	X	Y
+D-Glutamine and D-glutamate metabolism	hsa	KEGG	hsa00471
+GLS2	GeneProduct	Entrez Gene	27165	297,170	171,170
+GLS	GeneProduct	Entrez Gene	2744	297,170	171,170
+GLUD1	GeneProduct	Entrez Gene	2746	194,256
+GLUD2	GeneProduct	Entrez Gene	2747	194,256
+DGLUCY	GeneProduct	Entrez Gene	80017	346,256
+L-Glutamate	Metabolite	KEGG Compound	C00025	196,209
+2-Oxoglutarate	Metabolite	KEGG Compound	C00026	196,304
+L-Glutamine	Metabolite	KEGG Compound	C00064	196,132
+D-Glutamate	Metabolite	KEGG Compound	C00217	345,209
+UDP-N-acetylmuramoyl-L-alanyl-D-glutamate	Metabolite	KEGG Compound	C00692	559,212
+D-Glutamine	Metabolite	KEGG Compound	C00819	345,132
+UDP-N-acetylmuramate	Metabolite	KEGG Compound	C01050	438,338
+UDP-N-acetylmuramoyl-L-alanine	Metabolite	KEGG Compound	C01212	438,272
+5-Oxo-D-proline	Metabolite	KEGG Compound	C02237	345,304
+D-Glutamyl-peptide	Metabolite	KEGG Compound	C02671	438,170
+5-D-Glutamyl-D-glutamyl-peptide	Metabolite	KEGG Compound	C03933	559,128
+Poly-gamma-D-glutamate	Metabolite	KEGG Compound	C05723	74,209
+UDP-N-acetyl-alpha-D-muramoyl-L-alanyl-L-glutamate	Metabolite	KEGG Compound	C22053	559,272

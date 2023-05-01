@@ -1,0 +1,142 @@
+TEXT	TYPE	DB	ID	X	Y
+Measles	hsa	KEGG	hsa05162
+AKT3	GeneProduct	Entrez Gene	10000	485,1477
+CDK2	GeneProduct	Entrez Gene	1017	485,1298
+CDK4	GeneProduct	Entrez Gene	1019	485,1298
+CDK6	GeneProduct	Entrez Gene	1021	485,1298
+CDKN1B	GeneProduct	Entrez Gene	1027	465,1237
+ADAR	GeneProduct	Entrez Gene	103	1016,679
+CLEC4M	GeneProduct	Entrez Gene	10332	275,232
+IRF9	GeneProduct	Entrez Gene	10379	732,687
+RACK1	GeneProduct	Entrez Gene	10399	314,670
+CHUK	GeneProduct	Entrez Gene	1147	683,375	768,597
+CSNK2A1	GeneProduct	Entrez Gene	1457	455,609
+CSNK2A2	GeneProduct	Entrez Gene	1459	455,609
+CSNK2B	GeneProduct	Entrez Gene	1460	455,609
+EIF2S1	GeneProduct	Entrez Gene	1965	750,889
+AKT1	GeneProduct	Entrez Gene	207	485,1477
+AKT2	GeneProduct	Entrez Gene	208	485,1477
+FCGR2B	GeneProduct	Entrez Gene	2213	275,1655
+TAB2	GeneProduct	Entrez Gene	23118	677,573
+FOS	GeneProduct	Entrez Gene	2353	840,546
+DDX58	GeneProduct	Entrez Gene	23586	461,310
+RCHY1	GeneProduct	Entrez Gene	25898	511,933
+EIF2AK1	GeneProduct	Entrez Gene	27102	634,889	1016,720
+BBC3	GeneProduct	Entrez Gene	27113	1016,967
+CSNK2A3	GeneProduct	Entrez Gene	283106	455,609
+TBK1	GeneProduct	Entrez Gene	29110	683,336
+GSK3B	GeneProduct	Entrez Gene	2932	576,1477
+CD209	GeneProduct	Entrez Gene	30835	275,232
+APAF1	GeneProduct	Entrez Gene	317	753,1131
+HSPA1A	GeneProduct	Entrez Gene	3303	732,758
+HSPA1B	GeneProduct	Entrez Gene	3304	732,758
+HSPA1L	GeneProduct	Entrez Gene	3305	732,758
+HSPA2	GeneProduct	Entrez Gene	3306	732,758
+HSPA6	GeneProduct	Entrez Gene	3310	732,758
+HSPA8	GeneProduct	Entrez Gene	3312	732,758
+IFNA1	GeneProduct	Entrez Gene	3439	1016,471	197,687
+IFNA2	GeneProduct	Entrez Gene	3440	1016,471	197,687
+IFNA4	GeneProduct	Entrez Gene	3441	1016,471	197,687
+IFNA5	GeneProduct	Entrez Gene	3442	1016,471	197,687
+IFNA6	GeneProduct	Entrez Gene	3443	1016,471	197,687
+IFNA7	GeneProduct	Entrez Gene	3444	1016,471	197,687
+IFNA8	GeneProduct	Entrez Gene	3445	1016,471	197,687
+IFNA10	GeneProduct	Entrez Gene	3446	1016,471	197,687
+IFNA13	GeneProduct	Entrez Gene	3447	1016,471	197,687
+IFNA14	GeneProduct	Entrez Gene	3448	1016,471	197,687
+IFNA16	GeneProduct	Entrez Gene	3449	1016,471	197,687
+IFNA17	GeneProduct	Entrez Gene	3451	1016,471	197,687
+IFNA21	GeneProduct	Entrez Gene	3452	1016,471	197,687
+IFNAR1	GeneProduct	Entrez Gene	3454	275,687
+IFNAR2	GeneProduct	Entrez Gene	3455	275,687
+IFNB1	GeneProduct	Entrez Gene	3456	1016,492	197,687
+FAS	GeneProduct	Entrez Gene	355	275,1033
+IKBKB	GeneProduct	Entrez Gene	3551	683,375	768,597
+IL1A	GeneProduct	Entrez Gene	3552	1016,529
+IL1B	GeneProduct	Entrez Gene	3553	1016,529
+IL2	GeneProduct	Entrez Gene	3558	197,1494
+IL2RA	GeneProduct	Entrez Gene	3559	275,1494
+FASLG	GeneProduct	Entrez Gene	356	197,1033
+IL2RB	GeneProduct	Entrez Gene	3560	275,1494
+IL2RG	GeneProduct	Entrez Gene	3561	275,1494
+IL6	GeneProduct	Entrez Gene	3569	1016,550
+IL12A	GeneProduct	Entrez Gene	3592	1016,571	632,1622
+IL12B	GeneProduct	Entrez Gene	3593	1016,571	632,1622
+IRAK1	GeneProduct	Entrez Gene	3654	611,481	530,564
+IRF3	GeneProduct	Entrez Gene	3661	761,327
+IRF7	GeneProduct	Entrez Gene	3665	683,481
+JAK1	GeneProduct	Entrez Gene	3716	372,687	386,1510
+JAK3	GeneProduct	Entrez Gene	3718	386,1510
+JUN	GeneProduct	Entrez Gene	3725	840,546
+CD46	GeneProduct	Entrez Gene	4179	275,169
+EIF2AK4	GeneProduct	Entrez Gene	440275	634,889	1016,720
+MSN	GeneProduct	Entrez Gene	4478	321,160
+MX1	GeneProduct	Entrez Gene	4599	1016,699
+MX2	GeneProduct	Entrez Gene	4600	1016,699
+MYD88	GeneProduct	Entrez Gene	4615	543,481	455,564
+NFKB1	GeneProduct	Entrez Gene	4790	840,633	760,412
+NFKBIA	GeneProduct	Entrez Gene	4792	840,597	761,376
+NFKBIB	GeneProduct	Entrez Gene	4793	840,597	761,376
+OAS1	GeneProduct	Entrez Gene	4938	1016,659
+OAS2	GeneProduct	Entrez Gene	4939	1016,659
+OAS3	GeneProduct	Entrez Gene	4940	1016,659
+IRAK4	GeneProduct	Entrez Gene	51135	611,481	530,564
+RAB9B	GeneProduct	Entrez Gene	51209	329,869
+TLR7	GeneProduct	Entrez Gene	51284	473,481
+PIK3CA	GeneProduct	Entrez Gene	5290	386,1477
+PIK3CB	GeneProduct	Entrez Gene	5291	386,1477
+PIK3CD	GeneProduct	Entrez Gene	5293	386,1477
+PIK3R1	GeneProduct	Entrez Gene	5295	386,1477
+PIK3R2	GeneProduct	Entrez Gene	5296	386,1477
+TLR9	GeneProduct	Entrez Gene	54106	473,481
+CYCS	GeneProduct	Entrez Gene	54205	753,1101
+MAPK8	GeneProduct	Entrez Gene	5599	768,546
+MAPK9	GeneProduct	Entrez Gene	5601	768,546
+MAPK10	GeneProduct	Entrez Gene	5602	768,546
+EIF2AK2	GeneProduct	Entrez Gene	5610	634,889	1016,720
+BAD	GeneProduct	Entrez Gene	572	548,1147
+MAVS	GeneProduct	Entrez Gene	57506	537,327
+BAK1	GeneProduct	Entrez Gene	578	637,1112
+BAX	GeneProduct	Entrez Gene	581	637,1090
+CCND1	GeneProduct	Entrez Gene	595	485,1281
+BCL2	GeneProduct	Entrez Gene	596	637,1140
+RELA	GeneProduct	Entrez Gene	5970	840,633	760,412
+BCL2L1	GeneProduct	Entrez Gene	598	637,1162
+BID	GeneProduct	Entrez Gene	637	555,1101
+IFIH1	GeneProduct	Entrez Gene	64135	461,345
+SLAMF1	GeneProduct	Entrez Gene	6504	275,190	275,1594
+STAT1	GeneProduct	Entrez Gene	6772	487,687
+STAT2	GeneProduct	Entrez Gene	6773	487,687
+STAT3	GeneProduct	Entrez Gene	6774	485,1510
+STAT5A	GeneProduct	Entrez Gene	6776	485,1510
+STAT5B	GeneProduct	Entrez Gene	6777	485,1510
+MAP3K7	GeneProduct	Entrez Gene	6885	677,556
+TLR2	GeneProduct	Entrez Gene	7097	275,564
+TLR4	GeneProduct	Entrez Gene	7099	275,564
+TNFAIP3	GeneProduct	Entrez Gene	7128	604,609
+TP53	GeneProduct	Entrez Gene	7157	634,933
+TP73	GeneProduct	Entrez Gene	7161	634,967
+TRAF3	GeneProduct	Entrez Gene	7187	610,327
+TRAF6	GeneProduct	Entrez Gene	7189	604,564
+TYK2	GeneProduct	Entrez Gene	7297	372,687
+CASP3	GeneProduct	Entrez Gene	836	932,1101
+CASP8	GeneProduct	Entrez Gene	841	482,1033
+CASP9	GeneProduct	Entrez Gene	842	856,1101
+PIK3R3	GeneProduct	Entrez Gene	8503	386,1477
+IKBKG	GeneProduct	Entrez Gene	8517	683,375	768,597
+EIF3H	GeneProduct	Entrez Gene	8667	804,858
+CBLB	GeneProduct	Entrez Gene	868	386,1438
+TRADD	GeneProduct	Entrez Gene	8717	320,1055
+FADD	GeneProduct	Entrez Gene	8772	390,1033
+CCND2	GeneProduct	Entrez Gene	894	485,1281
+CCND3	GeneProduct	Entrez Gene	896	485,1281
+CCNE1	GeneProduct	Entrez Gene	898	485,1281
+CCNE2	GeneProduct	Entrez Gene	9134	485,1281
+CD3D	GeneProduct	Entrez Gene	915	275,1455
+CD3E	GeneProduct	Entrez Gene	916	275,1455
+CD3G	GeneProduct	Entrez Gene	917	275,1455
+RAB9A	GeneProduct	Entrez Gene	9367	329,869
+CD28	GeneProduct	Entrez Gene	940	275,1474
+EIF2AK3	GeneProduct	Entrez Gene	9451	634,889	1016,720
+IKBKE	GeneProduct	Entrez Gene	9641	683,319
+Phosphatidylinositol-3,4,5-trisphosphate	Metabolite	KEGG Compound	C05981	435,1476

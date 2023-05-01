@@ -1,0 +1,37 @@
+TEXT	TYPE	DB	ID	X	Y
+Sulfur relay system	mmu	KEGG	mmu04122
+L-Cysteine	Metabolite	KEGG Compound	C00097	184,269
+Nfs1	GeneProduct	Entrez Gene	18041	294,592
+tRNA uridine	Metabolite	KEGG Compound	C00868	461,456
+tRNA containing 2-thiouridine	Metabolite	KEGG Compound	C17322	504,467
+tRNA uridine	Metabolite	KEGG Compound	C00868	462,654
+tRNA containing 2-thiouridine	Metabolite	KEGG Compound	C17322	504,662
+L-Alanine	Metabolite	KEGG Compound	C00041	217,270
+Nfs1	GeneProduct	Entrez Gene	18041	818,683
+Nfs1	GeneProduct	Entrez Gene	18041	818,552
+Mocs2	GeneProduct	Entrez Gene	17434	888,588
+Mocs3	GeneProduct	Entrez Gene	69372	294,471
+Thiamine	Metabolite	KEGG Compound	C00378	1037,756
+Molybdopterin	Metabolite	KEGG Compound	C05924	1039,588
+Precursor Z	Metabolite	KEGG Compound	C18239	986,570
+GTP	Metabolite	KEGG Compound	C00044	858,568
+S-Adenosyl-L-methionine	Metabolite	KEGG Compound	C00019	882,554
+Molybdoenzyme molybdenum cofactor	Metabolite	KEGG Compound	C18237	1182,585
+Nfs1	GeneProduct	Entrez Gene	18041	818,435
+Mocs2	GeneProduct	Entrez Gene	17434	888,472
+Urm1	GeneProduct	Entrez Gene	68205	200,471
+Mocs3	GeneProduct	Entrez Gene	69372	818,471
+Molybdopterin	Metabolite	KEGG Compound	C05924	1039,472
+Precursor Z	Metabolite	KEGG Compound	C18239	987,455
+GTP	Metabolite	KEGG Compound	C00044	858,452
+S-Adenosyl-L-methionine	Metabolite	KEGG Compound	C00019	880,438
+Molybdoenzyme molybdenum cofactor	Metabolite	KEGG Compound	C18237	1182,470
+L-Cysteine	Metabolite	KEGG Compound	C00097	761,272
+L-Alanine	Metabolite	KEGG Compound	C00041	794,273
+Nfs1	GeneProduct	Entrez Gene	18041	293,398
+L-Cysteine	Metabolite	KEGG Compound	C00097	1037,893
+O-Acetyl-L-serine	Metabolite	KEGG Compound	C00979	920,878
+Ctu2	GeneProduct	Entrez Gene	66965	385,457
+Ctu1	GeneProduct	Entrez Gene	233189	385,440
+Tst	GeneProduct	Entrez Gene	22117	292,434
+Mpst	GeneProduct	Entrez Gene	246221	292,434

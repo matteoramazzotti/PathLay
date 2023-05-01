@@ -1,0 +1,6 @@
+TEXT	TYPE	DB	ID	X	Y
+Virion - Adenovirus	mmu	KEGG	mmu03267
+Cxadr	GeneProduct	Entrez Gene	13052	95,519
+Cd80	GeneProduct	Entrez Gene	12519	204,519
+Cd86	GeneProduct	Entrez Gene	12524	258,519
+Cd46	GeneProduct	Entrez Gene	17221	149,519

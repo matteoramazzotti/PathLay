@@ -1,0 +1,85 @@
+TEXT	TYPE	DB	ID	X	Y
+Leishmaniasis	hsa	KEGG	hsa05140
+LOC102723407	GeneProduct	Entrez Gene	102723407	182,466
+TAB1	GeneProduct	Entrez Gene	10454	612,165
+CR1	GeneProduct	Entrez Gene	1378	250,406
+CR1L	GeneProduct	Entrez Gene	1379	250,406
+MAPK14	GeneProduct	Entrez Gene	1432	598,749
+CYBA	GeneProduct	Entrez Gene	1535	678,528
+CYBB	GeneProduct	Entrez Gene	1536	632,528
+EEF1A1	GeneProduct	Entrez Gene	1915	376,682
+EEF1A2	GeneProduct	Entrez Gene	1917	376,682
+ELK1	GeneProduct	Entrez Gene	2002	801,666
+FCGR1A	GeneProduct	Entrez Gene	2209	250,466
+FCGR2A	GeneProduct	Entrez Gene	2212	250,466
+FCGR3A	GeneProduct	Entrez Gene	2214	250,466
+FCGR3B	GeneProduct	Entrez Gene	2215	250,466
+TAB2	GeneProduct	Entrez Gene	23118	612,165
+FOS	GeneProduct	Entrez Gene	2353	940,668
+HLA-DMA	GeneProduct	Entrez Gene	3108	940,822
+HLA-DMB	GeneProduct	Entrez Gene	3109	940,822
+HLA-DOA	GeneProduct	Entrez Gene	3111	940,822
+HLA-DOB	GeneProduct	Entrez Gene	3112	940,822
+HLA-DPA1	GeneProduct	Entrez Gene	3113	940,822
+HLA-DPB1	GeneProduct	Entrez Gene	3115	940,822
+HLA-DQA1	GeneProduct	Entrez Gene	3117	940,822
+HLA-DQA2	GeneProduct	Entrez Gene	3118	940,822
+HLA-DQB1	GeneProduct	Entrez Gene	3119	940,822
+HLA-DRA	GeneProduct	Entrez Gene	3122	940,822
+HLA-DRB1	GeneProduct	Entrez Gene	3123	940,822
+HLA-DRB3	GeneProduct	Entrez Gene	3125	940,822
+HLA-DRB4	GeneProduct	Entrez Gene	3126	940,822
+HLA-DRB5	GeneProduct	Entrez Gene	3127	940,822
+IFNG	GeneProduct	Entrez Gene	3458	191,817
+IFNGR1	GeneProduct	Entrez Gene	3459	250,809
+IFNGR2	GeneProduct	Entrez Gene	3460	250,826
+IL1A	GeneProduct	Entrez Gene	3552	940,141
+IL1B	GeneProduct	Entrez Gene	3553	940,160
+IL4	GeneProduct	Entrez Gene	3565	940,231
+IL10	GeneProduct	Entrez Gene	3586	940,284
+IL12A	GeneProduct	Entrez Gene	3592	940,180	940,771
+IL12B	GeneProduct	Entrez Gene	3593	940,180	940,771
+IRAK1	GeneProduct	Entrez Gene	3654	438,156
+ITGA4	GeneProduct	Entrez Gene	3676	250,496
+ITGAM	GeneProduct	Entrez Gene	3684	250,428
+ITGB1	GeneProduct	Entrez Gene	3688	250,496
+ITGB2	GeneProduct	Entrez Gene	3689	250,428
+JAK1	GeneProduct	Entrez Gene	3716	326,818
+JAK2	GeneProduct	Entrez Gene	3717	326,818
+JUN	GeneProduct	Entrez Gene	3725	801,707
+MYD88	GeneProduct	Entrez Gene	4615	351,156
+NCF2	GeneProduct	Entrez Gene	4688	678,580
+NCF4	GeneProduct	Entrez Gene	4689	656,597
+NFKB1	GeneProduct	Entrez Gene	4790	700,192
+NFKBIA	GeneProduct	Entrez Gene	4792	700,156
+NFKBIB	GeneProduct	Entrez Gene	4793	700,156
+NOS2	GeneProduct	Entrez Gene	4843	373,237	940,720
+IRAK4	GeneProduct	Entrez Gene	51135	438,156
+PRKCB	GeneProduct	Entrez Gene	5579	527,580
+MAPK1	GeneProduct	Entrez Gene	5594	597,677
+MAPK3	GeneProduct	Entrez Gene	5595	597,677
+MAPK11	GeneProduct	Entrez Gene	5600	598,749
+MAPK13	GeneProduct	Entrez Gene	5603	598,749
+PTGS2	GeneProduct	Entrez Gene	5743	466,343
+PTPN6	GeneProduct	Entrez Gene	5777	376,718
+RELA	GeneProduct	Entrez Gene	5970	700,192
+MAPK12	GeneProduct	Entrez Gene	6300	598,749
+MARCKSL1	GeneProduct	Entrez Gene	65108	940,874
+NCF1	GeneProduct	Entrez Gene	653361	632,580
+STAT1	GeneProduct	Entrez Gene	6772	597,818
+MAP3K7	GeneProduct	Entrez Gene	6885	612,148
+TGFB1	GeneProduct	Entrez Gene	7040	940,303
+TGFB2	GeneProduct	Entrez Gene	7042	940,303
+TGFB3	GeneProduct	Entrez Gene	7043	940,303
+TLR2	GeneProduct	Entrez Gene	7097	250,156
+TLR4	GeneProduct	Entrez Gene	7099	250,156
+TNF	GeneProduct	Entrez Gene	7124	940,200
+C3	GeneProduct	Entrez Gene	718	182,406	182,428
+TRAF6	GeneProduct	Entrez Gene	7189	525,156
+FCGR2C	GeneProduct	Entrez Gene	9103	250,466
+Calcium cation	Metabolite	KEGG Compound	C00076	479,567
+N-Acylsphingosine	Metabolite	KEGG Compound	C00195	487,611
+Arachidonate	Metabolite	KEGG Compound	C00219	422,330
+Nitric oxide	Metabolite	KEGG Compound	C00533	456,237
+Prostaglandin E2	Metabolite	KEGG Compound	C00584	513,330
+Phosphatidylserine	Metabolite	KEGG Compound	C02737	169,292

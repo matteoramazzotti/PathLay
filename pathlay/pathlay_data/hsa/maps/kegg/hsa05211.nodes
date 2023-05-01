@@ -1,0 +1,74 @@
+TEXT	TYPE	DB	ID	X	Y
+Renal cell carcinoma	hsa	KEGG	hsa05211
+AKT3	GeneProduct	Entrez Gene	10000	838,330
+CDKN1A	GeneProduct	Entrez Gene	1026	1022,511
+PAK4	GeneProduct	Entrez Gene	10298	657,466
+BUB1B-PAK6	GeneProduct	Entrez Gene	106821730	657,466
+EGLN2	GeneProduct	Entrez Gene	112398	416,708	354,232
+EGLN3	GeneProduct	Entrez Gene	112399	416,708	354,232
+CREBBP	GeneProduct	Entrez Gene	1387	699,579	697,98
+CRK	GeneProduct	Entrez Gene	1398	535,359
+CRKL	GeneProduct	Entrez Gene	1399	535,359
+FLCN	GeneProduct	Entrez Gene	201163	326,861
+EP300	GeneProduct	Entrez Gene	2033	699,579	697,98
+EPAS1	GeneProduct	Entrez Gene	2034	296,632	284,154
+AKT1	GeneProduct	Entrez Gene	207	838,330
+AKT2	GeneProduct	Entrez Gene	208	838,330
+ETS1	GeneProduct	Entrez Gene	2113	888,413
+FH	GeneProduct	Entrez Gene	2271	299,729
+GAB1	GeneProduct	Entrez Gene	2549	330,330
+GRB2	GeneProduct	Entrez Gene	2885	330,424
+RAPGEF1	GeneProduct	Entrez Gene	2889	620,358
+HGF	GeneProduct	Entrez Gene	3082	151,376
+HIF1A	GeneProduct	Entrez Gene	3091	296,632	284,154
+HRAS	GeneProduct	Entrez Gene	3265	495,425
+ARAF	GeneProduct	Entrez Gene	369	579,424
+JUN	GeneProduct	Entrez Gene	3725	888,435
+KRAS	GeneProduct	Entrez Gene	3845	495,425
+ARNT	GeneProduct	Entrez Gene	405	676,640	676,160
+MET	GeneProduct	Entrez Gene	4233	233,377
+NRAS	GeneProduct	Entrez Gene	4893	495,425
+PAK1	GeneProduct	Entrez Gene	5058	657,466
+PAK2	GeneProduct	Entrez Gene	5062	657,466
+PAK3	GeneProduct	Entrez Gene	5063	657,466
+PDGFB	GeneProduct	Entrez Gene	5155	800,654	800,162
+PIK3CA	GeneProduct	Entrez Gene	5290	707,330
+PIK3CB	GeneProduct	Entrez Gene	5291	707,330
+PIK3CD	GeneProduct	Entrez Gene	5293	707,330
+PIK3R1	GeneProduct	Entrez Gene	5295	707,330
+PIK3R2	GeneProduct	Entrez Gene	5296	707,330
+EGLN1	GeneProduct	Entrez Gene	54583	416,708	354,232
+PRCC	GeneProduct	Entrez Gene	5546	854,511
+MAPK1	GeneProduct	Entrez Gene	5594	743,424
+MAPK3	GeneProduct	Entrez Gene	5595	743,424
+MAP2K1	GeneProduct	Entrez Gene	5604	661,424
+MAP2K2	GeneProduct	Entrez Gene	5605	661,424
+PAK6	GeneProduct	Entrez Gene	56924	657,466
+PAK5	GeneProduct	Entrez Gene	57144	657,466
+BAD	GeneProduct	Entrez Gene	572	910,330
+PTPN11	GeneProduct	Entrez Gene	5781	533,389
+RAC1	GeneProduct	Entrez Gene	5879	580,455
+RAF1	GeneProduct	Entrez Gene	5894	579,424
+RAP1A	GeneProduct	Entrez Gene	5906	707,358
+RAP1B	GeneProduct	Entrez Gene	5908	707,358
+SLC2A1	GeneProduct	Entrez Gene	6513	800,575	800,83
+SOS1	GeneProduct	Entrez Gene	6654	413,424
+SOS2	GeneProduct	Entrez Gene	6655	413,424
+BRAF	GeneProduct	Entrez Gene	673	579,424
+ELOC	GeneProduct	Entrez Gene	6921	498,716	434,238
+ELOB	GeneProduct	Entrez Gene	6923	498,733	434,255
+TFE3	GeneProduct	Entrez Gene	7030	909,511
+TGFA	GeneProduct	Entrez Gene	7039	800,680	800,188
+TGFB1	GeneProduct	Entrez Gene	7040	800,628	800,136
+TGFB2	GeneProduct	Entrez Gene	7042	800,628	800,136
+TGFB3	GeneProduct	Entrez Gene	7043	800,628	800,136
+VEGFA	GeneProduct	Entrez Gene	7422	800,602	800,110
+VHL	GeneProduct	Entrez Gene	7428	498,699	434,221
+CUL2	GeneProduct	Entrez Gene	8453	544,716	480,238
+PIK3R3	GeneProduct	Entrez Gene	8503	707,330
+ARNT2	GeneProduct	Entrez Gene	9915	676,640	676,160
+RBX1	GeneProduct	Entrez Gene	9978	544,699	480,221
+CDC42	GeneProduct	Entrez Gene	998	580,478
+Oxygen	Metabolite	KEGG Compound	C00007	449,684	386,211
+Fumarate	Metabolite	KEGG Compound	C00122	334,708
+(S)-Malate	Metabolite	KEGG Compound	C00149	334,753

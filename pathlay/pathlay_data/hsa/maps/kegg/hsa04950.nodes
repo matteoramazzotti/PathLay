@@ -1,0 +1,28 @@
+TEXT	TYPE	DB	ID	X	Y
+Maturity onset diabetes of the young	hsa	KEGG	hsa04950
+BHLHA15	GeneProduct	Entrez Gene	168620	102,400
+RFX6	GeneProduct	Entrez Gene	222546	644,463
+NR5A2	GeneProduct	Entrez Gene	2494	442,248
+GCK	GeneProduct	Entrez Gene	2645	580,853
+HHEX	GeneProduct	Entrez Gene	3087	459,110
+MNX1	GeneProduct	Entrez Gene	3110	508,110
+FOXA2	GeneProduct	Entrez Gene	3170	400,669
+FOXA3	GeneProduct	Entrez Gene	3171	383,807
+HNF4A	GeneProduct	Entrez Gene	3172	442,761
+HNF4G	GeneProduct	Entrez Gene	3174	335,807
+ONECUT1	GeneProduct	Entrez Gene	3175	400,353	400,156
+HES1	GeneProduct	Entrez Gene	3280	484,353	102,381
+IAPP	GeneProduct	Entrez Gene	3375	629,853
+INS	GeneProduct	Entrez Gene	3630	524,853
+PDX1	GeneProduct	Entrez Gene	3651	442,715	442,202	212,478
+MAFA	GeneProduct	Entrez Gene	389692	457,669
+NEUROD1	GeneProduct	Entrez Gene	4760	596,463	629,761
+NKX2-2	GeneProduct	Entrez Gene	4821	580,761	442,463
+NKX6-1	GeneProduct	Entrez Gene	4825	276,761	442,555
+NEUROG3	GeneProduct	Entrez Gene	50674	442,399
+PAX4	GeneProduct	Entrez Gene	5078	548,463
+PAX6	GeneProduct	Entrez Gene	5080	156,478	506,669	500,463
+PKLR	GeneProduct	Entrez Gene	5313	417,853
+SLC2A2	GeneProduct	Entrez Gene	6514	465,853
+HNF1A	GeneProduct	Entrez Gene	6927	359,761
+HNF1B	GeneProduct	Entrez Gene	6928	359,399

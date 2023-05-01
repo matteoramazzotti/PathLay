@@ -1,0 +1,57 @@
+TEXT	TYPE	DB	ID	X	Y
+Malaria	hsa	KEGG	hsa05144
+KLRC4-KLRK1	GeneProduct	Entrez Gene	100528032	1016,441	1016,568
+COMP	GeneProduct	Entrez Gene	1311	1423,743
+CR1	GeneProduct	Entrez Gene	1378	1073,874
+CR1L	GeneProduct	Entrez Gene	1379	1073,874
+CSF3	GeneProduct	Entrez Gene	1440	1189,335
+KLRK1	GeneProduct	Entrez Gene	22914	1016,441	1016,568
+ACKR1	GeneProduct	Entrez Gene	2532	721,651
+GYPA	GeneProduct	Entrez Gene	2993	721,670
+GYPB	GeneProduct	Entrez Gene	2994	721,670
+GYPC	GeneProduct	Entrez Gene	2995	721,689
+HBA1	GeneProduct	Entrez Gene	3039	825,262
+HBA2	GeneProduct	Entrez Gene	3040	825,262
+HBB	GeneProduct	Entrez Gene	3043	825,262
+HGF	GeneProduct	Entrez Gene	3082	479,442
+ICAM1	GeneProduct	Entrez Gene	3383	1423,913
+IFNG	GeneProduct	Entrez Gene	3458	1189,416
+IL1B	GeneProduct	Entrez Gene	3553	1189,365
+IL6	GeneProduct	Entrez Gene	3569	1189,297
+CXCL8	GeneProduct	Entrez Gene	3576	1189,278
+IL10	GeneProduct	Entrez Gene	3586	1189,217
+IL12A	GeneProduct	Entrez Gene	3592	1031,349
+IL18	GeneProduct	Entrez Gene	3606	1031,368
+ITGAL	GeneProduct	Entrez Gene	3683	1307,942	1307,1048
+ITGB2	GeneProduct	Entrez Gene	3689	1307,942	1307,1048
+KLRB1	GeneProduct	Entrez Gene	3820	1016,441	1016,568
+LRP1	GeneProduct	Entrez Gene	4035	540,395
+MET	GeneProduct	Entrez Gene	4233	540,433
+MYD88	GeneProduct	Entrez Gene	4615	1013,278
+PECAM1	GeneProduct	Entrez Gene	5175	1423,665
+TLR9	GeneProduct	Entrez Gene	54106	956,262
+CCL2	GeneProduct	Entrez Gene	6347	1189,316
+SDC1	GeneProduct	Entrez Gene	6382	540,376
+SDC2	GeneProduct	Entrez Gene	6383	540,376
+SELE	GeneProduct	Entrez Gene	6401	1423,762
+SELP	GeneProduct	Entrez Gene	6403	1307,980
+TGFB1	GeneProduct	Entrez Gene	7040	1189,236
+TGFB2	GeneProduct	Entrez Gene	7042	1189,236
+TGFB3	GeneProduct	Entrez Gene	7043	1189,236
+THBS1	GeneProduct	Entrez Gene	7057	1423,743
+THBS2	GeneProduct	Entrez Gene	7058	1423,743
+THBS3	GeneProduct	Entrez Gene	7059	1423,743
+THBS4	GeneProduct	Entrez Gene	7060	1423,743
+TLR2	GeneProduct	Entrez Gene	7097	956,294
+TLR4	GeneProduct	Entrez Gene	7099	956,294
+TNF	GeneProduct	Entrez Gene	7124	1189,385
+VCAM1	GeneProduct	Entrez Gene	7412	1423,724
+CD36	GeneProduct	Entrez Gene	948	1230,933	1073,854	1423,684
+CD40	GeneProduct	Entrez Gene	958	1423,961
+CD40LG	GeneProduct	Entrez Gene	959	1307,961
+CD81	GeneProduct	Entrez Gene	975	540,414
+Nitric oxide	Metabolite	KEGG Compound	C00533	1542,539
+Chondroitin 4-sulfate	Metabolite	KEGG Compound	C00634	1437,810
+	Metabolite	KEGG Compound	gl:G00052	1066,832
+	Metabolite	KEGG Compound	gl:G00054	1066,832
+	Metabolite	KEGG Compound	gl:G10505	1437,827

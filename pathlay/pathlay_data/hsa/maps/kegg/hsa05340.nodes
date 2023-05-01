@@ -1,0 +1,40 @@
+TEXT	TYPE	DB	ID	X	Y
+Primary immunodeficiency	hsa	KEGG	hsa05340
+ADA	GeneProduct	Entrez Gene	100	337,310
+LOC102723407	GeneProduct	Entrez Gene	102723407	741,542	949,590	1120,541	303,653	904,542	417,545	576,543
+TNFRSF13C	GeneProduct	Entrez Gene	115650	1217,654
+TNFRSF13B	GeneProduct	Entrez Gene	23495	1217,677
+BLNK	GeneProduct	Entrez Gene	29760	356,678
+ICOS	GeneProduct	Entrez Gene	29851	1165,654
+AIRE	GeneProduct	Entrez Gene	326	874,222
+IGLL1	GeneProduct	Entrez Gene	3543	356,654
+IL2RG	GeneProduct	Entrez Gene	3561	337,339
+IL7R	GeneProduct	Entrez Gene	3575	390,310
+JAK3	GeneProduct	Entrez Gene	3718	390,339
+LCK	GeneProduct	Entrez Gene	3932	996,76
+CIITA	GeneProduct	Entrez Gene	4261	977,307
+AICDA	GeneProduct	Entrez Gene	57379	1051,677
+PTPRC	GeneProduct	Entrez Gene	5788	654,222
+RAG1	GeneProduct	Entrez Gene	5896	390,222	303,504
+RAG2	GeneProduct	Entrez Gene	5897	443,222	356,504
+RFX5	GeneProduct	Entrez Gene	5993	924,285
+RFXAP	GeneProduct	Entrez Gene	5994	977,285
+DCLRE1C	GeneProduct	Entrez Gene	64421	338,222
+TAP1	GeneProduct	Entrez Gene	6890	944,45
+TAP2	GeneProduct	Entrez Gene	6891	996,45
+BTK	GeneProduct	Entrez Gene	695	492,654
+UNG	GeneProduct	Entrez Gene	7374	998,677
+ZAP70	GeneProduct	Entrez Gene	7535	969,100
+ORAI1	GeneProduct	Entrez Gene	84876	1183,53	1183,310
+IKBKG	GeneProduct	Entrez Gene	8517	1025,521
+RFXANK	GeneProduct	Entrez Gene	8625	924,307
+CD3D	GeneProduct	Entrez Gene	915	390,245
+CD3E	GeneProduct	Entrez Gene	916	443,245
+CD4	GeneProduct	Entrez Gene	920	783,129	1096,229
+CD8A	GeneProduct	Entrez Gene	925	783,213	1097,55	944,76
+CD8B	GeneProduct	Entrez Gene	926	783,213	1097,55
+CD8B2	GeneProduct	Entrez Gene	927	783,213	1097,55
+CD19	GeneProduct	Entrez Gene	930	1165,677
+CD40	GeneProduct	Entrez Gene	958	998,654
+CD40LG	GeneProduct	Entrez Gene	959	1051,654
+CD79A	GeneProduct	Entrez Gene	973	303,678

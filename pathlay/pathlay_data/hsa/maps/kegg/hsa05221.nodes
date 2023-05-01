@@ -1,0 +1,70 @@
+TEXT	TYPE	DB	ID	X	Y
+Acute myeloid leukemia	hsa	KEGG	hsa05221
+AKT3	GeneProduct	Entrez Gene	10000	637,160
+CEBPA	GeneProduct	Entrez Gene	1050	1033,473	1033,442
+CEBPE	GeneProduct	Entrez Gene	1053	1163,593
+PIM2	GeneProduct	Entrez Gene	11040	1057,345
+CHUK	GeneProduct	Entrez Gene	1147	740,117
+CSF1R	GeneProduct	Entrez Gene	1436	1163,388	1163,508
+CSF2	GeneProduct	Entrez Gene	1437	1163,410
+DUSP6	GeneProduct	Entrez Gene	1848	1163,693
+EIF4EBP1	GeneProduct	Entrez Gene	1978	781,192
+AKT1	GeneProduct	Entrez Gene	207	637,160
+AKT2	GeneProduct	Entrez Gene	208	637,160
+FCGR1A	GeneProduct	Entrez Gene	2209	1163,563
+FLT3	GeneProduct	Entrez Gene	2322	275,281
+MTOR	GeneProduct	Entrez Gene	2475	709,205
+GRB2	GeneProduct	Entrez Gene	2885	360,265
+HRAS	GeneProduct	Entrez Gene	3265	497,265
+IKBKB	GeneProduct	Entrez Gene	3551	740,117
+IL3	GeneProduct	Entrez Gene	3562	1216,410
+ITGAM	GeneProduct	Entrez Gene	3684	1214,542
+ARAF	GeneProduct	Entrez Gene	369	589,265
+JUP	GeneProduct	Entrez Gene	3728	774,796
+KIT	GeneProduct	Entrez Gene	3815	275,255
+KRAS	GeneProduct	Entrez Gene	3845	498,290	497,265
+MPO	GeneProduct	Entrez Gene	4353	1216,388
+MYC	GeneProduct	Entrez Gene	4609	1163,795	1163,661
+NFKB1	GeneProduct	Entrez Gene	4790	840,116
+NRAS	GeneProduct	Entrez Gene	4893	497,241	497,265
+LEF1	GeneProduct	Entrez Gene	51176	842,831
+PIK3CA	GeneProduct	Entrez Gene	5290	552,184
+PIK3CB	GeneProduct	Entrez Gene	5291	552,184
+PIM1	GeneProduct	Entrez Gene	5292	1057,321
+PIK3CD	GeneProduct	Entrez Gene	5293	552,184
+PIK3R1	GeneProduct	Entrez Gene	5295	552,184
+PIK3R2	GeneProduct	Entrez Gene	5296	552,184
+PML	GeneProduct	Entrez Gene	5371	940,626
+PPARD	GeneProduct	Entrez Gene	5467	1163,817
+MAPK1	GeneProduct	Entrez Gene	5594	784,265
+MAPK3	GeneProduct	Entrez Gene	5595	784,265
+MAP2K1	GeneProduct	Entrez Gene	5604	685,265
+MAP2K2	GeneProduct	Entrez Gene	5605	685,265
+BAD	GeneProduct	Entrez Gene	572	740,160
+RAF1	GeneProduct	Entrez Gene	5894	589,265
+RARA	GeneProduct	Entrez Gene	5914	940,671	940,626
+CCND1	GeneProduct	Entrez Gene	595	1163,773
+BCL2A1	GeneProduct	Entrez Gene	597	1214,593
+RELA	GeneProduct	Entrez Gene	5970	840,116
+RPS6KB1	GeneProduct	Entrez Gene	6198	781,221
+RPS6KB2	GeneProduct	Entrez Gene	6199	781,221
+SOS1	GeneProduct	Entrez Gene	6654	429,265
+SOS2	GeneProduct	Entrez Gene	6655	429,265
+SPI1	GeneProduct	Entrez Gene	6688	1033,550	1033,508
+BRAF	GeneProduct	Entrez Gene	673	589,265
+STAT3	GeneProduct	Entrez Gene	6774	485,333
+STAT5A	GeneProduct	Entrez Gene	6776	485,333
+STAT5B	GeneProduct	Entrez Gene	6777	485,333
+TCF7	GeneProduct	Entrez Gene	6932	842,831
+TCF7L2	GeneProduct	Entrez Gene	6934	842,831
+ZBTB16	GeneProduct	Entrez Gene	7704	940,671
+TCF7L1	GeneProduct	Entrez Gene	83439	842,831
+PIK3R3	GeneProduct	Entrez Gene	8503	552,184
+IKBKG	GeneProduct	Entrez Gene	8517	740,117
+RUNX1	GeneProduct	Entrez Gene	861	940,550	1033,398
+RUNX1T1	GeneProduct	Entrez Gene	862	940,550
+PER2	GeneProduct	Entrez Gene	8864	1163,473
+CCNA2	GeneProduct	Entrez Gene	890	1163,628
+CCNA1	GeneProduct	Entrez Gene	8900	1163,628
+CD14	GeneProduct	Entrez Gene	929	1163,542
+Phosphatidylinositol-3,4,5-trisphosphate	Metabolite	KEGG Compound	C05981	581,158

@@ -1,0 +1,75 @@
+TEXT	TYPE	DB	ID	X	Y
+p53 signaling pathway	hsa	KEGG	hsa04115
+CDK2	GeneProduct	Entrez Gene	1017	693,141
+CDK4	GeneProduct	Entrez Gene	1019	693,96
+CDK6	GeneProduct	Entrez Gene	1021	693,96
+CDKN1A	GeneProduct	Entrez Gene	1026	564,117
+CDKN2A	GeneProduct	Entrez Gene	1029	237,418
+SIVA1	GeneProduct	Entrez Gene	10572	564,364
+GADD45G	GeneProduct	Entrez Gene	10912	669,590	564,208
+CHEK1	GeneProduct	Entrez Gene	1111	412,228
+CHEK2	GeneProduct	Entrez Gene	11200	456,201
+SESN3	GeneProduct	Entrez Gene	143686	721,590
+DDB2	GeneProduct	Entrez Gene	1643	564,590
+GADD45A	GeneProduct	Entrez Gene	1647	669,590	564,208
+RCHY1	GeneProduct	Entrez Gene	25898	669,710
+BBC3	GeneProduct	Entrez Gene	27113	674,322
+SESN1	GeneProduct	Entrez Gene	27244	721,590
+SFN	GeneProduct	Entrez Gene	2810	564,152
+APAF1	GeneProduct	Entrez Gene	317	907,374
+IGF1	GeneProduct	Entrez Gene	3479	674,508
+IGFBP3	GeneProduct	Entrez Gene	3486	669,631	564,508
+FAS	GeneProduct	Entrez Gene	355	564,266
+CD82	GeneProduct	Entrez Gene	3732	669,549
+MDM2	GeneProduct	Entrez Gene	4193	305,418	564,710
+MDM4	GeneProduct	Entrez Gene	4194	305,482
+GADD45B	GeneProduct	Entrez Gene	4616	669,590	564,208
+ATM	GeneProduct	Entrez Gene	472	333,201
+RRM2B	GeneProduct	Entrez Gene	50484	617,590
+SERPINE1	GeneProduct	Entrez Gene	5054	564,549
+SHISA5	GeneProduct	Entrez Gene	51246	564,440
+GTSE1	GeneProduct	Entrez Gene	51512	564,232
+SERPINB5	GeneProduct	Entrez Gene	5268	827,549
+PMAIP1	GeneProduct	Entrez Gene	5366	622,322
+CYCS	GeneProduct	Entrez Gene	54205	907,342
+ATR	GeneProduct	Entrez Gene	545	333,228
+STEAP3	GeneProduct	Entrez Gene	55240	564,670
+PIDD1	GeneProduct	Entrez Gene	55367	564,288
+RPRM	GeneProduct	Entrez Gene	56475	564,176
+PTEN	GeneProduct	Entrez Gene	5728	564,631
+ADGRB1	GeneProduct	Entrez Gene	575	617,549
+BAX	GeneProduct	Entrez Gene	581	564,322
+CCND1	GeneProduct	Entrez Gene	595	693,79
+BCL2	GeneProduct	Entrez Gene	596	647,375
+BCL2L1	GeneProduct	Entrez Gene	598	647,355
+RRM2	GeneProduct	Entrez Gene	6241	617,590
+BID	GeneProduct	Entrez Gene	637	777,300
+TP53AIP1	GeneProduct	Entrez Gene	63970	726,322
+PERP	GeneProduct	Entrez Gene	64065	617,440
+COP1	GeneProduct	Entrez Gene	64326	617,710
+ZMAT3	GeneProduct	Entrez Gene	64393	669,440
+SIAH1	GeneProduct	Entrez Gene	6477	774,710	721,440
+THBS1	GeneProduct	Entrez Gene	7057	774,549
+TP53	GeneProduct	Entrez Gene	7157	395,418
+TP73	GeneProduct	Entrez Gene	7161	879,710
+TSC2	GeneProduct	Entrez Gene	7249	617,631
+CASP3	GeneProduct	Entrez Gene	836	1086,357
+SESN2	GeneProduct	Entrez Gene	83667	721,590
+CASP8	GeneProduct	Entrez Gene	841	701,276
+CASP9	GeneProduct	Entrez Gene	842	1010,358
+AIFM2	GeneProduct	Entrez Gene	84883	564,474
+PPM1D	GeneProduct	Entrez Gene	8493	827,710
+TNFRSF10B	GeneProduct	Entrez Gene	8795	617,276
+TNFRSF10A	GeneProduct	Entrez Gene	8797	617,276
+CCNB1	GeneProduct	Entrez Gene	891	693,192
+CCND2	GeneProduct	Entrez Gene	894	693,79
+CCND3	GeneProduct	Entrez Gene	896	693,79
+CCNE1	GeneProduct	Entrez Gene	898	693,124
+CCNG1	GeneProduct	Entrez Gene	900	721,710
+CCNG2	GeneProduct	Entrez Gene	901	721,710
+CCNB2	GeneProduct	Entrez Gene	9133	693,192
+CCNE2	GeneProduct	Entrez Gene	9134	693,124
+GORAB	GeneProduct	Entrez Gene	92344	305,381
+EI24	GeneProduct	Entrez Gene	9538	564,398
+TP53I3	GeneProduct	Entrez Gene	9540	564,398
+CDK1	GeneProduct	Entrez Gene	983	693,209

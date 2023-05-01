@@ -1,0 +1,49 @@
+TEXT	TYPE	DB	ID	X	Y
+African trypanosomiasis	mmu	KEGG	mmu05143
+Tlr9	GeneProduct	Entrez Gene	81897	546,317
+Sele	GeneProduct	Entrez Gene	20339	982,268
+Vcam1	GeneProduct	Entrez Gene	22329	982,248
+Lama4	GeneProduct	Entrez Gene	16775	1065,248
+Il1b	GeneProduct	Entrez Gene	16176	790,230
+Prostaglandin E2	Metabolite	KEGG Compound	C00584	1230,435
+Prostaglandin D2	Metabolite	KEGG Compound	C00696	1215,419
+Il10	GeneProduct	Entrez Gene	16153	574,141
+Myd88	GeneProduct	Entrez Gene	17874	611,317
+Il6	GeneProduct	Entrez Gene	16193	790,250
+Icam1	GeneProduct	Entrez Gene	15894	982,289
+Thop1	GeneProduct	Entrez Gene	50492	399,472
+Il12a	GeneProduct	Entrez Gene	16159	655,372
+Il12b	GeneProduct	Entrez Gene	16160	655,372
+Apoa1	GeneProduct	Entrez Gene	11806	205,516
+Hbb-bs	GeneProduct	Entrez Gene	100503605	180,450
+Hbb-bt	GeneProduct	Entrez Gene	101488143	180,450
+Hba-a2	GeneProduct	Entrez Gene	110257	180,450
+Hba-a1	GeneProduct	Entrez Gene	15122	180,450
+Hbb-b1	GeneProduct	Entrez Gene	15129	180,450
+Hbb-b2	GeneProduct	Entrez Gene	15130	180,450
+Hbb-bh2	GeneProduct	Entrez Gene	436003	180,450
+Ido1	GeneProduct	Entrez Gene	15930	1173,515
+Ido2	GeneProduct	Entrez Gene	209176	1173,515
+L-Kynurenine	Metabolite	KEGG Compound	C00328	1243,530
+L-Tryptophan	Metabolite	KEGG Compound	C00078	1243,498
+Fas	GeneProduct	Entrez Gene	14102	982,156
+Fasl	GeneProduct	Entrez Gene	14103	923,156
+Il18	GeneProduct	Entrez Gene	16173	655,392
+F2rl1	GeneProduct	Entrez Gene	14063	884,685
+Gnaq	GeneProduct	Entrez Gene	14682	946,685
+Plcb1	GeneProduct	Entrez Gene	18795	1043,685
+Plcb2	GeneProduct	Entrez Gene	18796	1043,685
+Plcb3	GeneProduct	Entrez Gene	18797	1043,685
+Plcb4	GeneProduct	Entrez Gene	18798	1043,685
+D-myo-Inositol 1,4,5-trisphosphate	Metabolite	KEGG Compound	C01245	1109,685
+Calcium cation	Metabolite	KEGG Compound	C00076	1164,685
+Diacylglycerol	Metabolite	KEGG Compound	C00165	1109,730
+Prkca	GeneProduct	Entrez Gene	18750	1230,685
+Prkcb	GeneProduct	Entrez Gene	18751	1230,685
+Prkcg	GeneProduct	Entrez Gene	18752	1230,685
+Nitric oxide	Metabolite	KEGG Compound	C00533	1217,175
+Ifng	GeneProduct	Entrez Gene	15978	790,457
+Kng1	GeneProduct	Entrez Gene	16644	487,472
+Kng2	GeneProduct	Entrez Gene	385643	487,472
+Nppa	GeneProduct	Entrez Gene	230899	487,506
+Tnf	GeneProduct	Entrez Gene	21926	790,210

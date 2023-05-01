@@ -1,0 +1,33 @@
+TEXT	TYPE	DB	ID	X	Y
+Biotin metabolism	hsa	KEGG	hsa00780
+HLCS	GeneProduct	Entrez Gene	3141	341,765	330,876	378,876	330,855	389,784	341,784	378,855	389,765
+OXSM	GeneProduct	Entrez Gene	54995	318,229	203,229
+BTD	GeneProduct	Entrez Gene	686	281,767
+L-Lysine	Metabolite	KEGG Compound	C00047	238,747
+Urea	Metabolite	KEGG Compound	C00086	644,863
+Biotin	Metabolite	KEGG Compound	C00120	414,727
+7,8-Diaminononanoate	Metabolite	KEGG Compound	C01037	414,594
+6-Carboxyhexanoyl-CoA	Metabolite	KEGG Compound	C01063	582,462
+8-Amino-7-oxononanoate	Metabolite	KEGG Compound	C01092	414,528
+Malonyl-[acyl-carrier protein]	Metabolite	KEGG Compound	C01209	118,141
+Biotinyl-CoA	Metabolite	KEGG Compound	C01894	512,820
+Dethiobiotin	Metabolite	KEGG Compound	C01909	414,660
+Pimelate	Metabolite	KEGG Compound	C02656	582,351
+Biocytin	Metabolite	KEGG Compound	C05552	280,793
+Biotinyl-5'-AMP	Metabolite	KEGG Compound	C05921	414,820
+Holo-[carboxylase]	Metabolite	KEGG Compound	C06250	280,865
+Malonyl-[acp] methyl ester	Metabolite	KEGG Compound	C19673	118,207
+Pimeloyl-[acyl-carrier protein]	Metabolite	KEGG Compound	C19845	414,462
+Pimeloyl-[acyl-carrier protein] methyl ester	Metabolite	KEGG Compound	C19846	293,462
+3-Ketoglutaryl-[acp] methyl ester	Metabolite	KEGG Compound	C20372	178,264
+3-Hydroxyglutaryl-[acp] methyl ester	Metabolite	KEGG Compound	C20373	178,330
+Enoylglutaryl-[acp] methyl ester	Metabolite	KEGG Compound	C20374	178,396
+Glutaryl-[acp] methyl ester	Metabolite	KEGG Compound	C20375	178,462
+3-Ketopimeloyl-[acp] methyl ester	Metabolite	KEGG Compound	C20376	293,264
+3-Hydroxypimeloyl-[acp] methyl ester	Metabolite	KEGG Compound	C20377	293,330
+Enoylpimeloyl-[acp] methyl ester	Metabolite	KEGG Compound	C20378	293,396
+Bisnorbiotin	Metabolite	KEGG Compound	C20384	578,820
+Tetranorbiotin	Metabolite	KEGG Compound	C20385	644,820
+Biotin sulfoxide	Metabolite	KEGG Compound	C20386	513,727
+Biotin sulfone	Metabolite	KEGG Compound	C20387	579,727
+Long-chain acyl-[acyl-carrier protein]	Metabolite	KEGG Compound	C20683	414,351

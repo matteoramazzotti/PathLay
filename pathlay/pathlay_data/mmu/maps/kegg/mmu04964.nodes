@@ -1,0 +1,60 @@
+TEXT	TYPE	DB	ID	X	Y
+Proximal tubule bicarbonate reclamation	mmu	KEGG	mmu04964
+CO2	Metabolite	KEGG Compound	C00011	78,433
+Car4	GeneProduct	Entrez Gene	12351	98,394
+CO2	Metabolite	KEGG Compound	C00011	338,434
+H+	Metabolite	KEGG Compound	C00080	333,317
+HCO3-	Metabolite	KEGG Compound	C00288	394,317
+Car2	GeneProduct	Entrez Gene	12349	394,402
+Sodium cation	Metabolite	KEGG Compound	C01330	672,307
+HCO3-	Metabolite	KEGG Compound	C00288	673,319
+Sodium cation	Metabolite	KEGG Compound	C01330	104,850
+Cl-	Metabolite	KEGG Compound	C00698	115,876
+H2O	Metabolite	KEGG Compound	C00001	37,434
+H2O	Metabolite	KEGG Compound	C00001	115,822
+L-Glutamine	Metabolite	KEGG Compound	C00064	375,520
+L-Glutamate	Metabolite	KEGG Compound	C00025	375,576
+2-Oxoglutarate	Metabolite	KEGG Compound	C00026	375,633
+NH4OH	Metabolite	KEGG Compound	C01358	211,610
+HCO3-	Metabolite	KEGG Compound	C00288	450,661
+alpha-D-Glucose	Metabolite	KEGG Compound	C00267	564,797
+Sodium cation	Metabolite	KEGG Compound	C01330	211,598
+Ammonia	Metabolite	KEGG Compound	C00014	210,691
+NH4OH	Metabolite	KEGG Compound	C01358	95,611
+H2O	Metabolite	KEGG Compound	C00001	393,435
+Ammonia	Metabolite	KEGG Compound	C00014	96,690
+NH4OH	Metabolite	KEGG Compound	C01358	59,758
+Gls	GeneProduct	Entrez Gene	14660	346,540
+Gls2	GeneProduct	Entrez Gene	216456	346,540
+Glud1	GeneProduct	Entrez Gene	14661	346,597
+H+	Metabolite	KEGG Compound	C00080	96,709
+Atp1a1	GeneProduct	Entrez Gene	11928	614,432
+Atp1b1	GeneProduct	Entrez Gene	11931	614,432
+Atp1b2	GeneProduct	Entrez Gene	11932	614,432
+Atp1b3	GeneProduct	Entrez Gene	11933	614,432
+Fxyd2	GeneProduct	Entrez Gene	11936	614,432
+Atp1a3	GeneProduct	Entrez Gene	232975	614,432
+Atp1a4	GeneProduct	Entrez Gene	27222	614,432
+Atp1b4	GeneProduct	Entrez Gene	67821	614,432
+Atp1a2	GeneProduct	Entrez Gene	98660	614,432
+Sodium cation	Metabolite	KEGG Compound	C01330	670,429
+Potassium cation	Metabolite	KEGG Compound	C00238	556,436
+Aqp1	GeneProduct	Entrez Gene	11826	155,486
+Slc38a3	GeneProduct	Entrez Gene	76257	614,518
+Slc9a3	GeneProduct	Entrez Gene	105243	155,311
+L-Glutamine	Metabolite	KEGG Compound	C00064	668,517
+(S)-Malate	Metabolite	KEGG Compound	C00149	374,695
+Slc25a10	GeneProduct	Entrez Gene	27376	375,721
+(S)-Malate	Metabolite	KEGG Compound	C00149	374,754
+Oxaloacetate	Metabolite	KEGG Compound	C00036	374,796
+Mdh1	GeneProduct	Entrez Gene	17449	345,770
+Phosphoenolpyruvate	Metabolite	KEGG Compound	C00074	457,797
+Pck1	GeneProduct	Entrez Gene	18534	416,784
+Pck2	GeneProduct	Entrez Gene	74551	416,784
+Slc4a4	GeneProduct	Entrez Gene	54403	613,312
+Carbonic acid	Metabolite	KEGG Compound	C01353	366,360
+Carbonic acid	Metabolite	KEGG Compound	C01353	58,361
+Slc9a3	GeneProduct	Entrez Gene	105243	155,606
+H+	Metabolite	KEGG Compound	C00080	86,315
+Sodium cation	Metabolite	KEGG Compound	C01330	230,307
+HCO3-	Metabolite	KEGG Compound	C00288	57,279

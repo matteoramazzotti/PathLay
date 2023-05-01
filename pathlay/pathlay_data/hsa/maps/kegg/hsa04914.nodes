@@ -1,0 +1,106 @@
+TEXT	TYPE	DB	ID	X	Y
+Progesterone-mediated oocyte maturation	hsa	KEGG	hsa04914
+AKT3	GeneProduct	Entrez Gene	10000	300,438
+SPDYE2B	GeneProduct	Entrez Gene	100310812	531,148
+SPDYE18	GeneProduct	Entrez Gene	100505767	531,148
+SPDYE11	GeneProduct	Entrez Gene	100996746	531,148
+CDK2	GeneProduct	Entrez Gene	1017	649,165
+SPDYE16	GeneProduct	Entrez Gene	102723555	531,148
+SPDYE17	GeneProduct	Entrez Gene	102723849	531,148
+ANAPC10	GeneProduct	Entrez Gene	10393	882,519
+MAD2L2	GeneProduct	Entrez Gene	10459	790,475
+SPDYE15	GeneProduct	Entrez Gene	105180391	531,148
+ADCY1	GeneProduct	Entrez Gene	107	144,371
+ADCY2	GeneProduct	Entrez Gene	108	144,371
+ADCY3	GeneProduct	Entrez Gene	109	144,371
+ADCY5	GeneProduct	Entrez Gene	111	144,371
+ADCY6	GeneProduct	Entrez Gene	112	144,371
+ADCY7	GeneProduct	Entrez Gene	113	144,371
+ADCY8	GeneProduct	Entrez Gene	114	144,371
+ADCY9	GeneProduct	Entrez Gene	115	144,371
+CPEB2	GeneProduct	Entrez Gene	132864	392,214
+MAPK14	GeneProduct	Entrez Gene	1432	354,163
+ADCY4	GeneProduct	Entrez Gene	196883	144,371
+AKT1	GeneProduct	Entrez Gene	207	300,438
+AKT2	GeneProduct	Entrez Gene	208	300,438
+CPEB3	GeneProduct	Entrez Gene	22849	392,214
+SPDYA	GeneProduct	Entrez Gene	245711	531,148
+CDC26	GeneProduct	Entrez Gene	246184	882,519
+ANAPC13	GeneProduct	Entrez Gene	25847	882,519
+RPS6KA6	GeneProduct	Entrez Gene	27330	729,266
+GNAI1	GeneProduct	Entrez Gene	2770	237,263
+GNAI2	GeneProduct	Entrez Gene	2771	237,263
+GNAI3	GeneProduct	Entrez Gene	2773	237,263
+SPDYE1	GeneProduct	Entrez Gene	285955	531,148
+ANAPC2	GeneProduct	Entrez Gene	29882	882,519
+ANAPC4	GeneProduct	Entrez Gene	29945	882,519
+HSP90AA1	GeneProduct	Entrez Gene	3320	468,301
+HSP90AB1	GeneProduct	Entrez Gene	3326	468,301
+IGF1	GeneProduct	Entrez Gene	3479	78,491
+IGF1R	GeneProduct	Entrez Gene	3480	145,477
+INS	GeneProduct	Entrez Gene	3630	78,463
+ARAF	GeneProduct	Entrez Gene	369	371,525
+KIF22	GeneProduct	Entrez Gene	3835	565,523
+KRAS	GeneProduct	Entrez Gene	3845	272,525
+SPDYC	GeneProduct	Entrez Gene	387778	531,148
+SPDYE4	GeneProduct	Entrez Gene	388333	531,148
+MAD2L1	GeneProduct	Entrez Gene	4085	790,475
+MOS	GeneProduct	Entrez Gene	4342	527,267
+SPDYE3	GeneProduct	Entrez Gene	441272	531,148
+SPDYE2	GeneProduct	Entrez Gene	441273	531,148
+SPDYE5	GeneProduct	Entrez Gene	442590	531,148
+FZR1	GeneProduct	Entrez Gene	51343	810,518
+PDE3B	GeneProduct	Entrez Gene	5140	262,404
+ANAPC5	GeneProduct	Entrez Gene	51433	882,519
+ANAPC7	GeneProduct	Entrez Gene	51434	882,519
+ANAPC11	GeneProduct	Entrez Gene	51529	882,519
+PGR	GeneProduct	Entrez Gene	5241	237,146
+PIK3CA	GeneProduct	Entrez Gene	5290	228,476	354,130
+PIK3CB	GeneProduct	Entrez Gene	5291	228,476	354,130
+PIK3CD	GeneProduct	Entrez Gene	5293	228,476	354,130
+PIK3R1	GeneProduct	Entrez Gene	5295	228,476	354,130
+PIK3R2	GeneProduct	Entrez Gene	5296	228,476	354,130
+PLK1	GeneProduct	Entrez Gene	5347	565,371
+PRKACA	GeneProduct	Entrez Gene	5566	292,371
+PRKACB	GeneProduct	Entrez Gene	5567	292,371
+PRKACG	GeneProduct	Entrez Gene	5568	292,371
+MAPK1	GeneProduct	Entrez Gene	5594	663,266
+MAPK3	GeneProduct	Entrez Gene	5595	663,266
+MAPK8	GeneProduct	Entrez Gene	5599	354,163
+MAPK11	GeneProduct	Entrez Gene	5600	354,163
+MAPK9	GeneProduct	Entrez Gene	5601	354,163
+MAPK10	GeneProduct	Entrez Gene	5602	354,163
+MAPK13	GeneProduct	Entrez Gene	5603	354,163
+MAP2K1	GeneProduct	Entrez Gene	5604	597,267
+RAF1	GeneProduct	Entrez Gene	5894	371,525
+RPS6KA1	GeneProduct	Entrez Gene	6195	729,266
+RPS6KA2	GeneProduct	Entrez Gene	6196	729,266
+RPS6KA3	GeneProduct	Entrez Gene	6197	729,266
+MAPK12	GeneProduct	Entrez Gene	6300	354,163
+CPEB1	GeneProduct	Entrez Gene	64506	392,214
+ANAPC1	GeneProduct	Entrez Gene	64682	882,519
+BRAF	GeneProduct	Entrez Gene	673	371,525
+AURKA	GeneProduct	Entrez Gene	6790	310,214
+STK10	GeneProduct	Entrez Gene	6793	407,372
+BUB1	GeneProduct	Entrez Gene	699	755,399
+SPDYE6	GeneProduct	Entrez Gene	729597	531,148
+CPEB4	GeneProduct	Entrez Gene	80315	392,214
+MAD1L1	GeneProduct	Entrez Gene	8379	790,475
+PIK3R3	GeneProduct	Entrez Gene	8503	228,476	354,130
+CCNB3	GeneProduct	Entrez Gene	85417	880,286
+CDC23	GeneProduct	Entrez Gene	8697	882,519
+CDC16	GeneProduct	Entrez Gene	8881	882,519
+CCNA2	GeneProduct	Entrez Gene	890	531,181
+CCNA1	GeneProduct	Entrez Gene	8900	531,181
+CCNB1	GeneProduct	Entrez Gene	891	565,484	880,286
+PKMYT1	GeneProduct	Entrez Gene	9088	800,266
+CCNB2	GeneProduct	Entrez Gene	9133	880,286
+CDK1	GeneProduct	Entrez Gene	983	565,447	880,302	649,130
+CDC25A	GeneProduct	Entrez Gene	993	682,371
+CDC25B	GeneProduct	Entrez Gene	994	682,371
+CDC25C	GeneProduct	Entrez Gene	995	682,371
+CDC27	GeneProduct	Entrez Gene	996	882,519
+Progesterone	Metabolite	KEGG Compound	C00410	74,237
+3',5'-Cyclic AMP	Metabolite	KEGG Compound	C00575	219,370
+Phosphatidylinositol-3,4,5-trisphosphate	Metabolite	KEGG Compound	C05981	284,474
+1-Phosphatidyl-1D-myo-inositol 3,4-bisphosphate	Metabolite	KEGG Compound	C11554	284,474

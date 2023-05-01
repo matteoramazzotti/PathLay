@@ -1,0 +1,67 @@
+TEXT	TYPE	DB	ID	X	Y
+Sulfur metabolism	mmu	KEGG	mmu00920
+Sulfate	Metabolite	KEGG Compound	C00059	80,297
+Bpnt1	GeneProduct	Entrez Gene	23827	156,464
+Bpnt2	GeneProduct	Entrez Gene	242291	156,464
+Sulfite	Metabolite	KEGG Compound	C00094	563,835
+Hydrogen sulfide	Metabolite	KEGG Compound	C00283	783,835
+Sulfate	Metabolite	KEGG Compound	C00059	233,912
+Thiosulfate	Metabolite	KEGG Compound	C00320	673,912
+Papss1	GeneProduct	Entrez Gene	23971	80,464
+Papss2	GeneProduct	Entrez Gene	23972	80,464
+Hydrogen sulfide	Metabolite	KEGG Compound	C00283	783,764
+Polysulfide	Metabolite	KEGG Compound	C19692	576,330
+3-(Methylthio)propanoyl-CoA	Metabolite	KEGG Compound	C20870	433,482
+3-(Methylthio)acryloyl-CoA	Metabolite	KEGG Compound	C20955	555,482
+Acetaldehyde	Metabolite	KEGG Compound	C00084	674,454
+S-Sulfanylglutathione	Metabolite	KEGG Compound	C17267	521,423
+Sqor	GeneProduct	Entrez Gene	59010	639,424
+Ethe1	GeneProduct	Entrez Gene	66071	453,424
+Papss1	GeneProduct	Entrez Gene	23971	55,353
+Papss2	GeneProduct	Entrez Gene	23972	55,353
+Adenylyl sulfate	Metabolite	KEGG Compound	C00224	80,415
+Adenosine 3',5'-bisphosphate	Metabolite	KEGG Compound	C00054	80,592
+3'-Phosphoadenylyl sulfate	Metabolite	KEGG Compound	C00053	80,515
+Sulfite	Metabolite	KEGG Compound	C00094	374,297
+Dimethyl sulfone	Metabolite	KEGG Compound	C11142	374,610
+Methanesulfonic acid	Metabolite	KEGG Compound	C11145	374,487
+Dimethyl sulfoxide	Metabolite	KEGG Compound	C11143	555,610
+Dimethyl sulfide	Metabolite	KEGG Compound	C00580	721,610
+Methanethiol	Metabolite	KEGG Compound	C00409	721,516
+Selenbp1	GeneProduct	Entrez Gene	20341	721,459
+Selenbp2	GeneProduct	Entrez Gene	20342	721,459
+S,S-Dimethyl-beta-propiothetin	Metabolite	KEGG Compound	C04022	555,568
+2-(Methylthio)ethanesulfonate	Metabolite	KEGG Compound	C03920	598,516
+Polysulfide	Metabolite	KEGG Compound	C19692	697,330
+Suox	GeneProduct	Entrez Gene	211389	183,297
+Tst	GeneProduct	Entrez Gene	22117	439,239
+Mpst	GeneProduct	Entrez Gene	246221	439,239
+Trithionate	Metabolite	KEGG Compound	C01861	374,193
+Tetrathionate	Metabolite	KEGG Compound	C02084	372,137
+Thiosulfate	Metabolite	KEGG Compound	C00320	481,193
+Sulfur	Metabolite	KEGG Compound	C00087	521,393
+L-Cysteine	Metabolite	KEGG Compound	C00097	889,297
+O-Acetyl-L-serine	Metabolite	KEGG Compound	C00979	786,255
+Acetate	Metabolite	KEGG Compound	C00033	862,227
+L-Serine	Metabolite	KEGG Compound	C00065	786,182
+3-(Methylthio)propanoate	Metabolite	KEGG Compound	C08276	433,568
+L-Homocysteine	Metabolite	KEGG Compound	C00155	937,430
+O-Succinyl-L-homoserine	Metabolite	KEGG Compound	C01118	826,472
+Succinate	Metabolite	KEGG Compound	C00042	902,500
+L-Homoserine	Metabolite	KEGG Compound	C00263	826,555
+Taurine	Metabolite	KEGG Compound	C00245	225,221
+Alkanesulfonate	Metabolite	KEGG Compound	C15521	304,221
+Sulfate	Metabolite	KEGG Compound	C00059	80,145
+Taurine	Metabolite	KEGG Compound	C00245	225,145
+Alkanesulfonate	Metabolite	KEGG Compound	C15521	304,145
+Papss1	GeneProduct	Entrez Gene	23971	394,754
+Papss2	GeneProduct	Entrez Gene	23972	394,754
+Papss1	GeneProduct	Entrez Gene	23971	288,746
+Papss2	GeneProduct	Entrez Gene	23972	288,746
+Hydrogen sulfide	Metabolite	KEGG Compound	C00283	721,297
+Sulfate	Metabolite	KEGG Compound	C00059	233,764
+3'-Phosphoadenylyl sulfate	Metabolite	KEGG Compound	C00053	453,764
+Adenylyl sulfate	Metabolite	KEGG Compound	C00224	343,764
+Sulfite	Metabolite	KEGG Compound	C00094	563,764
+Sulfate	Metabolite	KEGG Compound	C00059	233,835
+Adenylyl sulfate	Metabolite	KEGG Compound	C00224	343,835

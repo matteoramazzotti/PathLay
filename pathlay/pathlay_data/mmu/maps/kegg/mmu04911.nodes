@@ -1,0 +1,112 @@
+TEXT	TYPE	DB	ID	X	Y
+Insulin secretion	mmu	KEGG	mmu04911
+Slc2a1	GeneProduct	Entrez Gene	20525	174,283
+Slc2a2	GeneProduct	Entrez Gene	20526	174,283
+Prkaca	GeneProduct	Entrez Gene	18747	546,357
+Prkacb	GeneProduct	Entrez Gene	18749	546,357
+Gnas	GeneProduct	Entrez Gene	14683	267,398
+Gna11	GeneProduct	Entrez Gene	14672	267,583
+Gnaq	GeneProduct	Entrez Gene	14682	267,583
+Gcg	GeneProduct	Entrez Gene	14526	93,357
+3',5'-Cyclic AMP	Metabolite	KEGG Compound	C00575	421,397
+Calcium cation	Metabolite	KEGG Compound	C00076	837,183
+ATP	Metabolite	KEGG Compound	C00002	586,233
+D-Glucose 6-phosphate	Metabolite	KEGG Compound	C00092	296,283
+Pyruvate	Metabolite	KEGG Compound	C00022	362,283
+D-Glucose	Metabolite	KEGG Compound	C00031	225,283
+Kcnj11	GeneProduct	Entrez Gene	16514	688,130
+Gck	GeneProduct	Entrez Gene	103988	255,268
+D-myo-Inositol 1,4,5-trisphosphate	Metabolite	KEGG Compound	C01245	519,527
+Diacylglycerol	Metabolite	KEGG Compound	C00165	516,675
+Ins1	GeneProduct	Entrez Gene	16333	855,355
+Ins2	GeneProduct	Entrez Gene	16334	855,355
+Prkca	GeneProduct	Entrez Gene	18750	668,675
+Prkcb	GeneProduct	Entrez Gene	18751	668,675
+Prkcg	GeneProduct	Entrez Gene	18752	668,675
+Acetylcholine	Metabolite	KEGG Compound	C01996	96,582
+Ryr2	GeneProduct	Entrez Gene	20191	668,560
+Calcium cation	Metabolite	KEGG Compound	C00076	667,524
+Atf2	GeneProduct	Entrez Gene	11909	686,323
+Atf4	GeneProduct	Entrez Gene	11911	686,323
+Creb1	GeneProduct	Entrez Gene	12912	686,323
+Creb3	GeneProduct	Entrez Gene	12913	686,323
+Atf6b	GeneProduct	Entrez Gene	12915	686,323
+Creb3l2	GeneProduct	Entrez Gene	208647	686,323
+Creb3l3	GeneProduct	Entrez Gene	208677	686,323
+Creb5	GeneProduct	Entrez Gene	231991	686,323
+Creb3l1	GeneProduct	Entrez Gene	26427	686,323
+Creb3l4	GeneProduct	Entrez Gene	78284	686,323
+Cacna1c	GeneProduct	Entrez Gene	12288	836,130
+Cacna1d	GeneProduct	Entrez Gene	12289	836,130
+Cacna1s	GeneProduct	Entrez Gene	12292	836,130
+Cacna1f	GeneProduct	Entrez Gene	54652	836,130
+Camk2d	GeneProduct	Entrez Gene	108058	731,501
+Camk2a	GeneProduct	Entrez Gene	12322	731,501
+Camk2b	GeneProduct	Entrez Gene	12323	731,501
+Camk2g	GeneProduct	Entrez Gene	12325	731,501
+Ffar1	GeneProduct	Entrez Gene	233081	174,629
+Fatty acid	Metabolite	KEGG Compound	C00162	96,629
+Potassium cation	Metabolite	KEGG Compound	C00238	690,70
+Trpm4	GeneProduct	Entrez Gene	68667	458,130
+Atp1a1	GeneProduct	Entrez Gene	11928	574,130
+Atp1b1	GeneProduct	Entrez Gene	11931	574,130
+Atp1b2	GeneProduct	Entrez Gene	11932	574,130
+Atp1b3	GeneProduct	Entrez Gene	11933	574,130
+Fxyd2	GeneProduct	Entrez Gene	11936	574,130
+Atp1a3	GeneProduct	Entrez Gene	232975	574,130
+Atp1a4	GeneProduct	Entrez Gene	27222	574,130
+Atp1b4	GeneProduct	Entrez Gene	67821	574,130
+Atp1a2	GeneProduct	Entrez Gene	98660	574,130
+Sodium cation	Metabolite	KEGG Compound	C01330	459,186
+Potassium cation	Metabolite	KEGG Compound	C00238	580,187
+Sodium cation	Metabolite	KEGG Compound	C01330	567,71
+Rapgef4	GeneProduct	Entrez Gene	56508	549,461
+Chrm3	GeneProduct	Entrez Gene	12671	174,583
+Abcc8	GeneProduct	Entrez Gene	20927	643,130
+Rims2	GeneProduct	Entrez Gene	116838	649,454
+Stx1a	GeneProduct	Entrez Gene	20907	1069,407
+Snap25	GeneProduct	Entrez Gene	20614	1069,424
+Vamp2	GeneProduct	Entrez Gene	22318	1011,414
+Cckar	GeneProduct	Entrez Gene	12425	174,531
+Gip	GeneProduct	Entrez Gene	14607	93,398
+Gpr119	GeneProduct	Entrez Gene	236781	174,398
+Adcyap1	GeneProduct	Entrez Gene	11516	93,439
+Adcyap1r1	GeneProduct	Entrez Gene	11517	174,439
+Glp1r	GeneProduct	Entrez Gene	14652	174,357
+Itpr3	GeneProduct	Entrez Gene	16440	561,560
+Pdx1	GeneProduct	Entrez Gene	18609	686,387
+Pclo	GeneProduct	Entrez Gene	26875	649,471
+Rab3a	GeneProduct	Entrez Gene	19339	733,461
+Ins1	GeneProduct	Entrez Gene	16333	1130,320
+Ins2	GeneProduct	Entrez Gene	16334	1130,320
+Camk2d	GeneProduct	Entrez Gene	108058	837,251
+Camk2a	GeneProduct	Entrez Gene	12322	837,251
+Camk2b	GeneProduct	Entrez Gene	12323	837,251
+Camk2g	GeneProduct	Entrez Gene	12325	837,251
+Kcnmb3	GeneProduct	Entrez Gene	100502876	979,130
+Kcnn2	GeneProduct	Entrez Gene	140492	979,130
+Kcnn3	GeneProduct	Entrez Gene	140493	979,130
+Kcnma1	GeneProduct	Entrez Gene	16531	979,130
+Kcnu1	GeneProduct	Entrez Gene	16532	979,130
+Kcnmb1	GeneProduct	Entrez Gene	16533	979,130
+Kcnn4	GeneProduct	Entrez Gene	16534	979,130
+Kcnmb4	GeneProduct	Entrez Gene	58802	979,130
+Kcnmb2	GeneProduct	Entrez Gene	72413	979,130
+Kcnn1	GeneProduct	Entrez Gene	84036	979,130
+Potassium cation	Metabolite	KEGG Compound	C00238	979,70
+Calcium cation	Metabolite	KEGG Compound	C00076	560,522
+Cck	GeneProduct	Entrez Gene	12424	93,530
+Plcb1	GeneProduct	Entrez Gene	18795	354,583
+Plcb2	GeneProduct	Entrez Gene	18796	354,583
+Plcb3	GeneProduct	Entrez Gene	18797	354,583
+Plcb4	GeneProduct	Entrez Gene	18798	354,583
+Adcy4	GeneProduct	Entrez Gene	104110	352,398
+Adcy3	GeneProduct	Entrez Gene	104111	352,398
+Adcy6	GeneProduct	Entrez Gene	11512	352,398
+Adcy7	GeneProduct	Entrez Gene	11513	352,398
+Adcy8	GeneProduct	Entrez Gene	11514	352,398
+Adcy9	GeneProduct	Entrez Gene	11515	352,398
+Adcy2	GeneProduct	Entrez Gene	210044	352,398
+Adcy5	GeneProduct	Entrez Gene	224129	352,398
+Adcy1	GeneProduct	Entrez Gene	432530	352,398
+D-Glucose	Metabolite	KEGG Compound	C00031	119,283

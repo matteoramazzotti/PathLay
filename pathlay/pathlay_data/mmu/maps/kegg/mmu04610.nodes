@@ -1,0 +1,180 @@
+TEXT	TYPE	DB	ID	X	Y
+Complement and coagulation cascades	mmu	KEGG	mmu04610
+Plasmin	Metabolite	KEGG Compound	C00471	705,506
+F9	GeneProduct	Entrez Gene	14071	268,287
+Cr1l	GeneProduct	Entrez Gene	12946	1230,555
+Cd55	GeneProduct	Entrez Gene	13136	1230,555
+Cd55b	GeneProduct	Entrez Gene	13137	1230,555
+Cfhr1	GeneProduct	Entrez Gene	50702	1298,499
+Cfhr2	GeneProduct	Entrez Gene	545366	1298,499
+Cfhr3	GeneProduct	Entrez Gene	624286	1298,499
+Cfb	GeneProduct	Entrez Gene	14962	1240,289
+Cfd	GeneProduct	Entrez Gene	11537	1256,316
+Cfb	GeneProduct	Entrez Gene	14962	1170,463
+Cfd	GeneProduct	Entrez Gene	11537	1186,490
+Serpinc1	GeneProduct	Entrez Gene	11905	216,359
+Serpina5	GeneProduct	Entrez Gene	268591	216,359
+Serpinc1	GeneProduct	Entrez Gene	11905	81,613
+Serpina5	GeneProduct	Entrez Gene	268591	81,613
+Serpinc1	GeneProduct	Entrez Gene	11905	127,817
+Serpind1	GeneProduct	Entrez Gene	15160	127,817
+Serpine2	GeneProduct	Entrez Gene	20720	127,817
+Serpina5	GeneProduct	Entrez Gene	268591	127,817
+Serpina5	GeneProduct	Entrez Gene	268591	410,555
+Vwf	GeneProduct	Entrez Gene	22371	299,350
+Serping1	GeneProduct	Entrez Gene	12258	571,882
+Serpinf2	GeneProduct	Entrez Gene	18816	571,882
+Serpina1a	GeneProduct	Entrez Gene	20700	571,882
+Serpina1b	GeneProduct	Entrez Gene	20701	571,882
+Serpina1c	GeneProduct	Entrez Gene	20702	571,882
+Serpina1d	GeneProduct	Entrez Gene	20703	571,882
+Serpina1e	GeneProduct	Entrez Gene	20704	571,882
+Serpine2	GeneProduct	Entrez Gene	20720	571,882
+A2m	GeneProduct	Entrez Gene	232345	127,838
+A2m	GeneProduct	Entrez Gene	232345	419,652
+Serpinc1	GeneProduct	Entrez Gene	11905	437,391
+Serping1	GeneProduct	Entrez Gene	12258	437,391
+Serping1	GeneProduct	Entrez Gene	12258	419,673
+Serpina1a	GeneProduct	Entrez Gene	20700	419,673
+Serpina1b	GeneProduct	Entrez Gene	20701	419,673
+Serpina1c	GeneProduct	Entrez Gene	20702	419,673
+Serpina1d	GeneProduct	Entrez Gene	20703	419,673
+Serpina1e	GeneProduct	Entrez Gene	20704	419,673
+C7	GeneProduct	Entrez Gene	109828	1017,910
+C8b	GeneProduct	Entrez Gene	110382	1017,910
+C6	GeneProduct	Entrez Gene	12274	1017,910
+C9	GeneProduct	Entrez Gene	12279	1017,910
+C8a	GeneProduct	Entrez Gene	230558	1017,910
+C8g	GeneProduct	Entrez Gene	69379	1017,910
+F8	GeneProduct	Entrez Gene	14069	299,367
+Coagulation factor VIIIa	Metabolite	KEGG Compound	C04001	299,431
+Coagulation factor Xa	Metabolite	KEGG Compound	C01065	155,550
+F10	GeneProduct	Entrez Gene	14058	155,425
+F2	GeneProduct	Entrez Gene	14061	102,734
+Thrombin	Metabolite	KEGG Compound	C00752	259,733
+F5	GeneProduct	Entrez Gene	14067	186,486
+Coagulation factor Va	Metabolite	KEGG Compound	C03780	186,550
+F7	GeneProduct	Entrez Gene	14068	90,287
+Fibrin	Metabolite	KEGG Compound	C00290	346,909
+Fgb	GeneProduct	Entrez Gene	110135	179,910
+Fga	GeneProduct	Entrez Gene	14161	179,910
+Fgg	GeneProduct	Entrez Gene	99571	179,910
+Proc	GeneProduct	Entrez Gene	19123	208,625
+APC	Metabolite	KEGG Compound	C22547	299,624
+F13b	GeneProduct	Entrez Gene	14060	293,861
+F13a1	GeneProduct	Entrez Gene	74145	293,861
+Coagulation factor XIIIa	Metabolite	KEGG Compound	C22546	378,860
+F2r	GeneProduct	Entrez Gene	14062	405,778
+Cpb2	GeneProduct	Entrez Gene	56373	571,840
+F2rl2	GeneProduct	Entrez Gene	14064	405,809
+F2rl3	GeneProduct	Entrez Gene	14065	405,809
+F3	GeneProduct	Entrez Gene	14066	114,483
+Serpine1	GeneProduct	Entrez Gene	18787	419,625
+Serpinb2	GeneProduct	Entrez Gene	18788	419,625
+Serpine2	GeneProduct	Entrez Gene	20720	419,625
+Serpina5	GeneProduct	Entrez Gene	268591	419,625
+Plau	GeneProduct	Entrez Gene	18792	516,635
+Plat	GeneProduct	Entrez Gene	18791	516,614
+Plaur	GeneProduct	Entrez Gene	18793	604,635
+Plg	GeneProduct	Entrez Gene	18815	493,507
+Kng1	GeneProduct	Entrez Gene	16644	610,253
+Kng2	GeneProduct	Entrez Gene	385643	610,253
+Klkb1	GeneProduct	Entrez Gene	16621	550,218
+Bdkrb1	GeneProduct	Entrez Gene	12061	611,394
+Bdkrb2	GeneProduct	Entrez Gene	12062	611,394
+Plasma kallikrein	Metabolite	KEGG Compound	C01715	549,282
+Coagulation factor VIIa	Metabolite	KEGG Compound	C03378	90,431
+Bradykinin	Metabolite	KEGG Compound	C00306	611,317
+A2m	GeneProduct	Entrez Gene	232345	571,861
+Pros1	GeneProduct	Entrez Gene	19128	264,595
+Thbd	GeneProduct	Entrez Gene	21824	223,695
+Tfpi	GeneProduct	Entrez Gene	21788	81,536
+Procr	GeneProduct	Entrez Gene	19124	223,675
+Cfh	GeneProduct	Entrez Gene	12628	1282,554
+Complement C3(H2O)	Metabolite	KEGG Compound	C22539	1200,270
+Complement C3(H2O)	Metabolite	KEGG Compound	C22539	1200,366
+Complement factor Bb	Metabolite	KEGG Compound	C22540	1200,366
+C3	GeneProduct	Entrez Gene	12266	1200,218
+Coagulation factor XIIa	Metabolite	KEGG Compound	C03379	412,282
+C3	GeneProduct	Entrez Gene	12266	1130,341
+Complement component 3b	Metabolite	KEGG Compound	C22533	1130,441
+C3a anaphylatoxin	Metabolite	KEGG Compound	C02002	1154,412
+Complement component 3b	Metabolite	KEGG Compound	C22533	1130,531
+Complement factor Bb	Metabolite	KEGG Compound	C22540	1130,531
+C3	GeneProduct	Entrez Gene	12266	1017,482
+Complement component 3b	Metabolite	KEGG Compound	C22533	1017,628
+C3a anaphylatoxin	Metabolite	KEGG Compound	C02002	1041,589
+C4b	GeneProduct	Entrez Gene	12268	878,218
+C4a	GeneProduct	Entrez Gene	625018	878,218
+C2	GeneProduct	Entrez Gene	12263	927,218
+Complement component 4b	Metabolite	KEGG Compound	C22542	903,531
+Complement component 2a	Metabolite	KEGG Compound	C22531	903,531
+F12	GeneProduct	Entrez Gene	58992	412,218
+Mbl1	GeneProduct	Entrez Gene	17194	984,303
+Mbl2	GeneProduct	Entrez Gene	17195	984,303
+Masp1	GeneProduct	Entrez Gene	17174	984,320
+Masp2	GeneProduct	Entrez Gene	17175	984,320
+C1qa	GeneProduct	Entrez Gene	12259	821,312
+C1qb	GeneProduct	Entrez Gene	12260	821,312
+C1qc	GeneProduct	Entrez Gene	12262	821,312
+C1s2	GeneProduct	Entrez Gene	317677	821,312
+C1s1	GeneProduct	Entrez Gene	50908	821,312
+C1ra	GeneProduct	Entrez Gene	50909	821,312
+C1rb	GeneProduct	Entrez Gene	667277	821,312
+Complement component 4a	Metabolite	KEGG Compound	C22541	879,389
+Complement component 2b	Metabolite	KEGG Compound	C22532	927,389
+Hc	GeneProduct	Entrez Gene	15139	1017,677
+C7	GeneProduct	Entrez Gene	109828	1057,837
+C8b	GeneProduct	Entrez Gene	110382	1057,837
+C6	GeneProduct	Entrez Gene	12274	1057,837
+C9	GeneProduct	Entrez Gene	12279	1057,837
+C8a	GeneProduct	Entrez Gene	230558	1057,837
+C8g	GeneProduct	Entrez Gene	69379	1057,837
+Cd59a	GeneProduct	Entrez Gene	12509	944,889
+Cd59b	GeneProduct	Entrez Gene	333883	944,889
+Clu	GeneProduct	Entrez Gene	12759	944,909
+Vtn	GeneProduct	Entrez Gene	22370	944,929
+F11	GeneProduct	Entrez Gene	109821	340,252
+Complement component 3b	Metabolite	KEGG Compound	C22533	1130,695
+Complement factor Bb	Metabolite	KEGG Compound	C22540	1130,695
+Complement component 4b	Metabolite	KEGG Compound	C22542	903,695
+Complement component 2a	Metabolite	KEGG Compound	C22531	903,695
+Complement component 3b	Metabolite	KEGG Compound	C22533	903,695
+C5a anaphylatoxin	Metabolite	KEGG Compound	C16510	1041,769
+Complement component 5b	Metabolite	KEGG Compound	C22545	1017,804
+Cr2	GeneProduct	Entrez Gene	12902	1380,731
+Itgam	GeneProduct	Entrez Gene	16409	1380,780
+Itgb2	GeneProduct	Entrez Gene	16414	1380,780
+Itgb2l	GeneProduct	Entrez Gene	16415	1380,780
+Itgax	GeneProduct	Entrez Gene	16411	1380,829
+Itgb2	GeneProduct	Entrez Gene	16414	1380,829
+Itgb2l	GeneProduct	Entrez Gene	16415	1380,829
+Vsig4	GeneProduct	Entrez Gene	278180	1380,635
+C5ar1	GeneProduct	Entrez Gene	12273	1380,903
+Coagulation factor XIa	Metabolite	KEGG Compound	C03262	340,316
+C3ar1	GeneProduct	Entrez Gene	12267	1380,590
+Cr1l	GeneProduct	Entrez Gene	12946	1380,683
+Complement component 3b	Metabolite	KEGG Compound	C22533	1256,634
+Complement component 3f	Metabolite	KEGG Compound	C22534	1231,711
+Complement iC3b	Metabolite	KEGG Compound	C22535	1256,730
+Complement component 3c	Metabolite	KEGG Compound	C22537	1231,802
+Complement component 3dg	Metabolite	KEGG Compound	C22536	1256,826
+Complement component 3d	Metabolite	KEGG Compound	C22538	1256,884
+Cfi	GeneProduct	Entrez Gene	12630	1208,667
+Cfh	GeneProduct	Entrez Gene	12628	1208,684
+Cr1l	GeneProduct	Entrez Gene	12946	1208,684
+Cd46	GeneProduct	Entrez Gene	17221	1208,684
+Coagulation factor IXa	Metabolite	KEGG Compound	C03259	268,431
+Cfi	GeneProduct	Entrez Gene	12630	1208,762
+Cr1l	GeneProduct	Entrez Gene	12946	1208,779
+Complement component 4b	Metabolite	KEGG Compound	C22542	848,596
+Complement component 4c	Metabolite	KEGG Compound	C22543	843,686
+C4bp	GeneProduct	Entrez Gene	12269	800,650
+Cd46	GeneProduct	Entrez Gene	17221	800,650
+Zp3r	GeneProduct	Entrez Gene	22789	800,650
+Cfi	GeneProduct	Entrez Gene	12630	800,633
+Complement component 4d	Metabolite	KEGG Compound	C22544	854,686
+C4bp	GeneProduct	Entrez Gene	12269	822,555
+Zp3r	GeneProduct	Entrez Gene	22789	822,555
+Serping1	GeneProduct	Entrez Gene	12258	1003,383
+Plasmin	Metabolite	KEGG Compound	C00471	1226,857
