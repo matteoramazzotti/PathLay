@@ -169,14 +169,11 @@ This setup requires you the following:
 *	Mark the column number of the dataset that stores p-values and write a threshold for them
 
 .. note::
-	Depending on the Analysis Mode you will choose for PathLay, not all of the above configurations must be performed:
-
-	 *	An "ID Only" analysis just requires an ID list in your dataset file
-	 *	an "ID + DE" analysis requires an ID list with Expression Values associated
-	 *	A "Full" analysis requires all the above plus a list of p-values associated to each ID.
+	Depending on the Analysis you will setup later for PathLay, not all of the above configurations must be performed:
 
 
-Once configuration is done you can click the "Save" button and the Experiment Package will be created. The "Save" button will of course also save any modification you will submit to PathLay when you will reload this Experiment Package in the future.
+
+Once the configuration is done you can click the "Save" button and the Experiment Package will be created. The "Save" button will of course also save any modification you will submit to PathLay when you will reload this Experiment Package in the future.
 
 .. _usage_home_load:
 
@@ -219,17 +216,65 @@ Configuration Page
 The Configuration Page is accessible from the Login Page by clicking "Access PathLay" once you input your credentials. From this page you will be able to run PathLay's analysis on an Experiment Package.
 First thing to do is select an Experiment Package and load it using the dropdown menu and the "Load" button.
 
-.. _usage_access_mode:
+.. _usage_access_mapdb:
+
+^^^^^^^^^^^^^^
+Maps Databases
+^^^^^^^^^^^^^^
+
+The "Maps Database" section allows you to choose which database will be used to load pathways from, it currently provides two possibilities, both for Homo sapiens pathways: KEGG and WikiPathways.
+
+.. _usage_access_stat:
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
-Selecting an Analysis Mode
+Maps Restriction Procedure
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You can choose a Mode from the dropdown menu, which provides three options:
-	
-	*	Full: This mode needs a dataset where IDs, DEs and p-values are provided. It will represents the presence of statistically relevant IDs on pathways with a color scheme indicating their differential expression. Only the IDs with a DE and a p-value compatible with the thresholds configured in the Home Page will be displayed.
-	*	ID Only: This mode will only represent the presence of the IDs on pathways.
-	*	ID + DE: This mode needs a dataset where IDs and DEs are provided. It will represents the presence of IDs on pathways with a color scheme indicating their differential expression. Only the IDs with a DE compatible with the threshold configured in the Home Page will be displayed.
+.. _usage_access_data:
+
+^^^^^^^^^^^^^^
+Data Selection
+^^^^^^^^^^^^^^
+
+The "Select Maps using" section allows to select the datasets you want to use by simply check the boxes you are interested in between "Genes", "Proteins", "miRNAs", "Methylations", "Chromatin Status" and "Metabolites".
+
+.. warning::
+	Whenever a checkbox is disabled, it means that either the dataset was not found available or that the setup in the Home page was not performed accordingly (i.e. the content of the columns was not pointed out correctly).
+
+
+.. _usage_data_types:
+
+^^^^^^^^^^^^^^^^^^^^^
+Configuring a Dataset
+^^^^^^^^^^^^^^^^^^^^^
+
+Under the "Select Maps using" section is located a selector that allows to switch between the configurations available for each dataset.
+Some of these configurations are common to every data type, while others, related to the Transcription Factors (TFs) and the Non Differentially Expressed components (NoDE), are peculiar to a few of them. 
+
+
+.. _usage_data_filters:
+
+^^^^^^^^^^^^^^^^^
+Filtering Options
+^^^^^^^^^^^^^^^^^
+
+There are three filters available for each data type, which can be enabled by checking the respective box and requires a threshold value to be written in the input field next to it. These three filters are summarized below:
+	* Effect Size < : filters out all the components with an Effect Size value greater than the threshold selected
+	* Effect Size > : filters out all the components with an Effect Size value smaller than the threshold selected
+	* p-value < : filters out all the components with a p-value value greater than the threshold
+
+.. warning::
+	Whenever a threshold field displays a red background, it means that the aforementioned threshold is not valid and contains a typing error. In this situation if the related filter checkbox remains enabled, the submit button will disappear until this error is either fixed by changing the threshold value or by disabling the filter.
+
+.. _usage_data_id_only:
+
+^^^^^^^^^^^^^^^
+ID Preservation
+^^^^^^^^^^^^^^^
+
+ID Preservation can be enabled for every data type by checking the "Preserve non DE IDs" checkbox. This feature will not let PathLay to discard IDs found in the dataset without an Effect Size value. These "ID Only" components will be represented with a different palette of colors since they do not provide any information regarding their differential expression, but they will be still integrated with the other datasets.
+
+
 
 .. _usage_access_nodeg:
 
@@ -248,28 +293,6 @@ Transcription Factors
 
 PathLay also supports GTRD as a database and can display transcription factors (TFs) that interacts with genes coming from a Transcriptomic dataset and as well recognize if those gene IDs actually refers directly to a transcription factor. Transcription factors contained in GTRD database will be loaded and linked to the gene IDs in the Transcriptomic dataset, if a transcription factor is found in the Transcriptomic dataset it will also be linked to any related gene in the dataset. An option for TFs is present in the "Load NODEGs from:" section alongside miRNAs and methylations, when enabled it allows any transcription factor found in the transcriptomic dataset to be linked to any ID not included in the dataset with the same approach as miRNAs and methylations.
 
-
-.. _usage_access_stat:
-
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-Maps Restriction Procedure
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. _usage_access_mapdb:
-
-^^^^^^^^^^^^^^
-Maps Databases
-^^^^^^^^^^^^^^
-
-The "Maps Database" section allows you to choose which database will be used to load pathways from, it currently provides two possibilities, both for Homo sapiens pathways: KEGG and WikiPathways.
-
-.. _usage_access_data:
-
-^^^^^^^^^^^^^^
-Data Selection
-^^^^^^^^^^^^^^
-
-The final step before launching the analysis is to select the datasets you want to use in the "Select Maps using" section and simply check the boxes you are interested in between "Genes", "Proteins", "miRNAs", "Methylations" and "Metabolites". Once it is all set, hit the "Submit" button and wait for PathLay to display the pathways.
 
 .. _usage_results:
 

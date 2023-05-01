@@ -30,12 +30,14 @@ Indices and tables
 		* :ref:`Gene Ontologies <usage_home_ont>`
 		* :ref:`Downloading an Experiment Package <usage_home_download>`
 	* :ref:`Configuration Page <usage_access>`
-		* :ref:`Selecting an Analysis Mode <usage_access_mode>`
+		* :ref:`Maps Databases <usage_access_mapdb>`
+		* :ref:`Maps Restriction Procedure <usage_access_stat>`
+		* :ref:`Data Selection <usage_access_data>`
+		* :ref:`Configuring a Dataset <usage_data_types>`
+		* :ref:`Filtering Options <usage_data_filters>`
+		* :ref:`ID Preservation <usage_data_id_only>`
 		* :ref:`Non Differentially Expressed IDs <usage_access_nodeg>`
 		* :ref:`Transcription Factors <usage_access_tfs>`
-		* :ref:`Maps Restriction Procedure <usage_access_stat>`
-		* :ref:`Maps Databases <usage_access_mapdb>`
-		* :ref:`Data Selection <usage_access_data>`
 	* :ref:`Pathway Explorer <usage_results>`
 		* :ref:`Pathway Navigation <usage_results_mapsel>`
 		* :ref:`Indicators <usage_results_legend>`

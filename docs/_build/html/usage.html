@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Usage &mdash; PathLay 0.1 documentation</title>
@@ -16,7 +16,6 @@
         <script src="_static/underscore.js"></script>
         <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" /> 
@@ -27,11 +26,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="index.html" class="icon icon-home"> PathLay
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            PathLay
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -59,12 +62,14 @@
 </ul>
 </li>
 <li><a class="reference internal" href="#configuration-page">Configuration Page</a><ul>
-<li><a class="reference internal" href="#selecting-an-analysis-mode">Selecting an Analysis Mode</a></li>
+<li><a class="reference internal" href="#maps-databases">Maps Databases</a></li>
+<li><a class="reference internal" href="#maps-restriction-procedure">Maps Restriction Procedure</a></li>
+<li><a class="reference internal" href="#data-selection">Data Selection</a></li>
+<li><a class="reference internal" href="#configuring-a-dataset">Configuring a Dataset</a></li>
+<li><a class="reference internal" href="#filtering-options">Filtering Options</a></li>
+<li><a class="reference internal" href="#usage-data-id-only">ID Preservation</a></li>
 <li><a class="reference internal" href="#non-differentially-expressed-ids">Non Differentially Expressed IDs</a></li>
 <li><a class="reference internal" href="#transcription-factors">Transcription Factors</a></li>
-<li><a class="reference internal" href="#maps-restriction-procedure">Maps Restriction Procedure</a></li>
-<li><a class="reference internal" href="#maps-databases">Maps Databases</a></li>
-<li><a class="reference internal" href="#data-selection">Data Selection</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#pathway-explorer">Pathway Explorer</a><ul>
@@ -101,7 +106,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home"></a></li>
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
       <li class="breadcrumb-item active">Usage</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/usage.rst.txt" rel="nofollow"> View page source</a>
@@ -127,7 +132,7 @@
 <span id="usage-specs"></span><h2>Experiment Package<a class="headerlink" href="#experiment-package" title="Permalink to this heading"></a></h2>
 <p>In the following section, the structure of a zipped Experiment Package will be explained. Please note that each and avery file listed below can be created and modified from your Home Page direclty, with no need to manually adjust them from outside PathLay.
 Each Experiment Package is defined from up to 7 different text files with different extensions:</p>
-<table class="colwidths-given docutils align-default" id="id1">
+<table class="docutils align-default" id="id1">
 <caption><span class="caption-text">Experiment Package Content</span><a class="headerlink" href="#id1" title="Permalink to this table"></a></caption>
 <colgroup>
 <col style="width: 30%" />
@@ -166,7 +171,7 @@ Each Experiment Package is defined from up to 7 different text files with differ
 <section id="configuration-file">
 <span id="usage-specs-conf"></span><h3>Configuration File<a class="headerlink" href="#configuration-file" title="Permalink to this heading"></a></h3>
 <p>The configuration file for the Experiment Package is structured as a series of tag and value pairs, separated by a “=” character, with each line of the file holding one pair.</p>
-<table class="colwidths-given docutils align-default" id="id2">
+<table class="docutils align-default" id="id2">
 <caption><span class="caption-text">Configuration File Tags</span><a class="headerlink" href="#id2" title="Permalink to this table"></a></caption>
 <colgroup>
 <col style="width: 16%" />
@@ -396,7 +401,7 @@ Each Experiment Package is defined from up to 7 different text files with differ
 </section>
 <section id="supported-ids">
 <span id="usage-specs-ids"></span><h3>Supported IDs<a class="headerlink" href="#supported-ids" title="Permalink to this heading"></a></h3>
-<table class="colwidths-given docutils align-default" id="id4">
+<table class="docutils align-default" id="id4">
 <caption><span class="caption-text">Compatible IDs to use in your Datasets</span><a class="headerlink" href="#id4" title="Permalink to this table"></a></caption>
 <colgroup>
 <col style="width: 50%" />
@@ -453,16 +458,9 @@ This setup requires you the following:</p>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Depending on the Analysis Mode you will choose for PathLay, not all of the above configurations must be performed:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>An “ID Only” analysis just requires an ID list in your dataset file</p></li>
-<li><p>an “ID + DE” analysis requires an ID list with Expression Values associated</p></li>
-<li><p>A “Full” analysis requires all the above plus a list of p-values associated to each ID.</p></li>
-</ul>
-</div></blockquote>
+<p>Depending on the Analysis you will setup later for PathLay, not all of the above configurations must be performed:</p>
 </div>
-<p>Once configuration is done you can click the “Save” button and the Experiment Package will be created. The “Save” button will of course also save any modification you will submit to PathLay when you will reload this Experiment Package in the future.</p>
+<p>Once the configuration is done you can click the “Save” button and the Experiment Package will be created. The “Save” button will of course also save any modification you will submit to PathLay when you will reload this Experiment Package in the future.</p>
 </section>
 <section id="loading-an-experiment-package">
 <span id="usage-home-load"></span><h3>Loading an Experiment Package<a class="headerlink" href="#loading-an-experiment-package" title="Permalink to this heading"></a></h3>
@@ -488,16 +486,44 @@ You can also download the entirety of your home folder (i.e. all the datasets an
 <span id="usage-access"></span><h2>Configuration Page<a class="headerlink" href="#configuration-page" title="Permalink to this heading"></a></h2>
 <p>The Configuration Page is accessible from the Login Page by clicking “Access PathLay” once you input your credentials. From this page you will be able to run PathLay’s analysis on an Experiment Package.
 First thing to do is select an Experiment Package and load it using the dropdown menu and the “Load” button.</p>
-<section id="selecting-an-analysis-mode">
-<span id="usage-access-mode"></span><h3>Selecting an Analysis Mode<a class="headerlink" href="#selecting-an-analysis-mode" title="Permalink to this heading"></a></h3>
-<p>You can choose a Mode from the dropdown menu, which provides three options:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>Full: This mode needs a dataset where IDs, DEs and p-values are provided. It will represents the presence of statistically relevant IDs on pathways with a color scheme indicating their differential expression. Only the IDs with a DE and a p-value compatible with the thresholds configured in the Home Page will be displayed.</p></li>
-<li><p>ID Only: This mode will only represent the presence of the IDs on pathways.</p></li>
-<li><p>ID + DE: This mode needs a dataset where IDs and DEs are provided. It will represents the presence of IDs on pathways with a color scheme indicating their differential expression. Only the IDs with a DE compatible with the threshold configured in the Home Page will be displayed.</p></li>
+<section id="maps-databases">
+<span id="usage-access-mapdb"></span><h3>Maps Databases<a class="headerlink" href="#maps-databases" title="Permalink to this heading"></a></h3>
+<p>The “Maps Database” section allows you to choose which database will be used to load pathways from, it currently provides two possibilities, both for Homo sapiens pathways: KEGG and WikiPathways.</p>
+</section>
+<section id="maps-restriction-procedure">
+<span id="usage-access-stat"></span><h3>Maps Restriction Procedure<a class="headerlink" href="#maps-restriction-procedure" title="Permalink to this heading"></a></h3>
+</section>
+<section id="data-selection">
+<span id="usage-access-data"></span><h3>Data Selection<a class="headerlink" href="#data-selection" title="Permalink to this heading"></a></h3>
+<p>The “Select Maps using” section allows to select the datasets you want to use by simply check the boxes you are interested in between “Genes”, “Proteins”, “miRNAs”, “Methylations”, “Chromatin Status” and “Metabolites”.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Whenever a checkbox is disabled, it means that either the dataset was not found available or that the setup in the Home page was not performed accordingly (i.e. the content of the columns was not pointed out correctly).</p>
+</div>
+</section>
+<section id="configuring-a-dataset">
+<span id="usage-data-types"></span><h3>Configuring a Dataset<a class="headerlink" href="#configuring-a-dataset" title="Permalink to this heading"></a></h3>
+<p>Under the “Select Maps using” section is located a selector that allows to switch between the configurations available for each dataset.
+Some of these configurations are common to every data type, while others, related to the Transcription Factors (TFs) and the Non Differentially Expressed components (NoDE), are peculiar to a few of them.</p>
+</section>
+<section id="filtering-options">
+<span id="usage-data-filters"></span><h3>Filtering Options<a class="headerlink" href="#filtering-options" title="Permalink to this heading"></a></h3>
+<dl class="simple">
+<dt>There are three filters available for each data type, which can be enabled by checking the respective box and requires a threshold value to be written in the input field next to it. These three filters are summarized below:</dt><dd><ul class="simple">
+<li><p>Effect Size &lt; : filters out all the components with an Effect Size value greater than the threshold selected</p></li>
+<li><p>Effect Size &gt; : filters out all the components with an Effect Size value smaller than the threshold selected</p></li>
+<li><p>p-value &lt; : filters out all the components with a p-value value greater than the threshold</p></li>
 </ul>
-</div></blockquote>
+</dd>
+</dl>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Whenever a threshold field displays a red background, it means that the aforementioned threshold is not valid and contains a typing error. In this situation if the related filter checkbox remains enabled, the submit button will disappear until this error is either fixed by changing the threshold value or by disabling the filter.</p>
+</div>
+</section>
+<section id="usage-data-id-only">
+<span id="id-preservation"></span><h3>ID Preservation<a class="headerlink" href="#usage-data-id-only" title="Permalink to this heading"></a></h3>
+<p>ID Preservation can be enabled for every data type by checking the “Preserve non DE IDs” checkbox. This feature will not let PathLay to discard IDs found in the dataset without an Effect Size value. These “ID Only” components will be represented with a different palette of colors since they do not provide any information regarding their differential expression, but they will be still integrated with the other datasets.</p>
 </section>
 <section id="non-differentially-expressed-ids">
 <span id="usage-access-nodeg"></span><h3>Non Differentially Expressed IDs<a class="headerlink" href="#non-differentially-expressed-ids" title="Permalink to this heading"></a></h3>
@@ -506,17 +532,6 @@ First thing to do is select an Experiment Package and load it using the dropdown
 <section id="transcription-factors">
 <span id="usage-access-tfs"></span><h3>Transcription Factors<a class="headerlink" href="#transcription-factors" title="Permalink to this heading"></a></h3>
 <p>PathLay also supports GTRD as a database and can display transcription factors (TFs) that interacts with genes coming from a Transcriptomic dataset and as well recognize if those gene IDs actually refers directly to a transcription factor. Transcription factors contained in GTRD database will be loaded and linked to the gene IDs in the Transcriptomic dataset, if a transcription factor is found in the Transcriptomic dataset it will also be linked to any related gene in the dataset. An option for TFs is present in the “Load NODEGs from:” section alongside miRNAs and methylations, when enabled it allows any transcription factor found in the transcriptomic dataset to be linked to any ID not included in the dataset with the same approach as miRNAs and methylations.</p>
-</section>
-<section id="maps-restriction-procedure">
-<span id="usage-access-stat"></span><h3>Maps Restriction Procedure<a class="headerlink" href="#maps-restriction-procedure" title="Permalink to this heading"></a></h3>
-</section>
-<section id="maps-databases">
-<span id="usage-access-mapdb"></span><h3>Maps Databases<a class="headerlink" href="#maps-databases" title="Permalink to this heading"></a></h3>
-<p>The “Maps Database” section allows you to choose which database will be used to load pathways from, it currently provides two possibilities, both for Homo sapiens pathways: KEGG and WikiPathways.</p>
-</section>
-<section id="data-selection">
-<span id="usage-access-data"></span><h3>Data Selection<a class="headerlink" href="#data-selection" title="Permalink to this heading"></a></h3>
-<p>The final step before launching the analysis is to select the datasets you want to use in the “Select Maps using” section and simply check the boxes you are interested in between “Genes”, “Proteins”, “miRNAs”, “Methylations” and “Metabolites”. Once it is all set, hit the “Submit” button and wait for PathLay to display the pathways.</p>
 </section>
 </section>
 <section id="pathway-explorer">
@@ -592,7 +607,7 @@ The “Reset” button will empty the selection pool and restore the selectors a
 <section id="select-by-agreement">
 <span id="usage-results-logical-byagreement"></span><h4>Select by Agreement<a class="headerlink" href="#select-by-agreement" title="Permalink to this heading"></a></h4>
 <p>The second row in the Logical Section is composed by a series of selectors that allows the setup of the so called “Agreement” which is a feature that lets you select two related data types and select what type of correlation you are interested in. The main data type can be selected with the first selector which provides a choice between “Gene” and “Protein”, and the second data type can be selected with the other selector which allows a choice between “Gene” or “Protein” (depending on your main data type of choice), “miRNA”, “Methylation” or “TF”. After the two data types are selected, the last step to do is to choose a “Positive Agreement” or a “Negative Agreement” with the last selector and hit the “Add” button. The configured agreement will be displayed in the “Agreements Selected” pool positioned under the “IDs Selected” pool. Once the select button is clicked, indicators that don’t satisfy the requirements of the agreement will be hidden, thus if a pathway doesn’t have visible indicators it will not be included in the pathway selector. Multiple agreements can be added to the pool to make the selection more stringent. How various agreements work is reported in the following table:</p>
-<table class="colwidths-given docutils align-default" id="id5">
+<table class="docutils align-default" id="id5">
 <caption><span class="caption-text">Types of Agreement</span><a class="headerlink" href="#id5" title="Permalink to this table"></a></caption>
 <colgroup>
 <col style="width: 20%" />
