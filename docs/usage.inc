@@ -410,23 +410,30 @@ When an ID is chosen, all the indicators related to it will be highlighted with 
 The Clipboard
 ^^^^^^^^^^^^^
 
-The Clipboard is a freely movable window that will be displayed as soon as the "PathLay - MAPS" page is loaded. It is composed by two boxes, the "Info" box and the "Selected" box. The "Info" box will display the information related to a clicked indicator, this includes every ID that the indicator is portaying, with their differential expression values and other IDs eventually linked. Cliking on the IDs in the "Info" box will open up a page in the online database of reference for that data type:
+The Clipboard is a freely movable window that will be displayed as soon as the "Clipboard" writing is clicked in the menu.
+It is composed by two boxes, the "Info" box and the "Selected" box.
+The "Info" box will display the information related to a clicked indicator, this includes every ID that the indicator is portaying, with their differential expression values and other IDs eventually linked.
+Cliking on the IDs in the "Info" box will open up a page in the online database of reference for that data type:
 
 	* NCBI for genes 
 	* UniProtKB for proteins 
 	* Mirtarbase for miRNAs
-	* pippo for TFs.
+	* gsea-msigdb for TFs.
 
-Once you have clicked an indicator on a pathway and its information is displayed on the Clipboard, you can click the "Add" button below the "Info" box and save the indicator inside the Clipboard's "Selected" box. It will be listed as a smaller indicator under the name of the pathway from where the selction has been performed. Selecting this smaller indicator in the box will also display its information in the "Info" box and if the "Remove" button is clicked, the indicator will be removed from the "Selected" box. If instead, the "Select" button under the "Selected" box is clicked, the pathway selector will only list pathways that portray the indicator selected. The last feature provided by the Clipboard is the "Download" button which allows to download a tab separated text document listing all the information regarding selected indicators currently populating the "Selected" box.
+Once you have clicked an indicator on a pathway and its information is displayed on the Clipboard, you can click the "Add" button below the "Info" box and save the indicator inside the Clipboard's "Selected" box.
+It will be listed as a smaller indicator under the name of the pathway from where the selction has been performed.
+Selecting this smaller indicator in the box will also display its information in the "Info" box and if the "Remove" button is clicked, the indicator will be removed from the "Selected" box.
+The "Select" button under the "Selected" box on the Clipboard performs the same operations as the highlight button in the Highlight Section, thus applying a dotted magenta border on the indicators of interest and disabling maps not containing them in the map selector.
+The last feature provided by the Clipboard is the "Download" button which allows to download a tab separated text document listing all the information regarding selected indicators currently populating the "Selected" box.
 
 .. note::
 	Closing the Clipboard by clicking the "X" on the top right corner will not delete any selected indicator from the "Selected" box.
 
 .. _usage_results_logical:
 
-^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
 The Selectors Section
-^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
 
 This section contains the main query system of the "PathLay - MAPS" page allowing to perform a more sophisticate three level selection by:
 	* IDs
@@ -435,6 +442,12 @@ This section contains the main query system of the "PathLay - MAPS" page allowin
 
 These selections can be performed by adding a query tag using one of the three selectors and clicking the respective "Add" button. 
 Once all the query tags you are interested in are added to the pool on the right, the query can be performed by clicking the "Select" button.
+
+A brief summary of the rationale behind the query is the following:
+	* The IDs provided are rounded up and only those maps that contains indicators representing them are allowed to proceed in the query. Is important to note that this step works with an "AND" approach so, whenever a map does not represent even one of the IDs provided, it is discarded and thus removed from the selector.
+	* The Agreements provided are rounded up and the indicators that are currently displayable or that passed the previous step of the query, are checked for all the Agreements. Whenever an agreement is not satisfied, the indicator is hidden and if all the indicators in a specific map don't satisfy the agreements, the map is discarded and removed from the selector.
+	* The Ontologies provided are rounded up and the indicators that are currently displayable or that passed the previous step of the query, are checked for components that refers to the cellular compartments selected. Whenever an indicator doesn't refer to one of the compartments selected, it is hidden and if all the indicators in a specific map don't refer to the cellular compartments, the map is discarded and removed from the map selector.
+
 To reset the interface to its default state simply click the "Reset" button next to it.
 Details on each type of query tag are provided below.
 

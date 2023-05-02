@@ -7,29 +7,29 @@
 Welcome to PathLay's documentation!
 ===================================
 
-.. include:: indices.rst
+.. include:: indices.inc
 
 .. _features:
 
-.. include::  features.rst
+.. include::  features.inc
 
 .. _requirements:
 
-.. include:: requirements.rst
+.. include:: requirements.inc
 
 
 
 .. _installation:
 
-.. include:: installation.rst
+.. include:: installation.inc
 
 .. _howto:
 
-.. include:: howto.rst
+.. include:: howto.inc
 
 .. _usage:
 
-.. include:: usage.rst
+.. include:: usage.inc
 
 .. _contribute:
 

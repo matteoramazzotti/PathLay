@@ -43,6 +43,7 @@ Indices and tables
 	* :ref:`Pathway Explorer <usage_results>`
 		* :ref:`Pathway Navigation <usage_results_mapsel>`
 		* :ref:`Indicators <usage_results_legend>`
+		* :ref:`Main Menu <usage_features_menu>`
 		* :ref:`Highlighting Feature <usage_results_highlight>`
 		* :ref:`The Clipboard <usage_results_clipboard>`
 		* :ref:`The Logical Section <usage_results_logical>`

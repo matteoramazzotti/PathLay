@@ -15,10 +15,10 @@ release = '0.1'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 #extensions = ["myst_parser"]
-extensions = ['sphinx_rtd_theme']
+extensions = ['sphinx_rtd_theme','myst_parser']
 
 templates_path = ['_templates']
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '.inc']
 
 
 
