@@ -1,0 +1,7 @@
+Dataset Type,"Supported Input IDs ",ID Type for Analysis
+Gene,Entrez Gene ID;  Ensembl; Gene Symbol;,Entrez Gene ID
+Protein,Entrez Gene ID; UniProtKB Entry; Protein Symbol;,Entrez Gene ID
+miRNA,miRBase ID,miRBase ID
+Metabolite,KEGG Compounds; Compound Name;,KEGG Compounds
+Methylation,Entrez Gene ID;  Ensembl; Gene Symbol;,Entrez Gene ID
+Chromatin Status,Entrez Gene ID;  Ensembl; Gene Symbol;,Entrez Gene ID

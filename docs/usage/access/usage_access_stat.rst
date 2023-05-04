@@ -1,0 +1,6 @@
+.. _usage_access_stat:
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+Maps Restriction Procedure
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+

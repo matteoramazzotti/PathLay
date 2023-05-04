@@ -1,0 +1,28 @@
+Tag,Description,Content
+expname,Holds the name of the Experiment Package,String of text
+comments,Holds brief comments for the Experiment Package,String of text
+organism,Holds the organism ID related to the experiment,hsa; mmu
+geneIdType,Holds the ID type for the Transcriptomic dataset,entrez; ensembl; symbol;
+gene_id_column,Holds the number representing the column with the IDs in the Transcriptomic dataset,Integer Number
+gene_dev_column,Holds the number representing the column with the differential expression values in the Transcriptomic dataset,Integer Number
+gene_pvalue_column,Holds the number representing the column with the p-values in the Transcriptomic dataset,Integer Number
+urnaIdType,Holds the ID type for the miRNomic dataset,mirbase
+urna_id_column,Holds the number representing the column with the IDs in the miRNomic dataset,Integer Number
+urna_dev_column,Holds the number representing the column with the differential expression values in the miRNomic dataset,Integer Number
+urna_pvalue_column,Holds the number representing the column with the p-values in the miRNomic dataset,Integer Number
+metaIdType,Holds the ID type for the Metabolomic dataset,keggcompound; name;
+meta_id_column,Holds the number representing the column with the IDs in the Metabolomic dataset,Integer Number
+meta_dev_column,Holds the number representing the column with the expression values in the Metabolomic dataset,Integer Number
+meta_pvalue_column,Holds the number representing the column with the p-values in the Metabolomic dataset,Integer Number
+methIdType,Holds the ID type for the Methylomic dataset,entrez; ensembl; symbol;
+meth_id_column,Holds the number representing the column with the IDs in the Methylomic dataset,Integer Number
+meth_dev_column,Holds the number representing the column with the differential expression values in the Methylomic dataset,Integer Number
+meth_pvalue_column,Holds the number representing the column with the p-values in the Methylomic dataset,Integer Number
+protIdType,Holds the ID type for the Proteomic dataset,entry; entrez; symbol;
+prot_id_column,Holds the number representing the column with the IDs in the Proteomic dataset,Integer Number
+prot_dev_column,Holds the number representing the column with the differential expression values in the Proteomic dataset,Integer Number
+prot_pvalue_column,Holds the number representing the column with the p-values in the Proteomic dataset,Integer Number
+chromaIdType,Holds the ID type for the Chromatin Status dataset,entrez; ensembl; symbol;
+chroma_id_column,Holds the number representing the column with the IDs in the Chromatin Status dataset,Integer Number
+chroma_dev_column,Holds the number representing the column with the differential expression values in the Chromatin Status dataset,Integer Number
+chroma_pvalue_column,Holds the number representing the column with the p-values in the Chromatin Status dataset,Integer Number

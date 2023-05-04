@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experiment Package &mdash; PathLay 0.1 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Configuration File" href="usage_exp_package_conf.html" />
+    <link rel="prev" title="Login to an Existing Account" href="../account/usage_account_login.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> PathLay
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../indices/indices_index.html">Welcome to PathLay’s documentation!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../features/index.html">Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../requirements/index.html">Requirements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../requirements/requirements_docker.html">For Building the Docker Image (Recommended)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../requirements/requirements_apache.html">For the Apache Server Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../installation/index.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../installation/installation_docker.html">Building the Docker Image (Recommended)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../installation/installation_apache.html">Apache Server Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../howto/index.html">How to run</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../howto/howto_localserver.html">Run PathLay as local server (localhost)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../howto/howto_remoteserver.html">Run PathLay as network server</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="../usage_index.html">Usage</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../account/usage_account_index.html">Account Managing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../account/usage_account_new.html">Register a New Account</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../account/usage_account_login.html">Login to an Existing Account</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Experiment Package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="usage_exp_package_conf.html">Configuration File</a></li>
+<li class="toctree-l3"><a class="reference internal" href="usage_exp_package_specs_data.html">Datasets Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="usage_exp_package_specs_ids.html">Supported IDs</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../home/usage_home_index.html">Home Manager</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../home/usage_home_create.html">Creating an Experiment Package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../home/usage_home_load.html">Loading an Experiment Package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../home/usage_home_ont.html">Gene Ontologies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../home/usage_home_download.html">Downloading an Experiment Package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../access/usage_access_index.html">Configuration Page</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../access/usage_access_mapsdb.html">Maps Databases</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../access/usage_access_stat.html">Maps Restriction Procedure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../access/usage_access_data.html">Data Selection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../access/usage_access_data_types.html">Configuring a Dataset</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../access/usage_access_filtering.html">Filtering Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../access/usage_access_id_only.html">ID Preservation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../access/usage_access_nodeg.html">Non Differentially Expressed IDs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../access/usage_access_tfs.html">Transcription Factors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../access/usage_access_tfs_id_only.html">Transcription Factors ID Preservation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../results/usage_results_index.html">Pathway Explorer</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../results/usage_results_mapsel.html">Pathway Navigation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../results/usage_results_legend.html">Indicators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../results/usage_results_menu.html">Main Menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../results/usage_results_highlight.html">Highlighting Feature</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../results/usage_results_clipboard.html">The Clipboard</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../results/selector/usage_results_selector.html">The Selectors Section</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../results/selector/usage_results_select_by_ids.html">Select by IDs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../results/selector/usage_results_select_by_agreement.html">Select by Agreement</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../results/settings/usage_results_settings.html">Settings</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../results/settings/usage_results_settings_transparency_and_size.html">Transparency and Size</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../results/settings/usage_results_settings_screenshot.html">Screenshot</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../license/index.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../support/index.html">Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contribute/index.html">Contribute</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">PathLay</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="../usage_index.html">Usage</a></li>
+      <li class="breadcrumb-item active">Experiment Package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/usage/exp_package/usage_exp_package_index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="experiment-package">
+<span id="usage-specs"></span><h1>Experiment Package<a class="headerlink" href="#experiment-package" title="Permalink to this heading"></a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<p>In the following section, the structure of a zipped Experiment Package will be explained. Please note that each and avery file listed below can be created and modified from your Home Page direclty, with no need to manually adjust them from outside PathLay.
+Each Experiment Package is defined from up to 7 different text files with different extensions:</p>
+<table class="colwidths-given docutils align-default" id="id1">
+<caption><span class="caption-text">Experiment Package Content</span><a class="headerlink" href="#id1" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 70%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>File Extension</p></th>
+<th class="head"><p>Content</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>.conf</p></td>
+<td><p>Holds the main configuration of the Experiment Package</p></td>
+</tr>
+<tr class="row-odd"><td><p>.mrna</p></td>
+<td><p>Holds the Transcriptomic dataset</p></td>
+</tr>
+<tr class="row-even"><td><p>.prot</p></td>
+<td><p>Holds the Proteomic dataset</p></td>
+</tr>
+<tr class="row-odd"><td><p>.mirna</p></td>
+<td><p>Holds the miRNomic dataset</p></td>
+</tr>
+<tr class="row-even"><td><p>.meth</p></td>
+<td><p>Holds the Methylomic dataset</p></td>
+</tr>
+<tr class="row-odd"><td><p>.chroma</p></td>
+<td><p>Holds the Chromatin Status dataset</p></td>
+</tr>
+<tr class="row-even"><td><p>.ont</p></td>
+<td><p>Holds the Gene Ontologies entries of interest of the Experiment Package</p></td>
+</tr>
+<tr class="row-odd"><td><p>.meta</p></td>
+<td><p>Holds the Metabolomic dataset</p></td>
+</tr>
+</tbody>
+</table>
+<p>Every experiment created in your Home Page has a name like “exp1,2,3…” automatically assigned. If you want to manually configure an experiment from scratch you have to name your files with this convention in mind (i.e. exp1.conf, exp1.mrna, exp1.meta etc…).</p>
+<section id="configuration-file">
+<span id="usage-specs-conf"></span><h2>Configuration File<a class="headerlink" href="#configuration-file" title="Permalink to this heading"></a></h2>
+<p>The configuration file for the Experiment Package is structured as a series of tag and value pairs, separated by a “=” character, with each line of the file holding one pair.</p>
+<table class="colwidths-given docutils align-default" id="id2">
+<caption><span class="caption-text">Configuration File Tags</span><a class="headerlink" href="#id2" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 53%" />
+<col style="width: 32%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Tag</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Content</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>expname</p></td>
+<td><p>Holds the name of the Experiment Package</p></td>
+<td><p>String of text</p></td>
+</tr>
+<tr class="row-odd"><td><p>comments</p></td>
+<td><p>Holds brief comments for the Experiment Package</p></td>
+<td><p>String of text</p></td>
+</tr>
+<tr class="row-even"><td><p>organism</p></td>
+<td><p>Holds the organism ID related to the experiment</p></td>
+<td><p>hsa; mmu</p></td>
+</tr>
+<tr class="row-odd"><td><p>geneIdType</p></td>
+<td><p>Holds the ID type for the Transcriptomic dataset</p></td>
+<td><p>entrez; ensembl; symbol;</p></td>
+</tr>
+<tr class="row-even"><td><p>gene_id_column</p></td>
+<td><p>Holds the number representing the column with the IDs in the Transcriptomic dataset</p></td>
+<td><p>Integer Number</p></td>
+</tr>
+<tr class="row-odd"><td><p>gene_dev_column</p></td>
+<td><p>Holds the number representing the column with the differential expression values in the Transcriptomic dataset</p></td>
+<td><p>Integer Number</p></td>
+</tr>
+<tr class="row-even"><td><p>gene_pvalue_column</p></td>
+<td><p>Holds the number representing the column with the p-values in the Transcriptomic dataset</p></td>
+<td><p>Integer Number</p></td>
+</tr>
+<tr class="row-odd"><td><p>urnaIdType</p></td>
+<td><p>Holds the ID type for the miRNomic dataset</p></td>
+<td><p>mirbase</p></td>
+</tr>
+<tr class="row-even"><td><p>urna_id_column</p></td>
+<td><p>Holds the number representing the column with the IDs in the miRNomic dataset</p></td>
+<td><p>Integer Number</p></td>
+</tr>
+<tr class="row-odd"><td><p>urna_dev_column</p></td>
+<td><p>Holds the number representing the column with the differential expression values in the miRNomic dataset</p></td>
+<td><p>Integer Number</p></td>
+</tr>
+<tr class="row-even"><td><p>urna_pvalue_column</p></td>
+<td><p>Holds the number representing the column with the p-values in the miRNomic dataset</p></td>
+<td><p>Integer Number</p></td>
+</tr>
+<tr class="row-odd"><td><p>metaIdType</p></td>
+<td><p>Holds the ID type for the Metabolomic dataset</p></td>
+<td><p>keggcompound; name;</p></td>
+</tr>
+<tr class="row-even"><td><p>meta_id_column</p></td>
+<td><p>Holds the number representing the column with the IDs in the Metabolomic dataset</p></td>
+<td><p>Integer Number</p></td>
+</tr>
+<tr class="row-odd"><td><p>meta_dev_column</p></td>
+<td><p>Holds the number representing the column with the expression values in the Metabolomic dataset</p></td>
+<td><p>Integer Number</p></td>
+</tr>
+<tr class="row-even"><td><p>meta_pvalue_column</p></td>
+<td><p>Holds the number representing the column with the p-values in the Metabolomic dataset</p></td>
+<td><p>Integer Number</p></td>
+</tr>
+<tr class="row-odd"><td><p>methIdType</p></td>
+<td><p>Holds the ID type for the Methylomic dataset</p></td>
+<td><p>entrez; ensembl; symbol;</p></td>
+</tr>
+<tr class="row-even"><td><p>meth_id_column</p></td>
+<td><p>Holds the number representing the column with the IDs in the Methylomic dataset</p></td>
+<td><p>Integer Number</p></td>
+</tr>
+<tr class="row-odd"><td><p>meth_dev_column</p></td>
+<td><p>Holds the number representing the column with the differential expression values in the Methylomic dataset</p></td>
+<td><p>Integer Number</p></td>
+</tr>
+<tr class="row-even"><td><p>meth_pvalue_column</p></td>
+<td><p>Holds the number representing the column with the p-values in the Methylomic dataset</p></td>
+<td><p>Integer Number</p></td>
+</tr>
+<tr class="row-odd"><td><p>protIdType</p></td>
+<td><p>Holds the ID type for the Proteomic dataset</p></td>
+<td><p>entry; entrez; symbol;</p></td>
+</tr>
+<tr class="row-even"><td><p>prot_id_column</p></td>
+<td><p>Holds the number representing the column with the IDs in the Proteomic dataset</p></td>
+<td><p>Integer Number</p></td>
+</tr>
+<tr class="row-odd"><td><p>prot_dev_column</p></td>
+<td><p>Holds the number representing the column with the differential expression values in the Proteomic dataset</p></td>
+<td><p>Integer Number</p></td>
+</tr>
+<tr class="row-even"><td><p>prot_pvalue_column</p></td>
+<td><p>Holds the number representing the column with the p-values in the Proteomic dataset</p></td>
+<td><p>Integer Number</p></td>
+</tr>
+<tr class="row-odd"><td><p>chromaIdType</p></td>
+<td><p>Holds the ID type for the Chromatin Status dataset</p></td>
+<td><p>entrez; ensembl; symbol;</p></td>
+</tr>
+<tr class="row-even"><td><p>chroma_id_column</p></td>
+<td><p>Holds the number representing the column with the IDs in the Chromatin Status dataset</p></td>
+<td><p>Integer Number</p></td>
+</tr>
+<tr class="row-odd"><td><p>chroma_dev_column</p></td>
+<td><p>Holds the number representing the column with the differential expression values in the Chromatin Status dataset</p></td>
+<td><p>Integer Number</p></td>
+</tr>
+<tr class="row-even"><td><p>chroma_pvalue_column</p></td>
+<td><p>Holds the number representing the column with the p-values in the Chromatin Status dataset</p></td>
+<td><p>Integer Number</p></td>
+</tr>
+</tbody>
+</table>
+<p>An example of a fully configured .conf file is displayed below:</p>
+<div class="literal-block-wrapper docutils container" id="id3">
+<div class="code-block-caption"><span class="caption-text">Structure of a .conf file of an Experiment Package with Transcriptomic, Proteomic, miRNomic, Methylomic and Metabolomic datasets associated</span><a class="headerlink" href="#id3" title="Permalink to this code"></a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">expname</span><span class="o">=</span><span class="n">LTED</span> <span class="n">vs</span> <span class="n">MCF7</span><span class="o">+</span>
+<span class="n">comments</span><span class="o">=</span><span class="n">ANOVA</span> <span class="n">adj</span><span class="o">.</span><span class="n">p</span> <span class="o">+</span> <span class="n">Tukey</span>
+<span class="n">organism</span><span class="o">=</span><span class="n">hsa</span>
+<span class="n">geneIdType</span><span class="o">=</span><span class="n">entrez</span>
+<span class="n">gene_id_column</span><span class="o">=</span><span class="mi">8</span>
+<span class="n">gene_dev_column</span><span class="o">=</span><span class="mi">6</span>
+<span class="n">gene_pvalue_column</span><span class="o">=</span><span class="mi">5</span>
+<span class="n">protIdType</span><span class="o">=</span><span class="n">entry</span>
+<span class="n">prot_id_column</span><span class="o">=</span><span class="mi">1</span>
+<span class="n">prot_dev_column</span><span class="o">=</span><span class="mi">4</span>
+<span class="n">prot_pvalue_column</span><span class="o">=</span><span class="mi">3</span>
+<span class="n">urnaIdType</span><span class="o">=</span><span class="n">mirbase</span>
+<span class="n">urna_id_column</span><span class="o">=</span><span class="mi">1</span>
+<span class="n">urna_dev_column</span><span class="o">=</span><span class="mi">6</span>
+<span class="n">urna_pvalue_column</span><span class="o">=</span><span class="mi">5</span>
+<span class="n">methIdType</span><span class="o">=</span><span class="n">entrez</span>
+<span class="n">meth_id_column</span><span class="o">=</span><span class="mi">8</span>
+<span class="n">meth_dev_column</span><span class="o">=</span><span class="mi">6</span>
+<span class="n">meth_pvalue_column</span><span class="o">=</span><span class="mi">5</span>
+<span class="n">metaIdType</span><span class="o">=</span><span class="n">keggcompound</span>
+<span class="n">meta_id_column</span><span class="o">=</span><span class="mi">8</span>
+<span class="n">meta_dev_column</span><span class="o">=</span><span class="mi">6</span>
+<span class="n">meta_pvalue_column</span><span class="o">=</span><span class="mi">5</span>
+<span class="n">chromaIdType</span><span class="o">=</span><span class="n">entrez</span>
+<span class="n">chroma_id_column</span><span class="o">=</span><span class="mi">8</span>
+<span class="n">chroma_dev_column</span><span class="o">=</span><span class="mi">6</span>
+<span class="n">chroma_pvalue_column</span><span class="o">=</span><span class="mi">5</span>
+</pre></div>
+</div>
+</div>
+<p>The experiment Package is named “LTED vs MCF7+” and it’s related to an experiment involving Homo sapiens cells, it has all the -omics datasets currently supported by PathLay associated to it.
+We can read its configuration as it follows:</p>
+<ul class="simple">
+<li><p>The Transcriptomic datataset has its Entrez IDs stored in the 8th column, Effect Size values stored in the 6th column and p-values stored in the 5th column.</p></li>
+<li><p>The miRNomic datataset has its mirbase IDs stored in the 1st column, Effect Size values stored in the 6th column and p-values stored in the 5th column.</p></li>
+<li><p>The Metabolomic datataset has its Kegg Compound IDs stored in the 8th column, Effect Size values stored in the 6th column and p-values stored in the 5th column.</p></li>
+<li><p>The Methylomic datataset has its Entrez IDs stored in the 8th column, Effect Size values stored in the 6th column and p-values stored in the 5th column.</p></li>
+<li><p>The Chromatin Status dataset has its Entrez IDs stored in the 8th column, Effect Size values stored in the 6th column and p-values stored in the 5th column.</p></li>
+<li><p>The Proteomic datataset has its Uniprot Entry IDs stored in the 1st column, Effect Size values stored in the 4th column and p-values stored in the 3rd column.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Experiment Packages can be created and configured in your Home Page with a more intuitive approach. Once the “Save” button is clicked the .conf file will be automatically generated and saved in your home folder.</p>
+</div>
+</section>
+<section id="datasets-files">
+<span id="usage-specs-data"></span><h2>Datasets Files<a class="headerlink" href="#datasets-files" title="Permalink to this heading"></a></h2>
+<p>Each dataset file (i.e. a file with .mrna, .prot, .mirna, .meta, .meth and .chroma extension) is a tab separated file that can have any number of columns but at least one, two or three, depending on the Analysis configuration you will choose for PathLay (see more in Configuration Page section), the only mandatory field is the one containing the IDs.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Datasets can be copied and pasted in their related text areas in your Home Page. Once the “Save” button is clicked the dataset file will be created in your home folder and named after the experiment.</p>
+</div>
+</section>
+<section id="supported-ids">
+<span id="usage-specs-ids"></span><h2>Supported IDs<a class="headerlink" href="#supported-ids" title="Permalink to this heading"></a></h2>
+<p>PathLay supports a variety of ID types as input which are converted to the ID default type during analysis.
+All the ID types are summarized at <a class="reference internal" href="../usage_index.html#usage-specs-table-id-compatibility"><span class="std std-ref">Table</span></a> and some examples are provided at <a class="reference internal" href="../usage_index.html#usage-specs-table-id-examples"><span class="std std-ref">Table</span></a>.</p>
+<span id="usage-specs-table-id-compatibility"></span><table class="colwidths-given docutils align-default" id="id4">
+<caption><span class="caption-text">Compatible IDs to use in your Datasets</span><a class="headerlink" href="#id4" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Dataset Type</p></th>
+<th class="head"><p>Supported Input IDs</p></th>
+<th class="head"><p>ID Type for Analysis</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Gene</p></td>
+<td><p>Entrez Gene ID;  Ensembl; Gene Symbol;</p></td>
+<td><p>Entrez Gene ID</p></td>
+</tr>
+<tr class="row-odd"><td><p>Protein</p></td>
+<td><p>Entrez Gene ID; UniProtKB Entry; Protein Symbol;</p></td>
+<td><p>Entrez Gene ID</p></td>
+</tr>
+<tr class="row-even"><td><p>miRNA</p></td>
+<td><p>miRBase ID</p></td>
+<td><p>miRBase ID</p></td>
+</tr>
+<tr class="row-odd"><td><p>Metabolite</p></td>
+<td><p>KEGG Compounds; Compound Name;</p></td>
+<td><p>KEGG Compounds</p></td>
+</tr>
+<tr class="row-even"><td><p>Methylation</p></td>
+<td><p>Entrez Gene ID;  Ensembl; Gene Symbol;</p></td>
+<td><p>Entrez Gene ID</p></td>
+</tr>
+<tr class="row-odd"><td><p>Chromatin Status</p></td>
+<td><p>Entrez Gene ID;  Ensembl; Gene Symbol;</p></td>
+<td><p>Entrez Gene ID</p></td>
+</tr>
+</tbody>
+</table>
+<span id="usage-specs-table-id-examples"></span><table class="colwidths-given docutils align-default" id="id5">
+<caption><span class="caption-text">Examples of ID Types</span><a class="headerlink" href="#id5" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>ID Type</p></th>
+<th class="head"><p>Example</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Entrez Gene ID</p></td>
+<td><p>2308</p></td>
+</tr>
+<tr class="row-odd"><td><p>Gene Symbol</p></td>
+<td><p>FOXO1</p></td>
+</tr>
+<tr class="row-even"><td><p>Ensembl</p></td>
+<td><p>ENSG00000150907</p></td>
+</tr>
+<tr class="row-odd"><td><p>UniProtKB Entry</p></td>
+<td><p>Q12778</p></td>
+</tr>
+<tr class="row-even"><td><p>Protein Symbol</p></td>
+<td><p>FOXO1</p></td>
+</tr>
+<tr class="row-odd"><td><p>miRBase ID</p></td>
+<td><p>hsa-miR-183-5p</p></td>
+</tr>
+<tr class="row-even"><td><p>KEGG Compounds</p></td>
+<td><p>C03758</p></td>
+</tr>
+<tr class="row-odd"><td><p>Compound Name</p></td>
+<td><p>Dopamine</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../account/usage_account_login.html" class="btn btn-neutral float-left" title="Login to an Existing Account" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="usage_exp_package_conf.html" class="btn btn-neutral float-right" title="Configuration File" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Matteo Ramazzotti Lorenzo Casbarra.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XXXXXXXXXX', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

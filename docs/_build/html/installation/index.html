@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Installation &mdash; PathLay 0.1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Building the Docker Image (Recommended)" href="installation_docker.html" />
+    <link rel="prev" title="For the Apache Server Installation" href="../requirements/requirements_apache.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> PathLay
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../indices/indices_index.html">Welcome to PathLay’s documentation!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../features/index.html">Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../requirements/index.html">Requirements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../requirements/requirements_docker.html">For Building the Docker Image (Recommended)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../requirements/requirements_apache.html">For the Apache Server Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation_docker.html">Building the Docker Image (Recommended)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation_apache.html">Apache Server Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../howto/index.html">How to run</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../howto/howto_localserver.html">Run PathLay as local server (localhost)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../howto/howto_remoteserver.html">Run PathLay as network server</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/usage_index.html">Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../usage/account/usage_account_index.html">Account Managing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../usage/account/usage_account_new.html">Register a New Account</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../usage/account/usage_account_login.html">Login to an Existing Account</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../usage/exp_package/usage_exp_package_index.html">Experiment Package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../usage/exp_package/usage_exp_package_conf.html">Configuration File</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../usage/exp_package/usage_exp_package_specs_data.html">Datasets Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../usage/exp_package/usage_exp_package_specs_ids.html">Supported IDs</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../usage/home/usage_home_index.html">Home Manager</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../usage/home/usage_home_create.html">Creating an Experiment Package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../usage/home/usage_home_load.html">Loading an Experiment Package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../usage/home/usage_home_ont.html">Gene Ontologies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../usage/home/usage_home_download.html">Downloading an Experiment Package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../usage/access/usage_access_index.html">Configuration Page</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../usage/access/usage_access_mapsdb.html">Maps Databases</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../usage/access/usage_access_stat.html">Maps Restriction Procedure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../usage/access/usage_access_data.html">Data Selection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../usage/access/usage_access_data_types.html">Configuring a Dataset</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../usage/access/usage_access_filtering.html">Filtering Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../usage/access/usage_access_id_only.html">ID Preservation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../usage/access/usage_access_nodeg.html">Non Differentially Expressed IDs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../usage/access/usage_access_tfs.html">Transcription Factors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../usage/access/usage_access_tfs_id_only.html">Transcription Factors ID Preservation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../usage/results/usage_results_index.html">Pathway Explorer</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../usage/results/usage_results_mapsel.html">Pathway Navigation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../usage/results/usage_results_legend.html">Indicators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../usage/results/usage_results_menu.html">Main Menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../usage/results/usage_results_highlight.html">Highlighting Feature</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../usage/results/usage_results_clipboard.html">The Clipboard</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../usage/results/selector/usage_results_selector.html">The Selectors Section</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../usage/results/selector/usage_results_select_by_ids.html">Select by IDs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../usage/results/selector/usage_results_select_by_agreement.html">Select by Agreement</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../usage/results/settings/usage_results_settings.html">Settings</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../usage/results/settings/usage_results_settings_transparency_and_size.html">Transparency and Size</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../usage/results/settings/usage_results_settings_screenshot.html">Screenshot</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../license/index.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support/index.html">Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute/index.html">Contribute</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">PathLay</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">Installation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/installation/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="installation">
+<span id="id1"></span><h1>Installation<a class="headerlink" href="#installation" title="Permalink to this heading"></a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<section id="apache-server-installation">
+<span id="installation-apache"></span><h2>Apache Server Installation<a class="headerlink" href="#apache-server-installation" title="Permalink to this heading"></a></h2>
+</section>
+<section id="building-the-docker-image-recommended">
+<span id="installation-docker"></span><h2>Building the Docker Image (Recommended)<a class="headerlink" href="#building-the-docker-image-recommended" title="Permalink to this heading"></a></h2>
+<div class="literal-block-wrapper docutils container" id="id2">
+<div class="code-block-caption"><span class="caption-text">Navigate to the directory with the downloaded DockerFile</span><a class="headerlink" href="#id2" title="Permalink to this code"></a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">directory</span>
+</pre></div>
+</div>
+</div>
+<div class="literal-block-wrapper docutils container" id="id3">
+<div class="code-block-caption"><span class="caption-text">Build image from DockerFile</span><a class="headerlink" href="#id3" title="Permalink to this code"></a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">build</span> <span class="o">-</span><span class="n">t</span> <span class="n">pathlay</span> <span class="o">.</span>
+</pre></div>
+</div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../requirements/requirements_apache.html" class="btn btn-neutral float-left" title="For the Apache Server Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="installation_docker.html" class="btn btn-neutral float-right" title="Building the Docker Image (Recommended)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Matteo Ramazzotti Lorenzo Casbarra.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XXXXXXXXXX', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

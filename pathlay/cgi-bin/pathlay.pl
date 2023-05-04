@@ -112,7 +112,7 @@ my $interfaces = {
 };
 
 #db loading for ID Conversions
-@$DBs{gene,meth,chroma} = (
+@$DBs{"gene","meth","chroma"} = (
     new geneDB (
         _file => $parameters -> {_gene_db_file},
         _location => $parameters -> {_gene_db_location}
@@ -240,7 +240,7 @@ $expPackages -> {ont} -> ONTsLoader(
 );
 $interfaces -> {ont} -> integrateAll(
     DEGs => $expPackages -> {gene},
-    NODEGs => $expPackages -> {nodeg},
+    #NODEGs => $expPackages -> {nodeg},
     Prots => $expPackages -> {prot},
     ONTs => $expPackages -> {ont}
 );

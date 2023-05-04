@@ -1,0 +1,8 @@
+.. _usage_home_load:
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Loading an Experiment Package
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+To load an existing Experiment Package from your home folder, select its name from the dropdown menu in the top left corner and hit the "Load" button. Datasets and configurations will be displayed in their relative fields.
+If you have a zipped Experiment Package and you want to load it on PathLay, simply click the "Browse" button in the top right corner and select the zipped archive, then click the "Upload" button and load it.

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Select by Agreement &mdash; PathLay 0.1 documentation</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Settings" href="../settings/usage_results_settings.html" />
+    <link rel="prev" title="Select by IDs" href="usage_results_select_by_ids.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../index.html" class="icon icon-home"> PathLay
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../indices/indices_index.html">Welcome to PathLay’s documentation!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../features/index.html">Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../requirements/index.html">Requirements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../requirements/requirements_docker.html">For Building the Docker Image (Recommended)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../requirements/requirements_apache.html">For the Apache Server Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../installation/index.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../installation/installation_docker.html">Building the Docker Image (Recommended)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../installation/installation_apache.html">Apache Server Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../howto/index.html">How to run</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../howto/howto_localserver.html">Run PathLay as local server (localhost)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../howto/howto_remoteserver.html">Run PathLay as network server</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../usage_index.html">Usage</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../account/usage_account_index.html">Account Managing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../account/usage_account_new.html">Register a New Account</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../account/usage_account_login.html">Login to an Existing Account</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../exp_package/usage_exp_package_index.html">Experiment Package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../exp_package/usage_exp_package_conf.html">Configuration File</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../exp_package/usage_exp_package_specs_data.html">Datasets Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../exp_package/usage_exp_package_specs_ids.html">Supported IDs</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../home/usage_home_index.html">Home Manager</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../home/usage_home_create.html">Creating an Experiment Package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../home/usage_home_load.html">Loading an Experiment Package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../home/usage_home_ont.html">Gene Ontologies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../home/usage_home_download.html">Downloading an Experiment Package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../access/usage_access_index.html">Configuration Page</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../access/usage_access_mapsdb.html">Maps Databases</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../access/usage_access_stat.html">Maps Restriction Procedure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../access/usage_access_data.html">Data Selection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../access/usage_access_data_types.html">Configuring a Dataset</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../access/usage_access_filtering.html">Filtering Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../access/usage_access_id_only.html">ID Preservation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../access/usage_access_nodeg.html">Non Differentially Expressed IDs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../access/usage_access_tfs.html">Transcription Factors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../access/usage_access_tfs_id_only.html">Transcription Factors ID Preservation</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="../usage_results_index.html">Pathway Explorer</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../usage_results_mapsel.html">Pathway Navigation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../usage_results_legend.html">Indicators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../usage_results_menu.html">Main Menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../usage_results_highlight.html">Highlighting Feature</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../usage_results_clipboard.html">The Clipboard</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="usage_results_selector.html">The Selectors Section</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="usage_results_select_by_ids.html">Select by IDs</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Select by Agreement</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../settings/usage_results_settings.html">Settings</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../settings/usage_results_settings_transparency_and_size.html">Transparency and Size</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../settings/usage_results_settings_screenshot.html">Screenshot</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../license/index.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../support/index.html">Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../contribute/index.html">Contribute</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">PathLay</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="../../usage_index.html">Usage</a></li>
+          <li class="breadcrumb-item"><a href="../usage_results_index.html">Pathway Explorer</a></li>
+          <li class="breadcrumb-item"><a href="usage_results_selector.html">The Selectors Section</a></li>
+      <li class="breadcrumb-item active">Select by Agreement</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/usage/results/selector/usage_results_select_by_agreement.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="select-by-agreement">
+<span id="usage-results-logical-byagreement"></span><h1>Select by Agreement<a class="headerlink" href="#select-by-agreement" title="Permalink to this heading"></a></h1>
+<p>The second row in the Logical Section is composed by a series of selectors that allows the setup of the so called “Agreement” which is a feature that lets you select two related data types and select what type of correlation you are interested in. The main data type can be selected with the first selector which provides a choice between “Gene” and “Protein”, and the second data type can be selected with the other selector which allows a choice between “Gene” or “Protein” (depending on your main data type of choice), “miRNA”, “Methylation” or “TF”. After the two data types are selected, the last step to do is to choose a “Positive Agreement” or a “Negative Agreement” with the last selector and hit the “Add” button. The configured agreement will be displayed in the “Agreements Selected” pool positioned under the “IDs Selected” pool. Once the select button is clicked, indicators that don’t satisfy the requirements of the agreement will be hidden, thus if a pathway doesn’t have visible indicators it will not be included in the pathway selector. Multiple agreements can be added to the pool to make the selection more stringent. How various agreements work is reported in the following table:</p>
+<p>As an example, let’s suppose we want to examine only the indicators including a gene and a miRNA in a positive agreement: it is only necessary to select “Gene”, “miRNA” and “Positive” from the selectors provided in the Logical section. A positive agreement between a gene and a miRNA is based on a negative correlation, so the indicators highlighted will either have an up-regulated gene and a down-regulated miRNA or a down-regulated gene and an up-regulated miRNA. As a next step, we could also be looking at methylations: easily enough, agreement selections can be stacked so we could also select “Gene”, “Methylation”, “Positive” and highlight only those indicators that satisfy both the agreements.
+As before, to remove it the “X” button on the right or the “Reset” button must be clicked.</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="usage_results_select_by_ids.html" class="btn btn-neutral float-left" title="Select by IDs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../settings/usage_results_settings.html" class="btn btn-neutral float-right" title="Settings" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Matteo Ramazzotti Lorenzo Casbarra.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XXXXXXXXXX', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>
