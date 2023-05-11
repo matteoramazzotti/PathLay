@@ -1,5 +1,6 @@
 use strict;
 use warnings;
+use FindBin;
 #use Data::Dumper qw(Dumper);
 
 my $debug = 0;
@@ -561,6 +562,7 @@ package Parameters;
         print STDERR "\n";
     }
     sub LoadENV {
+        
         #print STDERR "LoadENV\n";
         my $self = shift;
 
@@ -577,13 +579,14 @@ package Parameters;
             $buffer = $ENV{'QUERY_STRING'};
         }
         my @pairs = split(/&/,$buffer);
+        
         foreach my $pair (@pairs) {
             ($name, $value) = split(/=/, $pair);
             $value =~ tr/+/ /;
             $value =~ s/%(..)/pack("C", hex($1))/eg;
             #print STDERR "_$name\n";
             if ($value){
-                #print STDERR $name."---".$value."\n";
+                #print STDERR $name."---".$value."\n" if ($name =~ "FET");
                 $self -> {"_$name"} = $value;
             }
             if (ref($value) eq "ARRAY") { #?
@@ -612,9 +615,12 @@ package Parameters;
         $self -> {_map_association_file} = "../pathlay_data/".$self -> {_exp_organism_input_text}."/db/".$self -> {_maps_db_select}."/".$self -> {_exp_organism_input_text}.".".$self -> {_maps_db_select}.".gmt";
     }
     sub updateLastSession {
-
+        
         my $self = shift;
         
+        print STDERR $FindBin::Bin."\n";
+        
+
         open(LAST,">","../pathlay_users/".$self -> {_h3}."/".$self -> {_exp_select}.".last");
         print LAST "statistic_select=".$self -> {_statistic_select}."\n";
         print LAST "maps_db_select=".$self -> {_maps_db_select}."\n";

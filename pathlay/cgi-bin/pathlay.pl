@@ -11,6 +11,7 @@ use lib "$FindBin::Bin/./modules/frontend/";
 use lib "$FindBin::Bin/./modules/frontend/results/";
 
 
+
 use PathLayUtils;
 use PathLayIntegration;
 use PathLayResultsFrontEnd;
@@ -111,6 +112,23 @@ my $interfaces = {
     ont => new ONTInterface()
 };
 
+my $enabledForStat = {
+    gene => 0,
+    prot => 0,
+    chroma => 0,
+    meth => 0,
+    urna => 0,
+    meta => 0
+};
+
+foreach my $dataType (@dataTypes) {
+    next if (!$parameters -> {"_enable$dataType"});
+    if ($parameters -> {"_${dataType}FETEnabled"}) {
+        $enabledForStat -> {$dataType} = 1;
+    }
+}
+
+
 #db loading for ID Conversions
 @$DBs{"gene","meth","chroma"} = (
     new geneDB (
@@ -165,12 +183,6 @@ foreach my $dataType (@dataTypes) {
         
     }
 }
-#print STDERR Dumper $expPackages -> {prot} -> {_data} -> {'148327'} ;
-#print STDERR Dumper $expPackages -> {gene} -> {_data} -> {'148327'} ;
-    #print STDERR "BARX2 on gene:\n";
-    #print STDERR Dumper $expPackages -> {gene} -> {_data} -> {'8538'} ;
-
-#db loading for Integrations
 $DBs -> {urna} -> DBLoader(
     ExpuRNAs => $expPackages -> {urna}
 );
@@ -233,7 +245,7 @@ if ($parameters -> {"_enabletfs_gene"} || $parameters -> {"_enabletfs_prot"}) {
     }
     
 }
-#
+
 
 $expPackages -> {ont} -> ONTsLoader(
     Parameters => $parameters
@@ -248,43 +260,44 @@ $interfaces -> {ont} -> integrateAll(
 #statistic steps
 my %needed_maps;
 if ($parameters -> {_statistic_select} eq "FET") {
+    my @typesForStat = map{ if ($enabledForStat -> {$_}) {$_} else {} } (keys(%$enabledForStat));
 
-    %needed_maps = FET(
-        Parameters => $parameters,
-        DEGs => $expPackages -> {gene},
-        Proteins => $expPackages -> {prot},
-        NoDEGs => $expPackages -> {nodeg}
+    if ($parameters -> {_FETPooling}) {
+        push(@typesForStat,"pool");
+    }
+
+    foreach my $dataType (@typesForStat) {
+        if ($parameters -> {_FETPooling} && ($dataType ne "pool" && $dataType ne "meta")) {
+            next;
+        }
+        %{$needed_maps{$dataType}} = FETrevised(
+            Parameters => $parameters,
+            DePacks => $expPackages,
+            DataType => $dataType
+        );
+    }
+    %{$needed_maps{'ready'}} = JoinMaps(
+        Maps => \%needed_maps
     );
+    if ($parameters -> {_FETIntersect}) {
+        %{$needed_maps{'ready'}} = IntersectMaps(
+            Maps => \%needed_maps
+        );
+    }
 }
-#
-
-
-#if ($parameters -> {_enableprot} && (scalar keys %{$exp_nodegs -> {_data}} > 0)) {
-#
-#    $exp_nodegs -> CheckProteins(
-#        ExpProteins => $exp_proteins
-#    );
-#}
-
-############
 
 my $map_counter = 0;
 my %available_maps;
 my @maps;
 
-#print STDERR Dumper $expPackages -> {prot} -> {_data} -> {'148327'} ;
-#print STDERR Dumper $expPackages -> {gene} -> {_data} -> {'148327'} ;
-#load first a kegg.pathway.list or wikipathways.pathway.list and then pick needed maps from generic maps directory
 
-print STDERR $parameters -> {_nodesdir}."\n";
 opendir(MAPDIR,$parameters -> {_nodesdir}) or die "cannot open map directory ".$parameters -> {_nodesdir}."\n";
 foreach my $mapin (sort(readdir(MAPDIR))) {
     next if ($mapin !~ /\.nodes$/);
     next if ($mapin =~ /hsa01100/);
-    #next if ($mapin !~ /hsa05034/);
     my $id = $mapin;
     $id =~ s/\.nodes$//;
-    next if ($parameters -> {_statistic_select} eq "FET" && !$needed_maps{$id});
+    next if ($parameters -> {_statistic_select} eq "FET" && !${$needed_maps{'ready'}}{$id});
     $available_maps{$id} = 1;
 }
 closedir(MAPDIR);

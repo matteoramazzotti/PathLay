@@ -90,4 +90,151 @@ sub FET {
     return(%needed_maps);
 }
 
+
+sub FETrevised {
+    my %args = (
+        DePack => {},
+        Parameters => {},
+        @_
+    );
+    my $dePacks = $args{DePacks};
+    my $parameters = $args{Parameters};
+    my $dataType = $args{DataType};
+
+    my $dePack = {};
+
+    if ($dataType ne "pool") {
+        $dePack = $dePacks -> {$dataType};
+    } else {
+        foreach my $type (("gene","prot")) {
+            while (my ($id,$value) = each %{$dePacks -> {$type} -> {_data}}) {
+                $dePack -> {_data} -> {$id} = 1;
+            }
+        }
+        while (my ($id,$value) = each %{$dePacks -> {nodeg} -> {_data}}) {
+            my $keep = 0;
+            if ($dePacks -> {nodeg} -> {_data} -> {$id} -> {urnas} && $parameters -> {_urnaFETEnabled}) {
+                $keep = 1;
+            }
+            if ($dePacks -> {nodeg} -> {_data} -> {$id} -> {meth} && $parameters -> {_methFETEnabled}) {
+                $keep = 1;
+            }
+            
+            if ($dePacks -> {nodeg} -> {_data} -> {$id} -> {chroma} && $parameters -> {_chromaFETEnabled}) {
+                $keep = 1;
+            }
+            if ($keep) {
+                $dePack -> {_data} -> {$id} = 1;
+            }
+        }
+    }
+    use Statistics::R;
+    my $R = Statistics::R->new();
+    $R->startR;
+
+    my $debug = 0;
+    print STDERR "--- statistic sub ---\n" if ($debug);
+    my %ids_for_FET;
+    my %uni;
+    my %de;
+    foreach my $id (sort keys %{$dePack -> {_data}}) {
+        $ids_for_FET{$id} = 1;
+    }
+    
+    print STDERR "IDs Loaded:".scalar(keys %ids_for_FET)."\n" if ($debug);
+
+    open(IN,$parameters -> {_universe_file});
+    while (<IN>) {
+        chomp;
+        next if ($_ =~ /a-z/i);
+        $uni{$_} = 1 if (!$ids_for_FET{$_});
+        print STDERR "No: ".$_."\n" if (!$ids_for_FET{$_} && $debug);
+        $de{$_} = 1 if ($ids_for_FET{$_});
+        print STDERR "Yes: ".$_."\n" if ($ids_for_FET{$_} && $debug);
+    }
+    close IN;
+    my %pat;
+    my @map_names;
+    my @map_ids;
+    my @p;
+    open(IN,$parameters -> {_map_association_file});
+    while (<IN>) {
+
+        chomp;
+        my ($map_id,$map_name,@ids) = split(/\t/,$_);
+        push(@map_ids,$map_id);
+        push(@map_names,$map_name);
+        my %in_map_ids = map {$_ => 1} @ids;
+        my $a=0; my $b=0; my $c=0; my $d=0;
+        foreach (keys %in_map_ids) {
+            $a++ if ($de{$_});
+            $c++ if ($uni{$_});
+        }
+        $b = (scalar (keys %de)) - $a;
+        $d = (scalar (keys %uni)) - $c;
+        $R->set( 'a', $a );
+        $R->set( 'b', $b );
+        $R->set( 'c', $c );
+        $R->set( 'd', $d );
+        $R->run(q/p<-1-phyper(a-1,a+c,b+d,a+b)/);
+        my $p = $R->get('p');
+        push(@p,$p);
+    }
+    close(IN);
+    $R->set('pvals', \@p);
+    $R->run(q/padj<-p.adjust(pvals,method="BH")/);
+    my $adj = $R->get('padj');
+    my @adj = @$adj;
+
+    my %needed_maps;
+    foreach my $i (0..$#map_ids) {
+        $needed_maps{$map_ids[$i]} = $adj[$i] if ($adj[$i] < 0.05);
+        print STDERR $map_ids[$i]." ".$needed_maps{$map_ids[$i]}."\n" if ($debug && $needed_maps{$map_ids[$i]});
+    }
+    $R->stopR();
+    $debug = 0;
+
+    return(%needed_maps);
+}
+
+sub IntersectMaps {
+    my %args = (
+        @_
+    );
+
+    my $mapsREF = $args{Maps};
+    my %mapsIDs = %$mapsREF;
+    my $validScore = (scalar(keys(%mapsIDs)) - 1);
+    print STDERR $validScore."\n";
+    #print STDERR Dumper \%mapsIDs;
+
+    foreach my $mapID (keys %{$mapsIDs{'ready'}}) {
+        if (${$mapsIDs{'ready'}}{$mapID} < $validScore) {
+            delete($mapsIDs{$mapID});
+        }
+    }
+    #print STDERR Dumper \%mapsIDs;
+    return(%{$mapsIDs{'ready'}});
+}
+
+sub JoinMaps {
+
+    my %args = (
+        @_
+    );
+    my $mapsREF = $args{Maps};
+    my %maps = %$mapsREF;
+    #print STDERR Dumper $mapsREF;
+
+    my %mapsIDs;
+
+    foreach my $type (keys %maps) {
+        while (my ($mapID,$value) = each %{$maps{$type}}) {
+            $mapsIDs{$mapID}++;
+        }
+    }
+    #print STDERR Dumper \%mapsIDs;
+    return(%mapsIDs);
+}
+
 1;

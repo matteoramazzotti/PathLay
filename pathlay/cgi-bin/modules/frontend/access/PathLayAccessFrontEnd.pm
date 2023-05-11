@@ -1500,13 +1500,36 @@ sub div_statistic_access_Packager {
         _value => 1
     );
 
-    
+    my $FETPooling = new HTMLInput(
+        _id => "FETPooling",
+        _type => "checkbox",
+        _name => "FETPooling",
+        _value => 1
+    );
+    my $FETIntersect = new HTMLInput(
+        _id => "FETIntersect",
+        _type => "checkbox",
+        _name => "FETIntersect",
+        _value => 1
+    ); 
 
     $div_statistic -> ContentLoader(
         Content => "<b>Map Restriction Procedure:</b>"
     );
     $div_statistic -> ContentLoader(
         Content => $statistic_select
+    );
+    $div_statistic -> ContentLoader(
+        Content => "Pooling"
+    );
+    $div_statistic -> ContentLoader(
+        Content => $FETPooling
+    );
+    $div_statistic -> ContentLoader(
+        Content => "Intersect"
+    );
+    $div_statistic -> ContentLoader(
+        Content => $FETIntersect
     );
     $div_statistic -> ContentLoader(
         Content => "<br><br>"
@@ -1679,6 +1702,14 @@ sub div_statistic_access_Packager {
             _value => 1,
             _checked => 0
         );
+
+        my $FETEnabled = new HTMLInput(
+            _id => "${type}FETEnabled",
+            _type => "checkbox",
+            _name => "${type}FETEnabled",
+            _value => 1
+        );
+
         my $id_only_checkbox = new HTMLInput(
             _id => $type."IdOnlyCheck",
             _type => "checkbox",
@@ -1744,6 +1775,15 @@ sub div_statistic_access_Packager {
         );
         $thresholdDiv -> ContentLoader(
             Content => $thresholdpValInputText
+        );
+        $thresholdDiv -> ContentLoader(
+            Content => "<br><br>"
+        );
+        $thresholdDiv -> ContentLoader(
+            Content => $FETEnabled
+        );
+        $thresholdDiv -> ContentLoader(
+            Content => "<font class=\"FETEnabledFont\"><b>FET Enabled </b></font>"
         );
         $thresholdDiv -> ContentLoader(
             Content => "<br><br>"
