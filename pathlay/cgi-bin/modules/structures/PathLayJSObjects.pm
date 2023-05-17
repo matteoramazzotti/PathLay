@@ -116,6 +116,9 @@ sub BuildExpLastJS {
             if ($parameters -> {_exps_available} -> {$_} -> {conf_data} -> {$dataType."IdOnlyCheck"}) {
                 push(@fields,$dataType."IdOnlyCheck:".$parameters -> {_exps_available} -> {$_} -> {conf_data} -> {$dataType."IdOnlyCheck"});
             }
+            if ($parameters -> {_exps_available} -> {$_} -> {conf_data} -> {$dataType."FETEnabled"}) {
+                push(@fields,$dataType."FETEnabled:".$parameters -> {_exps_available} -> {$_} -> {conf_data} -> {$dataType."FETEnabled"});
+            }
             if ($dataType ne "gene" && $dataType ne "prot") {
                 if ($parameters -> {_exps_available} -> {$_} -> {conf_data} -> {"nodeg_select_".$dataType}) {
                     push(@fields,"nodeg_select_".$dataType.":".$parameters -> {_exps_available} -> {$_} -> {conf_data} -> {"nodeg_select_".$dataType});
@@ -142,6 +145,15 @@ sub BuildExpLastJS {
         
         if ($parameters -> {_exps_available} -> {$_} -> {conf_data} -> {maps_db_select}) {
             push(@fields,"maps_db_select:\"".$parameters -> {_exps_available} -> {$_} -> {conf_data} -> {maps_db_select}."\"");
+        }
+        if ($parameters -> {_exps_available} -> {$_} -> {conf_data} -> {statistic_select}) {
+            push(@fields,"statistic_select:\"".$parameters -> {_exps_available} -> {$_} -> {conf_data} -> {statistic_select}."\"");
+        }
+        if ($parameters -> {_exps_available} -> {$_} -> {conf_data} -> {FETPooling}) {
+            push(@fields,"FETPooling:\"".$parameters -> {_exps_available} -> {$_} -> {conf_data} -> {FETPooling}."\"");
+        }
+        if ($parameters -> {_exps_available} -> {$_} -> {conf_data} -> {FETIntersect}) {
+            push(@fields,"FETIntersect:\"".$parameters -> {_exps_available} -> {$_} -> {conf_data} -> {FETIntersect}."\"");
         }
         $exp_last{$_} = "exp_last[\"$_\"] = {".join(",",@fields)."};";
         push(@{$JSscript -> {_variables}},$exp_last{$_});

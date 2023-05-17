@@ -94,7 +94,8 @@ class LastConf {
             IdOnlyCheck: undefined,
             //idOnly: undefined,
             tfEnabled: undefined,
-            noDeFromTfEnabled: undefined
+            noDeFromTfEnabled: undefined,
+            FETEnabled: undefined
         }
         this.prot = {
             enabled : undefined,
@@ -107,7 +108,8 @@ class LastConf {
             IdOnlyCheck: undefined,
             //idOnly: undefined,
             tfEnabled: undefined,
-            noDeFromTfEnabled: undefined
+            noDeFromTfEnabled: undefined,
+            FETEnabled: undefined
         }
         this.meta = {
             enabled : undefined,
@@ -119,7 +121,8 @@ class LastConf {
             //rightEnabled: undefined,
             IdOnlyCheck: undefined,
             //idOnly: undefined,
-            noDeEnabled: undefined
+            noDeEnabled: undefined,
+            FETEnabled: undefined
             
         }
         this.urna = {
@@ -132,7 +135,8 @@ class LastConf {
             //rightEnabled: undefined,
             IdOnlyCheck: undefined,
             //noDeEnabled: undefined,
-            noDeIdEnabled: undefined
+            noDeIdEnabled: undefined,
+            FETEnabled: undefined
         }
         this.meth = {
             enabled : undefined,
@@ -145,7 +149,8 @@ class LastConf {
             IdOnlyCheck: undefined,
             //idOnly: undefined,
             noDeEnabled: undefined,
-            noDeIdEnabled: undefined
+            noDeIdEnabled: undefined,
+            FETEnabled: undefined
         }
         this.chroma = {
             enabled : undefined,
@@ -158,7 +163,8 @@ class LastConf {
             IdOnlyCheck: undefined,
             //idOnly: undefined,
             noDeEnabled: undefined,
-            noDeIdEnabled: undefined
+            noDeIdEnabled: undefined,
+            FETEnabled: undefined
         }
     }
     load = function(expID) {
@@ -173,9 +179,21 @@ class LastConf {
             this.loadIdOnlyCheck(expID,dataType);
             this.loadNoDeChecks(expID,dataType);
             this.loadTFsChecks(expID,dataType);
+            this.loadFETEnabler(expID,dataType);
         }
         this.maps_db_select = exp_last[expID].maps_db_select;
-        //this.statisticProcedure = exp_last[expID].statisticProcedure;
+        this.statisticProcedure = exp_last[expID].statistic_select;
+        if (exp_last[expID].FETPooling) {
+            this.FETPooling = true;
+        } else {
+            this.FETPooling = false;
+        }
+
+        if (exp_last[expID].FETIntersect) {
+            this.FETIntersect = true;
+        } else {
+            this.FETIntersect = false;
+        }
         
     }
     loadEnableCheck = function(expID,dataType) {
@@ -183,6 +201,13 @@ class LastConf {
             this[dataType].enabled = true;
         } else {
             this[dataType].enabled = false;
+        }
+    }
+    loadFETEnabler = function(expID,dataType) {
+        if (exp_last[expID][`${dataType}FETEnabled`] == 1) {
+            this[dataType].FETEnabled = true;
+        } else {
+            this[dataType].FETEnabled = false;
         }
     }
     loadESChecks = function(expID,dataType) {
@@ -256,6 +281,16 @@ class LastConf {
             this[dataType][`tfsNoDEFromIdOnlyCheck`] = true;
         } else {
             this[dataType][`tfsNoDEFromIdOnlyCheck`] = false;
+        }
+    }
+    loadStatisticProcedure = function () {
+        if (exp_last[expID].statistic_select) {
+            if (exp_last[expID].statistic_select == "Nothing") {
+                this.statisticProcedure = "Nothing";
+            }
+            if (exp_last[expID].statistic_select == "FET") {
+                this.statisticProcedure = "FET";
+            }
         }
     }
     reset = function() {
@@ -377,6 +412,8 @@ class CurrentConf {
             this.updatepValThresholdValue(dataType);
             this.updateNoDeCheck(dataType);
             this.updateNoDeFromIdOnlyCheck(dataType);
+            this.updateStatisticEnablers(dataType);
+            this.updateStatisticEnabled();
         }
     }
     updateEnabler = function(dataType) {
@@ -434,11 +471,11 @@ class CurrentConf {
         
     }
     updateLeftThresholdValue = function (dataType) {
-        this[dataType].leftThreshold = document.getElementById(`${dataType}LeftThreshold`).value;
+        this[dataType].leftThreshold = document.getElementById(`${dataType}LeftThreshold`).valueAsNumber;
         checksOnCurrent.checkEffectSize(dataType,"left");
     }
     updateRightThresholdValue = function (dataType) {
-        this[dataType].rightThreshold = document.getElementById(`${dataType}RightThreshold`).value;
+        this[dataType].rightThreshold = document.getElementById(`${dataType}RightThreshold`).valueAsNumber;
         checksOnCurrent.checkEffectSize(dataType,"right");
     }
     updatepValThresholdValue = function (dataType) {
@@ -461,6 +498,22 @@ class CurrentConf {
             } else {
                 this[dataType].noDeIdEnabled = false;
             }
+        }
+    }
+
+    updateStatisticEnablers = function (dataType) {
+        if (document.getElementById(`${dataType}FETEnabled`)) {
+            if (document.getElementById(`${dataType}FETEnabled`).checked === true) {
+                this[dataType].statEnabled = true;
+            } else {
+                this[dataType].statEnabled = false;
+            }
+        }
+    }
+    updateStatisticEnabled = function () {
+
+        if (document.getElementById(`statistic_select`)) {
+            this.statisticProcedure = document.getElementById(`statistic_select`).value
         }
     }
     updateMapsDB = function () {
@@ -547,7 +600,7 @@ class Preview {
                     }
                     
                     if (checkpVal === true) {
-                        console.log(`${dataType}: Checking pVal`);
+                        //console.log(`${dataType}: Checking pVal`);
                         if (currentData[pValCol] > pValThr) {
                             currentPreview[dataType].counters.pValFiltered++;
                             continue;
@@ -556,21 +609,21 @@ class Preview {
                     if (checkLeft === true || checkRight === true) {
                         
                         if (checkLeft === true && checkRight === true) {
-                            console.log(`${dataType}: Checking Left & Right`);
+                            //console.log(`${dataType}: Checking Left & Right`);
                             if (currentData[devCol] > leftThr && currentData[devCol] < rightThr) {
                                 currentPreview[dataType].counters.esFiltered++;
                                 continue;
                             }
                         }
                         if (checkLeft === false && checkRight === true) {
-                            console.log(`${dataType}: Checking Right`);
+                            //console.log(`${dataType}: Checking Right`);
                             if (currentData[devCol] < rightThr) {
                                 currentPreview[dataType].counters.esFiltered++;
                                 continue;
                             }
                         }
                         if (checkLeft === true && checkRight === false) {
-                            console.log(`${dataType}: Checking Left`);
+                            //console.log(`${dataType}: Checking Left`);
                             if (currentData[devCol] > leftThr) {
                                 currentPreview[dataType].counters.esFiltered++;
                                 continue;

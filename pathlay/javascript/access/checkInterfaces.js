@@ -222,7 +222,7 @@ class ChecksOnCurrent{
         }
     }
     checkThresholdsForSubmit = function() {
-        console.log("checking thresholds");
+        //console.log("checking thresholds");
         for (let dataType of dataTypes) {
             if (currentConf[dataType].enabled === true) {
                 if (currentConf[dataType].leftEnabled === true && this[dataType].leftThreshold === false) {
@@ -252,12 +252,13 @@ class ChecksOnCurrent{
     }
     checkSubmit = function() {
         this.submitEnabled = true;
-        console.log("Checking");
+        //console.log("Checking");
         this.checkMapDBs();
         this.checkThresholdsForSubmit();
         this.checkNoDeConstraints();
         this.checkNoDeFromIdOnlyConstraints();
         this.checkEnablersForSubmit();
+        this.checkStatEnablers();
         if (this.submitEnabled === true) {
             this.enableSubmit();
         } else {
@@ -265,6 +266,20 @@ class ChecksOnCurrent{
             this.disableSubmit();
         }
     }
+
+    checkStatEnablers = function() {
+        console.log(`--- checkStatEnablers ---`)
+        for (let dataType of dataTypes) {
+            if (currentConf.statisticProcedure == "Nothing") {
+                document.getElementById(`${dataType}FETEnabled`).disabled = true;
+            }
+            if (currentConf.statisticProcedure == "FET") {
+                console.log("FET");
+                document.getElementById(`${dataType}FETEnabled`).disabled = false;
+            }
+        }
+    }
+
     checkNoDeConstraints = function() {
         let types = [
             "urna",

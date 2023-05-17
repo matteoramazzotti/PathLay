@@ -35,6 +35,17 @@ document.addEventListener('DOMContentLoaded', function() {
             currentConf.updateLeftCheck(dataType);
             dynamicChecks()
         },false)
+
+        document.getElementById(`statistic_select`).addEventListener('change', function(){
+            currentConf.updateStatisticEnabled();
+            dynamicChecks()
+        },false)
+
+        document.getElementById(`${dataType}FETEnabled`).addEventListener('click', function(){
+            currentConf.updateStatisticEnablers(dataType);
+            checksOnCurrent.checkSubmit();
+        },false)
+
         document.getElementById(`${dataType}RightEffectSizeCheck`).addEventListener('click', function(){
             currentConf.updateRightCheck(dataType);
             dynamicChecks()

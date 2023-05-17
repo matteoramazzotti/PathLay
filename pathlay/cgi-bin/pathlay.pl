@@ -121,13 +121,17 @@ my $enabledForStat = {
     meta => 0
 };
 
+my $statOn = 0;
 foreach my $dataType (@dataTypes) {
     next if (!$parameters -> {"_enable$dataType"});
     if ($parameters -> {"_${dataType}FETEnabled"}) {
         $enabledForStat -> {$dataType} = 1;
+        $statOn++;
     }
 }
-
+if ($statOn == 0) {
+    $parameters -> {_statistic_select} = "Nothing";
+}
 
 #db loading for ID Conversions
 @$DBs{"gene","meth","chroma"} = (

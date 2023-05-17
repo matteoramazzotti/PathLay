@@ -1351,7 +1351,7 @@ sub access_script_Packager {
     );
     $js_functions[3] = new HTMLScriptSrc(
         _type => "text/javascript",
-        _src => $parameters -> {_jsdir}."access/accessUtilsNew.js"
+        _src => $parameters -> {_jsdir}."access/accessUtils.js"
     );
     
     $js_functions[4] = new HTMLScriptSrc(

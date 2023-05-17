@@ -624,6 +624,17 @@ package Parameters;
         open(LAST,">","../pathlay_users/".$self -> {_h3}."/".$self -> {_exp_select}.".last");
         print LAST "statistic_select=".$self -> {_statistic_select}."\n";
         print LAST "maps_db_select=".$self -> {_maps_db_select}."\n";
+        if ($self -> {_FETPooling}) {
+            print LAST "FETPooling=".$self -> {_FETPooling}."\n";
+        } else {
+            print LAST "FETPooling=0\n";
+        }
+        if ($self -> {_FETIntersect}) {
+            print LAST "FETIntersect=".$self -> {_FETIntersect}."\n";
+        } else {
+            print LAST "FETIntersect=0\n";
+        }
+        
         my @dataTypes = (
             "gene",
             "prot",
@@ -641,6 +652,7 @@ package Parameters;
             print LAST $dataType."pValThreshold=".$self -> {"_".$dataType."pValThreshold"}."\n";
             print LAST $dataType."LeftThreshold=".$self -> {"_".$dataType."LeftThreshold"}."\n";
             print LAST $dataType."RightThreshold=".$self -> {"_".$dataType."RightThreshold"}."\n";
+            print LAST $dataType."FETEnabled=".$self -> {"_".$dataType."FETEnabled"}."\n";
             if ($dataType ne "gene" && $dataType ne "prot" && $dataType ne "meta") {
                 print LAST "nodeg_select_".$dataType."=".$self -> {"_nodeg_select_".$dataType}."\n";
                 print LAST $dataType."NoDEFromIdOnlyCheck=".$self -> {"_".$dataType."NoDEFromIdOnlyCheck"}."\n";
