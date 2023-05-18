@@ -1,15 +1,15 @@
 #!/usr/bin/perl
 use strict;
-#use warnings;
+use warnings;
 use FindBin;
-use lib "$FindBin::Bin/./modules/";
-use lib "$FindBin::Bin/./modules/structures/";
-use lib "$FindBin::Bin/./modules/home/";
-use lib "$FindBin::Bin/./modules/frontend/";
-use lib "$FindBin::Bin/./modules/frontend/home/";
-use lib "$FindBin::Bin/./modules/frontend/access/";
-use lib "$FindBin::Bin/./modules/frontend/registration/";
-use lib "$FindBin::Bin/./modules/frontend/tryagain/";
+use lib "$FindBin::Bin/modules/";
+use lib "$FindBin::Bin/modules/structures/";
+use lib "$FindBin::Bin/modules/home/";
+use lib "$FindBin::Bin/modules/frontend/";
+use lib "$FindBin::Bin/modules/frontend/home/";
+use lib "$FindBin::Bin/modules/frontend/access/";
+use lib "$FindBin::Bin/modules/frontend/registration/";
+use lib "$FindBin::Bin/modules/frontend/tryagain/";
 use PathLayUtils;
 use HTMLObjects;
 use PathLayHomeUtils;
@@ -18,9 +18,6 @@ use PathLayRegistrationFrontEnd;
 use PathLayAccessFrontEnd;
 use PathLayHomeFrontEnd;
 use PathLayJSObjects;
-#use HTMLObjects;
-#use PathLayFrontEnd;
-#use PathLayHomeUtils;
 use CGI;
 use Data::Dumper;
 
@@ -29,11 +26,7 @@ use Data::Dumper;
 our $CGI = CGI->new;
 $CGI::POST_MAX = 1024 * 2000;
 our $server = "localserver";
-our $base;
-
-$base = '/var/www/html/pathlay' if ($server eq 'von');
-$base = '/var/www/html/bioserver2.org/' if ($server eq 'bioserver');
-$base = '/var/www/html/pathlay' if ($server eq 'localserver');
+our $base = "$FindBin::Bin/..";
 
 our %form = $CGI->Vars;
 
@@ -41,8 +34,6 @@ my $remoteurl = $ENV{'REMOTE_ADDR'};
 
 our $localhost;
 $localhost = `hostname -I` if ($server eq 'localserver');
-$localhost = '150.217.62.191' if ($server eq 'von');
-$localhost = '150.217.62.250' if ($server eq 'bioserver');
 chomp $localhost;
 $localhost =~ s/ .+//g;
 $localhost =~ s/ //g;
@@ -103,13 +94,13 @@ if ($form{ope} eq 'pathlay') {
         if ($parameters -> {_home} eq "unk") {
             my $form = RegistrationBuilder();
             UnkPrinter(
-                form => \%form
+                form => $form
             );
         }
         if ($parameters -> {_home} eq "nopwd") {
             my $form = TryAgainBuilder();
             NoPwdPrinter(
-                form => \%form
+                form => $form
             );
         }
     }

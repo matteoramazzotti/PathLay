@@ -4,13 +4,11 @@ use strict;
 use warnings;
 use Data::Dumper qw(Dumper);
 use FindBin;
-use lib "$FindBin::Bin/./modules/";
-use lib "$FindBin::Bin/./modules/structures/";
-use lib "$FindBin::Bin/./modules/results/";
-use lib "$FindBin::Bin/./modules/frontend/";
-use lib "$FindBin::Bin/./modules/frontend/results/";
-
-
+use lib "$FindBin::Bin/modules/";
+use lib "$FindBin::Bin/modules/structures/";
+use lib "$FindBin::Bin/modules/results/";
+use lib "$FindBin::Bin/modules/frontend/";
+use lib "$FindBin::Bin/modules/frontend/results/";
 
 use PathLayUtils;
 use PathLayIntegration;
@@ -23,17 +21,12 @@ use PathLayExpPackages;
 use PathLayComplex;
 use PathLayPathway;
 
-#use Logger;
 my $t0 = Benchmark->new;
 
 our $timestamp = getTimeStamp();
 ### defaults ###
-#my $server="bioserver";
 my $server="localserver";
-my $base = '/mnt/CRUCIAL/apache/html/' if ($server eq 'localserver');
-$base = '/var/www/html/pathlay/' if ($server eq 'von');
-$base = '/var/www/html/bioserver2.org/' if ($server eq 'bioserver');
-$base = '/var/www/html/pathlay/' if ($server eq 'localserver');
+my $base = "$FindBin::Bin/..";
 
 print STDERR "SERVER: $base\n";
 print STDERR "SERVER: $server\n";

@@ -86,9 +86,10 @@ sub ExtractZip {
         $zip->extractMember($file,"$base/pathlay_users/$home/exp$expn.mirna") if ($file =~ /\.mirna/);
         $zip->extractMember($file,"$base/pathlay_users/$home/exp$expn.mrna") if ($file =~ /\.mrna/);
         $zip->extractMember($file,"$base/pathlay_users/$home/exp$expn.meta") if ($file =~ /\.meta/);
-        #$zip->extractMember($file,"$base/pathlay_users/$home/exp$expn.assoc") if ($file =~ /\.assoc/);
-        $zip->extractMember($file,"$base/pathlay_users/$home/exp$expn.meta") if ($file =~ /\.prot/);
+        $zip->extractMember($file,"$base/pathlay_users/$home/exp$expn.prot") if ($file =~ /\.prot/);
         $zip->extractMember($file,"$base/pathlay_users/$home/exp$expn.chroma") if ($file =~ /\.chroma/);
+        $zip->extractMember($file,"$base/pathlay_users/$home/exp$expn.meth") if ($file =~ /\.meth/);
+        $zip->extractMember($file,"$base/pathlay_users/$home/exp$expn.ont") if ($file =~ /\.ont/);
     }
 }
 sub DownloadZip {
@@ -319,6 +320,9 @@ sub DeleteData {
     }
     if (-e "$mainBase/pathlay_users/".$userHome."/".$expId.".chroma") {
         unlink("$mainBase/pathlay_users/".$userHome."/".$expId.".chroma");
+    }
+    if (-e "$mainBase/pathlay_users/".$userHome."/".$expId.".sel") {
+        unlink("$mainBase/pathlay_users/".$userHome."/".$expId.".sel");
     }
 }
 

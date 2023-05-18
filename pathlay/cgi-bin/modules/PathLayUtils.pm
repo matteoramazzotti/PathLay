@@ -397,21 +397,24 @@ package Parameters;
         );
 
         opendir(DIR,$args{UsersDir});
-        my $nexps = 0;
+        
+
+        my @nexps;
+
         foreach my $file (readdir(DIR)) {
-            $nexps++ if ($file =~ /\.conf$/);
+            if ($file =~ /exp(.+?)\.conf$/) {
+                push(@nexps,$1);
+            }
         }
         closedir(DIR);
         print STDERR "HERE:".$args{UsersDir}."\n";
-        foreach my $e (1..$nexps) {
+        foreach my $e (@nexps) {
             $self -> {_exps_available} -> {"exp$e"} -> {conf_file} = "exp$e.conf";
             $self -> {_exps_available} -> {"exp$e"} -> {gene_file} = "exp$e.mrna";
             $self -> {_exps_available} -> {"exp$e"} -> {urna_file} = "exp$e.mirna";
             $self -> {_exps_available} -> {"exp$e"} -> {meta_file} = "exp$e.meta";
             $self -> {_exps_available} -> {"exp$e"} -> {prot_file} = "exp$e.prot";
             $self -> {_exps_available} -> {"exp$e"} -> {last_file} = "exp$e.last";
-            #$self -> {_exps_available} -> {"exp$e"} -> {pathsel_file} = "exp$e.sel";
-            #$self -> {_exps_available} -> {"exp$e"} -> {assoc_file} = "exp$e.assoc";
             print STDERR $self->{_exps_available}->{"exp$e"}->{conf_file}."\n";
             open(CONFIG,$args{UsersDir}.$self->{_exps_available}->{"exp$e"}->{conf_file}) or print "No".$args{UsersDir}.$self->{_exps_available}->{"exp$e"}->{conf_file}."<br>";
             while (<CONFIG>) {
@@ -422,13 +425,17 @@ package Parameters;
                 print STDERR $field.":".$value."\n";
             }
             close(CONFIG);
+
             open(LAST,$args{UsersDir}.$self->{_exps_available}->{"exp$e"}->{last_file}) or print STDERR "No".$args{UsersDir}.$self->{_exps_available}->{"exp$e"}->{last_file}."<br>";
-            while (<LAST>) {
-                chomp;
-                next if ($_ !~ /\w/);
-                my ($field,$value) = split (/=/,$_);
-                $self -> {_exps_available} -> {"exp$e"} -> {conf_data} -> {$field} = $value;
+            if ($args{UsersDir}.$self->{_exps_available}->{"exp$e"}->{last_file}) {
+                while (<LAST>) {
+                    chomp;
+                    next if ($_ !~ /\w/);
+                    my ($field,$value) = split (/=/,$_);
+                    $self -> {_exps_available} -> {"exp$e"} -> {conf_data} -> {$field} = $value;
+                }
             }
+            
             close(LAST);
         }
 

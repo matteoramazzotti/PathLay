@@ -1,2 +1,11 @@
 pathlay/pathlay_users/6135261840/
 pathlay/javascript/old/
+pathlay/cgi-bin/pathlay_prepare_2.pl
+pathlay/cgi-bin/pathlay_prepare.pl
+pathlay/cgi-bin/pathlayplotOld.pl
+pathlay/cgi-bin/pathlayplot.pl.bak
+pathlay/cgi-bin/pathlay_compile.pl
+pathlay/cgi-bin/ont_gmt_assembler.pl
+pathlay/cgi-bin/maptogenes_wiki.pl
+pathlay/cgi-bin/IndicatorsOld.pm
+

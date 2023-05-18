@@ -109,14 +109,10 @@ sub UnkPrinter {
     print "<head>\n";
     print "<meta charset=\"UTF-8\"/>\n";
     print "</head>\n";
-    print "<script>\n";
-    print "doit = function (what) {\n";
-    print "	var input = document.getElementById('ope')\n";
-    print "	input.setAttribute(\"value\", what);\n";
-    print "	document.getElementById('main').submit();\n";
-    print "}\n";
-    print "</script>\n";
     print "<body>";
+    print '<script src="../javascript/register/registerUtils.js" type="text/javascript"></script>'."\n";
+    print "<script>\n";
+    print "</script>\n";
     $form -> PrintForm();
     print "</body>";
     print "</html>\n";
