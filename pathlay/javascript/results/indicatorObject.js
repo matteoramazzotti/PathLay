@@ -84,13 +84,11 @@ class Complex {
                     }
                     if (currentType === "meth") {
                         this.hasMeth = true;
-                        currentObj.assignImg();
                         status++;
                         continue;
                     }
                     if (currentType === "chroma") {
                         this.hasChroma = true;
-                        currentObj.assignImg();
                         status++;
                         continue;
                     }
@@ -127,8 +125,12 @@ class Complex {
                     currentDev = devRegex.exec(srcTag)[1];
                     if (currentType === "meth") {
                         currentObj.meth = currentDev;
+                        currentObj.hasMethyl = true;
+                        currentObj.assignImg();
                     } else if (currentType === "chroma") {
                         currentObj.chroma = currentDev;
+                        currentObj.hasChroma = true;
+                        currentObj.assignImg();
                     } else {
                         currentObj.dev = currentDev;
                     }
@@ -581,9 +583,6 @@ class Gene {
         if (this.type == "nodeg") {
             this.img = "grey_square.png";
         }
-
-        console.log(`Methyl: ${this.hasMethyl}`);
-        console.log(`Chroma: ${this.hasChroma}`);
 
         if (this.hasMethyl === true) {
             console.log("Assigning Methyl");
