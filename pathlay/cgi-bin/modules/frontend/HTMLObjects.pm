@@ -349,6 +349,7 @@ sub new {
         #_cols => 20,
         _wrap => "off",
         _style => "",
+        _autocomplete => "off",
         @_
     };
     #<textarea id="gene_data" name="gene_data" rows="20" cols="100" wrap="off" style="background-color: #e6faff; display:none;"></textarea>
@@ -373,12 +374,14 @@ sub PrintTextArea{
     }
     my $wrap = $self -> {_wrap};
     my $style = $self -> {_style};
+    my $autocomplete = $self -> {_autocomplete};
 
     $begin =~ s/>$/ id=\"$id\">/;
     $begin =~ s/>$/ name=\"$name\">/;
     $begin =~ s/>$/ rows=\"$rows\">/;
     $begin =~ s/>$/ cols=\"$cols\">/;
     $begin =~ s/>$/ wrap=\"$wrap\">/;
+    $begin =~ s/>$/ autocomplete=\"$autocomplete\">/;
     $begin =~ s/>$/ style=\"$style\">/;
 
     print $begin;
