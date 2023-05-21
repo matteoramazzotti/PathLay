@@ -162,9 +162,10 @@ function newSubmit() {
 
 function readTextFile(file) {
 	//console.log(file);
+	var ms = Date.now();
 	req = new XMLHttpRequest();
 	req.overrideMimeType('text/plain');
-    req.open( "GET", file, false );
+    req.open( "GET", `${file}?dummy=${ms}`, false );
 	req.send( null );
 	//console.log(req);
 
