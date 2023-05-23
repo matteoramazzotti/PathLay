@@ -281,60 +281,7 @@ function exploadIndicatorSrc(indicatorSrc) {
     }
     return content;
 }
-function assignImg(indicatorContent) {
-    for (mainId in indicatorContent) {
-        if (indicatorContent[mainId].dev && indicatorContent[mainId].type === "meta") {
-            if (indicatorContent[mainId].dev > 0) {
-                indicatorContent[mainId].mainImg = "../src/meta_up.png";
-            }
-            if (indicatorContent[mainId].dev < 0) {
-                indicatorContent[mainId].mainImg = "../src/meta_down.png";
-            }
-            continue;
-        }
-        if (indicatorContent[mainId].dev && indicatorContent[mainId].type != "meta") {
-            if (indicatorContent[mainId].dev > 0) {
-                indicatorContent[mainId].mainImg = "../src/red_square.png";
-            }
-            if (indicatorContent[mainId].dev < 0) {
-                indicatorContent[mainId].mainImg = "../src/green_square.png";
-            }
 
-        }
-        if (!indicatorContent[mainId].dev){
-            indicatorContent[mainId].mainImg = "../src/grey_square.png";
-        }
-        if (indicatorContent[mainId].meth) {
-            if (indicatorContent[mainId].meth > 0) {
-                indicatorContent[mainId].methImg = "../src/yellow_meth.png";
-            }
-            if (indicatorContent[mainId].meth < 0) {
-                indicatorContent[mainId].methImg = "../src/blue_meth.png";
-            }
-        }
-        if (indicatorContent[mainId].urnas) {
-            for (const urnaObj of indicatorContent[mainId].urnas) {
-                if (urnaObj.dev > 0) {
-                    urnaObj.img = "../src/yellow_circle.png";
-                }
-                if (urnaObj.dev < 0) {
-                    urnaObj.img = "../src/blue_circle.png";
-                }
-            }
-        }
-        if (indicatorContent[mainId].tfs) {
-            for (const tfObj of indicatorContent[mainId].tfs) {
-                if (tfObj.dev > 0) {
-                    tfObj.img = "../src/yellow_tf.png";
-                }
-                if (tfObj.dev < 0) {
-                    tfObj.img = "../src/blue_tf.png";
-                }
-            }
-        }
-    }
-    return indicatorContent
-}
 function buildBoomBoxLis(indicatorContent) {
 
     var mainBoomBoxUl = document.getElementById("mainBoomBoxUl"); 
