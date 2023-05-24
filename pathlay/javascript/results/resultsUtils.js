@@ -49,10 +49,16 @@ function change(action,dir) {
     let indicators = document.querySelectorAll(".complex");
     for(let indicator of indicators) {
         var selected = false;
+        var highlighted = false;
         if (indicator.style.border === "3px dotted blue") {
             indicator.style.border = "";
             selected = true;
         }
+        if (indicator.style.border === "3px dotted magenta") {
+            indicator.style.border = "";
+            highlighted = true;
+        }
+        
 
         if (action == "trasp") {
             op = parseFloat(indicator.style.opacity)
@@ -80,6 +86,9 @@ function change(action,dir) {
         }
         if (selected === true) {
             indicator.style.border = "3px dotted blue";
+        }
+        if (highlighted === true) {
+            indicator.style.border = "3px dotted magenta";
         }
         
     }
@@ -615,6 +624,7 @@ function spawnTFSelectors(){
 
 function spawnIDSelector(type) {
     let selectHLDefault = document.createElement("select");
+    selectHLDefault.title = `Select ${referenceTable[type].aliasForIDSelector} to Higlight (Select \"${referenceTable[type].aliasForIDSelector}\" to Reset)`;
     let optionsArray = [];
     for (let id in referenceTable[type].ids) {
         let opt = document.createElement("option");
