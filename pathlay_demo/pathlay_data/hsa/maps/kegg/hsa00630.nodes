@@ -1,0 +1,94 @@
+TEXT	TYPE	DB	ID	X	Y
+Glyoxylate and dicarboxylate metabolism	hsa	KEGG	hsa00630
+HOGA1	GeneProduct	Entrez Gene	112817	1021,475
+AFMID	GeneProduct	Entrez Gene	125061	1094,241
+GLYCTK	GeneProduct	Entrez Gene	132158	162,632
+CS	GeneProduct	Entrez Gene	1431	556,144
+DLD	GeneProduct	Entrez Gene	1738	512,805
+AGXT	GeneProduct	Entrez Gene	189	596,847
+GCSH	GeneProduct	Entrez Gene	2653	512,805
+GLDC	GeneProduct	Entrez Gene	2731	512,805
+AMT	GeneProduct	Entrez Gene	275	512,805
+GLUL	GeneProduct	Entrez Gene	2752	782,704
+PGP	GeneProduct	Entrez Gene	283871	598,603
+ACAT1	GeneProduct	Entrez Gene	38	556,177
+ACAT2	GeneProduct	Entrez Gene	39	556,177
+MDH1	GeneProduct	Entrez Gene	4190	478,196
+MDH2	GeneProduct	Entrez Gene	4191	478,196
+MMUT	GeneProduct	Entrez Gene	4594	623,268
+ACO1	GeneProduct	Entrez Gene	48	1189,373	988,145
+ACO2	GeneProduct	Entrez Gene	50	1189,373	988,145
+PCCA	GeneProduct	Entrez Gene	5095	623,384
+PCCB	GeneProduct	Entrez Gene	5096	623,384
+HAO2	GeneProduct	Entrez Gene	51179	759,497
+HAO1	GeneProduct	Entrez Gene	54363	759,497
+ACSS2	GeneProduct	Entrez Gene	55902	509,401
+SHMT1	GeneProduct	Entrez Gene	6470	705,824
+SHMT2	GeneProduct	Entrez Gene	6472	705,824
+HYI	GeneProduct	Entrez Gene	81888	382,519
+ACSS1	GeneProduct	Entrez Gene	84532	509,401
+MCEE	GeneProduct	Entrez Gene	84693	623,326	777,257
+CAT	GeneProduct	Entrez Gene	847	761,548
+GRHPR	GeneProduct	Entrez Gene	9380	738,601	350,609	350,588
+Oxygen	Metabolite	KEGG Compound	C00007	703,521
+CO2	Metabolite	KEGG Compound	C00011	911,236
+Ammonia	Metabolite	KEGG Compound	C00014	459,805
+Pyruvate	Metabolite	KEGG Compound	C00022	975,512
+Acetyl-CoA	Metabolite	KEGG Compound	C00024	508,370
+L-Glutamate	Metabolite	KEGG Compound	C00025	836,753	915,183
+2-Oxoglutarate	Metabolite	KEGG Compound	C00026	975,704	718,753
+Hydrogen peroxide	Metabolite	KEGG Compound	C00027	811,523
+Acetate	Metabolite	KEGG Compound	C00033	508,422
+Oxaloacetate	Metabolite	KEGG Compound	C00036	477,144	975,562
+Glycine	Metabolite	KEGG Compound	C00037	562,805
+Succinate	Metabolite	KEGG Compound	C00042	1116,479
+Glyoxylate	Metabolite	KEGG Compound	C00048	911,447
+Formate	Metabolite	KEGG Compound	C00058	911,321
+L-Glutamine	Metabolite	KEGG Compound	C00064	727,704
+L-Serine	Metabolite	KEGG Compound	C00065	704,848
+Succinyl-CoA	Metabolite	KEGG Compound	C00091	623,235
+Propanoyl-CoA	Metabolite	KEGG Compound	C00100	623,409
+Butanoyl-CoA	Metabolite	KEGG Compound	C00136	973,606
+(S)-Malate	Metabolite	KEGG Compound	C00149	477,257
+Citrate	Metabolite	KEGG Compound	C00158	825,144
+Glycolate	Metabolite	KEGG Compound	C00160	601,496
+Hydroxypyruvate	Metabolite	KEGG Compound	C00168	385,598
+3-Phospho-D-glycerate	Metabolite	KEGG Compound	C00197	259,671
+Oxalate	Metabolite	KEGG Compound	C00209	911,398
+D-Glycerate	Metabolite	KEGG Compound	C00258	259,599
+Glycolaldehyde	Metabolite	KEGG Compound	C00266	536,594
+Isocitrate	Metabolite	KEGG Compound	C00311	1190,450
+Oxalyl-CoA	Metabolite	KEGG Compound	C00313	1119,401
+Acetoacetyl-CoA	Metabolite	KEGG Compound	C00332	602,177
+cis-Aconitate	Metabolite	KEGG Compound	C00417	1189,297
+meso-Tartaric acid	Metabolite	KEGG Compound	C00552	187,304
+2-Phospho-D-glycerate	Metabolite	KEGG Compound	C00631	161,671
+(S)-Methylmalonyl-CoA	Metabolite	KEGG Compound	C00683	623,351
+Formyl-CoA	Metabolite	KEGG Compound	C00798	1119,335
+Crotonoyl-CoA	Metabolite	KEGG Compound	C00877	776,177
+Pentanoyl-CoA	Metabolite	KEGG Compound	C00888	975,655
+(R,R)-Tartaric acid	Metabolite	KEGG Compound	C00898	187,144
+Dihydroxyfumarate	Metabolite	KEGG Compound	C00975	187,454
+2-Phosphoglycolate	Metabolite	KEGG Compound	C00988	598,626
+4-Hydroxy-2-oxoglutarate	Metabolite	KEGG Compound	C01127	1076,485
+2-Hydroxy-3-oxopropanoate	Metabolite	KEGG Compound	C01146	259,454
+D-Ribulose 1,5-bisphosphate	Metabolite	KEGG Compound	C01182	683,671
+(R)-Methylmalonyl-CoA	Metabolite	KEGG Compound	C01213	623,293
+Ethylene glycol	Metabolite	KEGG Compound	C01380	536,660
+Mesaconate	Metabolite	KEGG Compound	C01732	828,273
+3-Ethylmalate	Metabolite	KEGG Compound	C01989	1075,582
+3-Oxalomalate	Metabolite	KEGG Compound	C01990	1075,536
+3-Propylmalate	Metabolite	KEGG Compound	C02123	1075,629
+Formyl phosphate	Metabolite	KEGG Compound	C02405	1044,253
+2-Hydroxy-3-oxoadipate	Metabolite	KEGG Compound	C03217	1074,679
+2-Hydroxy-3-oxosuccinate	Metabolite	KEGG Compound	C03459	104,303
+trans-2,3-Epoxysuccinate	Metabolite	KEGG Compound	C03548	285,304
+(R)-3-Hydroxybutanoyl-CoA	Metabolite	KEGG Compound	C03561	689,177
+L-threo-3-Methylaspartate	Metabolite	KEGG Compound	C03618	828,183
+L-Malyl-CoA	Metabolite	KEGG Compound	C04348	440,310
+L-erythro-3-Methylmalyl-CoA	Metabolite	KEGG Compound	C06027	687,401
+2-Methylfumaryl-CoA	Metabolite	KEGG Compound	C06028	776,401
+N-Formylderivatives	Metabolite	KEGG Compound	C06049	1119,191
+(2S)-Ethylmalonyl-CoA	Metabolite	KEGG Compound	C18026	776,233
+(2S)-Methylsuccinyl-CoA	Metabolite	KEGG Compound	C18324	776,345
+(2R)-Ethylmalonyl-CoA	Metabolite	KEGG Compound	C20238	776,289

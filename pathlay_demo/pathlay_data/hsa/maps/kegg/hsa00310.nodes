@@ -1,0 +1,115 @@
+TEXT	TYPE	DB	ID	X	Y
+Lysine degradation	hsa	KEGG	hsa00310
+AASS	GeneProduct	Entrez Gene	10157	277,96	558,75
+EHMT2	GeneProduct	Entrez Gene	10919	265,712	384,712	501,712
+PRDM7	GeneProduct	Entrez Gene	11105	265,712	384,712	501,712
+HYKK	GeneProduct	Entrez Gene	123688	524,128
+SMYD1	GeneProduct	Entrez Gene	150572	265,712	384,712	501,712
+DLD	GeneProduct	Entrez Gene	1738	829,297
+DLST	GeneProduct	Entrez Gene	1743	829,297
+ECHS1	GeneProduct	Entrez Gene	1892	963,374
+EHHADH	GeneProduct	Entrez Gene	1962	963,374	1075,374
+MECOM	GeneProduct	Entrez Gene	2122	265,712
+EZH1	GeneProduct	Entrez Gene	2145	265,712	384,712	501,712
+EZH2	GeneProduct	Entrez Gene	2146	265,712	384,712	501,712
+ALDH2	GeneProduct	Entrez Gene	217	873,682
+ALDH1B1	GeneProduct	Entrez Gene	219	873,682
+ALDH9A1	GeneProduct	Entrez Gene	223	873,703	873,682
+ALDH3A2	GeneProduct	Entrez Gene	224	873,682
+SETD1B	GeneProduct	Entrez Gene	23067	265,712	384,712	501,712
+COLGALT2	GeneProduct	Entrez Gene	23127	384,751
+GCDH	GeneProduct	Entrez Gene	2639	867,374
+SETD2	GeneProduct	Entrez Gene	29072	265,712	384,712	501,712
+HADHA	GeneProduct	Entrez Gene	3030	963,374
+HADH	GeneProduct	Entrez Gene	3033	1075,374
+ACAT1	GeneProduct	Entrez Gene	38	1173,374
+KMT5A	GeneProduct	Entrez Gene	387893	265,712
+ACAT2	GeneProduct	Entrez Gene	39	1173,374
+KMT2A	GeneProduct	Entrez Gene	4297	265,712	384,712	501,712
+ALDH7A1	GeneProduct	Entrez Gene	501	778,86	873,682
+KMT5B	GeneProduct	Entrez Gene	51111	384,712
+AADAT	GeneProduct	Entrez Gene	51166	829,170
+PIPOX	GeneProduct	Entrez Gene	51268	708,184
+PLOD1	GeneProduct	Entrez Gene	5351	265,752
+PLOD2	GeneProduct	Entrez Gene	5352	265,752
+NSD3	GeneProduct	Entrez Gene	54904	265,712	384,712
+TMLHE	GeneProduct	Entrez Gene	55217	674,693
+DHTKD1	GeneProduct	Entrez Gene	55526	829,297
+ASH1L	GeneProduct	Entrez Gene	55870	265,712	384,712	501,712
+KMT2E	GeneProduct	Entrez Gene	55904	265,712	384,712	501,712
+SMYD2	GeneProduct	Entrez Gene	56950	265,712	384,712	501,712
+PRDM9	GeneProduct	Entrez Gene	56979	265,712	384,712	501,712
+KMT2C	GeneProduct	Entrez Gene	58508	265,712	384,712	501,712
+PRDM16	GeneProduct	Entrez Gene	63976	265,712
+SETMAR	GeneProduct	Entrez Gene	6419	265,712	384,712
+NSD1	GeneProduct	Entrez Gene	64324	265,712	384,712
+SMYD3	GeneProduct	Entrez Gene	64754	265,712	384,712	501,712
+SUV39H1	GeneProduct	Entrez Gene	6839	265,712	384,712	501,712
+NSD2	GeneProduct	Entrez Gene	7468	265,712	384,712
+PRDM2	GeneProduct	Entrez Gene	7799	265,712	384,712	501,712
+COLGALT1	GeneProduct	Entrez Gene	79709	384,751
+SUV39H2	GeneProduct	Entrez Gene	79723	265,712	384,712	501,712
+EHMT1	GeneProduct	Entrez Gene	79813	265,712	384,712	501,712
+CAMKMT	GeneProduct	Entrez Gene	79823	384,693	265,693	501,693
+KMT2D	GeneProduct	Entrez Gene	8085	265,712	384,712	501,712
+SETD7	GeneProduct	Entrez Gene	80854	265,712
+SETDB2	GeneProduct	Entrez Gene	83852	265,712	384,712	501,712
+BBOX1	GeneProduct	Entrez Gene	8424	972,693
+DOT1L	GeneProduct	Entrez Gene	84444	265,712	384,712	501,712
+KMT5C	GeneProduct	Entrez Gene	84787	384,712
+PHYKPL	GeneProduct	Entrez Gene	85007	659,128
+PLOD3	GeneProduct	Entrez Gene	8985	384,751	265,752
+PRDM6	GeneProduct	Entrez Gene	93166	265,712
+SETD1A	GeneProduct	Entrez Gene	9739	265,712	384,712	501,712
+KMT2B	GeneProduct	Entrez Gene	9757	265,712	384,712	501,712
+SETDB1	GeneProduct	Entrez Gene	9869	501,712
+Acetyl-CoA	Metabolite	KEGG Compound	C00024	1230,373
+2-Oxoglutarate	Metabolite	KEGG Compound	C00026	703,483
+Glycine	Metabolite	KEGG Compound	C00037	793,725
+Succinate	Metabolite	KEGG Compound	C00042	703,543
+L-Lysine	Metabolite	KEGG Compound	C00047	208,374
+Butanoyl-CoA	Metabolite	KEGG Compound	C00136	1019,451
+Acetoacetate	Metabolite	KEGG Compound	C00164	846,638
+2-Oxoadipate	Metabolite	KEGG Compound	C00322	828,239
+Acetoacetyl-CoA	Metabolite	KEGG Compound	C00332	1128,373
+L-Pipecolate	Metabolite	KEGG Compound	C00408	733,219
+5-Aminopentanoate	Metabolite	KEGG Compound	C00431	459,373
+N6-(L-1,3-Dicarboxypropyl)-L-lysine	Metabolite	KEGG Compound	C00449	410,85
+(S)-2,3,4,5-Tetrahydropyridine-2-carboxylate	Metabolite	KEGG Compound	C00450	733,152
+Carnitine	Metabolite	KEGG Compound	C00487	1025,692
+Glutarate	Metabolite	KEGG Compound	C00489	703,373
+Glutaryl-CoA	Metabolite	KEGG Compound	C00527	828,373
+D-Lysine	Metabolite	KEGG Compound	C00739	208,533
+Crotonoyl-CoA	Metabolite	KEGG Compound	C00877	917,373
+L-2-Aminoadipate	Metabolite	KEGG Compound	C00956	828,85
+5-Aminopentanamide	Metabolite	KEGG Compound	C00990	367,374
+(3S)-3,6-Diaminohexanoate	Metabolite	KEGG Compound	C01142	297,599
+(S)-3-Hydroxybutanoyl-CoA	Metabolite	KEGG Compound	C01144	1020,373
+4-Trimethylammoniobutanal	Metabolite	KEGG Compound	C01149	814,692
+4-Trimethylammoniobutanoate	Metabolite	KEGG Compound	C01181	929,692
+(3S,5S)-3,5-Diaminohexanoate	Metabolite	KEGG Compound	C01186	451,599
+Procollagen 5-hydroxy-L-lysine	Metabolite	KEGG Compound	C01211	327,751
+(3S)-3-Hydroxy-N6,N6,N6-trimethyl-L-lysine	Metabolite	KEGG Compound	C01259	720,692
+Cadaverine	Metabolite	KEGG Compound	C01672	269,467
+Protein lysine	Metabolite	KEGG Compound	C02188	208,692
+N6-Acetyl-L-lysine	Metabolite	KEGG Compound	C02727	344,219
+5-Acetamidopentanoate	Metabolite	KEGG Compound	C03087	459,296
+(S)-2-Hydroxyglutarate	Metabolite	KEGG Compound	C03196	703,428
+6-Amino-2-oxohexanoate	Metabolite	KEGG Compound	C03239	559,219
+5-Oxopentanoate	Metabolite	KEGG Compound	C03273	595,373
+5-Phosphooxy-L-lysine	Metabolite	KEGG Compound	C03366	589,127
+(S)-5-Amino-3-oxohexanoic acid	Metabolite	KEGG Compound	C03656	652,599
+N6,N6,N6-Trimethyl-L-lysine	Metabolite	KEGG Compound	C03793	637,692
+D-Lysopine	Metabolite	KEGG Compound	C04020	345,326
+L-2-Aminoadipate 6-semialdehyde	Metabolite	KEGG Compound	C04076	731,85
+Delta1-Piperideine-2-carboxylate	Metabolite	KEGG Compound	C04092	632,219
+5-(D-Galactosyloxy)-L-lysine-procollagen	Metabolite	KEGG Compound	C04487	447,751
+(2R,5S)-2,5-Diaminohexanoate	Metabolite	KEGG Compound	C05161	451,639
+L-3-Aminobutyryl-CoA	Metabolite	KEGG Compound	C05231	917,599
+Protein N6-methyl-L-lysine	Metabolite	KEGG Compound	C05544	328,692
+Protein N6,N6-dimethyl-L-lysine	Metabolite	KEGG Compound	C05545	447,692
+Protein N6,N6,N6-trimethyl-L-lysine	Metabolite	KEGG Compound	C05546	554,692
+6-Acetamido-2-oxohexanoate	Metabolite	KEGG Compound	C05548	459,219
+2-Amino-5-oxohexanoate	Metabolite	KEGG Compound	C05825	652,639
+5-Aminopentanal	Metabolite	KEGG Compound	C12455	459,467
+L-Hydroxylysine	Metabolite	KEGG Compound	C16741	467,127

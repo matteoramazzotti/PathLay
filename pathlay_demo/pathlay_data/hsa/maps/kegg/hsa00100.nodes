@@ -1,0 +1,80 @@
+TEXT	TYPE	DB	ID	X	Y
+Steroid biosynthesis	hsa	KEGG	hsa00100
+CEL	GeneProduct	Entrez Gene	1056	195,952
+EBP	GeneProduct	Entrez Gene	10682	373,825	238,825	668,775
+CYP2R1	GeneProduct	Entrez Gene	120227	63,924
+CYP24A1	GeneProduct	Entrez Gene	1591	88,1038	144,1038
+CYP27B1	GeneProduct	Entrez Gene	1594	63,982
+CYP51A1	GeneProduct	Entrez Gene	1595	669,675	346,375	398,375
+DHCR7	GeneProduct	Entrez Gene	1717	238,924	668,1026	835,1026
+DHCR24	GeneProduct	Entrez Gene	1718	670,1075	306,955	306,905	306,854	306,805	306,455	835,1075	306,354	748,1075
+FDFT1	GeneProduct	Entrez Gene	2222	372,137	372,195
+LBR	GeneProduct	Entrez Gene	3930	373,425
+LIPA	GeneProduct	Entrez Gene	3988	195,952
+LSS	GeneProduct	Entrez Gene	4047	372,317
+NSDHL	GeneProduct	Entrez Gene	50814	373,525	373,675
+HSD17B7	GeneProduct	Entrez Gene	51478	373,575	373,745
+MSMO1	GeneProduct	Entrez Gene	6307	373,475	373,625
+SC5D	GeneProduct	Entrez Gene	6309	835,975	238,875	528,875	668,975
+SOAT1	GeneProduct	Entrez Gene	6646	195,974
+SQLE	GeneProduct	Entrez Gene	6713	347,256
+TM7SF2	GeneProduct	Entrez Gene	7108	668,725	373,425
+SOAT2	GeneProduct	Entrez Gene	8435	195,974
+Cholesterol	Metabolite	KEGG Compound	C00187	237,954
+trans,trans-Farnesyl diphosphate	Metabolite	KEGG Compound	C00448	372,109
+Squalene	Metabolite	KEGG Compound	C00751	372,228
+(S)-2,3-Epoxysqualene	Metabolite	KEGG Compound	C01054	372,288
+7-Dehydrocholesterol	Metabolite	KEGG Compound	C01164	237,904
+Lathosterol	Metabolite	KEGG Compound	C01189	237,854
+Calcidiol	Metabolite	KEGG Compound	C01561	88,960
+Calcitriol	Metabolite	KEGG Compound	C01673	88,1015
+Ergosterol	Metabolite	KEGG Compound	C01694	526,1004
+Lanosterol	Metabolite	KEGG Compound	C01724	372,354
+beta-Sitosterol	Metabolite	KEGG Compound	C01753	834,1104
+Campesterol	Metabolite	KEGG Compound	C01789	669,1104
+Desmosterol	Metabolite	KEGG Compound	C01802	372,954
+Cycloartenol	Metabolite	KEGG Compound	C01902	668,354
+Obtusifoliol	Metabolite	KEGG Compound	C01943	668,654
+Cycloeucalenol	Metabolite	KEGG Compound	C02141	668,604
+Cholesterol ester	Metabolite	KEGG Compound	C02530	151,954
+Presqualene diphosphate	Metabolite	KEGG Compound	C03428	372,169
+5alpha-Cholest-8-en-3beta-ol	Metabolite	KEGG Compound	C03845	237,804
+Fecosterol	Metabolite	KEGG Compound	C04525	526,804
+4alpha-Methylzymosterol	Metabolite	KEGG Compound	C05103	372,604
+7-Dehydrodesmosterol	Metabolite	KEGG Compound	C05107	372,904
+14-Demethyllanosterol	Metabolite	KEGG Compound	C05108	372,454
+24,25-Dihydrolanosterol	Metabolite	KEGG Compound	C05109	237,353
+Zymosterol	Metabolite	KEGG Compound	C05437	372,804
+5alpha-Cholesta-7,24-dien-3beta-ol	Metabolite	KEGG Compound	C05439	372,854
+Ergosta-5,7,22,24(28)-tetraen-3beta-ol	Metabolite	KEGG Compound	C05440	526,954
+Vitamin D2	Metabolite	KEGG Compound	C05441	526,1057
+Stigmasterol	Metabolite	KEGG Compound	C05442	834,1154
+Vitamin D3	Metabolite	KEGG Compound	C05443	88,904
+Secalciferol	Metabolite	KEGG Compound	C07712	144,1070
+Brassicasterol	Metabolite	KEGG Compound	C08813	748,1154
+Isofucosterol	Metabolite	KEGG Compound	C08821	834,1054
+24-Methylidenecycloartanol	Metabolite	KEGG Compound	C08830	668,454
+4,4-Dimethyl-5alpha-cholesta-8,14,24-trien-3beta-ol	Metabolite	KEGG Compound	C11455	372,404
+4alpha-Methyl-5alpha-ergosta-8,14,24(28)-trien-3beta-ol	Metabolite	KEGG Compound	C11508	668,704
+24-Methylenelophenol	Metabolite	KEGG Compound	C11522	668,804
+24-Ethylidenelophenol	Metabolite	KEGG Compound	C11523	834,804
+4alpha-Methylfecosterol	Metabolite	KEGG Compound	C15776	668,754
+Episterol	Metabolite	KEGG Compound	C15777	526,854	668,954
+5,7,24(28)-Ergostatrienol	Metabolite	KEGG Compound	C15778	526,904
+5-Dehydroepisterol	Metabolite	KEGG Compound	C15780	668,1004
+24-Methylenecholesterol	Metabolite	KEGG Compound	C15781	668,1054
+Delta7-Avenasterol	Metabolite	KEGG Compound	C15782	834,954
+5-Dehydroavenasterol	Metabolite	KEGG Compound	C15783	834,1004
+4alpha-Methylzymosterol-4-carboxylate	Metabolite	KEGG Compound	C15808	372,504
+3-Keto-4-methylzymosterol	Metabolite	KEGG Compound	C15816	372,554
+4,4-Dimethyl-5alpha-cholesta-8-en-3beta-ol	Metabolite	KEGG Compound	C15915	238,454
+Calcitetrol	Metabolite	KEGG Compound	C18231	88,1070
+24-epi-Campesterol	Metabolite	KEGG Compound	C21106	748,1104
+4alpha-Carboxy-5alpha-cholesta-8,24-dien-3beta-ol	Metabolite	KEGG Compound	C22112	372,654
+3beta-Hydroxy-4beta,14alpha-dimethyl-9beta,19-cyclo-5alpha-ergost-24(24(1))-en-4alpha-carboxylate	Metabolite	KEGG Compound	C22116	668,504
+3beta-Hydroxyergosta-7,24(24(1))-dien-4alpha-carboxylate	Metabolite	KEGG Compound	C22119	668,854
+4alpha-Carboxy-stigmasta-7,24(24(1))-dien-3beta-ol	Metabolite	KEGG Compound	C22120	834,854
+Cycloeucalenone	Metabolite	KEGG Compound	C22121	668,554
+Episterone	Metabolite	KEGG Compound	C22122	668,904
+Avenastenone	Metabolite	KEGG Compound	C22123	834,904
+Zymosterone	Metabolite	KEGG Compound	C22136	372,704

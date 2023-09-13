@@ -1,0 +1,78 @@
+TEXT	TYPE	DB	ID	X	Y
+Fatty acid biosynthesis	hsa	KEGG	hsa00061
+HTD2	GeneProduct	Entrez Gene	109703458	187,536	328,536	470,536	612,536	754,536	895,536	1037,536	957,1342
+ACSF3	GeneProduct	Entrez Gene	197322	342,147	1018,1086
+ACSL1	GeneProduct	Entrez Gene	2180	1012,829	308,1540	677,1540
+ACSL3	GeneProduct	Entrez Gene	2181	1012,829	308,1540	677,1540
+ACSL4	GeneProduct	Entrez Gene	2182	1012,829	308,1540	677,1540
+FASN	GeneProduct	Entrez Gene	2194	845,740	987,740	987,600	987,498	987,405	987,310	845,600	845,498	845,405	845,310	704,600	704,498	704,405	704,310	562,600	562,498	562,405	562,310	420,600	420,498	420,405	420,310	278,600	278,498	278,405	278,310	137,600	137,498	137,405	137,310	250,208	137,178	307,1244
+ACSBG1	GeneProduct	Entrez Gene	23205	1012,829	308,1540
+ACSL6	GeneProduct	Entrez Gene	23305	1012,829	308,1540	677,1540
+MCAT	GeneProduct	Entrez Gene	27349	300,227	677,1124	957,1124
+ACACA	GeneProduct	Entrez Gene	31	275,147	370,1054	677,1054	957,1054
+ACACB	GeneProduct	Entrez Gene	32	275,147
+MECR	GeneProduct	Entrez Gene	51102	187,666	328,666	470,666	612,666	754,666	895,666	1037,666	957,1415
+ACSL5	GeneProduct	Entrez Gene	51703	1012,829	308,1540	677,1540
+OXSM	GeneProduct	Entrez Gene	54995	1264,339	1037,339	895,339	754,339	612,339	470,339	328,339	187,339	701,1193	957,1193	855,1193
+OLAH	GeneProduct	Entrez Gene	55301	729,740	588,740	445,740
+HSD17B8	GeneProduct	Entrez Gene	7923	187,442	328,442	470,442	612,442	754,442	895,442	1037,442	981,1277
+ACSBG2	GeneProduct	Entrez Gene	81616	1012,829	308,1540
+CBR4	GeneProduct	Entrez Gene	84869	187,425	328,425	470,425	612,425	754,425	895,425	1037,425	981,1260
+Acetyl-CoA	Metabolite	KEGG Compound	C00024	162,126	307,1032	854,1032	574,1032
+Malonyl-CoA	Metabolite	KEGG Compound	C00083	275,179	369,1085	956,1085	676,1085
+Palmitoyl-CoA	Metabolite	KEGG Compound	C00154	1012,875
+Acyl-[acyl-carrier protein]	Metabolite	KEGG Compound	C00173	956,1450	676,1450
+Acyl-carrier protein	Metabolite	KEGG Compound	C00229	310,196	992,1106	711,1106
+Hexadecanoic acid	Metabolite	KEGG Compound	C00249	1012,785
+Malonate	Metabolite	KEGG Compound	C00383	341,120	1069,1085
+Long-chain fatty acid	Metabolite	KEGG Compound	C00638	307,1512	676,1512
+3-Oxoacyl-[acyl-carrier protein]	Metabolite	KEGG Compound	C00685	956,1231	676,1231
+trans-2,3-Dehydroacyl-[acyl-carrier protein]	Metabolite	KEGG Compound	C00693	956,1377	676,1377
+(9Z)-Octadecenoic acid	Metabolite	KEGG Compound	C00712	1352,785
+Oleoyl-[acyl-carrier protein]	Metabolite	KEGG Compound	C01203	1352,694
+Malonyl-[acyl-carrier protein]	Metabolite	KEGG Compound	C01209	275,274	956,1158	676,1158
+(3R)-3-Hydroxyacyl-[acyl-carrier protein]	Metabolite	KEGG Compound	C01271	956,1304	676,1304
+Octadecanoic acid	Metabolite	KEGG Compound	C01530	1239,785
+Decanoic acid	Metabolite	KEGG Compound	C01571	587,785
+Dodecanoic acid	Metabolite	KEGG Compound	C02679	729,785
+Long-chain acyl-CoA	Metabolite	KEGG Compound	C02843	307,1573	676,1573
+Acetyl-[acyl-carrier protein]	Metabolite	KEGG Compound	C03939	162,254	854,1138
+Octadecanoyl-[acyl-carrier protein]	Metabolite	KEGG Compound	C04088	1239,694
+cis-Dec-3-enoyl-[acp]	Metabolite	KEGG Compound	C04180	536,762
+But-2-enoyl-[acyl-carrier protein]	Metabolite	KEGG Compound	C04246	162,562
+(3R)-3-Hydroxybutanoyl-[acyl-carrier protein]	Metabolite	KEGG Compound	C04618	162,469
+(3R)-3-Hydroxydecanoyl-[acyl-carrier protein]	Metabolite	KEGG Compound	C04619	587,469
+(3R)-3-Hydroxyoctanoyl-[acyl-carrier protein]	Metabolite	KEGG Compound	C04620	445,469
+(3R)-3-Hydroxypalmitoyl-[acyl-carrier protein]	Metabolite	KEGG Compound	C04633	1012,469
+(3R)-3-Hydroxytetradecanoyl-[acyl-carrier protein]	Metabolite	KEGG Compound	C04688	870,469
+Dodecanoyl-[acyl-carrier protein]	Metabolite	KEGG Compound	C05223	729,694
+Acetoacetyl-[acp]	Metabolite	KEGG Compound	C05744	162,376	956,1231	676,1231
+Butyryl-[acp]	Metabolite	KEGG Compound	C05745	162,694
+3-Oxohexanoyl-[acp]	Metabolite	KEGG Compound	C05746	303,376
+(R)-3-Hydroxyhexanoyl-[acp]	Metabolite	KEGG Compound	C05747	303,469
+trans-Hex-2-enoyl-[acp]	Metabolite	KEGG Compound	C05748	303,562
+Hexanoyl-[acp]	Metabolite	KEGG Compound	C05749	303,694
+3-Oxooctanoyl-[acp]	Metabolite	KEGG Compound	C05750	445,376
+trans-Oct-2-enoyl-[acp]	Metabolite	KEGG Compound	C05751	445,562
+Octanoyl-[acp]	Metabolite	KEGG Compound	C05752	445,694
+3-Oxodecanoyl-[acp]	Metabolite	KEGG Compound	C05753	587,376
+trans-Dec-2-enoyl-[acp]	Metabolite	KEGG Compound	C05754	587,562
+Decanoyl-[acp]	Metabolite	KEGG Compound	C05755	587,694
+3-Oxododecanoyl-[acp]	Metabolite	KEGG Compound	C05756	729,376
+(R)-3-Hydroxydodecanoyl-[acp]	Metabolite	KEGG Compound	C05757	729,469
+trans-Dodec-2-enoyl-[acp]	Metabolite	KEGG Compound	C05758	729,562
+3-Oxotetradecanoyl-[acp]	Metabolite	KEGG Compound	C05759	870,376
+trans-Tetradec-2-enoyl-[acp]	Metabolite	KEGG Compound	C05760	870,562
+Tetradecanoyl-[acp]	Metabolite	KEGG Compound	C05761	870,694
+3-Oxohexadecanoyl-[acp]	Metabolite	KEGG Compound	C05762	1012,376
+trans-Hexadec-2-enoyl-[acp]	Metabolite	KEGG Compound	C05763	1012,562
+Hexadecanoyl-[acp]	Metabolite	KEGG Compound	C05764	1012,694
+Octanoic acid	Metabolite	KEGG Compound	C06423	445,785
+Tetradecanoic acid	Metabolite	KEGG Compound	C06424	870,785
+(9Z)-Hexadecenoic acid	Metabolite	KEGG Compound	C08362	1139,785
+3-Oxostearoyl-[acp]	Metabolite	KEGG Compound	C16219	1239,376
+(R)-3-Hydroxyoctadecanoyl-[acp]	Metabolite	KEGG Compound	C16220	1239,469
+(2E)-Octadecenoyl-[acp]	Metabolite	KEGG Compound	C16221	1239,562
+Hexadecenoyl-[acyl-carrier protein]	Metabolite	KEGG Compound	C16520	1139,694
+Long-chain acyl-[acyl-carrier protein]	Metabolite	KEGG Compound	C20683	676,1450
+n-7 Unsaturated acyl-[acyl-carrier protein]	Metabolite	KEGG Compound	C20794	536,841

@@ -1,0 +1,35 @@
+TEXT	TYPE	DB	ID	X	Y
+SNARE interactions in vesicular transport	hsa	KEGG	hsa04130
+STX6	GeneProduct	Entrez Gene	10228	281,473	460,235
+BET1	GeneProduct	Entrez Gene	10282	234,646
+VTI1B	GeneProduct	Entrez Gene	10490	546,384	460,252
+YKT6	GeneProduct	Entrez Gene	10652	330,564	457,409
+VAMP5	GeneProduct	Entrez Gene	10791	377,165
+STX1B	GeneProduct	Entrez Gene	112755	257,167	109,200
+VTI1A	GeneProduct	Entrez Gene	143187	546,384	460,252
+STX2	GeneProduct	Entrez Gene	2054	257,167	109,200
+STX19	GeneProduct	Entrez Gene	415117	281,433
+BET1L	GeneProduct	Entrez Gene	51272	234,646
+STX18	GeneProduct	Entrez Gene	53407	354,693
+STX17	GeneProduct	Entrez Gene	55014	254,696
+USE1	GeneProduct	Entrez Gene	55850	354,710
+BNIP1	GeneProduct	Entrez Gene	662	354,727
+STX1A	GeneProduct	Entrez Gene	6804	257,167	109,200
+STX3	GeneProduct	Entrez Gene	6809	257,167	109,200
+STX4	GeneProduct	Entrez Gene	6810	257,167	109,200
+STX5	GeneProduct	Entrez Gene	6811	330,530	281,530
+VAMP1	GeneProduct	Entrez Gene	6843	143,297
+VAMP2	GeneProduct	Entrez Gene	6844	143,297
+VAMP7	GeneProduct	Entrez Gene	6845	415,356
+STX7	GeneProduct	Entrez Gene	8417	546,350
+VAMP8	GeneProduct	Entrez Gene	8673	162,335
+VAMP4	GeneProduct	Entrez Gene	8674	392,198	291,260
+STX16	GeneProduct	Entrez Gene	8675	281,453	460,218
+STX11	GeneProduct	Entrez Gene	8676	281,433
+SNAP23	GeneProduct	Entrez Gene	8773	302,167	154,200
+VAMP3	GeneProduct	Entrez Gene	9341	143,297
+SNAP29	GeneProduct	Entrez Gene	9342	330,453
+STX8	GeneProduct	Entrez Gene	9482	546,367
+GOSR1	GeneProduct	Entrez Gene	9527	330,547
+SEC22B	GeneProduct	Entrez Gene	9554	281,564	429,644
+GOSR2	GeneProduct	Entrez Gene	9570	281,547

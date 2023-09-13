@@ -1,0 +1,141 @@
+TEXT	TYPE	DB	ID	X	Y
+Systemic lupus erythematosus	hsa	KEGG	hsa05322
+LOC102723407	GeneProduct	Entrez Gene	102723407	636,423	1156,601	1158,702	1151,153	817,449
+LOC102724334	GeneProduct	Entrez Gene	102724334	571,149
+H2BE1	GeneProduct	Entrez Gene	114483833	571,149
+H4-16	GeneProduct	Entrez Gene	121504	571,171
+H3C14	GeneProduct	Entrez Gene	126961	519,171
+H2BU1	GeneProduct	Entrez Gene	128312	571,149
+CTSG	GeneProduct	Entrez Gene	1511	1145,512
+H2BW1	GeneProduct	Entrez Gene	158983	571,149
+ELANE	GeneProduct	Entrez Gene	1991	1145,533
+FCGR1A	GeneProduct	Entrez Gene	2209	1078,601	1079,702
+FCGR2A	GeneProduct	Entrez Gene	2212	1078,601	1079,702
+FCGR3A	GeneProduct	Entrez Gene	2214	1078,601	1079,702
+FCGR3B	GeneProduct	Entrez Gene	2215	1078,601	1079,702
+H2AC1	GeneProduct	Entrez Gene	221613	519,149
+H2BC1	GeneProduct	Entrez Gene	255626	571,149
+H2BW2	GeneProduct	Entrez Gene	286436	571,149
+GRIN2A	GeneProduct	Entrez Gene	2903	701,149
+GRIN2B	GeneProduct	Entrez Gene	2904	701,171
+H2AC8	GeneProduct	Entrez Gene	3012	519,149
+H2AC7	GeneProduct	Entrez Gene	3013	519,149
+H2AX	GeneProduct	Entrez Gene	3014	519,149
+H2AZ1	GeneProduct	Entrez Gene	3015	519,149
+H2BC5	GeneProduct	Entrez Gene	3017	571,149
+H2BC3	GeneProduct	Entrez Gene	3018	571,149
+H3-3A	GeneProduct	Entrez Gene	3020	519,171
+H3-3B	GeneProduct	Entrez Gene	3021	519,171
+HLA-DMA	GeneProduct	Entrez Gene	3108	206,457	594,481
+HLA-DMB	GeneProduct	Entrez Gene	3109	206,457	594,481
+HLA-DOA	GeneProduct	Entrez Gene	3111	206,457	594,481
+HLA-DOB	GeneProduct	Entrez Gene	3112	206,457	594,481
+HLA-DPA1	GeneProduct	Entrez Gene	3113	206,457	594,481
+HLA-DPB1	GeneProduct	Entrez Gene	3115	206,457	594,481
+HLA-DQA1	GeneProduct	Entrez Gene	3117	206,457	594,481
+HLA-DQA2	GeneProduct	Entrez Gene	3118	206,457	594,481
+HLA-DQB1	GeneProduct	Entrez Gene	3119	206,457	594,481
+HLA-DRA	GeneProduct	Entrez Gene	3122	206,457	594,481
+HLA-DRB1	GeneProduct	Entrez Gene	3123	206,457	594,481
+HLA-DRB3	GeneProduct	Entrez Gene	3125	206,457	594,481
+HLA-DRB4	GeneProduct	Entrez Gene	3126	206,457	594,481
+HLA-DRB5	GeneProduct	Entrez Gene	3127	206,457	594,481
+H2AC21	GeneProduct	Entrez Gene	317772	519,149
+H3C15	GeneProduct	Entrez Gene	333932	519,171
+IFNG	GeneProduct	Entrez Gene	3458	550,558
+IL10	GeneProduct	Entrez Gene	3586	550,580
+H3-5	GeneProduct	Entrez Gene	440093	519,171
+H2BC18	GeneProduct	Entrez Gene	440689	571,149
+H2AB2	GeneProduct	Entrez Gene	474381	519,149
+H2AB1	GeneProduct	Entrez Gene	474382	519,149
+H2BS1	GeneProduct	Entrez Gene	54145	571,149
+H4C15	GeneProduct	Entrez Gene	554313	571,171
+MACROH2A2	GeneProduct	Entrez Gene	55506	519,149
+H2AJ	GeneProduct	Entrez Gene	55766	519,149
+H3C13	GeneProduct	Entrez Gene	653604	519,171
+SNRPB	GeneProduct	Entrez Gene	6628	636,149
+SNRPD1	GeneProduct	Entrez Gene	6632	636,171
+SNRPD3	GeneProduct	Entrez Gene	6634	636,171
+TRIM21	GeneProduct	Entrez Gene	6737	542,211
+RO60	GeneProduct	Entrez Gene	6738	542,211
+SSB	GeneProduct	Entrez Gene	6741	595,211
+C1QA	GeneProduct	Entrez Gene	712	1073,153	700,647	279,150	701,211
+TNF	GeneProduct	Entrez Gene	7124	550,531
+C1QB	GeneProduct	Entrez Gene	713	1073,153	700,647	279,150	701,211
+C1QC	GeneProduct	Entrez Gene	714	1073,153	700,647	279,150	701,211
+C1R	GeneProduct	Entrez Gene	715	1027,145
+C1S	GeneProduct	Entrez Gene	716	1027,162
+C2	GeneProduct	Entrez Gene	717	943,212	306,127	726,670
+C3	GeneProduct	Entrez Gene	718	943,273
+C4A	GeneProduct	Entrez Gene	720	943,191	753,647	332,150
+C4B	GeneProduct	Entrez Gene	721	943,191	753,647	332,150
+H2AC19	GeneProduct	Entrez Gene	723790	519,149
+C5	GeneProduct	Entrez Gene	727	965,386	1250,355
+C6	GeneProduct	Entrez Gene	729	1109,386	1250,355
+C7	GeneProduct	Entrez Gene	730	1158,386	1250,355
+C8A	GeneProduct	Entrez Gene	731	1109,407	1250,355
+C8B	GeneProduct	Entrez Gene	732	1109,407	1250,355
+C8G	GeneProduct	Entrez Gene	733	1109,407	1250,355
+C9	GeneProduct	Entrez Gene	735	1158,407
+ACTN4	GeneProduct	Entrez Gene	81	648,211
+H3-4	GeneProduct	Entrez Gene	8290	519,171
+H4C9	GeneProduct	Entrez Gene	8294	571,171
+H2AC13	GeneProduct	Entrez Gene	8329	519,149
+H2AC15	GeneProduct	Entrez Gene	8330	519,149
+H2AC14	GeneProduct	Entrez Gene	8331	519,149
+H2AC16	GeneProduct	Entrez Gene	8332	519,149
+H2AC6	GeneProduct	Entrez Gene	8334	519,149
+H2AC4	GeneProduct	Entrez Gene	8335	519,149
+H2AC17	GeneProduct	Entrez Gene	8336	519,149
+H2AC18	GeneProduct	Entrez Gene	8337	519,149
+H2AC20	GeneProduct	Entrez Gene	8338	519,149
+H2BC8	GeneProduct	Entrez Gene	8339	571,149
+H2BC13	GeneProduct	Entrez Gene	8340	571,149
+H2BC15	GeneProduct	Entrez Gene	8341	571,149
+H2BC14	GeneProduct	Entrez Gene	8342	571,149
+H2BC7	GeneProduct	Entrez Gene	8343	571,149
+H2BC6	GeneProduct	Entrez Gene	8344	571,149
+H2BC9	GeneProduct	Entrez Gene	8345	571,149
+H2BC10	GeneProduct	Entrez Gene	8346	571,149
+H2BC4	GeneProduct	Entrez Gene	8347	571,149
+H2BC17	GeneProduct	Entrez Gene	8348	571,149
+H2BC21	GeneProduct	Entrez Gene	8349	571,149
+H3C1	GeneProduct	Entrez Gene	8350	519,171
+H3C4	GeneProduct	Entrez Gene	8351	519,171
+H3C3	GeneProduct	Entrez Gene	8352	519,171
+H3C6	GeneProduct	Entrez Gene	8353	519,171
+H3C11	GeneProduct	Entrez Gene	8354	519,171
+H3C8	GeneProduct	Entrez Gene	8355	519,171
+H3C12	GeneProduct	Entrez Gene	8356	519,171
+H3C10	GeneProduct	Entrez Gene	8357	519,171
+H3C2	GeneProduct	Entrez Gene	8358	519,171
+H4C1	GeneProduct	Entrez Gene	8359	571,171
+H4C4	GeneProduct	Entrez Gene	8360	571,171
+H4C6	GeneProduct	Entrez Gene	8361	571,171
+H4C12	GeneProduct	Entrez Gene	8362	571,171
+H4C11	GeneProduct	Entrez Gene	8363	571,171
+H4C3	GeneProduct	Entrez Gene	8364	571,171
+H4C8	GeneProduct	Entrez Gene	8365	571,171
+H4C2	GeneProduct	Entrez Gene	8366	571,171
+H4C5	GeneProduct	Entrez Gene	8367	571,171
+H4C13	GeneProduct	Entrez Gene	8368	571,171
+H4C7	GeneProduct	Entrez Gene	8369	571,171
+H4C14	GeneProduct	Entrez Gene	8370	571,171
+H2AB3	GeneProduct	Entrez Gene	83740	519,149
+H2AC12	GeneProduct	Entrez Gene	85235	519,149
+H2BC12	GeneProduct	Entrez Gene	85236	571,149
+ACTN1	GeneProduct	Entrez Gene	87	648,211
+H3C7	GeneProduct	Entrez Gene	8968	519,171
+H2AC11	GeneProduct	Entrez Gene	8969	519,149
+H2BC11	GeneProduct	Entrez Gene	8970	571,149
+H2AW	GeneProduct	Entrez Gene	92815	519,149
+CD28	GeneProduct	Entrez Gene	940	288,480
+CD80	GeneProduct	Entrez Gene	941	206,480
+CD86	GeneProduct	Entrez Gene	942	206,480
+H2AZ2	GeneProduct	Entrez Gene	94239	519,149
+MACROH2A1	GeneProduct	Entrez Gene	9555	519,149
+CD40	GeneProduct	Entrez Gene	958	594,455
+CD40LG	GeneProduct	Entrez Gene	959	513,455
+Hydrogen peroxide	Metabolite	KEGG Compound	C00027	1146,549
+Double-stranded DNA	Metabolite	KEGG Compound	C00434	457,139
+Phosphatidylserine	Metabolite	KEGG Compound	C02737	474,208

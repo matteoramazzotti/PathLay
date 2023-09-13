@@ -1,0 +1,83 @@
+TEXT	TYPE	DB	ID	X	Y
+PPAR signaling pathway	hsa	KEGG	hsa03320
+LOC100509620	GeneProduct	Entrez Gene	100509620	886,821
+NR1H3	GeneProduct	Entrez Gene	10062	886,303
+SORBS1	GeneProduct	Entrez Gene	10580	836,672
+ME3	GeneProduct	Entrez Gene	10873	836,240
+SLC27A5	GeneProduct	Entrez Gene	10998	143,160
+SLC27A4	GeneProduct	Entrez Gene	10999	143,160	886,400
+SLC27A2	GeneProduct	Entrez Gene	11001	143,160
+LOC112267859	GeneProduct	Entrez Gene	112267859	886,821
+APOA5	GeneProduct	Entrez Gene	116519	886,166
+PLIN2	GeneProduct	Entrez Gene	123	886,626
+CPT1C	GeneProduct	Entrez Gene	126129	886,509
+CPT1A	GeneProduct	Entrez Gene	1374	886,509
+CPT1B	GeneProduct	Entrez Gene	1375	886,509
+CPT2	GeneProduct	Entrez Gene	1376	886,532
+CYP7A1	GeneProduct	Entrez Gene	1581	836,303
+CYP8B1	GeneProduct	Entrez Gene	1582	836,326
+CYP27A1	GeneProduct	Entrez Gene	1593	886,326
+DBI	GeneProduct	Entrez Gene	1622	836,366
+EHHADH	GeneProduct	Entrez Gene	1962	836,498
+FABP4	GeneProduct	Entrez Gene	2167	228,133	836,649
+FABP1	GeneProduct	Entrez Gene	2168	228,133	836,389
+FABP2	GeneProduct	Entrez Gene	2169	228,133
+FABP3	GeneProduct	Entrez Gene	2170	228,133	836,412
+FABP5	GeneProduct	Entrez Gene	2171	228,133
+FABP6	GeneProduct	Entrez Gene	2172	228,133
+FABP7	GeneProduct	Entrez Gene	2173	228,133
+ACSL1	GeneProduct	Entrez Gene	2180	836,458
+ACSL3	GeneProduct	Entrez Gene	2181	836,458
+ACSL4	GeneProduct	Entrez Gene	2182	836,458
+ACSBG1	GeneProduct	Entrez Gene	23205	836,458
+ACSL6	GeneProduct	Entrez Gene	23305	836,458
+GK	GeneProduct	Entrez Gene	2710	836,833
+GK2	GeneProduct	Entrez Gene	2712	836,833
+SLC27A6	GeneProduct	Entrez Gene	28965	143,160
+ACAA1	GeneProduct	Entrez Gene	30	836,544
+HMGCS1	GeneProduct	Entrez Gene	3157	836,114
+HMGCS2	GeneProduct	Entrez Gene	3158	836,114
+ACADL	GeneProduct	Entrez Gene	33	886,555
+APOA1	GeneProduct	Entrez Gene	335	836,154
+APOA2	GeneProduct	Entrez Gene	336	836,177
+ACADM	GeneProduct	Entrez Gene	34	886,578
+APOC3	GeneProduct	Entrez Gene	345	836,200
+ILK	GeneProduct	Entrez Gene	3611	836,740
+AQP7	GeneProduct	Entrez Gene	364	886,821
+SLC27A1	GeneProduct	Entrez Gene	376497	143,160	886,400
+LPL	GeneProduct	Entrez Gene	4023	836,435
+ME1	GeneProduct	Entrez Gene	4199	836,240
+MMP1	GeneProduct	Entrez Gene	4312	886,672
+PLIN5	GeneProduct	Entrez Gene	440503	886,626
+OLR1	GeneProduct	Entrez Gene	4973	886,446
+ACOX1	GeneProduct	Entrez Gene	51	836,590
+PCK1	GeneProduct	Entrez Gene	5105	836,810
+PCK2	GeneProduct	Entrez Gene	5106	836,810
+ANGPTL4	GeneProduct	Entrez Gene	51129	836,626
+PDPK1	GeneProduct	Entrez Gene	5170	886,740
+ACSL5	GeneProduct	Entrez Gene	51703	836,458
+PLIN1	GeneProduct	Entrez Gene	5346	886,626
+PLTP	GeneProduct	Entrez Gene	5360	886,189
+PPARA	GeneProduct	Entrez Gene	5465	570,210
+PPARD	GeneProduct	Entrez Gene	5467	570,435
+PPARG	GeneProduct	Entrez Gene	5468	570,660
+RXRA	GeneProduct	Entrez Gene	6256	570,227	570,452	570,677
+RXRB	GeneProduct	Entrez Gene	6257	570,227	570,452	570,677
+RXRG	GeneProduct	Entrez Gene	6258	570,227	570,452	570,677
+SCD	GeneProduct	Entrez Gene	6319	836,263
+SCP2	GeneProduct	Entrez Gene	6342	836,567
+PLIN4	GeneProduct	Entrez Gene	729359	886,626
+UBC	GeneProduct	Entrez Gene	7316	836,774
+UCP1	GeneProduct	Entrez Gene	7350	836,706
+SCD5	GeneProduct	Entrez Gene	79966	836,263
+ACSBG2	GeneProduct	Entrez Gene	81616	836,458
+ACOX2	GeneProduct	Entrez Gene	8309	836,590
+ACOX3	GeneProduct	Entrez Gene	8310	836,590
+ADIPOQ	GeneProduct	Entrez Gene	9370	886,649
+FADS2	GeneProduct	Entrez Gene	9415	886,252
+CD36	GeneProduct	Entrez Gene	948	143,132	886,423
+Leukotriene B4	Metabolite	KEGG Compound	C02165	435,161
+13(S)-HODE	Metabolite	KEGG Compound	C14762	435,613
+9(S)-HODE	Metabolite	KEGG Compound	C14767	435,613
+8(S)-HETE	Metabolite	KEGG Compound	C14776	435,161
+9-cis-Retinoic acid	Metabolite	KEGG Compound	C15493	435,247	435,697	435,470

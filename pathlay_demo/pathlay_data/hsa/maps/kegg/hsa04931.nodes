@@ -1,0 +1,130 @@
+TEXT	TYPE	DB	ID	X	Y
+Insulin resistance	hsa	KEGG	hsa04931
+AKT3	GeneProduct	Entrez Gene	10000	927,174	927,851	927,1454
+NR1H3	GeneProduct	Entrez Gene	10062	431,897	943,1613
+CREB3	GeneProduct	Entrez Gene	10488	1146,1733
+OGA	GeneProduct	Entrez Gene	10724	602,1629
+PPARGC1A	GeneProduct	Entrez Gene	10891	813,983	943,1705
+SLC27A5	GeneProduct	Entrez Gene	10998	321,586	321,1228
+SLC27A4	GeneProduct	Entrez Gene	10999	321,586
+SLC27A3	GeneProduct	Entrez Gene	11000	321,586
+SLC27A2	GeneProduct	Entrez Gene	11001	321,586
+PPARGC1B	GeneProduct	Entrez Gene	133522	431,944
+CPT1A	GeneProduct	Entrez Gene	1374	536,1071
+CPT1B	GeneProduct	Entrez Gene	1375	572,522
+CREB1	GeneProduct	Entrez Gene	1385	1146,1733
+CREB3L4	GeneProduct	Entrez Gene	148327	1146,1733
+AGT	GeneProduct	Entrez Gene	183	234,423
+CRTC2	GeneProduct	Entrez Gene	200186	943,1733
+AKT1	GeneProduct	Entrez Gene	207	927,174	927,851	927,1454
+AKT2	GeneProduct	Entrez Gene	208	927,174	927,851	927,1454
+MLXIP	GeneProduct	Entrez Gene	22877	536,983	1146,1642
+FOXO1	GeneProduct	Entrez Gene	2308	1043,983	1146,1676
+MTOR	GeneProduct	Entrez Gene	2475	1043,174
+G6PC1	GeneProduct	Entrez Gene	2538	1192,996
+GFPT1	GeneProduct	Entrez Gene	2673	603,1678
+RPS6KA6	GeneProduct	Entrez Gene	27330	927,109
+SLC27A6	GeneProduct	Entrez Gene	28965	321,586
+GSK3B	GeneProduct	Entrez Gene	2932	1043,219	1043,850	943,1532
+GYS1	GeneProduct	Entrez Gene	2997	1146,219	1146,850	1146,1532
+GYS2	GeneProduct	Entrez Gene	2998	1146,219	1146,850	1146,1532
+ACACB	GeneProduct	Entrez Gene	32	577,1119	460,507
+IKBKB	GeneProduct	Entrez Gene	3551	526,329	527,780	631,1296
+IL6	GeneProduct	Entrez Gene	3569	237,246	234,729
+INS	GeneProduct	Entrez Gene	3630	237,174	236,851	221,1454
+INSR	GeneProduct	Entrez Gene	3643	321,174	321,850	319,1454
+IRS1	GeneProduct	Entrez Gene	3667	716,174	716,830	470,1454
+SLC27A1	GeneProduct	Entrez Gene	376497	321,586
+NFKB1	GeneProduct	Entrez Gene	4790	631,365	622,813
+NFKBIA	GeneProduct	Entrez Gene	4792	630,329	622,780
+NOS3	GeneProduct	Entrez Gene	4846	716,365	850,1534
+PCK1	GeneProduct	Entrez Gene	5105	1192,973
+PCK2	GeneProduct	Entrez Gene	5106	1192,973
+MLXIPL	GeneProduct	Entrez Gene	51085	536,983	1146,1642
+PRKAG2	GeneProduct	Entrez Gene	51422	460,553
+PDPK1	GeneProduct	Entrez Gene	5170	813,1454
+PIK3CA	GeneProduct	Entrez Gene	5290	813,174	813,850	603,1454
+PIK3CB	GeneProduct	Entrez Gene	5291	813,174	813,850	603,1454
+PIK3CD	GeneProduct	Entrez Gene	5293	813,174	813,850	603,1454
+PIK3R1	GeneProduct	Entrez Gene	5295	813,174	813,850	603,1454
+PIK3R2	GeneProduct	Entrez Gene	5296	813,174	813,850	603,1454
+PRKAG3	GeneProduct	Entrez Gene	53632	460,553
+PPARA	GeneProduct	Entrez Gene	5465	813,943
+PPP1CA	GeneProduct	Entrez Gene	5499	1043,109	1043,896
+PPP1CB	GeneProduct	Entrez Gene	5500	1043,109	1043,896
+PPP1CC	GeneProduct	Entrez Gene	5501	1043,109	1043,896
+PPP1R3A	GeneProduct	Entrez Gene	5506	1043,109	1043,896
+PPP1R3C	GeneProduct	Entrez Gene	5507	1043,109	1043,896
+PPP1R3D	GeneProduct	Entrez Gene	5509	1043,109	1043,896
+PTPA	GeneProduct	Entrez Gene	5524	716,646	716,1325	431,985
+PRKAA1	GeneProduct	Entrez Gene	5562	460,553
+PRKAA2	GeneProduct	Entrez Gene	5563	460,553
+PRKAB1	GeneProduct	Entrez Gene	5564	460,553
+PRKAB2	GeneProduct	Entrez Gene	5565	460,553
+PRKAG1	GeneProduct	Entrez Gene	5571	460,553
+PRKCB	GeneProduct	Entrez Gene	5579	716,598	525,206
+PRKCD	GeneProduct	Entrez Gene	5580	716,598
+PRKCE	GeneProduct	Entrez Gene	5581	631,1267
+PRKCQ	GeneProduct	Entrez Gene	5588	716,598
+PRKCZ	GeneProduct	Entrez Gene	5590	813,320
+MAPK8	GeneProduct	Entrez Gene	5599	526,305	527,757	716,1280
+MAPK9	GeneProduct	Entrez Gene	5601	526,305	527,757	716,1280
+MAPK10	GeneProduct	Entrez Gene	5602	526,305	527,757	716,1280
+PTEN	GeneProduct	Entrez Gene	5728	717,1392
+PTPN1	GeneProduct	Entrez Gene	5770	431,141
+TRIB3	GeneProduct	Entrez Gene	57761	813,897	813,380
+PTPN11	GeneProduct	Entrez Gene	5781	431,141
+G6PC2	GeneProduct	Entrez Gene	57818	1192,996
+PTPRF	GeneProduct	Entrez Gene	5792	431,141
+PYGB	GeneProduct	Entrez Gene	5834	1146,896
+PYGL	GeneProduct	Entrez Gene	5836	1146,896
+PYGM	GeneProduct	Entrez Gene	5837	1146,896
+RELA	GeneProduct	Entrez Gene	5970	631,365	622,813
+RPS6KA1	GeneProduct	Entrez Gene	6195	927,109
+RPS6KA2	GeneProduct	Entrez Gene	6196	927,109
+RPS6KA3	GeneProduct	Entrez Gene	6197	927,109
+RPS6KB1	GeneProduct	Entrez Gene	6198	927,141
+RPS6KB2	GeneProduct	Entrez Gene	6199	927,141
+CREB3L2	GeneProduct	Entrez Gene	64764	1146,1733
+SLC2A1	GeneProduct	Entrez Gene	6513	319,1691
+SLC2A2	GeneProduct	Entrez Gene	6514	321,943	321,1025	1285,985	319,1691
+SLC2A4	GeneProduct	Entrez Gene	6517	1285,307	1285,1450
+SREBF1	GeneProduct	Entrez Gene	6720	536,943	813,729	1146,1613
+STAT3	GeneProduct	Entrez Gene	6774	431,246	431,729
+MLX	GeneProduct	Entrez Gene	6945	536,983	1146,1642
+TNF	GeneProduct	Entrez Gene	7124	235,316	234,767
+TNFRSF1A	GeneProduct	Entrez Gene	7132	321,316	321,767
+NR1H2	GeneProduct	Entrez Gene	7376	431,897	943,1613
+PPP1R3B	GeneProduct	Entrez Gene	79660	1043,109	1043,896
+CREB3L3	GeneProduct	Entrez Gene	84699	1146,1733
+OGT	GeneProduct	Entrez Gene	8473	778,1653	849,1716
+PIK3R3	GeneProduct	Entrez Gene	8503	813,174	813,850	603,1454
+IRS2	GeneProduct	Entrez Gene	8660	716,851
+SOCS3	GeneProduct	Entrez Gene	9021	528,246	622,729
+PPP1R3E	GeneProduct	Entrez Gene	90673	1043,109	1043,896
+CREB3L1	GeneProduct	Entrez Gene	90993	1146,1733
+G6PC3	GeneProduct	Entrez Gene	92579	1192,996
+CD36	GeneProduct	Entrez Gene	948	321,609
+CREB5	GeneProduct	Entrez Gene	9586	1146,1733
+TBC1D4	GeneProduct	Entrez Gene	9882	1043,301
+GFPT2	GeneProduct	Entrez Gene	9945	603,1678
+Pyruvate	Metabolite	KEGG Compound	C00022	479,1025
+Acetyl-CoA	Metabolite	KEGG Compound	C00024	553,1025	617,1134	423,491
+D-Glucose	Metabolite	KEGG Compound	C00031	1339,311	254,1024	1339,985	254,1690	424,1690	1339,1454
+UDP-N-acetyl-alpha-D-glucosamine	Metabolite	KEGG Compound	C00043	821,1691
+Malonyl-CoA	Metabolite	KEGG Compound	C00083	532,1134	508,491
+D-Fructose 6-phosphate	Metabolite	KEGG Compound	C00085	562,1690
+D-Glucose 6-phosphate	Metabolite	KEGG Compound	C00092	496,1690
+D-Fructose	Metabolite	KEGG Compound	C00095	254,942
+Fatty acid	Metabolite	KEGG Compound	C00162	254,597	423,598	253,1228	424,1228	532,1228
+Diacylglycerol	Metabolite	KEGG Compound	C00165	616,599	532,1280
+N-Acylsphingosine	Metabolite	KEGG Compound	C00195	617,645	532,1324
+D-Glucosamine 6-phosphate	Metabolite	KEGG Compound	C00352	650,1690
+Starch	Metabolite	KEGG Compound	C00369	1227,218	1227,850
+Triacylglycerol	Metabolite	KEGG Compound	C00422	617,553	617,1228
+Nitric oxide	Metabolite	KEGG Compound	C00533	716,296	849,1479
+O-Acetylcarnitine	Metabolite	KEGG Compound	C02571	479,1073
+Long-chain acyl-CoA	Metabolite	KEGG Compound	C02843	536,597	479,1228
+Phosphatidylinositol-3,4,5-trisphosphate	Metabolite	KEGG Compound	C05981	718,1453
+alpha-D-Glucosamine 1-phosphate	Metabolite	KEGG Compound	C06156	730,1690
+	Metabolite	KEGG Compound	gl:G00369	1227,1531

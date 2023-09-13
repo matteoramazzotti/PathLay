@@ -1,0 +1,49 @@
+TEXT	TYPE	DB	ID	X	Y
+Other types of O-glycan biosynthesis	hsa	KEGG	hsa00514
+POC1B-GALNT4	GeneProduct	Entrez Gene	100528030	691,639	633,736
+POMT1	GeneProduct	Entrez Gene	10585	856,151	856,175	856,200	772,251
+GALNT6	GeneProduct	Entrez Gene	11226	691,639	633,736
+GALNT5	GeneProduct	Entrez Gene	11227	691,639	633,736
+GALNT13	GeneProduct	Entrez Gene	114805	691,639	633,736
+GALNT15	GeneProduct	Entrez Gene	117248	691,639	633,736
+B3GLCT	GeneProduct	Entrez Gene	145173	290.5,279.5
+XXYLT1	GeneProduct	Entrez Gene	152002	103,494
+GALNTL5	GeneProduct	Entrez Gene	168391	691,639	633,736
+COLGALT2	GeneProduct	Entrez Gene	23127	178,591
+POFUT2	GeneProduct	Entrez Gene	23275	364,266	197,375
+POFUT1	GeneProduct	Entrez Gene	23509	364,266	197,375
+GALNT1	GeneProduct	Entrez Gene	2589	691,639	633,736
+GALNT2	GeneProduct	Entrez Gene	2590	691,639	633,736
+GALNT3	GeneProduct	Entrez Gene	2591	691,639	633,736
+GALNT8	GeneProduct	Entrez Gene	26290	691,639	633,736
+B4GALT1	GeneProduct	Entrez Gene	2683	210,243
+GXYLT1	GeneProduct	Entrez Gene	283464	168,494
+EOGT	GeneProduct	Entrez Gene	285203	128,147
+C1GALT1C1	GeneProduct	Entrez Gene	29071	613,649	555,746
+POMT2	GeneProduct	Entrez Gene	29954	856,151	856,175	856,200	772,251
+GALNT18	GeneProduct	Entrez Gene	374378	691,639	633,736
+LFNG	GeneProduct	Entrez Gene	3955	292.5,250.5	125.5,359.5
+MFNG	GeneProduct	Entrez Gene	4242	292.5,250.5	125.5,359.5
+GALNTL6	GeneProduct	Entrez Gene	442117	691,639	633,736
+GALNT9	GeneProduct	Entrez Gene	50614	691,639	633,736
+GALNT7	GeneProduct	Entrez Gene	51809	691,639	633,736
+GALNT10	GeneProduct	Entrez Gene	55568	691,639	633,736
+C1GALT1	GeneProduct	Entrez Gene	56913	613,649	555,746
+POGLUT1	GeneProduct	Entrez Gene	56983	236,494
+GALNT16	GeneProduct	Entrez Gene	57452	691,639	633,736
+RFNG	GeneProduct	Entrez Gene	5986	292.5,250.5	125.5,359.5
+GALNT11	GeneProduct	Entrez Gene	63917	691,639	633,736
+GALNT17	GeneProduct	Entrez Gene	64409	691,639	633,736
+ST6GAL1	GeneProduct	Entrez Gene	6480	129,243
+ST3GAL3	GeneProduct	Entrez Gene	6487	129,243
+GXYLT2	GeneProduct	Entrez Gene	727936	168,494
+C1GALT1C1L	GeneProduct	Entrez Gene	728819	613,649	555,746
+GALNT14	GeneProduct	Entrez Gene	79623	691,639	633,736
+GALNT12	GeneProduct	Entrez Gene	79695	691,639	633,736
+COLGALT1	GeneProduct	Entrez Gene	79709	178,591
+ST6GAL2	GeneProduct	Entrez Gene	84620	129,243
+OGT	GeneProduct	Entrez Gene	8473	128,147
+GALNT4	GeneProduct	Entrez Gene	8693	691,639	633,736
+B4GALT3	GeneProduct	Entrez Gene	8703	210,243
+B4GALT2	GeneProduct	Entrez Gene	8704	210,243
+PLOD3	GeneProduct	Entrez Gene	8985	178,591	107,591

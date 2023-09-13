@@ -1,0 +1,81 @@
+TEXT	TYPE	DB	ID	X	Y
+Arrhythmogenic right ventricular cardiomyopathy	hsa	KEGG	hsa05412
+CDH2	GeneProduct	Entrez Gene	1000	834,422	918,422
+CACNG3	GeneProduct	Entrez Gene	10368	515,326
+CACNG2	GeneProduct	Entrez Gene	10369	515,326
+CTNNA1	GeneProduct	Entrez Gene	1495	1010,422	742,422
+CTNNA2	GeneProduct	Entrez Gene	1496	1010,422	742,422
+CTNNB1	GeneProduct	Entrez Gene	1499	500,588
+DAG1	GeneProduct	Entrez Gene	1605	393,167	394,214
+DES	GeneProduct	Entrez Gene	1674	379,512	1083,491
+DMD	GeneProduct	Entrez Gene	1756	348,294
+DSC2	GeneProduct	Entrez Gene	1824	834,492	919,493	834,566	919,602
+DSG2	GeneProduct	Entrez Gene	1829	834,530	919,530	919,567	835,602
+DSP	GeneProduct	Entrez Gene	1832	1011,512	1011,550	1011,600	742,510	742,552	742,586
+EMD	GeneProduct	Entrez Gene	2010	241,570
+ITGA11	GeneProduct	Entrez Gene	22801	101,213
+GJA1	GeneProduct	Entrez Gene	2697	833,713	918,713	833,753	918,753
+CACNG5	GeneProduct	Entrez Gene	27091	515,326
+CACNG4	GeneProduct	Entrez Gene	27092	515,326
+LAMA1	GeneProduct	Entrez Gene	284217	394,128
+CTNNA3	GeneProduct	Entrez Gene	29119	1010,422	742,422
+ITGA6	GeneProduct	Entrez Gene	3655	101,213
+ITGA1	GeneProduct	Entrez Gene	3672	101,213
+ITGA2	GeneProduct	Entrez Gene	3673	101,213
+ITGA2B	GeneProduct	Entrez Gene	3674	101,213
+ITGA3	GeneProduct	Entrez Gene	3675	101,213
+ITGA4	GeneProduct	Entrez Gene	3676	101,213
+ITGA5	GeneProduct	Entrez Gene	3678	101,213
+ITGA7	GeneProduct	Entrez Gene	3679	101,213
+ITGA9	GeneProduct	Entrez Gene	3680	101,213
+ITGAV	GeneProduct	Entrez Gene	3685	101,213
+ITGB1	GeneProduct	Entrez Gene	3688	147,213
+ITGB3	GeneProduct	Entrez Gene	3690	147,213
+ITGB4	GeneProduct	Entrez Gene	3691	147,213
+ITGB5	GeneProduct	Entrez Gene	3693	147,213
+ITGB6	GeneProduct	Entrez Gene	3694	147,213
+ITGB7	GeneProduct	Entrez Gene	3695	147,213
+ITGB8	GeneProduct	Entrez Gene	3696	147,213
+JUP	GeneProduct	Entrez Gene	3728	965,520	965,559	788,501	788,543	788,577	965,482	964,422	788,422
+LAMA2	GeneProduct	Entrez Gene	3908	394,128
+LMNA	GeneProduct	Entrez Gene	4000	296,586
+ATP2A1	GeneProduct	Entrez Gene	487	692,363
+ATP2A2	GeneProduct	Entrez Gene	488	692,363
+ATP2A3	GeneProduct	Entrez Gene	489	692,363
+LEF1	GeneProduct	Entrez Gene	51176	329,634
+PKP2	GeneProduct	Entrez Gene	5318	965,542	965,592	788,484	788,518	788,560	965,503
+CACNA2D3	GeneProduct	Entrez Gene	55799	515,326
+CACNG8	GeneProduct	Entrez Gene	59283	515,326
+CACNG7	GeneProduct	Entrez Gene	59284	515,326
+CACNG6	GeneProduct	Entrez Gene	59285	515,326
+ACTB	GeneProduct	Entrez Gene	60	159,323	1124,410
+RYR2	GeneProduct	Entrez Gene	6262	590,327
+SGCA	GeneProduct	Entrez Gene	6442	303,214
+SGCB	GeneProduct	Entrez Gene	6443	349,214
+SGCD	GeneProduct	Entrez Gene	6444	212,214
+SGCG	GeneProduct	Entrez Gene	6445	258,214
+SLC8A2	GeneProduct	Entrez Gene	6543	682,213
+SLC8A1	GeneProduct	Entrez Gene	6546	682,213
+SLC8A3	GeneProduct	Entrez Gene	6547	682,213
+TCF7	GeneProduct	Entrez Gene	6932	329,634
+TCF7L2	GeneProduct	Entrez Gene	6934	329,634
+ACTG1	GeneProduct	Entrez Gene	71	159,323	1124,410
+CACNA1C	GeneProduct	Entrez Gene	775	515,326
+CACNA1D	GeneProduct	Entrez Gene	776	515,326
+CACNA1F	GeneProduct	Entrez Gene	778	515,326
+CACNA1S	GeneProduct	Entrez Gene	779	515,326
+CACNA2D1	GeneProduct	Entrez Gene	781	515,326
+CACNB1	GeneProduct	Entrez Gene	782	515,326
+CACNB2	GeneProduct	Entrez Gene	783	515,326
+CACNB3	GeneProduct	Entrez Gene	784	515,326
+CACNB4	GeneProduct	Entrez Gene	785	515,326
+CACNG1	GeneProduct	Entrez Gene	786	515,326
+TCF7L1	GeneProduct	Entrez Gene	83439	329,634
+ITGA10	GeneProduct	Entrez Gene	8515	101,213
+ITGA8	GeneProduct	Entrez Gene	8516	101,213
+ACTN2	GeneProduct	Entrez Gene	88	1056,422
+ACTN3	GeneProduct	Entrez Gene	89	1056,422
+CACNA2D2	GeneProduct	Entrez Gene	9254	515,326
+CACNA2D4	GeneProduct	Entrez Gene	93589	515,326
+Calcium cation	Metabolite	KEGG Compound	C00076	473,321	635,329	558,453	675,162
+Sodium cation	Metabolite	KEGG Compound	C01330	689,267

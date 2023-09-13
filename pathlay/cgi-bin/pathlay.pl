@@ -180,6 +180,7 @@ foreach my $dataType (@dataTypes) {
         
     }
 }
+
 $DBs -> {urna} -> DBLoader(
     ExpuRNAs => $expPackages -> {urna}
 );
@@ -257,6 +258,7 @@ $interfaces -> {ont} -> integrateAll(
 #statistic steps
 my %needed_maps;
 if ($parameters -> {_statistic_select} eq "FET") {
+
     my @typesForStat = map{ if ($enabledForStat -> {$_}) {$_} else {} } (keys(%$enabledForStat));
 
     if ($parameters -> {_FETPooling}) {
@@ -335,7 +337,6 @@ foreach my $map (sort(@maps)) {
         _source => $parameters -> {_nodesdir}."$mapinfile",
         _index => $map_counter
     );
-    
     $pathway -> PathwayLoader(
         Params => $parameters,
         ExpGenes  => $expPackages -> {gene},
@@ -344,9 +345,8 @@ foreach my $map (sort(@maps)) {
         ExpuRNAS  => $expPackages -> {urna},
         ExpMetas  => $expPackages -> {meta}
     );
-
     #here proteins should be merged with genes
-
+    #print STDERR Dumper $pathway;
     $pathway -> NodesInit();
 
     $pathway -> LoadComplexes(
@@ -360,7 +360,6 @@ foreach my $map (sort(@maps)) {
         scalar @{$pathway -> {_complexes} -> {prot}} < 1
     );
 
-    
     my $map_div = new MapDiv(
         _id => $mapin,
         _name => $map_name,

@@ -1,0 +1,88 @@
+TEXT	TYPE	DB	ID	X	Y
+Renin secretion	hsa	KEGG	hsa04924
+ADCY5	GeneProduct	Entrez Gene	111	669,203
+ADCY6	GeneProduct	Entrez Gene	112	669,203
+ADCYAP1	GeneProduct	Entrez Gene	116	330,160
+ADCYAP1R1	GeneProduct	Entrez Gene	117	432,160
+CLCA1	GeneProduct	Entrez Gene	1179	433,353
+ADORA1	GeneProduct	Entrez Gene	134	433,264
+CREB1	GeneProduct	Entrez Gene	1385	1143,203
+CTSB	GeneProduct	Entrez Gene	1508	1012,835
+ADRB1	GeneProduct	Entrez Gene	153	433,130
+ADRB2	GeneProduct	Entrez Gene	154	433,130
+ADRB3	GeneProduct	Entrez Gene	155	433,130
+ACE	GeneProduct	Entrez Gene	1636	128,631
+CALML6	GeneProduct	Entrez Gene	163688	847,539
+AGT	GeneProduct	Entrez Gene	183	158,866
+AGTR1	GeneProduct	Entrez Gene	185	433,545
+EDN1	GeneProduct	Entrez Gene	1906	330,505
+EDN2	GeneProduct	Entrez Gene	1907	330,505
+EDN3	GeneProduct	Entrez Gene	1908	330,505
+EDNRA	GeneProduct	Entrez Gene	1909	433,505
+CLCA4	GeneProduct	Entrez Gene	22802	433,353
+PLCB1	GeneProduct	Entrez Gene	23236	641,545
+GNAI1	GeneProduct	Entrez Gene	2770	536,264
+GNAI2	GeneProduct	Entrez Gene	2771	536,264
+GNAI3	GeneProduct	Entrez Gene	2773	536,264
+GNAQ	GeneProduct	Entrez Gene	2776	540,545
+GNAS	GeneProduct	Entrez Gene	2778	536,160
+GUCY1A2	GeneProduct	Entrez Gene	2977	509,617
+GUCY1A1	GeneProduct	Entrez Gene	2982	509,617
+GUCY1B1	GeneProduct	Entrez Gene	2983	509,617
+AQP1	GeneProduct	Entrez Gene	358	433,227
+ITPR1	GeneProduct	Entrez Gene	3708	659,456
+ITPR2	GeneProduct	Entrez Gene	3709	659,456
+ITPR3	GeneProduct	Entrez Gene	3710	659,456
+KCNJ2	GeneProduct	Entrez Gene	3759	433,455
+KCNMA1	GeneProduct	Entrez Gene	3778	433,754
+NPPA	GeneProduct	Entrez Gene	4878	330,681
+NPR1	GeneProduct	Entrez Gene	4881	433,681
+PDE1A	GeneProduct	Entrez Gene	5136	858,244
+PDE1C	GeneProduct	Entrez Gene	5137	858,244
+PDE3A	GeneProduct	Entrez Gene	5139	907,271
+PDE3B	GeneProduct	Entrez Gene	5140	907,271
+PDE1B	GeneProduct	Entrez Gene	5153	858,244
+CALML5	GeneProduct	Entrez Gene	51806	847,539
+PLCB2	GeneProduct	Entrez Gene	5330	641,545
+PLCB3	GeneProduct	Entrez Gene	5331	641,545
+PLCB4	GeneProduct	Entrez Gene	5332	641,545
+PPP3CA	GeneProduct	Entrez Gene	5530	934,539
+PPP3CB	GeneProduct	Entrez Gene	5532	934,539
+PPP3CC	GeneProduct	Entrez Gene	5533	934,539
+PPP3R1	GeneProduct	Entrez Gene	5534	934,539
+PPP3R2	GeneProduct	Entrez Gene	5535	934,539
+PRKACA	GeneProduct	Entrez Gene	5566	1018,203
+PRKACB	GeneProduct	Entrez Gene	5567	1018,203
+PRKACG	GeneProduct	Entrez Gene	5568	1018,203
+PRKG2	GeneProduct	Entrez Gene	5593	703,755
+PTGER2	GeneProduct	Entrez Gene	5732	433,190
+PTGER4	GeneProduct	Entrez Gene	5734	433,190
+REN	GeneProduct	Entrez Gene	5972	1267,203	189,821
+CACNA1C	GeneProduct	Entrez Gene	775	433,399
+CACNA1D	GeneProduct	Entrez Gene	776	433,399
+CACNA1F	GeneProduct	Entrez Gene	778	433,399
+CACNA1S	GeneProduct	Entrez Gene	779	433,399
+CALM1	GeneProduct	Entrez Gene	801	847,539
+CALM2	GeneProduct	Entrez Gene	805	847,539
+CALM3	GeneProduct	Entrez Gene	808	847,539
+CALML3	GeneProduct	Entrez Gene	810	847,539
+ORAI1	GeneProduct	Entrez Gene	84876	433,308
+CALML4	GeneProduct	Entrez Gene	91860	847,539
+CLCA2	GeneProduct	Entrez Gene	9635	433,353
+H2O	Metabolite	KEGG Compound	C00001	382,225
+ATP	Metabolite	KEGG Compound	C00002	208,373
+ADP	Metabolite	KEGG Compound	C00008	247,337
+AMP	Metabolite	KEGG Compound	C00020	960,274	286,301
+Calcium cation	Metabolite	KEGG Compound	C00076	568,309	761,455	369,398	690,400
+Adenosine	Metabolite	KEGG Compound	C00212	327,263
+Potassium cation	Metabolite	KEGG Compound	C00238	486,754	487,454
+Nitric oxide	Metabolite	KEGG Compound	C00533	325,616
+L-Noradrenaline	Metabolite	KEGG Compound	C00547	327,134
+3',5'-Cyclic AMP	Metabolite	KEGG Compound	C00575	827,202
+Prostaglandin E2	Metabolite	KEGG Compound	C00584	327,190
+Cl-	Metabolite	KEGG Compound	C00698	487,354
+L-Adrenaline	Metabolite	KEGG Compound	C00788	327,88
+Angiotensin I	Metabolite	KEGG Compound	C00873	158,776
+3',5'-Cyclic GMP	Metabolite	KEGG Compound	C00942	753,642
+D-myo-Inositol 1,4,5-trisphosphate	Metabolite	KEGG Compound	C01245	735,545
+Angiotensin II	Metabolite	KEGG Compound	C02135	327,543

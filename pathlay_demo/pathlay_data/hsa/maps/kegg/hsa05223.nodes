@@ -1,0 +1,80 @@
+TEXT	TYPE	DB	ID	X	Y
+Non-small cell lung cancer	hsa	KEGG	hsa05223
+AKT3	GeneProduct	Entrez Gene	10000	646,325	635,553
+CDK4	GeneProduct	Entrez Gene	1019	996,270
+CDK6	GeneProduct	Entrez Gene	1021	996,270
+CDKN1A	GeneProduct	Entrez Gene	1026	1116,471
+CDKN2A	GeneProduct	Entrez Gene	1029	932,243
+GADD45G	GeneProduct	Entrez Gene	10912	1168,471
+RASSF1	GeneProduct	Entrez Gene	11186	482,262
+DDB2	GeneProduct	Entrez Gene	1643	1116,515
+GADD45A	GeneProduct	Entrez Gene	1647	1168,471
+E2F1	GeneProduct	Entrez Gene	1869	1079,317
+E2F2	GeneProduct	Entrez Gene	1870	1079,317
+E2F3	GeneProduct	Entrez Gene	1871	1079,317
+EGF	GeneProduct	Entrez Gene	1950	218,461
+EGFR	GeneProduct	Entrez Gene	1956	303,461
+ERBB2	GeneProduct	Entrez Gene	2064	303,486
+AKT1	GeneProduct	Entrez Gene	207	646,325	635,553
+AKT2	GeneProduct	Entrez Gene	208	646,325	635,553
+FHIT	GeneProduct	Entrez Gene	2272	407,175
+FOXO3	GeneProduct	Entrez Gene	2309	733,347	722,576
+ALK	GeneProduct	Entrez Gene	238	419,660
+EML4	GeneProduct	Entrez Gene	27436	419,660
+GRB2	GeneProduct	Entrez Gene	2885	424,399
+HGF	GeneProduct	Entrez Gene	3082	218,517
+HRAS	GeneProduct	Entrez Gene	3265	589,399
+ARAF	GeneProduct	Entrez Gene	369	672,399
+JAK3	GeneProduct	Entrez Gene	3718	561,618
+KIF5A	GeneProduct	Entrez Gene	3798	482,611
+KIF5B	GeneProduct	Entrez Gene	3799	482,611
+KIF5C	GeneProduct	Entrez Gene	3800	482,611
+KRAS	GeneProduct	Entrez Gene	3845	589,399	365,324
+MET	GeneProduct	Entrez Gene	4233	303,517
+GADD45B	GeneProduct	Entrez Gene	4616	1168,471
+NRAS	GeneProduct	Entrez Gene	4893	589,399
+POLK	GeneProduct	Entrez Gene	51426	1168,515
+PDPK1	GeneProduct	Entrez Gene	5170	602,347	591,575
+PIK3CA	GeneProduct	Entrez Gene	5290	479,324	451,553
+PIK3CB	GeneProduct	Entrez Gene	5291	479,324	451,553
+PIK3CD	GeneProduct	Entrez Gene	5293	479,324	451,553
+PIK3R1	GeneProduct	Entrez Gene	5295	479,324
+PIK3R2	GeneProduct	Entrez Gene	5296	479,324
+PLCG1	GeneProduct	Entrez Gene	5335	398,473
+PLCG2	GeneProduct	Entrez Gene	5336	398,473
+PRKCA	GeneProduct	Entrez Gene	5578	616,493
+PRKCB	GeneProduct	Entrez Gene	5579	616,493
+PRKCG	GeneProduct	Entrez Gene	5582	616,493
+MAPK1	GeneProduct	Entrez Gene	5594	838,399
+MAPK3	GeneProduct	Entrez Gene	5595	838,399
+MAP2K1	GeneProduct	Entrez Gene	5604	754,399
+MAP2K2	GeneProduct	Entrez Gene	5605	754,399
+BAD	GeneProduct	Entrez Gene	572	733,301	722,530
+BAK1	GeneProduct	Entrez Gene	578	1168,493
+BAX	GeneProduct	Entrez Gene	581	1116,493
+RAF1	GeneProduct	Entrez Gene	5894	672,399
+RARB	GeneProduct	Entrez Gene	5915	956,134
+RB1	GeneProduct	Entrez Gene	5925	1079,280
+CCND1	GeneProduct	Entrez Gene	595	596,262	996,287	986,399
+RET	GeneProduct	Entrez Gene	5979	482,611
+RXRA	GeneProduct	Entrez Gene	6256	956,151
+RXRB	GeneProduct	Entrez Gene	6257	956,151
+RXRG	GeneProduct	Entrez Gene	6258	956,151
+SOS1	GeneProduct	Entrez Gene	6654	507,399
+SOS2	GeneProduct	Entrez Gene	6655	507,399
+BRAF	GeneProduct	Entrez Gene	673	672,399
+STAT3	GeneProduct	Entrez Gene	6774	659,618
+STAT5A	GeneProduct	Entrez Gene	6776	659,618
+STAT5B	GeneProduct	Entrez Gene	6777	659,618
+STK4	GeneProduct	Entrez Gene	6789	596,221
+TGFA	GeneProduct	Entrez Gene	7039	218,485
+TP53	GeneProduct	Entrez Gene	7157	986,492
+RASSF5	GeneProduct	Entrez Gene	83593	493,233
+CASP9	GeneProduct	Entrez Gene	842	733,325	722,553
+PIK3R3	GeneProduct	Entrez Gene	8503	479,324
+Calcium cation	Metabolite	KEGG Compound	C00076	600,450
+Diacylglycerol	Metabolite	KEGG Compound	C00165	455,492
+Retinoate	Metabolite	KEGG Compound	C00777	686,142
+D-myo-Inositol 1,4,5-trisphosphate	Metabolite	KEGG Compound	C01245	454,450
+Phosphatidylinositol-3,4,5-trisphosphate	Metabolite	KEGG Compound	C05981	556,323	544,552
+9-cis-Retinoic acid	Metabolite	KEGG Compound	C15493	686,142

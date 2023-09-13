@@ -1,0 +1,162 @@
+TEXT	TYPE	DB	ID	X	Y
+Adrenergic signaling in cardiomyocytes	hsa	KEGG	hsa04261
+AKT3	GeneProduct	Entrez Gene	10000	917,259
+KCNE1B	GeneProduct	Entrez Gene	102723475	486,160
+CACNG3	GeneProduct	Entrez Gene	10368	238,406
+CACNG2	GeneProduct	Entrez Gene	10369	238,406
+RAPGEF3	GeneProduct	Entrez Gene	10411	730,310
+CREB3	GeneProduct	Entrez Gene	10488	798,422
+ADCY1	GeneProduct	Entrez Gene	107	702,237
+ADCY2	GeneProduct	Entrez Gene	108	702,237
+ADCY3	GeneProduct	Entrez Gene	109	702,237
+RAPGEF4	GeneProduct	Entrez Gene	11069	730,310
+ADCY5	GeneProduct	Entrez Gene	111	702,237
+ADCY6	GeneProduct	Entrez Gene	112	702,237
+ADCY7	GeneProduct	Entrez Gene	113	702,237
+ADCY8	GeneProduct	Entrez Gene	114	702,237
+ADCY9	GeneProduct	Entrez Gene	115	702,237
+CREB1	GeneProduct	Entrez Gene	1385	798,422
+ATF2	GeneProduct	Entrez Gene	1386	798,422
+ATF6B	GeneProduct	Entrez Gene	1388	798,422
+CREM	GeneProduct	Entrez Gene	1390	935,453
+MAPK14	GeneProduct	Entrez Gene	1432	876,308
+ADRA1D	GeneProduct	Entrez Gene	146	1071,567
+PIK3R6	GeneProduct	Entrez Gene	146850	835,259
+ADRA1B	GeneProduct	Entrez Gene	147	1071,567
+ADRA1A	GeneProduct	Entrez Gene	148	1071,567
+CREB3L4	GeneProduct	Entrez Gene	148327	798,422
+ADRB1	GeneProduct	Entrez Gene	153	653,160
+ADRB2	GeneProduct	Entrez Gene	154	762,160
+CALML6	GeneProduct	Entrez Gene	163688	303,343
+AGT	GeneProduct	Entrez Gene	183	1148,526
+AGTR1	GeneProduct	Entrez Gene	185	1071,526
+AGTR2	GeneProduct	Entrez Gene	186	1071,526
+ADCY4	GeneProduct	Entrez Gene	196883	702,237
+AKT1	GeneProduct	Entrez Gene	207	917,259
+AKT2	GeneProduct	Entrez Gene	208	917,259
+PLCB1	GeneProduct	Entrez Gene	23236	910,548
+ATP1B4	GeneProduct	Entrez Gene	23439	593,160
+PIK3R5	GeneProduct	Entrez Gene	23533	835,259
+CACNG5	GeneProduct	Entrez Gene	27091	238,406
+CACNG4	GeneProduct	Entrez Gene	27092	238,406
+GNAI1	GeneProduct	Entrez Gene	2770	795,199
+GNAI2	GeneProduct	Entrez Gene	2771	795,199
+GNAI3	GeneProduct	Entrez Gene	2773	795,199
+GNAQ	GeneProduct	Entrez Gene	2776	991,548
+GNAS	GeneProduct	Entrez Gene	2778	669,199	732,199
+PPP2R3B	GeneProduct	Entrez Gene	28227	701,578	293,439	387,606
+KCNE1	GeneProduct	Entrez Gene	3753	486,160
+KCNQ1	GeneProduct	Entrez Gene	3784	486,160
+MYH6	GeneProduct	Entrez Gene	4624	520,686
+MYH7	GeneProduct	Entrez Gene	4625	520,686
+MYL2	GeneProduct	Entrez Gene	4633	520,686
+MYL3	GeneProduct	Entrez Gene	4634	520,686
+MYL4	GeneProduct	Entrez Gene	4635	520,686
+ATF4	GeneProduct	Entrez Gene	468	798,422
+ATP1A1	GeneProduct	Entrez Gene	476	593,160
+ATP1A2	GeneProduct	Entrez Gene	477	593,160
+ATP1A3	GeneProduct	Entrez Gene	478	593,160
+ATP1A4	GeneProduct	Entrez Gene	480	593,160
+ATP1B1	GeneProduct	Entrez Gene	481	593,160
+ATP1B2	GeneProduct	Entrez Gene	482	593,160
+ATP1B3	GeneProduct	Entrez Gene	483	593,160
+FXYD2	GeneProduct	Entrez Gene	486	593,160
+ATP2A1	GeneProduct	Entrez Gene	487	620,437
+ATP2A2	GeneProduct	Entrez Gene	488	620,437
+ATP2A3	GeneProduct	Entrez Gene	489	620,437
+ATP2B1	GeneProduct	Entrez Gene	490	433,160
+ATP2B2	GeneProduct	Entrez Gene	491	433,160
+ATP2B3	GeneProduct	Entrez Gene	492	433,160
+ATP2B4	GeneProduct	Entrez Gene	493	433,160
+CALML5	GeneProduct	Entrez Gene	51806	303,343
+PIK3CG	GeneProduct	Entrez Gene	5294	835,259
+PLCB2	GeneProduct	Entrez Gene	5330	910,548
+PLCB3	GeneProduct	Entrez Gene	5331	910,548
+PLCB4	GeneProduct	Entrez Gene	5332	910,548
+PLN	GeneProduct	Entrez Gene	5350	589,454
+PPP1CA	GeneProduct	Entrez Gene	5499	679,514	292,465
+PPP1CB	GeneProduct	Entrez Gene	5500	679,514	292,465
+PPP1CC	GeneProduct	Entrez Gene	5501	679,514	292,465
+PPP2R3C	GeneProduct	Entrez Gene	55012	701,578	293,439	387,606
+PPP1R1A	GeneProduct	Entrez Gene	5502	761,548
+PPP2CA	GeneProduct	Entrez Gene	5515	701,578	293,439	387,606
+PPP2CB	GeneProduct	Entrez Gene	5516	701,578	293,439	387,606
+PPP2R1A	GeneProduct	Entrez Gene	5518	701,578	293,439	387,606
+PPP2R1B	GeneProduct	Entrez Gene	5519	701,578	293,439	387,606
+PPP2R2A	GeneProduct	Entrez Gene	5520	701,578	293,439	387,606
+PPP2R2B	GeneProduct	Entrez Gene	5521	701,578	293,439	387,606
+PPP2R2C	GeneProduct	Entrez Gene	5522	701,578	293,439	387,606
+PPP2R3A	GeneProduct	Entrez Gene	5523	701,578	293,439	387,606
+PPP2R5A	GeneProduct	Entrez Gene	5525	701,578	293,439	387,606
+PPP2R5B	GeneProduct	Entrez Gene	5526	701,578	293,439	387,606
+PPP2R5C	GeneProduct	Entrez Gene	5527	701,578	293,439	387,606
+PPP2R5D	GeneProduct	Entrez Gene	5528	701,578	293,439	387,606
+PPP2R5E	GeneProduct	Entrez Gene	5529	701,578	293,439	387,606
+PRKACA	GeneProduct	Entrez Gene	5566	643,307
+PRKACB	GeneProduct	Entrez Gene	5567	643,307
+PRKACG	GeneProduct	Entrez Gene	5568	643,307
+PRKCA	GeneProduct	Entrez Gene	5578	833,548
+CACNA2D3	GeneProduct	Entrez Gene	55799	238,406
+PPP2R2D	GeneProduct	Entrez Gene	55844	701,578	293,439	387,606
+MAPK1	GeneProduct	Entrez Gene	5594	776,259	833,502
+MAPK3	GeneProduct	Entrez Gene	5595	776,259	833,502
+MAPK11	GeneProduct	Entrez Gene	5600	876,308
+MAPK13	GeneProduct	Entrez Gene	5603	876,308
+CACNG8	GeneProduct	Entrez Gene	59283	238,406
+CACNG7	GeneProduct	Entrez Gene	59284	238,406
+CACNG6	GeneProduct	Entrez Gene	59285	238,406
+BCL2	GeneProduct	Entrez Gene	596	932,330
+RYR2	GeneProduct	Entrez Gene	6262	364,406
+MAPK12	GeneProduct	Entrez Gene	6300	876,308
+SCN1B	GeneProduct	Entrez Gene	6324	326,160
+SCN4B	GeneProduct	Entrez Gene	6330	326,160
+SCN5A	GeneProduct	Entrez Gene	6331	326,160
+SCN7A	GeneProduct	Entrez Gene	6332	326,160
+CREB3L2	GeneProduct	Entrez Gene	64764	798,422
+SLC8A2	GeneProduct	Entrez Gene	6543	380,160	235,525
+SLC8A1	GeneProduct	Entrez Gene	6546	380,160	235,525
+SLC8A3	GeneProduct	Entrez Gene	6547	380,160	235,525
+SLC9A1	GeneProduct	Entrez Gene	6548	540,160
+ACTC1	GeneProduct	Entrez Gene	70	520,632
+TNNC1	GeneProduct	Entrez Gene	7134	527,533
+TNNI3	GeneProduct	Entrez Gene	7137	476,569
+TNNT2	GeneProduct	Entrez Gene	7139	553,570
+TPM1	GeneProduct	Entrez Gene	7168	543,615
+TPM2	GeneProduct	Entrez Gene	7169	543,615
+TPM3	GeneProduct	Entrez Gene	7170	543,615
+TPM4	GeneProduct	Entrez Gene	7171	543,615
+CACNA1C	GeneProduct	Entrez Gene	775	238,406
+CACNA1D	GeneProduct	Entrez Gene	776	238,406
+CACNA1F	GeneProduct	Entrez Gene	778	238,406
+CACNA1S	GeneProduct	Entrez Gene	779	238,406
+CACNA2D1	GeneProduct	Entrez Gene	781	238,406
+CACNB1	GeneProduct	Entrez Gene	782	238,406
+CACNB2	GeneProduct	Entrez Gene	783	238,406
+CACNB3	GeneProduct	Entrez Gene	784	238,406
+CACNB4	GeneProduct	Entrez Gene	785	238,406
+CACNG1	GeneProduct	Entrez Gene	786	238,406
+CALM1	GeneProduct	Entrez Gene	801	303,343
+CALM2	GeneProduct	Entrez Gene	805	303,343
+CALM3	GeneProduct	Entrez Gene	808	303,343
+CALML3	GeneProduct	Entrez Gene	810	303,343
+CAMK2A	GeneProduct	Entrez Gene	815	299,264
+CAMK2B	GeneProduct	Entrez Gene	816	299,264
+CAMK2D	GeneProduct	Entrez Gene	817	299,264
+CAMK2G	GeneProduct	Entrez Gene	818	299,264
+CREB3L3	GeneProduct	Entrez Gene	84699	798,422
+CREB3L1	GeneProduct	Entrez Gene	90993	798,422
+CALML4	GeneProduct	Entrez Gene	91860	303,343
+RPS6KA5	GeneProduct	Entrez Gene	9252	798,461
+CACNA2D2	GeneProduct	Entrez Gene	9254	238,406
+CACNA2D4	GeneProduct	Entrez Gene	93589	238,406
+CREB5	GeneProduct	Entrez Gene	9586	798,422
+Calcium cation	Metabolite	KEGG Compound	C00076	197,402	418,410	193,519	533,495	297,402	870,622	431,218	374,218
+H+	Metabolite	KEGG Compound	C00080	535,210
+Diacylglycerol	Metabolite	KEGG Compound	C00165	871,591
+Potassium cation	Metabolite	KEGG Compound	C00238	598,113	486,218
+L-Noradrenaline	Metabolite	KEGG Compound	C00547	677,60	1144,566
+3',5'-Cyclic AMP	Metabolite	KEGG Compound	C00575	683,275
+L-Adrenaline	Metabolite	KEGG Compound	C00788	685,97	1144,590
+D-myo-Inositol 1,4,5-trisphosphate	Metabolite	KEGG Compound	C01245	949,625
+Sodium cation	Metabolite	KEGG Compound	C01330	280,529	385,108	587,212	545,113	326,111
+Isoproterenol	Metabolite	KEGG Compound	C07056	721,72

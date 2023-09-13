@@ -246,6 +246,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (document.getElementById('select_maps_from_icon_button')) {
 
         const clonedReset = document.getElementById('resetlogic').cloneNode(true);
+        clonedReset.title = "Restore Map Selector and Reset Queries";
         document.getElementById('select_maps_from_icon_button').parentElement.appendChild(clonedReset);
         clonedReset.addEventListener("click", function(){
             queryInterface.reset();

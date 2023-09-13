@@ -1,0 +1,46 @@
+TEXT	TYPE	DB	ID	X	Y
+Graft-versus-host disease	hsa	KEGG	hsa05332
+KIR3DL3	GeneProduct	Entrez Gene	115653	946,258
+GZMB	GeneProduct	Entrez Gene	3002	983,190	983,352
+HLA-A	GeneProduct	Entrez Gene	3105	1023,95	1023,258
+HLA-B	GeneProduct	Entrez Gene	3106	1023,95	1023,258
+HLA-C	GeneProduct	Entrez Gene	3107	1023,95	1023,258
+HLA-DMA	GeneProduct	Entrez Gene	3108	441,193
+HLA-DMB	GeneProduct	Entrez Gene	3109	441,193
+HLA-DOA	GeneProduct	Entrez Gene	3111	441,193
+HLA-DOB	GeneProduct	Entrez Gene	3112	441,193
+HLA-DPA1	GeneProduct	Entrez Gene	3113	441,193
+HLA-DPB1	GeneProduct	Entrez Gene	3115	441,193
+HLA-DQA1	GeneProduct	Entrez Gene	3117	441,193
+HLA-DQA2	GeneProduct	Entrez Gene	3118	441,193
+HLA-DQB1	GeneProduct	Entrez Gene	3119	441,193
+HLA-DRA	GeneProduct	Entrez Gene	3122	441,193
+HLA-DRB1	GeneProduct	Entrez Gene	3123	441,193
+HLA-DRB3	GeneProduct	Entrez Gene	3125	441,193
+HLA-DRB4	GeneProduct	Entrez Gene	3126	441,193
+HLA-DRB5	GeneProduct	Entrez Gene	3127	441,193
+HLA-E	GeneProduct	Entrez Gene	3133	1023,95	1023,258
+HLA-F	GeneProduct	Entrez Gene	3134	1023,95	1023,258
+HLA-G	GeneProduct	Entrez Gene	3135	1023,95	1023,258
+IFNG	GeneProduct	Entrez Gene	3458	794,265	758,398
+FAS	GeneProduct	Entrez Gene	355	1023,123	1023,287
+IL1A	GeneProduct	Entrez Gene	3552	349,334	979,494
+IL1B	GeneProduct	Entrez Gene	3553	349,334	979,494
+IL2	GeneProduct	Entrez Gene	3558	793,144
+FASLG	GeneProduct	Entrez Gene	356	946,123	946,287
+IL6	GeneProduct	Entrez Gene	3569	349,313
+KIR2DL1	GeneProduct	Entrez Gene	3802	946,258
+KIR2DL2	GeneProduct	Entrez Gene	3803	946,258
+KIR2DL3	GeneProduct	Entrez Gene	3804	946,258
+KIR3DL1	GeneProduct	Entrez Gene	3811	946,258
+KIR3DL2	GeneProduct	Entrez Gene	3812	946,258
+KLRC1	GeneProduct	Entrez Gene	3821	946,258
+KLRD1	GeneProduct	Entrez Gene	3824	946,258
+PRF1	GeneProduct	Entrez Gene	5551	983,165	983,325
+KIR2DL5A	GeneProduct	Entrez Gene	57292	946,258
+TNF	GeneProduct	Entrez Gene	7124	979,471	349,357
+CD28	GeneProduct	Entrez Gene	940	521,216
+CD80	GeneProduct	Entrez Gene	941	440,216
+CD86	GeneProduct	Entrez Gene	942	440,216
+Lipopolysaccharide	Metabolite	KEGG Compound	C00338	558,538
+Nitric oxide	Metabolite	KEGG Compound	C00533	978,517

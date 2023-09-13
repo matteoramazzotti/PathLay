@@ -1,0 +1,49 @@
+TEXT	TYPE	DB	ID	X	Y
+Thiamine metabolism	hsa	KEGG	hsa00730
+AK7	GeneProduct	Entrez Gene	122481	835,612
+AK8	GeneProduct	Entrez Gene	158067	835,612
+AK1	GeneProduct	Entrez Gene	203	835,612
+AK2	GeneProduct	Entrez Gene	204	835,612
+AK4	GeneProduct	Entrez Gene	205	835,612
+ALPI	GeneProduct	Entrez Gene	248	598,633
+ALPL	GeneProduct	Entrez Gene	249	598,633
+ALPP	GeneProduct	Entrez Gene	250	598,633
+ALPG	GeneProduct	Entrez Gene	251	598,633
+AK5	GeneProduct	Entrez Gene	26289	835,612
+TPK1	GeneProduct	Entrez Gene	27010	705,700
+LOC390877	GeneProduct	Entrez Gene	390877	835,612
+ACP1	GeneProduct	Entrez Gene	52	648,633
+THTPA	GeneProduct	Entrez Gene	79178	835,557
+NTPCR	GeneProduct	Entrez Gene	84284	704,546
+NFS1	GeneProduct	Entrez Gene	9054	223,285
+NAD+	Metabolite	KEGG Compound	C00003	144,536
+Pyridoxal phosphate	Metabolite	KEGG Compound	C00018	317,101
+Pyruvate	Metabolite	KEGG Compound	C00022	202,373
+Glycine	Metabolite	KEGG Compound	C00037	165,510	492,315
+Thiamin diphosphate	Metabolite	KEGG Compound	C00068	771,601
+L-Tyrosine	Metabolite	KEGG Compound	C00082	411,315
+L-Cysteine	Metabolite	KEGG Compound	C00097	186,255
+D-Glyceraldehyde 3-phosphate	Metabolite	KEGG Compound	C00118	202,405
+Thiamine	Metabolite	KEGG Compound	C00378	623,696
+Thiamin monophosphate	Metabolite	KEGG Compound	C01081	623,601
+4-Amino-5-hydroxymethyl-2-methylpyrimidine	Metabolite	KEGG Compound	C01279	57,194
+Thiamine acetic acid	Metabolite	KEGG Compound	C02892	836,740
+Thiamin triphosphate	Metabolite	KEGG Compound	C03028	892,601
+Aminoimidazole ribotide	Metabolite	KEGG Compound	C03373	200,158
+5-(2-Hydroxyethyl)-4-methylthiazole	Metabolite	KEGG Compound	C04294	223,601
+4-Methyl-5-(2-phosphooxyethyl)thiazole	Metabolite	KEGG Compound	C04327	371,601
+4-Amino-2-methyl-5-(phosphooxymethyl)pyrimidine	Metabolite	KEGG Compound	C04556	317,194
+4-Amino-5-hydroxymethyl-2-methylpyrimidine diphosphate	Metabolite	KEGG Compound	C04752	543,194
+Thiamine aldehyde	Metabolite	KEGG Compound	C05856	726,740
+1-Deoxy-D-xylulose 5-phosphate	Metabolite	KEGG Compound	C11437	312,405
+Iminoglycine	Metabolite	KEGG Compound	C15809	411,395
+Sulfur-carrier protein	Metabolite	KEGG Compound	C15810	151,321
+[Enzyme]-cysteine	Metabolite	KEGG Compound	C15811	166,284
+[Enzyme]-S-sulfanylcysteine	Metabolite	KEGG Compound	C15812	276,284
+Adenylyl-[sulfur-carrier protein]	Metabolite	KEGG Compound	C15813	261,322
+Thiocarboxy-[sulfur-carrier protein]	Metabolite	KEGG Compound	C15814	371,322
+N-Formyl-4-amino-5-aminomethyl-2-methylpyrimidine	Metabolite	KEGG Compound	C19872	542,740
+2-[(2R,5Z)-2-Carboxy-4-methylthiazol-5(2H)-ylidene]ethyl phosphate	Metabolite	KEGG Compound	C20246	371,475
+2-(2-Carboxy-4-methylthiazol-5-yl)ethyl phosphate	Metabolite	KEGG Compound	C20247	371,536
+4-Amino-5-aminomethyl-2-methylpyrimidine	Metabolite	KEGG Compound	C20267	449,740
+ADP-5-ethyl-4-methylthiazole-2-carboxylate	Metabolite	KEGG Compound	C20784	280,536

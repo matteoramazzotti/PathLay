@@ -1,0 +1,109 @@
+TEXT	TYPE	DB	ID	X	Y
+Central carbon metabolism in cancer	hsa	KEGG	hsa05230
+AKT3	GeneProduct	Entrez Gene	10000	629,1017
+LDHAL6A	GeneProduct	Entrez Gene	160287	750,887	1480,845
+EGFR	GeneProduct	Entrez Gene	1956	162,548	162,996
+ERBB2	GeneProduct	Entrez Gene	2064	162,548	162,1018
+AKT1	GeneProduct	Entrez Gene	207	629,1017
+AKT2	GeneProduct	Entrez Gene	208	629,1017
+FGFR1	GeneProduct	Entrez Gene	2260	162,548
+FGFR3	GeneProduct	Entrez Gene	2261	162,548
+FGFR2	GeneProduct	Entrez Gene	2263	162,548
+FLT3	GeneProduct	Entrez Gene	2322	162,548
+SIRT3	GeneProduct	Entrez Gene	23410	1101,328	1104,935
+MTOR	GeneProduct	Entrez Gene	2475	875,1017
+G6PD	GeneProduct	Entrez Gene	2539	254,746
+GCK	GeneProduct	Entrez Gene	2645	236,874	247,226
+GLS2	GeneProduct	Entrez Gene	27165	1104,522	1475,545
+GLS	GeneProduct	Entrez Gene	2744	1104,522	1475,545
+HIF1A	GeneProduct	Entrez Gene	3091	1328,318	1323,1012
+HK1	GeneProduct	Entrez Gene	3098	1480,773	248,827
+HK2	GeneProduct	Entrez Gene	3099	1480,773	248,827
+HK3	GeneProduct	Entrez Gene	3101	1480,773	248,827
+HRAS	GeneProduct	Entrez Gene	3265	303,548
+IDH1	GeneProduct	Entrez Gene	3417	1017,652
+IDH2	GeneProduct	Entrez Gene	3418	1017,652
+KIT	GeneProduct	Entrez Gene	3815	162,548
+KRAS	GeneProduct	Entrez Gene	3845	303,548
+LDHA	GeneProduct	Entrez Gene	3939	750,887	1480,845
+LDHB	GeneProduct	Entrez Gene	3945	750,887	1480,845
+LDHC	GeneProduct	Entrez Gene	3948	750,887	1480,845
+MET	GeneProduct	Entrez Gene	4233	162,548	162,1040
+PGAM4	GeneProduct	Entrez Gene	441531	1480,796	552,865
+MYC	GeneProduct	Entrez Gene	4609	1327,546	1325,195
+NRAS	GeneProduct	Entrez Gene	4893	303,548
+NTRK1	GeneProduct	Entrez Gene	4914	162,548
+NTRK3	GeneProduct	Entrez Gene	4916	162,548
+SIRT6	GeneProduct	Entrez Gene	51548	1309,252	1304,784
+PDGFRA	GeneProduct	Entrez Gene	5156	162,548
+PDGFRB	GeneProduct	Entrez Gene	5159	162,548
+PDHA1	GeneProduct	Entrez Gene	5160	825,860	822,257
+PDHA2	GeneProduct	Entrez Gene	5161	825,860	822,257
+PDHB	GeneProduct	Entrez Gene	5162	825,860	822,257
+PDK1	GeneProduct	Entrez Gene	5163	814,909	1480,932	812,307
+PFKL	GeneProduct	Entrez Gene	5211	399,866	1480,881
+PFKM	GeneProduct	Entrez Gene	5213	399,866	1480,881
+PFKP	GeneProduct	Entrez Gene	5214	399,866	1480,881
+PGAM1	GeneProduct	Entrez Gene	5223	1480,796	552,865
+PGAM2	GeneProduct	Entrez Gene	5224	1480,796	552,865
+PIK3CA	GeneProduct	Entrez Gene	5290	383,1017
+PIK3CB	GeneProduct	Entrez Gene	5291	383,1017
+PIK3CD	GeneProduct	Entrez Gene	5293	383,1017
+PIK3R1	GeneProduct	Entrez Gene	5295	383,1017
+PIK3R2	GeneProduct	Entrez Gene	5296	383,1017
+PKM	GeneProduct	Entrez Gene	5315	663,226	662,828	1480,820
+MAPK1	GeneProduct	Entrez Gene	5594	927,548
+MAPK3	GeneProduct	Entrez Gene	5595	927,548
+MAP2K1	GeneProduct	Entrez Gene	5604	719,548
+MAP2K2	GeneProduct	Entrez Gene	5605	719,548
+TIGAR	GeneProduct	Entrez Gene	57103	326,923
+PTEN	GeneProduct	Entrez Gene	5728	440,977
+RAF1	GeneProduct	Entrez Gene	5894	512,548
+RET	GeneProduct	Entrez Gene	5979	162,548
+SLC1A5	GeneProduct	Entrez Gene	6510	1075,434	1073,100	1475,573
+SLC2A1	GeneProduct	Entrez Gene	6513	162,845	162,241	1475,655
+SLC2A2	GeneProduct	Entrez Gene	6514	162,845	162,241	1475,625
+TP53	GeneProduct	Entrez Gene	7157	347,977	733,721	723,140	237,786
+HKDC1	GeneProduct	Entrez Gene	80201	1480,773	248,827
+SLC7A5	GeneProduct	Entrez Gene	8140	162,1081
+PIK3R3	GeneProduct	Entrez Gene	8503	383,1017
+SLC16A3	GeneProduct	Entrez Gene	9123	162,948	162,345
+LDHAL6B	GeneProduct	Entrez Gene	92483	750,887	1480,845
+SCO2	GeneProduct	Entrez Gene	9997	751,764	741,183
+Pyruvate	Metabolite	KEGG Compound	C00022	721,844	719,241	820,971
+Acetyl-CoA	Metabolite	KEGG Compound	C00024	875,240	867,633	869,842
+L-Glutamate	Metabolite	KEGG Compound	C00025	1073,721
+2-Oxoglutarate	Metabolite	KEGG Compound	C00026	1072,766	1044,636
+D-Glucose	Metabolite	KEGG Compound	C00031	108,845	215,844	111,241	217,241
+Oxaloacetate	Metabolite	KEGG Compound	C00036	934,297	930,889	1079,183
+Glycine	Metabolite	KEGG Compound	C00037	514,637
+L-Alanine	Metabolite	KEGG Compound	C00041	1128,968
+Succinate	Metabolite	KEGG Compound	C00042	1093,821	1095,230
+L-Aspartate	Metabolite	KEGG Compound	C00049	1148,992
+L-Arginine	Metabolite	KEGG Compound	C00062	1179,623
+L-Glutamine	Metabolite	KEGG Compound	C00064	1074,382
+L-Serine	Metabolite	KEGG Compound	C00065	487,658
+L-Methionine	Metabolite	KEGG Compound	C00073	106,1079
+Phosphoenolpyruvate	Metabolite	KEGG Compound	C00074	635,844	623,241
+L-Tryptophan	Metabolite	KEGG Compound	C00078	106,1079
+L-Phenylalanine	Metabolite	KEGG Compound	C00079	106,1079
+L-Tyrosine	Metabolite	KEGG Compound	C00082	106,1079
+D-Fructose 6-phosphate	Metabolite	KEGG Compound	C00085	365,844	353,241
+D-Glucose 6-phosphate	Metabolite	KEGG Compound	C00092	285,844	285,241
+L-Cysteine	Metabolite	KEGG Compound	C00097	536,661
+Fumarate	Metabolite	KEGG Compound	C00122	1076,882	1083,288
+L-Leucine	Metabolite	KEGG Compound	C00123	106,1079
+L-Histidine	Metabolite	KEGG Compound	C00135	106,1079
+L-Proline	Metabolite	KEGG Compound	C00148	1119,623
+(S)-Malate	Metabolite	KEGG Compound	C00149	1008,921	1017,329
+L-Asparagine	Metabolite	KEGG Compound	C00152	1175,969
+Citrate	Metabolite	KEGG Compound	C00158	919,784	917,633	927,186
+L-Valine	Metabolite	KEGG Compound	C00183	106,1079
+(S)-Lactate	Metabolite	KEGG Compound	C00186	719,944	719,340
+3-Phospho-D-glycerate	Metabolite	KEGG Compound	C00197	514,844	489,241
+Isocitrate	Metabolite	KEGG Compound	C00311	998,736	970,634	1008,146
+D-Fructose 1,6-bisphosphate	Metabolite	KEGG Compound	C00354	445,844	421,241
+L-Isoleucine	Metabolite	KEGG Compound	C00407	106,1079
+2-Phospho-D-glycerate	Metabolite	KEGG Compound	C00631	581,844	556,241
+beta-D-Fructose 2,6-bisphosphate	Metabolite	KEGG Compound	C00665	365,921
+Superoxide	Metabolite	KEGG Compound	C00704	1229,959	1217,327

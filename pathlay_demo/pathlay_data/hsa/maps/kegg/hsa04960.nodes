@@ -1,0 +1,47 @@
+TEXT	TYPE	DB	ID	X	Y
+Aldosterone-regulated sodium reabsorption	hsa	KEGG	hsa04960
+NEDD4L	GeneProduct	Entrez Gene	23327	241,581
+ATP1B4	GeneProduct	Entrez Gene	23439	582,568
+SFN	GeneProduct	Entrez Gene	2810	306,581
+HSD11B2	GeneProduct	Entrez Gene	3291	529,278
+IGF1	GeneProduct	Entrez Gene	3479	665,666
+INS	GeneProduct	Entrez Gene	3630	664,636
+INSR	GeneProduct	Entrez Gene	3643	582,652
+IRS1	GeneProduct	Entrez Gene	3667	486,650
+KCNJ1	GeneProduct	Entrez Gene	3758	157,391
+KRAS	GeneProduct	Entrez Gene	3845	465,535
+NR3C2	GeneProduct	Entrez Gene	4306	516,357
+ATP1A1	GeneProduct	Entrez Gene	476	582,568
+ATP1A2	GeneProduct	Entrez Gene	477	582,568
+ATP1A3	GeneProduct	Entrez Gene	478	582,568
+ATP1A4	GeneProduct	Entrez Gene	480	582,568
+ATP1B1	GeneProduct	Entrez Gene	481	582,568
+ATP1B2	GeneProduct	Entrez Gene	482	582,568
+ATP1B3	GeneProduct	Entrez Gene	483	582,568
+FXYD2	GeneProduct	Entrez Gene	486	582,568
+PDPK1	GeneProduct	Entrez Gene	5170	337,546
+PIK3CA	GeneProduct	Entrez Gene	5290	416,614
+PIK3CB	GeneProduct	Entrez Gene	5291	416,614
+PIK3CD	GeneProduct	Entrez Gene	5293	416,614
+PIK3R1	GeneProduct	Entrez Gene	5295	416,614
+PIK3R2	GeneProduct	Entrez Gene	5296	416,614
+FXYD4	GeneProduct	Entrez Gene	53828	582,525
+PRKCA	GeneProduct	Entrez Gene	5578	504,404
+PRKCB	GeneProduct	Entrez Gene	5579	504,404
+PRKCG	GeneProduct	Entrez Gene	5582	504,404
+MAPK1	GeneProduct	Entrez Gene	5594	534,458
+MAPK3	GeneProduct	Entrez Gene	5595	534,458
+SCNN1A	GeneProduct	Entrez Gene	6337	158,530
+SCNN1B	GeneProduct	Entrez Gene	6338	158,530
+SCNN1G	GeneProduct	Entrez Gene	6340	158,530
+SGK1	GeneProduct	Entrez Gene	6446	294,498
+PIK3R3	GeneProduct	Entrez Gene	8503	416,614
+SLC9A3R2	GeneProduct	Entrez Gene	9351	158,415
+Potassium cation	Metabolite	KEGG Compound	C00238	514,561	224,391
+3',5'-Cyclic AMP	Metabolite	KEGG Compound	C00575	508,425
+Cl-	Metabolite	KEGG Compound	C00698	123,186
+Cortisol	Metabolite	KEGG Compound	C00735	644,291
+Cortisone	Metabolite	KEGG Compound	C00762	468,292
+Sodium cation	Metabolite	KEGG Compound	C01330	107,529	653,570
+Aldosterone	Metabolite	KEGG Compound	C01780	649,361
+Phosphatidylinositol-3,4,5-trisphosphate	Metabolite	KEGG Compound	C05981	384,576

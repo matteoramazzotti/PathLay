@@ -1,0 +1,118 @@
+TEXT	TYPE	DB	ID	X	Y
+C-type lectin receptor signaling pathway	hsa	KEGG	hsa04625
+AKT3	GeneProduct	Entrez Gene	10000	806,687
+CLEC4M	GeneProduct	Entrez Gene	10332	179,459	179,561
+IRF9	GeneProduct	Entrez Gene	10379	1147,548
+MALT1	GeneProduct	Entrez Gene	10892	476,766	538,390	658,329	476,687
+NLRP3	GeneProduct	Entrez Gene	114548	631,265
+CHUK	GeneProduct	Entrez Gene	1147	806,338	806,460	662,774	676,177
+PLK3	GeneProduct	Entrez Gene	1263	538,514
+MAPK14	GeneProduct	Entrez Gene	1432	806,366
+CYLD	GeneProduct	Entrez Gene	1540	384,630
+CALML6	GeneProduct	Entrez Gene	163688	676,206	741,815
+EGR2	GeneProduct	Entrez Gene	1959	1315,196
+EGR3	GeneProduct	Entrez Gene	1960	1315,196
+AKT1	GeneProduct	Entrez Gene	207	806,687
+AKT2	GeneProduct	Entrez Gene	208	806,687
+FCER1G	GeneProduct	Entrez Gene	2207	179,390	179,687	179,734	179,794
+RRAS2	GeneProduct	Entrez Gene	22800	384,497	281,135
+MRAS	GeneProduct	Entrez Gene	22808	384,497	281,135
+ARHGEF12	GeneProduct	Entrez Gene	23365	276,498
+CLEC4E	GeneProduct	Entrez Gene	26253	179,670	179,760
+PYCARD	GeneProduct	Entrez Gene	29108	677,265	852,293
+CD209	GeneProduct	Entrez Gene	30835	179,459	179,561
+HRAS	GeneProduct	Entrez Gene	3265	384,497	281,135
+CLEC4D	GeneProduct	Entrez Gene	338339	179,717	179,777
+IKBKB	GeneProduct	Entrez Gene	3551	806,338	806,460	662,774
+IL1B	GeneProduct	Entrez Gene	3553	979,236	1266,299	1266,463	1315,776	1315,150
+IL2	GeneProduct	Entrez Gene	3558	1266,196
+IL6	GeneProduct	Entrez Gene	3569	1266,495	1266,641	1266,443	1266,756	1266,319
+IL10	GeneProduct	Entrez Gene	3586	1266,594	1266,515	1266,339	1266,216
+IL12A	GeneProduct	Entrez Gene	3592	1266,150	1315,515	1266,661	1266,776	1315,319	1266,695	1266,390
+IL12B	GeneProduct	Entrez Gene	3593	1266,150	1315,515	1266,661	1266,776	1315,319	1266,695	1266,390
+IRF1	GeneProduct	Entrez Gene	3659	1147,702
+ITPR1	GeneProduct	Entrez Gene	3708	467,221	553,830
+ITPR2	GeneProduct	Entrez Gene	3709	467,221	553,830
+ITPR3	GeneProduct	Entrez Gene	3710	467,221	553,830
+JUN	GeneProduct	Entrez Gene	3725	1147,390	980,390
+KRAS	GeneProduct	Entrez Gene	3845	384,497	281,135
+RHOA	GeneProduct	Entrez Gene	387	276,459
+LSP1	GeneProduct	Entrez Gene	4046	179,497	179,135	179,597
+MDM2	GeneProduct	Entrez Gene	4193	980,687	1147,687
+NFATC1	GeneProduct	Entrez Gene	4772	979,206	1147,206	980,815	1147,814
+NFATC2	GeneProduct	Entrez Gene	4773	979,206	1147,206	980,815	1147,814
+NFATC3	GeneProduct	Entrez Gene	4775	979,206	1147,206	980,815	1147,814
+NFATC4	GeneProduct	Entrez Gene	4776	979,206	1147,206	980,815	1147,814
+NFKB1	GeneProduct	Entrez Gene	4790	1146,514	980,339	1147,636	980,460	1147,461	980,774	1147,774	1147,339	748,514	748,607
+NFKB2	GeneProduct	Entrez Gene	4791	805,177	980,177
+NFKBIA	GeneProduct	Entrez Gene	4792	909,451	909,765	910,329
+NRAS	GeneProduct	Entrez Gene	4893	384,497	281,135
+PAK1	GeneProduct	Entrez Gene	5058	384,459
+CLEC1B	GeneProduct	Entrez Gene	51266	179,829
+IL23A	GeneProduct	Entrez Gene	51561	1315,661	1315,443	1315,756	1315,339
+CALML5	GeneProduct	Entrez Gene	51806	676,206	741,815
+PIK3CA	GeneProduct	Entrez Gene	5290	662,687
+PIK3CB	GeneProduct	Entrez Gene	5291	662,687
+PIK3CD	GeneProduct	Entrez Gene	5293	662,687
+PIK3R1	GeneProduct	Entrez Gene	5295	662,687
+PIK3R2	GeneProduct	Entrez Gene	5296	662,687
+IL17D	GeneProduct	Entrez Gene	53342	1266,565	1266,814
+PLCG2	GeneProduct	Entrez Gene	5336	373,265	384,829
+PPP3CA	GeneProduct	Entrez Gene	5530	805,206	851,815
+PPP3CB	GeneProduct	Entrez Gene	5532	805,206	851,815
+PPP3CC	GeneProduct	Entrez Gene	5533	805,206	851,815
+PPP3R1	GeneProduct	Entrez Gene	5534	805,206	851,815
+PPP3R2	GeneProduct	Entrez Gene	5535	805,206	851,815
+PRKCD	GeneProduct	Entrez Gene	5580	467,329
+MAPK1	GeneProduct	Entrez Gene	5594	467,265	806,414
+MAPK3	GeneProduct	Entrez Gene	5595	467,265	806,414
+MAPK8	GeneProduct	Entrez Gene	5599	806,390
+MAPK11	GeneProduct	Entrez Gene	5600	806,366
+MAPK9	GeneProduct	Entrez Gene	5601	806,390
+MAPK10	GeneProduct	Entrez Gene	5602	806,390
+MAPK13	GeneProduct	Entrez Gene	5603	806,366
+PTGS2	GeneProduct	Entrez Gene	5743	1315,216
+PTPN11	GeneProduct	Entrez Gene	5781	276,249	276,408
+RAF1	GeneProduct	Entrez Gene	5894	538,497	467,135
+RELA	GeneProduct	Entrez Gene	5970	1146,497	980,322	980,443	1147,444	980,757	1147,757	1147,322	748,497	1147,141	980,135
+RELB	GeneProduct	Entrez Gene	5971	805,160	1147,158	980,160
+BCL3	GeneProduct	Entrez Gene	602	538,630	1147,619
+RRAS	GeneProduct	Entrez Gene	6237	384,497	281,135
+MAPK12	GeneProduct	Entrez Gene	6300	806,366
+CCL17	GeneProduct	Entrez Gene	6361	1266,614
+CCL22	GeneProduct	Entrez Gene	6367	1315,614
+CARD9	GeneProduct	Entrez Gene	64170	384,766	446,390	566,329	384,687
+CLEC7A	GeneProduct	Entrez Gene	64581	179,265
+SRC	GeneProduct	Entrez Gene	6714	384,525
+STAT1	GeneProduct	Entrez Gene	6772	538,565	1147,565
+STAT2	GeneProduct	Entrez Gene	6773	1147,582
+SYK	GeneProduct	Entrez Gene	6850	276,265	276,391	276,766	276,829	276,687
+TNF	GeneProduct	Entrez Gene	7124	1315,463	1315,299
+CALM1	GeneProduct	Entrez Gene	801	676,206	741,815
+CALM2	GeneProduct	Entrez Gene	805	676,206	741,815
+CALM3	GeneProduct	Entrez Gene	808	676,206	741,815
+CALML3	GeneProduct	Entrez Gene	810	676,206	741,815
+CASP1	GeneProduct	Entrez Gene	834	806,265
+CASP8	GeneProduct	Entrez Gene	841	806,293
+PIK3R3	GeneProduct	Entrez Gene	8503	662,687
+IKBKG	GeneProduct	Entrez Gene	8517	806,321	806,443	662,757
+CBLB	GeneProduct	Entrez Gene	868	276,325
+KSR1	GeneProduct	Entrez Gene	8844	538,480
+BCL10	GeneProduct	Entrez Gene	8915	430,766	492,390	612,329	430,687
+MAP3K14	GeneProduct	Entrez Gene	9020	467,176
+CALML4	GeneProduct	Entrez Gene	91860	676,206	741,815
+MAPKAPK2	GeneProduct	Entrez Gene	9261	276,597
+CLEC6A	GeneProduct	Entrez Gene	93978	179,373
+IKBKE	GeneProduct	Entrez Gene	9641	384,565
+Hydrogen peroxide	Metabolite	KEGG Compound	C00027	560,264
+Calcium cation	Metabolite	KEGG Compound	C00076	559,205	652,814
+D-Mannose	Metabolite	KEGG Compound	C00159	104,447	104,362	103,676
+Diacylglycerol	Metabolite	KEGG Compound	C00165	374,328
+Prostaglandin E2	Metabolite	KEGG Compound	C00584	1248,358
+1,3-beta-D-Glucan	Metabolite	KEGG Compound	C00965	104,265
+6-Deoxy-L-galactose	Metabolite	KEGG Compound	C01019	104,559
+D-myo-Inositol 1,4,5-trisphosphate	Metabolite	KEGG Compound	C01245	373,219	462,829
+Hydroxyl radical	Metabolite	KEGG Compound	C16844	560,264
+Trehalose dimycolate	Metabolite	KEGG Compound	C21790	104,767	104,716	103,661
+Rhodocytin	Metabolite	KEGG Compound	C21791	104,828
+	Metabolite	KEGG Compound	gl:G13115	104,380	104,465

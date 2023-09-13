@@ -1,0 +1,65 @@
+TEXT	TYPE	DB	ID	X	Y
+Vitamin digestion and absorption	hsa	KEGG	hsa04977
+SLC19A2	GeneProduct	Entrez Gene	10560	539,367
+SLC46A1	GeneProduct	Entrez Gene	113235	625,557
+SLC52A3	GeneProduct	Entrez Gene	113278	539,389
+PLB1	GeneProduct	Entrez Gene	151056	256,712
+AWAT2	GeneProduct	Entrez Gene	158835	779,728
+FOLH1	GeneProduct	Entrez Gene	2346	64,393
+MMACHC	GeneProduct	Entrez Gene	25974	1036,241
+CBLIF	GeneProduct	Entrez Gene	2694	801,278	482,315	488,272	914,279	680,346
+APOA1	GeneProduct	Entrez Gene	335	1285,724	1147,722	919,718
+APOA4	GeneProduct	Entrez Gene	337	1327,686	1187,680	969,670
+APOB	GeneProduct	Entrez Gene	338	1145,641	1283,645	920,634
+ABCC1	GeneProduct	Entrez Gene	4363	1141,302
+PNLIP	GeneProduct	Entrez Gene	5406	256,691
+LMBRD1	GeneProduct	Entrez Gene	55788	989,299
+RBP2	GeneProduct	Entrez Gene	5948	796,769
+SLC19A1	GeneProduct	Entrez Gene	6573	625,578
+BTD	GeneProduct	Entrez Gene	686	232,329
+TCN2	GeneProduct	Entrez Gene	6948	1306,363	1057,363
+CUBN	GeneProduct	Entrez Gene	8029	628,315	743,296	726,346	691,267
+SLC19A3	GeneProduct	Entrez Gene	80704	539,367
+SLC5A6	GeneProduct	Entrez Gene	8884	628,441
+LRAT	GeneProduct	Entrez Gene	9227	831,748
+SCARB1	GeneProduct	Entrez Gene	949	628,689	538,755
+SLC23A1	GeneProduct	Entrez Gene	9963	538,507
+NAD+	Metabolite	KEGG Compound	C00003	120,305
+CoA	Metabolite	KEGG Compound	C00010	177,305
+FAD	Metabolite	KEGG Compound	C00016	273,257
+Pyridoxal phosphate	Metabolite	KEGG Compound	C00018	371,259	1338,396
+FMN	Metabolite	KEGG Compound	C00061	253,238
+Thiamin diphosphate	Metabolite	KEGG Compound	C00068	319,210
+Ascorbate	Metabolite	KEGG Compound	C00072	465,510	151,253	1225,508
+H+	Metabolite	KEGG Compound	C00080	530,554
+Biotin	Metabolite	KEGG Compound	C00120	516,445	206,431	1276,465
+Nicotinamide	Metabolite	KEGG Compound	C00153	120,524	1201,528
+Fatty acid	Metabolite	KEGG Compound	C00162	83,649
+Cholesterol	Metabolite	KEGG Compound	C00187	203,764
+Pyridoxal	Metabolite	KEGG Compound	C00250	370,321
+Riboflavin	Metabolite	KEGG Compound	C00255	264,387	478,387	1296,441
+Retinal	Metabolite	KEGG Compound	C00376	684,754
+Thiamine	Metabolite	KEGG Compound	C00378	478,366	319,348	1319,419
+Triacylglycerol	Metabolite	KEGG Compound	C00422	1150,662	1286,664	928,656
+Retinol	Metabolite	KEGG Compound	C00473	747,770	229,771	164,681
+Folate	Metabolite	KEGG Compound	C00504	91,563	552,576	1172,540	500,560
+Pyridoxamine	Metabolite	KEGG Compound	C00534	395,321
+Pyridoxamine phosphate	Metabolite	KEGG Compound	C00647	396,259
+1-Acyl-sn-glycerol 3-phosphate	Metabolite	KEGG Compound	C00681	83,722
+Menaquinone	Metabolite	KEGG Compound	C00828	1266,681	1131,684	421,630	902,675	164,681
+Pantothenate	Metabolite	KEGG Compound	C00864	516,445	178,452	1250,482
+Sodium cation	Metabolite	KEGG Compound	C01330	565,436	477,502
+Bile salt	Metabolite	KEGG Compound	C01558	120,758
+1-Acylglycerol	Metabolite	KEGG Compound	C01885	69,686
+Phylloquinone	Metabolite	KEGG Compound	C02059	1266,681	1131,684	421,604	902,675	164,681
+Retinyl ester	Metabolite	KEGG Compound	C02075	1266,681	1131,684	843,717	229,605	902,675
+beta-Carotene	Metabolite	KEGG Compound	C02094	164,681	289,649	486,752
+2-Acylglycerol	Metabolite	KEGG Compound	C02112	69,686
+alpha-Tocopherol	Metabolite	KEGG Compound	C02477	1266,681	1131,684	373,689	902,675	695,691	164,681
+Cholesterol ester	Metabolite	KEGG Compound	C02530	1153,693	1288,692	935,686
+Menadione	Metabolite	KEGG Compound	C05377	1266,681	1131,684	421,648	902,675	164,681
+Vitamin D3	Metabolite	KEGG Compound	C05443	1266,681	1131,684	317,605	902,675	164,681
+Biocytin	Metabolite	KEGG Compound	C05552	206,210
+Vitamin B12	Metabolite	KEGG Compound	C05776	481,341	443,190	801,304	912,305	680,373	1092,300	1354,363	1034,266
+dl-alpha-Tocopherol nicotinate	Metabolite	KEGG Compound	C12981	373,605
+alpha-Tocopherol acetate	Metabolite	KEGG Compound	C13202	373,605

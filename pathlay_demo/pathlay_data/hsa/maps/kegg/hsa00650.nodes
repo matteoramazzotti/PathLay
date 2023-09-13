@@ -1,0 +1,72 @@
+TEXT	TYPE	DB	ID	X	Y
+Butanoate metabolism	hsa	KEGG	hsa00650
+ACSM1	GeneProduct	Entrez Gene	116285	689,295
+ACSM2A	GeneProduct	Entrez Gene	123876	689,295
+ACSM6	GeneProduct	Entrez Gene	142827	689,295
+ABAT	GeneProduct	Entrez Gene	18	249,390
+ECHS1	GeneProduct	Entrez Gene	1892	666,442
+EHHADH	GeneProduct	Entrez Gene	1962	640,532	666,442
+GAD1	GeneProduct	Entrez Gene	2571	148,401
+GAD2	GeneProduct	Entrez Gene	2572	148,401
+HADHA	GeneProduct	Entrez Gene	3030	666,442
+HADH	GeneProduct	Entrez Gene	3033	640,532
+HMGCL	GeneProduct	Entrez Gene	3155	830,675
+HMGCS1	GeneProduct	Entrez Gene	3157	830,627
+HMGCS2	GeneProduct	Entrez Gene	3158	830,627
+ACSM4	GeneProduct	Entrez Gene	341392	689,295
+ACSM2B	GeneProduct	Entrez Gene	348158	689,295
+ACADS	GeneProduct	Entrez Gene	35	744,366
+ACAT1	GeneProduct	Entrez Gene	38	830,589
+ACAT2	GeneProduct	Entrez Gene	39	830,589
+OXCT1	GeneProduct	Entrez Gene	5019	504,659
+HMGCLL1	GeneProduct	Entrez Gene	54511	830,675
+ACSM5	GeneProduct	Entrez Gene	54988	689,295
+BDH2	GeneProduct	Entrez Gene	56898	350,573
+BDH1	GeneProduct	Entrez Gene	622	350,573
+ACSM3	GeneProduct	Entrez Gene	6296	689,295
+OXCT2	GeneProduct	Entrez Gene	64064	504,659
+AACS	GeneProduct	Entrez Gene	65985	509,589
+ALDH5A1	GeneProduct	Entrez Gene	7915	323,300
+L2HGDH	GeneProduct	Entrez Gene	79944	859,497
+Pyruvate	Metabolite	KEGG Compound	C00022	994,188
+Acetyl-CoA	Metabolite	KEGG Compound	C00024	998,588
+L-Glutamate	Metabolite	KEGG Compound	C00025	103,400
+2-Oxoglutarate	Metabolite	KEGG Compound	C00026	858,521
+Succinate	Metabolite	KEGG Compound	C00042	298,224
+Succinyl-CoA	Metabolite	KEGG Compound	C00091	200,348
+Fumarate	Metabolite	KEGG Compound	C00122	473,224
+Butanoyl-CoA	Metabolite	KEGG Compound	C00136	665,328
+Acetoacetate	Metabolite	KEGG Compound	C00164	351,653
+Succinate semialdehyde	Metabolite	KEGG Compound	C00232	298,400
+Butanoic acid	Metabolite	KEGG Compound	C00246	665,263
+Acetoacetyl-CoA	Metabolite	KEGG Compound	C00332	665,585
+4-Aminobutanoate	Metabolite	KEGG Compound	C00334	200,400
+(S)-3-Hydroxy-3-methylglutaryl-CoA	Metabolite	KEGG Compound	C00356	830,654
+(R)-Malate	Metabolite	KEGG Compound	C00497	823,224
+Diacetyl	Metabolite	KEGG Compound	C00741	881,61
+(R)-Acetoin	Metabolite	KEGG Compound	C00810	764,141
+Crotonoyl-CoA	Metabolite	KEGG Compound	C00877	665,403
+4-Hydroxybutanoic acid	Metabolite	KEGG Compound	C00989	390,400
+(R)-3-Hydroxybutanoate	Metabolite	KEGG Compound	C01089	351,542
+(S)-3-Hydroxybutanoyl-CoA	Metabolite	KEGG Compound	C01144	665,479
+Maleic acid	Metabolite	KEGG Compound	C01384	648,224
+Butanal	Metabolite	KEGG Compound	C01412	554,328
+(S)-Acetoin	Metabolite	KEGG Compound	C01769	764,61
+Vinylacetyl-CoA	Metabolite	KEGG Compound	C02331	542,380
+Glutaconyl-1-CoA	Metabolite	KEGG Compound	C02411	757,403
+Butanoylphosphate	Metabolite	KEGG Compound	C02527	776,263
+2-Hydroxyglutarate	Metabolite	KEGG Compound	C02630	858,465
+(R,R)-Butane-2,3-diol	Metabolite	KEGG Compound	C03044	647,141
+(S,S)-Butane-2,3-diol	Metabolite	KEGG Compound	C03046	647,61
+2-Hydroxyglutaryl-CoA	Metabolite	KEGG Compound	C03058	858,403
+(R)-3-Hydroxybutanoyl-CoA	Metabolite	KEGG Compound	C03561	559,479
+(R)-3-((R)-3-Hydroxybutanoyloxy)butanoate	Metabolite	KEGG Compound	C04546	351,479
+(S)-2-Acetolactate	Metabolite	KEGG Compound	C06010	881,141
+1-Butanol	Metabolite	KEGG Compound	C06142	448,328
+Poly-beta-hydroxybutyrate	Metabolite	KEGG Compound	C06143	453,479
+3-Butynoate	Metabolite	KEGG Compound	C06144	260,653
+3-Butyn-1-al	Metabolite	KEGG Compound	C06145	188,653
+3-Butyn-1-ol	Metabolite	KEGG Compound	C06146	103,653
+4-Hydroxybutyryl-CoA	Metabolite	KEGG Compound	C11062	482,400
+meso-2,3-Butanediol	Metabolite	KEGG Compound	C20657	647,116
+Butane	Metabolite	KEGG Compound	C21390	345,328

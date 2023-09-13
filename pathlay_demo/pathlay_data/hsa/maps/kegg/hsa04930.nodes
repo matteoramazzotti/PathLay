@@ -1,0 +1,54 @@
+TEXT	TYPE	DB	ID	X	Y
+Type II diabetes mellitus	hsa	KEGG	hsa04930
+SOCS4	GeneProduct	Entrez Gene	122809	349,313
+MTOR	GeneProduct	Entrez Gene	2475	349,417
+GCK	GeneProduct	Entrez Gene	2645	349,762
+HK1	GeneProduct	Entrez Gene	3098	349,762
+HK2	GeneProduct	Entrez Gene	3099	349,762
+HK3	GeneProduct	Entrez Gene	3101	349,762
+IKBKB	GeneProduct	Entrez Gene	3551	349,368
+INS	GeneProduct	Entrez Gene	3630	183,250	598,614
+INSR	GeneProduct	Entrez Gene	3643	266,250
+PDX1	GeneProduct	Entrez Gene	3651	432,597
+IRS1	GeneProduct	Entrez Gene	3667	432,250	432,272
+KCNJ11	GeneProduct	Entrez Gene	3767	266,728
+MAFA	GeneProduct	Entrez Gene	389692	432,631
+PIK3CA	GeneProduct	Entrez Gene	5290	515,250
+PIK3CB	GeneProduct	Entrez Gene	5291	515,250
+PIK3CD	GeneProduct	Entrez Gene	5293	515,250
+PIK3R1	GeneProduct	Entrez Gene	5295	515,250
+PIK3R2	GeneProduct	Entrez Gene	5296	515,250
+PKLR	GeneProduct	Entrez Gene	5313	432,762
+PKM	GeneProduct	Entrez Gene	5315	432,762
+PRKCD	GeneProduct	Entrez Gene	5580	349,466
+PRKCE	GeneProduct	Entrez Gene	5581	349,466
+PRKCZ	GeneProduct	Entrez Gene	5590	349,437
+MAPK1	GeneProduct	Entrez Gene	5594	349,340
+MAPK3	GeneProduct	Entrez Gene	5595	349,340
+MAPK8	GeneProduct	Entrez Gene	5599	349,388	369,589
+MAPK9	GeneProduct	Entrez Gene	5601	349,388	369,589
+MAPK10	GeneProduct	Entrez Gene	5602	349,388	369,589
+SLC2A2	GeneProduct	Entrez Gene	6514	266,762
+SLC2A4	GeneProduct	Entrez Gene	6517	515,144
+ABCC8	GeneProduct	Entrez Gene	6833	266,711
+TNF	GeneProduct	Entrez Gene	7124	183,417
+CACNA1A	GeneProduct	Entrez Gene	773	266,658
+CACNA1B	GeneProduct	Entrez Gene	774	266,658
+CACNA1C	GeneProduct	Entrez Gene	775	266,658
+CACNA1D	GeneProduct	Entrez Gene	776	266,658
+CACNA1E	GeneProduct	Entrez Gene	777	266,658
+HKDC1	GeneProduct	Entrez Gene	80201	349,762
+IRS4	GeneProduct	Entrez Gene	8471	432,272
+PIK3R3	GeneProduct	Entrez Gene	8503	515,250
+SOCS1	GeneProduct	Entrez Gene	8651	349,313
+IRS2	GeneProduct	Entrez Gene	8660	432,272
+SOCS2	GeneProduct	Entrez Gene	8835	349,313
+CACNA1G	GeneProduct	Entrez Gene	8913	266,658
+SOCS3	GeneProduct	Entrez Gene	9021	349,313
+ADIPOQ	GeneProduct	Entrez Gene	9370	183,144
+ATP	Metabolite	KEGG Compound	C00002	513,709
+Pyruvate	Metabolite	KEGG Compound	C00022	513,761
+D-Glucose	Metabolite	KEGG Compound	C00031	182,761	101,539
+Calcium cation	Metabolite	KEGG Compound	C00076	347,657
+Fatty acid	Metabolite	KEGG Compound	C00162	182,378
+Potassium cation	Metabolite	KEGG Compound	C00238	318,728

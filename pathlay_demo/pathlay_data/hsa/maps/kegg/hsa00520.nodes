@@ -1,0 +1,158 @@
+TEXT	TYPE	DB	ID	X	Y
+Amino sugar and nucleotide sugar metabolism	hsa	KEGG	hsa00520
+GNPDA1	GeneProduct	Entrez Gene	10007	415,430
+GNE	GeneProduct	Entrez Gene	10020	767,258	868,258
+CHIT1	GeneProduct	Entrez Gene	1118	120,258	120,217
+GNPDA2	GeneProduct	Entrez Gene	132789	415,430
+NANP	GeneProduct	Entrez Gene	140838	1137,256
+CYB5R3	GeneProduct	Entrez Gene	1727	1283,321
+FCSK	GeneProduct	Entrez Gene	197258	421,1464
+GALE	GeneProduct	Entrez Gene	2582	721,1056
+GALK1	GeneProduct	Entrez Gene	2584	421,1114
+GALT	GeneProduct	Entrez Gene	2592	627,1124
+GCK	GeneProduct	Entrez Gene	2645	339,1557	339,1012
+GFPT1	GeneProduct	Entrez Gene	2673	462,450
+CHIA	GeneProduct	Entrez Gene	27159	120,258	120,217
+GMDS	GeneProduct	Entrez Gene	2762	786,1385
+GPI	GeneProduct	Entrez Gene	2821	435,778
+GMPPB	GeneProduct	Entrez Gene	29925	651,1374
+GMPPA	GeneProduct	Entrez Gene	29926	651,1374
+HEXA	GeneProduct	Entrez Gene	3073	231,258
+HEXB	GeneProduct	Entrez Gene	3074	231,258
+HK1	GeneProduct	Entrez Gene	3098	361,471	361,359	361,991	361,1536	361,1373
+HK2	GeneProduct	Entrez Gene	3099	361,471	361,359	361,991	361,1536	361,1373
+HK3	GeneProduct	Entrez Gene	3101	361,471	361,359	361,991	361,1536	361,1373
+MPI	GeneProduct	Entrez Gene	4351	471,1056
+AMDHD2	GeneProduct	Entrez Gene	51005	412,302
+CYB5R4	GeneProduct	Entrez Gene	51167	1283,321
+CYB5R2	GeneProduct	Entrez Gene	51700	1283,321
+CYB5R1	GeneProduct	Entrez Gene	51706	1283,321
+PGM1	GeneProduct	Entrez Gene	5236	508,991	508,1536
+PGM3	GeneProduct	Entrez Gene	5238	508,258
+PMM1	GeneProduct	Entrez Gene	5372	508,1385
+PMM2	GeneProduct	Entrez Gene	5373	508,1385
+NANS	GeneProduct	Entrez Gene	54187	994,258	994,222
+PGM2	GeneProduct	Entrez Gene	55276	508,991	508,1536
+NAGK	GeneProduct	Entrez Gene	55577	361,258
+CMAS	GeneProduct	Entrez Gene	55907	1282,257	1282,377
+RENBP	GeneProduct	Entrez Gene	5973	578,171
+CYB5RL	GeneProduct	Entrez Gene	606495	1283,321
+GNPNAT1	GeneProduct	Entrez Gene	64841	458,321
+UAP1	GeneProduct	Entrez Gene	6675	651,258
+GFUS	GeneProduct	Entrez Gene	7264	786,1464
+UGDH	GeneProduct	Entrez Gene	7358	721,924
+UGP2	GeneProduct	Entrez Gene	7360	651,991
+UXS1	GeneProduct	Entrez Gene	80146	691,776
+HKDC1	GeneProduct	Entrez Gene	80201	361,471	361,359	361,991	361,1536	361,1373
+NPL	GeneProduct	Entrez Gene	80896	1032,300
+FPGT	GeneProduct	Entrez Gene	8790	651,1464
+UAP1L1	GeneProduct	Entrez Gene	91373	651,258
+GFPT2	GeneProduct	Entrez Gene	9945	462,450
+UDP-glucose	Metabolite	KEGG Compound	C00029	721,1001
+D-Glucose	Metabolite	KEGG Compound	C00031	292,939	292,1506
+UDP-N-acetyl-alpha-D-glucosamine	Metabolite	KEGG Compound	C00043	721,257
+UDP-alpha-D-galactose	Metabolite	KEGG Compound	C00052	721,1113
+GDP-mannose	Metabolite	KEGG Compound	C00096	721,1384
+D-Glucose 1-phosphate	Metabolite	KEGG Compound	C00103	578,1001	578,1546
+CMP-N-acetylneuraminate	Metabolite	KEGG Compound	C00128	1353,257
+N-Acetyl-D-glucosamine	Metabolite	KEGG Compound	C00140	292,257	271,201
+D-Mannose	Metabolite	KEGG Compound	C00159	292,1383	292,1343
+UDP-glucuronate	Metabolite	KEGG Compound	C00167	721,889
+D-Xylose	Metabolite	KEGG Compound	C00181	1005,733
+UDP-D-xylose	Metabolite	KEGG Compound	C00190	717,733
+D-Glucuronate	Metabolite	KEGG Compound	C00191	292,889
+UDP-N-acetyl-D-galactosamine	Metabolite	KEGG Compound	C00203	819,479
+L-Arabinose	Metabolite	KEGG Compound	C00259	292,621
+alpha-D-Glucose	Metabolite	KEGG Compound	C00267	292,1001	292,1546
+N-Acetylneuraminate	Metabolite	KEGG Compound	C00270	1210,257
+D-Mannose 6-phosphate	Metabolite	KEGG Compound	C00275	435,1383
+GDP-L-fucose	Metabolite	KEGG Compound	C00325	721,1463
+D-Glucosamine	Metabolite	KEGG Compound	C00329	292,369	292,414
+D-Galacturonate	Metabolite	KEGG Compound	C00333	292,1225
+D-Glucosamine 6-phosphate	Metabolite	KEGG Compound	C00352	435,369
+N-Acetyl-D-glucosamine 6-phosphate	Metabolite	KEGG Compound	C00357	435,257
+GDP-glucose	Metabolite	KEGG Compound	C00394	721,1546
+alpha-D-Galactose 1-phosphate	Metabolite	KEGG Compound	C00446	578,1113
+Chitin	Metabolite	KEGG Compound	C00461	64,257	819,317
+ADP-glucose	Metabolite	KEGG Compound	C00498	721,1706
+CDP-glucose	Metabolite	KEGG Compound	C00501	721,1626
+UDP-D-galacturonate	Metabolite	KEGG Compound	C00617	721,1225
+D-Mannose 1-phosphate	Metabolite	KEGG Compound	C00636	578,1384
+N-Acetyl-D-mannosamine	Metabolite	KEGG Compound	C00645	819,257
+alpha-D-Glucose 6-phosphate	Metabolite	KEGG Compound	C00668	435,1001	435,1546
+Pectin	Metabolite	KEGG Compound	C00714	946,1228
+Chitosan	Metabolite	KEGG Compound	C00734	64,369
+UDP-L-arabinose	Metabolite	KEGG Compound	C00935	717,621
+GDP-D-mannuronate	Metabolite	KEGG Compound	C00976	864,1343
+alpha-D-Galactose	Metabolite	KEGG Compound	C00984	292,1113
+Ferricytochrome b5	Metabolite	KEGG Compound	C00996	1283,346
+Ferrocytochrome b5	Metabolite	KEGG Compound	C00999	1283,290
+6-Deoxy-L-galactose	Metabolite	KEGG Compound	C01019	292,1463
+UDP-N-acetylmuramate	Metabolite	KEGG Compound	C01050	721,93
+UDP-N-acetyl-D-mannosamine	Metabolite	KEGG Compound	C01170	819,376
+CDP-4-dehydro-6-deoxy-D-glucose	Metabolite	KEGG Compound	C01219	819,1626
+GDP-4-dehydro-6-deoxy-D-mannose	Metabolite	KEGG Compound	C01222	864,1384
+UDP-apiose	Metabolite	KEGG Compound	C01623	916,800
+Chitobiose	Metabolite	KEGG Compound	C01674	178,257
+CDP-abequose	Metabolite	KEGG Compound	C01788	1015,1591
+UDP-L-rhamnose	Metabolite	KEGG Compound	C02199	1138,1001
+GDP-L-galactose	Metabolite	KEGG Compound	C02280	864,1304
+UDP-L-iduronate	Metabolite	KEGG Compound	C02330	916,841
+beta-D-Fructose	Metabolite	KEGG Compound	C02336	292,481
+1,4-beta-D-Xylan	Metabolite	KEGG Compound	C02352	862,733
+Arabinan	Metabolite	KEGG Compound	C02474	1027,621
+N-Acetylmuramate	Metabolite	KEGG Compound	C02713	292,142	292,93
+GDP-6-deoxy-D-talose	Metabolite	KEGG Compound	C02977	1006,1429
+L-Fucose 1-phosphate	Metabolite	KEGG Compound	C02985	578,1463
+GDP-6-deoxy-D-mannose	Metabolite	KEGG Compound	C03117	1006,1384
+N-Glycoloyl-neuraminate	Metabolite	KEGG Compound	C03410	1210,376
+CDP-3,6-dideoxy-D-glucose	Metabolite	KEGG Compound	C03598	1015,1626
+CDP-3,6-dideoxy-D-mannose	Metabolite	KEGG Compound	C03599	1113,1626
+CMP-N-glycoloylneuraminate	Metabolite	KEGG Compound	C03691	1353,376
+UDP-alpha-D-galactofuranose	Metabolite	KEGG Compound	C03733	916,1113
+beta-L-Arabinose 1-phosphate	Metabolite	KEGG Compound	C03906	578,621
+1-Phospho-alpha-D-galacturonate	Metabolite	KEGG Compound	C04037	578,1225
+UDP-4-dehydro-6-deoxy-D-glucose	Metabolite	KEGG Compound	C04089	916,1001
+N-Acetyl-D-mannosamine 6-phosphate	Metabolite	KEGG Compound	C04257	924,257
+CDP-4-dehydro-3,6-dideoxy-D-glucose	Metabolite	KEGG Compound	C04297	917,1626
+N-Acetyl-alpha-D-glucosamine 1-phosphate	Metabolite	KEGG Compound	C04501	578,257
+UDP-N-acetyl-2-amino-2-deoxy-D-glucuronate	Metabolite	KEGG Compound	C04573	819,423
+UDP-2-acetamido-4-dehydro-2,6-dideoxyglucose	Metabolite	KEGG Compound	C04613	819,560
+UDP-2-acetamido-4-amino-2,4,6-trideoxy-alpha-D-glucose	Metabolite	KEGG Compound	C04630	917,560
+UDP-N-acetyl-3-(1-carboxyvinyl)-D-glucosamine	Metabolite	KEGG Compound	C04631	721,179
+beta-D-Fructose 6-phosphate	Metabolite	KEGG Compound	C05345	435,481
+D-Glucuronate 1-phosphate	Metabolite	KEGG Compound	C05385	578,889
+D-Glucosaminide	Metabolite	KEGG Compound	C06023	178,369
+alpha-D-Glucosamine 1-phosphate	Metabolite	KEGG Compound	C06156	578,369
+UDP-N-acetyl-D-mannosaminouronate	Metabolite	KEGG Compound	C06240	917,376
+N-Acetylneuraminate 9-phosphate	Metabolite	KEGG Compound	C06241	1066,257
+UDP-6-sulfoquinovose	Metabolite	KEGG Compound	C11521	916,1039
+UDP-N-acetyl-D-galactosaminuronic acid	Metabolite	KEGG Compound	C13952	917,479
+GDP-L-gulose	Metabolite	KEGG Compound	C15925	864,1265
+UDP-L-Ara4N	Metabolite	KEGG Compound	C16153	1027,889
+UDP-L-Ara4FN	Metabolite	KEGG Compound	C16154	1138,889
+UDP-L-Ara4O	Metabolite	KEGG Compound	C16155	916,889
+Undecaprenyl phosphate alpha-L-Ara4FN	Metabolite	KEGG Compound	C16156	1249,889
+Undecaprenyl phosphate alpha-L-Ara4N	Metabolite	KEGG Compound	C16157	1360,889
+N-Acetylmuramic acid 6-phosphate	Metabolite	KEGG Compound	C16698	435,142
+CDP-4-dehydro-3,6-dideoxy-D-glucose epimer	Metabolite	KEGG Compound	C17326	1015,1536
+CDP-ascarylose	Metabolite	KEGG Compound	C17327	1113,1536
+UDP-4-keto-rhamnose	Metabolite	KEGG Compound	C17328	1027,1001
+UDP-L-arabinofuranose	Metabolite	KEGG Compound	C18094	916,621
+UDP-2,3-diacetamido-2,3-dideoxy-alpha-D-glucuronate	Metabolite	KEGG Compound	C19725	1210,423
+UDP-2,3-diacetamido-2,3-dideoxy-alpha-D-mannuronate	Metabolite	KEGG Compound	C19745	1305,423
+UDP-2-acetamido-2,6-dideoxy-beta-L-arabino-hexos-4-ulose	Metabolite	KEGG Compound	C19823	819,512
+UDP-4-amino-4,6-dideoxy-N-acetyl-beta-L-altrosamine	Metabolite	KEGG Compound	C19961	917,512
+UDP-2,4-bis(acetamido)-2,4,6-trideoxy-beta-L-altropyranose	Metabolite	KEGG Compound	C19971	1015,512
+2,4-Bis(acetamido)-2,4,6-trideoxy-beta-L-altropyranose	Metabolite	KEGG Compound	C19972	1113,512
+Pseudaminic acid	Metabolite	KEGG Compound	C20082	1210,512
+CMP-pseudaminic acid	Metabolite	KEGG Compound	C20083	1353,512
+UDP-N,N'-diacetylbacillosamine	Metabolite	KEGG Compound	C20357	1015,560
+UDP-2-acetamido-3-amino-2,3-dideoxy-alpha-D-glucuronate	Metabolite	KEGG Compound	C20359	1113,423
+UDP-2-acetamido-2-deoxy-alpha-D-ribo-hex-3-uluronate	Metabolite	KEGG Compound	C20395	1015,423
+N,N'-Diacetyllegionaminate	Metabolite	KEGG Compound	C20418	1210,560
+CMP-N,N'-diacetyllegionaminate	Metabolite	KEGG Compound	C20419	1353,560
+2,4-Diacetamido-2,4,6-trideoxy-D-mannopyranose	Metabolite	KEGG Compound	C20424	1113,560
+GDP-4-amino-4,6-dideoxy-alpha-D-mannose	Metabolite	KEGG Compound	C20638	1006,1474
+GDP-4-acetamido-4,6-dideoxy-alpha-D-mannose	Metabolite	KEGG Compound	C20672	1103,1474
+N-Acetylmuramic acid alpha-1-phosphate	Metabolite	KEGG Compound	C21027	579,93

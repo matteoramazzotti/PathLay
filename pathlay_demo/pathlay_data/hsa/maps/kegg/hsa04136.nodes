@@ -1,0 +1,37 @@
+TEXT	TYPE	DB	ID	X	Y
+Autophagy - other	hsa	KEGG	hsa04136
+ATG7	GeneProduct	Entrez Gene	10533	187,619
+GABARAP	GeneProduct	Entrez Gene	11337	529,693	73,694
+GABARAPL2	GeneProduct	Entrez Gene	11345	529,693	73,694
+ATG4A	GeneProduct	Entrez Gene	115201	116,742
+ATG2A	GeneProduct	Entrez Gene	23130	584,230
+ATG4B	GeneProduct	Entrez Gene	23192	116,742
+GABARAPL1	GeneProduct	Entrez Gene	23710	529,693	73,694
+MTOR	GeneProduct	Entrez Gene	2475	238,129
+WIPI2	GeneProduct	Entrez Gene	26100	643,230
+ATG9B	GeneProduct	Entrez Gene	285973	614,198
+PIK3R4	GeneProduct	Entrez Gene	30849	415,356
+IGBP1	GeneProduct	Entrez Gene	3476	238,212
+BECN2	GeneProduct	Entrez Gene	441925	415,325
+PIK3C3	GeneProduct	Entrez Gene	5289	475,340
+ATG16L1	GeneProduct	Entrez Gene	55054	635,549	442,586
+WIPI1	GeneProduct	Entrez Gene	55062	643,230
+ATG2B	GeneProduct	Entrez Gene	55102	584,230
+PPP2CA	GeneProduct	Entrez Gene	5515	238,251
+PPP2CB	GeneProduct	Entrez Gene	5516	238,251
+RPTOR	GeneProduct	Entrez Gene	57521	213,103
+ATG101	GeneProduct	Entrez Gene	60673	452,136
+MLST8	GeneProduct	Entrez Gene	64223	264,155
+ATG3	GeneProduct	Entrez Gene	64422	305,639
+ATG9A	GeneProduct	Entrez Gene	79065	614,198
+ATG10	GeneProduct	Entrez Gene	83734	248,597
+ATG4C	GeneProduct	Entrez Gene	84938	116,742
+ATG4D	GeneProduct	Entrez Gene	84971	116,742
+BECN1	GeneProduct	Entrez Gene	8678	415,325
+ATG12	GeneProduct	Entrez Gene	9140	75,549	388,558	544,549
+ATG5	GeneProduct	Entrez Gene	9474	388,541	590,549	301,586
+ULK2	GeneProduct	Entrez Gene	9706	394,102
+ATG13	GeneProduct	Entrez Gene	9776	394,164
+Phosphatidylethanolamine	Metabolite	KEGG Compound	C00350	358,716	570,693
+1-Phosphatidyl-D-myo-inositol	Metabolite	KEGG Compound	C01194	435,423
+1-Phosphatidyl-1D-myo-inositol 3-phosphate	Metabolite	KEGG Compound	C04549	520,423

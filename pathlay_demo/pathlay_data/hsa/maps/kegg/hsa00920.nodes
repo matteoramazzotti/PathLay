@@ -1,0 +1,45 @@
+TEXT	TYPE	DB	ID	X	Y
+Sulfur metabolism	hsa	KEGG	hsa00920
+BPNT1	GeneProduct	Entrez Gene	10380	156,464
+ETHE1	GeneProduct	Entrez Gene	23474	453,424
+MPST	GeneProduct	Entrez Gene	4357	439,239
+BPNT2	GeneProduct	Entrez Gene	54928	156,464
+SQOR	GeneProduct	Entrez Gene	58472	639,424
+SUOX	GeneProduct	Entrez Gene	6821	183,297
+TST	GeneProduct	Entrez Gene	7263	439,239
+SELENBP1	GeneProduct	Entrez Gene	8991	721,459
+PAPSS2	GeneProduct	Entrez Gene	9060	80,464	55,353	394,754	288,746
+PAPSS1	GeneProduct	Entrez Gene	9061	80,464	55,353	394,754	288,746
+Acetate	Metabolite	KEGG Compound	C00033	862,227
+Succinate	Metabolite	KEGG Compound	C00042	902,500
+3'-Phosphoadenylyl sulfate	Metabolite	KEGG Compound	C00053	80,515	453,764
+Adenosine 3',5'-bisphosphate	Metabolite	KEGG Compound	C00054	80,592
+Sulfate	Metabolite	KEGG Compound	C00059	80,297	80,145	233,764	233,835	233,912
+L-Serine	Metabolite	KEGG Compound	C00065	786,182
+Acetaldehyde	Metabolite	KEGG Compound	C00084	674,454
+Sulfur	Metabolite	KEGG Compound	C00087	521,393
+Sulfite	Metabolite	KEGG Compound	C00094	374,297	563,764	563,835
+L-Cysteine	Metabolite	KEGG Compound	C00097	889,297
+L-Homocysteine	Metabolite	KEGG Compound	C00155	937,430
+Adenylyl sulfate	Metabolite	KEGG Compound	C00224	80,415	343,764	343,835
+Taurine	Metabolite	KEGG Compound	C00245	225,221	225,145
+L-Homoserine	Metabolite	KEGG Compound	C00263	826,555
+Hydrogen sulfide	Metabolite	KEGG Compound	C00283	721,297	783,835	783,764
+Thiosulfate	Metabolite	KEGG Compound	C00320	481,193	673,912
+Methanethiol	Metabolite	KEGG Compound	C00409	721,516
+Dimethyl sulfide	Metabolite	KEGG Compound	C00580	721,610
+O-Acetyl-L-serine	Metabolite	KEGG Compound	C00979	786,255
+O-Succinyl-L-homoserine	Metabolite	KEGG Compound	C01118	826,472
+Trithionate	Metabolite	KEGG Compound	C01861	374,193
+Tetrathionate	Metabolite	KEGG Compound	C02084	372,137
+2-(Methylthio)ethanesulfonate	Metabolite	KEGG Compound	C03920	598,516
+S,S-Dimethyl-beta-propiothetin	Metabolite	KEGG Compound	C04022	555,568
+3-(Methylthio)propanoate	Metabolite	KEGG Compound	C08276	433,568
+Dimethyl sulfone	Metabolite	KEGG Compound	C11142	374,610
+Dimethyl sulfoxide	Metabolite	KEGG Compound	C11143	555,610
+Methanesulfonic acid	Metabolite	KEGG Compound	C11145	374,487
+Alkanesulfonate	Metabolite	KEGG Compound	C15521	304,221	304,145
+S-Sulfanylglutathione	Metabolite	KEGG Compound	C17267	521,423
+Polysulfide	Metabolite	KEGG Compound	C19692	697,330	576,330
+3-(Methylthio)propanoyl-CoA	Metabolite	KEGG Compound	C20870	433,482
+3-(Methylthio)acryloyl-CoA	Metabolite	KEGG Compound	C20955	555,482

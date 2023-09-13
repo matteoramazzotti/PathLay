@@ -1,0 +1,52 @@
+TEXT	TYPE	DB	ID	X	Y
+Citrate cycle (TCA cycle)	hsa	KEGG	hsa00020
+CS	GeneProduct	Entrez Gene	1431	436,331
+DLAT	GeneProduct	Entrez Gene	1737	464,242
+DLD	GeneProduct	Entrez Gene	1738	467,623	529,285
+DLST	GeneProduct	Entrez Gene	1743	403,579
+FH	GeneProduct	Entrez Gene	2271	191,441
+IDH1	GeneProduct	Entrez Gene	3417	718,510	718,405
+IDH2	GeneProduct	Entrez Gene	3418	718,510	718,405
+IDH3A	GeneProduct	Entrez Gene	3419	766,463
+IDH3B	GeneProduct	Entrez Gene	3420	766,463
+IDH3G	GeneProduct	Entrez Gene	3421	766,463
+MDH1	GeneProduct	Entrez Gene	4190	253,349
+MDH2	GeneProduct	Entrez Gene	4191	253,349
+ACLY	GeneProduct	Entrez Gene	47	436,350
+ACO1	GeneProduct	Entrez Gene	48	670,350	571,350
+OGDH	GeneProduct	Entrez Gene	4967	661,579	530,580
+ACO2	GeneProduct	Entrez Gene	50	670,350	571,350
+PC	GeneProduct	Entrez Gene	5091	736,278
+PCK1	GeneProduct	Entrez Gene	5105	371,105
+PCK2	GeneProduct	Entrez Gene	5106	371,105
+PDHA1	GeneProduct	Entrez Gene	5160	686,241	582,241
+PDHA2	GeneProduct	Entrez Gene	5161	686,241	582,241
+PDHB	GeneProduct	Entrez Gene	5162	686,241	582,241
+OGDHL	GeneProduct	Entrez Gene	55753	661,579	530,580
+SDHA	GeneProduct	Entrez Gene	6389	215,535
+SDHB	GeneProduct	Entrez Gene	6390	215,535
+SDHC	GeneProduct	Entrez Gene	6391	215,535
+SDHD	GeneProduct	Entrez Gene	6392	215,535
+SUCLG2	GeneProduct	Entrez Gene	8801	260,579	260,560
+SUCLG1	GeneProduct	Entrez Gene	8802	260,579	260,560
+SUCLA2	GeneProduct	Entrez Gene	8803	260,579	260,560
+Pyruvate	Metabolite	KEGG Compound	C00022	737,241
+Acetyl-CoA	Metabolite	KEGG Compound	C00024	400,241
+2-Oxoglutarate	Metabolite	KEGG Compound	C00026	718,578
+Oxaloacetate	Metabolite	KEGG Compound	C00036	320,349
+Succinate	Metabolite	KEGG Compound	C00042	190,579
+Thiamin diphosphate	Metabolite	KEGG Compound	C00068	589,535	631,198
+Phosphoenolpyruvate	Metabolite	KEGG Compound	C00074	471,116
+Succinyl-CoA	Metabolite	KEGG Compound	C00091	334,579
+Fumarate	Metabolite	KEGG Compound	C00122	190,486
+(S)-Malate	Metabolite	KEGG Compound	C00149	190,398
+Citrate	Metabolite	KEGG Compound	C00158	522,349
+Isocitrate	Metabolite	KEGG Compound	C00311	718,349
+cis-Aconitate	Metabolite	KEGG Compound	C00417	621,349
+2-(alpha-Hydroxyethyl)thiamine diphosphate	Metabolite	KEGG Compound	C05125	631,241
+Oxalosuccinate	Metabolite	KEGG Compound	C05379	718,458
+3-Carboxy-1-hydroxypropyl-ThPP	Metabolite	KEGG Compound	C05381	593,578
+Enzyme N6-(lipoyl)lysine	Metabolite	KEGG Compound	C15972	522,622	580,284
+Enzyme N6-(dihydrolipoyl)lysine	Metabolite	KEGG Compound	C15973	408,622	478,284
+[Dihydrolipoyllysine-residue succinyltransferase] S-succinyldihydrolipoyllysine	Metabolite	KEGG Compound	C16254	462,578
+[Dihydrolipoyllysine-residue acetyltransferase] S-acetyldihydrolipoyllysine	Metabolite	KEGG Compound	C16255	517,241

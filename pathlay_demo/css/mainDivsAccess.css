@@ -1,0 +1,80 @@
+.setupAccessDiv {
+    display:none;
+}
+.thresholdSelectDiv {
+
+    float:left;
+}
+.thresholdInputDiv {
+    float:right;
+    display:none;
+}
+.thresholdInput {
+    float:right;
+    margin-left:10px;
+}
+
+#div_loader {
+    float:left;
+    width:49%;
+    height:30%;
+    margin-left:20px;
+    margin-bottom:20px;
+    text-align:left;
+    padding-left:20px;
+}
+#div_statistic {
+    padding-left:20px;
+    float:left;
+    margin-left:10px;
+}
+#configContainer {
+    padding-left:20px;
+    margin:5px;
+    margin-top:20px;
+    position:relative;
+
+}
+#div_filter_select {
+    float:right;
+    margin-left:1px;
+    margin-right:300px;
+}
+
+#accessReportDiv {
+    position:absolute;
+    width:200px;;
+    top:50%;
+    left:45%;
+    background-color: rgba(0, 102, 153, .8);
+    z-index:+5;
+    padding:20px;
+}
+#acceReportPreviewDiv {
+    overflow:scroll;
+    max-height:200px;
+    margin-top:20px;
+    margin-bottom:20px;
+    width:fit-content;
+}
+.reportDivSection {
+    overflow:scroll;
+    max-height:200px;
+}
+#accessReportFiltersDiv {
+    overflow:scroll;
+    max-height:200px;
+}
+#accessReportCloseButton {
+    float:right;
+    color:  rgba(0, 102, 153, .8);
+	cursor: pointer;
+	position: relative;
+	
+}
+.warningFont {
+    color:white;
+}
+body {
+    font-family: Arial, sans-serif;
+}

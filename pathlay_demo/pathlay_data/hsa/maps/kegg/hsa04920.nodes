@@ -1,0 +1,78 @@
+TEXT	TYPE	DB	ID	X	Y
+Adipocytokine signaling pathway	hsa	KEGG	hsa04920
+AKT3	GeneProduct	Entrez Gene	10000	557,247
+CAMKK2	GeneProduct	Entrez Gene	10645	225,811
+PPARGC1A	GeneProduct	Entrez Gene	10891	391,534
+CHUK	GeneProduct	Entrez Gene	1147	474,195
+CPT1C	GeneProduct	Entrez Gene	126129	711,811
+CPT1A	GeneProduct	Entrez Gene	1374	711,811
+CPT1B	GeneProduct	Entrez Gene	1375	711,811
+AGRP	GeneProduct	Entrez Gene	181	557,516
+AKT1	GeneProduct	Entrez Gene	207	557,247
+AKT2	GeneProduct	Entrez Gene	208	557,247
+ACSL1	GeneProduct	Entrez Gene	2180	796,213
+ACSL3	GeneProduct	Entrez Gene	2181	796,213
+ACSL4	GeneProduct	Entrez Gene	2182	796,213
+ACSBG1	GeneProduct	Entrez Gene	23205	796,213
+ACSL6	GeneProduct	Entrez Gene	23305	796,213
+MTOR	GeneProduct	Entrez Gene	2475	474,127
+G6PC1	GeneProduct	Entrez Gene	2538	416,690
+ACACB	GeneProduct	Entrez Gene	32	391,811
+IKBKB	GeneProduct	Entrez Gene	3551	474,195
+IRS1	GeneProduct	Entrez Gene	3667	555,221
+JAK2	GeneProduct	Entrez Gene	3717	225,482
+LEP	GeneProduct	Entrez Gene	3952	59,482
+LEPR	GeneProduct	Entrez Gene	3953	142,482
+NFKB1	GeneProduct	Entrez Gene	4790	391,247
+NFKBIA	GeneProduct	Entrez Gene	4792	474,247
+NFKBIB	GeneProduct	Entrez Gene	4793	474,247
+NFKBIE	GeneProduct	Entrez Gene	4794	474,247
+NPY	GeneProduct	Entrez Gene	4852	557,550
+PCK1	GeneProduct	Entrez Gene	5105	367,690
+PCK2	GeneProduct	Entrez Gene	5106	367,690
+ADIPOR1	GeneProduct	Entrez Gene	51094	142,811
+PRKAG2	GeneProduct	Entrez Gene	51422	474,516	308,811
+ACSL5	GeneProduct	Entrez Gene	51703	796,213
+PRKAG3	GeneProduct	Entrez Gene	53632	474,516	308,811
+POMC	GeneProduct	Entrez Gene	5443	557,482
+PPARA	GeneProduct	Entrez Gene	5465	308,742
+PRKAA1	GeneProduct	Entrez Gene	5562	474,516	308,811
+PRKAA2	GeneProduct	Entrez Gene	5563	474,516	308,811
+PRKAB1	GeneProduct	Entrez Gene	5564	474,516	308,811
+PRKAB2	GeneProduct	Entrez Gene	5565	474,516	308,811
+PRKAG1	GeneProduct	Entrez Gene	5571	474,516	308,811
+PRKCQ	GeneProduct	Entrez Gene	5588	557,161
+MAPK8	GeneProduct	Entrez Gene	5599	474,161
+MAPK9	GeneProduct	Entrez Gene	5601	474,161
+MAPK10	GeneProduct	Entrez Gene	5602	474,161
+PTPN11	GeneProduct	Entrez Gene	5781	225,534
+G6PC2	GeneProduct	Entrez Gene	57818	416,690
+RELA	GeneProduct	Entrez Gene	5970	391,247
+RXRA	GeneProduct	Entrez Gene	6256	308,759
+RXRB	GeneProduct	Entrez Gene	6257	308,759
+RXRG	GeneProduct	Entrez Gene	6258	308,759
+SLC2A1	GeneProduct	Entrez Gene	6513	391,845
+SLC2A4	GeneProduct	Entrez Gene	6517	391,845
+STAT3	GeneProduct	Entrez Gene	6774	308,482
+STK11	GeneProduct	Entrez Gene	6794	225,811
+TNF	GeneProduct	Entrez Gene	7124	59,161
+TNFRSF1A	GeneProduct	Entrez Gene	7132	142,144
+TNFRSF1B	GeneProduct	Entrez Gene	7133	142,178
+TRAF2	GeneProduct	Entrez Gene	7186	308,161
+ADIPOR2	GeneProduct	Entrez Gene	79602	142,811
+ACSBG2	GeneProduct	Entrez Gene	81616	796,213
+IRS4	GeneProduct	Entrez Gene	8471	555,221
+IKBKG	GeneProduct	Entrez Gene	8517	474,195
+IRS2	GeneProduct	Entrez Gene	8660	555,221
+TRADD	GeneProduct	Entrez Gene	8717	225,144
+SOCS3	GeneProduct	Entrez Gene	9021	391,351
+G6PC3	GeneProduct	Entrez Gene	92579	416,690
+ADIPOQ	GeneProduct	Entrez Gene	9370	59,811
+CD36	GeneProduct	Entrez Gene	948	796,161
+Acyl-CoA	Metabolite	KEGG Compound	C00040	711,212
+Malonyl-CoA	Metabolite	KEGG Compound	C00083	474,810
+Fatty acid	Metabolite	KEGG Compound	C00162	796,113
+Diacylglycerol	Metabolite	KEGG Compound	C00165	639,159
+N-Acylsphingosine	Metabolite	KEGG Compound	C00195	639,212
+Long-chain fatty acid	Metabolite	KEGG Compound	C00638	308,688
+9-cis-Retinoic acid	Metabolite	KEGG Compound	C15493	224,758

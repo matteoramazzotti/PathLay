@@ -1,0 +1,145 @@
+TEXT	TYPE	DB	ID	X	Y
+Drug metabolism - other enzymes	hsa	KEGG	hsa00983
+NAT2	GeneProduct	Entrez Gene	10	936,731	1080,849	958,839
+NME6	GeneProduct	Entrez Gene	10201	270,851	392,851
+CES1	GeneProduct	Entrez Gene	1066	122,546	915,238	877,189	864,768	1056,768
+UGT2B11	GeneProduct	Entrez Gene	10720	982,238
+UGT2A1	GeneProduct	Entrez Gene	10941	982,238
+GSTO2	GeneProduct	Entrez Gene	119391	1080,927
+UPP2	GeneProduct	Entrez Gene	151531	217,671
+CYP2A6	GeneProduct	Entrez Gene	1548	181,611
+CYP2A7	GeneProduct	Entrez Gene	1549	181,611
+CYP2E1	GeneProduct	Entrez Gene	1571	1032,890
+CYP3A4	GeneProduct	Entrez Gene	1576	818,238
+DPYD	GeneProduct	Entrez Gene	1806	319,611
+DPYS	GeneProduct	Entrez Gene	1807	414,611
+DUT	GeneProduct	Entrez Gene	1854	516,773
+TYMP	GeneProduct	Entrez Gene	1890	331,663	270,579
+GSTA5	GeneProduct	Entrez Gene	221357	1080,927
+GSTA1	GeneProduct	Entrez Gene	2938	1080,927
+GSTA2	GeneProduct	Entrez Gene	2939	1080,927
+GSTA3	GeneProduct	Entrez Gene	2940	1080,927
+GSTA4	GeneProduct	Entrez Gene	2941	1080,927
+GSTM1	GeneProduct	Entrez Gene	2944	1080,927
+GSTM2	GeneProduct	Entrez Gene	2946	1080,927
+GSTM3	GeneProduct	Entrez Gene	2947	1080,927
+GSTM4	GeneProduct	Entrez Gene	2948	1080,927
+GSTM5	GeneProduct	Entrez Gene	2949	1080,927
+GSTP1	GeneProduct	Entrez Gene	2950	1080,927
+GSTT1	GeneProduct	Entrez Gene	2952	1080,927
+GSTT2	GeneProduct	Entrez Gene	2953	1080,927
+GUSB	GeneProduct	Entrez Gene	2990	1035,238
+NME7	GeneProduct	Entrez Gene	29922	270,851	392,851
+HPRT1	GeneProduct	Entrez Gene	3251	238,188	238,271	503,313
+IMPDH1	GeneProduct	Entrez Gene	3614	354,272
+IMPDH2	GeneProduct	Entrez Gene	3615	354,272
+ITPA	GeneProduct	Entrez Gene	3704	332,353
+MGST1	GeneProduct	Entrez Gene	4257	1080,927
+MGST2	GeneProduct	Entrez Gene	4258	1080,927
+MGST3	GeneProduct	Entrez Gene	4259	1080,927
+MPO	GeneProduct	Entrez Gene	4353	860,633
+NME1	GeneProduct	Entrez Gene	4830	270,851	392,851
+NME2	GeneProduct	Entrez Gene	4831	270,851	392,851
+NME3	GeneProduct	Entrez Gene	4832	270,851	392,851
+NME4	GeneProduct	Entrez Gene	4833	270,851	392,851
+RRM2B	GeneProduct	Entrez Gene	50484	331,813
+CMPK1	GeneProduct	Entrez Gene	51727	270,773	392,773
+UPB1	GeneProduct	Entrez Gene	51733	515,611
+UGT2B28	GeneProduct	Entrez Gene	54490	982,238
+UGT1A10	GeneProduct	Entrez Gene	54575	982,238
+UGT1A8	GeneProduct	Entrez Gene	54576	982,238
+UGT1A7	GeneProduct	Entrez Gene	54577	982,238
+UGT1A6	GeneProduct	Entrez Gene	54578	982,238
+UGT1A5	GeneProduct	Entrez Gene	54579	982,238
+UGT1A9	GeneProduct	Entrez Gene	54600	982,238
+UGT1A4	GeneProduct	Entrez Gene	54657	982,238
+UGT1A1	GeneProduct	Entrez Gene	54658	982,238
+UGT1A3	GeneProduct	Entrez Gene	54659	982,238
+UCKL1	GeneProduct	Entrez Gene	54963	217,737
+UGT2A2	GeneProduct	Entrez Gene	574537	982,238
+RRM1	GeneProduct	Entrez Gene	6240	331,813
+RRM2	GeneProduct	Entrez Gene	6241	331,813
+GSTT2B	GeneProduct	Entrez Gene	653689	1080,927
+NME1-NME2	GeneProduct	Entrez Gene	654364	270,851	392,851
+TK1	GeneProduct	Entrez Gene	7083	392,697
+TK2	GeneProduct	Entrez Gene	7084	392,697
+TPMT	GeneProduct	Entrez Gene	7172	182,233	296,233	503,232
+UGT2B4	GeneProduct	Entrez Gene	7363	982,238
+UGT2B7	GeneProduct	Entrez Gene	7364	982,238
+UGT2B10	GeneProduct	Entrez Gene	7365	982,238
+UGT2B15	GeneProduct	Entrez Gene	7366	982,238
+UGT2B17	GeneProduct	Entrez Gene	7367	982,238
+UCK2	GeneProduct	Entrez Gene	7371	217,737
+UMPS	GeneProduct	Entrez Gene	7372	270,697
+UPP1	GeneProduct	Entrez Gene	7378	217,671
+XDH	GeneProduct	Entrez Gene	7498	182,322
+UGT2A3	GeneProduct	Entrez Gene	79799	982,238
+UCK1	GeneProduct	Entrez Gene	83549	217,737
+CES2	GeneProduct	Entrez Gene	8824	122,546	915,238	877,189
+GMPS	GeneProduct	Entrez Gene	8833	452,272
+NAT1	GeneProduct	Entrez Gene	9	936,731	1080,849	958,839
+GSTO1	GeneProduct	Entrez Gene	9446	1080,927
+CDA	GeneProduct	Entrez Gene	978	217,546
+NAD+	Metabolite	KEGG Compound	C00003	945,627
+NADP+	Metabolite	KEGG Compound	C00006	945,523
+R-S-Glutathione	Metabolite	KEGG Compound	C02320	1132,926
+6-Mercaptopurine	Metabolite	KEGG Compound	C02380	181,271
+5-Fluorodeoxyuridine monophosphate	Metabolite	KEGG Compound	C04242	391,735
+6-Thioinosine-5'-monophosphate	Metabolite	KEGG Compound	C04646	295,272
+Hydrazine	Metabolite	KEGG Compound	C05361	839,847
+Fluoroacetate	Metabolite	KEGG Compound	C06108	572,684
+Azathioprine	Metabolite	KEGG Compound	C06837	94,271
+Isoniazid	Metabolite	KEGG Compound	C07054	839,730
+Isonicotinic acid	Metabolite	KEGG Compound	C07446	985,787
+Acetylhydrazine	Metabolite	KEGG Compound	C07447	1031,847
+N-Acetylisoniazid	Metabolite	KEGG Compound	C07585	1031,731
+Thioguanine	Metabolite	KEGG Compound	C07648	502,348
+5-FU	Metabolite	KEGG Compound	C07649	269,662
+SN-38	Metabolite	KEGG Compound	C11173	981,190
+SN38 glucuronide	Metabolite	KEGG Compound	C11376	981,304
+5-Fluorodeoxyuridine	Metabolite	KEGG Compound	C11736	391,662
+Capecitabine	Metabolite	KEGG Compound	C12650	78,545
+Tegafur	Metabolite	KEGG Compound	C12673	103,610
+5'-Deoxy-5-fluorouridine	Metabolite	KEGG Compound	C12739	269,546
+Carmofur	Metabolite	KEGG Compound	C13252	103,658
+APC	Metabolite	KEGG Compound	C16542	807,304
+NPC	Metabolite	KEGG Compound	C16543	825,304
+6-Thiourate	Metabolite	KEGG Compound	C16613	181,361
+6-Methylmercaptopurine	Metabolite	KEGG Compound	C16614	181,187
+6-Methylthiopurine 5'-monophosphate ribonucleotide	Metabolite	KEGG Compound	C16615	295,187
+6-Mercaptopurine ribonucleoside 5'-diphosphate	Metabolite	KEGG Compound	C16616	295,351
+6-Mercaptopurine ribonucleoside triphosphate	Metabolite	KEGG Compound	C16617	295,432
+6-Thioxanthine 5'-monophosphate	Metabolite	KEGG Compound	C16618	408,271
+6-Thioguanosine monophosphate	Metabolite	KEGG Compound	C16619	502,271
+6-Methylthioguanosine monophosphate	Metabolite	KEGG Compound	C16620	502,184
+1-Methyl-4-nitroimidazole	Metabolite	KEGG Compound	C16621	128,331
+N,N'-Diacetylhydrazine	Metabolite	KEGG Compound	C16622	1132,847
+Isonicotinylglycine	Metabolite	KEGG Compound	C16623	1132,791
+Isoniazid pyruvate	Metabolite	KEGG Compound	C16624	913,688
+Isoniazid alpha-ketoglutaric acid	Metabolite	KEGG Compound	C16625	913,655
+5,6-Dihydro-5-fluorouracil	Metabolite	KEGG Compound	C16630	370,610
+alpha-Fluoro-beta-ureidopropionic acid	Metabolite	KEGG Compound	C16631	471,610
+alpha-Fluoro-beta-alanine	Metabolite	KEGG Compound	C16632	572,610
+5-Fluorouridine	Metabolite	KEGG Compound	C16633	167,667
+5-Fluorouridine monophosphate	Metabolite	KEGG Compound	C16634	269,735
+5'-Deoxy-5-fluorocytidine	Metabolite	KEGG Compound	C16635	173,545
+Irinotecan	Metabolite	KEGG Compound	C16641	817,189
+5-Fluorouridine diphosphate	Metabolite	KEGG Compound	C21748	269,812
+5-Fluorouridine triphosphate	Metabolite	KEGG Compound	C21749	269,889
+5-Fluorodeoxyuridine diphosphate	Metabolite	KEGG Compound	C21750	391,812
+5-Fluorodeoxyuridine triphosphate	Metabolite	KEGG Compound	C21751	391,889
+Isonicotinoyl radical	Metabolite	KEGG Compound	C21754	835,597
+Hepatotoxins	Metabolite	KEGG Compound	C21758	1031,926
+Isonicotinoyl-NAD adduct	Metabolite	KEGG Compound	C21759	1031,597
+Isonicotinoyl-NADP adduct	Metabolite	KEGG Compound	C21760	1031,554
+	Metabolite	KEGG Compound	dr:D00238	94,271
+	Metabolite	KEGG Compound	dr:D00346	839,730
+	Metabolite	KEGG Compound	dr:D00584	269,662
+	Metabolite	KEGG Compound	dr:D01223	78,545
+	Metabolite	KEGG Compound	dr:D01244	103,610
+	Metabolite	KEGG Compound	dr:D01309	269,546
+	Metabolite	KEGG Compound	dr:D01784	103,658
+	Metabolite	KEGG Compound	dr:D04197	391,662
+	Metabolite	KEGG Compound	dr:D04931	181,271
+	Metabolite	KEGG Compound	dr:D08086	817,189
+	Metabolite	KEGG Compound	dr:D08603	502,348

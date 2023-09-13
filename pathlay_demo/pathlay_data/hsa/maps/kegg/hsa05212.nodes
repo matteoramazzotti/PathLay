@@ -1,0 +1,80 @@
+TEXT	TYPE	DB	ID	X	Y
+Pancreatic cancer	hsa	KEGG	hsa05212
+AKT3	GeneProduct	Entrez Gene	10000	514,197	482,470
+CDK4	GeneProduct	Entrez Gene	1019	910,597
+CDK6	GeneProduct	Entrez Gene	1021	910,597
+CDKN1A	GeneProduct	Entrez Gene	1026	1027,696
+CDKN2A	GeneProduct	Entrez Gene	1029	847,576
+GADD45G	GeneProduct	Entrez Gene	10912	1079,696
+RALBP1	GeneProduct	Entrez Gene	10928	600,360
+CHUK	GeneProduct	Entrez Gene	1147	617,159
+DDB2	GeneProduct	Entrez Gene	1643	1027,740
+GADD45A	GeneProduct	Entrez Gene	1647	1079,696
+E2F1	GeneProduct	Entrez Gene	1869	994,645
+E2F2	GeneProduct	Entrez Gene	1870	994,645
+E2F3	GeneProduct	Entrez Gene	1871	994,645
+EGF	GeneProduct	Entrez Gene	1950	195,499
+EGFR	GeneProduct	Entrez Gene	1956	276,486
+ERBB2	GeneProduct	Entrez Gene	2064	276,503
+AKT1	GeneProduct	Entrez Gene	207	514,197	482,470
+AKT2	GeneProduct	Entrez Gene	208	514,197	482,470
+MTOR	GeneProduct	Entrez Gene	2475	566,439
+IKBKB	GeneProduct	Entrez Gene	3551	617,159
+ARAF	GeneProduct	Entrez Gene	369	495,282
+JAK1	GeneProduct	Entrez Gene	3716	351,513
+KRAS	GeneProduct	Entrez Gene	3845	357,281
+SMAD2	GeneProduct	Entrez Gene	4087	427,803
+SMAD3	GeneProduct	Entrez Gene	4088	427,803
+SMAD4	GeneProduct	Entrez Gene	4089	427,836
+GADD45B	GeneProduct	Entrez Gene	4616	1079,696
+NFKB1	GeneProduct	Entrez Gene	4790	716,150	566,494
+POLK	GeneProduct	Entrez Gene	51426	1079,740
+PIK3CA	GeneProduct	Entrez Gene	5290	411,235	351,470
+PIK3CB	GeneProduct	Entrez Gene	5291	411,235	351,470
+PIK3CD	GeneProduct	Entrez Gene	5293	411,235	351,470
+PIK3R1	GeneProduct	Entrez Gene	5295	411,235	351,470
+PIK3R2	GeneProduct	Entrez Gene	5296	411,235	351,470
+PLD1	GeneProduct	Entrez Gene	5337	598,388
+PLD2	GeneProduct	Entrez Gene	5338	598,388
+MAPK1	GeneProduct	Entrez Gene	5594	718,283
+MAPK3	GeneProduct	Entrez Gene	5595	718,283
+MAPK8	GeneProduct	Entrez Gene	5599	718,314
+MAPK9	GeneProduct	Entrez Gene	5601	718,314
+MAPK10	GeneProduct	Entrez Gene	5602	718,314
+MAP2K1	GeneProduct	Entrez Gene	5604	609,282
+BAD	GeneProduct	Entrez Gene	572	593,197
+BAK1	GeneProduct	Entrez Gene	578	1079,718
+BAX	GeneProduct	Entrez Gene	581	1027,718
+RAC1	GeneProduct	Entrez Gene	5879	617,123	684,360
+RAC2	GeneProduct	Entrez Gene	5880	617,123	684,360
+RAC3	GeneProduct	Entrez Gene	5881	617,123	684,360
+RAD51	GeneProduct	Entrez Gene	5888	899,844
+RAF1	GeneProduct	Entrez Gene	5894	495,282
+RALA	GeneProduct	Entrez Gene	5898	521,360
+RALB	GeneProduct	Entrez Gene	5899	521,360
+RALGDS	GeneProduct	Entrez Gene	5900	444,360
+RB1	GeneProduct	Entrez Gene	5925	994,607
+CCND1	GeneProduct	Entrez Gene	595	910,614
+RELA	GeneProduct	Entrez Gene	5970	716,150	566,494
+BCL2L1	GeneProduct	Entrez Gene	598	671,197	566,466
+RPS6KB1	GeneProduct	Entrez Gene	6198	642,439
+RPS6KB2	GeneProduct	Entrez Gene	6199	642,439
+BRAF	GeneProduct	Entrez Gene	673	495,282
+BRCA2	GeneProduct	Entrez Gene	675	899,827
+STAT1	GeneProduct	Entrez Gene	6772	482,543
+STAT3	GeneProduct	Entrez Gene	6774	482,520
+TGFA	GeneProduct	Entrez Gene	7039	195,476
+TGFB1	GeneProduct	Entrez Gene	7040	194,803
+TGFB2	GeneProduct	Entrez Gene	7042	194,803
+TGFB3	GeneProduct	Entrez Gene	7043	194,803
+TGFBR1	GeneProduct	Entrez Gene	7046	276,793
+TGFBR2	GeneProduct	Entrez Gene	7048	276,810
+TP53	GeneProduct	Entrez Gene	7157	897,716
+VEGFA	GeneProduct	Entrez Gene	7422	983,531
+CASP9	GeneProduct	Entrez Gene	842	604,238
+PIK3R3	GeneProduct	Entrez Gene	8503	411,235	351,470
+IKBKG	GeneProduct	Entrez Gene	8517	617,159
+ARHGEF6	GeneProduct	Entrez Gene	9459	514,134
+CDC42	GeneProduct	Entrez Gene	998	684,360
+Phosphatidate	Metabolite	KEGG Compound	C00416	664,388
+Phosphatidylinositol-3,4,5-trisphosphate	Metabolite	KEGG Compound	C05981	443,195	414,468

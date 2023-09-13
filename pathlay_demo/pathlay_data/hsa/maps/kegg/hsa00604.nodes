@@ -1,0 +1,48 @@
+TEXT	TYPE	DB	ID	X	Y
+Glycosphingolipid biosynthesis - ganglio series	hsa	KEGG	hsa00604
+ST6GALNAC3	GeneProduct	Entrez Gene	256435	129,494	357.5,767.5
+B4GALNT1	GeneProduct	Entrez Gene	2583	698,224	214,224	353,224	536,224	430,801
+ST6GALNAC4	GeneProduct	Entrez Gene	27090	177,494	357.5,767.5
+GLB1	GeneProduct	Entrez Gene	2720	398,351
+ST8SIA5	GeneProduct	Entrez Gene	29906	614,183	536,560	214,560	376,560	220,787	254,858
+HEXA	GeneProduct	Entrez Gene	3073	398,245
+HEXB	GeneProduct	Entrez Gene	3074	398,245
+ST6GALNAC6	GeneProduct	Entrez Gene	30815	485,560	325,560	177,515	357.5,767.5
+ST3GAL1	GeneProduct	Entrez Gene	6482	536,447	376,447	214,447	305.5,794.5
+ST3GAL2	GeneProduct	Entrez Gene	6483	536,447	376,447	214,447	305.5,794.5
+ST8SIA1	GeneProduct	Entrez Gene	6489	614,162	448,171	254,858	347,858
+ST6GALNAC5	GeneProduct	Entrez Gene	81849	129,515	357.5,767.5
+B3GALT4	GeneProduct	Entrez Gene	8705	698,331	536,331	214,331	353,331	356.5,797.5
+ST3GAL5	GeneProduct	Entrez Gene	8869	287,171	429,840
+SLC33A1	GeneProduct	Entrez Gene	9197	698,148	536,148
+	Metabolite	KEGG Compound	gl:G00092	214,172
+	Metabolite	KEGG Compound	gl:G00108	375,172
+	Metabolite	KEGG Compound	gl:G00109	375,283
+	Metabolite	KEGG Compound	gl:G00110	375,394
+	Metabolite	KEGG Compound	gl:G00111	375,504
+	Metabolite	KEGG Compound	gl:G00112	375,616
+	Metabolite	KEGG Compound	gl:G00113	537,172
+	Metabolite	KEGG Compound	gl:G00114	537,283
+	Metabolite	KEGG Compound	gl:G00115	537,394
+	Metabolite	KEGG Compound	gl:G00116	537,504
+	Metabolite	KEGG Compound	gl:G00117	537,616
+	Metabolite	KEGG Compound	gl:G00118	698,172
+	Metabolite	KEGG Compound	gl:G00119	698,283
+	Metabolite	KEGG Compound	gl:G00120	698,394
+	Metabolite	KEGG Compound	gl:G00121	698,504
+	Metabolite	KEGG Compound	gl:G00122	698,616
+	Metabolite	KEGG Compound	gl:G00123	214,283
+	Metabolite	KEGG Compound	gl:G00124	214,394
+	Metabolite	KEGG Compound	gl:G00125	214,504
+	Metabolite	KEGG Compound	gl:G00126	214,616
+	Metabolite	KEGG Compound	gl:G00127	83,504
+	Metabolite	KEGG Compound	gl:G00128	83,646
+	Metabolite	KEGG Compound	gl:G00129	83,703
+	Metabolite	KEGG Compound	gl:G00130	83,283
+	Metabolite	KEGG Compound	gl:G00131	83,338
+	Metabolite	KEGG Compound	gl:G00132	83,394
+	Metabolite	KEGG Compound	gl:G00166	461,394
+	Metabolite	KEGG Compound	gl:G00167	301,504
+	Metabolite	KEGG Compound	gl:G00168	461,504
+	Metabolite	KEGG Compound	gl:G00169	537,116
+	Metabolite	KEGG Compound	gl:G00170	698,116
