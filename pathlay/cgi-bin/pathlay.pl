@@ -351,11 +351,7 @@ foreach my $map (sort(@maps)) {
     print STDERR Dumper $pathway;
 >>>>>>> dev
 >>>>>>> main
-<<<<<<< HEAD
     #print STDERR Dumper $pathway;
-=======
-    print STDERR Dumper $pathway;
->>>>>>> dev
     $pathway -> NodesInit();
 
     $pathway -> LoadComplexes(
