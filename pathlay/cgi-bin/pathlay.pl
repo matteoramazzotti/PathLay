@@ -140,6 +140,7 @@ $DBs -> {meta} -> metaDBLoader();
 #load exp data
 foreach my $dataType (@dataTypes) {
     if ($parameters -> {"_enable${dataType}"}) {
+
         $expPackages -> {$dataType} -> ExpLoaderFromBuffer(
             _buffer => $parameters -> {"_${dataType}_data"},
             _id_column => $parameters -> {"_${dataType}_id_column"},
@@ -150,25 +151,27 @@ foreach my $dataType (@dataTypes) {
             _pValCheck => $parameters -> {"_${dataType}pValCheck"}
         );
         
+        
         $expPackages -> {$dataType} -> checkIdOnly(
             _idOnlyCheck => $parameters -> {"_${dataType}IdOnlyCheck"}
         );
         $expPackages -> {$dataType} -> Collapse();
 
         if ($parameters -> {"_${dataType}IdType"} ne $validIdTypes -> {$dataType}) {
+            
             $expPackages -> {$dataType} -> checkIdForConversion(
                 _DB => $DBs -> {$dataType},
                 _idType => $parameters -> {"_${dataType}IdType"}
             );
         }
-
+        
         if ($parameters -> {"_${dataType}pValCheck"}) {
             $expPackages -> {$dataType} -> filterBypVal(
                 _pValThreshold => $parameters -> {"_${dataType}pValThreshold"},
                 _IdOnlyCheck => $parameters -> {"_${dataType}IdOnlyCheck"}
             );
         }
-        if ($parameters -> {"_${dataType}LeftEffectSizeCheck"} == 1 || $parameters -> {"_${dataType}LeftEffectSizeCheck"} == 1) {
+        if ($parameters -> {"_${dataType}LeftEffectSizeCheck"} == 1 || $parameters -> {"_${dataType}RightEffectSizeCheck"} == 1) {
             $expPackages -> {$dataType} -> filterByEffectSize(
                 _LeftThreshold => $parameters -> {"_${dataType}LeftThreshold"},
                 _RightThreshold => $parameters -> {"_${dataType}RightThreshold"},
@@ -180,8 +183,8 @@ foreach my $dataType (@dataTypes) {
         
     }
 }
-
-
+#print STDERR Dumper $expPackages -> {gene};
+#die;
 $DBs -> {urna} -> DBLoader(
     ExpuRNAs => $expPackages -> {urna}
 );
@@ -257,9 +260,10 @@ $interfaces -> {ont} -> integrateAll(
 );
 
 #statistic steps
+
+
 my %needed_maps;
 if ($parameters -> {_statistic_select} eq "FET") {
-
 
     my @typesForStat = map{ if ($enabledForStat -> {$_}) {$_} else {} } (keys(%$enabledForStat));
 
@@ -322,12 +326,11 @@ my @map_names;
 
 my %nums_for_selector;
 
-#$exp_genes -> ExpPrinter();
-
 print STDERR  "Maps to be processed: ".(scalar @maps)."\n";
 
 foreach my $map (sort(@maps)) {
 
+    # next if ($map !~ "hsa04933");
     my ($map_name,$mapin) = split(/_/,$map);
     my $mapinfile = $mapin;
     $mapinfile .= ".nodes";
@@ -348,23 +351,19 @@ foreach my $map (sort(@maps)) {
         ExpMetas  => $expPackages -> {meta}
     );
     #here proteins should be merged with genes
-    print STDERR Dumper $pathway;
->>>>>>> dev
->>>>>>> main
     #print STDERR Dumper $pathway;
     $pathway -> NodesInit();
 
     $pathway -> LoadComplexes(
         Parameters => $parameters
     );
-
     next if (
         scalar  @{$pathway -> {_complexes} -> {deg}} < 1 &&
         scalar  @{$pathway -> {_complexes} -> {nodeg}} < 1 &&
         scalar  @{$pathway -> {_complexes} -> {meta}} < 1 &&
-        scalar @{$pathway -> {_complexes} -> {prot}} < 1
+        scalar @{$pathway -> {_complexes} -> {prot}} < 1 &&
+        scalar @{$pathway -> {_complexes} -> {multi}} < 1
     );
-
 
     my $map_div = new MapDiv(
         _id => $mapin,
