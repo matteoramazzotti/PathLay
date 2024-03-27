@@ -5,6 +5,56 @@ use lib "$FindBin::Bin/../";
 use HTMLObjects;
 use GeneralFrontEnd;
 
+our $accessTitles = {
+    "maps_db_select" => "Select Maps Database",
+    "statistic_select" => "Select Statistic Procedure to enable",
+    "FETPooling" => "Apply FET on a single list of Gene IDs obtained from merging DE and Non DE genes",
+    "FETIntersect" => "Intersect Map Lists obtained from FET instead of joining them",
+    "enablegene" => "Plot Gene Indicators on Maps",
+    "enableprot" => "Plot Protein Indicators on Maps",
+    "enablemeth" => "Plot Methylation Indicators on Maps",
+    "enablechroma" => "Plot Chromatin Indicators on Maps",
+    "enableurna" => "Plot miRNA Indicators on Maps",
+    "enablemeta" => "Plot Metabolite Indicators on Maps",  
+};
+
+my @dataTypes = (
+    "gene",
+    "prot",
+    "urna",
+    "meth",
+    "chroma",
+    "meta"
+);
+
+my $prettyTypes = {
+    "gene" => "Gene",
+    "prot" => "Protein",
+    "urna" => "miRNA",
+    "meth" => "Methylation",
+    "chroma" => "Chromatin Status",
+    "meta" => "Metabolite"
+};
+
+
+sub prepareAccessTitles {
+
+    foreach my $dataType (@dataTypes) {
+
+        my $currentPretty = $prettyTypes -> {$dataType};
+
+        $accessTitles -> {"${dataType}LeftEffectSizeCheck"} = "Enable Left Threshold (<) for ES filtering on ${currentPretty}. Only ES values that are minor than the threshold are considered valid.";
+        $accessTitles -> {"${dataType}RightEffectSizeCheck"} = "Enable Right Threshold (>) for ES filtering on ${currentPretty}. Only ES values that are greater than the threshold are considered valid.";
+        $accessTitles -> {"${dataType}pValCheck"} = "Enable p-value filtering for ${currentPretty}. Only p-values that are minor than the threshold are considered valid."; 
+        $accessTitles -> {"${dataType}FETEnabled"} = "Enable statistic procedure for ${currentPretty}.";
+        $accessTitles -> {"${dataType}IdOnlyCheck"} = "Keep ${currentPretty} IDs without ES values.";
+        $accessTitles -> {"enabletfs_${dataType}"} = "";
+        $accessTitles -> {"nodeg_select_tf_${dataType}"} = "";
+        $accessTitles -> {"enabletfsIdOnly_${dataType}"} = "";
+        $accessTitles -> {"tfsNoDEFromIdOnlyCheck_${dataType}"} = "";
+    }
+}
+
 sub AccessBuilder {
 
     my %args = (
@@ -1438,7 +1488,8 @@ sub div_statistic_access_Packager {
     my $maps_db_select = new HTMLSelect(
         _id => "maps_db_select",
         _name => "maps_db_select",
-        #_onchange => "enable_submit()"
+        #_onchange => "enable_submit()",
+        _title => $accessTitles -> {maps_db_select}
     );
     my $maps_db_select_opt1 = new HTMLSelectOption(
         _value => "kegg",
@@ -1461,7 +1512,8 @@ sub div_statistic_access_Packager {
         _name => "enablegene",
         #_onClick => "enable_submit()",
         _value => 1,
-        _checked => 1
+        _checked => 1,
+        _title => $accessTitles -> {enablegene}
     );
     my $enableprot_checkbox = new HTMLInput(
         _id => "enableprot",
@@ -1469,48 +1521,55 @@ sub div_statistic_access_Packager {
         _name => "enableprot",
         #_onClick => "enable_submit()",
         _value => 1,
-        _checked => 0
+        _checked => 0,
+        _title => $accessTitles -> {enableprot}
     );
     my $enableurna_checkbox = new HTMLInput(
         _id => "enableurna",
         _type => "checkbox",
         _name => "enableurna",
         #_onClick => "enable_submit()",
-        _value => 1
+        _value => 1,
+        _title => $accessTitles -> {enableurna}
     );
     my $enablemeta_checkbox = new HTMLInput(
         _id => "enablemeta",
         _type => "checkbox",
         _name => "enablemeta",
         #_onClick => "enable_submit()",
-        _value => 1
+        _value => 1,
+        _title => $accessTitles -> {enablemeta}
     );
     my $enablemeth_checkbox = new HTMLInput(
         _id => "enablemeth",
         _type => "checkbox",
         _name => "enablemeth",
         #_onClick => "enable_submit()",
-        _value => 1
+        _value => 1,
+        _title => $accessTitles -> {enablemeth}
     );
     my $enablechroma_checkbox = new HTMLInput(
         _id => "enablechroma",
         _type => "checkbox",
         _name => "enablechroma",
         #_onClick => "enable_submit()",
-        _value => 1
+        _value => 1,
+        _title => $accessTitles -> {enablechroma}
     );
 
     my $FETPooling = new HTMLInput(
         _id => "FETPooling",
         _type => "checkbox",
         _name => "FETPooling",
-        _value => 1
+        _value => 1,
+        _title => $accessTitles -> {FETPooling}
     );
     my $FETIntersect = new HTMLInput(
         _id => "FETIntersect",
         _type => "checkbox",
         _name => "FETIntersect",
-        _value => 1
+        _value => 1,
+        _title => $accessTitles -> {FETIntersect}
     ); 
 
     $div_statistic -> ContentLoader(
@@ -1684,7 +1743,8 @@ sub div_statistic_access_Packager {
             _name => $type."LeftEffectSizeCheck",
             _onClick => "",
             _value => 1,
-            _checked => 0
+            _checked => 0,
+            _title => $accessTitles -> {"${type}LeftEffectSizeCheck"}
         );
         my $right_checkbox = new HTMLInput(
             _id => $type."RightEffectSizeCheck",
@@ -1692,7 +1752,8 @@ sub div_statistic_access_Packager {
             _name => $type."RightEffectSizeCheck",
             _onClick => "",
             _value => 1,
-            _checked => 0
+            _checked => 0,
+            _title => $accessTitles -> {"${type}RightEffectSizeCheck"}
         );
         my $pval_checkbox = new HTMLInput(
             _id => $type."pValCheck",
@@ -1700,14 +1761,16 @@ sub div_statistic_access_Packager {
             _name => $type."pValCheck",
             _onClick => "",
             _value => 1,
-            _checked => 0
+            _checked => 0,
+            _title => $accessTitles -> {"${type}pValCheck"}
         );
 
         my $FETEnabled = new HTMLInput(
             _id => "${type}FETEnabled",
             _type => "checkbox",
             _name => "${type}FETEnabled",
-            _value => 1
+            _value => 1,
+            _title => $accessTitles -> {"${type}FETEnabled"}
         );
 
         my $id_only_checkbox = new HTMLInput(
@@ -1716,7 +1779,8 @@ sub div_statistic_access_Packager {
             _name => $type."IdOnlyCheck",
             _onClick => "",
             _value => 1,
-            _checked => 0
+            _checked => 0,
+            _title => $accessTitles -> {"${type}IdOnlyCheck"}
         );
         
         my $thresholdLeftInputText = new HTMLInput(
@@ -1724,7 +1788,8 @@ sub div_statistic_access_Packager {
             _name => $type."LeftThreshold",
             _type => "number",
             _class => "thresholdInput Effect Left",
-            _step => "0.1"
+            _step => "0.1",
+            _title => $accessTitles -> {"${type}LeftThreshold"}
             
         );
         my $thresholdRightInputText = new HTMLInput(
@@ -1732,14 +1797,17 @@ sub div_statistic_access_Packager {
             _name => $type."RightThreshold",
             _type => "number",
             _class => "thresholdInput Effect Right",
-            _step => "0.1"
+            _step => "0.1",
+            _title => $accessTitles -> {"${type}RightThreshold"}
+
         );
         my $thresholdpValInputText = new HTMLInput(
             _id => $type."pValThreshold",
             _name => $type."pValThreshold",
             _type => "number",
             _class => "thresholdInput pVal",
-            _step => "0.01"
+            _step => "0.01",
+            _title => $accessTitles -> {"${type}pValThreshold"}
         );
 
         $thresholdDiv -> ContentLoader(

@@ -59,14 +59,16 @@ my $info;
 
 
 my ($thr,$src) = decodeQuery();
+
 my @thrs = @$thr;
 my @srcs = @$src;
+
+
 #my $parameters = getThrs(\@thrs);
 foreach my $line (@srcs) {
-    #print STDERR $line."\n";
     next if ($line =~ /map_name/);
     ($info,$switches) = getinfo($line,$switches);
-    #print STDERR $line."\n";
+
 }
 $graph = new GD::Image(100,100);
 
@@ -120,6 +122,9 @@ if ($switches -> {_components} -> {_main} -> {_pink}) {
 if ($switches -> {_components} -> {_main} -> {_purple}) {
     push(@colorsToUse,$blue);
 }
+if ($switches -> {_components} -> {_main} -> {_yellow}) {
+    push(@colorsToUse,$yellow);
+}
 my $tip;
 if ($switches -> {_metaUp} > $switches -> {_metaDn}) {
     $tip = "up"
@@ -127,7 +132,15 @@ if ($switches -> {_metaUp} > $switches -> {_metaDn}) {
     $tip = "dn";
 }
 
-
+if ($debug == 1 && $switches -> {_totalMetas} >= 1) {
+    print STDERR Dumper $switches;
+    print STDERR Dumper \@colorsToUse;
+    print STDERR $colorsNumber."\n";
+    print STDERR Dumper \@keysToCheck;
+    foreach (@keysToCheck) {
+        print STDERR $_." -> ".$switches -> {$_}."\n";
+    }
+}
 
 my $mainIndicator;
 
@@ -136,11 +149,11 @@ if ($switches -> {_totalMetas} == 1) {
 
     $mainIndicator = new Pin();
     $mainIndicator -> makeArc(
-        Color => $colorsToUse[0]
+        Color => $black
     );
     $mainIndicator -> defineTip(
         Tip => $tip,
-        Color => $colorsToUse[0]
+        Color => $black
     );
     $mainIndicator -> colorTip(
         Color => $colorsToUse[0],
@@ -160,6 +173,7 @@ if ($switches -> {_totalMains} == 1) {
 }
 
 if ($switches -> {_totalMains} > 1) {
+    
     $mainIndicator = new Circle();
     $mainIndicator -> makeArc(
         Color => $black
@@ -171,6 +185,9 @@ if ($switches -> {_totalMains} > 1) {
         );
     }
     if ($colorsNumber == 2) {
+        if ($debug) {
+                print STDERR "Fine B\n";
+            }
         if ($switches -> {$keysToCheck[0]} == $switches -> {$keysToCheck[1]}) {
             $mainIndicator -> splitInTwo(
                 Position => "half",
@@ -201,57 +218,132 @@ if ($switches -> {_totalMains} > 1) {
         );
     }
     if ($colorsNumber == 3) {
+
+        #need to map coordinates to colors here!
+        my $colorToX = {};
+        my $colorToY = {};
+
         if (
             $switches -> {$keysToCheck[0]} == $switches -> {$keysToCheck[1]} && 
             $switches -> {$keysToCheck[1]} == $switches -> {$keysToCheck[2]}
         ) {
+            if ($debug) {
+                print STDERR "Fine 0\n";
+            }
             $mainIndicator -> splitInThree(
                 Color => $black,
                 Method => "equal"
             );
+            $colorToX -> {0} = 35;
+            $colorToY -> {0} = 40;
+            $colorToX -> {1} = 50;
+            $colorToY -> {1} = 70;
+            $colorToX -> {2} = 65;
+            $colorToY -> {2} = 40;
         }
 
         if (
             $switches -> {$keysToCheck[0]} > $switches -> {$keysToCheck[1]} &&
-            $switches -> {$keysToCheck[1]} > $switches -> {$keysToCheck[2]}
-        ) {
+            $switches -> {$keysToCheck[0]} > $switches -> {$keysToCheck[2]}
+        ) { #red half up
+            if ($debug) {
+                print STDERR "Fine 1\n";
+            }
             $mainIndicator -> splitInThree(
                 Color => $black,
-                Method => "top"
+                Method => "bot"
             );
+            $colorToX -> {0} = 35;
+            $colorToY -> {0} = 40;
+            $colorToX -> {1} = 65;
+            $colorToY -> {1} = 70;
+            $colorToX -> {2} = 35;
+            $colorToY -> {2} = 70;
         }
 
         if (
             (
                 $switches -> {$keysToCheck[2]} > $switches -> {$keysToCheck[1]} &&
                 $switches -> {$keysToCheck[2]} > $switches -> {$keysToCheck[0]}
-            ) ||
-            (
-                $switches -> {$keysToCheck[1]} > $switches -> {$keysToCheck[2]} &&
-                $switches -> {$keysToCheck[1]} > $switches -> {$keysToCheck[0]}
             )
         ) {
+            if ($debug) {
+                print STDERR "Fine 3\n";
+            }
             $mainIndicator -> splitInThree(
                 Color => $black,
-                Method => "bot"
+                Method => "top"
             );
+            $colorToX -> {0} = 65;
+            $colorToY -> {0} = 10;
+            $colorToX -> {1} = 35;
+            $colorToY -> {1} = 10;
+            $colorToX -> {2} = 35;
+            $colorToY -> {2} = 70;
         }
 
+         
+        if (
+            $switches -> {$keysToCheck[1]} > $switches -> {$keysToCheck[2]} &&
+            $switches -> {$keysToCheck[1]} > $switches -> {$keysToCheck[0]}
+        ) {
+            if ($debug) {
+                print STDERR "Fine 3\n";
+            }
+            $mainIndicator -> splitInThree(
+                Color => $black,
+                Method => "top"
+            );
+            $colorToX -> {0} = 65;
+            $colorToY -> {0} = 10;
+            $colorToX -> {1} = 35;
+            $colorToY -> {1} = 70;
+            $colorToX -> {2} = 35;
+            $colorToY -> {2} = 10;
+        }
 
+        if ($debug) {
+                print STDERR "Coloring\n";
+            }
+
+        
+
+
+        #red
+        #grey(/cyan?)
+        #green
+        #corner up left x35 y40
+        #corner up right x65 y40
+        #down full x50 y70
+        #$mainIndicator -> colorArc(
+        #    Color => $colorsToUse[0],
+        #    x => 50,
+        #    y => 70
+        #);
+        #$mainIndicator -> colorArc(
+        #    Color => $colorsToUse[1],
+        #    x => 35,
+        #    y => 40
+        #);
+        #$mainIndicator -> colorArc(
+        #    Color => $colorsToUse[2],
+        #    x => 65,
+        #    y => 40
+        #);
         $mainIndicator -> colorArc(
             Color => $colorsToUse[0],
-            x => 50,
-            y => 70
+            x => $colorToX -> {0},
+            y => $colorToY -> {0}
         );
         $mainIndicator -> colorArc(
             Color => $colorsToUse[1],
-            x => 35,
-            y => 40
+            x => $colorToX -> {1},
+            y => $colorToY -> {1}
         );
         $mainIndicator -> colorArc(
             Color => $colorsToUse[2],
-            x => 65,
-            y => 40
+            x => $colorToX -> {2},
+            y => $colorToY -> {2}
         );
     }
     if ($colorsNumber == 4) {
@@ -488,6 +580,9 @@ sub getinfo {
     }
     if ($switches -> {_idOnlyTfs} > 0) {
         $switches -> {_components} -> {_right} -> {_orange} = {};
+    }
+    if ($switches -> {_idOnlyMetas} > 0) {
+        $switches -> {_components} -> {_main} -> {_yellow} = {};
     }
 
     return($info,$switches); #returning info is useless

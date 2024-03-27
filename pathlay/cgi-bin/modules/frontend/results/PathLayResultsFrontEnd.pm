@@ -5,6 +5,27 @@ use lib "$FindBin::Bin/../";
 use HTMLObjects;
 use GeneralFrontEnd;
 
+
+our $resultsTitles = {
+    "highlight_clicker" => "Display Highlight Selectors",
+    "shot_clicker" => "Screenshot Current Map",
+    "button1" => "Display Clipboard",
+    "settings_clicker" => "Display Settings",
+    "selectors_clicker" => "Display Query Selectors",
+    "legend_clicker" => "Display Help",
+    "transparency_up" => "Increase Indicators Transparency",
+    "transparency_down" => "Reduce Indicators Transparency",
+    "size_up" => "Increase Indicators Size",
+    "size_down" => "Reduce Indicators Size",
+    "add_icon_button" => "Add Selected Indicator to Clipboard",
+    "remove_icon_button" => "Remove Selected Indicator to Clipboard",
+    "select_maps_from_icon_button" => "Select Maps containing selected Indicator from Clipboard",
+    "download_info_button" => "Download tsv file with Information on Indicators Selected",
+    "runlogic" => "Run Query",
+    "resetlogic" => "Restore Map Selector and Reset Queries"
+};
+
+
 sub ResultsBuilder {
     my %args = (
         @_
@@ -180,65 +201,64 @@ sub ResultsBuilder {
             _id =>"clickers_div",
             _class =>"clickers_div"
         );
-        #my $legend_clicker = '<br><a class="thumbnail" style="float:left;" href="#thumb\">Legend<span><img src="../src/symbols.png" width="800px"/></span></a>';
         my $legendClickerFont = new HTMLFont(
             _id => "legend_clicker",
             _name => "legend_clicker",
             _class => "clicker",
-            #_style => "margin-left:10px;margin-right:10px;float:right;cursor:pointer;",
             _size => "+1",
             _color => "white",
             _text => "?",
-            _onclick => "toggleOverDiv('legendDiv')"
+            _onclick => "toggleOverDiv('legendDiv')",
+            _title => $resultsTitles -> {legend_clicker}
         );
         my $selectorsClickerFont = new HTMLFont(
             _id => "selectors_clicker",
             _name => "selectors_clicker",
             _class => "clicker",
-            #_style => "margin-left:10px;margin-right:10px;float:right;cursor:pointer;",
             _size => "+1",
             _color => "white",
             _text => "Selectors",
-            _onclick => "toggleOverDiv('logistics_div')"
+            _onclick => "toggleOverDiv('logistics_div')",
+            _title => $resultsTitles -> {selectors_clicker}
         );
         my $settingsClickerFont = new HTMLFont(
             _id => "settings_clicker",
             _name => "settings_clicker",
             _class => "clicker",
-            #_style => "margin-left:10px;margin-right:10px;float:right;cursor:pointer;",
             _size => "+1",
             _color => "white",
             _text => "Settings",
-            _onclick => "toggleOverDiv('settings_div')"
+            _onclick => "toggleOverDiv('settings_div')",
+            _title => $resultsTitles -> {settings_clicker}
         );
         my $clipboardClickerFont = new HTMLFont(
             _id => "button1",
             _name => "clipboard_clicker",
             _class => "clicker",
-            #_style => "margin-left:10px;margin-right:10px;float:right;cursor:pointer;",
             _size => "+1",
             _color => "white",
-            _text => "Clipboard"
+            _text => "Clipboard",
+            _title => $resultsTitles -> {button1}
         );
         my $shotClickerFont = new HTMLFont(
             _id => "shot_clicker",
             _name => "shot_clicker",
             _class => "clicker",
-            #_style => "margin-left:10px;margin-right:10px;float:right;cursor:pointer;",
             _size => "+1",
             _color => "white",
             _text => "Screenshot",
-            _onclick => "screenshot()"
+            _onclick => "screenshot()",
+            _title => $resultsTitles -> {shot_clicker}
         );
         my $highlightClickerFont = new HTMLFont(
             _id => "highlight_clicker",
             _name => "highlight_clicker",
             _class => "clicker",
-            #_style => "margin-left:10px;margin-right:10px;float:right;cursor:pointer;",
             _size => "+1",
             _color => "white",
             _text => "Highlight",
-            _onclick => "toggleOverDiv('idselectors')"
+            _onclick => "toggleOverDiv('idselectors')",
+            _title => $resultsTitles -> {highlight_clicker}
         );
         $clickersDiv -> ContentLoader(
             Content => $legendClickerFont
@@ -318,25 +338,30 @@ sub ResultsBuilder {
             _id => "transparency_up",
             _type => "button",
             _value => "Transparency Up",
-            _onClick => "change(\'trasp\',\'u\')"
+            _onClick => "change(\'trasp\',\'u\')",
+            _title => $resultsTitles -> {transparency_up}
         );
         my $transparencyDownButton = new HTMLInput(
             _id => "transparency_down",
             _type => "button",
             _value => "Transparency Down",
-            _onClick => "change(\'trasp\',\'d\')"
+            _onClick => "change(\'trasp\',\'d\')",
+            _title => $resultsTitles -> {transparency_down}
+
         );
         my $sizeUpButton = new HTMLInput(
             _id => "size_up",
             _type => "button",
             _value => "Size Up",
-            _onClick => "change(\'size\',\'u\')"
+            _onClick => "change(\'size\',\'u\')",
+            _title => $resultsTitles -> {size_up}
         );
         my $sizeDownButton = new HTMLInput(
             _id => "size_down",
             _type => "button",
             _value => "Size Down",
-            _onClick => "change(\'size\',\'d\')"
+            _onClick => "change(\'size\',\'d\')",
+            _title => $resultsTitles -> {size_down}
         );
         my $sizeFont = new HTMLFont(
             _color => "white",
@@ -641,14 +666,16 @@ sub ResultsBuilder {
         my $runlogic_button = new HTMLInput(
             _id => "runlogic",
             _type => "button",
-            _value => "Select"
+            _value => "Select",
             #_onClick => "pathfilter_logic(logical_pool_content,\'run\')"
+            _title => $resultsTitles -> {runlogic}
         );
         my $resetlogic_button = new HTMLInput(
             _id => "resetlogic",
             _type => "button",
-            _value => "Reset"
+            _value => "Reset",
             #_onClick => "pathfilter_logic(logical_pool_content,\'reset\')"
+            _title => $resultsTitles -> {resetlogic}
         );
 
         ${$html_selectors[0]}{_style} = "display:none;";
@@ -912,7 +939,14 @@ sub ResultsBuilder {
         );
 
 
-        if ($parameters -> {_enablegene} == 1 || $parameters -> {_enablemeth} == 1 || $parameters -> {_enablenodeg} == 1) {
+        if (
+            $parameters -> {_enablegene} == 1 || 
+            $parameters -> {_nodeg_select_urna} == 1 ||
+            $parameters -> {_nodeg_select_meth} == 1 ||
+            $parameters -> {_nodeg_select_chroma} == 1 ||
+            $parameters -> {nodeg_select_tf_gene} == 1 ||
+            $parameters -> {nodeg_select_tf_prot} == 1
+        ) {
             $type_selector_main_html -> LoadOption(
                 HTMLSelectOption => $type_option_gene_html
             );
@@ -1052,7 +1086,8 @@ sub ResultsBuilder {
             _type => "button",
             _value => "Add",
             _onClick => "fill_complex_pool(active_complex_id)",
-            _style => "margin-left:105px;"
+            _style => "margin-left:105px;",
+            _title => $resultsTitles -> {add_icon_button}
         );
         my $complex_pool_div = new HTMLDiv(
             _id => "complex_pool_div",
@@ -1065,20 +1100,25 @@ sub ResultsBuilder {
             _id => "remove_icon_button",
             _type => "button",
             _value => "Remove",
-            _onClick => "purge_complex_pool(active_complex_id)"
+            _onClick => "purge_complex_pool(active_complex_id)",
+            _title => $resultsTitles -> {remove_icon_button}
         );
         my $download_info_button = new HTMLInput(
             _id => "download_info_button",
             _type => "button",
             _value => "Download",
             #_onClick => "download_from_pool()"
+            _title => $resultsTitles -> {download_info_button}
+
         );
         my $select_maps_from_icon_button = new HTMLInput(
             _id => "select_maps_from_icon_button",
             _type => "button",
             _value => "Select",
             #_onClick => "select_from_pool(active_complex_obj)",
-            _style => "margin-left:90px;"
+            _style => "margin-left:90px;",
+            _title => $resultsTitles -> {select_maps_from_icon_button}
+
         );
 
 
@@ -1142,10 +1182,6 @@ sub ResultsBuilder {
     }
 
 }
-
-
-
-
 sub printPage {
     my %args = (
         StyleSection => {},
@@ -1239,10 +1275,6 @@ sub wrapperBuilder {
     );
     return($wrapper);
 }
-
-
-
-
 sub results_style_Packager {
 
     my %args = (

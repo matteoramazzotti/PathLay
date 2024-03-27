@@ -324,9 +324,9 @@ package Pathway;
                 $count++;
             }
             foreach my $coord (sort keys %{$self -> {_nodes} -> {meta}}) {
-                #print STDERR "COMPLEX: ".$self -> {_id}."_$count"."\n";
-                #print STDERR "TYPE: meta\n";
-                #print STDERR "COORDINATES: ".$coord."\n";
+                print STDERR "COMPLEX: ".$self -> {_id}."_$count"."\n";
+                print STDERR "TYPE: meta\n";
+                print STDERR "COORDINATES: ".$coord."\n";
                 my $complex = new Complex(
                     _id => $self -> {_id}."_$count",
                     _coordinates => $coord,
@@ -389,7 +389,7 @@ package Pathway;
         print STDERR "\n";
     }
     sub PathwayLoader {
-        
+        use Data::Dumper;
         my $seen = {
             deg => {},
             nodeg => {},
@@ -416,6 +416,7 @@ package Pathway;
             
             $pathway -> {_data} -> {$nodeId} -> {type} = $dataType;
             $seen -> {$dataType} -> {$nodeId}++;
+            print STDERR "Checking by type $nodeId\n";
             if ($expPack -> {_data} -> {$nodeId} -> {_prot_id}) {
                 
                 $pathway -> {_data} -> {$nodeId} -> {prot_id} = $expPack -> {_data} -> {$nodeId} -> {_prot_id};
@@ -508,6 +509,7 @@ package Pathway;
         my $dems = $args{ExpMetas};
         my $nodegs = $args{ExpNoDEGs};
 
+        print STDERR Dumper $dems;
 
         open(IN,$self -> {_source});
         chomp(my @nodes = <IN>);
@@ -518,13 +520,15 @@ package Pathway;
 
         foreach (sort @nodes) {
             my ($node_name,$node_type,$node_db,$node_id,@coords) = split(/\t/,$_);
-
+            print STDERR "Checking $node_id\n";
             next if (
                 !$degs -> {_data} -> {$node_id} &&
                 !$nodegs -> {_data} -> {$node_id} &&
                 !$dems -> {_data} -> {$node_id} &&
                 !$deps -> {_data} -> {$node_id}
             );
+            print STDERR "$node_id Passed\n";
+
 
             $self -> {_data} -> {$node_id} -> {name} = $node_name;
             $self -> {_data} -> {$node_id} -> {db} = $node_db; #useless
@@ -579,6 +583,7 @@ package Pathway;
         $self -> {_methyls_loaded} = scalar keys %{$seen -> {meth}};
         $self -> {_proteins_loaded} = scalar keys %{$seen -> {prot}};
         $self -> {_chroma_loaded} = scalar keys %{$seen -> {chroma}};
+
     }
 
 package MapDiv;

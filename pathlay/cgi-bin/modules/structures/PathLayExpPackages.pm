@@ -209,6 +209,16 @@ package ExpGenes;
             my $id = $entry[$args{"_id_column"} - 1];
 
             next if ($id eq "NA" || $id eq "");
+            #next if (
+            #    $id ne "27092" &&
+            #    $id ne "775" &&
+            #    $id ne "hsa-miR-29a-3p" &&
+            #    $id ne "784" &&
+            #    $id ne "786" &&
+            #    $id ne "9254" &&
+            #    $id ne "Q9NY47"
+            #);
+
 
             if (!$self -> {_data} -> {$id}) {
                 $self -> {_data} -> {$id} = {};
@@ -411,6 +421,7 @@ package ExpGenes;
         foreach my $id (sort keys %{$self -> {_data}}) {
 
             if ($self -> {_data} -> {$id} -> {pvalues}) {
+                print $id."\n";
                 if (scalar @{$self -> {_data} -> {$id} -> {pvalues}} > 1) {
                     $R->set( 'p', \@{$self -> {_data} -> {$id} -> {pvalues}});
                     $R->run(q/newp<-pchisq((-2) * sum(log(p)), 2 * length(p), lower.tail = FALSE)/);
@@ -429,6 +440,7 @@ package ExpGenes;
                 }
                 $self -> {_collapsed}++;
             }
+            
             if ($self -> {_data} -> {$id} -> {devs}) {
                 if (scalar @{$self -> {_data} -> {$id} -> {devs}} > 1) {
                     my $sd = 0;

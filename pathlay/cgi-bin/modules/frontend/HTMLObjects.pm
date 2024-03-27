@@ -402,6 +402,7 @@ sub new{
         _style => "",
         _onclick => "",
         _color => "",
+        _title => "",
         @_
     };
     bless($self,$class);
@@ -421,6 +422,7 @@ sub PrintFont {
     my $color = $self -> {_color};
     my $size = $self -> {_size};
     my $onclick = $self -> {_onclick};
+    my $title = $self -> {_title};
 
     $begin =~ s/>$/ id=\"$id\">/;
     $begin =~ s/>$/ name=\"$name\">/;
@@ -429,6 +431,7 @@ sub PrintFont {
     $begin =~ s/>$/ color=\"$color\">/;
     $begin =~ s/>$/ size=\"$size\">/;
     $begin =~ s/>$/ onclick=\"$onclick\">/;
+    $begin =~ s/>$/ title=\"$title\">/;
 
     print $begin;
     print $text;

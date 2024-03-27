@@ -415,7 +415,7 @@ package Circle;
         }
         if ($method eq "bot") {
             push(@lineCoords,[12,50,90,50]);
-            push(@lineCoords,[50,10,50,50]);
+            push(@lineCoords,[50,90,50,50]);
         }
         #print STDERR Dumper \@lineCoords;
         foreach my $coordSet (0..$#lineCoords) {
@@ -794,4 +794,5 @@ package Pin;
             $graph->fill(50,30,$color);
         }
     }
+
 1;
