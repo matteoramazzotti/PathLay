@@ -94,7 +94,7 @@ package Complex;
 
         $self -> {_queryForPlot} = "pathlayplot.pl?";
         $self -> {_queryForPlot} .= "source=%0Amap_name:$map_name%0A";
-        
+
     }
 
     sub monoComplexLoader {

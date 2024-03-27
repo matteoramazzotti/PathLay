@@ -15,10 +15,8 @@ function accessExpLoader () {
 	disableFields();
     disableMapDBs();
 
-    var host = location.host;
+
 	base_url = "http://" + host + "/pathlay/pathlay_users/" + base + "/" + expID;
-    console.log('access.js ->' + host);
-    console.log('access.js ->' + base_url);
 	mrna_url = base_url + ".mrna";
 	urna_url = base_url + ".mirna";
 	meta_url = base_url + ".meta";
