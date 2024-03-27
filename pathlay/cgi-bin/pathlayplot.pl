@@ -69,9 +69,13 @@ foreach my $line (@srcs) {
     next if ($line =~ /map_name/);
     ($info,$switches) = getinfo($line,$switches);
 <<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
 =======
 
 >>>>>>> dev
+>>>>>>> main
 }
 $graph = new GD::Image(100,100);
 
@@ -125,6 +129,9 @@ if ($switches -> {_components} -> {_main} -> {_purple}) {
 if ($switches -> {_components} -> {_main} -> {_yellow}) {
     push(@colorsToUse,$yellow);
 }
+if ($switches -> {_components} -> {_main} -> {_yellow}) {
+    push(@colorsToUse,$yellow);
+}
 my $tip;
 if ($switches -> {_metaUp} > $switches -> {_metaDn}) {
     $tip = "up"
@@ -134,6 +141,9 @@ if ($switches -> {_metaUp} > $switches -> {_metaDn}) {
 
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
+>>>>>>> main
 if ($debug == 1 && $switches -> {_totalMetas} >= 1) {
     print STDERR Dumper $switches;
     print STDERR Dumper \@colorsToUse;
@@ -144,7 +154,10 @@ if ($debug == 1 && $switches -> {_totalMetas} >= 1) {
     }
 }
 
+<<<<<<< HEAD
+=======
 >>>>>>> dev
+>>>>>>> main
 my $mainIndicator;
 
 if ($switches -> {_totalMetas} == 1) {
@@ -152,9 +165,11 @@ if ($switches -> {_totalMetas} == 1) {
     $mainIndicator = new Pin();
     $mainIndicator -> makeArc(
         Color => $black
+        Color => $black
     );
     $mainIndicator -> defineTip(
         Tip => $tip,
+        Color => $black
         Color => $black
     );
     $mainIndicator -> colorTip(
@@ -194,6 +209,19 @@ if ($switches -> {_totalMains} > 1) {
                 print STDERR "Fine B\n";
             }
 >>>>>>> dev
+<<<<<<< HEAD
+        if ($debug) {
+                print STDERR "Fine B\n";
+            }
+=======
+<<<<<<< HEAD
+
+=======
+        if ($debug) {
+                print STDERR "Fine B\n";
+            }
+>>>>>>> dev
+>>>>>>> main
         if ($switches -> {$keysToCheck[0]} == $switches -> {$keysToCheck[1]}) {
             $mainIndicator -> splitInTwo(
                 Position => "half",
@@ -229,6 +257,11 @@ if ($switches -> {_totalMains} > 1) {
         my $colorToX = {};
         my $colorToY = {};
 
+
+        #need to map coordinates to colors here!
+        my $colorToX = {};
+        my $colorToY = {};
+
         if (
             $switches -> {$keysToCheck[0]} == $switches -> {$keysToCheck[1]} && 
             $switches -> {$keysToCheck[1]} == $switches -> {$keysToCheck[2]}
@@ -240,6 +273,48 @@ if ($switches -> {_totalMains} > 1) {
                 print STDERR "Fine 0\n";
             }
 >>>>>>> dev
+            $mainIndicator -> splitInThree(
+                Color => $black,
+                Method => "equal"
+            );
+            $colorToX -> {0} = 35;
+            $colorToY -> {0} = 40;
+            $colorToX -> {1} = 50;
+            $colorToY -> {1} = 70;
+            $colorToX -> {2} = 65;
+            $colorToY -> {2} = 40;
+        }
+
+<<<<<<< HEAD
+
+        if (
+            (
+                $switches -> {$keysToCheck[0]} == $switches -> {$keysToCheck[1]} &&
+                $switches -> {$keysToCheck[0]} > $switches -> {$keysToCheck[2]}
+            ) || 
+            (
+                $switches -> {$keysToCheck[0]} == $switches -> {$keysToCheck[2]} &&
+                $switches -> {$keysToCheck[0]} > $switches -> {$keysToCheck[1]}
+            ) ||
+            (
+                $switches -> {$keysToCheck[1]} == $switches -> {$keysToCheck[2]} &&
+                $switches -> {$keysToCheck[1]} > $switches -> {$keysToCheck[0]}
+            )
+        ) {
+
+<<<<<<< HEAD
+            if ($debug) {
+                print STDERR "Fine 0\n";
+            }
+=======
+<<<<<<< HEAD
+
+=======
+            if ($debug) {
+                print STDERR "Fine 0\n";
+            }
+>>>>>>> dev
+>>>>>>> main
             $mainIndicator -> splitInThree(
                 Color => $black,
                 Method => "equal"
@@ -306,6 +381,12 @@ if ($switches -> {_totalMains} > 1) {
             $colorToY -> {1} = 70;
             $colorToX -> {2} = 35;
             $colorToY -> {2} = 70;
+            $colorToX -> {0} = 35;
+            $colorToY -> {0} = 40;
+            $colorToX -> {1} = 65;
+            $colorToY -> {1} = 70;
+            $colorToX -> {2} = 35;
+            $colorToY -> {2} = 70;
         }
 
         if (
@@ -347,6 +428,17 @@ if ($switches -> {_totalMains} > 1) {
                     $switches -> {$keysToCheck[1]} > $switches -> {$keysToCheck[0]}
                 )
         ) {
+
+=======
+         
+        if (
+            $switches -> {$keysToCheck[1]} > $switches -> {$keysToCheck[2]} &&
+            $switches -> {$keysToCheck[1]} > $switches -> {$keysToCheck[0]}
+        ) {
+            if ($debug) {
+                print STDERR "Fine 3\n";
+            }
+>>>>>>> dev
 
 =======
          
@@ -434,14 +526,20 @@ if ($switches -> {_totalMains} > 1) {
             Color => $colorsToUse[0],
             x => $colorToX -> {0},
             y => $colorToY -> {0}
+            x => $colorToX -> {0},
+            y => $colorToY -> {0}
         );
         $mainIndicator -> colorArc(
             Color => $colorsToUse[1],
             x => $colorToX -> {1},
             y => $colorToY -> {1}
+            x => $colorToX -> {1},
+            y => $colorToY -> {1}
         );
         $mainIndicator -> colorArc(
             Color => $colorsToUse[2],
+            x => $colorToX -> {2},
+            y => $colorToY -> {2}
             x => $colorToX -> {2},
             y => $colorToY -> {2}
         );
@@ -618,6 +716,7 @@ sub getinfo {
                 if ($currentType eq "deg" || $currentType eq "prot") {
                     $switches -> {_components} -> {_main} -> {_green} = {};
                     $switches -> {_totalDn}++;
+                    $switches -> {_totalDn}++;
                 }
                 if ($currentType eq "urna") {
                     $switches -> {_components} -> {_left} -> {_blue} = {};
@@ -635,11 +734,13 @@ sub getinfo {
             if ($currentDev > 0) {
                 $switches -> {"_".$currentType."Up"}++;
                 
+                
                 if ($currentType eq "meta") {
                     $switches -> {_components} -> {_main} -> {_pink} = {};
                 }
                 if ($currentType eq "deg" || $currentType eq "prot") {
                     $switches -> {_components} -> {_main} -> {_red} = {};
+                    $switches -> {_totalUp}++;
                     $switches -> {_totalUp}++;
                 }
                 if ($currentType eq "urna") {
@@ -681,6 +782,9 @@ sub getinfo {
     }
     if ($switches -> {_idOnlyTfs} > 0) {
         $switches -> {_components} -> {_right} -> {_orange} = {};
+    }
+    if ($switches -> {_idOnlyMetas} > 0) {
+        $switches -> {_components} -> {_main} -> {_yellow} = {};
     }
     if ($switches -> {_idOnlyMetas} > 0) {
         $switches -> {_components} -> {_main} -> {_yellow} = {};
