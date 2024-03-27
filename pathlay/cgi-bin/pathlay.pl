@@ -348,12 +348,6 @@ foreach my $map (sort(@maps)) {
         ExpMetas  => $expPackages -> {meta}
     );
     #here proteins should be merged with genes
-<<<<<<< HEAD
-    print STDERR Dumper $pathway;
-=======
-<<<<<<< HEAD
-    #print STDERR Dumper $pathway;
-=======
     print STDERR Dumper $pathway;
 >>>>>>> dev
 >>>>>>> main

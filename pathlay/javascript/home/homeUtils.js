@@ -3,7 +3,7 @@ function homeExpLoader () {
 	var what = document.getElementById('exp_select').value;
 	var host = location.host;
 	base_url = "http://" + host + "/pathlay/pathlay_users/" + base + "/" + what;
-	console.log(base_url);
+
 	mrna_url = base_url + ".mrna";
 	urna_url = base_url + ".mirna";
 	meta_url = base_url + ".meta";

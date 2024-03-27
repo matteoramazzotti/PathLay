@@ -99,6 +99,7 @@ sub home_script_Packager {
     );
 
     unshift(@{$home_script -> {_variables}},"var exp_confs = {};");
+    unshift(@{$home_script -> {_variables}},"var host = \"".$parameters -> {_host}."\";");
     unshift(@{$home_script -> {_variables}},"var base = \"".$parameters -> {_home}."\";");
 
     return($home_script);
@@ -681,7 +682,7 @@ sub div_data_home_Packager {
     );
     my $data_type_select_opt1 = new HTMLSelectOption(
         _value => "gene",
-        _text => "Genes"
+        _text => "Gene/Protein"
     );
     my $data_type_select_opt2 = new HTMLSelectOption(
         _value => "urna",
