@@ -346,7 +346,15 @@ foreach my $map (sort(@maps)) {
         ExpMetas  => $expPackages -> {meta}
     );
     #here proteins should be merged with genes
+<<<<<<< HEAD
     print STDERR Dumper $pathway;
+=======
+<<<<<<< HEAD
+    #print STDERR Dumper $pathway;
+=======
+    print STDERR Dumper $pathway;
+>>>>>>> dev
+>>>>>>> main
     $pathway -> NodesInit();
 
     $pathway -> LoadComplexes(
@@ -360,7 +368,6 @@ foreach my $map (sort(@maps)) {
         scalar @{$pathway -> {_complexes} -> {prot}} < 1
     );
 
-    
     my $map_div = new MapDiv(
         _id => $mapin,
         _name => $map_name,

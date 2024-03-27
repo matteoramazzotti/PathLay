@@ -163,7 +163,7 @@ package Square;
         if ($position eq "top") {
             $centerXSingle = 50;
             $centerYSingle = 15;
-            print STDERR "$total\t$up\t$dn\t$idOnly\n";
+            #print STDERR "$total\t$up\t$dn\t$idOnly\n";
         }
         if ($position eq "bot") {
             $centerXSingle = 50;
@@ -406,8 +406,8 @@ package Circle;
 
         if ($method eq "equal") {
             push(@lineCoords,[50,10,50,50]);
-            push(@lineCoords,[15,90,50,50]); #draw left skewed line
-            push(@lineCoords,[75,90,50,50]); #draw right skewed $line
+            push(@lineCoords,[15,65,50,50]); #draw left skewed line
+            push(@lineCoords,[85,65,50,50]); #draw right skewed $line
         }
         if ($method eq "top") {
             push(@lineCoords,[12,50,90,50]);
