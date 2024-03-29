@@ -163,7 +163,7 @@ package Square;
         if ($position eq "top") {
             $centerXSingle = 50;
             $centerYSingle = 15;
-            print STDERR "$total\t$up\t$dn\t$idOnly\n";
+            #print STDERR "$total\t$up\t$dn\t$idOnly\n";
         }
         if ($position eq "bot") {
             $centerXSingle = 50;
@@ -406,8 +406,8 @@ package Circle;
 
         if ($method eq "equal") {
             push(@lineCoords,[50,10,50,50]);
-            push(@lineCoords,[15,90,50,50]); #draw left skewed line
-            push(@lineCoords,[75,90,50,50]); #draw right skewed $line
+            push(@lineCoords,[15,65,50,50]); #draw left skewed line
+            push(@lineCoords,[85,65,50,50]); #draw right skewed $line
         }
         if ($method eq "top") {
             push(@lineCoords,[12,50,90,50]);
@@ -423,14 +423,16 @@ package Circle;
         }
     }
     sub splitInFour {
-        my $self = shift;
-        my %args = (
-            Color => {},
-            @_
-        );
-        my $color = $args{Color};
-        my ($x1,$y1,$x2,$y2);
-        $graph -> line($x1,$y1,$x2,$y2,$color);
+      my $self = shift;
+      my %args = (
+          Color => {},
+          @_
+      );
+      my $color = $args{Color};
+      my ($x1,$y1,$x2,$y2) = (12,50,90,50);
+      $graph -> line($x1,$y1,$x2,$y2,$color);
+      ($x1,$y1,$x2,$y2) = (50,10,50,90);
+      $graph -> line($x1,$y1,$x2,$y2,$color);
     }
     sub addSmallCircles {
         my $self = shift;
@@ -786,12 +788,14 @@ package Pin;
             $y = 20;
         }
         $graph->fill(30,50,$color);
-        $graph->fill($x,$y,$color);
         if ($tip eq "dn") {
-            $graph->fill(50,70,$color);
+          $graph->fill(50,70,$color);
+          $graph->fill($x,$y,$color);
         }
         if ($tip eq "up") {
-            $graph->fill(50,30,$color);
+          $graph->fill(50,30,$color);
+          $graph->fill($x,$y,$color);
+
         }
     }
 

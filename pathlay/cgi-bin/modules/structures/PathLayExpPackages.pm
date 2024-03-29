@@ -199,6 +199,7 @@ package ExpGenes;
         );
         my $debug = 0;
 
+
         my @data = split(/\n/,$args{_buffer});
         shift @data;
         print STDERR ref($self)."\n";
@@ -209,17 +210,35 @@ package ExpGenes;
             my $id = $entry[$args{"_id_column"} - 1];
 
             next if ($id eq "NA" || $id eq "");
-            #next if (
-            #    $id ne "27092" &&
-            #    $id ne "775" &&
-            #    $id ne "hsa-miR-29a-3p" &&
-            #    $id ne "784" &&
-            #    $id ne "786" &&
-            #    $id ne "9254" &&
-            #    $id ne "Q9NY47"
-            #);
-
-
+            # next if (
+            #   $id ne "Q9Y243" &&
+            #   $id ne "207" &&
+            #   $id ne "P31749" &&
+            #   $id ne "208" &&
+            #   $id ne "P31751"
+            # );
+            # next if (
+            #   $id ne "3198" &&
+            #   $id ne "6391"	&&
+            #   $id ne "P31040"&&
+            #   $id ne "3397"	&&
+            #   $id ne "3398"	&&
+            #   $id ne "22926"	&&
+            #   $id ne "4303"	&&
+            #   $id ne "5077"	&&
+            #   $id ne "7699"	&&
+            #   $id ne "8427"	&&
+            #   $id ne "9739"	&&
+            #   $id ne "9972"	&&
+            #   $id ne "84436" &&	
+            #   $id ne "8463"	&&
+            #   $id ne "55870" &&	
+            #   $id ne "148327" &&
+            #   $id ne "P21912" &&
+            #   $id ne "Q99643" &&
+            #   $id ne "O14521"
+            # );
+            
             if (!$self -> {_data} -> {$id}) {
                 $self -> {_data} -> {$id} = {};
                 $self -> {_loaded}++;
@@ -244,6 +263,7 @@ package ExpGenes;
                 
             }
         }
+        
         $debug = 0;
     }
     sub checkIdOnly {
@@ -421,7 +441,7 @@ package ExpGenes;
         foreach my $id (sort keys %{$self -> {_data}}) {
 
             if ($self -> {_data} -> {$id} -> {pvalues}) {
-                print $id."\n";
+                #print $id."\n";
                 if (scalar @{$self -> {_data} -> {$id} -> {pvalues}} > 1) {
                     $R->set( 'p', \@{$self -> {_data} -> {$id} -> {pvalues}});
                     $R->run(q/newp<-pchisq((-2) * sum(log(p)), 2 * length(p), lower.tail = FALSE)/);
@@ -469,6 +489,7 @@ package ExpGenes;
         my %args = (
             @_
         );
+        
 
         foreach my $id (sort keys %{$self -> {_data}}) {
             if ($self -> {_data} -> {$id} -> {dev}) {
@@ -616,7 +637,8 @@ package ExpProteins;
         my $db = $args{_DB};
         my $converted = {};
         foreach (sort keys %{$self -> {_data}}) {
-            #print STDERR $db -> {$idtype."2entrez"} -> {$_}."\n";
+            print STDERR "Converting idType ".$idtype." to entrez\n";
+            print STDERR $db -> {$idtype."2entrez"} -> {$_}."\n";
             if ($db -> {$idtype."2entrez"} -> {$_}) {
                 my $entrez = $db -> {$idtype."2entrez"} -> {$_};
                 $converted -> {$entrez} = $self -> {_data} -> {$_};
@@ -626,6 +648,7 @@ package ExpProteins;
             }
         }
         $self -> {_data} = $converted;
+        #die;
     }
     sub ExpPrinter {
 

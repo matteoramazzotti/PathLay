@@ -18,7 +18,8 @@ class Complex {
         this.hasMeta = false;
     }
     loadContent = function() {
-        let srcTxt = document.getElementById(this.id).src;
+        let srcTxt = document.getElementById(this.id).attributes.content.nodeValue;
+        console.log(srcTxt);
         let srcLines = srcTxt.split("%0A");
         srcLines.splice(0,2);
         srcLines.pop();

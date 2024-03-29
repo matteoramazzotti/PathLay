@@ -94,7 +94,7 @@ package Complex;
 
         $self -> {_queryForPlot} = "pathlayplot.pl?";
         $self -> {_queryForPlot} .= "source=%0Amap_name:$map_name%0A";
-
+        
     }
 
     sub monoComplexLoader {
@@ -319,7 +319,7 @@ package Complex;
             $typeForPlot = "prot";
             $typeForTitle = "Protein";
             $mainID = $data -> {$id} -> {prot_id};
-            print STDERR Dumper $data -> {$id};
+            # print STDERR Dumper $data -> {$id};
 
             
             $mainName = $id;

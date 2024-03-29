@@ -63,7 +63,7 @@ my ($thr,$src) = decodeQuery();
 my @thrs = @$thr;
 my @srcs = @$src;
 
-print STDERR Dumper \@srcs;
+# print STDERR Dumper \@srcs;
 #my $parameters = getThrs(\@thrs);
 foreach my $line (@srcs) {
     next if ($line =~ /map_name/);
@@ -218,9 +218,9 @@ if ($switches -> {_totalMains} > 1) {
         );
     }
     if ($colorsNumber == 3) {
-        print STDERR "3 colors\n";
-        print STDERR Dumper \@keysToCheck;
-        print STDERR Dumper $switches;
+        # print STDERR "3 colors\n";
+        # print STDERR Dumper \@keysToCheck;
+        # print STDERR Dumper $switches;
         #need to map coordinates to colors here!
         my $colorToX = {};
         my $colorToY = {};
@@ -368,7 +368,7 @@ if ($switches -> {_totalMains} > 1) {
             $switches -> {$keysToCheck[1]} == $switches -> {$keysToCheck[2]} &&
             $switches -> {$keysToCheck[1]} == $switches -> {$keysToCheck[3]} 
         ) {
-            
+          
         }
     }
 }

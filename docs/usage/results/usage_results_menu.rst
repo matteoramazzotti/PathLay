@@ -7,7 +7,7 @@ Main Menu
 The "PathLay - MAPS" page provides different features in six sections accessible from a menu located in the upper right corner of the page:
 
 	* Highlight: Provides the selectors to highlight indicators containing specific components
-	* Screenshot: Creates a downloadable image of a map with its indicators (tested on Firefox)
+	* Screenshot: Creates a downloadable image of a map with its indicators
 	* Clipboard: Open or close Clipboard
 	* Settings: Allows tuning of indicators transparency and size
 	* Selectors: Provides the main query system for pathway and indicator filtering

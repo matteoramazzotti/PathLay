@@ -660,7 +660,7 @@ sub PrintImg{
     my $class = $self -> {_class};
     my $style = $self -> {_style};
     my $title = $self -> {_title};
-
+    my $content = $self -> {_content};
 
 
     print(
@@ -680,6 +680,7 @@ sub PrintImg{
         " onmouseout=\"".$onmouseout."\"".
         " style=\"".$style."\"".
         " title=\"".$title."\"".
+        " content=\"".$content."\"".
         $end.
         "\n"
     );

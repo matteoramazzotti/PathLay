@@ -330,7 +330,7 @@ print STDERR  "Maps to be processed: ".(scalar @maps)."\n";
 
 foreach my $map (sort(@maps)) {
 
-    # next if ($map !~ "hsa04933");
+    # next if ($map !~ "hsa00020"); #hsa04933
     my ($map_name,$mapin) = split(/_/,$map);
     my $mapinfile = $mapin;
     $mapinfile .= ".nodes";
@@ -357,6 +357,7 @@ foreach my $map (sort(@maps)) {
     $pathway -> LoadComplexes(
         Parameters => $parameters
     );
+    # print STDERR Dumper  $pathway;
     next if (
         scalar  @{$pathway -> {_complexes} -> {deg}} < 1 &&
         scalar  @{$pathway -> {_complexes} -> {nodeg}} < 1 &&
@@ -364,7 +365,7 @@ foreach my $map (sort(@maps)) {
         scalar @{$pathway -> {_complexes} -> {prot}} < 1 &&
         scalar @{$pathway -> {_complexes} -> {multi}} < 1
     );
-
+    $pathway -> PathwayEncoder();
     my $map_div = new MapDiv(
         _id => $mapin,
         _name => $map_name,

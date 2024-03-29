@@ -1429,7 +1429,6 @@ sub access_script_Packager {
 
     unshift(@{$access_script -> {_variables}},"var exp_confs = {};");
     unshift(@{$access_script -> {_variables}},"var exp_last = {};");
-    unshift(@{$access_script -> {_variables}},"var host = \"".$parameters -> {_host}."\";");
     unshift(@{$access_script -> {_variables}},"var base = \"".$parameters -> {_home}."\";");
 
     return($access_script);

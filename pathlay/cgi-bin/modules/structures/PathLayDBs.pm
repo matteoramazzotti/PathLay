@@ -154,7 +154,7 @@ package protDB;
         return($self);
     }
     sub protDBLoader {
-        
+        use Data::Dumper;
         my $self = shift;
 
         open(DB,$self -> {_source}) or die "Cannot open: ".$self -> {_source}."\n";
@@ -162,7 +162,9 @@ package protDB;
             chomp;
             next if ($_ =~ /^Entry/);
             my @data = split("\t",$_);
-            my $entrez = $data[4];
+            # print STDERR Dumper \@data;
+            
+            my $entrez = $data[5];
             my $symbol = $data[3];
             my $entry = $data[0];
 
@@ -184,6 +186,9 @@ package protDB;
             
         }
         close(DB);
+
+        #print STDERR Dumper $self -> {entry2entrez};
+        #die;
     }
     sub protDBPrinter {
         my $self = shift;
@@ -224,7 +229,7 @@ package uRNADB;
         my $deps = $args{ExpProteins};
         my $deus = $args{ExpuRNAs};
         my $idOnly = $args{NoDEFromIdOnly};
-        $self -> {_filter} = "strongonly";
+        $self -> {_filter} = "all";
         if ($self -> {_type} =~ /mirtarbase/) {
             print STDERR $self -> {_location}."\n";
             open(MIRTAR, $self -> {_location}) or die "miratrbase file not present\n";
@@ -288,7 +293,7 @@ package uRNADB;
             chomp;
             my ($mirt,$urna,$gene,$type) = split "\t", $_;
             next if (!$deus -> {_data} -> {$urna});
-            next if ($type =~ "Weak");
+            #next if ($type =~ "Weak");
             $self -> {_links} -> {urna2entrez} -> {$urna} -> {$gene} = 1;
             $self -> {_links} -> {entrez2urna} -> {$gene} -> {$urna} = 1;
             $self -> {_links} -> {mirt2entrez} -> {$mirt}  = $gene;

@@ -236,56 +236,7 @@ sub SaveData {
             dataType => $dataTypes{$dataType}
         );
     }
-
-
-
-    #writeExpData(
-    #        mainBase => $mainBase,
-    #        userHome => $userHome,
-    #        expId => $expId,
-    #        expData => $form{'gene_data'},
-    #        dataType => "mrna"
-    #);
-
-        #writeExpData(
-        #    mainBase => $mainBase,
-        #    userHome => $userHome,
-        #    expId => $expId,
-        #    expData => $form{'prot_data'},
-        #    dataType => "prot"
-        #);
-
-        #writeExpData(
-        #    mainBase => $mainBase,
-        #    userHome => $userHome,
-        #    expId => $expId,
-        #    expData => $form{'urna_data'},
-        #    dataType => "urna"
-        #);
-
-        #writeExpData(
-        #    mainBase => $mainBase,
-        #    userHome => $userHome,
-        #    expId => $expId,
-        #    expData => $form{'meth_data'},
-        #    dataType => "meth"
-        #);
-
-        #writeExpData(
-        #    mainBase => $mainBase,
-        #    userHome => $userHome,
-        #    expId => $expId,
-        #    expData => $form{'meta_data'},
-        #    dataType => "meta"
-        #);
-
-        #writeExpData(
-        #    mainBase => $mainBase,
-        #    userHome => $userHome,
-        #    expId => $expId,
-        #    expData => $form{'chroma_data'},
-        #    dataType => "chroma"
-        #);
+    
 }
 sub DeleteData {
 

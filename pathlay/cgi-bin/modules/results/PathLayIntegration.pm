@@ -297,7 +297,7 @@ package TFInterface;
                             $degs -> {_data} -> {$entrezToLink} -> {tfs} -> {$tfId} -> {dev} = $degs -> {_data} -> {$tfId} -> {dev};
                         }
                     }
-                    print STDERR Dumper $deps -> {_data} -> {$entrezToLink} if ($entrezToLink eq "148327");
+                    # print STDERR Dumper $deps -> {_data} -> {$entrezToLink} if ($entrezToLink eq "148327");
                     if ($deps -> {_data} -> {$entrezToLink}) {
                         $deps -> {_data} -> {$entrezToLink} -> {tfs} -> {$tfId} -> {name} = $tfDB -> {_names} -> {$tfId};
                         if ($degs -> {_data} -> {$tfId} -> {dev}) {
