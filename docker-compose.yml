@@ -1,0 +1,13 @@
+services:
+ pathlay:
+  image: vonb/pathlay
+  container_name: pathlay
+  build: .
+  ports:
+   - "80:80"
+   - "143:143"
+  volumes:
+   - ./pathlay/pathlay_users:/var/www/html/pathlay/pathlay_users
+
+
+
