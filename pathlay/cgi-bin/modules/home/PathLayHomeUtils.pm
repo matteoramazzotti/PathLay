@@ -138,7 +138,7 @@ sub writeExpData {
 
     print STDERR "$base/pathlay_users/$userHome/$expId.$dataType\n";
 
-    open(OUT, ">", "$mainBase/pathlay_users/$userHome/$expId.$dataType") or die "writeExpData Failed!";
+    open(OUT, ">", "$mainBase/pathlay_users/$userHome/$expId.$dataType") or die "$mainBase/pathlay_users/$userHome/$expId.$dataType : writeExpData Failed!";
     print OUT $expData;
     close(OUT);
 
