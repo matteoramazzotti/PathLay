@@ -8,6 +8,7 @@ pathlay/cgi-bin/pathlay_compile.pl
 pathlay/cgi-bin/ont_gmt_assembler.pl
 pathlay/cgi-bin/maptogenes_wiki.pl
 pathlay/cgi-bin/IndicatorsOld.pm
-index.html
+./index.html
 pathlay/pathlay_users/.last
 pathlay_demo/
+localhost.conf
