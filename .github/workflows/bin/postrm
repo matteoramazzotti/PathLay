@@ -1,0 +1,36 @@
+#!/bin/bash
+
+set -e
+
+source /etc/pathlay.conf
+
+check_file() {
+    local file="$1"
+    [ -f "$file" ]
+}
+
+check_directory() {
+    local directory="$1"
+    [ -d "$directory" ]
+}
+
+
+if [ -z "$INSTALL_DIR" ]; then
+    INSTALL_DIR="/var/www/html"
+fi
+
+if check_directory "$folder"'/pathlay'; then
+	rm -rf "$INSTALL_DIR"/pathlay
+fi
+
+if check_file "$file"; then
+	rm -f /etc/pathlay.conf
+fi
+
+
+
+# Purge package-specific dependencies if necessary
+# apt-get purge -y package-dependency1 package-dependency2 ...
+
+# You may also perform other cleanup tasks specific to your package here
+

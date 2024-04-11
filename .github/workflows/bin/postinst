@@ -1,0 +1,195 @@
+#!/bin/bash
+
+
+check_string() {
+	local string="$1"
+  local file="$2"
+  grep -Fxq "$string" "$file"
+}
+check_directory() {
+    local directory="$1"
+    [ -d "$directory" ]
+}
+check_file() {
+    local file="$1"
+    [ -f "$file" ]
+}
+interrupt_handler() {
+    echo "Abort"
+    exit 1
+}
+
+
+function check_installation_path() {
+
+	read -p "Enter a valid path for installation or just press enter to use default path /var/www/html : " -i "" -e chosenPath
+		
+	if [ -z "$chosenPath" ]; then
+		echo "Setting path to default"
+		chosenPath="$defaultPath"
+		nameSet=true 
+	fi
+	
+	if [ -d "$chosenPath" ]; then
+	  nameSet=true
+	else
+	  echo "Path does not exist. Please try again."
+	fi
+}
+
+
+function confirm_installation_path() {
+
+	if $nameSet; then
+  	echo "Path chosen: $chosenPath"
+  	read -p "Confirm choice?: y/n/c?" ans
+  		ans=$(echo "$ans" | tr '[:upper:]' '[:lower:]')
+  		if [ "$ans" != "y" ] && [ "$ans" != "n" ] && [ "$ans" != "yes" ] && [ "$ans" != "no" ] &&  [ "$ans" != "c" ]; then
+  			echo "Invalid answer"
+  		else
+  			if [ "$ans" = "y" ] || [ "$ans" = "yes" ]; then
+  				done=true
+  			else
+  				if [ "$ans" = "c" ]; then
+  					interrupt_handler
+  				fi
+  			fi
+  		fi
+	fi
+
+}
+
+
+done=false
+nameSet=false
+defaultPath='/var/www/html/'
+chosenPath="$defaultPath"
+
+trap interrupt_handler SIGINT
+
+while ! $done; do
+    
+    check_installation_path
+    
+    confirm_installation_path
+    
+    echo "Will be installed in: $chosenPath"
+done
+
+trap - SIGINT
+
+
+echo "INSTALL_DIR=\"$chosenPath\"" > /etc/pathlay.conf
+echo "Installation directory is: $chosenPath"
+
+
+echo "Installing perl packages"
+cpanm --notest CGI 
+cpanm --notest ExtUtils::PkgConfig
+cpanm --notest Statistics::R
+cpanm --notest GD
+cpanm install Archive::Zip
+echo "Done!"
+
+echo "Enabling Apache modules"
+a2enmod cgid
+a2enmod rewrite
+a2enmod headers
+a2dissite 000-default
+systemctl reload apache2
+echo "Done!"
+
+
+string_tag="# pathlay"
+
+folders=("/var/lock/apache2" "/var/run/apache2")
+
+for folder in "${folders[@]}"; do
+	echo -n "Checking for $folder folder..."
+	if check_directory "$folder"; then
+		  echo -n "Folder exists..."
+	else
+		  echo -n "Folder does not exist... Creating it..."
+		  mkdir -p "$folder"
+	fi
+	echo " Done!"
+done
+
+
+files=("/var/www/html/.htaccess" "/etc/apache2/apache2.conf")
+conf1='# pathlay
+<FilesMatch "\.(ttf|otf|eot|woff|js|css|woff2)$">
+	 <IfModule mod_headers.c>
+		Header set Access-Control-Allow-Origin "*"
+	 </IfModule>
+</FilesMatch>
+'
+
+echo "Checking Apache configurations..."
+for file in "${files[@]}"; do
+	if ! check_file "$file"; then
+		echo -n "$file not found... Creating it..."
+		touch "$file"
+		echo " Done!"
+	fi
+	echo -n "Appending configuration to $file..."
+	
+	if ! check_string "$string_tag" "$file"; then
+		echo "$conf1" >> "$file"
+	else
+		echo -n "Configuration found... Skipping... "	
+	fi
+	echo " Done!"
+done
+
+
+file2="/etc/apache2/sites-enabled/localhost.conf"
+conf2='# pathlay
+ServerName localhost
+AddHandler cgi-script .cgi .pl
+
+<Directory '"$chosenPath"'>
+	Header set Access-Control-Allow-Origin "*"
+    Options All
+    AllowOverride All
+</Directory>
+'
+
+if ! check_file "$file2"; then
+	echo -n "$file2 not found... Creating it..."
+	touch "$file2"
+	echo " Done!"
+fi
+echo -n "Appending configuration to $file2..."
+if ! check_string "$string_tag" "$file2"; then
+	echo "$conf2" >> "$file2"
+else
+	echo -n "Configuration found... Skipping... "
+fi
+
+echo "Done!"
+
+
+echo "Setting up Apache Environment variables"
+
+export APACHE_RUN_USER="www-data"
+export APACHE_RUN_GROUP="www-data"
+export APACHE_PID_FILE="/var/run/apache2.pid"
+export APACHE_RUN_DIR="/var/run/apache2"
+export APACHE_LOCK_DIR="/var/lock/apache2"
+export APACHE_LOG_DIR="/var/log/apache2"
+
+echo "APACHE_RUN_USER=$APACHE_RUN_USER"
+echo "APACHE_RUN_GROUP=$APACHE_RUN_GROUP"
+echo "APACHE_PID_FILE=$APACHE_PID_FILE"
+echo "APACHE_RUN_DIR=$APACHE_RUN_DIR"
+echo "APACHE_LOCK_DIR=$APACHE_LOCK_DIR"
+echo "APACHE_LOG_DIR=$APACHE_LOG_DIR"
+
+echo "Setting up permissions for "$chosenPath""
+chgrp -R www-data "$chosenPath"
+chmod -R 774 "$chosenPath"
+chmod g+s "$chosenPath"
+
+
+echo "Installation complete."

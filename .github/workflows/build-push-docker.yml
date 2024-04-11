@@ -1,0 +1,21 @@
+on:
+  push:
+   # Sequence of patterns matched against refs/tags
+   tags:
+    - 'v*' # Push events to matching v*, i.e. v1.0, v20.15.10
+
+name: Build and Push on DockerHub
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: Build & Push Image
+
+      run: |
+        echo "${{ secrets.DOCKERPW }}" | docker login -u "vonb" --password-stdin
+        docker image build -t vonb/pathlay:latest .
+        docker push vonb/pathlay:latest
