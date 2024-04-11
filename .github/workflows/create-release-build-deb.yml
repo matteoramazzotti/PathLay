@@ -19,19 +19,7 @@ jobs:
           echo "OS=Ubuntu-jammy" >> $GITHUB_ENV
           echo "ARCH=amd64" >> $GITHUB_ENV
 
-      - name: Read postinst
-        id: read_postinst
-        uses: jaywcjlove/github-action-read-file@main
-        with:
-         path: .github/workflows/bin/postinst
-
-      - name: Read postrm
-        id: read_postrm
-        uses: jaywcjlove/github-action-read-file@main
-        with:
-         path: .github/workflows/bin/postinst
-
-      - name: Create sample script
+      - name: Create deb folders
         run: |
           # create DEBIAN directory if you want to add other pre/post scripts
           mkdir -p .debpkg/var/www/html
