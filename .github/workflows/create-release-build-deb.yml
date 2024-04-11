@@ -46,7 +46,7 @@ jobs:
       - name: Rename Files
         id: rename_files
         run: |
-         mv *.deb ${{ env.NAME }}_${{ env.VERSION }}-1_${{ env.OS }}_${{ env.ARCH }}.deb        
+         mv *.deb ${{ env.NAME }}_${{ env.VERSION }}_${{ env.OS }}_${{ env.ARCH }}.deb        
          ls -ltra
 
       - name: Create Release
