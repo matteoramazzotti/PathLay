@@ -40,10 +40,10 @@ jobs:
           cp .github/workflows/bin/postrm .debpkg/DEBIAN/postrm
           chmod +x .debpkg/DEBIAN/postinst
           chmod +x .debpkg/DEBIAN/postrm
-          cp LICENSE /var/www/html
-          cp README.md /var/www/html
-          cp -r docs/ /var/www/html
-          cp -r pathlay/ /var/www/html
+          cp LICENSE .debpkg/var/www/html
+          cp README.md .debpkg/var/www/html
+          cp -r docs/ .debpkg/var/www/html
+          cp -r pathlay/ .debpkg/var/www/html
 
       - uses: jiro4989/build-deb-action@v3
         with:
