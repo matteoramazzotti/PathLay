@@ -34,7 +34,7 @@ jobs:
       - name: Create sample script
         run: |
           # create DEBIAN directory if you want to add other pre/post scripts
-          mkdir -p .debpkg/var/www/html/
+          mkdir -p .debpkg/var/www/html
           mkdir -p .debpkg/DEBIAN
           cp .github/workflows/bin/postinst .debpkg/DEBIAN/postinst
           cp .github/workflows/bin/postrm .debpkg/DEBIAN/postrm
