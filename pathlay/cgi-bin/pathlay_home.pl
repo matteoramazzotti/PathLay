@@ -50,7 +50,6 @@ print STDERR "###\n";
 my $timestamp;
 
 
-
 my $parameters = new Parameters();
 if ($form{'ope'}) {
     print STDERR $form{'ope'}."\n";
@@ -66,6 +65,7 @@ if ($form{ope} ne "download_pool" && $form{ope} ne "register") {
 
     $parameters -> {_host} = $localhost;
     $parameters -> {_base} = $base;
+    $parameters->{_userdir} = $parameters->{_home} ne "6135251850" ? "$base/pathlay_users/".$parameters->{_home}."/" : "$base/demo_exps/6135251850/";
 
 }
 if ($form{ope} eq 'register') {
@@ -78,25 +78,25 @@ if ($form{ope} eq 'register') {
 if ($form{ope} eq 'pathlay') {
     if ($parameters -> {_home} ne "nopwd" && $parameters -> {_home} ne "unk") {
 
-        $parameters -> LoadAvailableExps(
-            UsersDir => "$base/pathlay_users/".$parameters->{_home}."/"
-        );
 
-        my ($access_script,$form) = AccessBuilder(
-            Parameters => $parameters
-        );
+      $parameters -> LoadAvailableExps(
+        UsersDir => $parameters->{_userdir}
+      );
+      my ($access_script,$form) = AccessBuilder(
+        Parameters => $parameters
+      );
 
-        AccessPrinter(
-            script => $access_script,
+      AccessPrinter(
+        script => $access_script,
+        form => $form
+      );
+    } else {
+      if ($parameters -> {_home} eq "unk") {
+        my $form = RegistrationBuilder();
+        UnkPrinter(
             form => $form
         );
-    } else {
-        if ($parameters -> {_home} eq "unk") {
-            my $form = RegistrationBuilder();
-            UnkPrinter(
-                form => $form
-            );
-        }
+      }
         if ($parameters -> {_home} eq "nopwd") {
             my $form = TryAgainBuilder();
             NoPwdPrinter(
@@ -121,8 +121,7 @@ if ($parameters -> {_access} eq "try_again") {
     }
 }
 
-
-if ($form{ope} eq 'home' || $parameters -> {_access} eq "granted") {
+if ($form{ope} eq 'home' || $parameters -> {_access} eq "granted" && $form{ope} ne 'pathlay') {
 
     print STDERR "GOING HOME\n";
     print STDERR $parameters -> {_home}."\n";
@@ -130,7 +129,7 @@ if ($form{ope} eq 'home' || $parameters -> {_access} eq "granted") {
         $parameters -> LoadAvailableOrganisms(); #maybe redundant
         $parameters -> LoadAvailableONTs();
         $parameters -> LoadAvailableExps(
-            UsersDir => "$base/pathlay_users/".$parameters->{_home}."/"
+            UsersDir => $parameters->{_userdir}
         ); #maybe redundant
         my ($home_script,$form) = HomeBuilder(
             Parameters => $parameters
@@ -163,13 +162,13 @@ if ($form{ope} eq 'upload') {
         Parameters => $parameters
     );
     ExtractZip(
-        File => $parameters -> {_base}."/pathlay_users/".$parameters -> {_home}."/tmpfile.zip",
+        File => $parameters->{_userdir}."/tmpfile.zip",
         Parameters => $parameters,
         Form => \%form
     );
 
     $parameters -> LoadAvailableExps(
-        UsersDir => "$base/pathlay_users/".$parameters->{_home}."/"
+        UsersDir => $parameters->{_userdir}
     );
     my ($home_script,$form) = HomeBuilder(
         Parameters => $parameters
@@ -228,7 +227,7 @@ if ($form{ope} eq 'save') {
     );
 
     $parameters -> LoadAvailableExps(
-        UsersDir => "$base/pathlay_users/".$parameters->{_home}."/"
+        UsersDir => $parameters->{_userdir}
     );
 
     my ($home_script,$form) = HomeBuilder(
@@ -279,7 +278,7 @@ if ($form{ope} eq 'add') {
     );
 
     $parameters -> LoadAvailableExps(
-        UsersDir => "$base/pathlay_users/".$parameters->{_home}."/"
+        UsersDir => $parameters->{_userdir}
     );
     my ($home_script,$form) = HomeBuilder(
         Parameters => $parameters
@@ -301,7 +300,7 @@ if ($form{ope} eq 'delete') {
     );
 
     $parameters -> LoadAvailableExps(
-        UsersDir => "$base/pathlay_users/".$parameters->{_home}."/"
+        UsersDir => $parameters->{_userdir}
     );
 
     my ($home_script,$form) = HomeBuilder(
@@ -319,12 +318,3 @@ if ($form{ope} eq 'download_pool') {
         form => \%form
     );
 }
-
-
-
-
-
-
-
-
-

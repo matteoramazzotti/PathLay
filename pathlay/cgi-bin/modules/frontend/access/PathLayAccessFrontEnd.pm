@@ -65,10 +65,6 @@ sub AccessBuilder {
 
     $parameters -> LoadAvailableOrganisms();
 
-    $parameters -> LoadAvailableExps(
-        UsersDir => $parameters->{_base}."/pathlay_users/".$parameters->{_home}."/"
-    );
-
     my $access_script = access_script_Packager(
         Parameters => $parameters
     );

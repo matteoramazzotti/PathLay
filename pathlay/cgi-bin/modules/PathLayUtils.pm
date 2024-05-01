@@ -237,6 +237,7 @@ package Parameters;
             _mapdir => "../pathlay_data/pathways/",
             _expname => "",
             _comments => "",
+            _userdir => "",
             #_urna_db_filter => "strongonly"
             @_
         };
@@ -425,7 +426,6 @@ package Parameters;
                 print STDERR $field.":".$value."\n";
             }
             close(CONFIG);
-
             open(LAST,$args{UsersDir}.$self->{_exps_available}->{"exp$e"}->{last_file}) or print STDERR "No".$args{UsersDir}.$self->{_exps_available}->{"exp$e"}->{last_file}."<br>";
             if ($args{UsersDir}.$self->{_exps_available}->{"exp$e"}->{last_file}) {
                 while (<LAST>) {
