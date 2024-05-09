@@ -253,16 +253,16 @@ package ExpGenes;
                 }
             }
             
-            
-            if ($args{_pValCheck} == 1) {
+            # if ($args{_pValCheck} == 1) {
                 if ($entry[$args{"_pvalue_column"} - 1]) {
                     my $pvalue = $entry[$args{"_pvalue_column"} - 1];
                     if ($pvalue ne "") {
                         push(@{$self -> {_data} -> {$id} -> {pvalues}} , $pvalue);
                     }
+                    
                 }
                 
-            }
+            # }
         }
         
         $debug = 0;
