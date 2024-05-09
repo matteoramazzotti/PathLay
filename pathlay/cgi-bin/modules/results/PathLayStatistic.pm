@@ -197,6 +197,71 @@ sub FETrevised {
     return(%needed_maps);
 }
 
+sub FETp {
+  use Bio::FdrFet;
+  my %args = (
+    DePacks => {},
+    Parameters => {},
+    DataType => "",
+    @_
+  );
+  my $dePacks = $args{DePacks};
+  my $parameters = $args{Parameters};
+  my $dataType = $args{DataType};
+
+  
+  my $fdrcutoff = 35; # False Discovery Rate cutoff in units of percent
+  my $FETobj = new Bio::FdrFet($fdrcutoff);
+  $FETobj -> verbose(0); 
+  $FETobj->universe("union");
+
+  # Load pathway genes association from gmt
+  open(IN,$parameters -> {_map_association_file});
+  while (<IN>) {
+    chomp;
+    my ($map_id,$map_name,@ids) = split(/\t/,$_);
+    map { 
+      $FETobj -> add_to_pathway(
+        gene => $_,
+        dbacc => $map_id,
+        desc => $map_name
+      ); 
+    } @ids;
+  }
+  close(IN);
+
+  my $dePack = $dePacks -> {$dataType};
+
+  # Load gene list of input with pvalues
+
+  foreach my $id (sort keys %{$dePack -> {_data}}) {
+
+    next if (
+      !$FETobj -> {GENES}
+    );
+    # if (!$dePack -> {_data} -> {$id} -> {pvalue}) {
+    #   $dePack -> {_data} -> {$id} -> {pvalue} = 0.0001; # assign a fake pval to idOnly to perform test, else it crashes
+    # }
+    $FETobj->add_to_genes(
+      gene => $id,
+      pval => $dePack -> {_data} -> {$id} -> {pvalue}
+    );
+  }
+
+  $FETobj->calculate();
+
+  my %needed_maps;
+  foreach my $pathway ($FETobj->pathways('sorted')) {
+    my $logpval = $FETobj->pathway_result($pathway, 'LOGPVAL');
+    # printf STDERR "Pathway $pathway %s has - log(pval) = %6.4f",
+    # $FETobj->pathway_desc($pathway),
+    # $logpval;
+    # print STDERR "\n";
+    $needed_maps{$pathway} = $logpval if ($logpval > 1);
+  }
+  return(%needed_maps);
+}
+
 sub IntersectMaps {
     my %args = (
         @_
