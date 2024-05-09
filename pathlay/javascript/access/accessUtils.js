@@ -35,7 +35,7 @@ function accessExpLoader () {
     disableMapDBs();
 
     var host = location.host;
-	base_url = "http://" + host + "/pathlay/pathlay_users/" + base + "/" + expID;
+	base_url = base !== "6135251850" ? "http://" + host + "/pathlay/pathlay_users/" + base + "/" + expID : "http://" + host + "/pathlay/demo_exps/" + base + "/" + expID;
     console.log('access.js ->' + host);
     console.log('access.js ->' + base_url);
     var currentTime=getCurrentDateTimeString();
