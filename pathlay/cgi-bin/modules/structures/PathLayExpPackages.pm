@@ -631,14 +631,14 @@ package ExpProteins;
             print STDERR $db -> {$idtype."2entrez"} -> {$_}."\n";
             if ($db -> {$idtype."2entrez"} -> {$_}) {
                 my $entrez = $db -> {$idtype."2entrez"} -> {$_};
-                $converted -> {$entrez} = $self -> {_data} -> {$_};
-                $converted -> {$entrez} -> {_prot_id} = $_;
+                #$converted -> {$entrez} = $self -> {_data} -> {$_};
+                #$converted -> {$entrez} -> {_prot_id} = $_;
                 #$converted -> {$entrez} -> {_prot_name} = $_;
                 next;
             }
         }
         $self -> {_data} = $converted;
-        #die;
+        
     }
     sub ExpPrinter {
 
