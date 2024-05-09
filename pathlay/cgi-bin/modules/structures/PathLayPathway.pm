@@ -847,11 +847,13 @@ package Pathway;
           } else {
             $code -> {mainShape} = "donut";
             $code -> {mainColors} = "yel";
+            $code -> {tip} = "no";
           }
         }
         if ($switches -> {_totalMetas} > 1) {
           $code -> {mainShape} = "donut";
           $code -> {mainColors} = "yel";
+          $code -> {tip} = "no";
         }
         return($code);
       }
