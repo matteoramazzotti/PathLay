@@ -307,7 +307,6 @@ foreach my $mapin (sort(readdir(MAPDIR))) {
 closedir(MAPDIR);
 print STDERR "Maps found:".(scalar keys %available_maps)."\n";
 
-print STDERR $parameters -> {_map_association_file}."\n";
 open(GMT,$parameters -> {_map_association_file}) or die "cannot open gmt file ".$parameters -> {_map_association_file}."\n";
 while(<GMT>) {
     my ($map_id,$map_name,@genes) = split(/\t/,$_);
