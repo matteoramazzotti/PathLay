@@ -272,25 +272,24 @@ if ($parameters -> {_statistic_select} eq "FET") {
     }
 
     foreach my $dataType (@typesForStat) {
-        if ($parameters -> {_FETPooling} && ($dataType ne "pool" && $dataType ne "meta")) {
-            next;
-        }
-        %{$needed_maps{$dataType}} = FETrevised(
-            Parameters => $parameters,
-            DePacks => $expPackages,
-            DataType => $dataType
-        );
+      if ($parameters -> {_FETPooling} && ($dataType ne "pool" && $dataType ne "meta")) {
+          next;
+      }
+      %{$needed_maps{$dataType}} = FETp(
+        Parameters => $parameters,
+        DePacks => $expPackages,
+        DataType => $dataType
+      );
     }
     %{$needed_maps{'ready'}} = JoinMaps(
-        Maps => \%needed_maps
+      Maps => \%needed_maps
     );
     if ($parameters -> {_FETIntersect}) {
-        %{$needed_maps{'ready'}} = IntersectMaps(
-            Maps => \%needed_maps
-        );
+      %{$needed_maps{'ready'}} = IntersectMaps(
+          Maps => \%needed_maps
+      );
     }
 }
-
 my $map_counter = 0;
 my %available_maps;
 my @maps;
