@@ -696,7 +696,7 @@ package Pathway;
         $switches -> {_idOnlymiRNAs} = $switches -> {_totalmiRNAs} - ($switches -> {_urnaUp} + $switches -> {_urnaDn});
         $switches -> {_idOnlyChromas} = $switches -> {_totalChromas} - ($switches -> {_chromaUp} + $switches -> {_chromaDn});
         $switches -> {_idOnlyMeths} = $switches -> {_totalMeths} - ($switches -> {_methUp} + $switches -> {_methDn});
-        $switches -> {_idOnlyTfs} = $switches -> {_totalTfs} - ($switches -> {_tfUp} + $switches -> {_tfDn});
+        $switches -> {_idOnlyTFs} = $switches -> {_totalTfs} - ($switches -> {_tfUp} + $switches -> {_tfDn});
         $switches -> {_idOnlyMetas} = $switches -> {_totalMetas} - ($switches -> {_metaUp} + $switches -> {_metaDn});
 
 
@@ -712,7 +712,7 @@ package Pathway;
         if ($switches -> {_idOnlyMeths} > 0) {
             $switches -> {_components} -> {_top} -> {_orange} = {};
         }
-        if ($switches -> {_idOnlyTfs} > 0) {
+        if ($switches -> {_idOnlyTFs} > 0) {
             $switches -> {_components} -> {_right} -> {_orange} = {};
         }
         if ($switches -> {_idOnlyMetas} > 0) {
@@ -1127,7 +1127,7 @@ package Pathway;
             _enabletf => 0,
             _idOnly => 0,
             _idOnlymiRNAs => 0,
-            _idOnlyTfs => 0,
+            _idOnlyTFs => 0,
             _idOnlyMeths => 0,
             _idOnlyChromas => 0,
             _idOnlyMetas => 0,
