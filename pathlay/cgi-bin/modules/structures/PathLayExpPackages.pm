@@ -200,7 +200,7 @@ package ExpGenes;
         my $debug = 0;
 
         
-
+        
         my @data = split(/\n/,$args{_buffer});
         shift @data;
         print STDERR ref($self)."\n";
@@ -407,7 +407,7 @@ package ExpGenes;
 
     sub Collapse {
       use Statistics::Distributions qw(chisqrprob);
-        my $self = shift;
+      my $self = shift;
 
       foreach my $id (sort keys %{$self->{_data}}) {
           if ($self->{_data}{$id}{pvalues}) {
@@ -417,32 +417,32 @@ package ExpGenes;
                   my $new_p = 1 - chisqrprob(2 * scalar(@pvalues), $chi_squared);
                   if ($new_p eq 'NaN') {
                       delete $self->{_data}{$id};
-                        next;
-                    } else {
+                      next;
+                  } else {
                       delete $self->{_data}{$id}{pvalues};
                       $self->{_data}{$id}{pvalue} = $new_p;
-                    }
-                } else {
+                  }
+              } else {
                   my $new_p = shift @pvalues;
                   delete $self->{_data}{$id}{pvalues};
                   $self->{_data}{$id}{pvalue} = $new_p;
-                }
+              }
               $self->{_collapsed}++;
-            }
-            
+          }
+
           if ($self->{_data}{$id}{devs}) {
               my @devs = @{$self->{_data}{$id}{devs}};
               if (@devs > 1) {
                   my $new_fc = sum(@devs) / scalar(@devs);
                   delete $self->{_data}{$id}{devs};
                   $self->{_data}{$id}{dev} = $new_fc;
-                } else {
+              } else {
                   my $new_fc = shift @devs;
                   delete $self->{_data}{$id}{devs};
                   $self->{_data}{$id}{dev} = $new_fc;
-                }
+              }
               $self->{_collapsed}++;
-            }
+          }
       }
       return $self;
     }
@@ -517,13 +517,13 @@ package ExpGenes;
         foreach (sort keys %{$self -> {_data}}){
             #print STDERR "Found:".$_."\n";
             if ($_ =~ /^ENS/) {
-                if ($db -> {ensembl2entrez} -> {$_}) {
-                    
-                    my $entrez = $db -> {ensembl2entrez} -> {$_};
-                    #print STDERR "Converted:".$_."->"."$entrez\n";
-                    $converted -> {$entrez} = $self -> {_data} -> {$_};
-                    next;
-                }
+              if ($db -> {ensembl2entrez} -> {$_}) {
+                  
+                my $entrez = $db -> {ensembl2entrez} -> {$_};
+                #print STDERR "Converted:".$_."->"."$entrez\n";
+                $converted -> {$entrez} = $self -> {_data} -> {$_};
+                next;
+              }
             }
             #$converted -> {$_} = $self -> {_data} -> {$_};
         }
