@@ -432,58 +432,47 @@ package ExpGenes;
             }
         }
     }
-    sub Collapse {
 
-        use Statistics::R;
-        my $R = Statistics::R->new();
-        $R->startR;
+    sub Collapse {
+      use Statistics::Distributions qw(chisqrprob);
         my $self = shift;
 
-        foreach my $id (sort keys %{$self -> {_data}}) {
-
-            if ($self -> {_data} -> {$id} -> {pvalues}) {
-                #print $id."\n";
-                if (scalar @{$self -> {_data} -> {$id} -> {pvalues}} > 1) {
-                    $R->set( 'p', \@{$self -> {_data} -> {$id} -> {pvalues}});
-                    $R->run(q/newp<-pchisq((-2) * sum(log(p)), 2 * length(p), lower.tail = FALSE)/);
-                    my $newp = $R->get('newp');
-                    if ($newp =~ /NaN/){
-                        delete $self -> {_data} -> {$id};
+      foreach my $id (sort keys %{$self->{_data}}) {
+          if ($self->{_data}{$id}{pvalues}) {
+              my @pvalues = @{$self->{_data}{$id}{pvalues}};
+              if (@pvalues > 1) {
+                  my $chi_squared = -2 * sum(map { log($_) } @pvalues);
+                  my $new_p = 1 - chisqrprob(2 * scalar(@pvalues), $chi_squared);
+                  if ($new_p eq 'NaN') {
+                      delete $self->{_data}{$id};
                         next;
                     } else {
-                        delete $self -> {_data} -> {$id} -> {pvalues};
-                        $self -> {_data} -> {$id} -> {pvalue} = $newp;
+                      delete $self->{_data}{$id}{pvalues};
+                      $self->{_data}{$id}{pvalue} = $new_p;
                     }
                 } else {
-                    my $newp = shift @{$self -> {_data} -> {$id} -> {pvalues}};
-                    delete $self -> {_data} -> {$id} -> {pvalues};
-                    $self -> {_data} -> {$id} -> {pvalue} = $newp;
+                  my $new_p = shift @pvalues;
+                  delete $self->{_data}{$id}{pvalues};
+                  $self->{_data}{$id}{pvalue} = $new_p;
                 }
-                $self -> {_collapsed}++;
+              $self->{_collapsed}++;
             }
             
-            if ($self -> {_data} -> {$id} -> {devs}) {
-                if (scalar @{$self -> {_data} -> {$id} -> {devs}} > 1) {
-                    my $sd = 0;
-                    my $cd = 0;
-                    foreach my $v (@{$self -> {_data} -> {$id} -> {devs}}) {
-                        $cd++;
-                        $sd+= $v;
-                        #print STDERR "SD ".$sd." CD".$cd."\n";
-                    }
-                    my $newfc = $sd/$cd;
-                    delete $self -> {_data} -> {$id} -> {devs};
-                    $self -> {_data} -> {$id} -> {dev} = $newfc;
+          if ($self->{_data}{$id}{devs}) {
+              my @devs = @{$self->{_data}{$id}{devs}};
+              if (@devs > 1) {
+                  my $new_fc = sum(@devs) / scalar(@devs);
+                  delete $self->{_data}{$id}{devs};
+                  $self->{_data}{$id}{dev} = $new_fc;
                 } else {
-                    my $newfc = shift @{$self -> {_data} -> {$id} -> {devs}};
-                    delete $self -> {_data} -> {$id} -> {devs};
-                    $self -> {_data} -> {$id} -> {dev} = $newfc;
+                  my $new_fc = shift @devs;
+                  delete $self->{_data}{$id}{devs};
+                  $self->{_data}{$id}{dev} = $new_fc;
                 }
-                $self -> {_collapsed}++;
+              $self->{_collapsed}++;
             }
-            
-        }
-        return($self);
+      }
+      return $self;
     }
     sub filterByEffectSize {
         my $self = shift;
