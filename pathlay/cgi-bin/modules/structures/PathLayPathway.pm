@@ -1085,10 +1085,12 @@ package Pathway;
               $code -> {$position."Colors"} = join("|",@colorsToUse);
             }
 
-          } elsif ($switches -> {_tfUp} == 0) {
+          } elsif ($switches -> {_tfUp} == 0 && $switches -> {_tfDn} == $switches -> {_idOnlyTFs}) {
             $code -> {$position."Colors"} = "blu|ora";
-          } elsif ($switches -> {_tfDn} == 0) {
+          } elsif ($switches -> {_tfDn} == 0 && $switches -> {_tfUp} == $switches -> {_idOnlyTFs}) {
             $code -> {$position."Colors"} = "yel|ora";
+          } elsif ($switches -> {_tfDn} == 0 && $switches -> {_tfUp} == 0) {
+            $code -> {$position."Colors"} = "ora|ora";
           } else {
             $code -> {$position."Colors"} = join("|",@colorsToUse);
           }
