@@ -55,6 +55,7 @@ if ($params -> {mainShape} eq "donut") {
     Color => $black
   );
   $mainIndicator -> defineTip(
+    Tip => $params -> {tip},
     Color => $black
   );
   $mainIndicator -> colorTip(
