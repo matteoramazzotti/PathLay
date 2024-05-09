@@ -1573,12 +1573,12 @@ sub div_statistic_access_Packager {
     $div_statistic -> ContentLoader(
         Content => $statistic_select
     );
-    $div_statistic -> ContentLoader(
-        Content => "Pooling"
-    );
-    $div_statistic -> ContentLoader(
-        Content => $FETPooling
-    );
+    # $div_statistic -> ContentLoader(
+    #     Content => "Pooling"
+    # );
+    # $div_statistic -> ContentLoader(
+    #     Content => $FETPooling
+    # );
     $div_statistic -> ContentLoader(
         Content => "Intersect"
     );
