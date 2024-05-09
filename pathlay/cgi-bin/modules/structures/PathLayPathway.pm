@@ -767,7 +767,6 @@ package Pathway;
 
           }
           if ($colorsNumber == 2) {
-            print STDERR Dumper $switches;
             if ($switches -> {$keysToCheck[0]} == $switches -> {$keysToCheck[1]}) {
               $code -> {circleCut} = "half";
             }
