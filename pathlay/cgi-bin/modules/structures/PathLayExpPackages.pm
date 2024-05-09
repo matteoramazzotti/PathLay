@@ -768,78 +768,7 @@ package ExpProteins;
             }
         }
     }
-    sub Collapse {
 
-        use Statistics::R;
-        my $R = Statistics::R->new();
-        $R->startR;
-        my $self = shift;
-        my $debug;
-
-        foreach my $id (sort keys %{$self -> {_data}}) {
-
-        if ($self -> {_data} -> {$id} -> {pvalues}) {
-            if (scalar @{$self -> {_data} -> {$id} -> {pvalues}} > 1) {
-                $R->set( 'p', \@{$self -> {_data} -> {$id} -> {pvalues}});
-                $R->run(q/newp<-pchisq((-2) * sum(log(p)), 2 * length(p), lower.tail = FALSE)/);
-                my $newp = $R->get('newp');
-                if ($newp =~ /NaN/){
-                    delete $self -> {_data} -> {$id};
-                    next;
-                } else {
-                    delete $self -> {_data} -> {$id} -> {pvalues};
-                    $self -> {_data} -> {$id} -> {pvalue} = $newp;
-                }
-            } else {
-                my $newp = shift @{$self -> {_data} -> {$id} -> {pvalues}};
-                delete $self -> {_data} -> {$id} -> {pvalues};
-                $self -> {_data} -> {$id} -> {pvalue} = $newp;
-            }
-        }
-
-        if ($self -> {_data} -> {$id} -> {devs}) {
-            if (scalar @{$self -> {_data} -> {$id} -> {devs}} > 1) {
-                my $sd = 0;
-                my $cd = 0;
-                foreach my $v (@{$self -> {_data} -> {$id} -> {devs}}) {
-                    $cd++;
-                    $sd+= $v;
-                    #print STDERR "SD ".$sd." CD".$cd."\n";
-                }
-                my $newfc = $sd/$cd;
-                delete $self -> {_data} -> {$id} -> {devs};
-                $self -> {_data} -> {$id} -> {dev} = $newfc;
-            } else {
-                my $newfc = shift @{$self -> {_data} -> {$id} -> {devs}};
-                delete $self -> {_data} -> {$id} -> {devs};
-                $self -> {_data} -> {$id} -> {dev} = $newfc;
-            }
-        }
-
-            if ($self -> {_data} -> {$id} -> {methyls}) { #useless
-                if (scalar @{$self -> {_data} -> {$id} -> {methyls}} > 1) {
-                    my $sd = 0;
-                    my $cd = 0;
-                    foreach my $v (@{$self -> {_data} -> {$id} -> {methyls}}) {
-                        $cd++;
-                        $sd+= $v;
-                        #print STDERR "SD ".$sd." CD".$cd."\n";
-                    }
-                    my $newfc = $sd/$cd;
-                    delete $self -> {_data} -> {$id} -> {methyls};
-                    $self -> {_data} -> {$id} -> {meth} = $newfc;
-                } else {
-                    my $newfc = shift @{$self -> {_data} -> {$id} -> {methyls}};
-                    delete $self -> {_data} -> {$id} -> {methyls};
-                    $self -> {_data} -> {$id} -> {meth} = $newfc;
-                }
-            }
-
-
-            $self -> {_collapsed}++;
-        }
-        return($self);
-    }
 
 
 
