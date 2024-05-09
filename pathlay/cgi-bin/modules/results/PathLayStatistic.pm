@@ -210,10 +210,12 @@ sub IntersectMaps {
 
     foreach my $mapID (keys %{$mapsIDs{'ready'}}) {
         if (${$mapsIDs{'ready'}}{$mapID} < $validScore) {
-            delete($mapsIDs{$mapID});
+            print STDERR "Deleting ".$mapID."\n";
+            delete(${$mapsIDs{'ready'}}{$mapID});
         }
     }
     #print STDERR Dumper \%mapsIDs;
+    print STDERR (scalar keys %{$mapsIDs{'ready'}})."\n";
     return(%{$mapsIDs{'ready'}});
 }
 
