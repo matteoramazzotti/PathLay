@@ -292,8 +292,6 @@ package Parameters;
         );
         my $users_file = $args{'UsersFile'};
         my %form = %{$args{'Form'}};
-        #$form{username} = "lorenzo.casbarra\@stud.unifi.it";#!
-        #$form{password} = "admin";#!
         open(IN,$users_file) or die "Cannot find users file!";
         foreach my $line (<IN>) {
             next if ($line !~ /\w/);
