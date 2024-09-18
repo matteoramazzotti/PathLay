@@ -287,7 +287,21 @@ sub DeleteData {
 		unlink("$mainBase/pathlay_users/".$userHome."/".$expId.".sel");
 	}
 }
-
+sub DeleteExp {
+	my %args = (
+		@_
+	);
+	my $userHome = $args{userHome};
+	my $expId = $args{expId};
+	return if (!$expId);
+	opendir(DIR,$userHome);
+	foreach my $file (readdir(DIR)){
+		if ($file =~ $expId) {
+			unlink("$userHome/$file");
+		}
+	}
+	closedir(DIR);
+}
 sub PoolDownload {
     my %args = (
         @_
