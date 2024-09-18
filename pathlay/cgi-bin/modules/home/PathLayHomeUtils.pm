@@ -95,35 +95,45 @@ sub ExtractZip {
 }
 sub DownloadZip {
 
-    use Archive::Zip;
+	use Archive::Zip;
+	use CGI qw(:standard);
 
-    my %args = (
-        @_
-    );
+	my %args = (
+		@_
+	);
 
-    my $parameters = $args{Parameters};
-    my $target = $args{Target};
+	my $parameters = $args{Parameters};
+	my $target = $args{Target};
+	my $exp = $args{Exp} ? $args{Exp} : '';
 
-    my $base = $parameters -> {_base};
-    my $user = $parameters -> {_username};
-    my $home = $parameters -> {_home};
-    my $exp = $parameters -> {_expname};
+	my $base = $parameters -> {_base};
+	my $user = $parameters -> {_username};
+	my $home = $parameters -> {_home};
+	my $userDir = $parameters->{_userdir};
+	print STDERR "$userDir\n";
+	my $zip = Archive::Zip->new();
 
-    my $zip = Archive::Zip->new();
+	if ($target eq "experiment" && $exp) {
+		$zip -> addTree($userDir,'',sub { /$exp/ });
+		print header(
+			-type => 'application/zip',
+			-attachment => "${user}_$exp.zip",
+			-Access_Control_Allow_Origin => '*',
+			-Access_Control_Expose_Headers => 'Content-Disposition',
+		);
+	}
 
-    if ($target eq "experiment") {
-        $zip -> addTree($base."/pathlay_users/".$home."/",'',sub { /$exp/ });
-        print "Content-Type:application/zip\n";
-        print "Content-Disposition:attachment;filename=".$user."_$exp.zip\n\n";
-    }
-
-    if ($target eq "home") {
-        $zip -> addTree($base."/pathlay_users/".$home."/",'');
-        print "Content-Type:application/zip\n";
-        print "Content-Disposition:attachment;filename=".$user."_home.zip\n\n";
-    }
-    binmode(STDOUT);
-    $zip->writeToFileHandle(*STDOUT);
+	if ($target eq "home") {
+		$zip -> addTree("$userDir",'');
+		print header(
+			-type => 'application/zip',
+			-attachment => "${user}_home.zip",
+			-Access_Control_Allow_Origin => '*',
+			-Access_Control_Expose_Headers => 'Content-Disposition',
+		);
+	}
+	binmode(STDOUT);
+	$zip->writeToFileHandle(*STDOUT);
 }
 sub writeExpData {
     my %args = (
