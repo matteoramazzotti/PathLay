@@ -281,20 +281,21 @@ sub FETp {
     DePacks => {},
     Parameters => {},
     DataType => "",
+    gmtFile => "",
     @_
   );
   my $dePacks = $args{DePacks};
   my $parameters = $args{Parameters};
   my $dataType = $args{DataType};
+  my $gmtFile = $args{gmtFile};
 
-  
   my $fdrcutoff = 35; # False Discovery Rate cutoff in units of percent
   my $FETobj = new Bio::FdrFet($fdrcutoff);
   $FETobj -> verbose(0); 
   $FETobj->universe("union");
 
   # Load pathway genes association from gmt
-  open(IN,$parameters -> {_map_association_file});
+  open(IN,$gmtFile);
   while (<IN>) {
     chomp;
     my ($map_id,$map_name,@ids) = split(/\t/,$_);
@@ -307,25 +308,17 @@ sub FETp {
     } @ids;
   }
   close(IN);
-
-  my $dePack = $dePacks -> {$dataType};
-
-  # Load gene list of input with pvalues
-
+  my $dePack = $args{DePack};
+  
   foreach my $id (sort keys %{$dePack -> {_data}}) {
-
     next if (
       !$FETobj -> {GENES}
     );
-    # if (!$dePack -> {_data} -> {$id} -> {pvalue}) {
-    #   $dePack -> {_data} -> {$id} -> {pvalue} = 0.0001; # assign a fake pval to idOnly to perform test, else it crashes
-    # }
     $FETobj->add_to_genes(
       gene => $id,
       pval => $dePack -> {_data} -> {$id} -> {pvalue}
     );
   }
-
   $FETobj->calculate();
 
   my %needed_maps;
