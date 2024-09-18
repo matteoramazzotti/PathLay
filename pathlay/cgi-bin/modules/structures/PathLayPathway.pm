@@ -525,7 +525,6 @@ package Pathway;
         my $dems = $args{ExpMetas};
         my $nodegs = $args{ExpNoDEGs};
 
-        #print STDERR Dumper $dems;
 
         open(IN,$self -> {_source});
         chomp(my @nodes = <IN>);
