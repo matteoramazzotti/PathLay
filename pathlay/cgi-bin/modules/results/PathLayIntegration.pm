@@ -103,11 +103,17 @@ package miRNAInterface;
                     if ($deus -> {_data} -> {$urnaId} -> {dev}) {
                         $degs -> {_data} -> {$entrezId} -> {urnas} -> {$urnaId} -> {dev} = $deus -> {_data} -> {$urnaId} -> {dev};
                     }
+                    if ($deus -> {_data} -> {$urnaId} -> {pvalue}) {
+                        $degs -> {_data} -> {$entrezId} -> {urnas} -> {$urnaId} -> {pvalue} = $deus -> {_data} -> {$urnaId} -> {dev};
+                    }
                     $degs -> {_data} -> {$entrezId} -> {urnas} -> {$urnaId} -> {mirt} = $udb -> {_links} -> {entrez2mirt} -> {$entrezId} -> {$urnaId};
                 }
                 if ($deps -> {_data} -> {$entrezId}) {
                     if ($deus -> {_data} -> {$urnaId} -> {dev}) {
                         $deps -> {_data} -> {$entrezId} -> {urnas} -> {$urnaId} -> {dev} = $deus -> {_data} -> {$urnaId} -> {dev};
+                    }
+                    if ($deus -> {_data} -> {$urnaId} -> {pvalue}) {
+                        $deps -> {_data} -> {$entrezId} -> {urnas} -> {$urnaId} -> {pvalue} = $deus -> {_data} -> {$urnaId} -> {dev};
                     }
                     $deps -> {_data} -> {$entrezId} -> {urnas} -> {$urnaId} -> {mirt} = $udb -> {_links} -> {entrez2mirt} -> {$entrezId} -> {$urnaId};
                 }
