@@ -1564,32 +1564,11 @@ sub access_script_Packager {
     my @js_functions;
     my @js_variables;
     
+    
     $js_functions[0] = new HTMLScriptSrc(
         _type => "text/javascript",
-        _src => $parameters -> {_jsdir}."access/confInterfaces.js"
+        _src => $parameters -> {_jsdir}."access/accessUtils2.js"
     );
-    $js_functions[1] = new HTMLScriptSrc(
-        _type => "text/javascript",
-        _src => $parameters -> {_jsdir}."access/checkInterfaces.js"
-    );
-    $js_functions[2] = new HTMLScriptSrc(
-        _type => "text/javascript",
-        _src => $parameters -> {_jsdir}."access/global.js"
-    );
-    $js_functions[3] = new HTMLScriptSrc(
-        _type => "text/javascript",
-        _src => $parameters -> {_jsdir}."access/accessUtils.js"
-    );
-    
-    $js_functions[4] = new HTMLScriptSrc(
-        _type => "text/javascript",
-        _src => $parameters -> {_jsdir}."common/spawnHtmlElements.js"
-    );
-    $js_functions[5] = new HTMLScriptSrc(
-        _type => "text/javascript",
-        _src => $parameters -> {_jsdir}."access/onLoad.js"
-    );
-    
 
     $access_script -> FunctionsLoader(
         Content => \@js_functions
