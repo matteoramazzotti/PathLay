@@ -560,11 +560,7 @@ package Parameters;
             }
         }
         closedir(DIR);
-        print STDERR "Organisms available:";
-        foreach my $key (sort keys %{$self -> {_organisms_available}}) {
-            print STDERR " $key";
-        }
-        print STDERR "\n";
+
     }
     sub LoadENV {
         
