@@ -285,18 +285,72 @@ if ($parameters -> {_statistic_select} eq "FET") {
 
     my @typesForStat = map{ if ($enabledForStat -> {$_}) {$_} else {} } (keys(%$enabledForStat));
 
-    if ($parameters -> {_FETPooling}) {
-        push(@typesForStat,"pool");
+
+    #prepare id list with pvalues for test here
+        # if (!$dePack -> {_data} -> {$id} -> {pvalue}) {
+    #   $dePack -> {_data} -> {$id} -> {pvalue} = 0.0001; # assign a fake pval to idOnly to perform test, else it crashes
+    # } to be added
+    my $dePack = {};
+    foreach my $dataType (@typesForStat) {
+      if ($dataType =~ /^(gene|prot|meta)$/) {
+        $dePack->{$dataType} = makeListMain(
+          dePacks => $expPackages,
+          dataType => $dataType
+        );
+      } else {
+        if ($dataType eq 'urna') {
+          $dePack->{$dataType} = makeListmiRNA(
+            dePacks => $expPackages,
+            Parameters => $parameters
+          );
+        }
+        if ($dataType eq 'meth') {
+          $dePack->{$dataType} = makeListMethChroma(
+            dePacks => $expPackages,
+            dataType => 'meth',
+            Parameters => $parameters
+          );
+        }
+        if ($dataType eq 'chroma') {
+          $dePack->{$dataType} = makeListMethChroma(
+            dePacks => $expPackages,
+            dataType => 'chroma',
+            Parameters => $parameters
+          );
+        }
+      }
     }
+    if ($parameters -> {_FETPooling}) {
+      #join all gene list into one
+      foreach my $dataType (@typesForStat) {
+        next if ($dataType eq 'meta');
+        while (my ($id,$value) = each %{$dePack -> {$dataType} -> {_data}}) {
+          if (!$dePack -> {pool} -> {_data} -> {$id}) {
+            $dePack -> {pool} -> {_data} -> {$id} = $value;
+          } else {
+            if ($dePack -> {pool} -> {_data} -> {$id} -> {pvalue} < $value -> {pvalue}) {
+              $dePack -> {pool} -> {_data} -> {$id} -> {pvalue} = $value -> {pvalue};
+            }
+          }
+        }
+      }
+      push(@typesForStat,"pool");
+    }
+
+
+
+
 
     foreach my $dataType (@typesForStat) {
       if ($parameters -> {_FETPooling} && ($dataType ne "pool" && $dataType ne "meta")) {
-          next;
+        next;
       }
+      
+      
       %{$needed_maps{$dataType}} = FETp(
         Parameters => $parameters,
-        DePacks => $expPackages,
-        DataType => $dataType
+        DePack => $dePack->{$dataType},
+        gmtFile => $dataType ne "meta" ? $parameters -> {_map_association_file} : $parameters -> {_map_association_file_meta}
       );
     }
     %{$needed_maps{'ready'}} = JoinMaps(
@@ -304,7 +358,7 @@ if ($parameters -> {_statistic_select} eq "FET") {
     );
     if ($parameters -> {_FETIntersect}) {
       %{$needed_maps{'ready'}} = IntersectMaps(
-          Maps => \%needed_maps
+        Maps => \%needed_maps
       );
     }
 }
