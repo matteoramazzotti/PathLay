@@ -651,8 +651,7 @@ package Parameters;
         print STDERR $FindBin::Bin."\n";
         
 
-        open(LAST,">","../pathlay_users/".$self -> {_h3}."/".$self -> {_exp_select}.".last");
-        print LAST "statistic_select=".$self -> {_statistic_select}."\n";
+        open(LAST,">",$self->{_userdir}."/".$self -> {_exp_select}.".last");
         print LAST "maps_db_select=".$self -> {_maps_db_select}."\n";
         if ($self -> {_FETPooling}) {
             print LAST "FETPooling=".$self -> {_FETPooling}."\n";
