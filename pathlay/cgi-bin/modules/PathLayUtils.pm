@@ -594,7 +594,7 @@ package Parameters;
             #print STDERR "_$name\n";
             if ($value){
                 #print STDERR $name."---".$value."\n" if ($name =~ "FET");
-                $self -> {"_$name"} = $value;
+                $self -> {"_$name"} = $value eq 'true' ? 1 : $value eq 'false' ? 0 : $value;
             }
             if (ref($value) eq "ARRAY") { #?
                 foreach my $what (@$name) {
