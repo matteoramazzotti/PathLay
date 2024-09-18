@@ -143,7 +143,9 @@ package miRNAInterface;
                     
                     if ($deus -> {_data} -> {$urnaId} -> {dev}) {
                         $nodegs -> {_data} -> {$entrezId} -> {urnas} -> {$urnaId} -> {dev} = $deus -> {_data} -> {$urnaId} -> {dev};
-
+                    }
+                    if ($deus -> {_data} -> {$urnaId} -> {pvalue}) {
+                        $nodegs -> {_data} -> {$entrezId} -> {urnas} -> {$urnaId} -> {pvalue} = $deus -> {_data} -> {$urnaId} -> {pvalue};
                     }
                     $nodegs -> {_data} -> {$entrezId} -> {urnas} -> {$urnaId} -> {mirt} = $udb -> {_links} -> {entrez2mirt} -> {$entrezId} -> {$urnaId};
                 }
