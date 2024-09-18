@@ -329,6 +329,59 @@ sub AccessBuilderEditNew {
     return($access_script,$parentDiv);
 }
 
+sub editInfoBoxPackager {
+    my %args = (
+        @_
+    );
+    my $orgAvailable = $args{Organisms};
+
+    my $infoContainer = new HTMLDiv(
+        _class => "info-container"
+    );
+
+
+    #Load on Info Container
+    foreach (my @i = 0..2) {
+        $infoContainer -> ContentLoader(
+            Content => new HTMLDiv(
+                _class => "info-row"
+            )
+        );
+    }
+    @{$infoContainer->{_content}}[0] -> ContentLoader(
+        Content => "<span>Title</span>"
+    );
+    @{$infoContainer->{_content}}[0] -> ContentLoader(
+        Content => new HTMLInput(
+            _id => 'expnameInput',
+            _type => 'text',
+            _readonly => 1
+        )
+    );
+    @{$infoContainer->{_content}}[1] -> ContentLoader(
+        Content => "<span>Comment</span>"
+    );
+    @{$infoContainer->{_content}}[1] -> ContentLoader(
+        Content => new HTMLInput(
+            _id => 'commentsInput',
+            _type => 'text',
+            _readonly => 1
+        )
+    );
+    @{$infoContainer->{_content}}[2] -> ContentLoader(
+        Content => "<span>Organism</span>"
+    );
+    @{$infoContainer->{_content}}[2] -> ContentLoader(
+        Content => new HTMLInput(
+            _id => 'organismInput',
+            _type => 'text',
+            _readonly => 1
+        )
+    );
+
+    return($infoContainer);
+}
+
 
 sub div_setup_access_Packager {
 
