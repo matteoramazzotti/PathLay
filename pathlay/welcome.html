@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PathLay - Welcome Page</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body, html {
+            width:100%;
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .header {
+            width: 100%;
+            background-color: #006699;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            top: 0;
+            z-index: 1000;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            position: relative;
+            margin-top:10%;
+        }
+        .icons {
+            display: flex;
+            justify-content: space-around;
+            width: 60%;
+        }
+        .icon {
+            width: 20vw;
+            height: 20vh;
+            margin: 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-decoration: none;
+            color: #006699;
+            transition: color 0.3s, background-color 0.3s;
+        }
+        .icon i.material-icons {
+            font-size: 60px;
+            transition: color 0.3s;
+        }
+        .icon span {
+            margin-top: 10px;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        .icon:hover {
+            color: white;
+            background-color: #006699;
+            border-radius: 10px;
+        }
+        .icon:hover i.material-icons,
+        .icon:hover span {
+            color: white;
+        }
+    </style>
+    <script>
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+        function redirect(dest) {
+            const baseUrl = `${window.location.protocol}//${window.location.host}${window.location.pathname}`;
+            let script = 
+                dest === "home" ? 'pathlayHome.pl' :
+                dest === "access" ? 'pathlayAccess.pl' :
+                'pathlayDBConf.pl';
+            let sid = getQueryParam("sid");
+            let newUrl = `${baseUrl.replace('welcome.pl', script)}?sid=${sid}`;
+            newUrl += dest === 'home' || dest === 'access' ? '&mode=list' : '';
+            window.location.href = newUrl;        
+        }
+    </script>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Welcome - _USER</h1>
+    </div>
+
+    <div class="container">
+        <div class="icons">
+            <a onClick='redirect("home")' class="icon">
+                <i class="material-icons">home</i>
+                <span>Home</span>
+            </a>
+            <a onClick='redirect("access")' class="icon">
+                <i class="material-icons">analytics</i>
+                <span>Analysis Configurator</span>
+            </a>
+            <a onClick='redirect("dbconf")' class="icon">
+                <i class="material-icons">settings</i>
+                <span>Settings</span>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
