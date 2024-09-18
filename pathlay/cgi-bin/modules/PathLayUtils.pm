@@ -4,6 +4,7 @@ use FindBin;
 #use Data::Dumper qw(Dumper);
 
 my $debug = 0;
+our $cgi;
 
 sub getTimeStamp {
     my ($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst) = localtime(time);
