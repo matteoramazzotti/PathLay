@@ -10,87 +10,88 @@ our $localhost;
 
 sub CheckUploadedFile {
 
-    my %args = (
-        @_
-    );
+	my %args = (
+		@_
+	);
 
-    my $parameters = $args{Parameters};
-    my $filename = $args{File};
-    my $base = $parameters -> {_base};
-    my $home = $parameters -> {_home};
+	my $parameters = $args{Parameters};
+	my $filename = $args{File};
+	my $base = $parameters -> {_base};
+	my $home = $parameters -> {_home};
 
 
-    my $safe_filename_characters = "a-zA-Z0-9_.-";
+	my $safe_filename_characters = "a-zA-Z0-9_.-";
 
-    if (!$filename) {
-        print "Content-type: text/html\n\n";
-        print "There was a problem uploading your file: maybe size exceeds 2 MBytes.";
-        exit;
-    } else {
-        if ($filename !~ /\.zip/) {
-            print "Content-type: text/html\n\n";
-            print "There was a problem uploading your file: only zip files accepted.";
-            exit;
-        }
-        my @tmp = split(/[\\\/]/,$filename);
-        $filename = shift @tmp;
-        $filename =~ tr/ /_/;
-        $filename =~ s/[^$safe_filename_characters]//g;
-        if ( $filename =~ /^([$safe_filename_characters]+)$/ ) {
-            $filename = $1;
-        } else {
-            print "Content-type: text/html\n\n";
-            print "There was a problem uploading your file: characters other than $safe_filename_characters are not accepted.";
-            exit;
-        }
-        my $upload_filehandle = $CGI->upload("file");
-        open(UP,">$base/pathlay_users/$home/tmpfile.zip") or die "$!";
-        binmode(UP);
-        while(<$upload_filehandle>) {
-            print UP;
-        }
-        close(UP);
-        if (!-e "$base/pathlay_users/$home/tmpfile.zip") {
-            print "Content-type: text/html\n\n";
-            print "There was a problem uploading your file: transfer failed.";
-            #print LOG "$timestamp $remoteurl ",$form{'username'}," upload failed: not completed\n";
-            exit;
-        }
-    }
+	if (!$filename) {
+		print "Content-type: text/html\n\n";
+		print "There was a problem uploading your file: maybe size exceeds 2 MBytes.";
+		exit;
+	} else {
+		if ($filename !~ /\.zip/) {
+			print "Content-type: text/html\n\n";
+			print "There was a problem uploading your file: only zip files accepted.";
+			exit;
+		}
+		my @tmp = split(/[\\\/]/,$filename);
+		$filename = shift @tmp;
+		$filename =~ tr/ /_/;
+		$filename =~ s/[^$safe_filename_characters]//g;
+		if ( $filename =~ /^([$safe_filename_characters]+)$/ ) {
+			$filename = $1;
+		} else {
+			print "Content-type: text/html\n\n";
+			print "There was a problem uploading your file: characters other than $safe_filename_characters are not accepted.";
+			exit;
+		}
+		my $upload_filehandle = $CGI->upload("file");
+		open(UP,">$base/pathlay_users/$home/tmpfile.zip") or die "$!";
+		binmode(UP);
+		while(<$upload_filehandle>) {
+			print UP;
+		}
+		close(UP);
+		if (!-e "$base/pathlay_users/$home/tmpfile.zip") {
+			print "Content-type: text/html\n\n";
+			print "There was a problem uploading your file: transfer failed.";
+			#print LOG "$timestamp $remoteurl ",$form{'username'}," upload failed: not completed\n";
+			exit;
+		}
+	}
 
 }
 sub ExtractZip {
 
-    use Archive::Zip;
+	use Archive::Zip;
 
-    my %args = (
-        @_
-    );
+	my %args = (
+		@_
+	);
 
-    my $parameters = $args{Parameters};
-    my $zip = $args{File};
-    my $base = $parameters -> {_base};
-    my $home = $parameters -> {_home};
+	my $parameters = $args{Parameters};
+	my $zip = $args{File};
+	my $base = $parameters -> {_base};
+	my $home = $parameters -> {_home};
+	my $userDir = $parameters->{_userdir};
 
-    my $expn = 0;
-    foreach (1..10000) {
-        $expn++;
-        last if (!-e "${base}/pathlay_users/${form{home}}/exp${expn}.conf");
-    }
-    $zip = Archive::Zip->new($zip);
-    my @members = $zip -> memberNames();
-    foreach my $file (@members) {
-        $zip->extractMember($file,"$base/pathlay_users/$home/exp$expn.conf") if ($file =~ /\.conf/);
-        $zip->extractMember($file,"$base/pathlay_users/$home/exp$expn.last") if ($file =~ /\.last/);
-        $zip->extractMember($file,"$base/pathlay_users/$home/exp$expn.sel") if ($file =~ /\.sel/);
-        $zip->extractMember($file,"$base/pathlay_users/$home/exp$expn.mirna") if ($file =~ /\.mirna/);
-        $zip->extractMember($file,"$base/pathlay_users/$home/exp$expn.mrna") if ($file =~ /\.mrna/);
-        $zip->extractMember($file,"$base/pathlay_users/$home/exp$expn.meta") if ($file =~ /\.meta/);
-        $zip->extractMember($file,"$base/pathlay_users/$home/exp$expn.prot") if ($file =~ /\.prot/);
-        $zip->extractMember($file,"$base/pathlay_users/$home/exp$expn.chroma") if ($file =~ /\.chroma/);
-        $zip->extractMember($file,"$base/pathlay_users/$home/exp$expn.meth") if ($file =~ /\.meth/);
-        $zip->extractMember($file,"$base/pathlay_users/$home/exp$expn.ont") if ($file =~ /\.ont/);
-    }
+	my $expn = 0;
+	foreach (1..10000) {
+		$expn++;
+		last if (!-e "$userDir/exp${expn}.conf");
+	}
+	$zip = Archive::Zip->new($zip);
+	my @members = $zip -> memberNames();
+	foreach my $file (@members) {
+		$zip->extractMember($file,"$userDir/exp$expn.conf") if ($file =~ /\.conf/);
+		$zip->extractMember($file,"$userDir/exp$expn.last") if ($file =~ /\.last/);
+		$zip->extractMember($file,"$userDir/exp$expn.sel") if ($file =~ /\.sel/);
+		$zip->extractMember($file,"$userDir/exp$expn.mirna") if ($file =~ /\.mirna/);
+		$zip->extractMember($file,"$userDir/exp$expn.mrna") if ($file =~ /\.mrna/);
+		$zip->extractMember($file,"$userDir/exp$expn.meta") if ($file =~ /\.meta/);
+		$zip->extractMember($file,"$userDir/exp$expn.prot") if ($file =~ /\.prot/);
+		$zip->extractMember($file,"$userDir/exp$expn.chroma") if ($file =~ /\.chroma/);
+		$zip->extractMember($file,"$userDir/exp$expn.meth") if ($file =~ /\.meth/);
+		$zip->extractMember($file,"$userDir/exp$expn.ont") if ($file =~ /\.ont/);
+	}
 }
 sub DownloadZip {
 
