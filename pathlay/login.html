@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PathLay Interface - Login</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <style>
+        .header {
+            width: 100%;
+            background-color: #006699;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding-top: 80px; /* Adjust for header height */
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-top: 20px;
+        }
+        .links-container {
+            display: flex;
+            flex-direction: row;
+            background-color: #006699;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .login-text-input {
+            margin: 10px;
+            border: 0;
+        }
+
+        .action-switch-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .login-button{
+            border:0;
+            background-color:#006699;
+            height: 50px;
+            width: 50px;
+            border-radius: 10px;
+            margin-left: auto;
+        }
+        .link {
+            border-radius: 10px;
+            margin: 10px;
+            padding: 10px;
+            display: flex;
+            color: white;
+            flex-direction: column;
+            text-align: center;
+            text-decoration:none;
+        }
+        .clickable-icon, .clickable-span {
+            font-size: 40px;
+        }
+        .button-div span, .link span {
+            transition: color 0.3s;
+        }
+        .button-div:hover, .link:hover{
+            transition: color 0.3s;
+            background-color: white;
+            cursor: pointer;
+        }
+        .button-div:hover button{
+            transition: color 0.3s;
+            background-color: white;
+        }
+        .button-div:hover .clickable-icon, .button-div:hover span{
+            transition: color 0.3s;
+            color:#006699;
+        }
+        .button-div span {
+            color: white;
+        }
+
+        .link:hover .clickable-span{
+            color:  #006699;
+            border-radius: 10px;
+        }
+        .link:hover {
+            transition: color 0.3s;
+            color:  #006699;
+        }
+
+
+
+        .form-group {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 15px;
+
+        }
+        .form-group label {
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border-radius: 10px;
+
+        }
+        .submit-buttons-container {
+            margin: 20px 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .button-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .info {
+            width: 100%;
+            text-align: left;
+            font-size: small;
+        }
+        .material-symbols-outlined {
+            color: white;
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+        .login-form {
+            border-radius: 10px;
+            background-color: #006699;
+            padding: 10px;
+        }
+        #actionSwitch {
+            cursor: pointer;
+        }
+        #actionSwitch:hover {
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+
+            document.getElementById("loginButtonDiv").addEventListener('click',() => {
+                login(
+                    document.getElementById("username").value,
+                    document.getElementById("password").value,
+                    "login"
+                );
+            });
+            document.getElementById("registerButtonDiv").addEventListener('click',() => {
+                let username = document.getElementById("username").value;
+                let password = document.getElementById("password").value;
+                let check = document.getElementById("passwordCheck").value;
+
+                if (!isValidEmail(username)) {
+                    alert("Please insert a valid mail address.");
+                    return;
+                }
+                if (!isValidPassword(password)) {
+                    alert("Please insert a valid password:\nIt should be at least 8 characters long, contains at least one uppercase letter, one lowercase letter, one number, and one special character.");
+                    return;
+                }
+                if (password !== check) {
+                    document.getElementById("passwordCheck").value = "";
+                    return;
+                }
+
+                login(
+                    document.getElementById("username").value,
+                    document.getElementById("password").value,
+                    "register"
+                );
+            });
+            document.getElementById("actionSwitch").addEventListener('click',() => {
+                let span = document.getElementById("actionSwitch");
+                let loginDiv = document.getElementById("loginButtonDiv");
+                let registerDiv = document.getElementById("registerButtonDiv");
+                let passCheck = document.getElementById("passwordCheckDiv");
+                span.innerText = 
+                    span.innerText === "Create an Account" ? "Back to Login" :
+                    "Create an Account";
+                loginDiv.style.display = 
+                    span.innerText === "Create an Account" ? "flex" :
+                    "none";
+                registerDiv.style.display =
+                    span.innerText === "Create an Account" ? "none" :
+                    "flex";
+                passCheck.style.display = 
+                    span.innerText === "Create an Account" ? "none" :
+                    "flex";
+            });
+        });
+        async function login(username,password,action) {
+            try {
+                const formData = new FormData();
+                formData.append('username', username);
+                formData.append('password', password);
+                formData.append('action', action);
+                const responsePromise = fetch('cgi-bin/loginBySession.pl', {
+                    method: 'POST',
+                    body: formData,
+                    credentials: 'include'
+                });
+                const response = await responsePromise;
+
+                if (response.redirected) {
+                    console.log(`Redirected to: ${response.url}`);
+                    window.location.href = response.url;
+                } else {
+                    const data = await response.json();
+                    alert(data.message);
+                }
+            } catch (error) {
+                console.error('Operation failed:', error);
+            }
+        }
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+        function isValidPassword(password) {
+            //the password is at least 8 characters long, 
+            //contains at least one uppercase letter, 
+            //one lowercase letter, one number, and one special character
+            const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+            return passwordRegex.test(password);
+        }
+
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1>PathLay - Login</h1>
+    </div>
+
+    <div class="container">
+        <div class="container">
+            
+            <form id="pathlay" name="pathlay" action="./cgi-bin/loginBySession.pl" method="post" class="login-form">
+                <div class="form-group">
+                    <span class="material-symbols-outlined">person</span>
+                    <input type="text" id="username" name="username" class="login-text-input" placeholder="Mail" required>
+                </div>
+                <div class="form-group">
+                    <span class="material-symbols-outlined">key</span>
+                    <input type="password" id="password" name="password" class="login-text-input" placeholder="Password" required>
+                </div>
+                <div id="passwordCheckDiv" class="form-group" style="display:none;">
+                    <span class="material-symbols-outlined">key</span>
+                    <input type="password" id="passwordCheck" name="passwordCheck" class="login-text-input" placeholder="Confirm Password" required>
+                </div>
+
+
+                <div class="submit-buttons-container">
+                    <div id="loginButtonDiv" class="button-div">
+                        
+                        <span class="material-symbols-outlined clickable-icon">login</span>
+                        <span>Login</span>
+                    </div>
+                    <div id="registerButtonDiv" class="button-div" style="display:none;">
+                        <span class="material-symbols-outlined clickable-icon">person_add</span>
+                        <span>Register</span>
+                    </div>
+
+                </div>
+                <div class="action-switch-container">
+                    <span id="actionSwitch">Create an Account</span>
+                </div>
+            </form>
+        
+        </div>
+        <div class="container">
+            <div class="links-container">
+                <a id="repo" href="https://github.com/matteoramazzotti/PathLay" target="_blank" class="link">
+                    <span class="material-symbols-outlined clickable-span">code</span>
+                    <span>Repository</span>
+                </a>
+                <a id="docs" href="https://pathlay.readthedocs.io/en/latest/" target="_blank" class="link">
+                    <span class="material-symbols-outlined clickable-span">menu_book</span>
+                    <span>Docs</span>
+                </a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="info">
+                <p><strong>ACCESS RULES:</strong></p>
+                <ul>
+                    <li>Providing a valid e-mail address and a password implies to request a personal home folder for storing data and configurations for further reuse. This will greatly facilitate the use of the PathLay interface, creating a sort of restore point, or a memory of past analyses.</li>
+                    <li>Any other combination (absent or invalid email, absent or wrong password) will run PathLay in homeless mode (no memory of past analyses). Entrance without credentials (guest mode) is allowed, but will provide a less comfortable user experience.</li>
+                </ul>
+                <p><strong>PRIVACY POLICY:</strong></p>
+                <ul>
+                    <li>Your contact will be used in case of emergency only.</li>
+                    <li>Stored information will be used by the owners only.</li>
+                </ul>
+                <p><strong>NOTES:</strong></p>
+                <ul>
+                    <li>We will not attempt to check if the e-mail address is real by sending confirmation messages. It will be used in case of emergency only, so please don't use fake addresses.</li>
+                    <li>The e-mail/password are not used to restrict access or login purposes, it will just ensure the privacy of uploaded data and configurations.</li>
+                    <li>Although we will make our best to keep everything working, we take no responsibility for the damage of data or loss of configurations.</li>
+                    <li>Please do not consider PathLay as a backup strategy.</li>
+                </ul>
+                <hr>
+                <p>Last modified: Jun 02 2021</p>
+                <p>(c) matteo_dot_ramazzotti_at_unifi.it</p>
+                <p>(c) lorenzo_dot_casbarra_at_stud_dot_unifi.it</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
