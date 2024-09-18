@@ -303,49 +303,47 @@ sub DeleteExp {
 	closedir(DIR);
 }
 sub PoolDownload {
-    my %args = (
-        @_
-    );
+	my %args = (
+		@_
+	);
 
-    my $form = $args{form};
+	my $form = $args{form};
 
-    print "Content-Type:application/x-download\n";
-    print "Content-Disposition:attachment;filename=pathlay_data_pool.txt\n\n";
-    #print "ID\tName\tType\tlogFC (Expression)\tlogFC (Methylation)\tMap\tGene/miRNA Association\n";
-    print $form{'info_to_download'};
+	print "Content-Type:application/x-download\n";
+	print "Content-Disposition:attachment;filename=pathlay_data_pool.txt\n\n";
+	#print "ID\tName\tType\tlogFC (Expression)\tlogFC (Methylation)\tMap\tGene/miRNA Association\n";
+	print $form{'info_to_download'};
 }
 sub getExpToAdd {
 
-    my %args = (
-        @_
-    );
+	my %args = (
+		@_
+	);
+	my $userDir = $args{userDir};
 
-    my $mainBase = $args{mainBase};
-    my $userHome = $args{userHome};
+	my $first = 1;
+	my $max;
+	opendir(DIR,$userDir);
+	foreach my $file (sort(readdir(DIR))) {
+		next if ($file !~ /^exp/);
+		my $n = $file;
+		$n =~ s/\..+$//;
+		$n =~ s/exp//;
+		if ($first == 1) {
+			$max = $n;
+			$first = 0;
+			next;
+		}
+		if ($n > $max) {
+			$max = $n;
+		}
+	}
+	closedir(DIR);
 
-    my $first = 1;
-    my $max;
-    opendir(DIR,"$mainBase/pathlay_users/$userHome/");
-    foreach my $file (sort(readdir(DIR))) {
-        next if ($file !~ /^exp/);
-        my $n = $file;
-        $n =~ s/\..+$//;
-        $n =~ s/exp//;
-        if ($first == 1) {
-            $max = $n;
-            $first = 0;
-            next;
-        }
-        if ($n > $max) {
-            $max = $n;
-        }
-    }
-    closedir(DIR);
-
-    if (!$max) {
-        $max = 1;
-    }
-    return($max);
+	if (!$max) {
+		$max = 1;
+	}
+	return($max);
 }
 
 
