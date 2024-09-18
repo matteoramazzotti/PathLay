@@ -41,8 +41,8 @@ package TFs;
         while (<IN>) { #need to load only the strictly necessary
             chomp;
             #print STDERR "$_\n" if ($debug);
-            my ($tf_id,$tf_name,$null,$tf_link,@tf_genes) = split(/\t/);
-
+            my ($tf_id,$tf_name,$null,$tf_link,$tf_genes1) = split(/\t/);
+            my @tf_genes = split(" ",$tf_genes1);
             if ($degs -> {_data} -> {$tf_id} && $geneCheck) {
 
                 if (!$degs -> {_data} -> {$tf_id} -> {dev} && !$geneIdOnly) {
