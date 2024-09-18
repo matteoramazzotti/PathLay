@@ -1,7 +1,7 @@
 use strict;
 use warnings;
 use FindBin;
-use lib "$FindBin::Bin/../";
+use lib "$FindBin::Bin/modules/frontend/";
 use HTMLObjects;
 use GeneralFrontEnd;
 
