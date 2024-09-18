@@ -200,6 +200,76 @@ sub AccessBuilder {
 
     return($access_script,$form);
 }
+sub AccessBuilderNew {
+    my %args = (
+        @_
+    );
+    my $parameters = $args{Parameters};
+        $parameters -> LoadAvailableExps(
+        UsersDir => $parameters->{_base}."/pathlay_users/".$parameters->{_home}."/"
+    );
+
+    my $access_script = access_script_Packager(
+        Parameters => $parameters
+    );
+    my $parentDiv = new HTMLDiv();
+    my $header = new HTMLDiv(
+        _class => "header"
+    );
+    $header -> ContentLoader(
+        Content => "<h1>PathLay - Conf</h1>"
+    );
+    my $container = new HTMLDiv(
+        _class => "container"
+    );
+    
+    my $expItemsRow = new HTMLDiv(
+        _id => "expItemsRow",
+        _class => "container-row"
+    );
+    my @expBoxes;
+    foreach my $exp (sort keys %{$parameters -> {_exps_available}}) {
+        my $box = new HTMLDiv(
+            _id => "$exp-box",
+            _class => "exp-package-item-box"
+        );
+        my $boxIconsDiv = new HTMLDiv(
+            _id => "$exp-icons",
+            _class => "exp-package-item-icons"
+        );
+        my @boxIcons = (
+            '<a onClick=performAction("editConf","'.$exp.'") class="exp-package-item-icon"><i class="material-icons">edit_note</i><span>Configure Analysis</span></a>',
+            '<a onClick=performAction("runLast","'.$exp.'") class="exp-package-item-icon"><i class="material-icons">download</i><span>Run Last Configuration</span></a>',
+        );
+        foreach my $icon (@boxIcons) {
+            $boxIconsDiv -> ContentLoader(
+                Content => $icon
+            );
+        }
+
+        my $expID = $parameters -> {_exps_available} -> {$exp} -> {conf_data} -> {expname};
+
+        $box -> ContentLoader(
+            Content => "<span>Title: ${expID}</span>"
+        );
+        $box -> ContentLoader(
+            Content => $boxIconsDiv
+        );
+        push(@expBoxes,$box);
+    }
+    foreach my $box (@expBoxes) {
+        $expItemsRow -> ContentLoader(
+            Content => $box
+        );
+    }
+    $container -> ContentLoader(
+        Content => $header
+    );
+
+    $container -> ContentLoader(
+        Content => $expItemsRow
+    );
+    return($access_script,$container);
 }
 sub AccessBuilderEditNew {
     my %args = (
