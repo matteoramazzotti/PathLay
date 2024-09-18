@@ -597,9 +597,10 @@ package ExpProteins;
         my $idtype = $args{_idType};
         my $db = $args{_DB};
         my $converted = {};
+
         foreach (sort keys %{$self -> {_data}}) {
-            print STDERR "Converting idType ".$idtype." to entrez\n";
-            print STDERR $db -> {$idtype."2entrez"} -> {$_}."\n";
+            #print STDERR "Converting idType ".$idtype." to entrez\n";
+            #print STDERR $db -> {$idtype."2entrez"} -> {$_}."\n";
             if ($db -> {$idtype."2entrez"} -> {$_}) {
                 my $entrez = $db -> {$idtype."2entrez"} -> {$_};
                 #$converted -> {$entrez} = $self -> {_data} -> {$_};
