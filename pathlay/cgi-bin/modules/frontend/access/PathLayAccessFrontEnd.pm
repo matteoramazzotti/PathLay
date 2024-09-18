@@ -200,6 +200,64 @@ sub AccessBuilder {
 
     return($access_script,$form);
 }
+}
+sub AccessBuilderEditNew {
+    my %args = (
+        @_
+    );
+    my $parameters = $args{Parameters};
+    $parameters -> LoadAvailableExps(
+        UsersDir => $parameters->{_base}."/pathlay_users/".$parameters->{_home}."/"
+    );
+    my $access_script = access_script_Packager(
+        Parameters => $parameters
+    );
+    my $parentDiv = new HTMLDiv();
+    my $header = new HTMLDiv(
+        _class => "header"
+    );
+    $header -> ContentLoader(
+        Content => "<h1>PathLay - Conf</h1>"
+    );
+    my $container = new HTMLDiv(
+        _class => "container"
+    );
+
+    my @containerRows;
+    foreach my $row (my @i = 0..3) {
+        $containerRows[$row] = new HTMLDiv(
+            _class => "container-row"
+        );
+    }
+
+    # info
+    my $infoContainer = editInfoBoxPackager(
+        Organisms => \%{$parameters -> {_organisms_available}}
+    );
+
+    #Load on Container Row
+    $containerRows[0] -> ContentLoader(
+        Content => $infoContainer
+    );
+
+
+    # Load on Container
+    foreach my $containerRow (@containerRows) {
+        $container -> ContentLoader(
+            Content => $containerRow
+        );
+    }
+
+    # Load on Main Div
+    $parentDiv -> ContentLoader(
+        Content => $header
+    );
+    $parentDiv -> ContentLoader(
+        Content => $container
+    );
+
+    return($access_script,$parentDiv);
+}
 
 
 sub div_setup_access_Packager {
