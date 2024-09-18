@@ -1,5 +1,6 @@
 #!/usr/bin/perl
 use CGI;
+use CGI::Session;
 use strict;
 use warnings;
 use Data::Dumper qw(Dumper);
@@ -27,18 +28,35 @@ our $timestamp = getTimeStamp();
 ### defaults ###
 my $server="localserver";
 my $base = "$FindBin::Bin/..";
+our $cgi = CGI->new;
+my $session_id = $cgi->param('sid');
+my $session = CGI::Session->new($session_id);
+my $username = $session->param('username');
+my $home = $session->param('home');
+my $expId = $cgi->param('exp');
 
+
+print STDERR $home;
 print STDERR "SERVER: $base\n";
 print STDERR "SERVER: $server\n";
-
 my $debug = 0;
 my $runstart = time();
 my $report = new Report();
 
+
+
+
 my $parameters = new Parameters();
-$parameters -> LoadENV();
-$parameters -> updateLastSession();
+$parameters->{_userdir} = $home ne "6135251850" ? "$base/pathlay_users/".$home."/" : "$base/demo_exps/6135251850/";
+$parameters -> LoadENVFromCGI();
+
+if (!$parameters->{_h3}) {
+    $parameters->{_h3} = $home;
+}
+
+# $parameters -> updateLastSession();
 $parameters -> PrintParameters();
+
 
 my @dataTypes = (
     "gene",
