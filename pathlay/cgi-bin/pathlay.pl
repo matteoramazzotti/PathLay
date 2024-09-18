@@ -168,21 +168,17 @@ foreach my $dataType (@dataTypes) {
             _RightEffectSizeCheck => $parameters -> {"_${dataType}RightEffectSizeCheck"},
             _pValCheck => $parameters -> {"_${dataType}pValCheck"}
         );
-        
-        
         $expPackages -> {$dataType} -> checkIdOnly(
             _idOnlyCheck => $parameters -> {"_${dataType}IdOnlyCheck"}
         );
         $expPackages -> {$dataType} -> Collapse();
 
         if ($parameters -> {"_${dataType}IdType"} ne $validIdTypes -> {$dataType}) {
-            
             $expPackages -> {$dataType} -> checkIdForConversion(
                 _DB => $DBs -> {$dataType},
                 _idType => $parameters -> {"_${dataType}IdType"}
             );
         }
-        
         if ($parameters -> {"_${dataType}pValCheck"}) {
             $expPackages -> {$dataType} -> filterBypVal(
                 _pValThreshold => $parameters -> {"_${dataType}pValThreshold"},
@@ -198,14 +194,14 @@ foreach my $dataType (@dataTypes) {
                 _IdOnlyCheck => $parameters -> {"_${dataType}IdOnlyCheck"}
             );
         }
-        
+
     }
 }
-#print STDERR Dumper $expPackages -> {gene};
-#die;
+
 $DBs -> {urna} -> DBLoader(
     ExpuRNAs => $expPackages -> {urna}
 );
+
 $DBs -> {tf} -> TFsLoader(
     Parameters => $parameters,
     ExpGenes => $expPackages -> {gene},
@@ -278,8 +274,6 @@ $interfaces -> {ont} -> integrateAll(
 );
 
 #statistic steps
-
-
 my %needed_maps;
 if ($parameters -> {_statistic_select} eq "FET") {
 
@@ -378,7 +372,6 @@ foreach my $mapin (sort(readdir(MAPDIR))) {
 }
 closedir(MAPDIR);
 print STDERR "Maps found:".(scalar keys %available_maps)."\n";
-
 open(GMT,$parameters -> {_map_association_file}) or die "cannot open gmt file ".$parameters -> {_map_association_file}."\n";
 while(<GMT>) {
     my ($map_id,$map_name,@genes) = split(/\t/,$_);
@@ -399,12 +392,11 @@ my %nums_for_selector;
 print STDERR  "Maps to be processed: ".(scalar @maps)."\n";
 
 foreach my $map (sort(@maps)) {
-
     # next if ($map !~ "hsa00020"); #hsa04933
     my ($map_name,$mapin) = split(/_/,$map);
     my $mapinfile = $mapin;
     $mapinfile .= ".nodes";
-    my $organism = $parameters -> {_exp_organism_input_text};
+    my $organism = $parameters -> {_org};
     my $image_file = $mapin;
     $image_file =~ s/$organism//;
     $image_file .= ".png";
