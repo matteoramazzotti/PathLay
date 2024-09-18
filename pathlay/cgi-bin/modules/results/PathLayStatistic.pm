@@ -197,6 +197,84 @@ use warnings;
 #     return(%needed_maps);
 # }
 
+sub makeListMain {
+  my %args = (
+    dePacks => {},
+    dataType => {},
+    @_
+  );
+  my $dePacks = $args{dePacks};
+  my $dataType = $args{dataType};
+  my $dePack = $dePacks->{$dataType};
+  return($dePack);
+}
+sub makeListmiRNA {
+  my %args = (
+    dePacks => {},
+    Parameters => {},
+    @_
+  );
+  my $dePacks = $args{dePacks};
+  my $parameters = $args{Parameters};
+  my $dePack = {};
+  my @mains = ();
+  push(@mains,"gene") if ($parameters -> {_enablegene});
+  push(@mains,"prot") if ($parameters -> {_enableprot});
+  push(@mains,"nodeg") if ($parameters -> {_nodeg_select_urna});
+
+  foreach my $main (@mains) {
+    while (my ($id,$value) = each %{$dePacks -> {$main} -> {_data}}) {
+      my $keep = 0;
+      my $pval = 0;
+      if ($dePacks -> {$main} -> {_data} -> {$id} -> {urnas}) {
+        $keep = 1;
+        my $cP = 900;
+        foreach my $urnaId (keys %{$dePacks -> {$main} -> {_data} -> {$id} -> {urnas}}) {
+          my $cC = $dePacks -> {$main} -> {_data} -> {$id} -> {urnas} -> {$urnaId} -> {pvalue};
+          $cP = $cC < $cP ? $cC : $cP;
+        }
+        if ($cP != 900) {
+          $pval = $cP;
+        }
+      }
+      if ($keep) {
+        $dePack -> {_data} -> {$id} = $value;
+        if ($pval) {
+          $dePack -> {_data} -> {$id} -> {pvalue} = $pval;
+        }
+      }
+    }
+  }
+  return($dePack);
+}
+sub makeListMethChroma {
+  my %args = (
+    dePacks => {},
+    dataType => "",
+    Parameters => {},
+    @_
+  );
+  my $dePacks = $args{dePacks};
+  my $dataType = $args{dataType};
+  my $parameters = $args{Parameters};
+
+  my @mains = ();
+  push(@mains,"gene") if ($parameters -> {_enablegene});
+  push(@mains,"prot") if ($parameters -> {_enableprot});
+  push(@mains,"nodeg") if ($parameters -> {"_nodeg_select_${dataType}"});
+
+  my $dePack = {};
+  foreach my $main (@mains) {
+    while (my ($id,$value) = each %{$dePacks -> {$main} -> {_data}}) {
+
+      if ($dePacks -> {$main} -> {_data} -> {$id} -> {$dataType}) {
+        $dePack -> {_data} -> {$id} -> {pvalue} = $dePacks -> {$dataType} -> {_data} -> {$id} -> {pvalue};
+      }
+    }
+  }
+  return($dePack);
+}
+
 sub FETp {
   use Bio::FdrFet;
   my %args = (
