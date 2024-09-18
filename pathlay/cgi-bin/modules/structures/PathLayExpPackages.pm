@@ -21,8 +21,8 @@ package ExpONTs;
             @_
         );
         my $parameters = $args{Parameters};
-        my $base = "../pathlay_users/";
         my $user = $parameters -> {_h3};
+        my $base = $user ne "6135251850" ? "../pathlay_users/" : "../demo_exps/";
         my $exp = $parameters -> {_exp_select};
         my $ont_db = $parameters -> {_ont_db_file};
         my $ont_db_location = $parameters -> {_ont_db_location};
