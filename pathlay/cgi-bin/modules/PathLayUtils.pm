@@ -621,6 +621,35 @@ package Parameters;
         $self -> {_universe_file} = "../pathlay_data/".$self -> {_exp_organism_input_text}."/db/".$self -> {_maps_db_select}."/".$self -> {_exp_organism_input_text}.".".$self -> {_maps_db_select}.".genes.universe";
         $self -> {_map_association_file} = "../pathlay_data/".$self -> {_exp_organism_input_text}."/db/".$self -> {_maps_db_select}."/".$self -> {_exp_organism_input_text}.".".$self -> {_maps_db_select}.".gmt";
     }
+    sub LoadENVFromCGI {
+        use Data::Dumper;
+        my $self = shift;
+        print STDERR Dumper $cgi->Vars;
+        foreach my $param ($cgi->Vars) {
+            if ($cgi->param($param)) {
+                $self->{"_$param"} = $cgi->param($param) eq "true" ? 1 : $cgi->param($param) eq "false" ? 0 : $cgi->param($param);
+            }
+        }
+
+        $self -> {_gene_db_file} = $self -> {_org}.".gene_info";
+        $self -> {_gene_db_location} = "../pathlay_data/".$self -> {_org}."/db/";
+        $self -> {_urna_db_file} = $self -> {_org}."_mirtarbase.tsv";
+        $self -> {_urna_db_location} = "../pathlay_data/".$self -> {_org}."/db/".$self -> {_org}."_mirtarbase.tsv";
+        $self -> {_prot_db_file} = $self -> {_org}."_uniprot.tsv";
+        $self -> {_prot_db_location} = "../pathlay_data/".$self -> {_org}."/db/";
+        $self -> {_ont_db_file} = $self -> {_org}."_ont.gmt";
+        $self -> {_ont_db_location} = "../pathlay_data/".$self -> {_org}."/db/";
+        $self -> {_tf_db_file} = $self -> {_org}."_tf.gmt";
+        $self -> {_tf_db_location} = "../pathlay_data/".$self -> {_org}."/db/";
+        $self -> {_meta_db_file} = $self -> {_org}.".compound_info";
+        $self -> {_meta_db_location} = "../pathlay_data/".$self -> {_org}."/db/";
+
+        $self -> {_mapdir} .= $self -> {_maps_db_select}."/"; 
+        $self -> {_nodesdir} = "../pathlay_data/".$self -> {_org}."/maps/".$self -> {_maps_db_select}."/";
+        $self -> {_universe_file} = "../pathlay_data/".$self -> {_org}."/db/".$self -> {_maps_db_select}."/".$self -> {_org}.".".$self -> {_maps_db_select}.".genes.universe";
+        $self -> {_map_association_file} = "../pathlay_data/".$self -> {_org}."/db/".$self -> {_maps_db_select}."/".$self -> {_org}.".".$self -> {_maps_db_select}.".gene.gmt";
+        $self -> {_map_association_file_meta} = "../pathlay_data/".$self -> {_org}."/db/".$self -> {_maps_db_select}."/".$self -> {_org}.".".$self -> {_maps_db_select}.".meta.gmt";
+    }
     sub updateLastSession {
         
         my $self = shift;
