@@ -1,5 +1,5 @@
 import { integrityCheck, organismCodes, paths, forkedProcesses, requestQueueDBs } from './global.js';
-import { updateResultsContainer, displayDBStatus, cleanUp} from './InterfaceUtils.js';
+import { updateResultsContainer, displayDBStatus, cleanUp, downloadDBsButton} from './InterfaceUtils.js';
 import { checkMapsExistence, getRequest } from './MapsRequests.js'
 
 // check integrity
