@@ -686,18 +686,20 @@ class Gene {
         if (this.type == "nodeg") {
             this.img = "grey_square.png";
         }
-
         if (this.hasMethyl === true) {
-            console.log("Assigning Methyl");
+            
             if (this.meth !== undefined) {
                 if (this.meth > methRightThreshold) { // this should be a threshold
                     this.methImg = "yellow_meth.png";
-                }
-                if (this.meth < methLeftThreshold) {
+                } else if (this.meth < methLeftThreshold) {
                     this.methImg = "blue_meth.png";
                 }
-            } else {
-                this.methImg = "meth_orange.png";
+            }
+            
+            if (this.meth === undefined) {
+                if (this.meth === undefined) {
+                    this.methImg = "meth_orange.png";
+                }
             }
         }
         
