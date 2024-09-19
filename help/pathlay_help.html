@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>KEGGlay Interface - (c) matteo_dot_ramazzotti_at_unifi.it</title>
+</head>
+<body>
+<table width="1900px" border=0>
+<tr bgcolor="#006699" width="80%"><td><font size="+2" color="white"><b>KEGGlay Interface - Help</b></font><br></td><td align="right"><img src="../sbsc-unifi-trasp-inv.png" height=100><br></td></tr>
+<tr><td align="justify" colspan=2><br><hr><br><u><b>1. Introduction</b></u><br>
+<br>
+The visualization of information emerging from -omics datasets is a challenging task due to the inherently large amount of data, the multivariate nature of the source and the complex network of underlying relationships. Graphical maps representing metabolic pathways, cell signaling cascades, gene regulation networks or even more complex themes such as diseases, are widely available. Among the most famous providers, the KEGG Pathways repository has a traditionally dominant position: KEGG diagrams (maps) are manually curated to maintain focus and easiness of reading while maintaining biological accuracy and coherence. Motivated by the increasing interest for regulatory networks, we developed the KEGGlay Interface, an interactive, pathway centric graphical interface to visually inspect the results of combined miRNA/mRNA high-throughput approaches.<br><br>
+The KEGGlay Interface is an on-line tool powered by Perl, HTML5 and Javascript that allows to simultaneously visualize differentially expressed miRNA and mRNA on top of KEGG maps, that are shown into a fast and interactive client side browser. Data banks are interrogated for  mRNA/miRNA pairings, then signals from data are integrated into special symbols and positioned into KEGG maps, with partial transparency and appropriate coloring. Enriched maps are precomputed and layered so that they can be hidden/shown by a simple drop-down menu or by mRNA / miRNA filters. Symbols can be controlled in terms of size, position and transparency, and snapshots of the current analysis can be saved.
+The core of the symbol choice is based on the concept of "complex": biological functions or reactions are frequently operated by several players, that in KEGG maps are represented as a single entry. In KEGGlay, the complex gets unboxed and data on single players are made explicit.<br>
+</td></tr>
+<tr>
+<td align="justify" colspan=2><br><hr><br><u><b>2. Authentication page</b></u><br>
+<br>
+<center><img alt="shot1" src="shot1.png" border=0></center><br>
+<br>
+Fill these fields with a valid e-mail address and a password to access tre configuration page.<br>
+Automatically, a user home folder will  be created on our server, ready to receive user's data form the next page.<br>
+Log in as guest@kegglay/guest to access demo data<br>
+If both fields are left empty, a homeless configuration page will be created. Data will not be stored because the user have selected to work anonymously.<br>
+The homeless mode will be shown also in case of wrong credentials. In this case, a warning will be shown (in red). IN this case the user can decide to work anonymously, retry its password or contact the authors to have its credentials sent by email.<br>
+</td></tr>
+<tr>
+<td align="justify" colspan=2><br><hr><br><u><b>3. Configuration page</b></u><br><br>
+<center><img alt="shot2" src="shot2_plus.png" border=0></center><br><br>
+<ol>
+<li>Experiment name: this field is used to index user data and configuration. It will be shown each time the same user have access to the KEGGlay Interface (see below).</li>
+<li>mRNA data: paste in this area the result of a differential expression analysis in tab-delimited format. The first line will not be used in any case, so column names can be used here. The columsn that are needed are that of Entrez Gene ID, that of fold changes and that of p-values (to be configured in 4).</li>
+<li>miRNA data: as for the mRNA data, except that the identifiers must be that of miRNA, i.e. the official names coming form the mirBase database.</li>
+<li>Here the user specifies at which columns the required data for mRNA have to be searched. Fold change can be either raw or log. The filter accepts criteria like ">","<","<>" (outside) and "><" (inside). The next field contains the value used for filtering. Typical configurations are "logFC in column 2 <> 1" for using in the analysis all genes with a DE > 2x in both directions, or "logFC in column 2 > 1" for using all 2x upregulated genes. The p-value is used to filter out genes with the desired statistical significance for DE.</li>
+<li>Same as 4a. The main difference is the second field of the first row, where the user specify the source of miRNA/gene associations<sup>1</sup>.<br>
+<li>The criteria for map selection. "Nothing" means to include all maps that have one or more matching genes (among those that passed the filters in 4a. and 4b.). "Fisher Exact Test" performs a functional enrichment analysis using genes in different maps as gensets. FET can be run using all human genes ar only genes containe in KEGGmaps as the universe, and retains only thos emaps that have an Benjamini-Hochbers adjusted p-value < 0.05. "The following..." allows to use the area below to indicate some map of interest. Maps must be indicated as shown in the link below.</li>
+<li>Run the KEGGlay analysis. Optinally store data and configurations for further reuse. The experiment name will be used as an index of the whole analysis.</li><br>
+</ol>
+As shown in the image below, for already registered users that have already submitted some analysis, a personalized configuration page is shown allowing to recall previous experiments (mRNA, miRNA, configuration and map selections). For selection ue the drop down menu and press the "Load" button to automatically fill all the necessary fields.<br>
+<br>
+<center><img alt="shot2b" src="shot2b.png" border=0></center><br>
+<td></tr>
+<tr>
+<td align="justify" colspan=2><br><hr><br><u><b>4. The KEGGlay Interface</b></u><br><br>
+<br> 
+<center><img alt="shot3" src="shot_main2.png" border=0></center><br>
+<br>
+This is the output of the KEGGlay processing. KEGG maps are shown with symbols corresponding to up/down regulated mRNA or miRNA. The legend for symbols is as follows:<br>
+<br> 
+<center><img alt="legend" src="../symbols.png" border=0 width=400></center><br>
+<br>
+This highly interactive page is thought to facilitate the observation of data onto maps. It is is very easy to change maps or restrict the anlaysis to specific genes or miRNAs. Hereinafter the various sections will be described.<br>
+<br>
+<b>Information and global graphics</b><br>
+<br>
+<center><img alt="shot3" src="shot3.png" border=0></center><br>
+<br>
+This top section is about the results of filtering and consolidation of data tables<sup>2</sup>, plus notes on usage<br>
+<ul>
+<li>Hover the mouse over "KEGGlay report" to know how many genes/miRNAs appear in the maps.</li>
+<li>Hover the mouse over "Legend" to see the meaning of symbols used for representing complexes or genes in the maps.</li>
+<li>Hover the mouse over "Usage" to see a brief summary of how to interact with symbols on the maps.</li>
+<li>The "Help page" points to the current help page.</li>
+</ul>
+<br>
+<b>Graphical options</b></u><br>
+<br>
+This bottom section contains global graphical options:<br>
+<ul>
+<li>5. "transparency up/dn" makes all the symbols more opaque or transparent, "size up/dn" makes all the symbols bigger or smaller.</li>
+<li>6. "open as image" will open a new window containig the currently showed map with all the symbols in, to be saved as image.</li>
+<br>
+</ul>
+<br>
+<b>Selectors</b><br>
+<br>
+<center><img alt="shot4" src="shot4.png" border=0></center><br>
+<br>
+This bottom section contain the selectors:<br>
+<ul>
+<li>the "Select map" displays all the maps that have a match on data. Simply selecting a map show the maps and all the symbols placed by the analysis of data.</li>
+<li>by "mRNA" filters out maps that does not contain the selected gene. The list of maps will have non-matching maps unavailable for selction.</li>
+<li>by "miRNA" filters out maps that does not contain the selected miRNA. The list of maps will have non-matching maps unavailable for selction.</li>
+<br>
+</ul>
+<br><b>Maps</b><br>
+<br>
+The Maps area displays the KEGG maps decorated by the KEGGlay<br>
+<br>
+<center><img alt="shot5" src="shot5.png" border=0></center><br>
+<br><br>
+</td>
+</tr>
+<tr><td align="justify" colspan=2><br><hr><br><u><b>6. Hovering and clicking</b></u><br><br>
+By hovering with the mouse pointer abouve symbol, a temporary popup balloon with a dark background will raise, reporting the fold changes retrieved form the original data in the submission window. In this way, the amound of change can be directly observed without using gradiend color, that can sometimes be misleading.<br><br>
+By clicking on a symbol, a different popup balloon will be opened with links to the various players involved in the symbol. Imeediately upon clicking, the ballon can be moved aound and placed anywere in the page, to avoid overlapping with other interesintg sections. A second click will fix the position, and the theuser can access the links. By clicking on the red cross on top/right, the balloon will disappear.<br> 
+<br>
+<center><img alt="shot_help" src="shot_help.png" border=0></center><br>
+<br>
+</td></tr>
+<tr><td align="justify" colspan=2><br><hr><br><u><b>7. Specifications</b></u><br><br>
+<sup>1</sup>Several DBs can be used to associate miRNAs to target genes, with different degrees of accuracy. Currently available DBs are <a href="http://mirtarbase.mbc.nctu.edu.tw/" target "new">miRTarBase<a><br>  
+<sup>2</sup>Consolidation means to condensate multiple rows in a table into a single value (e.g. many DE probes for the same gene). This can be done inseveral ways. In KEGGlay we consolidate fold changes using the average and the p-values using the Fisher method. The filters set up in the interface act on condensed values<br>
+<br>
+</td></tr>
+<tr><td align="justify" colspan=2><br><hr><br><u><b>8. Credits</b></u><br><br>
+The possibility of shotting the page as an image is brought by <a href="https://html2canvas.hertzen.com" target="new"> html2canvas.js </a>by Niklas von Hertzen (under MIT License).<br> 
+The popup links are brought by <a href ="http://www.walterzorn.de/en/tooltip/tooltip_e.htm for the Tip ballon" target="new">wz_tooltip.js</a> by Walter Zorn.<br>
+The statistical analysis of enrichments as well as the consolidation of rows are performed using <a href="https://www.r-project.org/" target="new">R</a><br> 
+<br>
+</td></tr> 
+<tr><td align="justify" colspan=2>
+<hr>
+<font size="-1">
+Last modified: Apr 18 2016<br>
+(c) matteo_dot_ramazzotti_at_unifi.it
+</font>
+</td></tr>
+</table>
+</body>
+</html>
+
