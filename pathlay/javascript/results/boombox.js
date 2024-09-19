@@ -75,7 +75,7 @@ function populateBoomBox(dblclickedIndicator) {
             let extraLi = spawnLi(`${component.id}_chroma_Li`,"mainBoomBoxLi");
 
             let extraText = "Type: Chromatin<br>"; 
-            extraText += `Effect Size:  ${component.meth}<br>`;
+            extraText += `Effect Size:  ${component.chroma}<br>`;
             let extraFont = spawnFont(`${component.id}_chroma_Li_Font` ,"boomBoxFont",extraText);
             extraLi.style.backgroundImage = `url('../src/${component.chromaImg}')`;
             extraLi.appendChild(extraFont);
