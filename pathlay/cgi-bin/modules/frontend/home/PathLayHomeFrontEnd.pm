@@ -71,6 +71,7 @@ sub HomeBuilderOld {
     );
     return($home_script,$form);
 }
+
 sub HomeBuilderNew {
     my %args = (
         @_
@@ -198,6 +199,196 @@ sub HomeBuilderNew {
         Content => $expItemsRow
     );
     return($home_script,$container);
+}
+
+sub HomeEditBuilder {
+    my %args = (
+        @_
+    );
+    my $parameters = $args{Parameters};
+    $parameters -> LoadAvailableExps(
+        UsersDir => $parameters->{_base}."/pathlay_users/".$parameters->{_home}."/"
+    );
+    my $home_script = home_script_Packager(
+        Parameters => $parameters
+    );
+    my $parentDiv = new HTMLDiv();
+    my $header = new HTMLDiv(
+        _class => "header"
+    );
+    $header -> ContentLoader(
+        Content => "<h1>PathLay - Home</h1>"
+    );
+    my $container = new HTMLDiv(
+        _class => "container"
+    );
+
+    my @containerRows;
+    foreach my $row (my @i = 0..3) {
+        $containerRows[$row] = new HTMLDiv(
+            _class => "container-row"
+        );
+    }
+
+    
+
+
+    #icons 
+    $containerRows[0] = editIconsRowPackager();
+
+    # info
+    my $infoContainer = editInfoBoxPackager(
+        Organisms => \%{$parameters -> {_organisms_available}}
+    );
+    
+    #nb: conf and ont generated dynamically 
+
+
+    #Load on Container Row
+    $containerRows[1] -> ContentLoader(
+        Content => $infoContainer
+    );
+
+
+    # Load on Container
+    foreach my $containerRow (@containerRows) {
+        $container -> ContentLoader(
+            Content => $containerRow
+        );
+    }
+
+    # Load on Main Div
+    $parentDiv -> ContentLoader(
+        Content => $header
+    );
+    $parentDiv -> ContentLoader(
+        Content => $container
+    );
+
+    return($home_script,$parentDiv);
+}
+sub editIconsRowPackager {
+
+    my %args = (
+        @_
+    );
+    my $row  = new HTMLDiv(
+        _class => "container-row"
+    );
+    my @icons = (
+        '<a onClick="submitForm(event)" class="icon"><i class="material-icons">save</i><span>Save Changes</span></a>',
+        '<a onClick="submitForm(event)" class="icon"><i class="material-icons">upload_file</i><span>Upload Pack</span></a>',
+        '<a onClick="submitForm(event)" class="icon"><i class="material-icons">download</i><span>Download Pack</span></a>'
+    );
+    my @formIds = (
+        'save_form',
+        'upload_pack_form',
+        'download_pack_form'
+    );
+    my @formActions = (
+        'saveExp',
+        'uploadPack',
+        'downloadExp'
+    );
+    my $i = 0;
+    foreach my $icon (@icons) {
+        my $form = new HTMLForm(
+            _id => $formIds[$i],
+            _name => $formIds[$i],
+            _action => "../cgi-bin/pathlayHomeActions.pl?action=$formActions[$i]",
+            _method => "post",
+            _enctype => "multipart/form-data",
+            _autocomplete => "off"
+        );
+        $form -> ContentLoader(
+            Content => $icon
+        );
+        if ($formActions[$i] eq 'uploadPack') {
+            my $inputFile = new HTMLInput(
+                _type => 'file',
+                _id => 'packInput',
+                _name => 'packInput',
+                _style => 'display:none;'
+            );
+            $form -> ContentLoader(
+                Content => $inputFile
+            );
+        }
+
+        $row -> ContentLoader(
+            Content => $form
+        );
+        $i++;
+    }
+    return($row);
+}
+sub editInfoBoxPackager {
+    my %args = (
+        @_
+    );
+    my $orgAvailable = $args{Organisms};
+
+    my $infoContainer = new HTMLDiv(
+        _class => "info-container"
+    );
+    my $selectContainer = new HTMLDiv(
+        _class => "select-container"
+    );
+    my $organismSelect = new HTMLSelect(
+        _id => 'organismSelect',
+        #_onchange => 'loadConfBox(event)'
+    );
+    foreach my $org (keys %$orgAvailable) {
+        my $opt = new HTMLSelectOption(
+            _value => $org,
+            _text => $org
+        );
+        if ($org eq "hsa"){
+            $organismSelect -> AppendOptionOnTop(
+                HTMLSelectOption => $opt
+            );
+        } else {
+            $organismSelect -> LoadOption(
+                HTMLSelectOption => $opt
+            );
+        }
+    }
+    $selectContainer -> ContentLoader(
+        Content => $organismSelect
+    );
+    #Load on Info Container
+    foreach (my @i = 0..2) {
+        $infoContainer -> ContentLoader(
+            Content => new HTMLDiv(
+                _class => "info-row"
+            )
+        );
+    }
+    @{$infoContainer->{_content}}[0] -> ContentLoader(
+        Content => "<span>Title</span>"
+    );
+    @{$infoContainer->{_content}}[0] -> ContentLoader(
+        Content => new HTMLInput(
+            _id => 'expnameInput',
+            _type => 'text'
+        )
+    );
+    @{$infoContainer->{_content}}[1] -> ContentLoader(
+        Content => "<span>Comment</span>"
+    );
+    @{$infoContainer->{_content}}[1] -> ContentLoader(
+        Content => new HTMLInput(
+            _id => 'commentsInput',
+            _type => 'text'
+        )
+    );
+    @{$infoContainer->{_content}}[2] -> ContentLoader(
+        Content => "<span>Organism</span>"
+    );
+    @{$infoContainer->{_content}}[2] -> ContentLoader(
+        Content => $selectContainer
+    );
+    return($infoContainer);
 }
 
 
