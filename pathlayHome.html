@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PathLay Interface - Login</title>
+    <!-- <link rel="stylesheet" href="./css/login.css"> -->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <style>
+        .header {
+            width: 100%;
+            background-color: #006699;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding-top: 80px; /* Adjust for header height */
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100vw;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-top: 20px;
+        }
+				.container-row {
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					width: 100%;
+					padding: 20px;
+					box-sizing: border-box;
+					margin-top: 20px;
+				}
+        
+			/* Container for the select element */
+			.select-container {
+				display: flex;
+				position: relative;
+				align-self: flex-start;
+				width: 200px; /* Adjust as needed */
+			}
+
+        /* Hide the default select */
+        select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background: transparent;
+            width: 100%;
+            padding: 10px;
+            color: white;
+            font-size: 16px;
+            border: 2px solid #0563af;;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Custom arrow */
+        .select-container::after {
+            content: 'expand_circle_down';
+            font-family: 'Material Icons';
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            pointer-events: none;
+            color: white;
+            background-color: #0563af;
+            padding: 0 5px;
+            border-radius: 5px;
+        }
+
+        /* Background color for the select */
+        .select-container select {
+            background-color: #0563af;;
+        }
+
+        /* Hover effect */
+        .select-container:hover::after {
+            background-color: darkblue;
+        }
+				#iconsRow {
+					justify-content: center;
+				}
+				#expItemsRow {
+					justify-content: center;
+					overflow: scroll;
+					height: 50vw;
+					flex-wrap: wrap;
+				}
+				.icons {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+        .icon {
+            width: 20vw;
+            height: 20vh;
+            margin: 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-decoration: none;
+            color: #006699;
+            transition: color 0.3s, background-color 0.3s;
+        }
+        .icon i.material-icons {
+					font-size: 60px;
+					transition: color 0.3s;
+        }
+        .icon span {
+					margin-top: 10px;
+					font-size: 16px;
+					transition: color 0.3s;
+        }
+        .icon:hover {
+					color: white;
+					background-color: #006699;
+					border-radius: 10px;
+        }
+        .icon:hover i.material-icons,
+        .icon:hover span {
+					color: white;
+        }
+				.exp-package-item-icons{
+					display: flex;
+					flex-direction: row;
+					justify-content: space-around;
+				}
+				.exp-package-item-box{
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					background-color: #006699;
+					color: white;
+					padding: 10px;
+					border-radius: 10px;
+					font-size: larger;
+					font-weight: bold;
+					margin: 10px;
+				}
+				.exp-package-item-icon{
+					width: auto;
+					height: auto;
+					margin: 20px;
+					padding: 10px;
+					border-radius: 10px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					flex-direction: column;
+					text-decoration: none;
+					color: white;
+					transition: color 0.3s, background-color 0.3s;
+				}
+				.exp-package-item-icon i.material-icons {
+					font-size: auto;
+					transition: color 0.3s;
+        }
+        .exp-package-item-icon span {
+					margin-top: 10px;
+					font-size: 16px;
+					transition: color 0.3s;
+        }
+				.exp-package-item-icon:hover {
+					color: #006699;
+					background-color: white;
+					border-radius: 10px;
+        }
+        .exp-package-item-icon:hover i.material-icons,
+        .exp-package-item-icon:hover span {
+					color: #006699;
+        }
+        
+    </style>
+    <script>
+		</script>
+</head>
+<body>
+    <div class="header">
+        <h1>PathLay - Home</h1>
+    </div>
+
+    <div class="container">
+
+			<div id="iconsRow" class="container-row">
+				<div class="icons">
+					<a onClick='' class="icon">
+							<i class="material-icons">add</i>
+							<span>Add New</span>
+					</a>
+					<a onClick='' class="icon">
+						<i class="material-icons">upload_file</i>
+						<span>Upload Pack</span>
+				</a>
+					<a onClick='' class="icon">
+						<i class="material-icons">cloud_download</i>
+						<span>Download Home</span>
+					</a>
+				</div>
+			</div>
+			<div id="expItemsRow" class="container-row">
+				<div class="exp-package-item-box">
+					<span>Title</span>
+					<span>Organism</span>
+					<div class="exp-package-item-icons">
+						<a onClick='' class="exp-package-item-icon">
+							<i class="material-icons">edit_note</i>
+							<span>Edit Pack</span>
+						</a>
+						<a onClick='' class="exp-package-item-icon">
+							<i class="material-icons">download</i>
+							<span>Download</span>
+						</a>
+						<a onClick='' class="exp-package-item-icon">
+							<i class="material-icons">delete</i>
+							<span>Delete</span>
+						</a>
+					</div>
+				</div>
+				<div class="exp-package-item-box">
+					<span>Title</span>
+					<span>Organism</span>
+					<div class="exp-package-item-icons">
+						<a onClick='' class="exp-package-item-icon">
+							<i class="material-icons">edit_note</i>
+							<span>Edit Pack</span>
+						</a>
+						<a onClick='' class="exp-package-item-icon">
+							<i class="material-icons">download</i>
+							<span>Download</span>
+						</a>
+						<a onClick='' class="exp-package-item-icon">
+							<i class="material-icons">delete</i>
+							<span>Delete</span>
+						</a>
+					</div>
+				</div>
+				<div class="exp-package-item-box">
+					<span>Title</span>
+					<span>Organism</span>
+					<div class="exp-package-item-icons">
+						<a onClick='' class="exp-package-item-icon">
+							<i class="material-icons">edit_note</i>
+							<span>Edit Pack</span>
+						</a>
+						<a onClick='' class="exp-package-item-icon">
+							<i class="material-icons">download</i>
+							<span>Download</span>
+						</a>
+						<a onClick='' class="exp-package-item-icon">
+							<i class="material-icons">delete</i>
+							<span>Delete</span>
+						</a>
+					</div>
+				</div>
+				<div class="exp-package-item-box">
+					<span>Title</span>
+					<span>Organism</span>
+					<div class="exp-package-item-icons">
+						<a onClick='' class="exp-package-item-icon">
+							<i class="material-icons">edit_note</i>
+							<span>Edit Pack</span>
+						</a>
+						<a onClick='' class="exp-package-item-icon">
+							<i class="material-icons">download</i>
+							<span>Download</span>
+						</a>
+						<a onClick='' class="exp-package-item-icon">
+							<i class="material-icons">delete</i>
+							<span>Delete</span>
+						</a>
+					</div>
+				</div>
+				<div class="exp-package-item-box">
+					<span>Title</span>
+					<span>Organism</span>
+					<div class="exp-package-item-icons">
+						<a onClick='' class="exp-package-item-icon">
+							<i class="material-icons">edit_note</i>
+							<span>Edit Pack</span>
+						</a>
+						<a onClick='' class="exp-package-item-icon">
+							<i class="material-icons">download</i>
+							<span>Download</span>
+						</a>
+						<a onClick='' class="exp-package-item-icon">
+							<i class="material-icons">delete</i>
+							<span>Delete</span>
+						</a>
+					</div>
+				</div>
+				<div class="exp-package-item-box">
+					<span>Title</span>
+					<span>Organism</span>
+					<div class="exp-package-item-icons">
+						<a onClick='' class="exp-package-item-icon">
+							<i class="material-icons">edit_note</i>
+							<span>Edit Pack</span>
+						</a>
+						<a onClick='' class="exp-package-item-icon">
+							<i class="material-icons">download</i>
+							<span>Download</span>
+						</a>
+						<a onClick='' class="exp-package-item-icon">
+							<i class="material-icons">delete</i>
+							<span>Delete</span>
+						</a>
+					</div>
+				</div>
+				<div class="exp-package-item-box">
+					<span>Title</span>
+					<span>Organism</span>
+					<div class="exp-package-item-icons">
+						<a onClick='' class="exp-package-item-icon">
+							<i class="material-icons">edit_note</i>
+							<span>Edit Pack</span>
+						</a>
+						<a onClick='' class="exp-package-item-icon">
+							<i class="material-icons">download</i>
+							<span>Download</span>
+						</a>
+						<a onClick='' class="exp-package-item-icon">
+							<i class="material-icons">delete</i>
+							<span>Delete</span>
+						</a>
+					</div>
+				</div>
+				<div class="exp-package-item-box">
+					<span>Title</span>
+					<span>Organism</span>
+					<div class="exp-package-item-icons">
+						<a onClick='' class="exp-package-item-icon">
+							<i class="material-icons">edit_note</i>
+							<span>Edit Pack</span>
+						</a>
+						<a onClick='' class="exp-package-item-icon">
+							<i class="material-icons">download</i>
+							<span>Download</span>
+						</a>
+						<a onClick='' class="exp-package-item-icon">
+							<i class="material-icons">delete</i>
+							<span>Delete</span>
+						</a>
+					</div>
+				</div>
+				<div class="exp-package-item-box">
+					<span>Title</span>
+					<span>Organism</span>
+					<div class="exp-package-item-icons">
+						<a onClick='' class="exp-package-item-icon">
+							<i class="material-icons">edit_note</i>
+							<span>Edit Pack</span>
+						</a>
+						<a onClick='' class="exp-package-item-icon">
+							<i class="material-icons">download</i>
+							<span>Download</span>
+						</a>
+						<a onClick='' class="exp-package-item-icon">
+							<i class="material-icons">delete</i>
+							<span>Delete</span>
+						</a>
+					</div>
+				</div>
+				<div class="exp-package-item-box">
+					<span>Title</span>
+					<span>Organism</span>
+					<div class="exp-package-item-icons">
+						<a onClick='' class="exp-package-item-icon">
+							<i class="material-icons">edit_note</i>
+							<span>Edit Pack</span>
+						</a>
+						<a onClick='' class="exp-package-item-icon">
+							<i class="material-icons">download</i>
+							<span>Download</span>
+						</a>
+						<a onClick='' class="exp-package-item-icon">
+							<i class="material-icons">delete</i>
+							<span>Delete</span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+
+
+        <!-- <div class="container-row">
+					<span>Select Organism</span>
+					<div class="select-container">
+
+						<select>
+								<option value="option1">Option 1</option>
+								<option value="option2">Option 2</option>
+								<option value="option3">Option 3</option>
+						</select>
+					</div>
+        </div>
+				<div class="container-row">
+					<span>Select Organism</span>
+					<div class="select-container">
+						<select>
+								<option value="option1">Option 1</option>
+								<option value="option2">Option 2</option>
+								<option value="option3">Option 3</option>
+						</select>
+					</div>
+				</div> -->
+    </div>
+</body>
+</html>
