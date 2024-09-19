@@ -249,15 +249,6 @@ function updateProgressBar(percentComplete,id) {
 }
 
 
-
-// //display each db status and availability
-// function displayDBStatus(organism) {
-// 	cleanUp("dbBoxes");
-// 	integrityCheck[organism].filter((db) => (db.type === "interaction")).map((db) => {
-// 		document.getElementById("dbBoxes").appendChild(boxDBDiv(db));
-// 	});
-// }
-
 // display overall db status for organism
 function checkForDBIntegrity(organism) {
 
