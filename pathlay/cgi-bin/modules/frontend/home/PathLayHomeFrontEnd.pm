@@ -1287,4 +1287,31 @@ sub HomePrinter {
     print "</body>";
     print "</html>\n";
 }
+sub HomePrinterNew {
+    my %args = (
+        @_
+    );
+
+    my $script = $args{script};
+    my $container = $args{form};
+    print "Content-type: text/html\n\n";
+    print "<!DOCTYPE html>\n";
+    print "<html>\n";
+    print "<head>\n";
+    print "<meta charset=\"UTF-8\"/>\n";
+    print '<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />'."\n";
+    print '<meta http-equiv="Pragma" content="no-cache" />'."\n";
+    print '<meta http-equiv="Expires" content="0" />'."\n";
+    # print '<link rel="stylesheet" href="../css/ul.css">'."\n";
+    # print '<link rel="stylesheet" href="../css/mainDivsHome.css">'."\n";
+    print '<link rel="stylesheet" href="../css/pathlayHome.css">'."\n";
+    print '<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">'."\n";
+    print '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">'."\n";
+    print "</head>\n";
+    print "<body>";
+    $script -> PrintScript();
+    $container -> PrintDiv();
+    print "</body>";
+    print "</html>\n";
+}
 1;
