@@ -310,69 +310,7 @@ window.addEventListener('beforeunload', (event) => {
 });
 
 
-//build custom div for db status
 
-// function statusDiv (id,status,message) {
-// 	var div = document.createElement('div');
-// 	div.id = id;
-// 	div.className = "status-div";
-// 	div.className += 
-// 		status === "ok" ?  " ok-message" : 
-// 		status === "error" ? " error-message" : 
-// 		status === "loading" || status === "warning" ? " warning-message" : 
-// 		" neutral-message";
-// 	var divMessage = document.createElement('div');
-// 	divMessage.className = "status-message-div"; 
-// 	var divIcon = document.createElement('div');
-// 	divIcon.className = status === "loading" ? "status-icon-loading" : "status-icon-div";
-// 	divMessage.innerHTML = `<b>${message}</b>`;
-// 	divIcon.innerHTML = 
-// 		status === "ok" ? '<i class="material-icons-outlined" id="check-icon">check_circle_outline</i>' :
-// 		status === "error" || status === "warning" ? '<i class="material-icons-outlined" id="error-icon">error_outline</i>' :
-// 		"";
-// 	if (status === "loading" || status === "download") {
-// 		let spinner = document.createElement('div');
-// 		spinner.id = "spinner";
-// 		spinner.className = "spinner-div";
-// 		divIcon.appendChild(spinner)
-// 	}
-// 	let messageWrap = document.createElement('div');
-// 	messageWrap.className = "status-message-info-div";
-
-// 	messageWrap.appendChild(divMessage);
-// 	messageWrap.appendChild(divIcon);
-// 	div.appendChild(messageWrap);
-// 	return(div);
-// }
-// function boxDBDiv (db) {
-
-// 	let titleDiv = document.createElement('b');
-// 	titleDiv.className = 'source-db-title';
-
-// 	let text = document.createElement('b');
-// 	text.innerText = typeToTitle[db.infoType];
-
-// 	let img = document.createElement('img');
-// 	img.className = "source-db-icon";
-// 	img.src = db.imgSrc;
-	
-// 	let div = document.createElement('div');
-// 	div.className = "source-db-box";
-// 	div.style.backgroundColor = db.available ? "#DFF0D8" : "#F7CCC9";
-
-// 	let iconDiv = document.createElement('div');
-// 	iconDiv.innerHTML = 
-// 		db.available ? '<i class="material-icons-outlined" id="check-icon">check_circle_outline</i>' 
-// 		: '<i class="material-icons-outlined" id="error-icon">error_outline</i>';
-
-// 	titleDiv.appendChild(text);
-// 	div.appendChild(titleDiv);	
-// 	div.appendChild(img);
-// 	iconDiv.id = `${db.infoType}-box-icon`;
-// 	div.appendChild(iconDiv);
-// 	div.id = `${db.infoType}-box`;
-// 	return(div);
-// }
 
 function updateBoxDBDivStatus (id,status) {
 	let div = document.getElementById(id);
