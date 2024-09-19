@@ -940,12 +940,12 @@ sub ResultsBuilder {
 
 
         if (
-            $parameters -> {_enablegene} == 1 || 
-            $parameters -> {_nodeg_select_urna} == 1 ||
-            $parameters -> {_nodeg_select_meth} == 1 ||
-            $parameters -> {_nodeg_select_chroma} == 1 ||
-            $parameters -> {nodeg_select_tf_gene} == 1 ||
-            $parameters -> {nodeg_select_tf_prot} == 1
+            $parameters -> {_enablegene} || 
+            $parameters -> {_nodeg_select_urna} ||
+            $parameters -> {_nodeg_select_meth} ||
+            $parameters -> {_nodeg_select_chroma} ||
+            $parameters -> {nodeg_select_tf_gene} ||
+            $parameters -> {nodeg_select_tf_prot}
         ) {
             $type_selector_main_html -> LoadOption(
                 HTMLSelectOption => $type_option_gene_html
