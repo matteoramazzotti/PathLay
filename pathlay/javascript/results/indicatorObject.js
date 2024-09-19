@@ -613,7 +613,7 @@ class Gene {
         this.urnas = [];
     }
     loadMeth = function(methValue) {
-        this.meth = methValue;
+        this.meth = methValue ? methValue : undefined;
         this.hasMethyl = true;
     }
     loadChroma = function(chromaValue) {
