@@ -55,7 +55,7 @@ export function downloadMissing(organism) {
 
 function checkStatus(fileID,type) {
 	console.log(forkedProcesses);
-	fetch(`${interactionDBPath}${fileID}.status.json`)
+	fetch(`${paths.interactionDBPath}${fileID}.status.json`)
 		.then(response => response.json())
 		.then(data => {
 				if (data.status === 'complete') {
