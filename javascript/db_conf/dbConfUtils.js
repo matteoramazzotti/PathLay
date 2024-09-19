@@ -3,10 +3,43 @@ import { updateResultsContainer, displayDBStatus, cleanUp} from './InterfaceUtil
 import { checkMapsExistence, getRequest } from './MapsRequests.js'
 
 // check integrity
+async function checkFileExistence(organism) {
+	try {
+		console.log("checkFileExistence: "+organism)
+		var selectedSpecies = organism;
+		paths.interactionDBPath = `pathlay_data/${organismCodes[selectedSpecies]}/db/`;
+		console.log(paths.interactionDBPath);
+		let response = await getRequest(`file_checker.pl?organism=${selectedSpecies}`);
+		const formatFileData = (file, type, available) => ({
+			id: file.id,
+			required: file.required === "true",
+			useProxy: file.useProxy === "true",
+			useFork: file.useFork === "true",
+			type: type,
+			available: available,
+			imgSrc: file.imgSrc,
+			fileSrc: file.fileSrc,
+			infoType: file.infoType,
+			fileName: file.fileName
+		});
+		
+		const interactionFiles = [
+			...response.interactionFiles.present.map(file => formatFileData(file, "interaction", true)),
+			...response.interactionFiles.missing.map(file => formatFileData(file, "interaction", false))
+		];
+		
+		integrityCheck[organism] = [...interactionFiles];
+		
+		// console.log(response);
+		console.log(integrityCheck[organism]);
+		
+		checkForDBIntegrity(selectedSpecies);
+		displayDBStatus(selectedSpecies);
+	} catch (error) {
+		console.log(error)
+		updateResultsContainer("serverError",organism);
 
-	xhttp.open("GET", "file_checker.pl?organism=" + selectedSpecies, true);
-	xhttp.send();
-
+	}
 }
 // function checkMapsExistence(organism) {
 // 	console.log("checkMapsExistence")
