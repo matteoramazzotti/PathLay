@@ -3,7 +3,7 @@ import { requestQueueMaps, mapsCheck, integrityCheck } from './global.js';
 
 // generic requests
 
-async function getRequest(url) {
+export async function getRequest(url) {
   return new Promise((resolve, reject) => {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
