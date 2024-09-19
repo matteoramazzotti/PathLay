@@ -403,7 +403,7 @@ class Complex {
             activeComplexObj = complexObjs[complexSelectedID];
         } else {
             activeComplexObj = new Complex(complexSelectedID,document.getElementById(complexSelectedID).parentElement.id);
-            activeComplexObj.loadContent();
+            activeComplexObj.loadContent2();
         }
         
 
