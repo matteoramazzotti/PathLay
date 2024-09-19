@@ -785,6 +785,9 @@ sub PrintDiv{
         if (ref($content) eq "HTMLFont") {
             $content -> PrintFont();
         }
+        if (ref($content) eq "HTMLForm") {
+            $content -> PrintForm();
+        }
         if (!ref($content)) {
             print $content."\n";
         }
