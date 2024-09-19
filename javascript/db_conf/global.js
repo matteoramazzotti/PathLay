@@ -25,8 +25,10 @@ export const organismCodes = {
 // Assuming RequestQueue is defined elsewhere and imported in globals.js
 import { RequestQueue } from './RequestQueue.js';
 
-export let interactionDBPath = "";
-export let forkedProcesses = [];
+export const paths = {
+	interactionDBPath : ""
+};
+export var forkedProcesses = [];
 
 
 export const requestQueueMaps = new RequestQueue();
