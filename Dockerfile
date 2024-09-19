@@ -21,7 +21,7 @@ RUN \
         #libmysqlclient-dev \
         libapreq2-dev \
         tar \
-        r-base \
+        #r-base \
         libgd-dev \
         libgtk2.0-0 \
         libcanberra-gtk-module \
@@ -30,7 +30,9 @@ RUN \
 		tcl && \
 		cpanm --notest CGI && \
 	cpanm --notest ExtUtils::PkgConfig && \
-    cpanm --notest Statistics::R && \
+    #cpanm --notest Statistics::R && \
+    cpanm Statistics::Distributions && \
+    cpanm Bio::FdrFet && \
     cpanm --notest GD && \
     cpanm install Archive::Zip && \
 	a2enmod cgid && \
