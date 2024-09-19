@@ -12,3 +12,7 @@ pathlay/cgi-bin/IndicatorsOld.pm
 pathlay/pathlay_users/.last
 pathlay_demo/
 localhost.conf
+pathlay/cgi-bin/_Inline/lib/auto/Bio/FdrFet/FastFet/FastFet.inl
+pathlay/cgi-bin/_Inline/lib/auto/Bio/FdrFet/FastFet/FastFet.so
+pathlay/cgi-bin/_Inline/.lock
+pathlay/cgi-bin/_Inline/config-x86_64-linux-gnu-thread-multi-5.034000
