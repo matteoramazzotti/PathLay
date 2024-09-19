@@ -286,7 +286,9 @@ document.addEventListener("DOMContentLoaded", function() {
 	// document.getElementById('species').addEventListener('change',(event) => {checkMapsExistence(event.target.value)});
 	document.getElementById('species').value = "homo_sapiens";
 
-	document.getElementById("fileCheckerButton").addEventListener('click',() => {checkFileExistence(document.getElementById('species').value)});
+	document.getElementById("fileCheckerButton").addEventListener('click',() => {
+		checkFileExistence(document.getElementById('species').value)
+	});
 	document.getElementById("mapsCheckerButton").addEventListener('click',() => {
 		checkMapsExistence(document.getElementById('species').value,'kegg');
 		checkMapsExistence(document.getElementById('species').value,'wikipathways')
