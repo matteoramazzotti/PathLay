@@ -262,9 +262,9 @@ function fill_complex_pool(complex) {
 		complex = complex.replace(/_mini/g,"");
 	}
 
-
 	var map_id = map_id_regex.exec(document.getElementById(complex).id)[1];
-	var map_name = map_name_regex.exec(document.getElementById(complex).src)[1].replace(/%20/g," ");
+
+	var map_name = document.getElementById(map_id).attributes.name.nodeValue;
 
 	console.log(map_id);
 	console.log(complex);
@@ -300,6 +300,7 @@ function fill_complex_pool(complex) {
 	img.setAttribute("width",30);
 	img.setAttribute("class","minicomplex");
 	img.setAttribute("title",document.getElementById(complex).title);
+	img.setAttribute("content",document.getElementById(complex).attributes.content.nodeValue);
 	const regex = new RegExp('_mini');
 	if (regex.test(document.getElementById(complex).id) === false) {
 		img.setAttribute("onClick","complex_selector("+document.getElementById(complex).id+"_mini"+")");
