@@ -1,5 +1,6 @@
-import { typeToTitle, mapsCheck } from './global.js';
+import { typeToTitle, mapsCheck, integrityCheck } from './global.js';
 import { downloadMaps } from './MapsRequests.js';
+import { downloadMissing } from './dbConfUtils.js';
 
 
 
