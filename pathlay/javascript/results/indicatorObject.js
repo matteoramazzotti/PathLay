@@ -786,7 +786,7 @@ class Protein extends Gene {
                 this.methImg = "blue_meth.png";
             }
         } else {
-            this.methImg = "blue_meth.png";
+            this.methImg = "meth_orange.png";
         }
         
         if (this.chromaImg !== undefined) {
