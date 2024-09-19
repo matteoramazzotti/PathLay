@@ -43,7 +43,7 @@ async function checkFileExistence(organism) {
 }
 
 //download
-function downloadMissing(organism) {
+export function downloadMissing(organism) {
 
 	//update result container here
 
