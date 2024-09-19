@@ -259,7 +259,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 queryInterface.reset();
                 highLightInterface.enableAllMapOptions();
                 let tmpObj = new Complex (active_complex_id,document.getElementById(active_complex_id).parentElement.id)
-                tmpObj.loadContent();
+                tmpObj.loadContent2();
                 let tmpQueryObj = new queryObj ("id",tmpObj.components[0].id,tmpObj.components[0].type);
                 queryInterface.addIdToQuery(tmpQueryObj);
                 queryInterface.queryExec();
