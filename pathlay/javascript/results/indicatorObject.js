@@ -285,7 +285,6 @@ class Complex {
         document.getElementById(this.id).style.display = "block"; 
     }
     getGenes = function() {
-        console.log("get genes");
         if (this.hasDeg === false && this.hasNoDeg === false) {
             return undefined;
         }
