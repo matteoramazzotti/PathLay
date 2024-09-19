@@ -903,7 +903,8 @@ class Pathway {
         let complexImgs = document.getElementById(`${this.id}_complexes`).querySelectorAll(".complex");
         for (let complexImg of complexImgs) {
             let complexObj = new Complex (complexImg.id,this.id);
-            complexObj.loadContent();
+            // complexObj.loadContent();
+            complexObj.loadContent2();
             this.addComplex(complexObj);
             complexObjs[complexObj.id] = complexObj; 
         }
