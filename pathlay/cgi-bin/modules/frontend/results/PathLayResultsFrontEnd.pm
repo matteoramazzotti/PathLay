@@ -1285,8 +1285,20 @@ sub results_style_Packager {
 
     my $style_section = new HTMLStyle();
     my @style_links;
-    opendir(STYLEDIR,$parameters -> {_styledir});
-    foreach my $cssfile (sort(readdir(STYLEDIR))) {
+    my @styles = (
+        "window-engine.css",
+        "overDiv.css",
+        "mainDivsHome.css",
+        "mainDivsAccess.css",
+        "mainDivs.css",
+        "mainButtons.css",
+        "mainButtons.css",
+        "complexes.css",
+        "boomBoxDiv.css",
+        "animate.css",
+        "old.css"
+    );
+    foreach my $cssfile (sort(@styles)) {
         next if ($cssfile !~ /\.css$/);
         #print $cssfile."\n";
         my $css = new HTMLStyleLink(
@@ -1296,7 +1308,6 @@ sub results_style_Packager {
         #$css -> PrintStyleLink();
         push(@style_links,$css);
     }
-    closedir(STYLEDIR);
 
     $style_section -> StyleLinksLoader(
         Content => \@style_links
