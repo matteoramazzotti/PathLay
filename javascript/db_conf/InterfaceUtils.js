@@ -182,6 +182,13 @@ function downloadMapsButton(organism,db) {
 	button.onclick = function() { downloadMaps(organism,db); };
 	return(button);
 }
+export function downloadDBsButton(organism) {
+	let button = document.createElement('button');
+	button.className = "download-button";
+	button.innerText = "Download";
+	button.onclick = function() { downloadMissing(organism); };
+	return(button);
+}
 
 
 //display each db status and availability
