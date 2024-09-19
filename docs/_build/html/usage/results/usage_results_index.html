@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pathway Explorer &mdash; PathLay 0.1 documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=2709fde1"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -29,11 +30,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> PathLay
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            PathLay
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -48,13 +53,15 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../installation/index.html">Installation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../installation/installation_docker.html">Building the Docker Image (Recommended)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../installation/installation_apache.html">Apache Server Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../installation/linux/index.html">Installation on Linux</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../installation/linux/installation_docker.html">Installation using Docker (Recommended)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../installation/linux/installation_apache.html">Apache Server Installation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../howto/index.html">How to run</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../howto/howto_localserver.html">Run PathLay as local server (localhost)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../howto/howto_remoteserver.html">Run PathLay as network server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../howto/howto_docker_server.html">Run PathLay as network server</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="../usage_index.html">Usage</a><ul class="current">
@@ -126,7 +133,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a></li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../usage_index.html">Usage</a></li>
       <li class="breadcrumb-item active">Pathway Explorer</li>
       <li class="wy-breadcrumbs-aside">
@@ -139,7 +146,7 @@
            <div itemprop="articleBody">
              
   <section id="pathway-explorer">
-<span id="usage-results"></span><h1>Pathway Explorer<a class="headerlink" href="#pathway-explorer" title="Permalink to this heading"></a></h1>
+<span id="usage-results"></span><h1>Pathway Explorer<a class="headerlink" href="#pathway-explorer" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <p>The “PathLay - MAPS” page will be displayed after the configuration and the submitting of an analysis on an Experiment Package in your home. IDs coming from your datasets will be portrayed as different indicators on pathways depending on the Analysis Mode chosen (see more “Selecting an Analysis Mode”). This page allows you to:</p>
@@ -158,7 +165,7 @@
 <p>The “PathLay - MAPS” page is directly accessible after you hit the “Submit” button allowing you to navigate through pathways right away but depending on how much data PathLay needs to process, some indicators may not be displayed correctly from the go and require more time.</p>
 </div>
 <section id="pathway-navigation">
-<span id="usage-results-mapsel"></span><h2>Pathway Navigation<a class="headerlink" href="#pathway-navigation" title="Permalink to this heading"></a></h2>
+<span id="usage-results-mapsel"></span><h2>Pathway Navigation<a class="headerlink" href="#pathway-navigation" title="Link to this heading"></a></h2>
 <p>Pathways available are listed in alphabetical order in the dropdown menu on the top left corner. The pathway name and ID are displayed and the numbers between round parenthesis give you information on how many indicators are loaded on the pathway. Selecting one pathway from this menu will instantly display it with its the indicators.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -166,10 +173,10 @@
 </div>
 </section>
 <section id="indicators">
-<span id="usage-results-legend"></span><h2>Indicators<a class="headerlink" href="#indicators" title="Permalink to this heading"></a></h2>
+<span id="usage-results-legend"></span><h2>Indicators<a class="headerlink" href="#indicators" title="Link to this heading"></a></h2>
 </section>
 <section id="main-menu">
-<span id="usage-results-menu"></span><h2>Main Menu<a class="headerlink" href="#main-menu" title="Permalink to this heading"></a></h2>
+<span id="usage-results-menu"></span><h2>Main Menu<a class="headerlink" href="#main-menu" title="Link to this heading"></a></h2>
 <p>The “PathLay - MAPS” page provides different features in six sections accessible from a menu located in the upper right corner of the page:</p>
 <blockquote>
 <div><ul class="simple">
@@ -184,7 +191,7 @@
 <p>These sections and the respective features will be explained in detail later.</p>
 </section>
 <section id="highlighting-feature">
-<span id="usage-results-highlight"></span><h2>Highlighting Feature<a class="headerlink" href="#highlighting-feature" title="Permalink to this heading"></a></h2>
+<span id="usage-results-highlight"></span><h2>Highlighting Feature<a class="headerlink" href="#highlighting-feature" title="Link to this heading"></a></h2>
 <p>In this sections two selectors are displayed and their content varies depending on the features enabled during configuration.
 The first selector lists the categories of components available between: Genes, Proteins, TFs, miRNAs, Methylations, Chromatin Statuses and Metabolites.
 Selecting one data type will switch to the respective component selector filled with the available IDs.
@@ -200,7 +207,7 @@ This means that when a query from the “Selectors” section has been performed
 </div>
 </section>
 <section id="the-clipboard">
-<span id="usage-results-clipboard"></span><h2>The Clipboard<a class="headerlink" href="#the-clipboard" title="Permalink to this heading"></a></h2>
+<span id="usage-results-clipboard"></span><h2>The Clipboard<a class="headerlink" href="#the-clipboard" title="Link to this heading"></a></h2>
 <p>The Clipboard is a freely movable window that will be displayed as soon as the “Clipboard” writing is clicked in the menu.
 It is composed by two boxes, the “Info” box and the “Selected” box.
 The “Info” box will display the information related to a clicked indicator, this includes every ID that the indicator is portaying, with their differential expression values and other IDs eventually linked.
@@ -224,7 +231,7 @@ The last feature provided by the Clipboard is the “Download” button which al
 </div>
 </section>
 <section id="the-selectors-section">
-<span id="usage-results-logical"></span><h2>The Selectors Section<a class="headerlink" href="#the-selectors-section" title="Permalink to this heading"></a></h2>
+<span id="usage-results-logical"></span><h2>The Selectors Section<a class="headerlink" href="#the-selectors-section" title="Link to this heading"></a></h2>
 <div class="toctree-wrapper compound">
 </div>
 <dl class="simple">
@@ -249,7 +256,7 @@ Once all the query tags you are interested in are added to the pool on the right
 Details on each type of query tag are provided below.</p>
 </section>
 <section id="settings">
-<span id="usage-results-settings"></span><h2>Settings<a class="headerlink" href="#settings" title="Permalink to this heading"></a></h2>
+<span id="usage-results-settings"></span><h2>Settings<a class="headerlink" href="#settings" title="Link to this heading"></a></h2>
 <div class="toctree-wrapper compound">
 </div>
 <p>The settings section in the “PathLay - MAPS” page will be displayed when clicking the “Show Settings” button and allows to change some graphical parameters for the indicators like size and transparency values.</p>

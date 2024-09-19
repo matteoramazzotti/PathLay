@@ -18,7 +18,7 @@ release = '0.1'
 extensions = ['sphinx_rtd_theme']
 
 templates_path = ['_templates']
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '.inc']
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '.inc', '.rst']
 
 
 

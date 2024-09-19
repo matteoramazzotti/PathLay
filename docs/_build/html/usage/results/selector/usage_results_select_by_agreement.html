@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Select by Agreement &mdash; PathLay 0.1 documentation</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-        <script src="../../../_static/jquery.js"></script>
-        <script src="../../../_static/underscore.js"></script>
-        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../../_static/doctools.js"></script>
-        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../_static/documentation_options.js?v=2709fde1"></script>
+        <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -29,11 +30,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../../index.html" class="icon icon-home"> PathLay
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            PathLay
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -48,13 +53,15 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../../installation/index.html">Installation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../../installation/installation_docker.html">Building the Docker Image (Recommended)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../installation/installation_apache.html">Apache Server Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../installation/linux/index.html">Installation on Linux</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../installation/linux/installation_docker.html">Installation using Docker (Recommended)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../installation/linux/installation_apache.html">Apache Server Installation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../../howto/index.html">How to run</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../../howto/howto_localserver.html">Run PathLay as local server (localhost)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../howto/howto_remoteserver.html">Run PathLay as network server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../howto/howto_docker_server.html">Run PathLay as network server</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../usage_index.html">Usage</a><ul class="current">
@@ -126,7 +133,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../index.html" class="icon icon-home"></a></li>
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../../usage_index.html">Usage</a></li>
           <li class="breadcrumb-item"><a href="../usage_results_index.html">Pathway Explorer</a></li>
           <li class="breadcrumb-item"><a href="usage_results_selector.html">The Selectors Section</a></li>
@@ -141,7 +148,7 @@
            <div itemprop="articleBody">
              
   <section id="select-by-agreement">
-<span id="usage-results-logical-byagreement"></span><h1>Select by Agreement<a class="headerlink" href="#select-by-agreement" title="Permalink to this heading"></a></h1>
+<span id="usage-results-logical-byagreement"></span><h1>Select by Agreement<a class="headerlink" href="#select-by-agreement" title="Link to this heading"></a></h1>
 <p>The second row in the Logical Section is composed by a series of selectors that allows the setup of the so called “Agreement” which is a feature that lets you select two related data types and select what type of correlation you are interested in. The main data type can be selected with the first selector which provides a choice between “Gene” and “Protein”, and the second data type can be selected with the other selector which allows a choice between “Gene” or “Protein” (depending on your main data type of choice), “miRNA”, “Methylation” or “TF”. After the two data types are selected, the last step to do is to choose a “Positive Agreement” or a “Negative Agreement” with the last selector and hit the “Add” button. The configured agreement will be displayed in the “Agreements Selected” pool positioned under the “IDs Selected” pool. Once the select button is clicked, indicators that don’t satisfy the requirements of the agreement will be hidden, thus if a pathway doesn’t have visible indicators it will not be included in the pathway selector. Multiple agreements can be added to the pool to make the selection more stringent. How various agreements work is reported in the following table:</p>
 <p>As an example, let’s suppose we want to examine only the indicators including a gene and a miRNA in a positive agreement: it is only necessary to select “Gene”, “miRNA” and “Positive” from the selectors provided in the Logical section. A positive agreement between a gene and a miRNA is based on a negative correlation, so the indicators highlighted will either have an up-regulated gene and a down-regulated miRNA or a down-regulated gene and an up-regulated miRNA. As a next step, we could also be looking at methylations: easily enough, agreement selections can be stacked so we could also select “Gene”, “Methylation”, “Positive” and highlight only those indicators that satisfy both the agreements.
 As before, to remove it the “X” button on the right or the “Reset” button must be clicked.</p>

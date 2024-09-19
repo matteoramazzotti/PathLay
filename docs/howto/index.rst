@@ -6,11 +6,8 @@ How to run
 
 .. toctree::
     :hidden:
-    :maxdepth: 4
+    :maxdepth: 6
 
-    howto_localserver
-    howto_remoteserver
+    howto_docker_server
 
-
-.. include:: ./howto_localserver.rst
-.. include:: ./howto_remoteserver.rst
+.. include:: ./howto_docker_server.rst

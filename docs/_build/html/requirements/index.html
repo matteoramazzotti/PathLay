@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Requirements &mdash; PathLay 0.1 documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+
+  
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=2709fde1"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -29,11 +30,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> PathLay
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            PathLay
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -48,13 +53,15 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../installation/index.html">Installation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../installation/installation_docker.html">Building the Docker Image (Recommended)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../installation/installation_apache.html">Apache Server Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation/linux/index.html">Installation on Linux</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../installation/linux/installation_docker.html">Installation using Docker (Recommended)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../installation/linux/installation_apache.html">Apache Server Installation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../howto/index.html">How to run</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../howto/howto_localserver.html">Run PathLay as local server (localhost)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../howto/howto_remoteserver.html">Run PathLay as network server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../howto/howto_docker_server.html">Run PathLay as network server</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../usage/usage_index.html">Usage</a><ul>
@@ -126,7 +133,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
       <li class="breadcrumb-item active">Requirements</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/requirements/index.rst.txt" rel="nofollow"> View page source</a>
@@ -138,20 +145,35 @@
            <div itemprop="articleBody">
              
   <section id="requirements">
-<span id="id1"></span><h1>Requirements<a class="headerlink" href="#requirements" title="Permalink to this heading"></a></h1>
+<span id="id1"></span><h1>Requirements<a class="headerlink" href="#requirements" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <section id="for-building-the-docker-image-recommended">
-<span id="requirements-docker"></span><h2>For Building the Docker Image (Recommended)<a class="headerlink" href="#for-building-the-docker-image-recommended" title="Permalink to this heading"></a></h2>
+<span id="requirements-docker"></span><h2>For Building the Docker Image (Recommended)<a class="headerlink" href="#for-building-the-docker-image-recommended" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p>Docker: <a class="reference external" href="https://docs.docker.com/get-docker/">https://docs.docker.com/get-docker/</a></p></li>
 </ul>
 </section>
 <section id="for-the-apache-server-installation">
-<span id="requirements-apache"></span><h2>For the Apache Server Installation<a class="headerlink" href="#for-the-apache-server-installation" title="Permalink to this heading"></a></h2>
-<ul class="simple">
-<li><p>Apache: <a class="reference external" href="https://httpd.apache.org/download.cgi">https://httpd.apache.org/download.cgi</a></p></li>
-</ul>
+<span id="requirements-apache"></span><h2>For the Apache Server Installation<a class="headerlink" href="#for-the-apache-server-installation" title="Link to this heading"></a></h2>
+<ol class="arabic">
+<li><dl>
+<dt>Install main dependencies:</dt><dd><p>On Debian based distros you can install dependencies with the following:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">apt</span> <span class="n">install</span> <span class="n">apache2</span> <span class="n">apache2</span><span class="o">-</span><span class="n">utils</span> <span class="n">cpanminus</span> <span class="n">libcanberra</span><span class="o">-</span><span class="n">gtk</span><span class="o">-</span><span class="n">module</span><span class="p">:</span><span class="n">amd64</span> <span class="n">libexpat1</span><span class="o">-</span><span class="n">dev</span><span class="p">:</span><span class="n">amd64</span> <span class="n">libgd</span><span class="o">-</span><span class="n">dev</span><span class="p">:</span><span class="n">amd64</span> <span class="n">libgtk2</span><span class="mf">.0</span><span class="o">-</span><span class="mi">0</span><span class="p">:</span><span class="n">amd64</span> <span class="n">liblocal</span><span class="o">-</span><span class="n">lib</span><span class="o">-</span><span class="n">perl</span> <span class="n">libssl</span><span class="o">-</span><span class="n">dev</span><span class="p">:</span><span class="n">amd64</span> <span class="n">packagekit</span><span class="o">-</span><span class="n">gtk3</span><span class="o">-</span><span class="n">module</span> <span class="n">tar</span> <span class="n">tcl</span> <span class="nb">zip</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>Install perl modules:</dt><dd><p>Using cpanminus:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cpanm</span> <span class="n">CGI</span> <span class="n">ExtUtils</span><span class="p">::</span><span class="n">PkgConfig</span> <span class="n">Bio</span><span class="p">::</span><span class="n">FdrFet</span> <span class="n">Statistics</span><span class="p">::</span><span class="n">Distributions</span>  <span class="n">GD</span> <span class="n">Archive</span><span class="p">::</span><span class="n">Zip</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+</ol>
 </section>
 </section>
 

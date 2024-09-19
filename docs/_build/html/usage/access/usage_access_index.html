@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Configuration Page &mdash; PathLay 0.1 documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=2709fde1"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -29,11 +30,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> PathLay
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            PathLay
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -48,13 +53,15 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../installation/index.html">Installation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../installation/installation_docker.html">Building the Docker Image (Recommended)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../installation/installation_apache.html">Apache Server Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../installation/linux/index.html">Installation on Linux</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../installation/linux/installation_docker.html">Installation using Docker (Recommended)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../installation/linux/installation_apache.html">Apache Server Installation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../howto/index.html">How to run</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../howto/howto_localserver.html">Run PathLay as local server (localhost)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../howto/howto_remoteserver.html">Run PathLay as network server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../howto/howto_docker_server.html">Run PathLay as network server</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="../usage_index.html">Usage</a><ul class="current">
@@ -126,7 +133,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a></li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../usage_index.html">Usage</a></li>
       <li class="breadcrumb-item active">Configuration Page</li>
       <li class="wy-breadcrumbs-aside">
@@ -139,25 +146,41 @@
            <div itemprop="articleBody">
              
   <section id="configuration-page">
-<span id="usage-access"></span><h1>Configuration Page<a class="headerlink" href="#configuration-page" title="Permalink to this heading"></a></h1>
+<span id="usage-access"></span><h1>Configuration Page<a class="headerlink" href="#configuration-page" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <p>The Configuration Page is accessible from the Login Page by clicking “Access PathLay” once you input your credentials. From this page you will be able to run PathLay’s analysis on an Experiment Package.
 First thing to do is select an Experiment Package and load it using the dropdown menu and the “Load” button.</p>
 <section id="maps-databases">
-<span id="usage-access-mapdb"></span><h2>Maps Databases<a class="headerlink" href="#maps-databases" title="Permalink to this heading"></a></h2>
+<span id="usage-access-mapdb"></span><h2>Maps Databases<a class="headerlink" href="#maps-databases" title="Link to this heading"></a></h2>
 <p>The “Maps Database” section allows you to choose which database will be used to load pathways from, it currently provides two possibilities, both for Homo sapiens pathways: KEGG and WikiPathways.</p>
 </section>
 <section id="maps-restriction-procedure">
-<span id="usage-access-stat"></span><h2>Maps Restriction Procedure<a class="headerlink" href="#maps-restriction-procedure" title="Permalink to this heading"></a></h2>
+<span id="usage-access-stat"></span><h2>Maps Restriction Procedure<a class="headerlink" href="#maps-restriction-procedure" title="Link to this heading"></a></h2>
+<p>It is possible to perform a selection of maps to display in the PathLay - MAPS page by selecting FET from the Map Restriction Procedure selector.
+Maps are selected with a statistical approach based on the Fisher’s Exact Test and since PathLay integrates different datasets, it is also possible to select which dataset will contribute on the map selection.
+To allow this, the “FET Enabled” option should be checked for each dataset that should contribute.
+By default the test is performed on each dataset enabled and it will produce a list of maps considered of importance, all the lists produced are then joined into one.
+There are two tweaks available that can change the result of this step: the Intersect option and the Pooling option.</p>
+<section id="pooling">
+<h3>Pooling<a class="headerlink" href="#pooling" title="Link to this heading"></a></h3>
+<p>Eabling the Pooling option will affect how the Transcriptomic, Proteomic, miRNomic, Methylomic and Cromatin Status datasets are treated when enabled for the test.
+When enabled, the IDs of the above datasets will be merged and the test is performed on that single list.</p>
+</section>
+<section id="intersect">
+<h3>Intersect<a class="headerlink" href="#intersect" title="Link to this heading"></a></h3>
+<p>Enabling the Intersect option will affect which maps will be selected after the test has been performed.
+By default map lists are joined into one, meaning that even if a map has been found relevant in relation to just one of the datasets, it will be kept and indicators will be plotted on it.
+With the Intersect feature enabled, only maps that are considered relevant for all the datasets enabled are kept (i.e. the ones that appear in every map list coming from the tests performed).</p>
+</section>
 </section>
 <section id="configuring-a-dataset">
-<span id="usage-data-types"></span><h2>Configuring a Dataset<a class="headerlink" href="#configuring-a-dataset" title="Permalink to this heading"></a></h2>
+<span id="usage-data-types"></span><h2>Configuring a Dataset<a class="headerlink" href="#configuring-a-dataset" title="Link to this heading"></a></h2>
 <p>Under the “Select Maps using” section is located a selector that allows to switch between the configurations available for each dataset.
 Some of these configurations are common to every data type, while others, related to the Transcription Factors (TFs) and the Non Differentially Expressed components (NoDE), are peculiar to a few of them.</p>
 </section>
 <section id="filtering-options">
-<span id="usage-data-filters"></span><h2>Filtering Options<a class="headerlink" href="#filtering-options" title="Permalink to this heading"></a></h2>
+<span id="usage-data-filters"></span><h2>Filtering Options<a class="headerlink" href="#filtering-options" title="Link to this heading"></a></h2>
 <dl class="simple">
 <dt>There are three filters available for each data type, which can be enabled by checking the respective box and requires a threshold value to be written in the input field next to it. These three filters are summarized below:</dt><dd><ul class="simple">
 <li><p>Effect Size “&lt;” : filters out all the components with an Effect Size value greater than the threshold selected</p></li>
@@ -172,13 +195,13 @@ Some of these configurations are common to every data type, while others, relate
 </div>
 </section>
 <section id="usage-data-id-only">
-<span id="id-preservation"></span><h2>ID Preservation<a class="headerlink" href="#usage-data-id-only" title="Permalink to this heading"></a></h2>
+<span id="id-preservation"></span><h2>ID Preservation<a class="headerlink" href="#usage-data-id-only" title="Link to this heading"></a></h2>
 <p>ID Preservation can be enabled for every data type by checking the “Preserve non DE IDs” checkbox.
 This feature will not let PathLay to discard IDs found in the dataset without an Effect Size value.
 These “ID Only” components will be represented with a different palette of colors since they do not provide any information regarding their differential expression, but they will be still integrated with the other datasets.</p>
 </section>
 <section id="non-differentially-expressed-ids">
-<span id="usage-access-nodeg"></span><h2>Non Differentially Expressed IDs<a class="headerlink" href="#non-differentially-expressed-ids" title="Permalink to this heading"></a></h2>
+<span id="usage-access-nodeg"></span><h2>Non Differentially Expressed IDs<a class="headerlink" href="#non-differentially-expressed-ids" title="Link to this heading"></a></h2>
 <p>Whenever a miRNa, Methylation or Chromatin status dataset is enabled, miRNas, methylations and chromatin statuses will be represented alongside the related genes.
 PathLays’s approach is to integrate the information held within different datasets whenever is possible, hence when a Transcriptomic or Proteomic dataset is provided and enabled alongside the afromentioned ones, the standard procedure adopted is to represent an integration of these informations using genes and proteins provided as a scaffold on which miRNAs, methylations and chromatin statuses impact.
 Anyway It is possible to represent miRNas, methylations or chromatin statuses despite the absence of their related genes in the Transcriptomic dataset, by checking the “No DE Loading” feature in their respective configurations.
@@ -188,14 +211,14 @@ By doing this, ID only components coming from these thre datasets will also be a
 Graphically speaking this is translated into grey indicators surrounded by smaller circles and squares coloured in orange.</p>
 </section>
 <section id="transcription-factors">
-<span id="usage-access-tfs"></span><h2>Transcription Factors<a class="headerlink" href="#transcription-factors" title="Permalink to this heading"></a></h2>
+<span id="usage-access-tfs"></span><h2>Transcription Factors<a class="headerlink" href="#transcription-factors" title="Link to this heading"></a></h2>
 <p>PathLay also supports GTRD as a database and can display transcription factors (TFs) that interacts with genes coming from a Transcriptomic or Proteomic dataset and as well recognize if those gene/protein IDs actually refers directly to a transcription factor.
 Transcription factors will be loaded and linked to the gene IDs in the Transcriptomic dataset if the “Enable TFs” feature is enabled. The same goes for the proteomic dataset which has its own “Enable TFs” feature.
 If a transcription factor is found in the Transcriptomic dataset it will be linked to any related gene also present in the dataset.
 Whenever Transcriptomic and Proteomic datasets are enabled together and the “Enable TFs” feature is enabled for at least one of them, once a TF is recognized, its targets will be looked for both in the Transcriptomic and Proteomic dataset to guarantee an high level degree of integration.</p>
 </section>
 <section id="transcription-factors-id-preservation">
-<span id="usage-access-id-only-tfs"></span><h2>Transcription Factors ID Preservation<a class="headerlink" href="#transcription-factors-id-preservation" title="Permalink to this heading"></a></h2>
+<span id="usage-access-id-only-tfs"></span><h2>Transcription Factors ID Preservation<a class="headerlink" href="#transcription-factors-id-preservation" title="Link to this heading"></a></h2>
 <p>Normally, if a Transcription Factor is recognized in an ID Only component found in the Transcriptomic or Proteomic dataset (when of course the “Preserve non DE IDs” feature is enabled for them), it is just loaded as a DE component and not represented as a TF.
 To overcome this, one should enable the “Preserve IDs for TFs” feature in the Gene or Protein configuration depending on the scope of the analysis.
 Transcription Factors recognized in this manner will be represented as small oragne squares on the right side of the main indicators.</p>

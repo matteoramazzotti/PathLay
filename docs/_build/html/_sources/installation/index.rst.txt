@@ -6,12 +6,13 @@ Installation
 
 .. toctree::
 	:hidden:
-	:maxdepth: 4
+	:maxdepth: 6
 
-	installation_docker
-	installation_apache
+	linux/index
 
 
-.. include:: ./installation_apache.rst
-.. include:: ./installation_docker.rst
+.. include:: linux/index.rst
+.. include:: linux/installation_docker.rst
+.. include:: linux/installation_apache.rst
+
 

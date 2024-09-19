@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home Manager &mdash; PathLay 0.1 documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=2709fde1"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -29,11 +30,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> PathLay
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            PathLay
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -48,13 +53,15 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../installation/index.html">Installation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../installation/installation_docker.html">Building the Docker Image (Recommended)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../installation/installation_apache.html">Apache Server Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../installation/linux/index.html">Installation on Linux</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../installation/linux/installation_docker.html">Installation using Docker (Recommended)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../installation/linux/installation_apache.html">Apache Server Installation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../howto/index.html">How to run</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../howto/howto_localserver.html">Run PathLay as local server (localhost)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../howto/howto_remoteserver.html">Run PathLay as network server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../howto/howto_docker_server.html">Run PathLay as network server</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="../usage_index.html">Usage</a><ul class="current">
@@ -126,7 +133,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a></li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../usage_index.html">Usage</a></li>
       <li class="breadcrumb-item active">Home Manager</li>
       <li class="wy-breadcrumbs-aside">
@@ -139,12 +146,12 @@
            <div itemprop="articleBody">
              
   <section id="home-manager">
-<span id="usage-home"></span><h1>Home Manager<a class="headerlink" href="#home-manager" title="Permalink to this heading"></a></h1>
+<span id="usage-home"></span><h1>Home Manager<a class="headerlink" href="#home-manager" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <p>Once an account is registered the Home Page becomes available, while for an already registered account it is accessible by clicking the “Manage Home” button in the login page. In the Home Page you can create, load and modify an Experiment Package with a more intuitive approach.</p>
 <section id="creating-an-experiment-package">
-<span id="usage-home-create"></span><h2>Creating an Experiment Package<a class="headerlink" href="#creating-an-experiment-package" title="Permalink to this heading"></a></h2>
+<span id="usage-home-create"></span><h2>Creating an Experiment Package<a class="headerlink" href="#creating-an-experiment-package" title="Link to this heading"></a></h2>
 <p>To create an Experiment Package from scratch the first thing to do is to click the “Add New” button and then assign it a name in the “Experiment Title” text box, you can also comment it in the “Comments” text box located below.
 Next, you should assign it an organism between hsa and mmu from the Organism selector.
 You can now proceed to load your datasets on PathLay.
@@ -175,12 +182,12 @@ This setup requires you the following:</p>
 The “Save” button will of course also save any modification you will submit to PathLay when you will reload this Experiment Package in the future.</p>
 </section>
 <section id="loading-an-experiment-package">
-<span id="usage-home-load"></span><h2>Loading an Experiment Package<a class="headerlink" href="#loading-an-experiment-package" title="Permalink to this heading"></a></h2>
+<span id="usage-home-load"></span><h2>Loading an Experiment Package<a class="headerlink" href="#loading-an-experiment-package" title="Link to this heading"></a></h2>
 <p>To load an existing Experiment Package from your home folder, select its name from the dropdown menu in the top left corner and hit the “Load” button. Datasets and configurations will be displayed in their relative fields.
 If you have a zipped Experiment Package and you want to load it on PathLay, simply click the “Browse” button in the top right corner and select the zipped archive, then click the “Upload” button and load it.</p>
 </section>
 <section id="gene-ontologies">
-<span id="usage-home-ont"></span><h2>Gene Ontologies<a class="headerlink" href="#gene-ontologies" title="Permalink to this heading"></a></h2>
+<span id="usage-home-ont"></span><h2>Gene Ontologies<a class="headerlink" href="#gene-ontologies" title="Link to this heading"></a></h2>
 <p>Your Home Page also provides a list of cellular compartments that are nothing less than Gene Ontologies.
 Each one of the entries represents a gene list of Entrez Gene IDs and you can select the ones you are more interested in by clicking the “+” button located on the right side of each box.
 A search box is also provided to filter the ones you are most interested in.
@@ -194,7 +201,7 @@ Once a cellular compartment is chosen, only genes and proteins localized in that
 </div>
 </section>
 <section id="downloading-an-experiment-package">
-<span id="usage-home-download"></span><h2>Downloading an Experiment Package<a class="headerlink" href="#downloading-an-experiment-package" title="Permalink to this heading"></a></h2>
+<span id="usage-home-download"></span><h2>Downloading an Experiment Package<a class="headerlink" href="#downloading-an-experiment-package" title="Link to this heading"></a></h2>
 <p>The “Download” button allows you to package the currently loaded datasets and configurations in a zip archive and export it from PathLay for other uses, for instance, this archive can be uploaded as a new Experiment Package into another PathLay account.
 You can also download the entirety of your home folder (i.e. all the datasets and configurations of all the experiments) with the “Download Home” button.</p>
 </section>

@@ -6,7 +6,7 @@ Run PathLay as network server
 
 .. code-block::
 
-	docker run --name pathlay_server -d -p 80:80 -p 143:143 --network network pathlay
+	sudo docker run --name pathlay_server_0.1.0-alpha -d -p 80:80 -p 143:143 -v $(pwd)/pathlay_data/:/var/www/html/pathlay/pathlay_data/ --mount type=bind,source=$(pwd)/pathlay_users/,target=/var/www/html/pathlay/pathlay_users/ --network host  pathlay_server_0.1.0-alpha
 
 
 You can check that the container is running on your host machine with the following:

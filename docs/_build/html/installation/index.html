@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Installation &mdash; PathLay 0.1 documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+
+  
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=2709fde1"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Building the Docker Image (Recommended)" href="installation_docker.html" />
+    <link rel="next" title="Installation on Linux" href="linux/index.html" />
     <link rel="prev" title="For the Apache Server Installation" href="../requirements/requirements_apache.html" /> 
 </head>
 
@@ -29,11 +30,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> PathLay
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            PathLay
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -48,13 +53,15 @@
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="installation_docker.html">Building the Docker Image (Recommended)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="installation_apache.html">Apache Server Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="linux/index.html">Installation on Linux</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="linux/installation_docker.html">Installation using Docker (Recommended)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="linux/installation_apache.html">Apache Server Installation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../howto/index.html">How to run</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../howto/howto_localserver.html">Run PathLay as local server (localhost)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../howto/howto_remoteserver.html">Run PathLay as network server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../howto/howto_docker_server.html">Run PathLay as network server</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../usage/usage_index.html">Usage</a><ul>
@@ -126,7 +133,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
       <li class="breadcrumb-item active">Installation</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/installation/index.rst.txt" rel="nofollow"> View page source</a>
@@ -138,26 +145,119 @@
            <div itemprop="articleBody">
              
   <section id="installation">
-<span id="id1"></span><h1>Installation<a class="headerlink" href="#installation" title="Permalink to this heading"></a></h1>
+<span id="id1"></span><h1>Installation<a class="headerlink" href="#installation" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
-<section id="apache-server-installation">
-<span id="installation-apache"></span><h2>Apache Server Installation<a class="headerlink" href="#apache-server-installation" title="Permalink to this heading"></a></h2>
+<section id="installation-on-linux">
+<span id="installation-linux"></span><h2>Installation on Linux<a class="headerlink" href="#installation-on-linux" title="Link to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<section id="installation-using-docker-recommended">
+<span id="installation-docker"></span><h3>Installation using Docker (Recommended)<a class="headerlink" href="#installation-using-docker-recommended" title="Link to this heading"></a></h3>
+<ol class="arabic">
+<li><p>Obtain the Docker image by pulling it from <a class="reference external" href="https://hub.docker.com/repository/docker/vonb/pathlay/general">Docker Hub</a> :</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">pull</span> <span class="n">vonb</span><span class="o">/</span><span class="n">pathlay</span><span class="p">:</span><span class="n">latest</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Download the <a class="reference external" href="https://github.com/matteoramazzotti/PathLay/blob/main/docker-compose.yml">docker-compose.yml</a></p></li>
+<li><p>Navigate to the directory with the downloaded docker-compose.yml files:</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">directory</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Create the “pathlay_users” directory:</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mkdir</span> <span class="n">pathlay_users</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Build the image from docker-compose.yml:</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">compose</span> <span class="n">build</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ol>
+<p>To run the container from this image check <a class="reference internal" href="../howto/index.html#howto"><span class="std std-ref">How to run</span></a>.</p>
 </section>
-<section id="building-the-docker-image-recommended">
-<span id="installation-docker"></span><h2>Building the Docker Image (Recommended)<a class="headerlink" href="#building-the-docker-image-recommended" title="Permalink to this heading"></a></h2>
-<div class="literal-block-wrapper docutils container" id="id2">
-<div class="code-block-caption"><span class="caption-text">Navigate to the directory with the downloaded DockerFile</span><a class="headerlink" href="#id2" title="Permalink to this code"></a></div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">directory</span>
+<section id="apache-server-installation">
+<span id="installation-apache"></span><h3>Apache Server Installation<a class="headerlink" href="#apache-server-installation" title="Link to this heading"></a></h3>
+<ol class="arabic">
+<li><p>Copy pathlay folder to your apache directory of choice, default is /var/www/html/:</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cp</span> <span class="o">-</span><span class="n">r</span> <span class="n">pathlay</span> <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">www</span><span class="o">/</span><span class="n">html</span><span class="o">/</span>
 </pre></div>
 </div>
-</div>
-<div class="literal-block-wrapper docutils container" id="id3">
-<div class="code-block-caption"><span class="caption-text">Build image from DockerFile</span><a class="headerlink" href="#id3" title="Permalink to this code"></a></div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">build</span> <span class="o">-</span><span class="n">t</span> <span class="n">pathlay</span> <span class="o">.</span>
+</div></blockquote>
+</li>
+<li><p>Enable apache modules:</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">a2enmod</span> <span class="n">cgid</span>
+<span class="n">a2enmod</span> <span class="n">rewrite</span>
+<span class="n">a2enmod</span> <span class="n">headers</span>
+<span class="n">a2dissite</span> <span class="mi">000</span><span class="o">-</span><span class="n">default</span>
+<span class="n">systemctl</span> <span class="n">reload</span> <span class="n">apache2</span>
 </pre></div>
 </div>
+</div></blockquote>
+</li>
+<li><p>Add the following configuration to the /etc/apache2/apache2.conf file:</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">FilesMatch</span> <span class="s2">&quot;\.(ttf|otf|eot|woff|js|css|woff2)$&quot;</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="n">IfModule</span> <span class="n">mod_headers</span><span class="o">.</span><span class="n">c</span><span class="o">&gt;</span>
+    <span class="n">Header</span> <span class="nb">set</span> <span class="n">Access</span><span class="o">-</span><span class="n">Control</span><span class="o">-</span><span class="n">Allow</span><span class="o">-</span><span class="n">Origin</span> <span class="s2">&quot;*&quot;</span>
+  <span class="o">&lt;/</span><span class="n">IfModule</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">FilesMatch</span><span class="o">&gt;</span>
+</pre></div>
 </div>
+</div></blockquote>
+</li>
+<li><p>Add the following configuration to the /etc/apache2/sites-enabled/localhost.conf file:</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ServerName</span> <span class="n">localhost</span>
+<span class="n">AddHandler</span> <span class="n">cgi</span><span class="o">-</span><span class="n">script</span> <span class="o">.</span><span class="n">cgi</span> <span class="o">.</span><span class="n">pl</span>
+
+<span class="o">&lt;</span><span class="n">Directory</span> <span class="s1">&#39;&quot;$chosenPath&quot;&#39;</span><span class="o">&gt;</span>
+  <span class="n">Header</span> <span class="nb">set</span> <span class="n">Access</span><span class="o">-</span><span class="n">Control</span><span class="o">-</span><span class="n">Allow</span><span class="o">-</span><span class="n">Origin</span> <span class="s2">&quot;*&quot;</span>
+  <span class="n">Options</span> <span class="n">All</span>
+  <span class="n">AllowOverride</span> <span class="n">All</span>
+<span class="o">&lt;/</span><span class="n">Directory</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>If the file doesn’t exist, create it. Be sure to replace “$chosenPath” with the location of the pathlay directory.</p>
+</div></blockquote>
+</li>
+<li><p>Setup environment variables:</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">export</span> <span class="n">APACHE_RUN_USER</span><span class="o">=</span><span class="s2">&quot;www-data&quot;</span>
+<span class="n">export</span> <span class="n">APACHE_RUN_GROUP</span><span class="o">=</span><span class="s2">&quot;www-data&quot;</span>
+<span class="n">export</span> <span class="n">APACHE_PID_FILE</span><span class="o">=</span><span class="s2">&quot;/var/run/apache2.pid&quot;</span>
+<span class="n">export</span> <span class="n">APACHE_RUN_DIR</span><span class="o">=</span><span class="s2">&quot;/var/run/apache2&quot;</span>
+<span class="n">export</span> <span class="n">APACHE_LOCK_DIR</span><span class="o">=</span><span class="s2">&quot;/var/lock/apache2&quot;</span>
+<span class="n">export</span> <span class="n">APACHE_LOG_DIR</span><span class="o">=</span><span class="s2">&quot;/var/log/apache2&quot;</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Setup permissions and ownership:</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">chgrp</span> <span class="o">-</span><span class="n">R</span> <span class="n">www</span><span class="o">-</span><span class="n">data</span> <span class="s2">&quot;$chosenPath&quot;</span>
+<span class="n">chmod</span> <span class="o">-</span><span class="n">R</span> <span class="mi">774</span> <span class="s2">&quot;$chosenPath&quot;</span>
+<span class="n">chmod</span> <span class="n">g</span><span class="o">+</span><span class="n">s</span> <span class="s2">&quot;$chosenPath&quot;</span>
+</pre></div>
+</div>
+<p>Be sure to replace “$chosenPath” with the location of the pathlay directory.</p>
+</div></blockquote>
+</li>
+</ol>
+</section>
 </section>
 </section>
 
@@ -166,7 +266,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="../requirements/requirements_apache.html" class="btn btn-neutral float-left" title="For the Apache Server Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="installation_docker.html" class="btn btn-neutral float-right" title="Building the Docker Image (Recommended)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="linux/index.html" class="btn btn-neutral float-right" title="Installation on Linux" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

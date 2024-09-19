@@ -5,15 +5,16 @@
 Welcome to PathLay's documentation!
 ===================================
 
+
 * :ref:`Features <features>`
 * :ref:`Requirements <requirements>`
 	* :ref:`For Building the Docker Image <requirements_docker>`
 	* :ref:`For the Apache Server Installation <requirements_apache>`
 * :ref:`Installation <installation>`
-	* :ref:`Building the Docker Image <installation_docker>`
-	* :ref:`Apache Server Installation <installation_apache>`
+	* :ref:`Installation on Linux <installation_linux>`
+		* :ref:`Building the Docker Image <installation_docker>`
+		* :ref:`Apache Server Installation <installation_apache>`
 * :ref:`How to Run<howto>`
-	* :ref:`Run PathLay as Localhost <howto_docker_local>`
 	* :ref:`Run PathLay as Server <howto_docker_server>`
 * :ref:`Usage <usage>`
 	* :ref:`Account Managing <usage_account>`
