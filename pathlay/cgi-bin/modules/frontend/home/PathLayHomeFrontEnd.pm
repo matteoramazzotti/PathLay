@@ -404,9 +404,10 @@ sub home_script_Packager {
 
     my @js_functions;
     my @js_variables;
+    
     $js_functions[0] = new HTMLScriptSrc(
         _type => "text/javascript",
-        _src => $parameters -> {_jsdir}."home/homeUtils.js"
+        _src => $parameters -> {_jsdir}."home/homeUtils2.js"
     );
     
     $home_script -> FunctionsLoader(
