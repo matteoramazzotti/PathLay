@@ -324,7 +324,7 @@ class Complex {
         return metabolitesInComplex;
     }
     getMethylations = function() {
-        if (this.hasMeth === false) {
+        if (this.hasMethyl === false) {
             return undefined;
         }
 
