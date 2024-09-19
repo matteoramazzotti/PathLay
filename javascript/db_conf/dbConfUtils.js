@@ -349,8 +349,3 @@ function progressBar(type) {
 	container.appendChild(div);
 	return(container);
 }
-// function cleanUp (divID){
-// 	// Clear previous result
-// 	var div = document.getElementById(divID);
-// 	div.innerHTML = '';
-// }
