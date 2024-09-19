@@ -161,6 +161,108 @@ class Complex {
             }
         }
     }
+
+    loadContent2 = function() {
+        let srcTxt = document.getElementById(this.id).attributes.content.nodeValue;
+        let srcLines = srcTxt.split("%0A");
+        srcLines.splice(0,2);
+        srcLines.pop();
+
+        let parsedData = srcLines.map(line => {
+            let fields = line.split('|');
+            let entry = {
+                dev: undefined // Set 'dev' field as undefined by default
+            };
+            
+            fields.forEach(field => {
+                let [key, value] = field.split(':');
+                // Convert numeric values to number type
+                // if (!isNaN(value)) {
+                //     value = parseFloat(value);
+                // }
+                entry[key] = value;
+            });
+            return entry;
+        });
+        
+        let parentMap = {};
+        let lastParent = null;
+
+        parsedData.forEach(entry => {
+            if (["deg", "prot", "nodeg", "meta"].includes(entry.type)) {
+                if (!parentMap[entry.id]) {
+                    parentMap[entry.id] = 
+                        entry.type === "meta" ? new Metabolite() :
+                        entry.type === "prot" ? new Protein() :
+                        new Gene();
+                    parentMap[entry.id].id = entry.id;
+                    parentMap[entry.id].type = entry.type;
+                    parentMap[entry.id].dev = entry.dev;
+                    parentMap[entry.id].name = entry.name;
+                    parentMap[entry.id].assignImg();
+                    this.hasDeg = entry.type === "deg" ? true : this.hasDeg;
+                    this.hasNoDeg = entry.type === "nodeg" ? true : this.hasNoDeg;
+                    this.hasMeta = entry.type === "meta" ? true : this.hasMeta;
+                    this.hasProt = entry.type === "prot" ? true : this.hasProt;
+                }
+
+                lastParent = parentMap[entry.id];
+            } else if (["chroma", "meth", "urna","tf"].includes(entry.type)) {
+                lastParent.hasMethyl = entry.type === "meth" ? true : lastParent.hasMethyl;
+                lastParent.meth = entry.type === "meth" ? entry.dev : lastParent.meth;
+                this.hasMethyl = entry.type === "meth" ? true : this.hasMethyl;
+                
+                lastParent.hasChroma = entry.type === "chroma" ? true : lastParent.hasChroma;
+                lastParent.chroma = entry.type === "chroma" ? entry.dev : lastParent.chroma;
+                this.hasChroma = entry.type === "chroma" ? true : this.hasChroma;
+
+
+                lastParent.hasmiRNA = entry.type === "urna" ? true : lastParent.hasmiRNA;
+                this.hasmiRNA = entry.type === "urna" ? true : this.hasmiRNA;
+
+                if (entry.type === "urna") {
+                    let urnaObj = new miRNA();
+                    urnaObj.id = entry.id;
+                    urnaObj.dev = entry.dev;
+                    urnaObj.mirt = entry.mirt;
+                    urnaObj.assignImg();
+                    lastParent.urnas.push(urnaObj);
+                }
+
+
+                lastParent.hasTF = entry.type === "tf" ? true : lastParent.hasTF;
+                this.hasTF = entry.type === "tf" ? true : this.hasTF;
+
+                if (entry.type === "tf") {
+                    let tfObj = new TF();
+                    tfObj.id = entry.id;
+                    tfObj.dev = entry.dev;
+                    tfObj.name = entry.name;
+                    tfObj.assignImg();
+                    lastParent.tfs.push(tfObj);
+                }
+                lastParent.assignImg();
+            }
+
+            if (!referenceTable[entry.type].ids[entry.id]) {
+                referenceTable[entry.type].ids[entry.id] = {};
+                referenceTable[entry.type].ids[entry.id].complexes = [];
+                referenceTable[entry.type].ids[entry.id].name = entry.mirt ? entry.mirt : entry.name;
+
+            }
+            referenceTable[entry.type].ids[entry.id].complexes.push(this.id);
+            const withoutDuplicates = Array.from(new Set(referenceTable[entry.type].ids[entry.id].complexes));
+            referenceTable[entry.type].ids[entry.id].complexes = withoutDuplicates;
+
+
+        });
+        
+        // Convert parentMap to an array of parent objects
+
+        this.components = Object.values(parentMap);
+        console.log(this.components)
+    }
+
     highLight = function(color) {
         if (color) {
             document.getElementById(this.id).style.border = `3px dotted ${color}`;
