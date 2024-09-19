@@ -1,6 +1,6 @@
-import { integrityCheck, organismCodes, interactionDBPath, forkedProcesses, requestQueueDBs } from './global.js';
+import { integrityCheck, organismCodes, paths, forkedProcesses, requestQueueDBs } from './global.js';
 import { updateResultsContainer, displayDBStatus, cleanUp} from './InterfaceUtils.js';
-import { checkMapsExistence } from './MapsRequests.js'
+import { checkMapsExistence, getRequest } from './MapsRequests.js'
 
 // queue class
 // class RequestQueue {
