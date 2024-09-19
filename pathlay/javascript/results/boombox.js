@@ -30,7 +30,7 @@ function spawnBoomBox(dblclickedIndicator) {
 function populateBoomBox(dblclickedIndicator) {
 
     var mainBoomBoxUl = document.getElementById("mainBoomBoxUl"); 
-
+    
     for (let component of complexObjs[dblclickedIndicator.id].components) {
         var mainLi = spawnLi(component.id + "_Li","mainBoomBoxLi","toggleExtraBoomBoxUl(\""+ component.id + "_Ul" +"\")");
         var extraUl = spawnUl(component.id + "_Ul","extraBoomBoxUl");
@@ -156,7 +156,7 @@ function exploadIndicatorSrc(indicatorSrc) {
     var urnaEnabled = false;
     var tfEnabled = false;
 
-    for (line of lines) {
+    for (let line of lines) {
         var tags = line.split("|");
         for (var tag of tags) {
             if (type_regex.test(tag) === true) {
@@ -286,7 +286,7 @@ function buildBoomBoxLis(indicatorContent) {
 
     var mainBoomBoxUl = document.getElementById("mainBoomBoxUl"); 
 
-    for (mainId in indicatorContent) {
+    for (let mainId in indicatorContent) {
         var mainLi = spawnLi(mainId + "_Li","mainBoomBoxLi","toggleExtraBoomBoxUl(\""+ mainId + "_Ul" +"\")");
         var extraUl = spawnUl(mainId + "_Ul","extraBoomBoxUl");
 
