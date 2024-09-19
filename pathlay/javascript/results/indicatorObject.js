@@ -12,14 +12,13 @@ class Complex {
         this.hasProt = false;
         this.hasNoDeg = false;
         this.hasmiRNA = false;
-        this.hasMeth = false;
+        this.hasMethyl = false;
         this.hasTF = false;
         this.hasChroma = false;
         this.hasMeta = false;
     }
     loadContent = function() {
         let srcTxt = document.getElementById(this.id).attributes.content.nodeValue;
-        console.log(srcTxt);
         let srcLines = srcTxt.split("%0A");
         srcLines.splice(0,2);
         srcLines.pop();
@@ -28,12 +27,12 @@ class Complex {
         for (let srcLine of srcLines) {
             let srcTags = srcLine.split("|");
             var currentObj;
-            var currentId;
-            var currentName;
-            var currentDev;
-            var currentMirt;
-            var currentType;
-   
+            var currentId = "";
+            var currentName = "";
+            var currentDev = "";
+            var currentMirt = "";
+            var currentType = "";
+            // console.log(`id:${currentId} dev:${currentDev}`);
             for (let srcTag of srcTags) {
                 if (typeRegex.test(srcTag) === true) {
                     currentType = typeRegex.exec(srcTag)[1];
@@ -84,13 +83,15 @@ class Complex {
                         continue;
                     }
                     if (currentType === "meth") {
-                        this.hasMeth = true;
+                        this.hasMethyl = true;
                         status++;
+                        currentObj.assignImg();
                         continue;
                     }
                     if (currentType === "chroma") {
                         this.hasChroma = true;
                         status++;
+                        currentObj.assignImg();
                         continue;
                     }
                 }
