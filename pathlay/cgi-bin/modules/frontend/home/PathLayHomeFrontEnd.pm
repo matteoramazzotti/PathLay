@@ -71,6 +71,135 @@ sub HomeBuilderOld {
     );
     return($home_script,$form);
 }
+sub HomeBuilderNew {
+    my %args = (
+        @_
+    );
+    my $parameters = $args{Parameters};
+        $parameters -> LoadAvailableExps(
+        UsersDir => $parameters->{_base}."/pathlay_users/".$parameters->{_home}."/"
+    );
+
+    my $home_script = home_script_Packager(
+        Parameters => $parameters
+    );
+    my $parentDiv = new HTMLDiv();
+    my $header = new HTMLDiv(
+        _class => "header"
+    );
+    $header -> ContentLoader(
+        Content => "<h1>PathLay - Home</h1>"
+    );
+    my $container = new HTMLDiv(
+        _class => "container"
+    );
+    my $iconsRow = new HTMLDiv(
+        _class => "icons",
+    );
+    my $iconsDiv = new HTMLDiv(
+        _class => "container-row",
+        _id => "iconsRow"
+    );
+    my @icons = (
+        '<a onClick="submitForm(event)" class="icon"><i class="material-icons">add</i><span>Add New</span></a>',
+        '<a onClick="submitForm(event)" class="icon"><i class="material-icons">upload_file</i><span>Upload Pack</span></a>',
+        '<a onClick="submitForm(event)" class="icon"><i class="material-icons">cloud_download</i><span>Download Home</span></a>'
+    );
+    my @formIds = (
+        'add_new_form',
+        'upload_pack_form',
+        'download_home_form'
+    );
+    my @formActions = (
+        'addNewExp',
+        'uploadPack',
+        'downloadHome'
+    );
+    my $i = 0;
+    foreach my $icon (@icons) {
+        my $form = new HTMLForm(
+            _id => $formIds[$i],
+            _name => $formIds[$i],
+            _action => "../cgi-bin/pathlayHomeActions.pl?action=$formActions[$i]",
+            _method => "post",
+            _enctype => "multipart/form-data",
+            _autocomplete => "off"
+        );
+        $form -> ContentLoader(
+            Content => $icon
+        );
+        if ($formActions[$i] eq 'uploadPack') {
+            my $inputFile = new HTMLInput(
+                _type => 'file',
+                _id => 'packInput',
+                _name => 'packInput',
+                _style => 'display:none;'
+            );
+            $form -> ContentLoader(
+                Content => $inputFile
+            );
+        }
+
+        $iconsDiv -> ContentLoader(
+            Content => $form
+        );
+        $i++;
+    }
+    $iconsRow -> ContentLoader(
+        Content => $iconsDiv
+    );
+    my $expItemsRow = new HTMLDiv(
+        _id => "expItemsRow",
+        _class => "container-row"
+    );
+    my @expBoxes;
+    foreach my $exp (sort keys %{$parameters -> {_exps_available}}) {
+        my $box = new HTMLDiv(
+            _id => "$exp-box",
+            _class => "exp-package-item-box"
+        );
+        my $boxIconsDiv = new HTMLDiv(
+            _id => "$exp-icons",
+            _class => "exp-package-item-icons"
+        );
+        my @boxIcons = (
+            '<a onClick=performAction("editExp","'.$exp.'") class="exp-package-item-icon"><i class="material-icons">edit_note</i><span>Edit Pack</span></a>',
+            '<a onClick=performAction("downloadExp","'.$exp.'") class="exp-package-item-icon"><i class="material-icons">download</i><span>Download</span></a>',
+            '<a onClick=performAction("deleteExp","'.$exp.'") class="exp-package-item-icon"><i class="material-icons">delete</i><span>Delete</span></a>',
+        );
+        foreach my $icon (@boxIcons) {
+            $boxIconsDiv -> ContentLoader(
+                Content => $icon
+            );
+        }
+
+        my $expID = $parameters -> {_exps_available} -> {$exp} -> {conf_data} -> {expname};
+
+        $box -> ContentLoader(
+            Content => "<span>Title: ${expID}</span>"
+        );
+        $box -> ContentLoader(
+            Content => $boxIconsDiv
+        );
+        push(@expBoxes,$box);
+    }
+    foreach my $box (@expBoxes) {
+        $expItemsRow -> ContentLoader(
+            Content => $box
+        );
+    }
+    $container -> ContentLoader(
+        Content => $header
+    );
+    $container -> ContentLoader(
+        Content => $iconsRow
+    );
+    $container -> ContentLoader(
+        Content => $expItemsRow
+    );
+    return($home_script,$container);
+}
+
 
 sub home_script_Packager {
 
