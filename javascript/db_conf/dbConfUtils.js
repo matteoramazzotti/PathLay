@@ -260,7 +260,8 @@ function checkForDBIntegrity(organism) {
 	} else {
 		updateResultsContainer("dbError",organism);
 		// include the following into updateResultsContainer
-		let messageDiv = resultContainer.querySelector('div')
+		let resultContainer = document.getElementById('resultContainer');
+		let messageDiv = resultContainer.querySelector('div');
 		let buttonDiv = document.createElement('div');
 		buttonDiv.className = "status-message-button-div";
 		buttonDiv.appendChild(downloadDBsButton(organism));
