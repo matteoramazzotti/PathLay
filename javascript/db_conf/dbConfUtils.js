@@ -2,6 +2,19 @@ import { integrityCheck, organismCodes, paths, forkedProcesses, requestQueueDBs 
 import { updateResultsContainer, displayDBStatus, cleanUp, downloadDBsButton} from './InterfaceUtils.js';
 import { checkMapsExistence, getRequest } from './MapsRequests.js'
 
+// check 
+
+async function grantAccess() {
+	try {
+		let response = await getRequest(`checkClient.pl`);
+		return response.accessGranted === "true" ? true : false;
+	} catch(error) {
+		console.log(error);
+		return false;
+	}
+}
+
+
 // check integrity
 async function checkFileExistence(organism) {
 	try {
