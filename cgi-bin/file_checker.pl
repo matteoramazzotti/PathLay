@@ -58,7 +58,8 @@ my $sources = {
 			"hsa_mirtarbase.tsv" => {},
 		},
 		useFork => {
-			"hsa_mirtarbase.tsv" => {}
+			"hsa_mirtarbase.tsv" => {},
+			"hsa_uniprot.tsv" => {}
 		}
 	},
 	mus_musculus => {
