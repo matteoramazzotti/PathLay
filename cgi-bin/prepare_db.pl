@@ -133,11 +133,11 @@ my $dispatch = {
           outputFile => $args{outputFile}
         );
         my $response = {
-            status => "complete",
-            statusFile => "hsa_mirtarbase.tsv.status.json",
-            file => "hsa_mirtarbase.tsv",
-            filePath => "$db->{homo_sapiens}->{interactionDBPath}",
-            pid => $$
+          status => "complete",
+          statusFile => "hsa_mirtarbase.tsv.status.json",
+          file => "hsa_mirtarbase.tsv",
+          filePath => "$db->{homo_sapiens}->{interactionDBPath}",
+          pid => $$
         };
         my $json_response = to_json($response, { pretty => 1 });
         write_file("$db->{homo_sapiens}->{interactionDBPath}$response->{statusFile}", $json_response);
