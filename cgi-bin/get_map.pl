@@ -74,13 +74,7 @@ if (!$imgAvailable) {
 	$imgID =~ s/$organismCodes->{$organism}//;
 	# Download the PNG file
 	my $img_content = get($imgUrl);
-	my $enc = guess_encoding($img_content, qw/utf-8 iso-8859-1/);
-	# If guessing fails, default to ISO-8859-1
-	if (ref($enc)) {
-		$img_content = $enc->decode($img_content);
-	} else {
-		$img_content = Encode::decode('iso-8859-1', $img_content);
-	}
+	
 	if (defined $img_content) {
 		# Define the local path to save the image
 		my $img_path = "$FindBin::Bin/../pathlay_data/pathways/$mapDB/$imgID.png"; # Adjust the path as necessary
@@ -91,6 +85,13 @@ if (!$imgAvailable) {
 			close $fh;
 		} else {
 			# fix resolution
+			my $enc = guess_encoding($img_content, qw/utf-8 iso-8859-1/);
+			# If guessing fails, default to ISO-8859-1
+			if (ref($enc)) {
+				$img_content = $enc->decode($img_content);
+			} else {
+				$img_content = Encode::decode('iso-8859-1', $img_content);
+			}
 			$img_content =~ s/<svg\b(?=[^>]*\bwidth\b)(?=[^>]*\bheight\b)([^>]*)\bwidth\s*=\s*["'][^"']*["']\s*([^>]*)\bheight\s*=\s*["'][^"']*["']\s*([^>]*)>/"<svg$1$2$3>"/ge;
 			open my $rsvg, '|-', "rsvg-convert -o $img_path" or print STDERR "Error running rsvg-convert: $!\n";
 			print $rsvg $img_content;
