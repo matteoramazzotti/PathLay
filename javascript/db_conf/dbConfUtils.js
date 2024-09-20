@@ -272,36 +272,54 @@ function checkForDBIntegrity(organism) {
 
 
 // onload calls
-document.addEventListener("DOMContentLoaded", function() {
-	// document.getElementById('species').addEventListener('change',displayOrganismStatus)
-	// document.getElementById('species').addEventListener('change',(event) => {checkFileExistence(event.target.value)});
-	// document.getElementById('species').addEventListener('change',(event) => {checkMapsExistence(event.target.value)});
-	document.getElementById('species').value = "homo_sapiens";
-
-	document.getElementById("fileCheckerButton").addEventListener('click',() => {
-		checkFileExistence(document.getElementById('species').value)
-	});
-	document.getElementById("mapsCheckerButton").addEventListener('click',() => {
-		checkMapsExistence(document.getElementById('species').value,'kegg');
-		checkMapsExistence(document.getElementById('species').value,'wikipathways')
-	});
+function getQueryParam(param) {
+	const urlParams = new URLSearchParams(window.location.search);
+	return urlParams.get(param);
+}
+document.addEventListener("DOMContentLoaded", async function() {
+	try {
+		let access = await grantAccess();
+		if (!access) {
+			let sid = getQueryParam("sid");
+			document.body.innerHTML = '';
+			let errorPage = `
+				<div style="text-align: center; margin-top: 20%;">
+					<h1 style="color: red;">Access Denied</h1>
+					<p>You do not have permission to view this page.</p>
+					<button id="goBackButton" ">Go Back</button>
+				</div>
+			`;
+			document.body.innerHTML = errorPage;
+			document.getElementById("goBackButton").addEventListener('click', () => {
+				const baseUrl = `${window.location.protocol}//${window.location.host}${window.location.pathname}`;
+				let newUrl = `${baseUrl.replace('pathlayDBConf.pl', 'welcome.pl')}?sid=${sid}`;
+				window.location.href = newUrl;
+			})
+		} else {
+			document.getElementById('species').value = "homo_sapiens";
+			document.getElementById("fileCheckerButton").addEventListener('click',() => {
+				checkFileExistence(document.getElementById('species').value)
+			});
+			document.getElementById("mapsCheckerButton").addEventListener('click',() => {
+				checkMapsExistence(document.getElementById('species').value,'kegg');
+				checkMapsExistence(document.getElementById('species').value,'wikipathways');
+			});
+		}
+	} catch(error) {
+		console.log(error)
+	}
 });
 window.addEventListener('beforeunload', (event) => {
-	var pids = forkedProcesses.map((p) => (p.pid));
+	var pids = fork.forkedProcesses.map((p) => (p.pid));
 	if (pids.length === 0) {
-		return
+		return;
 	}
-	
+	var payload = JSON.stringify({ action: 'terminate', pids: pids });
+	navigator.sendBeacon('terminate_process.pl', payload);
 	event.preventDefault();
-    
-	// Send an AJAX request to the server to terminate the processes
-	var xhr = new XMLHttpRequest();
-	xhr.open('POST', 'cgi-bin/terminate_process.pl', true); // Adjust the URL as needed
-	xhr.setRequestHeader('Content-Type', 'application/json');
-
-	// Example of sending process IDs; in practice, you would fetch this dynamically
-	xhr.send(JSON.stringify({ action: 'terminate', pids: pids }));
+	event.returnValue = ''; // Modern browsers ignore custom text
 });
+
 
 
 
