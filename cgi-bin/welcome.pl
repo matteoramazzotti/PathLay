@@ -7,6 +7,9 @@ use CGI::Carp qw(fatalsToBrowser);
 use File::Slurp;
 
 my $cgi = CGI->new;
+my $client = $ENV{'REMOTE_ADDR'};
+my $host = "127.0.0.1";
+
 
 # Retrieve the session ID from the query parameter
 my $session_id = $cgi->param('sid');
@@ -25,6 +28,12 @@ if (defined $username) {
 	my $html_content = read_file('../welcome.html');
 	
 	$html_content =~ s/_USER/$username/g;
+
+	if ($client ne $host) {
+		$html_content =~ s/redirect("dbconf")/""/g;
+		$html_content =~ s/settings/lock/;
+	}
+
 	print $cgi->header;
 	print $html_content;
 } else {
