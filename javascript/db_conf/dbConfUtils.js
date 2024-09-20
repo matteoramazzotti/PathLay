@@ -54,8 +54,8 @@ export function downloadMissing(organism) {
 }
 
 function checkStatus(fileID,type) {
-	console.log(forkedProcesses);
-	fetch(`${paths.interactionDBPath}${fileID}.status.json`)
+	console.log(fork.forkedProcesses);
+	fetch(`../${paths.interactionDBPath}${fileID}.status.json`)
 		.then(response => response.json())
 		.then(data => {
 				if (data.status === 'complete') {
@@ -81,8 +81,8 @@ function storePID(fileID,type,pid) {
 	if (!pid) {
 		return;
 	}
-	if (forkedProcesses.filter((p) => (p.pid === pid)).length == 0) {
-		forkedProcesses.push(
+	if (fork.forkedProcesses.filter((p) => (p.pid === pid)).length == 0) {
+		fork.forkedProcesses.push(
 			{
 				fileID : fileID,
 				fileType : type,
@@ -93,14 +93,14 @@ function storePID(fileID,type,pid) {
 }
 function removePID(type) {
 	console.log("Removing process data from memory");
-	let toRemove = forkedProcesses.filter((p) => (p.fileType === type));
+	let toRemove = fork.forkedProcesses.filter((p) => (p.fileType === type));
 	toRemove.forEach(obj => {
-    let index = forkedProcesses.indexOf(obj);
+    let index = fork.forkedProcesses.indexOf(obj);
     if (index !== -1) {
-			forkedProcesses.splice(index, 1);
+			fork.forkedProcesses.splice(index, 1);
     }
 	});
-	console.log(forkedProcesses);
+	console.log(fork.forkedProcesses);
 }
 
 async function downloadAndSaveFile(url,id, organism, type,type2, useProxy, useFork, retryCount = 5) {
