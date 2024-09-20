@@ -4,7 +4,7 @@ export const integrityCheck = {
 	mus_musculus: []
 };
 
-export const mapsCheck = {
+export var mapsCheck = {
 	homo_sapiens: [],
 	mus_musculus: []
 };
@@ -28,7 +28,9 @@ import { RequestQueue } from './RequestQueue.js';
 export const paths = {
 	interactionDBPath : ""
 };
-export var forkedProcesses = [];
+export const fork = {
+	forkedProcesses : []
+};
 
 
 export const requestQueueMaps = new RequestQueue();
