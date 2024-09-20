@@ -100,12 +100,22 @@ package HomoSapiensDB;
 		my $folder = $fileType eq "interaction" ? $self->{interactionDBPath} : $self->{mapDBPath};
 		print STDERR "Requesting: $url\n";
 		my $genericData = get($url);
-		die "Could not get $url!" unless defined $genericData;
+		print STDERR "Could not get $url!" unless defined $genericData;
+		my $ext;
+		if (!defined $genericData) {
+			print STDERR "Trying github backup link\n";
+			$url = "https://raw.githubusercontent.com/lorenzocasbarra/pathlay-dbs/main/${folder}${fileName}";
+			$url =~ s/\.\.\///;
+			$genericData = get($url);
+			$ext = "";
+		} else {
+			$ext = ".tmp";
+		}
 
-		open(OUT,">","$folder$fileName.tmp");
+		open(OUT,">","$folder$fileName$ext");
 		print OUT $genericData;
 		close(OUT);
-		print STDERR "Saved: $folder$fileName.tmp\n";
+		print STDERR "Saved: $folder$fileName$ext\n";
 	}
 	sub checkTmpFiles {
 		my $self = shift;
