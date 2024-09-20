@@ -1,4 +1,4 @@
-import { integrityCheck, organismCodes, paths, forkedProcesses, requestQueueDBs } from './global.js';
+import { integrityCheck, organismCodes, paths, fork, requestQueueDBs } from './global.js';
 import { updateResultsContainer, displayDBStatus, cleanUp, downloadDBsButton} from './InterfaceUtils.js';
 import { checkMapsExistence, getRequest } from './MapsRequests.js'
 
