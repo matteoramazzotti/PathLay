@@ -81,7 +81,12 @@
             let script = 
                 dest === "home" ? 'pathlayHome.pl' :
                 dest === "access" ? 'pathlayAccess.pl' :
-                'pathlayDBConf.pl';
+                dest === "dbConf" ? 'pathlayDBConf.pl' :
+                false;
+            if (!script) {
+                alert("This is accessible only from the host machine, please login from there to configure PathLay's databases");
+                return;
+            }
             let sid = getQueryParam("sid");
             let newUrl = `${baseUrl.replace('welcome.pl', script)}?sid=${sid}`;
             newUrl += dest === 'home' || dest === 'access' ? '&mode=list' : '';
