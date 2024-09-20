@@ -64,8 +64,9 @@ export async function checkMapsExistence(organism,dbId) {
 		const mapFiles = [
 			...response.pathwayFiles.map(map => formatMapsData(map)),
 		];
+		
 		integrityCheck[organism] = [ ...mapDBFiles];
-		mapsCheck[organism] = [...mapFiles];
+		mapsCheck[organism] = [...(mapsCheck[organism] || []), ...mapFiles];
 		printMaps(organism);
 		let status = checkMapsStatus(organism,dbId);
 		updateBoxMapStatus(dbId,organism,status);
