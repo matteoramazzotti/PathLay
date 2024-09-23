@@ -35,6 +35,11 @@ function check_installation_path() {
 	else
 	  echo "Path does not exist. Please try again."
 	fi
+
+	if [ ! -w "$chosenPath" ]; then
+  	echo "Path is not writable by the current user. Please choose another directory."
+  	continue
+	fi
 }
 
 
