@@ -89,9 +89,15 @@ echo "Installation directory is: $chosenPath"
 
 
 echo "Installing perl packages"
-cpanm --notest CGI 
+cpanm --notest CGI
+cpanm --notest CGI::Session
 cpanm --notest ExtUtils::PkgConfig
-cpanm --notest Statistics::R
+cpanm --notest JSON
+cpanm --notest File::MimeInfo::Simple
+cpanm --notest List::Uniq
+cpanm --notest XML::Simple
+cpanm --notest Statistics::Distributions
+cpanm --notest Bio::FdrFet
 cpanm --notest GD
 cpanm install Archive::Zip
 echo "Done!"
