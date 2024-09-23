@@ -73,11 +73,24 @@ ENV APACHE_LOCK_DIR /var/lock/apache2
 ENV APACHE_LOG_DIR /var/log/apache2
 ENV LANG C
 
-ADD pathlay /var/www/html/pathlay
+# Add necessary files to container
+ADD cgi-bin /var/www/html/pathlay/cgi-bin/
+ADD javascript /var/www/html/pathlay/javascript/
+ADD css /var/www/html/pathlay/css/
+ADD src /var/www/html/pathlay/src/
+ADD db_conf.html /var/www/html/pathlay/
+ADD pathlay_demo.html /var/www/html/pathlay/
+ADD pathlayHome.html /var/www/html/pathlay/
+ADD welcome.html /var/www/html/pathlay/
+ADD login.html /var/www/html/pathlay/
+ADD demo_exps /var/www/html/pathlay/demo_exps/
+ADD help /var/www/html/pathlay/help/
 
-RUN chgrp -R www-data /var/www/html/pathlay/
-RUN chmod -R 774 /var/www/html/pathlay/
-RUN chmod g+s /var/www/html/pathlay/
+# Set file permissions
+RUN chgrp -R www-data /var/www/html/pathlay/ \
+    && chmod -R 774 /var/www/html/pathlay/ \
+    && chmod g+s /var/www/html/pathlay/
 
-CMD ["/usr/sbin/apache2", "-D","FOREGROUND"]
+# Start Apache in the foreground
+CMD ["/usr/sbin/apache2", "-D", "FOREGROUND"]
 EXPOSE 80 143
