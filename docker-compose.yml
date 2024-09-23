@@ -1,13 +1,14 @@
+version: '3.8'
+
 services:
- pathlay:
-  image: vonb/pathlay
-  container_name: pathlay
-  build: .
-  ports:
-   - "80:80"
-   - "143:143"
-  volumes:
-   - ./pathlay/pathlay_users:/var/www/html/pathlay/pathlay_users
-
-
-
+  pathlay:
+    image: vonb/pathlay
+    container_name: pathlay
+    build: .
+    network_mode: host
+    volumes:
+      - ./pathlay_users:/var/www/html/pathlay/pathlay_users
+      - ./pathlay_data:/var/www/html/pathlay/pathlay_data
+    restart: unless-stopped
+    environment:
+      - LANG=C
