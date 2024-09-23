@@ -19,8 +19,8 @@ if [ -z "$INSTALL_DIR" ]; then
     INSTALL_DIR="/var/www/html"
 fi
 
-if check_directory "$folder"'/pathlay'; then
-	rm -rf "$INSTALL_DIR"/pathlay
+if check_directory "$folder/pathlay"; then
+	rm -rf "$INSTALL_DIR/pathlay"
 fi
 
 if check_file "$file"; then
