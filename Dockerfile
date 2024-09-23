@@ -41,8 +41,30 @@ RUN apt-get update && apt-get install -y \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
+# Edit Apache configuration
 
-	
+RUN mkdir -p /var/lock/apache2 /var/run/apache2 \
+    && echo '<FilesMatch "\.(ttf|otf|eot|woff|js|css|woff2)$">' > /var/www/html/.htaccess \
+    && echo ' <IfModule mod_headers.c>' >> /var/www/html/.htaccess \
+    && echo '  Header set Access-Control-Allow-Origin "*"' >> /var/www/html/.htaccess \
+    && echo ' </IfModule>' >> /var/www/html/.htaccess \
+    && echo '</FilesMatch>' >> /var/www/html/.htaccess \
+    && echo '<Directory /var/www/html/>' >> /etc/apache2/apache2.conf \
+    && echo '<FilesMatch "\.(ttf|otf|eot|woff|js|css|woff2)$">' >> /etc/apache2/apache2.conf \
+    && echo ' <IfModule mod_headers.c>' >> /etc/apache2/apache2.conf \
+    && echo '  Header set Access-Control-Allow-Origin "*"' >> /etc/apache2/apache2.conf \
+    && echo ' </IfModule>' >> /etc/apache2/apache2.conf \
+    && echo '</FilesMatch>' >> /etc/apache2/apache2.conf \
+    && echo '</Directory>' >> /etc/apache2/apache2.conf \
+    && echo 'ServerName localhost' > /etc/apache2/sites-enabled/localhost.conf \
+    && echo 'AddHandler cgi-script .cgi .pl' >> /etc/apache2/sites-enabled/localhost.conf \
+    && echo '<Directory /var/www/html>' >> /etc/apache2/sites-enabled/localhost.conf \
+    && echo '  Header set Access-Control-Allow-Origin "*"' >> /etc/apache2/sites-enabled/localhost.conf \
+    && echo '  Options All' >> /etc/apache2/sites-enabled/localhost.conf \
+    && echo '  AllowOverride All' >> /etc/apache2/sites-enabled/localhost.conf \
+    && echo '</Directory>' >> /etc/apache2/sites-enabled/localhost.conf
+
+# Set environment variables for Apache
 ENV APACHE_RUN_USER www-data
 ENV APACHE_RUN_GROUP www-data
 ENV APACHE_PID_FILE /var/run/apache2.pid
