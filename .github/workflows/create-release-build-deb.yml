@@ -22,7 +22,7 @@ jobs:
       - name: Create deb folders
         run: |
           # create DEBIAN directory if you want to add other pre/post scripts
-          mkdir -p .debpkg/var/www/html
+          mkdir -p .debpkg/var/www/html/pathlay/
           mkdir -p .debpkg/DEBIAN
           cp .github/workflows/bin/postinst .debpkg/DEBIAN/postinst
           cp .github/workflows/bin/postrm .debpkg/DEBIAN/postrm
@@ -30,8 +30,20 @@ jobs:
           chmod +x .debpkg/DEBIAN/postrm
           cp LICENSE .debpkg/var/www/html
           cp README.md .debpkg/var/www/html
-          cp -r docs/ .debpkg/var/www/html
-          cp -r pathlay/ .debpkg/var/www/html
+          cp -r docs/ .debpkg/var/www/html/pathlay/
+          cp -r cgi-bin/ .debpkg/var/www/html/pathlay/
+          cp -r css/ .debpkg/var/www/html/pathlay/
+          cp -r demo_exps/ .debpkg/var/www/html/pathlay/
+          cp -r javascript/ .debpkg/var/www/html/pathlay/
+          cp -r pathlay_data/ .debpkg/var/www/html/pathlay/
+          cp -r pathlay_users/ .debpkg/var/www/html/pathlay/
+          cp -r src/ .debpkg/var/www/html/pathlay/
+          cp -r db_conf.html .debpkg/var/www/html/pathlay/
+          cp -r login.html .debpkg/var/www/html/pathlay/
+          cp -r pathlayHome.html .debpkg/var/www/html/pathlay/
+          cp -r pathlay_demo.html .debpkg/var/www/html/pathlay/
+          cp -r welcome.html .debpkg/var/www/html/pathlay/
+
 
       - uses: jiro4989/build-deb-action@v3
         with:
