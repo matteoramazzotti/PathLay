@@ -81,8 +81,8 @@
             let script = 
                 dest === "home" ? 'pathlayHome.pl' :
                 dest === "access" ? 'pathlayAccess.pl' :
-                dest === "dbConf" ? 'pathlayDBConf.pl' :
-                false;
+                dest === "dbconf" ? 'pathlayDBConf.pl' :
+                undefined;
             if (!script) {
                 alert("This is accessible only from the host machine, please login from there to configure PathLay's databases");
                 return;
