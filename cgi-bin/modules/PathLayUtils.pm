@@ -293,7 +293,7 @@ package Parameters;
         );
         my $users_file = $args{'UsersFile'};
         my %form = %{$args{'Form'}};
-        open(IN,$users_file) or die "Cannot find users file!";
+        open(IN,$users_file) or print STDERR "Cannot find users file!";
         foreach my $line (<IN>) {
             next if ($line !~ /\w/);
             chomp($line);
