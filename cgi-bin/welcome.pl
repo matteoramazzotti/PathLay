@@ -9,7 +9,9 @@ use File::Slurp;
 my $cgi = CGI->new;
 my $client = $ENV{'REMOTE_ADDR'};
 my $host = "127.0.0.1";
-
+if ($client eq "::1") { #handling ipv6
+	$client = "127.0.0.1";
+}
 
 # Retrieve the session ID from the query parameter
 my $session_id = $cgi->param('sid');
