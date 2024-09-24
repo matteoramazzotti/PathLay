@@ -305,10 +305,10 @@ async function performAction(action, exp) {
 		console.log(JSON.stringify(currentConf.omicConfs));
 		try {
 			const { result, response } = await postRequest("../cgi-bin/pathlayAccessActions.pl?action=updateLastConf", formData);
-			alert(result);
+			
 			return response;
 		} catch (error) {
-			alert(error.message);
+			
 			throw error;
 		}
 	}
