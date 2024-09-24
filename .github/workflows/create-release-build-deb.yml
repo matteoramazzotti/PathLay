@@ -43,6 +43,7 @@ jobs:
           cp -r pathlayHome.html .debpkg/var/www/html/pathlay/
           cp -r pathlay_demo.html .debpkg/var/www/html/pathlay/
           cp -r welcome.html .debpkg/var/www/html/pathlay/
+          chmod +x .debpkg/var/www/html/pathlay/cgi-bin/*.pl
 
 
       - uses: jiro4989/build-deb-action@v3
