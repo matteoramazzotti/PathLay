@@ -245,7 +245,7 @@ select {
 	background-color: rgba(0, 102, 153, 1);
 	border-radius: 15px;
 	width: fit-content;
-	overflow: scroll;
+	overflow: auto;
 }
 .conf-container {
 	height: fit-content;
@@ -266,7 +266,7 @@ select {
 	width: 100%;
 	padding: 10px;
 	box-sizing: border-box;
-	overflow: scroll;
+	overflow: auto;
 }
 .info-row span {
 	color: white;
@@ -297,7 +297,7 @@ select {
 }
 #expItemsRow {
 	justify-content: center;
-	overflow: scroll;
+	overflow: auto;
 	max-height: 50vh;
 	flex-wrap: wrap;
 }
