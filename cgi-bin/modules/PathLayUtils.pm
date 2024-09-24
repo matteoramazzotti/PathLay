@@ -318,6 +318,11 @@ package Parameters;
             }
         }
         close(IN);
+        if ($form{'username'} eq 'demo_user@unifi.it') {
+            $self -> {_username} = 'demo_user@unifi.it';
+            $self -> {_password} = "d74738e262dc4ca990b1e9e05b6769b299be61f1c0ac92275bb43e795276e9cb";
+            $self -> {_home} = "6135251850";
+        }
     }
 
     sub RegisterUser {
