@@ -204,7 +204,7 @@
   height: 200;
   flex-direction: row;
   border: 1px solid white;
-  width: -moz-available;
+  width: 95%;
 
 }
 .mapsListBoxChildTwo {
@@ -220,7 +220,7 @@
 }
 
 .maps-list-box-ul {
-  overflow-y: scroll;
+  overflow-y: auto;
   width: 75%;
   height: inherit;
   border-left: 1px solid white;
