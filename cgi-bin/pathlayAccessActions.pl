@@ -216,10 +216,11 @@ if ($action eq "updateLastConf") {
 		status => '',
 		message => 'Update Complete'
 	};
-	if ($userDir eq '6135251850') {
+	if ($home eq '6135251850') {
 		$response = to_json($response);
 		print $cgi->header('application/json');
 		print $response;
+		exit;
 	}
 
 	print STDERR "Updating\n";
