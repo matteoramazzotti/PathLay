@@ -605,12 +605,11 @@ package ExpProteins;
                 my $entrez = $db -> {$idtype."2entrez"} -> {$_};
                 $converted -> {$entrez} = $self -> {_data} -> {$_};
                 $converted -> {$entrez} -> {_prot_id} = $_;
-                $converted -> {$entrez} -> {_prot_name} = $_;
+                $converted -> {$entrez} -> {_prot_name} = $db -> {entrez2fullName} -> {$entrez};
                 next;
             }
         }
         $self -> {_data} = $converted;
-        
     }
     sub ExpPrinter {
 
