@@ -322,6 +322,10 @@ async function performAction(action, exp) {
 		const baseUrl = `${window.location.protocol}//${window.location.host}${window.location.pathname}`;
 		window.location.href = `${baseUrl}?sid=${sid}&mode=conf&exp=${exp}`;
 	}
+	if (action === "runLast") {
+		const baseUrl = `${window.location.protocol}//${window.location.host}/pathlay/cgi-bin/pathlay.pl`;
+		window.location.href = `${baseUrl}?sid=${sid}&exp=${exp}&conf=last`;
+	}
 	
 	if (action === "uploadOmicPack") {
 		if (uploadInProgress) return;  // Exit if upload is already in progress
