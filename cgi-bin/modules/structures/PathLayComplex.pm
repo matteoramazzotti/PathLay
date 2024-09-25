@@ -286,6 +286,7 @@ package Complex;
             );
             my $mainID         = $args{mainID};
             my $mainName       = $args{mainName};
+            my $fullName       = $args{fullName};
             my $typeForPlot    = $args{typeForPlot};
             my $legendForPlot  = $args{legendForPlot};
             my $legendForTitle = $args{legendForTitle};
@@ -293,6 +294,9 @@ package Complex;
 
             $legendForPlot .= "type:$typeForPlot|id:$mainID|name:$mainName";
             $legendForTitle .= "$typeForTitle: $mainID ($mainName)";
+            if ($fullName) {
+                $legendForTitle .= " ($fullName)";
+            }
 
             return($legendForPlot,$legendForTitle);
         };
@@ -307,6 +311,7 @@ package Complex;
 
         my $mainID = $id;
         my $mainName = $self -> {_data} -> {$id} -> {name};
+        my $fullName;
         my $mainType = $args{mainType};
         my $typeForPlot;
         my $typeForTitle;
@@ -320,9 +325,8 @@ package Complex;
             $typeForTitle = "Protein";
             $mainID = $data -> {$id} -> {prot_id};
             # print STDERR Dumper $data -> {$id};
-
-            
             $mainName = $id;
+            $fullName = $data -> {$id} -> {prot_name};
         }
         if ($mainType eq "meta") {
             $typeForPlot = "meta";
@@ -338,6 +342,7 @@ package Complex;
             legendForTitle => $self -> {_legend_for_title},
             mainID => $mainID,
             mainName => , $mainName,
+            fullName => $fullName,
             typeForPlot => $typeForPlot,
             typeForTitle => $typeForTitle
         );
