@@ -915,6 +915,7 @@ function editTfsBoxPackager(omic) {
 
 
 	let titles = ['Enable TFs',' Preserve IDs for TFs '];
+	let helps = [`Look for Transcription Factors in ${omicToTitle[omic]} dataset`,`Preserve Transcription Factors IDs without expression values in ${omicToTitle[omic]} dataset`];
 	let ids = ['enabletfs','enabletfsIdOnly'];
 
 	titles.forEach((title,i) => {
@@ -923,7 +924,15 @@ function editTfsBoxPackager(omic) {
 
 		let titleSpan = document.createElement('span');
 		titleSpan.className = 'tfs-title-span';
-		titleSpan.innerText = title;
+
+		let textSpan = document.createElement('span');
+		textSpan.innerText = title;
+
+		let helpSpan = helpSpanPackager(helps[i]);
+
+		titleSpan.appendChild(textSpan);
+		titleSpan.appendChild(helpSpan);
+
 
 		let switchLabel = radiusSwitch(`${ids[i]}_${omic}`,`${ids[i]}_${omic}`);
 		switchLabel.addEventListener('change', async function() {
@@ -955,6 +964,13 @@ function editNoDeBoxPackager(omic) {
 		omic === 'gene' || omic === 'prot' ? ['Load Non DE from TFs','Load Non DE from Preserved TFs']
 		: ['No DE Loading','No DE Loading From Preserved IDs']
 	;
+	let helps =
+		omic === 'gene' || omic === 'prot' ?
+		[`Load Non Differentially Expressed ${omicToTitle[omic]} interacting with Transcription Factors found in ${omicToTitle[omic]} dataset`,
+		`Load Non Differentially Expressed ${omicToTitle[omic]} interacting with Transcription Factors without Expression Values found in ${omicToTitle[omic]} dataset`]
+		: [`Load Non Differentially Expressed Genes interacting with ${omicToTitle[omic]} found in ${omicToTitle[omic]} dataset`,
+		`Load Non Differentially Expressed Genes interacting with ${omicToTitle[omic]} without Expression Values found in ${omicToTitle[omic]} dataset`
+		];
 	let ids = 
 		omic === 'gene' || omic === 'prot' ? ['nodeg_select_tf','tfsNoDEFromIdOnlyCheck']
 		: ['nodeg_select','NoDEFromIdOnlyCheck']	
@@ -966,7 +982,14 @@ function editNoDeBoxPackager(omic) {
 
 		let titleSpan = document.createElement('span');
 		titleSpan.className = 'noDe-title-span';
-		titleSpan.innerText = title;
+		let textSpan = document.createElement('span');
+		textSpan.innerText = title;
+
+		let helpSpan = helpSpanPackager(helps[i]);
+		titleSpan.appendChild(textSpan);
+		titleSpan.appendChild(helpSpan);
+
+		
 
 		let switchId = ids[i] === "NoDEFromIdOnlyCheck" ? `${omic}${ids[i]}` : `${ids[i]}_${omic}`;
 		let switchLabel = radiusSwitch(switchId,switchId);
@@ -1004,13 +1027,19 @@ function editIdOnlyBoxPackager(omic) {
 	idOnlyContainer.id = `${omic}IdOnlyContainer`;
 	idOnlyContainer.className = 'tfs-container';
 	idOnlyContainer.style.display = omic !== 'gene' ? 'none' : 'flex';
-	['Preserve non DE IDs'].forEach((title) => {
+	let helps = [`Preserve ${omicToTitle[omic]} IDs without expression values in ${omicToTitle[omic]} dataset`];
+	['Preserve non DE IDs'].forEach((title,i) => {
 		let containerSpan = document.createElement('span');
 		containerSpan.className = 'idOnly-container-span';
 
 		let titleSpan = document.createElement('span');
 		titleSpan.className = 'idOnly-title-span';
-		titleSpan.innerText = title;
+		let textSpan = document.createElement('span');
+		textSpan.innerText = title;
+
+		let helpSpan = helpSpanPackager(helps[i]);
+		titleSpan.appendChild(textSpan);
+		titleSpan.appendChild(helpSpan);
 
 		let switchLabel = radiusSwitch(`${omic}IdOnlyCheck`,`${omic}IdOnlyCheck`);
 		switchLabel.addEventListener('change', async function() {
@@ -1067,13 +1096,15 @@ function editFETExtraFeaturesPackager() {
 	let extraContainer = document.createElement('div');
 	extraContainer.id = 'FETExtraFeatures';
 	extraContainer.className = 'fet-container';
+	let helps = [
+		`Execute Fisher's Exact Test on a list of Genes/Protein produced by the union of the enabled datasets for the test, including No DE components loaded`,
+		`Display only Pathways obtained by the intersection of the Pathway Lists obtained from each Fisher's Exact test execution`];
 	
 	["FETPooling","FETIntersect"].forEach((id,i) => {
 		let containerSpan = document.createElement('span');
 		containerSpan.className = 'fet-container-span';
 		let titleSpan = document.createElement('span');
 		titleSpan.className = 'fet-title-span';
-		titleSpan.innerText = `${extraTitles[i]}`;
 		let switchLabel = radiusSwitch(id,id);
 		switchLabel.id = `${id}Label`;
 		switchLabel.addEventListener('change', async function() {
@@ -1083,6 +1114,13 @@ function editFETExtraFeaturesPackager() {
 				console.log(error);
 			}
 		});
+		let textSpan = document.createElement('span');
+		textSpan.innerText = extraTitles[i];
+
+		let helpSpan = helpSpanPackager(helps[i]);
+		titleSpan.appendChild(textSpan);
+		titleSpan.appendChild(helpSpan);
+
 		containerSpan.appendChild(titleSpan);
 		containerSpan.appendChild(switchLabel);
 		extraContainer.appendChild(containerSpan);
@@ -1125,6 +1163,16 @@ function button(id,text,iconText,onClickFunction) {
 	a.append(span);
 	div.appendChild(a);
 	return(div)
+}
+function helpSpanPackager(title) {
+	let span = document.createElement('span');
+	span.innerText = 'help';
+	span.className = 'material-symbols-outlined';
+	span.title = title;
+	span.addEventListener('mouseover', () => {
+		span.style.cursor = 'help';
+	});
+	return(span);
 }
 
 
