@@ -224,7 +224,7 @@ sub AccessBuilderNew {
     );
     
     my $expItemsRow = new HTMLDiv(
-        _id => "expItemsRow",
+        _id => "expItemsRowList",
         _class => "container-row"
     );
     my @expBoxes;
