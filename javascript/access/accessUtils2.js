@@ -653,7 +653,7 @@ function editMapsDbBoxPackager() {
 	container.style.width = "90%";
 
 	let rows = [];
-	[0,1].forEach(() => {
+	[0,1,2].forEach(() => {
 		let containerRow = document.createElement('div');
 		containerRow.className = 'conf-row';
 		rows.push(containerRow);
@@ -710,7 +710,8 @@ function editMapsDbBoxPackager() {
 		titleSpan.innerText = omicToTitle[omic];
 		div.appendChild(titleSpan);
 		div.appendChild(switchLabel);
-		rows[1].appendChild(div);
+		
+		rows[2].appendChild(div);
 	});
 
 	// laod on rows
