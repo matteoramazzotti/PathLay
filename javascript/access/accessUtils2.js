@@ -717,6 +717,10 @@ function editMapsDbBoxPackager() {
 	// laod on rows
 	rows[0].appendChild(span);
 	rows[0].appendChild(selectContainer);
+	let enableTitle = document.createElement('span');
+	enableTitle.innerText = "Select Datasets to be used";
+	rows[1].appendChild(enableTitle);
+	rows[1].style.justifyContent = 'flex-start';
 	rows.forEach(row =>{
 		container.appendChild(row);
 	})
