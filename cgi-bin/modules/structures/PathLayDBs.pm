@@ -167,7 +167,8 @@ package protDB;
             my $entrez = $data[5];
             my $symbol = $data[3];
             my $entry = $data[0];
-
+            my $fullName = $data[4];
+            $fullName =~ s/ \(.+?$//;
 
             my @entrezs = split(/;/,$entrez);
             next if(scalar @entrezs > 1);
@@ -177,8 +178,11 @@ package protDB;
 
             $self -> {entrez2entry} -> {$entrez} = $entry;
             $self -> {entry2entrez} -> {$entry} = $entrez;
+            $self -> {entrez2fullName} -> {$entrez} = $fullName;
+            $self -> {entry2fullName} -> {$entry} = $fullName;
             foreach (@symbols) {
                 $self -> {symbol2entrez} -> {$_} = $entrez;
+                $self -> {symbol2fullName} -> {$_} = $fullName;
                 $self -> {symbol2entry} -> {$_} = $entry;
                 $self -> {entrez2symbol} -> {$entrez} -> {$symbol} = 1;
                 $self -> {entry2symbol} -> {$entry} -> {$symbol} = 1;
@@ -186,7 +190,6 @@ package protDB;
             
         }
         close(DB);
-
         #print STDERR Dumper $self -> {entry2entrez};
         #die;
     }
