@@ -34,7 +34,7 @@ my $session = CGI::Session->new($session_id);
 my $username = $session->param('username');
 my $home = $session->param('home');
 my $expId = $cgi->param('exp');
-
+my $last = $cgi->param('conf') ? $cgi->param('conf') : undef;
 
 print STDERR $home;
 print STDERR "SERVER: $base\n";
@@ -48,7 +48,14 @@ my $report = new Report();
 
 my $parameters = new Parameters();
 $parameters->{_userdir} = $home ne "6135251850" ? "$base/pathlay_users/".$home."/" : "$base/demo_exps/6135251850/";
-$parameters -> LoadENVFromCGI();
+
+if (!$last) {
+    $parameters -> LoadENVFromCGI();
+} else {
+    $parameters -> LoadLastENV(
+        expId => $expId
+    );
+}
 
 if (!$parameters->{_h3}) {
     $parameters->{_h3} = $home;
