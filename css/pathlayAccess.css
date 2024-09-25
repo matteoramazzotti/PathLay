@@ -295,11 +295,16 @@ select {
 #iconsRow {
 	justify-content: center;
 }
-#expItemsRow {
+#expItemsRow, #expItemsRowList {
 	justify-content: center;
 	overflow: auto;
-	max-height: 50vh;
 	flex-wrap: wrap;
+}
+#expItemsRow {
+	max-height: 50vh;
+}
+#expItemsRowList {
+	max-height: 80vh;
 }
 .exp-package-item-icons{
 	display: flex;
