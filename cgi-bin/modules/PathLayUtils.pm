@@ -650,6 +650,56 @@ package Parameters;
         $self -> {_map_association_file} = "../pathlay_data/".$self -> {_org}."/db/".$self -> {_maps_db_select}."/".$self -> {_org}.".".$self -> {_maps_db_select}.".gene.gmt";
         $self -> {_map_association_file_meta} = "../pathlay_data/".$self -> {_org}."/db/".$self -> {_maps_db_select}."/".$self -> {_org}.".".$self -> {_maps_db_select}.".meta.gmt";
     }
+    sub LoadLastENV {
+        use File::Slurp;
+        use Data::Dumper;
+        my $self = shift;
+        my %args = (
+            @_
+        );
+        my $expId = $args{expId};
+        $self -> {_exp_select} = $expId;
+        #load conf
+        open (IN,"$self->{_userdir}/${expId}.conf");
+        while (<IN>) {
+            chomp;
+            my ($tag,$value) = split("=",$_);
+            $self -> {"_${tag}"} = $value;
+        }
+        close(IN);
+        open(IN,"$self->{_userdir}/${expId}.last");
+        while (<IN>) {
+            chomp;
+            my ($tag,$value) = split("=",$_);
+            $self -> {"_${tag}"} = $value;
+        }
+        close(IN);
+        foreach my $dataType (("gene","prot","urna","meth","chroma","meta")) {
+            my $ext = $dataType eq "gene" ? "mrna" : $dataType eq "urna" ? "mirna" : $dataType;
+            if (-e "$self->{_userdir}/${expId}.${ext}") {
+                $self->{"_${dataType}_data"} = read_file("$self->{_userdir}/$expId.$ext", chomp => 0);
+            }
+        }
+        $self -> {_org} = $self -> {_organism};
+        $self -> {_gene_db_file} = $self -> {_org}.".gene_info";
+        $self -> {_gene_db_location} = "../pathlay_data/".$self -> {_org}."/db/";
+        $self -> {_urna_db_file} = $self -> {_org}."_mirtarbase.tsv";
+        $self -> {_urna_db_location} = "../pathlay_data/".$self -> {_org}."/db/".$self -> {_org}."_mirtarbase.tsv";
+        $self -> {_prot_db_file} = $self -> {_org}."_uniprot.tsv";
+        $self -> {_prot_db_location} = "../pathlay_data/".$self -> {_org}."/db/";
+        $self -> {_ont_db_file} = $self -> {_org}."_ont.gmt";
+        $self -> {_ont_db_location} = "../pathlay_data/".$self -> {_org}."/db/";
+        $self -> {_tf_db_file} = $self -> {_org}."_tf.gmt";
+        $self -> {_tf_db_location} = "../pathlay_data/".$self -> {_org}."/db/";
+        $self -> {_meta_db_file} = $self -> {_org}.".compound_info";
+        $self -> {_meta_db_location} = "../pathlay_data/".$self -> {_org}."/db/";
+        $self -> {_mapdir} .= $self -> {_maps_db_select}."/"; 
+        $self -> {_nodesdir} = "../pathlay_data/".$self -> {_org}."/maps/".$self -> {_maps_db_select}."/";
+        $self -> {_universe_file} = "../pathlay_data/".$self -> {_org}."/db/".$self -> {_maps_db_select}."/".$self -> {_org}.".".$self -> {_maps_db_select}.".genes.universe";
+        $self -> {_map_association_file} = "../pathlay_data/".$self -> {_org}."/db/".$self -> {_maps_db_select}."/".$self -> {_org}.".".$self -> {_maps_db_select}.".gene.gmt";
+        $self -> {_map_association_file_meta} = "../pathlay_data/".$self -> {_org}."/db/".$self -> {_maps_db_select}."/".$self -> {_org}.".".$self -> {_maps_db_select}.".meta.gmt";
+        
+    }
     sub updateLastSession {
         
         my $self = shift;
