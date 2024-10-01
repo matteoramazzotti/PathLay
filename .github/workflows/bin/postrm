@@ -2,7 +2,11 @@
 
 set -e
 
-source /etc/pathlay.conf
+if [ -f "/etc/pathlay.conf" ]; then
+    source /etc/pathlay.conf
+else
+    echo "Warning: /etc/pathlay.conf not found. Continuing without it."
+fi
 
 check_file() {
     local file="$1"
@@ -19,18 +23,10 @@ if [ -z "$INSTALL_DIR" ]; then
     INSTALL_DIR="/var/www/html"
 fi
 
-if check_directory "$folder/pathlay"; then
+if check_directory "$INSTALL_DIR/pathlay"; then
 	rm -rf "$INSTALL_DIR/pathlay"
 fi
 
-if check_file "$file"; then
+if check_file "/etc/pathlay.conf"; then
 	rm -f /etc/pathlay.conf
 fi
-
-
-
-# Purge package-specific dependencies if necessary
-# apt-get purge -y package-dependency1 package-dependency2 ...
-
-# You may also perform other cleanup tasks specific to your package here
-
