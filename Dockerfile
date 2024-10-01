@@ -25,6 +25,7 @@ RUN apt-get update && apt-get install -y \
         zip \
         tcl \
         librsvg2-bin \
+        gnumeric \
     && cpanm --notest CGI \
     && cpanm --notest CGI::Session \
     && cpanm --notest JSON \
