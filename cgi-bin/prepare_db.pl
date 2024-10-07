@@ -7,7 +7,6 @@ use CGI::Carp qw(fatalsToBrowser);
 use FindBin;
 use File::Basename;
 use Data::Dumper;
-use Spreadsheet::XLSX;
 use JSON;
 use File::Slurp;
 
