@@ -21,8 +21,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Configuring a Dataset" href="usage_access_data_types.html" />
-    <link rel="prev" title="Maps Restriction Procedure" href="usage_access_stat.html" /> 
+    <link rel="next" title="Configuring Filters for a Dataset" href="usage_access_data_types.html" />
+    <link rel="prev" title="Maps Databases" href="usage_access_mapsdb.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -52,16 +52,18 @@
 <li class="toctree-l2"><a class="reference internal" href="../../requirements/requirements_apache.html">For the Apache Server Installation</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../installation/index.html">Installation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../installation/linux/index.html">Installation on Linux</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../installation/installation_index.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../installation/linux/installation_linux_index.html">Installation on Linux</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../installation/linux/installation_docker.html">Installation using Docker (Recommended)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../installation/linux/installation_deb.html">Installation with .deb package</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../installation/linux/installation_apache.html">Apache Server Installation</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../howto/index.html">How to run</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../howto/howto_docker_server.html">Run PathLay as network server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../howto/howto_docker_server.html">Run PathLay as network server with Docker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../howto/howto_localserver.html">Run PathLay as local server with Docker (localhost)</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="../usage_index.html">Usage</a><ul class="current">
@@ -77,22 +79,30 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../home/usage_home_index.html">Home Manager</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../home/usage_home_create.html">Creating an Experiment Package</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../home/usage_home_load.html">Loading an Experiment Package</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../home/usage_home_ont.html">Gene Ontologies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../home/create/usage_home_create.html">Creating an Experiment Package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../home/create/usage_home_create_add.html">Adding a new Experiment Package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../home/create/usage_home_create_upload.html">Uploading a new Experiment Package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../home/edit/usage_home_edit_index.html">Editing an Experiment Package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../home/edit/usage_home_edit_generic.html">Edit Experiment’s General Information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../home/edit/usage_home_edit_dataset.html">Configure a Dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../home/edit/usage_home_edit_ont.html">Gene Ontologies</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../home/usage_home_download.html">Downloading an Experiment Package</a></li>
 </ul>
 </li>
 <li class="toctree-l2 current"><a class="reference internal" href="usage_access_index.html">Configuration Page</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="usage_access_mapsdb.html">Maps Databases</a></li>
-<li class="toctree-l3"><a class="reference internal" href="usage_access_stat.html">Maps Restriction Procedure</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Data Selection</a></li>
-<li class="toctree-l3"><a class="reference internal" href="usage_access_data_types.html">Configuring a Dataset</a></li>
+<li class="toctree-l3"><a class="reference internal" href="usage_access_data_types.html">Configuring Filters for a Dataset</a></li>
 <li class="toctree-l3"><a class="reference internal" href="usage_access_filtering.html">Filtering Options</a></li>
 <li class="toctree-l3"><a class="reference internal" href="usage_access_id_only.html">ID Preservation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="usage_access_nodeg.html">Non Differentially Expressed IDs</a></li>
 <li class="toctree-l3"><a class="reference internal" href="usage_access_tfs.html">Transcription Factors</a></li>
 <li class="toctree-l3"><a class="reference internal" href="usage_access_tfs_id_only.html">Transcription Factors ID Preservation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="usage_access_stat.html">Maps Restriction Procedure</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../results/usage_results_index.html">Pathway Explorer</a><ul>
@@ -148,7 +158,13 @@
              
   <section id="data-selection">
 <span id="usage-access-data"></span><h1>Data Selection<a class="headerlink" href="#data-selection" title="Link to this heading"></a></h1>
-<p>The “Select Maps using” section allows to select the datasets you want to use by simply check the boxes you are interested in between “Genes”, “Proteins”, “miRNAs”, “Methylations”, “Chromatin Status” and “Metabolites”.</p>
+<p>The “Select Datasets to be used” selector allows you to select the datasets you want to use by simply check the boxes you are interested in between “Genes”, “Proteins”, “miRNAs”, “Methylations”, “Chromatin Status” and “Metabolites”.</p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="../../_images/general_conf_sel2.png"><img alt="Data selection interface" src="../../_images/general_conf_sel2.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">Screenshot of the “Select Datasets to be used” interface in the data selection step.</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Whenever a checkbox is disabled, it means that either the dataset was not found available or that the setup in the Home page was not performed accordingly (i.e. the content of the columns was not pointed out correctly).</p>
@@ -159,8 +175,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="usage_access_stat.html" class="btn btn-neutral float-left" title="Maps Restriction Procedure" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="usage_access_data_types.html" class="btn btn-neutral float-right" title="Configuring a Dataset" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="usage_access_mapsdb.html" class="btn btn-neutral float-left" title="Maps Databases" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="usage_access_data_types.html" class="btn btn-neutral float-right" title="Configuring Filters for a Dataset" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

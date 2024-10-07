@@ -1,8 +1,7 @@
 .. _usage_results_logical_byids:
 
-"""""""""""""
 Select by IDs
-"""""""""""""
+-------------
 
 The first row in the Logical Section is composed by a selector that allows the selection of a data type between "Gene", "Protein", TFs, "miRNA", "Methylation", "Chromatin" and "Metabolite", depending on your analysis configuration.
 Selecting one data type will pop up another selector with a list of IDs of the data type chosen, in a similar fashion of the HighLight section.

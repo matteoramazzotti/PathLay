@@ -1,8 +1,8 @@
 .. _usage_results_clipboard:
 
-^^^^^^^^^^^^^
+
 The Clipboard
-^^^^^^^^^^^^^
+=============
 
 The Clipboard is a freely movable window that will be displayed as soon as the "Clipboard" writing is clicked in the menu.
 It is composed by two boxes, the "Info" box and the "Selected" box.

@@ -21,8 +21,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Data Selection" href="usage_access_data.html" />
-    <link rel="prev" title="Maps Databases" href="usage_access_mapsdb.html" /> 
+    <link rel="next" title="Pathway Explorer" href="../results/usage_results_index.html" />
+    <link rel="prev" title="Transcription Factors ID Preservation" href="usage_access_tfs_id_only.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -52,16 +52,18 @@
 <li class="toctree-l2"><a class="reference internal" href="../../requirements/requirements_apache.html">For the Apache Server Installation</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../installation/index.html">Installation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../installation/linux/index.html">Installation on Linux</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../installation/installation_index.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../installation/linux/installation_linux_index.html">Installation on Linux</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../installation/linux/installation_docker.html">Installation using Docker (Recommended)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../installation/linux/installation_deb.html">Installation with .deb package</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../installation/linux/installation_apache.html">Apache Server Installation</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../howto/index.html">How to run</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../howto/howto_docker_server.html">Run PathLay as network server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../howto/howto_docker_server.html">Run PathLay as network server with Docker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../howto/howto_localserver.html">Run PathLay as local server with Docker (localhost)</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="../usage_index.html">Usage</a><ul class="current">
@@ -77,22 +79,30 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../home/usage_home_index.html">Home Manager</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../home/usage_home_create.html">Creating an Experiment Package</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../home/usage_home_load.html">Loading an Experiment Package</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../home/usage_home_ont.html">Gene Ontologies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../home/create/usage_home_create.html">Creating an Experiment Package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../home/create/usage_home_create_add.html">Adding a new Experiment Package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../home/create/usage_home_create_upload.html">Uploading a new Experiment Package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../home/edit/usage_home_edit_index.html">Editing an Experiment Package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../home/edit/usage_home_edit_generic.html">Edit Experiment’s General Information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../home/edit/usage_home_edit_dataset.html">Configure a Dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../home/edit/usage_home_edit_ont.html">Gene Ontologies</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../home/usage_home_download.html">Downloading an Experiment Package</a></li>
 </ul>
 </li>
 <li class="toctree-l2 current"><a class="reference internal" href="usage_access_index.html">Configuration Page</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="usage_access_mapsdb.html">Maps Databases</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Maps Restriction Procedure</a></li>
 <li class="toctree-l3"><a class="reference internal" href="usage_access_data.html">Data Selection</a></li>
-<li class="toctree-l3"><a class="reference internal" href="usage_access_data_types.html">Configuring a Dataset</a></li>
+<li class="toctree-l3"><a class="reference internal" href="usage_access_data_types.html">Configuring Filters for a Dataset</a></li>
 <li class="toctree-l3"><a class="reference internal" href="usage_access_filtering.html">Filtering Options</a></li>
 <li class="toctree-l3"><a class="reference internal" href="usage_access_id_only.html">ID Preservation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="usage_access_nodeg.html">Non Differentially Expressed IDs</a></li>
 <li class="toctree-l3"><a class="reference internal" href="usage_access_tfs.html">Transcription Factors</a></li>
 <li class="toctree-l3"><a class="reference internal" href="usage_access_tfs_id_only.html">Transcription Factors ID Preservation</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Maps Restriction Procedure</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../results/usage_results_index.html">Pathway Explorer</a><ul>
@@ -148,21 +158,42 @@
              
   <section id="maps-restriction-procedure">
 <span id="usage-access-stat"></span><h1>Maps Restriction Procedure<a class="headerlink" href="#maps-restriction-procedure" title="Link to this heading"></a></h1>
-<p>It is possible to perform a selection of maps to display in the PathLay - MAPS page by selecting FET from the Map Restriction Procedure selector.
+<p>It is possible to perform a selection of maps to display in the PathLay - MAPS page by enabling Fisher’s Exact Test for desired datasets.
 Maps are selected with a statistical approach based on the Fisher’s Exact Test and since PathLay integrates different datasets, it is also possible to select which dataset will contribute on the map selection.
-To allow this, the “FET Enabled” option should be checked for each dataset that should contribute.
 By default the test is performed on each dataset enabled and it will produce a list of maps considered of importance, all the lists produced are then joined into one.
 There are two tweaks available that can change the result of this step: the Intersect option and the Pooling option.</p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="../../_images/stat.png"><img alt="access" src="../../_images/stat.png" style="width: 50%;" /></a>
+<figcaption>
+<p><span class="caption-text">Screenshot of the Configuration interface.</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>To perform the test you need to provide a dataset that holds a p-value column.</p>
+</div>
 <section id="pooling">
 <h2>Pooling<a class="headerlink" href="#pooling" title="Link to this heading"></a></h2>
 <p>Eabling the Pooling option will affect how the Transcriptomic, Proteomic, miRNomic, Methylomic and Cromatin Status datasets are treated when enabled for the test.
 When enabled, the IDs of the above datasets will be merged and the test is performed on that single list.</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="../../_images/stat_sel1.png"><img alt="access" src="../../_images/stat_sel1.png" style="width: 40%;" /></a>
+<figcaption>
+<p><span class="caption-text">Screenshot of the Configuration interface.</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </section>
 <section id="intersect">
 <h2>Intersect<a class="headerlink" href="#intersect" title="Link to this heading"></a></h2>
 <p>Enabling the Intersect option will affect which maps will be selected after the test has been performed.
 By default map lists are joined into one, meaning that even if a map has been found relevant in relation to just one of the datasets, it will be kept and indicators will be plotted on it.
 With the Intersect feature enabled, only maps that are considered relevant for all the datasets enabled are kept (i.e. the ones that appear in every map list coming from the tests performed).</p>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="../../_images/stat_sel2.png"><img alt="access" src="../../_images/stat_sel2.png" style="width: 40%;" /></a>
+<figcaption>
+<p><span class="caption-text">Screenshot of the Configuration interface.</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </section>
 </section>
 
@@ -170,8 +201,8 @@ With the Intersect feature enabled, only maps that are considered relevant for a
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="usage_access_mapsdb.html" class="btn btn-neutral float-left" title="Maps Databases" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="usage_access_data.html" class="btn btn-neutral float-right" title="Data Selection" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="usage_access_tfs_id_only.html" class="btn btn-neutral float-left" title="Transcription Factors ID Preservation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../results/usage_results_index.html" class="btn btn-neutral float-right" title="Pathway Explorer" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

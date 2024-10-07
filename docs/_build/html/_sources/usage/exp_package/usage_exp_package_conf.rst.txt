@@ -1,8 +1,8 @@
 .. _usage_specs_conf:
 
-^^^^^^^^^^^^^^^^^^
+
 Configuration File
-^^^^^^^^^^^^^^^^^^
+==================
 
 The configuration file for the Experiment Package is structured as a series of tag and value pairs, separated by a "=" character, with each line of the file holding one pair.
 

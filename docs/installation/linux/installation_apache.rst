@@ -1,8 +1,8 @@
 .. _installation_apache:
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 Apache Server Installation
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+==========================
 
 #. Copy pathlay folder to your apache directory of choice, default is /var/www/html/:
 

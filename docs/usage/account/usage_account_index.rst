@@ -1,8 +1,8 @@
 .. _usage_account:
 
-----------------
+
 Account Managing
-----------------
+****************
 
 .. toctree::
 	:hidden:

@@ -1,8 +1,8 @@
 .. _usage_results_menu:
 
-^^^^^^^^^
+
 Main Menu
-^^^^^^^^^
+=========
 
 The "PathLay - MAPS" page provides different features in six sections accessible from a menu located in the upper right corner of the page:
 

@@ -1,8 +1,8 @@
 .. _usage_results_mapsel:
 
-^^^^^^^^^^^^^^^^^^
+
 Pathway Navigation
-^^^^^^^^^^^^^^^^^^
+==================
 
 Pathways available are listed in alphabetical order in the dropdown menu on the top left corner. The pathway name and ID are displayed and the numbers between round parenthesis give you information on how many indicators are loaded on the pathway. Selecting one pathway from this menu will instantly display it with its the indicators.
 

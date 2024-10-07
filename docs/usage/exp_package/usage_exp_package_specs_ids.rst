@@ -1,8 +1,8 @@
 .. _usage_specs_ids:
 
-^^^^^^^^^^^^^
+
 Supported IDs
-^^^^^^^^^^^^^
+=============
 
 PathLay supports a variety of ID types as input which are converted to the ID default type during analysis. 
 All the ID types are summarized at :ref:`Table<usage_specs_table_id_compatibility>` and some examples are provided at :ref:`Table<usage_specs_table_id_examples>`.

@@ -1,8 +1,8 @@
 .. _installation_docker:
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 Installation using Docker (Recommended)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+=======================================
 	
 #. Obtain the Docker image by pulling it from `Docker Hub <https://hub.docker.com/repository/docker/vonb/pathlay/general>`_ :
 	
@@ -27,6 +27,12 @@ Installation using Docker (Recommended)
 	.. code-block::
 
 		mkdir pathlay_users
+
+#. Create the "pathlay_data" directory:
+
+	.. code-block::
+
+		mkdir pathlay_data
 
 
 #. Build the image from docker-compose.yml:

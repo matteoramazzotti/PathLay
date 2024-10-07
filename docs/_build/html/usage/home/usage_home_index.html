@@ -21,7 +21,7 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Creating an Experiment Package" href="usage_home_create.html" />
+    <link rel="next" title="Creating an Experiment Package" href="create/usage_home_create.html" />
     <link rel="prev" title="Supported IDs" href="../exp_package/usage_exp_package_specs_ids.html" /> 
 </head>
 
@@ -52,16 +52,18 @@
 <li class="toctree-l2"><a class="reference internal" href="../../requirements/requirements_apache.html">For the Apache Server Installation</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../installation/index.html">Installation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../installation/linux/index.html">Installation on Linux</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../installation/installation_index.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../installation/linux/installation_linux_index.html">Installation on Linux</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../installation/linux/installation_docker.html">Installation using Docker (Recommended)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../installation/linux/installation_deb.html">Installation with .deb package</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../installation/linux/installation_apache.html">Apache Server Installation</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../howto/index.html">How to run</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../howto/howto_docker_server.html">Run PathLay as network server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../howto/howto_docker_server.html">Run PathLay as network server with Docker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../howto/howto_localserver.html">Run PathLay as local server with Docker (localhost)</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="../usage_index.html">Usage</a><ul class="current">
@@ -77,22 +79,37 @@
 </ul>
 </li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Home Manager</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="usage_home_create.html">Creating an Experiment Package</a></li>
-<li class="toctree-l3"><a class="reference internal" href="usage_home_load.html">Loading an Experiment Package</a></li>
-<li class="toctree-l3"><a class="reference internal" href="usage_home_ont.html">Gene Ontologies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="create/usage_home_create.html">Creating an Experiment Package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="create/usage_home_create_add.html">Adding a new Experiment Package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="create/usage_home_create_upload.html">Uploading a new Experiment Package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="edit/usage_home_edit_index.html">Editing an Experiment Package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="edit/usage_home_edit_generic.html">Edit Experiment’s General Information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="edit/usage_home_edit_dataset.html">Configure a Dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="edit/usage_home_edit_ont.html">Gene Ontologies</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="usage_home_download.html">Downloading an Experiment Package</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../access/usage_access_index.html">Configuration Page</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../access/usage_access_mapsdb.html">Maps Databases</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../access/usage_access_stat.html">Maps Restriction Procedure</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../access/usage_access_data.html">Data Selection</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../access/usage_access_data_types.html">Configuring a Dataset</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../access/usage_access_filtering.html">Filtering Options</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../access/usage_access_id_only.html">ID Preservation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../access/usage_access_nodeg.html">Non Differentially Expressed IDs</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../access/usage_access_tfs.html">Transcription Factors</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../access/usage_access_tfs_id_only.html">Transcription Factors ID Preservation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../access/filters/usage_access_filters_index.html">Configuring Filters for a Dataset</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../access/filters/usage_access_filtering.html">Filtering Options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../access/filters/usage_access_id_only.html">ID Preservation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../access/filters/tfs/usage_access_tfs.html">Transcription Factors</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../access/filters/tfs/usage_access_tfs_id_only.html">Transcription Factors ID Preservation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../access/stat/usage_access_stat.html">Maps Restriction Procedure</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../access/stat/usage_access_stat_pool.html">Pooling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../access/stat/usage_access_stat_intersect.html">Intersect</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../results/usage_results_index.html">Pathway Explorer</a><ul>
@@ -149,45 +166,57 @@
 <span id="usage-home"></span><h1>Home Manager<a class="headerlink" href="#home-manager" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
-<p>Once an account is registered the Home Page becomes available, while for an already registered account it is accessible by clicking the “Manage Home” button in the login page. In the Home Page you can create, load and modify an Experiment Package with a more intuitive approach.</p>
+<p>The Home section is accessible by clicking the “Home” icon from the Welcome page.
+In the Home Page you can create, load and modify an Experiment Package with a more intuitive approach.</p>
 <section id="creating-an-experiment-package">
 <span id="usage-home-create"></span><h2>Creating an Experiment Package<a class="headerlink" href="#creating-an-experiment-package" title="Link to this heading"></a></h2>
-<p>To create an Experiment Package from scratch the first thing to do is to click the “Add New” button and then assign it a name in the “Experiment Title” text box, you can also comment it in the “Comments” text box located below.
-Next, you should assign it an organism between hsa and mmu from the Organism selector.
-You can now proceed to load your datasets on PathLay.
-Data types supported may come from Transcriptomic (Genes), miRNomic (miRNAs), Metabolomic (Metabolites), Methylomic (Methylations), Proteomic (Proteins) and Chromatin Status experiments.
-Each of the aforementioned data types have a coloured and manually resizable text box in which is possible to copy and paste a tab separated dataset (see “Dataset Files”):</p>
-<ul class="simple">
-<li><p>Genes datasets can be loaded in the light blue text box</p></li>
-<li><p>miRNAs datasets can be loaded in the red text box</p></li>
-<li><p>Metabolites datasets can be loaded in the yellow text box</p></li>
-<li><p>Methylations datasets can be loaded in the green text box</p></li>
-<li><p>Proteins datasets can be loaded in the purple text box</p></li>
-<li><p>Chromatin Status datasets can be loaded in the purple text box</p></li>
-</ul>
-<p>Only one text box is displayed at a time, to change this simply click on the dropdown menu “Data Type” and select one of the six data types.
-When a dataset is displayed, its configuration becomes available for you to see and set up.
-This setup requires you the following:</p>
-<ul class="simple">
-<li><p>Select the ID Type you are submitting from the “ID Type” selector, each data type has its own suppported IDs</p></li>
-<li><p>Mark the column number of the dataset that stores the IDs using the “ID Column” text box</p></li>
-<li><p>Mark the column number of the dataset that stores the differential expression values using the text box next to the aforementioned dropdown menu</p></li>
-<li><p>Mark the column number of the dataset that stores p-values and write a threshold for them</p></li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Depending on the Analysis you will setup later for PathLay, not all of the above configurations must be performed, onle the ID Type and the ID Column are mandatory.</p>
+<div class="toctree-wrapper compound">
 </div>
-<p>Once the configuration is done you can click the “Save” button and the Experiment Package will be created.
-The “Save” button will of course also save any modification you will submit to PathLay when you will reload this Experiment Package in the future.</p>
+<section id="adding-a-new-experiment-package">
+<span id="usage-create-add"></span><h3>Adding a new Experiment Package<a class="headerlink" href="#adding-a-new-experiment-package" title="Link to this heading"></a></h3>
+<p>To create an Experiment Package from scratch the first thing to do is to click the “Add New” button.</p>
 </section>
-<section id="loading-an-experiment-package">
-<span id="usage-home-load"></span><h2>Loading an Experiment Package<a class="headerlink" href="#loading-an-experiment-package" title="Link to this heading"></a></h2>
-<p>To load an existing Experiment Package from your home folder, select its name from the dropdown menu in the top left corner and hit the “Load” button. Datasets and configurations will be displayed in their relative fields.
-If you have a zipped Experiment Package and you want to load it on PathLay, simply click the “Browse” button in the top right corner and select the zipped archive, then click the “Upload” button and load it.</p>
+<section id="uploading-a-new-experiment-package">
+<span id="usage-home-create-upload"></span><h3>Uploading a new Experiment Package<a class="headerlink" href="#uploading-a-new-experiment-package" title="Link to this heading"></a></h3>
+<p>To upload an Experiment Package the first thing to do is to click the “Upload” button.</p>
+</section>
+</section>
+<section id="editing-an-experiment-package">
+<span id="usage-home-edit"></span><h2>Editing an Experiment Package<a class="headerlink" href="#editing-an-experiment-package" title="Link to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<p>To edit the configuration of an Experiment Package, click on the “Edit Pack” button on the package’s blue box in the Home section.
+You will be redirected to the configuration page.</p>
+<p>The configuration articulates in three sections, explained in detail in the following sections:</p>
+<ol class="arabic simple">
+<li><p>General information editing and reference organism assigning</p></li>
+<li><p>Dataset configuration</p></li>
+<li><p>Ontologies selection</p></li>
+</ol>
+<p>After the editing is complete you can save the configuration by clicking the “Save” button.</p>
+<section id="edit-experiment-s-general-information">
+<span id="usage-home-edit-generic"></span><h3>Edit Experiment’s General Information<a class="headerlink" href="#edit-experiment-s-general-information" title="Link to this heading"></a></h3>
+<p>By editing the first section in the configuration page you can perform the following:</p>
+<ol class="arabic simple">
+<li><p>Assign a title to the package</p></li>
+<li><p>Assign a reference organism to the package by selecting it from the “Organism” selector.</p></li>
+<li><p>Write a comment</p></li>
+</ol>
+</section>
+<section id="configure-a-dataset">
+<span id="usage-home-edit-dataset"></span><h3>Configure a Dataset<a class="headerlink" href="#configure-a-dataset" title="Link to this heading"></a></h3>
+<p>The configuration of a dataset requires the following general steps:</p>
+<ol class="arabic simple">
+<li><p>Select what -omic science is representative of the dataset by using the “Select omic” selector</p></li>
+<li><p>Select what kind of ID is being adopted in your dataset</p></li>
+<li><p>Select which column is holding the IDs</p></li>
+<li><p>Select which column is holding an Effect Size Static value (e.g. logFC), if any</p></li>
+<li><p>Select which column is holding a p-value, if any</p></li>
+<li><p>Upload your dataset in a tab-separated text format by either copy and paste it in the coloured text area, or by uploading it using the “Upload {omic} pack” button below</p></li>
+</ol>
 </section>
 <section id="gene-ontologies">
-<span id="usage-home-ont"></span><h2>Gene Ontologies<a class="headerlink" href="#gene-ontologies" title="Link to this heading"></a></h2>
+<span id="usage-home-edit-ont"></span><h3>Gene Ontologies<a class="headerlink" href="#gene-ontologies" title="Link to this heading"></a></h3>
 <p>Your Home Page also provides a list of cellular compartments that are nothing less than Gene Ontologies.
 Each one of the entries represents a gene list of Entrez Gene IDs and you can select the ones you are more interested in by clicking the “+” button located on the right side of each box.
 A search box is also provided to filter the ones you are most interested in.
@@ -195,15 +224,11 @@ Gene Ontologies of interest will be added to the other list alongside the presel
 You can of course remove them by clicking the “-” button in the selected boxes.
 Cellular compartments selected will be found in a dropdown menu after PathLay has completed the analysis and it’s ready to show the results on functional pathways.
 Once a cellular compartment is chosen, only genes and proteins localized in that compartment will remain displayed on the pathways (see more “Pathway Explorer”).</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The selection of Gene Ontologies is as well part of your configuration for the Experiment Package, so any change you provide will be saved with the “Save” button.</p>
-</div>
+</section>
 </section>
 <section id="downloading-an-experiment-package">
 <span id="usage-home-download"></span><h2>Downloading an Experiment Package<a class="headerlink" href="#downloading-an-experiment-package" title="Link to this heading"></a></h2>
-<p>The “Download” button allows you to package the currently loaded datasets and configurations in a zip archive and export it from PathLay for other uses, for instance, this archive can be uploaded as a new Experiment Package into another PathLay account.
-You can also download the entirety of your home folder (i.e. all the datasets and configurations of all the experiments) with the “Download Home” button.</p>
+<p>The “Download” button allows you to package the currently loaded datasets and configurations in a zip archive and export it from PathLay for other uses, for instance, this archive can be uploaded as a new Experiment Package into another PathLay account.</p>
 </section>
 </section>
 
@@ -212,7 +237,7 @@ You can also download the entirety of your home folder (i.e. all the datasets an
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="../exp_package/usage_exp_package_specs_ids.html" class="btn btn-neutral float-left" title="Supported IDs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="usage_home_create.html" class="btn btn-neutral float-right" title="Creating an Experiment Package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="create/usage_home_create.html" class="btn btn-neutral float-right" title="Creating an Experiment Package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

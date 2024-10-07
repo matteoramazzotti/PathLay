@@ -1,8 +1,8 @@
 .. _requirements:
 
-============
+
 Requirements
-============
+############
 
 .. toctree::
     :hidden:

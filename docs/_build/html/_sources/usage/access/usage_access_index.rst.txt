@@ -1,36 +1,43 @@
 .. _usage_access:
 
-------------------
+
 Configuration Page
-------------------
+******************
 
 .. toctree::
 	:hidden:
 
 	usage_access_mapsdb
-	usage_access_stat
 	usage_access_data
-	usage_access_data_types
-	usage_access_filtering
-	usage_access_id_only
+	filters/usage_access_filters_index
 	usage_access_nodeg
 	usage_access_tfs
 	usage_access_tfs_id_only
 	usage_access_tfs_nodeg
+	stat/usage_access_stat
 
 
 
-The Configuration Page is accessible from the Login Page by clicking "Access PathLay" once you input your credentials. From this page you will be able to run PathLay's analysis on an Experiment Package.
-First thing to do is select an Experiment Package and load it using the dropdown menu and the "Load" button.
+The Configuration Page is accessible by selecting "Analysis Configurator" in the Welcom page and then clicking the "Configure Analysis" button for the desired Experiment Package.
+If it isn't the first time you do this, you can also skip the configuration step and run PathLay with the last configuration available by clicking "Run Last Configuration". 
 
-.. include:: usage_access_mapsdb.rst
-.. include:: usage_access_stat.rst
-.. include:: usage_access_data.rst.rst
-.. include:: usage_access_data_types.rst
-.. include:: usage_access_filtering.rst
-.. include:: usage_access_id_only.rst
-.. include:: usage_access_nodeg.rst
-.. include:: usage_access_tfs.rst
-.. include:: usage_access_tfs_id_only.rst
-.. include:: usage_access_tfs_nodeg.rst
+
+.. figure:: ./img/access.png
+   :alt: access
+   :width: 100%
+   :align: center
+
+   Screenshot of the Configuration interface.
+
+
+
+
+.. include:: /usage/access/usage_access_mapsdb.rst
+.. include:: /usage/access/usage_access_data.rst
+.. include:: /usage/access/filters/usage_access_filters_index.rst
+.. include:: /usage/access/usage_access_nodeg.rst
+.. include:: /usage/access/usage_access_tfs.rst
+.. include:: /usage/access/usage_access_tfs_id_only.rst
+.. include:: /usage/access/usage_access_tfs_nodeg.rst
+.. include:: /usage/access/stat/usage_access_stat.rst
 

@@ -6,12 +6,12 @@
 
 .. toctree::
     :hidden:
-    :maxdepth: 6
+    :maxdepth: 8
 
     ./indices/indices_index
     ./features/index
     ./requirements/index
-    ./installation/index
+    ./installation/installation_index
     ./howto/index
     ./usage/usage_index
     ./license/index

@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Configuring a Dataset &mdash; PathLay 0.1 documentation</title>
+  <title>Configuring Filters for a Dataset &mdash; PathLay 0.1 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
 
@@ -52,16 +52,18 @@
 <li class="toctree-l2"><a class="reference internal" href="../../requirements/requirements_apache.html">For the Apache Server Installation</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../installation/index.html">Installation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../installation/linux/index.html">Installation on Linux</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../installation/installation_index.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../installation/linux/installation_linux_index.html">Installation on Linux</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../installation/linux/installation_docker.html">Installation using Docker (Recommended)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../installation/linux/installation_deb.html">Installation with .deb package</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../installation/linux/installation_apache.html">Apache Server Installation</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../howto/index.html">How to run</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../howto/howto_docker_server.html">Run PathLay as network server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../howto/howto_docker_server.html">Run PathLay as network server with Docker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../howto/howto_localserver.html">Run PathLay as local server with Docker (localhost)</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="../usage_index.html">Usage</a><ul class="current">
@@ -77,22 +79,30 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../home/usage_home_index.html">Home Manager</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../home/usage_home_create.html">Creating an Experiment Package</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../home/usage_home_load.html">Loading an Experiment Package</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../home/usage_home_ont.html">Gene Ontologies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../home/create/usage_home_create.html">Creating an Experiment Package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../home/create/usage_home_create_add.html">Adding a new Experiment Package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../home/create/usage_home_create_upload.html">Uploading a new Experiment Package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../home/edit/usage_home_edit_index.html">Editing an Experiment Package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../home/edit/usage_home_edit_generic.html">Edit Experiment’s General Information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../home/edit/usage_home_edit_dataset.html">Configure a Dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../home/edit/usage_home_edit_ont.html">Gene Ontologies</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../home/usage_home_download.html">Downloading an Experiment Package</a></li>
 </ul>
 </li>
 <li class="toctree-l2 current"><a class="reference internal" href="usage_access_index.html">Configuration Page</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="usage_access_mapsdb.html">Maps Databases</a></li>
-<li class="toctree-l3"><a class="reference internal" href="usage_access_stat.html">Maps Restriction Procedure</a></li>
 <li class="toctree-l3"><a class="reference internal" href="usage_access_data.html">Data Selection</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Configuring a Dataset</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Configuring Filters for a Dataset</a></li>
 <li class="toctree-l3"><a class="reference internal" href="usage_access_filtering.html">Filtering Options</a></li>
 <li class="toctree-l3"><a class="reference internal" href="usage_access_id_only.html">ID Preservation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="usage_access_nodeg.html">Non Differentially Expressed IDs</a></li>
 <li class="toctree-l3"><a class="reference internal" href="usage_access_tfs.html">Transcription Factors</a></li>
 <li class="toctree-l3"><a class="reference internal" href="usage_access_tfs_id_only.html">Transcription Factors ID Preservation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="usage_access_stat.html">Maps Restriction Procedure</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../results/usage_results_index.html">Pathway Explorer</a><ul>
@@ -136,7 +146,7 @@
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../usage_index.html">Usage</a></li>
           <li class="breadcrumb-item"><a href="usage_access_index.html">Configuration Page</a></li>
-      <li class="breadcrumb-item active">Configuring a Dataset</li>
+      <li class="breadcrumb-item active">Configuring Filters for a Dataset</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/usage/access/usage_access_data_types.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -146,10 +156,16 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="configuring-a-dataset">
-<span id="usage-data-types"></span><h1>Configuring a Dataset<a class="headerlink" href="#configuring-a-dataset" title="Link to this heading"></a></h1>
-<p>Under the “Select Maps using” section is located a selector that allows to switch between the configurations available for each dataset.
+  <section id="configuring-filters-for-a-dataset">
+<span id="usage-data-types"></span><h1>Configuring Filters for a Dataset<a class="headerlink" href="#configuring-filters-for-a-dataset" title="Link to this heading"></a></h1>
+<p>Using the “Select omic” selector you can switch between the filtering configurations available for each dataset.
 Some of these configurations are common to every data type, while others, related to the Transcription Factors (TFs) and the Non Differentially Expressed components (NoDE), are peculiar to a few of them.</p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="../../_images/filters_gene.png"><img alt="Data selection interface" src="../../_images/filters_gene.png" style="width: 50%;" /></a>
+<figcaption>
+<p><span class="caption-text">Screenshot of the “Select Datasets to be used” interface in the data selection step.</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </section>
 
 

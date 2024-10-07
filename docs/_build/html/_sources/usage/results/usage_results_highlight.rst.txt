@@ -1,8 +1,8 @@
 .. _usage_results_highlight:
 
-^^^^^^^^^^^^^^^^^^^^
+
 Highlighting Feature
-^^^^^^^^^^^^^^^^^^^^
+====================
 
 In this sections two selectors are displayed and their content varies depending on the features enabled during configuration.
 The first selector lists the categories of components available between: Genes, Proteins, TFs, miRNAs, Methylations, Chromatin Statuses and Metabolites.

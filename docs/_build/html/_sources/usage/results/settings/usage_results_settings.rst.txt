@@ -1,8 +1,8 @@
 .. _usage_results_settings:
 
-^^^^^^^^
+
 Settings
-^^^^^^^^
+========
 
 .. toctree::
 	:hidden:
@@ -10,7 +10,15 @@ Settings
 	usage_results_settings_transparency_and_size
 	usage_results_settings_screenshot
 
+
+
 The settings section in the "PathLay - MAPS" page will be displayed when clicking the "Show Settings" button and allows to change some graphical parameters for the indicators like size and transparency values.
 
-.. include:: usage_results_settings_transparency_and_size.rst
-.. include:: usage_results_settings_screenshot.rst
+.. include:: ./usage_results_settings_transparency_and_size.rst
+.. include:: ./settings/usage_results_settings_transparency_and_size.rst
+.. include:: ./results/settings/usage_results_settings_transparency_and_size.rst
+
+
+.. include:: ./usage_results_settings_screenshot.rst
+.. include:: ./settings/usage_results_settings_screenshot.rst
+.. include:: ./results/settings/usage_results_settings_screenshot.rst

@@ -22,7 +22,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Pathway Navigation" href="usage_results_mapsel.html" />
-    <link rel="prev" title="Transcription Factors ID Preservation" href="../access/usage_access_tfs_id_only.html" /> 
+    <link rel="prev" title="Intersect" href="../access/stat/usage_access_stat_intersect.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -52,16 +52,18 @@
 <li class="toctree-l2"><a class="reference internal" href="../../requirements/requirements_apache.html">For the Apache Server Installation</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../installation/index.html">Installation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../installation/linux/index.html">Installation on Linux</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../installation/installation_index.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../installation/linux/installation_linux_index.html">Installation on Linux</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../installation/linux/installation_docker.html">Installation using Docker (Recommended)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../installation/linux/installation_deb.html">Installation with .deb package</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../installation/linux/installation_apache.html">Apache Server Installation</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../howto/index.html">How to run</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../howto/howto_docker_server.html">Run PathLay as network server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../howto/howto_docker_server.html">Run PathLay as network server with Docker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../howto/howto_localserver.html">Run PathLay as local server with Docker (localhost)</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="../usage_index.html">Usage</a><ul class="current">
@@ -77,22 +79,37 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../home/usage_home_index.html">Home Manager</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../home/usage_home_create.html">Creating an Experiment Package</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../home/usage_home_load.html">Loading an Experiment Package</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../home/usage_home_ont.html">Gene Ontologies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../home/create/usage_home_create.html">Creating an Experiment Package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../home/create/usage_home_create_add.html">Adding a new Experiment Package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../home/create/usage_home_create_upload.html">Uploading a new Experiment Package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../home/edit/usage_home_edit_index.html">Editing an Experiment Package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../home/edit/usage_home_edit_generic.html">Edit Experiment’s General Information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../home/edit/usage_home_edit_dataset.html">Configure a Dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../home/edit/usage_home_edit_ont.html">Gene Ontologies</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../home/usage_home_download.html">Downloading an Experiment Package</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../access/usage_access_index.html">Configuration Page</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../access/usage_access_mapsdb.html">Maps Databases</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../access/usage_access_stat.html">Maps Restriction Procedure</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../access/usage_access_data.html">Data Selection</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../access/usage_access_data_types.html">Configuring a Dataset</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../access/usage_access_filtering.html">Filtering Options</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../access/usage_access_id_only.html">ID Preservation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../access/usage_access_nodeg.html">Non Differentially Expressed IDs</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../access/usage_access_tfs.html">Transcription Factors</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../access/usage_access_tfs_id_only.html">Transcription Factors ID Preservation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../access/filters/usage_access_filters_index.html">Configuring Filters for a Dataset</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../access/filters/usage_access_filtering.html">Filtering Options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../access/filters/usage_access_id_only.html">ID Preservation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../access/filters/tfs/usage_access_tfs.html">Transcription Factors</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../access/filters/tfs/usage_access_tfs_id_only.html">Transcription Factors ID Preservation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../access/stat/usage_access_stat.html">Maps Restriction Procedure</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../access/stat/usage_access_stat_pool.html">Pooling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../access/stat/usage_access_stat_intersect.html">Intersect</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Pathway Explorer</a><ul>
@@ -254,12 +271,52 @@ Once all the query tags you are interested in are added to the pool on the right
 </dl>
 <p>To reset the interface to its default state simply click the “Reset” button next to it.
 Details on each type of query tag are provided below.</p>
+<section id="select-by-ids">
+<span id="usage-results-logical-byids"></span><h3>Select by IDs<a class="headerlink" href="#select-by-ids" title="Link to this heading"></a></h3>
+<p>The first row in the Logical Section is composed by a selector that allows the selection of a data type between “Gene”, “Protein”, TFs, “miRNA”, “Methylation”, “Chromatin” and “Metabolite”, depending on your analysis configuration.
+Selecting one data type will pop up another selector with a list of IDs of the data type chosen, in a similar fashion of the HighLight section.
+Once an ID is selected, it can be added to the query pool “IDs Selected”.
+Every ID added to the pool will be represented as a query tag and can be removed from the pool by clicking the “X” button on the right.
+IDs’ query tag have colors are assigned considering the data type:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Light blue for genes</p></li>
+<li><p>Purple for proteins</p></li>
+<li><p>Red for miRNAs</p></li>
+<li><p>Yellow for Metabolites</p></li>
+<li><p>Grey for TFs, Methylations and Chromatin Statuses</p></li>
+</ul>
+</div></blockquote>
+<p>The “Select” button will perform a pathway selection using the pool content as criteria: considering a strictly ID based query, only those pathways portraying all the IDs in the pool will be displayed in the pathway selector and kept available.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>It is possible that loaded pathways cannot satisfy the requirements for the selection made. In this case the pathway selector will become empty. Resetting the selection with the “Reset” button will restore the pathway selector at its default state.</p>
+</div>
+</section>
+<section id="select-by-agreement">
+<span id="usage-results-logical-byagreement"></span><h3>Select by Agreement<a class="headerlink" href="#select-by-agreement" title="Link to this heading"></a></h3>
+<p>The second row in the Logical Section is composed by a series of selectors that allows the setup of the so called “Agreement” which is a feature that lets you select two related data types and select what type of correlation you are interested in. The main data type can be selected with the first selector which provides a choice between “Gene” and “Protein”, and the second data type can be selected with the other selector which allows a choice between “Gene” or “Protein” (depending on your main data type of choice), “miRNA”, “Methylation” or “TF”. After the two data types are selected, the last step to do is to choose a “Positive Agreement” or a “Negative Agreement” with the last selector and hit the “Add” button. The configured agreement will be displayed in the “Agreements Selected” pool positioned under the “IDs Selected” pool. Once the select button is clicked, indicators that don’t satisfy the requirements of the agreement will be hidden, thus if a pathway doesn’t have visible indicators it will not be included in the pathway selector. Multiple agreements can be added to the pool to make the selection more stringent. How various agreements work is reported in the following table:</p>
+<p>As an example, let’s suppose we want to examine only the indicators including a gene and a miRNA in a positive agreement: it is only necessary to select “Gene”, “miRNA” and “Positive” from the selectors provided in the Logical section. A positive agreement between a gene and a miRNA is based on a negative correlation, so the indicators highlighted will either have an up-regulated gene and a down-regulated miRNA or a down-regulated gene and an up-regulated miRNA. As a next step, we could also be looking at methylations: easily enough, agreement selections can be stacked so we could also select “Gene”, “Methylation”, “Positive” and highlight only those indicators that satisfy both the agreements.
+As before, to remove it the “X” button on the right or the “Reset” button must be clicked.</p>
+</section>
 </section>
 <section id="settings">
 <span id="usage-results-settings"></span><h2>Settings<a class="headerlink" href="#settings" title="Link to this heading"></a></h2>
 <div class="toctree-wrapper compound">
 </div>
 <p>The settings section in the “PathLay - MAPS” page will be displayed when clicking the “Show Settings” button and allows to change some graphical parameters for the indicators like size and transparency values.</p>
+<section id="transparency-and-size">
+<span id="usage-results-settings-transparencyandsize"></span><h3>Transparency and Size<a class="headerlink" href="#transparency-and-size" title="Link to this heading"></a></h3>
+<p>Transparency and size of the indicators can be increased and decreased with the “Transparency Up”,”Size Up” and “Transparency Down”,”Size Down” buttons respectively.</p>
+</section>
+<section id="screenshot">
+<span id="usage-results-settings-screenshot"></span><h3>Screenshot<a class="headerlink" href="#screenshot" title="Link to this heading"></a></h3>
+<p>It is possible to take a shot of the currently displayed pathway by clicking the “Open as image (to save..)” button.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Depending on your browser compatibility this feature can behave differently.</p>
+</div>
+</section>
 </section>
 </section>
 
@@ -267,7 +324,7 @@ Details on each type of query tag are provided below.</p>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../access/usage_access_tfs_id_only.html" class="btn btn-neutral float-left" title="Transcription Factors ID Preservation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../access/stat/usage_access_stat_intersect.html" class="btn btn-neutral float-left" title="Intersect" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="usage_results_mapsel.html" class="btn btn-neutral float-right" title="Pathway Navigation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

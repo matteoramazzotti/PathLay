@@ -21,7 +21,7 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Maps Restriction Procedure" href="usage_access_stat.html" />
+    <link rel="next" title="Data Selection" href="usage_access_data.html" />
     <link rel="prev" title="Configuration Page" href="usage_access_index.html" /> 
 </head>
 
@@ -52,16 +52,18 @@
 <li class="toctree-l2"><a class="reference internal" href="../../requirements/requirements_apache.html">For the Apache Server Installation</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../installation/index.html">Installation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../installation/linux/index.html">Installation on Linux</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../installation/installation_index.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../installation/linux/installation_linux_index.html">Installation on Linux</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../installation/linux/installation_docker.html">Installation using Docker (Recommended)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../installation/linux/installation_deb.html">Installation with .deb package</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../installation/linux/installation_apache.html">Apache Server Installation</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../howto/index.html">How to run</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../howto/howto_docker_server.html">Run PathLay as network server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../howto/howto_docker_server.html">Run PathLay as network server with Docker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../howto/howto_localserver.html">Run PathLay as local server with Docker (localhost)</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="../usage_index.html">Usage</a><ul class="current">
@@ -77,22 +79,30 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../home/usage_home_index.html">Home Manager</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../home/usage_home_create.html">Creating an Experiment Package</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../home/usage_home_load.html">Loading an Experiment Package</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../home/usage_home_ont.html">Gene Ontologies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../home/create/usage_home_create.html">Creating an Experiment Package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../home/create/usage_home_create_add.html">Adding a new Experiment Package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../home/create/usage_home_create_upload.html">Uploading a new Experiment Package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../home/edit/usage_home_edit_index.html">Editing an Experiment Package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../home/edit/usage_home_edit_generic.html">Edit Experiment’s General Information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../home/edit/usage_home_edit_dataset.html">Configure a Dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../home/edit/usage_home_edit_ont.html">Gene Ontologies</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../home/usage_home_download.html">Downloading an Experiment Package</a></li>
 </ul>
 </li>
 <li class="toctree-l2 current"><a class="reference internal" href="usage_access_index.html">Configuration Page</a><ul class="current">
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Maps Databases</a></li>
-<li class="toctree-l3"><a class="reference internal" href="usage_access_stat.html">Maps Restriction Procedure</a></li>
 <li class="toctree-l3"><a class="reference internal" href="usage_access_data.html">Data Selection</a></li>
-<li class="toctree-l3"><a class="reference internal" href="usage_access_data_types.html">Configuring a Dataset</a></li>
+<li class="toctree-l3"><a class="reference internal" href="usage_access_data_types.html">Configuring Filters for a Dataset</a></li>
 <li class="toctree-l3"><a class="reference internal" href="usage_access_filtering.html">Filtering Options</a></li>
 <li class="toctree-l3"><a class="reference internal" href="usage_access_id_only.html">ID Preservation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="usage_access_nodeg.html">Non Differentially Expressed IDs</a></li>
 <li class="toctree-l3"><a class="reference internal" href="usage_access_tfs.html">Transcription Factors</a></li>
 <li class="toctree-l3"><a class="reference internal" href="usage_access_tfs_id_only.html">Transcription Factors ID Preservation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="usage_access_stat.html">Maps Restriction Procedure</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../results/usage_results_index.html">Pathway Explorer</a><ul>
@@ -148,7 +158,17 @@
              
   <section id="maps-databases">
 <span id="usage-access-mapdb"></span><h1>Maps Databases<a class="headerlink" href="#maps-databases" title="Link to this heading"></a></h1>
-<p>The “Maps Database” section allows you to choose which database will be used to load pathways from, it currently provides two possibilities, both for Homo sapiens pathways: KEGG and WikiPathways.</p>
+<p>The “Select Maps DB” selector allows you to choose which database will be used to load pathways from.</p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="../../_images/general_conf_sel1.png"><img alt="Data selection interface" src="../../_images/general_conf_sel1.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">Screenshot of the “Select Maps DB” interface in the data selection step.</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Databases supported may vary depending on the reference organism selected, as it is now PathLay supports only Homo sapiens and Mus musculus which are both supported by KEGG and WikiPathways.</p>
+</div>
 </section>
 
 
@@ -156,7 +176,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="usage_access_index.html" class="btn btn-neutral float-left" title="Configuration Page" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="usage_access_stat.html" class="btn btn-neutral float-right" title="Maps Restriction Procedure" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="usage_access_data.html" class="btn btn-neutral float-right" title="Data Selection" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

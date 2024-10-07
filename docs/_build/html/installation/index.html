@@ -55,13 +55,14 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="linux/index.html">Installation on Linux</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="linux/installation_docker.html">Installation using Docker (Recommended)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="linux/installation_deb.html">Installation with .deb package</a></li>
 <li class="toctree-l3"><a class="reference internal" href="linux/installation_apache.html">Apache Server Installation</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../howto/index.html">How to run</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../howto/howto_docker_server.html">Run PathLay as network server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../howto/howto_docker_server.html">Run PathLay as network server with Docker</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../usage/usage_index.html">Usage</a><ul>
@@ -77,7 +78,6 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../usage/home/usage_home_index.html">Home Manager</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../usage/home/usage_home_create.html">Creating an Experiment Package</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../usage/home/usage_home_load.html">Loading an Experiment Package</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../usage/home/usage_home_ont.html">Gene Ontologies</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../usage/home/usage_home_download.html">Downloading an Experiment Package</a></li>
@@ -177,6 +177,13 @@
 </div>
 </div></blockquote>
 </li>
+<li><p>Create the “pathlay_data” directory:</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mkdir</span> <span class="n">pathlay_data</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
 <li><p>Build the image from docker-compose.yml:</p>
 <blockquote>
 <div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">compose</span> <span class="n">build</span>
@@ -186,6 +193,22 @@
 </li>
 </ol>
 <p>To run the container from this image check <a class="reference internal" href="../howto/index.html#howto"><span class="std std-ref">How to run</span></a>.</p>
+</section>
+<section id="installation-with-deb-package">
+<span id="installation-deb"></span><h3>Installation with .deb package<a class="headerlink" href="#installation-with-deb-package" title="Link to this heading"></a></h3>
+<p>You can install PathLay from the deb package on Ubuntu-based distributions (tested on Ubuntu 22.04 and Mint Virginia):</p>
+<ol class="arabic">
+<li><p>Go to the directory where the deb file is located and execute the following:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>dpkg<span class="w"> </span>-i<span class="w"> </span>pathlay_0.1.0-alpha.4_Ubuntu-jammy_amd64.deb
+</pre></div>
+</div>
+</li>
+<li><p>If the installer reports missing dependencies, run the following command in the same terminal to install them:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt-get<span class="w"> </span>-f<span class="w"> </span>install
+</pre></div>
+</div>
+</li>
+</ol>
 </section>
 <section id="apache-server-installation">
 <span id="installation-apache"></span><h3>Apache Server Installation<a class="headerlink" href="#apache-server-installation" title="Link to this heading"></a></h3>

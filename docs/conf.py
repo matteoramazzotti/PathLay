@@ -35,12 +35,12 @@ html_theme_options = {
     'prev_next_buttons_location': 'bottom',
     'style_external_links': False,
     'vcs_pageview_mode': '',
-    'numfig': True,
+    #'numfig': True,
     #'style_nav_header_background': 'white',
     # Toc options
     'collapse_navigation': False,
     'sticky_navigation': True,
-    'navigation_depth': 6,
+    'navigation_depth': 8,
     'includehidden': True,
     'titles_only': True
 }

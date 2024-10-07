@@ -52,16 +52,18 @@
 <li class="toctree-l2"><a class="reference internal" href="../../requirements/requirements_apache.html">For the Apache Server Installation</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../installation/index.html">Installation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../installation/linux/index.html">Installation on Linux</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../installation/installation_index.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../installation/linux/installation_linux_index.html">Installation on Linux</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../installation/linux/installation_docker.html">Installation using Docker (Recommended)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../installation/linux/installation_deb.html">Installation with .deb package</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../installation/linux/installation_apache.html">Apache Server Installation</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../howto/index.html">How to run</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../howto/howto_docker_server.html">Run PathLay as network server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../howto/howto_docker_server.html">Run PathLay as network server with Docker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../howto/howto_localserver.html">Run PathLay as local server with Docker (localhost)</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="../usage_index.html">Usage</a><ul class="current">
@@ -77,22 +79,37 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../home/usage_home_index.html">Home Manager</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../home/usage_home_create.html">Creating an Experiment Package</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../home/usage_home_load.html">Loading an Experiment Package</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../home/usage_home_ont.html">Gene Ontologies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../home/create/usage_home_create.html">Creating an Experiment Package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../home/create/usage_home_create_add.html">Adding a new Experiment Package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../home/create/usage_home_create_upload.html">Uploading a new Experiment Package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../home/edit/usage_home_edit_index.html">Editing an Experiment Package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../home/edit/usage_home_edit_generic.html">Edit Experiment’s General Information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../home/edit/usage_home_edit_dataset.html">Configure a Dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../home/edit/usage_home_edit_ont.html">Gene Ontologies</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../home/usage_home_download.html">Downloading an Experiment Package</a></li>
 </ul>
 </li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Configuration Page</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="usage_access_mapsdb.html">Maps Databases</a></li>
-<li class="toctree-l3"><a class="reference internal" href="usage_access_stat.html">Maps Restriction Procedure</a></li>
 <li class="toctree-l3"><a class="reference internal" href="usage_access_data.html">Data Selection</a></li>
-<li class="toctree-l3"><a class="reference internal" href="usage_access_data_types.html">Configuring a Dataset</a></li>
-<li class="toctree-l3"><a class="reference internal" href="usage_access_filtering.html">Filtering Options</a></li>
-<li class="toctree-l3"><a class="reference internal" href="usage_access_id_only.html">ID Preservation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="usage_access_nodeg.html">Non Differentially Expressed IDs</a></li>
-<li class="toctree-l3"><a class="reference internal" href="usage_access_tfs.html">Transcription Factors</a></li>
-<li class="toctree-l3"><a class="reference internal" href="usage_access_tfs_id_only.html">Transcription Factors ID Preservation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="filters/usage_access_filters_index.html">Configuring Filters for a Dataset</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="filters/usage_access_filtering.html">Filtering Options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="filters/usage_access_id_only.html">ID Preservation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="filters/tfs/usage_access_tfs.html">Transcription Factors</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="filters/tfs/usage_access_tfs_id_only.html">Transcription Factors ID Preservation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="stat/usage_access_stat.html">Maps Restriction Procedure</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="stat/usage_access_stat_pool.html">Pooling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="stat/usage_access_stat_intersect.html">Intersect</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../results/usage_results_index.html">Pathway Explorer</a><ul>
@@ -149,79 +166,144 @@
 <span id="usage-access"></span><h1>Configuration Page<a class="headerlink" href="#configuration-page" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
-<p>The Configuration Page is accessible from the Login Page by clicking “Access PathLay” once you input your credentials. From this page you will be able to run PathLay’s analysis on an Experiment Package.
-First thing to do is select an Experiment Package and load it using the dropdown menu and the “Load” button.</p>
+<p>The Configuration Page is accessible by selecting “Analysis Configurator” in the Welcom page and then clicking the “Configure Analysis” button for the desired Experiment Package.
+If it isn’t the first time you do this, you can also skip the configuration step and run PathLay with the last configuration available by clicking “Run Last Configuration”.</p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="../../_images/access.png"><img alt="access" src="../../_images/access.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">Screenshot of the Configuration interface.</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <section id="maps-databases">
 <span id="usage-access-mapdb"></span><h2>Maps Databases<a class="headerlink" href="#maps-databases" title="Link to this heading"></a></h2>
-<p>The “Maps Database” section allows you to choose which database will be used to load pathways from, it currently provides two possibilities, both for Homo sapiens pathways: KEGG and WikiPathways.</p>
+<p>The “Select Maps DB” selector allows you to choose which database will be used to load pathways from.</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="../../_images/general_conf_sel1.png"><img alt="Data selection interface" src="../../_images/general_conf_sel1.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">Screenshot of the “Select Maps DB” interface in the data selection step.</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Databases supported may vary depending on the reference organism selected, as it is now PathLay supports only Homo sapiens and Mus musculus which are both supported by KEGG and WikiPathways.</p>
+</div>
 </section>
-<section id="maps-restriction-procedure">
-<span id="usage-access-stat"></span><h2>Maps Restriction Procedure<a class="headerlink" href="#maps-restriction-procedure" title="Link to this heading"></a></h2>
-<p>It is possible to perform a selection of maps to display in the PathLay - MAPS page by selecting FET from the Map Restriction Procedure selector.
-Maps are selected with a statistical approach based on the Fisher’s Exact Test and since PathLay integrates different datasets, it is also possible to select which dataset will contribute on the map selection.
-To allow this, the “FET Enabled” option should be checked for each dataset that should contribute.
-By default the test is performed on each dataset enabled and it will produce a list of maps considered of importance, all the lists produced are then joined into one.
-There are two tweaks available that can change the result of this step: the Intersect option and the Pooling option.</p>
-<section id="pooling">
-<h3>Pooling<a class="headerlink" href="#pooling" title="Link to this heading"></a></h3>
-<p>Eabling the Pooling option will affect how the Transcriptomic, Proteomic, miRNomic, Methylomic and Cromatin Status datasets are treated when enabled for the test.
-When enabled, the IDs of the above datasets will be merged and the test is performed on that single list.</p>
+<section id="data-selection">
+<span id="usage-access-data"></span><h2>Data Selection<a class="headerlink" href="#data-selection" title="Link to this heading"></a></h2>
+<p>The “Select Datasets to be used” selector allows you to select the datasets you want to use by simply check the boxes you are interested in between “Genes”, “Proteins”, “miRNAs”, “Methylations”, “Chromatin Status” and “Metabolites”.</p>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="../../_images/general_conf_sel2.png"><img alt="Data selection interface" src="../../_images/general_conf_sel2.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-text">Screenshot of the “Select Datasets to be used” interface in the data selection step.</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Whenever a checkbox is disabled, it means that either the dataset was not found available or that the setup in the Home page was not performed accordingly (i.e. the content of the columns was not pointed out correctly).</p>
+</div>
 </section>
-<section id="intersect">
-<h3>Intersect<a class="headerlink" href="#intersect" title="Link to this heading"></a></h3>
-<p>Enabling the Intersect option will affect which maps will be selected after the test has been performed.
-By default map lists are joined into one, meaning that even if a map has been found relevant in relation to just one of the datasets, it will be kept and indicators will be plotted on it.
-With the Intersect feature enabled, only maps that are considered relevant for all the datasets enabled are kept (i.e. the ones that appear in every map list coming from the tests performed).</p>
-</section>
-</section>
-<section id="configuring-a-dataset">
-<span id="usage-data-types"></span><h2>Configuring a Dataset<a class="headerlink" href="#configuring-a-dataset" title="Link to this heading"></a></h2>
-<p>Under the “Select Maps using” section is located a selector that allows to switch between the configurations available for each dataset.
+<section id="configuring-filters-for-a-dataset">
+<span id="usage-data-types"></span><h2>Configuring Filters for a Dataset<a class="headerlink" href="#configuring-filters-for-a-dataset" title="Link to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<p>Using the “Select omic” selector you can switch between the filtering configurations available for each dataset.
 Some of these configurations are common to every data type, while others, related to the Transcription Factors (TFs) and the Non Differentially Expressed components (NoDE), are peculiar to a few of them.</p>
-</section>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="../../_images/filters_gene.png"><img alt="Data selection interface" src="../../_images/filters_gene.png" style="width: 50%;" /></a>
+<figcaption>
+<p><span class="caption-text">Screenshot of the “Select Datasets to be used” interface in the data selection step.</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <section id="filtering-options">
-<span id="usage-data-filters"></span><h2>Filtering Options<a class="headerlink" href="#filtering-options" title="Link to this heading"></a></h2>
-<dl class="simple">
-<dt>There are three filters available for each data type, which can be enabled by checking the respective box and requires a threshold value to be written in the input field next to it. These three filters are summarized below:</dt><dd><ul class="simple">
+<span id="usage-data-filters"></span><h3>Filtering Options<a class="headerlink" href="#filtering-options" title="Link to this heading"></a></h3>
+<p>There are three filters available for each data type, which can be enabled by checking the respective box and requires a threshold value to be written in the input field next to it. These three filters are summarized below:</p>
+<blockquote>
+<div><ul class="simple">
 <li><p>Effect Size “&lt;” : filters out all the components with an Effect Size value greater than the threshold selected</p></li>
 <li><p>Effect Size “&gt;” : filters out all the components with an Effect Size value smaller than the threshold selected</p></li>
 <li><p>p-value “&lt;” : filters out all the components with a p-value value greater than the threshold</p></li>
 </ul>
-</dd>
-</dl>
+</div></blockquote>
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="../../_images/filters_gene_sel2.png"><img alt="access" src="../../_images/filters_gene_sel2.png" style="width: 50%;" /></a>
+<figcaption>
+<p><span class="caption-text">Screenshot of the Configuration interface.</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Whenever a threshold field displays a red background, it means that the aforementioned threshold is not valid and contains a typing error. In this situation if the related filter checkbox remains enabled, the submit button will disappear until this error is either fixed by changing the threshold value or by disabling the filter.</p>
 </div>
 </section>
 <section id="usage-data-id-only">
-<span id="id-preservation"></span><h2>ID Preservation<a class="headerlink" href="#usage-data-id-only" title="Link to this heading"></a></h2>
+<span id="id-preservation"></span><h3>ID Preservation<a class="headerlink" href="#usage-data-id-only" title="Link to this heading"></a></h3>
 <p>ID Preservation can be enabled for every data type by checking the “Preserve non DE IDs” checkbox.
 This feature will not let PathLay to discard IDs found in the dataset without an Effect Size value.
 These “ID Only” components will be represented with a different palette of colors since they do not provide any information regarding their differential expression, but they will be still integrated with the other datasets.</p>
-</section>
-<section id="non-differentially-expressed-ids">
-<span id="usage-access-nodeg"></span><h2>Non Differentially Expressed IDs<a class="headerlink" href="#non-differentially-expressed-ids" title="Link to this heading"></a></h2>
-<p>Whenever a miRNa, Methylation or Chromatin status dataset is enabled, miRNas, methylations and chromatin statuses will be represented alongside the related genes.
-PathLays’s approach is to integrate the information held within different datasets whenever is possible, hence when a Transcriptomic or Proteomic dataset is provided and enabled alongside the afromentioned ones, the standard procedure adopted is to represent an integration of these informations using genes and proteins provided as a scaffold on which miRNAs, methylations and chromatin statuses impact.
-Anyway It is possible to represent miRNas, methylations or chromatin statuses despite the absence of their related genes in the Transcriptomic dataset, by checking the “No DE Loading” feature in their respective configurations.
-This feature allows PathLay to display miRnas, methylations and chromatin statuses on grey indicators that represent a non-differentially expressed gene (i.e. a gene not provided in other datasets).
-This feature specifically works with the IDs of miRNAs, methylations and chromatin statuses linked to an Effect Size value, while the IDs without an Effect Size value will be only linked and represented alongside those genes or proteins that are effectively provided by their respectiv datasets, unless the “No DE Loading From Preserved IDs” feature is enabled.
-By doing this, ID only components coming from these thre datasets will also be able to call out Non DE genes and proteins.
-Graphically speaking this is translated into grey indicators surrounded by smaller circles and squares coloured in orange.</p>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="../../_images/filters_gene_sel2.png"><img alt="access" src="../../_images/filters_gene_sel2.png" style="width: 50%;" /></a>
+<figcaption>
+<p><span class="caption-text">Screenshot of the Configuration interface.</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </section>
 <section id="transcription-factors">
-<span id="usage-access-tfs"></span><h2>Transcription Factors<a class="headerlink" href="#transcription-factors" title="Link to this heading"></a></h2>
+<span id="usage-access-tfs"></span><h3>Transcription Factors<a class="headerlink" href="#transcription-factors" title="Link to this heading"></a></h3>
+<div class="toctree-wrapper compound">
+</div>
 <p>PathLay also supports GTRD as a database and can display transcription factors (TFs) that interacts with genes coming from a Transcriptomic or Proteomic dataset and as well recognize if those gene/protein IDs actually refers directly to a transcription factor.
 Transcription factors will be loaded and linked to the gene IDs in the Transcriptomic dataset if the “Enable TFs” feature is enabled. The same goes for the proteomic dataset which has its own “Enable TFs” feature.
 If a transcription factor is found in the Transcriptomic dataset it will be linked to any related gene also present in the dataset.
 Whenever Transcriptomic and Proteomic datasets are enabled together and the “Enable TFs” feature is enabled for at least one of them, once a TF is recognized, its targets will be looked for both in the Transcriptomic and Proteomic dataset to guarantee an high level degree of integration.</p>
+<figure class="align-center" id="id7">
+<a class="reference internal image-reference" href="../../_images/filters_gene_sel3.png"><img alt="access" src="../../_images/filters_gene_sel3.png" style="width: 50%;" /></a>
+<figcaption>
+<p><span class="caption-text">Screenshot of the Configuration interface.</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </section>
-<section id="transcription-factors-id-preservation">
-<span id="usage-access-id-only-tfs"></span><h2>Transcription Factors ID Preservation<a class="headerlink" href="#transcription-factors-id-preservation" title="Link to this heading"></a></h2>
-<p>Normally, if a Transcription Factor is recognized in an ID Only component found in the Transcriptomic or Proteomic dataset (when of course the “Preserve non DE IDs” feature is enabled for them), it is just loaded as a DE component and not represented as a TF.
-To overcome this, one should enable the “Preserve IDs for TFs” feature in the Gene or Protein configuration depending on the scope of the analysis.
-Transcription Factors recognized in this manner will be represented as small oragne squares on the right side of the main indicators.</p>
+</section>
+<section id="maps-restriction-procedure">
+<span id="usage-access-stat"></span><h2>Maps Restriction Procedure<a class="headerlink" href="#maps-restriction-procedure" title="Link to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<p>It is possible to perform a selection of maps to display in the PathLay - MAPS page by enabling Fisher’s Exact Test for desired datasets.
+Maps are selected with a statistical approach based on the Fisher’s Exact Test and since PathLay integrates different datasets, it is also possible to select which dataset will contribute on the map selection.
+By default the test is performed on each dataset enabled and it will produce a list of maps considered of importance, all the lists produced are then joined into one.
+There are two tweaks available that can change the result of this step: the Intersect option and the Pooling option.</p>
+<figure class="align-center" id="id8">
+<a class="reference internal image-reference" href="../../_images/stat.png"><img alt="access" src="../../_images/stat.png" style="width: 50%;" /></a>
+<figcaption>
+<p><span class="caption-text">Screenshot of the Configuration interface.</span><a class="headerlink" href="#id8" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>To perform the test you need to provide a dataset that holds a p-value column.</p>
+</div>
+<section id="pooling">
+<h3>Pooling<a class="headerlink" href="#pooling" title="Link to this heading"></a></h3>
+<p>Eabling the Pooling option will affect how the Transcriptomic, Proteomic, miRNomic, Methylomic and Cromatin Status datasets are treated when enabled for the test.
+When enabled, the IDs of the above datasets will be merged and the test is performed on that single list.</p>
+<figure class="align-center" id="id9">
+<a class="reference internal image-reference" href="../../_images/stat_sel1.png"><img alt="access" src="../../_images/stat_sel1.png" style="width: 40%;" /></a>
+<figcaption>
+<p><span class="caption-text">Screenshot of the Configuration interface.</span><a class="headerlink" href="#id9" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="intersect">
+<h3>Intersect<a class="headerlink" href="#intersect" title="Link to this heading"></a></h3>
+<p>Enabling the Intersect option will affect which maps will be selected after the test has been performed.
+By default map lists are joined into one, meaning that even if a map has been found relevant in relation to just one of the datasets, it will be kept and indicators will be plotted on it.
+With the Intersect feature enabled, only maps that are considered relevant for all the datasets enabled are kept (i.e. the ones that appear in every map list coming from the tests performed).</p>
+<figure class="align-center" id="id10">
+<a class="reference internal image-reference" href="../../_images/stat_sel2.png"><img alt="access" src="../../_images/stat_sel2.png" style="width: 40%;" /></a>
+<figcaption>
+<p><span class="caption-text">Screenshot of the Configuration interface.</span><a class="headerlink" href="#id10" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
 </section>
 </section>
 

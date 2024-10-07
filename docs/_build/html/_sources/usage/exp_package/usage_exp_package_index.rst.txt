@@ -1,8 +1,8 @@
 .. _usage_specs:
 
-------------------
+
 Experiment Package
-------------------
+******************
 
 .. toctree::
 	:hidden:

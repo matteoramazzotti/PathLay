@@ -1,8 +1,8 @@
 .. _usage_home_ont:
 
-^^^^^^^^^^^^^^^
+
 Gene Ontologies
-^^^^^^^^^^^^^^^
+===============
 
 Your Home Page also provides a list of cellular compartments that are nothing less than Gene Ontologies.
 Each one of the entries represents a gene list of Entrez Gene IDs and you can select the ones you are more interested in by clicking the "+" button located on the right side of each box.

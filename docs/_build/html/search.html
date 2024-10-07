@@ -52,16 +52,18 @@
 <li class="toctree-l2"><a class="reference internal" href="requirements/requirements_apache.html">For the Apache Server Installation</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="installation/index.html">Installation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="installation/linux/index.html">Installation on Linux</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="installation/installation_index.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation/linux/installation_linux_index.html">Installation on Linux</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="installation/linux/installation_docker.html">Installation using Docker (Recommended)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="installation/linux/installation_deb.html">Installation with .deb package</a></li>
 <li class="toctree-l3"><a class="reference internal" href="installation/linux/installation_apache.html">Apache Server Installation</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="howto/index.html">How to run</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="howto/howto_docker_server.html">Run PathLay as network server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="howto/howto_docker_server.html">Run PathLay as network server with Docker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="howto/howto_localserver.html">Run PathLay as local server with Docker (localhost)</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="usage/usage_index.html">Usage</a><ul>
@@ -77,22 +79,37 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="usage/home/usage_home_index.html">Home Manager</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="usage/home/usage_home_create.html">Creating an Experiment Package</a></li>
-<li class="toctree-l3"><a class="reference internal" href="usage/home/usage_home_load.html">Loading an Experiment Package</a></li>
-<li class="toctree-l3"><a class="reference internal" href="usage/home/usage_home_ont.html">Gene Ontologies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="usage/home/create/usage_home_create.html">Creating an Experiment Package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="usage/home/create/usage_home_create_add.html">Adding a new Experiment Package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="usage/home/create/usage_home_create_upload.html">Uploading a new Experiment Package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="usage/home/edit/usage_home_edit_index.html">Editing an Experiment Package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="usage/home/edit/usage_home_edit_generic.html">Edit Experiment’s General Information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="usage/home/edit/usage_home_edit_dataset.html">Configure a Dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="usage/home/edit/usage_home_edit_ont.html">Gene Ontologies</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="usage/home/usage_home_download.html">Downloading an Experiment Package</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="usage/access/usage_access_index.html">Configuration Page</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="usage/access/usage_access_mapsdb.html">Maps Databases</a></li>
-<li class="toctree-l3"><a class="reference internal" href="usage/access/usage_access_stat.html">Maps Restriction Procedure</a></li>
 <li class="toctree-l3"><a class="reference internal" href="usage/access/usage_access_data.html">Data Selection</a></li>
-<li class="toctree-l3"><a class="reference internal" href="usage/access/usage_access_data_types.html">Configuring a Dataset</a></li>
-<li class="toctree-l3"><a class="reference internal" href="usage/access/usage_access_filtering.html">Filtering Options</a></li>
-<li class="toctree-l3"><a class="reference internal" href="usage/access/usage_access_id_only.html">ID Preservation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="usage/access/usage_access_nodeg.html">Non Differentially Expressed IDs</a></li>
-<li class="toctree-l3"><a class="reference internal" href="usage/access/usage_access_tfs.html">Transcription Factors</a></li>
-<li class="toctree-l3"><a class="reference internal" href="usage/access/usage_access_tfs_id_only.html">Transcription Factors ID Preservation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="usage/access/filters/usage_access_filters_index.html">Configuring Filters for a Dataset</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="usage/access/filters/usage_access_filtering.html">Filtering Options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="usage/access/filters/usage_access_id_only.html">ID Preservation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="usage/access/filters/tfs/usage_access_tfs.html">Transcription Factors</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="usage/access/filters/tfs/usage_access_tfs_id_only.html">Transcription Factors ID Preservation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="usage/access/stat/usage_access_stat.html">Maps Restriction Procedure</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="usage/access/stat/usage_access_stat_pool.html">Pooling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="usage/access/stat/usage_access_stat_intersect.html">Intersect</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="usage/results/usage_results_index.html">Pathway Explorer</a><ul>

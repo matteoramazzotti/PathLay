@@ -13,6 +13,7 @@ Welcome to PathLay's documentation!
 * :ref:`Installation <installation>`
 	* :ref:`Installation on Linux <installation_linux>`
 		* :ref:`Building the Docker Image <installation_docker>`
+		* :ref:`Installing from Deb <installation_deb>`
 		* :ref:`Apache Server Installation <installation_apache>`
 * :ref:`How to Run<howto>`
 	* :ref:`Run PathLay as Server <howto_docker_server>`

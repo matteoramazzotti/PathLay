@@ -1,8 +1,7 @@
 .. _usage_results_logical:
 
-^^^^^^^^^^^^^^^^^^^^^
 The Selectors Section
-^^^^^^^^^^^^^^^^^^^^^
+=====================
 
 .. toctree::
 	:hidden:
@@ -28,5 +27,11 @@ To reset the interface to its default state simply click the "Reset" button next
 Details on each type of query tag are provided below.
 
 
-.. include:: usage_results_select_by_ids.rst
-.. include:: usage_results_select_by_agreement.rst
+.. include:: ./results/selector/usage_results_select_by_ids.rst
+.. include:: ./selector/usage_results_select_by_ids.rst
+.. include:: ./usage_results_select_by_ids.rst	
+
+
+.. include:: ./results/selector/usage_results_select_by_agreement.rst
+.. include:: ./selector/usage_results_select_by_agreement.rst
+.. include:: ./usage_results_select_by_agreement.rst
