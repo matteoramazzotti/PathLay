@@ -177,5 +177,7 @@ body {
 	margin:10px;
 }
 #legendImg {
-	margin-left:10%;
+	margin-left:5%;
+	width: 80%;
+	height: auto;
 }
