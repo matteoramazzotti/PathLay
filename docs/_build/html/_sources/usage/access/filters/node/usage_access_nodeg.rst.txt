@@ -2,7 +2,13 @@
 
 
 Non Differentially Expressed IDs
-================================
+--------------------------------
+
+.. toctree::
+   :hidden:
+
+   usage_access_nodeg_tfs
+
 
 Whenever a miRNa, Methylation or Chromatin status dataset is enabled, miRNas, methylations and chromatin statuses will be represented alongside the related genes.
 PathLays's approach is to integrate the information held within different datasets whenever is possible, hence when a Transcriptomic or Proteomic dataset is provided and enabled alongside the afromentioned ones, the standard procedure adopted is to represent an integration of these informations using genes and proteins provided as a scaffold on which miRNAs, methylations and chromatin statuses impact.
@@ -13,16 +19,19 @@ By doing this, ID only components coming from these thre datasets will also be a
 Graphically speaking this is translated into grey indicators surrounded by smaller circles and squares coloured in orange.
 
 
-.. figure:: ./img/filters_urna_sel1.png
+.. figure:: /usage/access/img/filters_urna_sel1.png
    :alt: access
    :width: 50%
    :align: center
 
-   Screenshot of the Configuration interface.
+   
 
-.. figure:: ./img/filters_urna_sel2.png
+.. figure:: /usage/access/img/filters_urna_sel2.png
    :alt: access
    :width: 50%
    :align: center
 
-   Screenshot of the Configuration interface.
+   
+
+
+.. include:: /usage/access/filters/node/usage_access_nodeg_tfs.rst

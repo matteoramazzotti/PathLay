@@ -78,6 +78,12 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../exp_package/usage_exp_package_specs_ids.html">Supported IDs</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../dbconf/dbconf_index.html">Database Configuration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../dbconf/dbconf_org_selection.html">Organism Selection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../dbconf/dbconf_interactions.html">Interaction Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../dbconf/dbconf_pathways.html">Pathway Files</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../../../home/usage_home_index.html">Home Manager</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../home/create/usage_home_create.html">Creating an Experiment Package</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../../home/create/usage_home_create_add.html">Adding a new Experiment Package</a></li>
@@ -101,6 +107,10 @@
 <li class="toctree-l4"><a class="reference internal" href="../usage_access_id_only.html">ID Preservation</a></li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#">Transcription Factors</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="usage_access_tfs_id_only.html">Transcription Factors ID Preservation</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../node/usage_access_nodeg.html">Non Differentially Expressed IDs</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../node/usage_access_nodeg_tfs.html">Loading Non Differentially Expressed IDs from TFs</a></li>
 </ul>
 </li>
 </ul>
@@ -172,12 +182,18 @@
 Transcription factors will be loaded and linked to the gene IDs in the Transcriptomic dataset if the “Enable TFs” feature is enabled. The same goes for the proteomic dataset which has its own “Enable TFs” feature.
 If a transcription factor is found in the Transcriptomic dataset it will be linked to any related gene also present in the dataset.
 Whenever Transcriptomic and Proteomic datasets are enabled together and the “Enable TFs” feature is enabled for at least one of them, once a TF is recognized, its targets will be looked for both in the Transcriptomic and Proteomic dataset to guarantee an high level degree of integration.</p>
-<figure class="align-center" id="id1">
-<a class="reference internal image-reference" href="usage/access/filters/tfs/img/filters_gene_sel3.png"><img alt="access" src="usage/access/filters/tfs/img/filters_gene_sel3.png" style="width: 50%;" /></a>
-<figcaption>
-<p><span class="caption-text">Screenshot of the Configuration interface.</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
-</figcaption>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../../_images/filters_gene_sel3.png"><img alt="access" src="../../../../_images/filters_gene_sel3.png" style="width: 50%;" /></a>
 </figure>
+<section id="transcription-factors-id-preservation">
+<span id="usage-access-id-only-tfs"></span><h2>Transcription Factors ID Preservation<a class="headerlink" href="#transcription-factors-id-preservation" title="Link to this heading"></a></h2>
+<p>Normally, if a Transcription Factor is recognized in an ID Only component found in the Transcriptomic or Proteomic dataset (when of course the “Preserve non DE IDs” feature is enabled for them), it is just loaded as a DE component and not represented as a TF.
+To overcome this, one should enable the “Preserve IDs for TFs” feature in the Gene or Protein configuration depending on the scope of the analysis.
+Transcription Factors recognized in this manner will be represented as small oragne squares on the right side of the main indicators.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../../_images/filters_gene_sel4.png"><img alt="access" src="../../../../_images/filters_gene_sel4.png" style="width: 50%;" /></a>
+</figure>
+</section>
 </section>
 
 

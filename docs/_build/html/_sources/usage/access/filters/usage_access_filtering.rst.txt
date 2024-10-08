@@ -16,7 +16,7 @@ There are three filters available for each data type, which can be enabled by ch
    :width: 50%
    :align: center
 
-   Screenshot of the Configuration interface.
+   
 
 
 

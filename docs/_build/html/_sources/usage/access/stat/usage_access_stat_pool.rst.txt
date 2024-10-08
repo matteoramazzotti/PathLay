@@ -9,4 +9,3 @@ When enabled, the IDs of the above datasets will be merged and the test is perfo
    :width: 40%
    :align: center
 
-   Screenshot of the Configuration interface.

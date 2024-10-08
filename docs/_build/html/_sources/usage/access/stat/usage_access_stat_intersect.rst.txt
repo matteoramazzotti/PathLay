@@ -10,4 +10,3 @@ With the Intersect feature enabled, only maps that are considered relevant for a
 	:width: 40%
 	:align: center
 
-	Screenshot of the Configuration interface.

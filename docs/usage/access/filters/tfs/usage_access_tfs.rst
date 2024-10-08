@@ -21,9 +21,9 @@ Whenever Transcriptomic and Proteomic datasets are enabled together and the "Ena
    :width: 50%
    :align: center
 
-   Screenshot of the Configuration interface.
+   
 
 
-.. include:: /usage/access/tfs/usage_access_tfs_id_only.rst
+.. include:: /usage/access/filters/tfs/usage_access_tfs_id_only.rst
 
 

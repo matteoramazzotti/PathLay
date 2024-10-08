@@ -14,4 +14,4 @@ These "ID Only" components will be represented with a different palette of color
    :width: 50%
    :align: center
 
-   Screenshot of the Configuration interface.
+   

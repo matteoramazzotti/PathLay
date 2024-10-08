@@ -24,7 +24,6 @@ There are two tweaks available that can change the result of this step: the Inte
    :width: 50%
    :align: center
 
-   Screenshot of the Configuration interface.
 
 
 

@@ -20,7 +20,9 @@
         <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
-    <link rel="search" title="Search" href="../../../../search.html" /> 
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="Non Differentially Expressed IDs" href="../node/usage_access_nodeg.html" />
+    <link rel="prev" title="Transcription Factors" href="usage_access_tfs.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -42,7 +44,7 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul>
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../../../indices/indices_index.html">Welcome to PathLay’s documentation!</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../features/index.html">Features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../requirements/index.html">Requirements</a><ul>
@@ -64,7 +66,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../../../howto/howto_localserver.html">Run PathLay as local server with Docker (localhost)</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../../usage_index.html">Usage</a><ul>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../usage_index.html">Usage</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../../account/usage_account_index.html">Account Managing</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../account/usage_account_new.html">Register a New Account</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../account/usage_account_login.html">Login to an Existing Account</a></li>
@@ -74,6 +76,12 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../exp_package/usage_exp_package_conf.html">Configuration File</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../exp_package/usage_exp_package_specs_data.html">Datasets Files</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../exp_package/usage_exp_package_specs_ids.html">Supported IDs</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../dbconf/dbconf_index.html">Database Configuration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../dbconf/dbconf_org_selection.html">Organism Selection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../dbconf/dbconf_interactions.html">Interaction Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../dbconf/dbconf_pathways.html">Pathway Files</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../../home/usage_home_index.html">Home Manager</a><ul>
@@ -91,13 +99,20 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../home/usage_home_download.html">Downloading an Experiment Package</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../../usage_access_index.html">Configuration Page</a><ul>
+<li class="toctree-l2 current"><a class="reference internal" href="../../usage_access_index.html">Configuration Page</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../../usage_access_mapsdb.html">Maps Databases</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../usage_access_data.html">Data Selection</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../usage_access_filters_index.html">Configuring Filters for a Dataset</a><ul>
+<li class="toctree-l3 current"><a class="reference internal" href="../usage_access_filters_index.html">Configuring Filters for a Dataset</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="../usage_access_filtering.html">Filtering Options</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../usage_access_id_only.html">ID Preservation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="usage_access_tfs.html">Transcription Factors</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="usage_access_tfs.html">Transcription Factors</a><ul class="current">
+<li class="toctree-l5 current"><a class="current reference internal" href="#">Transcription Factors ID Preservation</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../node/usage_access_nodeg.html">Non Differentially Expressed IDs</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../node/usage_access_nodeg_tfs.html">Loading Non Differentially Expressed IDs from TFs</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../stat/usage_access_stat.html">Maps Restriction Procedure</a><ul>
@@ -146,6 +161,10 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../usage_index.html">Usage</a></li>
+          <li class="breadcrumb-item"><a href="../../usage_access_index.html">Configuration Page</a></li>
+          <li class="breadcrumb-item"><a href="../usage_access_filters_index.html">Configuring Filters for a Dataset</a></li>
+          <li class="breadcrumb-item"><a href="usage_access_tfs.html">Transcription Factors</a></li>
       <li class="breadcrumb-item active">Transcription Factors ID Preservation</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../../_sources/usage/access/filters/tfs/usage_access_tfs_id_only.rst.txt" rel="nofollow"> View page source</a>
@@ -161,18 +180,18 @@
 <p>Normally, if a Transcription Factor is recognized in an ID Only component found in the Transcriptomic or Proteomic dataset (when of course the “Preserve non DE IDs” feature is enabled for them), it is just loaded as a DE component and not represented as a TF.
 To overcome this, one should enable the “Preserve IDs for TFs” feature in the Gene or Protein configuration depending on the scope of the analysis.
 Transcription Factors recognized in this manner will be represented as small oragne squares on the right side of the main indicators.</p>
-<figure class="align-center" id="id1">
+<figure class="align-center">
 <a class="reference internal image-reference" href="../../../../_images/filters_gene_sel4.png"><img alt="access" src="../../../../_images/filters_gene_sel4.png" style="width: 50%;" /></a>
-<figcaption>
-<p><span class="caption-text">Screenshot of the Configuration interface.</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
-</figcaption>
 </figure>
 </section>
 
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="usage_access_tfs.html" class="btn btn-neutral float-left" title="Transcription Factors" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../node/usage_access_nodeg.html" class="btn btn-neutral float-right" title="Non Differentially Expressed IDs" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 

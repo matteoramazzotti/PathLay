@@ -10,7 +10,7 @@ Configuring Filters for a Dataset
    usage_access_filtering
    usage_access_id_only
    tfs/usage_access_tfs
-
+   node/usage_access_nodeg
 
 
 
@@ -24,9 +24,9 @@ Some of these configurations are common to every data type, while others, relate
    :width: 50%
    :align: center
 
-   Screenshot of the "Select Datasets to be used" interface in the data selection step.
-
 
 .. include:: /usage/access/filters/usage_access_filtering.rst
 .. include:: /usage/access/filters/usage_access_id_only.rst
 .. include:: /usage/access/filters/tfs/usage_access_tfs.rst
+.. include:: /usage/access/filters/node/usage_access_nodeg.rst
+

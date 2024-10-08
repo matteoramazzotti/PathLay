@@ -16,4 +16,4 @@ Transcription Factors recognized in this manner will be represented as small ora
    :width: 50%
    :align: center
 
-   Screenshot of the Configuration interface.
+   

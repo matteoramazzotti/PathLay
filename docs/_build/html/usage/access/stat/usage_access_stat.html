@@ -22,7 +22,7 @@
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="Pooling" href="usage_access_stat_pool.html" />
-    <link rel="prev" title="Transcription Factors ID Preservation" href="../usage_access_tfs_id_only.html" /> 
+    <link rel="prev" title="Loading Non Differentially Expressed IDs from TFs" href="../filters/node/usage_access_nodeg_tfs.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -78,6 +78,12 @@
 <li class="toctree-l3"><a class="reference internal" href="../../exp_package/usage_exp_package_specs_ids.html">Supported IDs</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../dbconf/dbconf_index.html">Database Configuration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../dbconf/dbconf_org_selection.html">Organism Selection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../dbconf/dbconf_interactions.html">Interaction Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../dbconf/dbconf_pathways.html">Pathway Files</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../../home/usage_home_index.html">Home Manager</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../home/create/usage_home_create.html">Creating an Experiment Package</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../home/create/usage_home_create_add.html">Adding a new Experiment Package</a></li>
@@ -99,10 +105,16 @@
 <li class="toctree-l3"><a class="reference internal" href="../filters/usage_access_filters_index.html">Configuring Filters for a Dataset</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../filters/usage_access_filtering.html">Filtering Options</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../filters/usage_access_id_only.html">ID Preservation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../filters/tfs/usage_access_tfs.html">Transcription Factors</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../filters/tfs/usage_access_tfs_id_only.html">Transcription Factors ID Preservation</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../filters/usage_access_filters_index.html#transcription-factors">Transcription Factors</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../usage_access_tfs_id_only.html">Transcription Factors ID Preservation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../filters/node/usage_access_nodeg.html">Non Differentially Expressed IDs</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../filters/node/usage_access_nodeg_tfs.html">Loading Non Differentially Expressed IDs from TFs</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Maps Restriction Procedure</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="usage_access_stat_pool.html">Pooling</a></li>
 <li class="toctree-l4"><a class="reference internal" href="usage_access_stat_intersect.html">Intersect</a></li>
@@ -169,11 +181,8 @@
 Maps are selected with a statistical approach based on the Fisher’s Exact Test and since PathLay integrates different datasets, it is also possible to select which dataset will contribute on the map selection.
 By default the test is performed on each dataset enabled and it will produce a list of maps considered of importance, all the lists produced are then joined into one.
 There are two tweaks available that can change the result of this step: the Intersect option and the Pooling option.</p>
-<figure class="align-center" id="id1">
+<figure class="align-center">
 <a class="reference internal image-reference" href="../../../_images/stat.png"><img alt="access" src="../../../_images/stat.png" style="width: 50%;" /></a>
-<figcaption>
-<p><span class="caption-text">Screenshot of the Configuration interface.</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
-</figcaption>
 </figure>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -183,11 +192,8 @@ There are two tweaks available that can change the result of this step: the Inte
 <h2>Pooling<a class="headerlink" href="#pooling" title="Link to this heading"></a></h2>
 <p>Eabling the Pooling option will affect how the Transcriptomic, Proteomic, miRNomic, Methylomic and Cromatin Status datasets are treated when enabled for the test.
 When enabled, the IDs of the above datasets will be merged and the test is performed on that single list.</p>
-<figure class="align-center" id="id2">
+<figure class="align-center">
 <a class="reference internal image-reference" href="../../../_images/stat_sel1.png"><img alt="access" src="../../../_images/stat_sel1.png" style="width: 40%;" /></a>
-<figcaption>
-<p><span class="caption-text">Screenshot of the Configuration interface.</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
-</figcaption>
 </figure>
 </section>
 <section id="intersect">
@@ -195,11 +201,8 @@ When enabled, the IDs of the above datasets will be merged and the test is perfo
 <p>Enabling the Intersect option will affect which maps will be selected after the test has been performed.
 By default map lists are joined into one, meaning that even if a map has been found relevant in relation to just one of the datasets, it will be kept and indicators will be plotted on it.
 With the Intersect feature enabled, only maps that are considered relevant for all the datasets enabled are kept (i.e. the ones that appear in every map list coming from the tests performed).</p>
-<figure class="align-center" id="id3">
+<figure class="align-center">
 <a class="reference internal image-reference" href="../../../_images/stat_sel2.png"><img alt="access" src="../../../_images/stat_sel2.png" style="width: 40%;" /></a>
-<figcaption>
-<p><span class="caption-text">Screenshot of the Configuration interface.</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
-</figcaption>
 </figure>
 </section>
 </section>
@@ -208,7 +211,7 @@ With the Intersect feature enabled, only maps that are considered relevant for a
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../usage_access_tfs_id_only.html" class="btn btn-neutral float-left" title="Transcription Factors ID Preservation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../filters/node/usage_access_nodeg_tfs.html" class="btn btn-neutral float-left" title="Loading Non Differentially Expressed IDs from TFs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="usage_access_stat_pool.html" class="btn btn-neutral float-right" title="Pooling" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

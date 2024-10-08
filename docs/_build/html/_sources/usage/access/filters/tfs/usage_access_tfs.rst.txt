@@ -16,14 +16,14 @@ If a transcription factor is found in the Transcriptomic dataset it will be link
 Whenever Transcriptomic and Proteomic datasets are enabled together and the "Enable TFs" feature is enabled for at least one of them, once a TF is recognized, its targets will be looked for both in the Transcriptomic and Proteomic dataset to guarantee an high level degree of integration. 
 
 
-.. figure:: ./img/filters_gene_sel3.png
+.. figure:: /usage/access/img/filters_gene_sel3.png
    :alt: access
    :width: 50%
    :align: center
 
-   Screenshot of the Configuration interface.
+   
 
 
-.. include:: /usage/access/tfs/usage_access_tfs_id_only.rst
+.. include:: /usage/access/filters/tfs/usage_access_tfs_id_only.rst
 
 

@@ -78,6 +78,12 @@
 <li class="toctree-l3"><a class="reference internal" href="../../exp_package/usage_exp_package_specs_ids.html">Supported IDs</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../dbconf/dbconf_index.html">Database Configuration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../dbconf/dbconf_org_selection.html">Organism Selection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../dbconf/dbconf_interactions.html">Interaction Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../dbconf/dbconf_pathways.html">Pathway Files</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../../home/usage_home_index.html">Home Manager</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../home/create/usage_home_create.html">Creating an Experiment Package</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../home/create/usage_home_create_add.html">Adding a new Experiment Package</a></li>
@@ -99,9 +105,16 @@
 <li class="toctree-l3"><a class="reference internal" href="../filters/usage_access_filters_index.html">Configuring Filters for a Dataset</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../filters/usage_access_filtering.html">Filtering Options</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../filters/usage_access_id_only.html">ID Preservation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../filters/tfs/usage_access_tfs.html">Transcription Factors</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../filters/tfs/usage_access_tfs_id_only.html">Transcription Factors ID Preservation</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../usage_access_tfs_id_only.html">Transcription Factors ID Preservation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../filters/node/usage_access_nodeg.html">Non Differentially Expressed IDs</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../filters/node/usage_access_nodeg_tfs.html">Loading Non Differentially Expressed IDs from TFs</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l3 current"><a class="reference internal" href="usage_access_stat.html">Maps Restriction Procedure</a><ul class="current">
 <li class="toctree-l4 current"><a class="current reference internal" href="#">Pooling</a></li>
 <li class="toctree-l4"><a class="reference internal" href="usage_access_stat_intersect.html">Intersect</a></li>
@@ -165,11 +178,8 @@
 <h1>Pooling<a class="headerlink" href="#pooling" title="Link to this heading"></a></h1>
 <p>Eabling the Pooling option will affect how the Transcriptomic, Proteomic, miRNomic, Methylomic and Cromatin Status datasets are treated when enabled for the test.
 When enabled, the IDs of the above datasets will be merged and the test is performed on that single list.</p>
-<figure class="align-center" id="id1">
+<figure class="align-center">
 <a class="reference internal image-reference" href="../../../_images/stat_sel1.png"><img alt="access" src="../../../_images/stat_sel1.png" style="width: 40%;" /></a>
-<figcaption>
-<p><span class="caption-text">Screenshot of the Configuration interface.</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
-</figcaption>
 </figure>
 </section>
 
