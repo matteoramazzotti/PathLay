@@ -27,11 +27,7 @@ To reset the interface to its default state simply click the "Reset" button next
 Details on each type of query tag are provided below.
 
 
-.. include:: ./results/selector/usage_results_select_by_ids.rst
-.. include:: ./selector/usage_results_select_by_ids.rst
-.. include:: ./usage_results_select_by_ids.rst	
+.. include:: /usage/results/selector/usage_results_select_by_ids.rst
 
 
-.. include:: ./results/selector/usage_results_select_by_agreement.rst
-.. include:: ./selector/usage_results_select_by_agreement.rst
-.. include:: ./usage_results_select_by_agreement.rst
+.. include:: /usage/results/selector/usage_results_select_by_agreement.rst

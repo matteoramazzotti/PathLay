@@ -125,7 +125,6 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="results/usage_results_index.html">Pathway Explorer</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="results/usage_results_mapsel.html">Pathway Navigation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="results/usage_results_legend.html">Indicators</a></li>
 <li class="toctree-l3"><a class="reference internal" href="results/usage_results_menu.html">Main Menu</a></li>
 <li class="toctree-l3"><a class="reference internal" href="results/usage_results_highlight.html">Highlighting Feature</a></li>
 <li class="toctree-l3"><a class="reference internal" href="results/usage_results_clipboard.html">The Clipboard</a></li>
@@ -137,6 +136,22 @@
 <li class="toctree-l3"><a class="reference internal" href="results/settings/usage_results_settings.html">Settings</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="results/settings/usage_results_settings_transparency_and_size.html">Transparency and Size</a></li>
 <li class="toctree-l4"><a class="reference internal" href="results/settings/usage_results_settings_screenshot.html">Screenshot</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="indicators/indicators_index.html">Indicators</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="indicators/legend/legend.html">Legend and Explanation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="indicators/rationale/rationale.html">Drawing Rationale</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="indicators/rationale/gene_prot/gene_prot_circuit.html">Gene/Protein Circuit</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="indicators/rationale/gene_prot/gene_prot_circuit_mono.html">Single Gene/Protein</a></li>
+<li class="toctree-l5"><a class="reference internal" href="indicators/rationale/gene_prot/gene_prot_circuit_multi.html">Multiple Genes/Proteins Circuit</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="indicators/rationale/mirna/mirna_circuit.html">miRNAs Circuit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="indicators/rationale/tf/tf_circuit.html">Transcription Factors Circuit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="indicators/rationale/meth/meth_circuit.html">Methylation Circuit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="indicators/rationale/chroma/chroma_circuit.html">Chromatin Status Circuit</a></li>
 </ul>
 </li>
 </ul>
@@ -307,21 +322,33 @@ On your first installation of PathLay of course this will result in all files mi
 </div>
 <p>The Home section is accessible by clicking the “Home” icon from the Welcome page.
 In the Home Page you can create, load and modify an Experiment Package with a more intuitive approach.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/welcome_home.png"><img alt="welcome_home" src="../_images/welcome_home.png" style="width: 100%;" /></a>
+</figure>
 <div class="toctree-wrapper compound" id="usage-home-create">
 </div>
 <section id="adding-a-new-experiment-package">
 <span id="usage-create-add"></span><h3>Adding a new Experiment Package<a class="headerlink" href="#adding-a-new-experiment-package" title="Link to this heading"></a></h3>
 <p>To create an Experiment Package from scratch the first thing to do is to click the “Add New” button.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/home_exp_select_add.png"><img alt="welcome_home" src="../_images/home_exp_select_add.png" style="width: 100%;" /></a>
+</figure>
 </section>
 <section id="uploading-a-new-experiment-package">
 <span id="usage-home-create-upload"></span><h3>Uploading a new Experiment Package<a class="headerlink" href="#uploading-a-new-experiment-package" title="Link to this heading"></a></h3>
 <p>To upload an Experiment Package the first thing to do is to click the “Upload” button.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/home_exp_select_upload.png"><img alt="welcome_home" src="../_images/home_exp_select_upload.png" style="width: 100%;" /></a>
+</figure>
 <section id="editing-an-experiment-package">
 <span id="usage-home-edit"></span><h4>Editing an Experiment Package<a class="headerlink" href="#editing-an-experiment-package" title="Link to this heading"></a></h4>
 <div class="toctree-wrapper compound">
 </div>
 <p>To edit the configuration of an Experiment Package, click on the “Edit Pack” button on the package’s blue box in the Home section.
 You will be redirected to the configuration page.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/home_exp_select_edit.png"><img alt="home_exp_select_edit" src="../_images/home_exp_select_edit.png" style="width: 100%;" /></a>
+</figure>
 <p>The configuration articulates in three sections, explained in detail in the following sections:</p>
 <ol class="arabic simple">
 <li><p>General information editing and reference organism assigning</p></li>
@@ -339,6 +366,9 @@ You will be redirected to the configuration page.</p>
 <li><p>Assign a reference organism to the package by selecting it from the “Organism” selector.</p></li>
 <li><p>Write a comment</p></li>
 </ol>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/home_edit_generic.png"><img alt="home_edit_generic" src="../_images/home_edit_generic.png" style="width: 100%;" /></a>
+</figure>
 </section>
 <section id="configure-a-dataset">
 <span id="usage-home-edit-dataset"></span><h3>Configure a Dataset<a class="headerlink" href="#configure-a-dataset" title="Link to this heading"></a></h3>
@@ -351,6 +381,9 @@ You will be redirected to the configuration page.</p>
 <li><p>Select which column is holding a p-value, if any</p></li>
 <li><p>Upload your dataset in a tab-separated text format by either copy and paste it in the coloured text area, or by uploading it using the “Upload {omic} pack” button below</p></li>
 </ol>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/home_edit_omic_conf.png"><img alt="home_edit_omic_conf" src="../_images/home_edit_omic_conf.png" style="width: 100%;" /></a>
+</figure>
 </section>
 <section id="gene-ontologies">
 <span id="usage-home-edit-ont"></span><h3>Gene Ontologies<a class="headerlink" href="#gene-ontologies" title="Link to this heading"></a></h3>
@@ -361,9 +394,15 @@ Gene Ontologies of interest will be added to the other list alongside the presel
 You can of course remove them by clicking the “-” button in the selected boxes.
 Cellular compartments selected will be found in a dropdown menu after PathLay has completed the analysis and it’s ready to show the results on functional pathways.
 Once a cellular compartment is chosen, only genes and proteins localized in that compartment will remain displayed on the pathways (see more “Pathway Explorer”).</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/home_edit_ont.png"><img alt="home_edit_ont" src="../_images/home_edit_ont.png" style="width: 100%;" /></a>
+</figure>
 <section id="downloading-an-experiment-package">
 <span id="usage-home-download"></span><h4>Downloading an Experiment Package<a class="headerlink" href="#downloading-an-experiment-package" title="Link to this heading"></a></h4>
 <p>The “Download” button allows you to package the currently loaded datasets and configurations in a zip archive and export it from PathLay for other uses, for instance, this archive can be uploaded as a new Experiment Package into another PathLay account.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/home_exp_select_download_pack.png"><img alt="welcome_home" src="../_images/home_exp_select_download_pack.png" style="width: 100%;" /></a>
+</figure>
 </section>
 </section>
 </section>
@@ -371,14 +410,14 @@ Once a cellular compartment is chosen, only genes and proteins localized in that
 <span id="usage-access"></span><h2>Configuration Page<a class="headerlink" href="#configuration-page" title="Link to this heading"></a></h2>
 <div class="toctree-wrapper compound">
 </div>
-<p>The Configuration Page is accessible by selecting “Analysis Configurator” in the Welcom page and then clicking the “Configure Analysis” button for the desired Experiment Package.
+<p>The Configuration Page is accessible by selecting “Analysis Configurator” in the Welcome page and then clicking the “Configure Analysis” button for the desired Experiment Package.
 If it isn’t the first time you do this, you can also skip the configuration step and run PathLay with the last configuration available by clicking “Run Last Configuration”.</p>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../_images/access.png"><img alt="access" src="../_images/access.png" style="width: 100%;" /></a>
 </figure>
 <p id="usage-access-mapdb">The “Select Maps DB” selector allows you to choose which database will be used to load pathways from.</p>
 <figure class="align-center" id="id3">
-<a class="reference internal image-reference" href="usage/img/general_conf_sel1.png"><img alt="Data selection interface" src="usage/img/general_conf_sel1.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/general_conf_sel1.png"><img alt="Data selection interface" src="../_images/general_conf_sel1.png" style="width: 100%;" /></a>
 <figcaption>
 <p><span class="caption-text">Screenshot of the “Select Maps DB” interface in the data selection step.</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
 </figcaption>
@@ -389,7 +428,7 @@ If it isn’t the first time you do this, you can also skip the configuration st
 </div>
 <p id="usage-access-data">The “Select Datasets to be used” selector allows you to select the datasets you want to use by simply check the boxes you are interested in between “Genes”, “Proteins”, “miRNAs”, “Methylations”, “Chromatin Status” and “Metabolites”.</p>
 <figure class="align-center" id="id4">
-<a class="reference internal image-reference" href="usage/img/general_conf_sel2.png"><img alt="Data selection interface" src="usage/img/general_conf_sel2.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/general_conf_sel2.png"><img alt="Data selection interface" src="../_images/general_conf_sel2.png" style="width: 100%;" /></a>
 <figcaption>
 <p><span class="caption-text">Screenshot of the “Select Datasets to be used” interface in the data selection step.</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
 </figcaption>
@@ -534,12 +573,6 @@ With the Intersect feature enabled, only maps that are considered relevant for a
 <p class="admonition-title">Note</p>
 <p>The pathway selector will display all the pathways available only when no other selections have been performed. Whenever an ID/Agreement/Cellular compartment based selection is performed, this dropdown menu will provide only those pathways that satisfies the parameters of the selection. To return at the initial, default state, simply reset your selections.</p>
 </div>
-<figure class="align-center" id="usage-results-legend">
-<a class="reference internal image-reference" href="../_images/legend.png"><img alt="legend" src="../_images/legend.png" style="width: 100%;" /></a>
-</figure>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../_images/legend2.png"><img alt="legend" src="../_images/legend2.png" style="width: 100%;" /></a>
-</figure>
 <p id="usage-results-menu">The “PathLay - MAPS” page provides different features in six sections accessible from a menu located in the upper right corner of the page:</p>
 <blockquote>
 <div><ul class="simple">
@@ -653,6 +686,81 @@ As before, to remove it the “X” button on the right or the “Reset” butto
 <p class="admonition-title">Warning</p>
 <p>Depending on your browser compatibility this feature can behave differently.</p>
 </div>
+</section>
+</section>
+<section id="indicators">
+<span id="usage-indicators"></span><h2>Indicators<a class="headerlink" href="#indicators" title="Link to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<figure class="align-center" id="usage-indicators-legend">
+<a class="reference internal image-reference" href="../_images/legend.png"><img alt="legend" src="../_images/legend.png" style="width: 100%;" /></a>
+</figure>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/legend2.png"><img alt="legend" src="../_images/legend2.png" style="width: 100%;" /></a>
+</figure>
+<div class="toctree-wrapper compound" id="usage-indicators-rationale">
+</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/rationale-0.png"><img alt="ratio0" src="../_images/rationale-0.png" style="width: 100%;" /></a>
+</figure>
+<section id="gene-protein-circuit">
+<span id="usage-indicators-rationale-gene-prot"></span><h3>Gene/Protein Circuit<a class="headerlink" href="#gene-protein-circuit" title="Link to this heading"></a></h3>
+<div class="toctree-wrapper compound">
+</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/rationale-1.png"><img alt="ratio1" src="../_images/rationale-1.png" style="width: 100%;" /></a>
+</figure>
+<figure class="align-center" id="usage-indicators-rationale-gene-prot-mono">
+<a class="reference internal image-reference" href="../_images/rationale-3.png"><img alt="ratio3" src="../_images/rationale-3.png" style="width: 100%;" /></a>
+</figure>
+<figure class="align-center" id="usage-indicators-rationale-gene-prot-multi">
+<a class="reference internal image-reference" href="../_images/rationale-4.png"><img alt="ratio4" src="../_images/rationale-4.png" style="width: 100%;" /></a>
+</figure>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/rationale-7.png"><img alt="ratio7" src="../_images/rationale-7.png" style="width: 100%;" /></a>
+</figure>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/rationale-9.png"><img alt="ratio9" src="../_images/rationale-9.png" style="width: 100%;" /></a>
+</figure>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/rationale-11.png"><img alt="ratio11" src="../_images/rationale-11.png" style="width: 100%;" /></a>
+</figure>
+</section>
+<section id="mirnas-circuit">
+<h3>miRNAs Circuit<a class="headerlink" href="#mirnas-circuit" title="Link to this heading"></a></h3>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/rationale-12.png"><img alt="ratio12" src="../_images/rationale-12.png" style="width: 100%;" /></a>
+</figure>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/rationale-14.png"><img alt="ratio14" src="../_images/rationale-14.png" style="width: 100%;" /></a>
+</figure>
+</section>
+<section id="transcription-factors-circuit">
+<h3>Transcription Factors Circuit<a class="headerlink" href="#transcription-factors-circuit" title="Link to this heading"></a></h3>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/rationale-16.png"><img alt="ratio16" src="../_images/rationale-16.png" style="width: 100%;" /></a>
+</figure>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/rationale-17.png"><img alt="ratio17" src="../_images/rationale-17.png" style="width: 100%;" /></a>
+</figure>
+</section>
+<section id="methylation-circuit">
+<h3>Methylation Circuit<a class="headerlink" href="#methylation-circuit" title="Link to this heading"></a></h3>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/rationale-19.png"><img alt="ratio19" src="../_images/rationale-19.png" style="width: 100%;" /></a>
+</figure>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/rationale-20.png"><img alt="ratio20" src="../_images/rationale-20.png" style="width: 100%;" /></a>
+</figure>
+</section>
+<section id="chromatin-status-circuit">
+<h3>Chromatin Status Circuit<a class="headerlink" href="#chromatin-status-circuit" title="Link to this heading"></a></h3>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/rationale-22.png"><img alt="ratio22" src="../_images/rationale-22.png" style="width: 100%;" /></a>
+</figure>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/rationale-23.png"><img alt="ratio23" src="../_images/rationale-23.png" style="width: 100%;" /></a>
+</figure>
 </section>
 </section>
 </section>

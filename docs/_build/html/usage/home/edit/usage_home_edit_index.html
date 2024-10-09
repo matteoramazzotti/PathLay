@@ -78,6 +78,13 @@
 <li class="toctree-l3"><a class="reference internal" href="../../exp_package/usage_exp_package_specs_ids.html">Supported IDs</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../dbconf/dbconf_index.html">Database Configuration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../dbconf/dbconf_org_selection.html">Organism Selection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../dbconf/dbconf_interactions.html">Interaction Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../dbconf/dbconf_pathways.html">Pathway Files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../dbconf/dbconf_backup_repo.html">Alternative installation</a></li>
+</ul>
+</li>
 <li class="toctree-l2 current"><a class="reference internal" href="../usage_home_index.html">Home Manager</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../create/usage_home_create.html">Creating an Experiment Package</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../create/usage_home_create_add.html">Adding a new Experiment Package</a></li>
@@ -118,7 +125,6 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../results/usage_results_index.html">Pathway Explorer</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../results/usage_results_mapsel.html">Pathway Navigation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../results/usage_results_legend.html">Indicators</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../results/usage_results_menu.html">Main Menu</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../results/usage_results_highlight.html">Highlighting Feature</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../results/usage_results_clipboard.html">The Clipboard</a></li>
@@ -130,6 +136,22 @@
 <li class="toctree-l3"><a class="reference internal" href="../../results/settings/usage_results_settings.html">Settings</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../results/settings/usage_results_settings_transparency_and_size.html">Transparency and Size</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../results/settings/usage_results_settings_screenshot.html">Screenshot</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../indicators/indicators_index.html">Indicators</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../indicators/legend/legend.html">Legend and Explanation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../indicators/rationale/rationale.html">Drawing Rationale</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../indicators/rationale/gene_prot/gene_prot_circuit.html">Gene/Protein Circuit</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../indicators/rationale/gene_prot/gene_prot_circuit_mono.html">Single Gene/Protein</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../indicators/rationale/gene_prot/gene_prot_circuit_multi.html">Multiple Genes/Proteins Circuit</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../indicators/rationale/mirna/mirna_circuit.html">miRNAs Circuit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../indicators/rationale/tf/tf_circuit.html">Transcription Factors Circuit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../indicators/rationale/meth/meth_circuit.html">Methylation Circuit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../indicators/rationale/chroma/chroma_circuit.html">Chromatin Status Circuit</a></li>
 </ul>
 </li>
 </ul>
@@ -173,6 +195,9 @@
 </div>
 <p>To edit the configuration of an Experiment Package, click on the “Edit Pack” button on the package’s blue box in the Home section.
 You will be redirected to the configuration page.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../_images/home_exp_select_edit.png"><img alt="home_exp_select_edit" src="../../../_images/home_exp_select_edit.png" style="width: 100%;" /></a>
+</figure>
 <p>The configuration articulates in three sections, explained in detail in the following sections:</p>
 <ol class="arabic simple">
 <li><p>General information editing and reference organism assigning</p></li>
@@ -188,6 +213,9 @@ You will be redirected to the configuration page.</p>
 <li><p>Assign a reference organism to the package by selecting it from the “Organism” selector.</p></li>
 <li><p>Write a comment</p></li>
 </ol>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../_images/home_edit_generic.png"><img alt="home_edit_generic" src="../../../_images/home_edit_generic.png" style="width: 100%;" /></a>
+</figure>
 </section>
 <section id="configure-a-dataset">
 <span id="usage-home-edit-dataset"></span><h2>Configure a Dataset<a class="headerlink" href="#configure-a-dataset" title="Link to this heading"></a></h2>
@@ -200,6 +228,9 @@ You will be redirected to the configuration page.</p>
 <li><p>Select which column is holding a p-value, if any</p></li>
 <li><p>Upload your dataset in a tab-separated text format by either copy and paste it in the coloured text area, or by uploading it using the “Upload {omic} pack” button below</p></li>
 </ol>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../_images/home_edit_omic_conf.png"><img alt="home_edit_omic_conf" src="../../../_images/home_edit_omic_conf.png" style="width: 100%;" /></a>
+</figure>
 </section>
 <section id="gene-ontologies">
 <span id="usage-home-edit-ont"></span><h2>Gene Ontologies<a class="headerlink" href="#gene-ontologies" title="Link to this heading"></a></h2>
@@ -210,6 +241,9 @@ Gene Ontologies of interest will be added to the other list alongside the presel
 You can of course remove them by clicking the “-” button in the selected boxes.
 Cellular compartments selected will be found in a dropdown menu after PathLay has completed the analysis and it’s ready to show the results on functional pathways.
 Once a cellular compartment is chosen, only genes and proteins localized in that compartment will remain displayed on the pathways (see more “Pathway Explorer”).</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../_images/home_edit_ont.png"><img alt="home_edit_ont" src="../../../_images/home_edit_ont.png" style="width: 100%;" /></a>
+</figure>
 </section>
 </section>
 

@@ -11,6 +11,9 @@ You can of course remove them by clicking the "-" button in the selected boxes.
 Cellular compartments selected will be found in a dropdown menu after PathLay has completed the analysis and it's ready to show the results on functional pathways.
 Once a cellular compartment is chosen, only genes and proteins localized in that compartment will remain displayed on the pathways (see more "Pathway Explorer").
 
-
+.. figure:: /usage/home/img/home_edit_ont.png
+	:alt: home_edit_ont
+	:width: 100%
+	:align: center
 
 

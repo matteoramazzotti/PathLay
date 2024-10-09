@@ -6,7 +6,7 @@ Maps Databases
 
 The "Select Maps DB" selector allows you to choose which database will be used to load pathways from.
 
-.. figure:: ./img/general_conf_sel1.png
+.. figure:: /usage/access/img/general_conf_sel1.png
 	:alt: Data selection interface
 	:width: 100%
 	:align: center

@@ -6,7 +6,6 @@
 
 .. toctree::
     :hidden:
-    :maxdepth: 6
 
     ./indices/indices_index
     ./features/index

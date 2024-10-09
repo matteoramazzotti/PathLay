@@ -6,7 +6,7 @@ Data Selection
 
 The "Select Datasets to be used" selector allows you to select the datasets you want to use by simply check the boxes you are interested in between "Genes", "Proteins", "miRNAs", "Methylations", "Chromatin Status" and "Metabolites".
 
-.. figure:: ./img/general_conf_sel2.png
+.. figure:: /usage/access/img/general_conf_sel2.png
    :alt: Data selection interface
    :width: 100%
    :align: center

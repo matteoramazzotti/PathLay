@@ -14,7 +14,7 @@ Configuration Page
 
 
 
-The Configuration Page is accessible by selecting "Analysis Configurator" in the Welcom page and then clicking the "Configure Analysis" button for the desired Experiment Package.
+The Configuration Page is accessible by selecting "Analysis Configurator" in the Welcome page and then clicking the "Configure Analysis" button for the desired Experiment Package.
 If it isn't the first time you do this, you can also skip the configuration step and run PathLay with the last configuration available by clicking "Run Last Configuration". 
 
 

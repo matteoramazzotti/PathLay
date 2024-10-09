@@ -16,3 +16,9 @@ The configuration of a dataset requires the following general steps:
 #. Select which column is holding a p-value, if any
 
 #. Upload your dataset in a tab-separated text format by either copy and paste it in the coloured text area, or by uploading it using the "Upload {omic} pack" button below 
+
+
+.. figure:: /usage/home/img/home_edit_omic_conf.png
+	:alt: home_edit_omic_conf
+	:width: 100%
+	:align: center

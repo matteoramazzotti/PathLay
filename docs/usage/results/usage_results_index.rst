@@ -8,7 +8,6 @@ Pathway Explorer
 	:hidden:
 
 	usage_results_mapsel
-	usage_results_legend
 	usage_results_menu
 	usage_results_highlight
 	usage_results_clipboard
@@ -28,29 +27,19 @@ The "PathLay - MAPS" page will be displayed after the configuration and the subm
 	The "PathLay - MAPS" page is directly accessible after you hit the "Submit" button allowing you to navigate through pathways right away but depending on how much data PathLay needs to process, some indicators may not be displayed correctly from the go and require more time.
 
 
-.. include:: ./results/usage_results_mapsel.rst
-.. include:: ./usage_results_mapsel.rst
+.. include:: /usage/results/usage_results_mapsel.rst
 
-.. include:: ./results/usage_results_legend.rst
-.. include:: ./usage_results_legend.rst
+.. include:: /usage/results/usage_results_menu.rst
 
-
-.. include:: ./results/usage_results_menu.rst
-.. include:: ./usage_results_menu.rst
-
-.. include:: ./results/usage_results_highlight.rst
-.. include:: ./usage_results_highlight.rst
+.. include:: /usage/results/usage_results_highlight.rst
 
 
-.. include:: ./results/usage_results_clipboard.rst
-.. include:: ./usage_results_clipboard.rst
+.. include:: /usage/results/usage_results_clipboard.rst
 
-.. include:: ./results/selector/usage_results_selector.rst
-.. include:: ./selector/usage_results_selector.rst
+.. include:: /usage/results/selector/usage_results_selector.rst
 
 
-.. include:: ./results/settings/usage_results_settings.rst
-.. include:: ./settings/usage_results_settings.rst
+.. include:: /usage/results/settings/usage_results_settings.rst
 
 
 

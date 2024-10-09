@@ -12,3 +12,7 @@ By editing the first section in the configuration page you can perform the follo
 
 #. Write a comment
 
+.. figure:: /usage/home/img/home_edit_generic.png
+	:alt: home_edit_generic
+	:width: 100%
+	:align: center
