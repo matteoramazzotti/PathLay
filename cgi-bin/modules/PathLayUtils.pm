@@ -378,9 +378,9 @@ package Parameters;
                     }
                     my $line = $self -> {_username}."\t".$self -> {_password}."\t".$self -> {_home}."\t1010101010\n";
                     $self -> {_access} = "granted";
-                    system("echo \"$line\" >> /var/www/html/pathlay/pathlay_users/users.list");
+                    system("echo \"$line\" >> $FindBin::Bin/../../pathlay_users/users.list");
                 }
-                system("mkdir /var/www/html/pathlay/pathlay_users/".$self -> {_home});
+                system("mkdir $FindBin::Bin/../../pathlay_users/".$self -> {_home});
             } else {
                 $self -> {_access} = "try_again";
             }
