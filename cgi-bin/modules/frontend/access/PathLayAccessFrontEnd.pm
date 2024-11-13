@@ -201,13 +201,28 @@ sub AccessBuilder {
     return($access_script,$form);
 }
 sub AccessBuilderNew {
+
+    local *checkFile = sub {
+        my %args = (
+            File => "",
+            @_
+        );
+        my $fileAvailable = 0;
+        if (-e $args{File}) {
+            if (-s $args{File}) {
+                $fileAvailable = 1;
+            }
+        }
+        return($fileAvailable);
+    };
+
     my %args = (
         @_
     );
     my $parameters = $args{Parameters};
-        $parameters -> LoadAvailableExps(
-        UsersDir => $parameters->{_base}."/pathlay_users/".$parameters->{_home}."/"
-    );
+    # $parameters -> LoadAvailableExps(
+    #     UsersDir => $parameters->{_base}."/pathlay_users/".$parameters->{_home}."/"
+    # );
 
     my $access_script = access_script_Packager(
         Parameters => $parameters
@@ -237,9 +252,20 @@ sub AccessBuilderNew {
             _id => "$exp-icons",
             _class => "exp-package-item-icons"
         );
+
+
+        my $confAvailable = checkFile(File=>"$parameters->{_userdir}/$exp.conf");
+        my $lastAvailable = checkFile(File=>"$parameters->{_userdir}/$exp.last");;
+
+        
+
+
+        my $style1 = $confAvailable ? "" : "color: red; pointer-events: none;";
+        my $style2 = $lastAvailable ? "" : "color: red; pointer-events: none;";
+
         my @boxIcons = (
-            '<a onClick=performAction("editConf","'.$exp.'") class="exp-package-item-icon"><i class="material-icons">edit_note</i><span>Configure Analysis</span></a>',
-            '<a onClick=performAction("runLast","'.$exp.'") class="exp-package-item-icon"><i class="material-icons">download</i><span>Run Last Configuration</span></a>',
+            '<a onClick=performAction("editConf","'.$exp.'") class="exp-package-item-icon" style="'.$style1.'"><i class="material-icons">edit_note</i><span>Configure Analysis</span></a>',
+            '<a onClick=performAction("runLast","'.$exp.'") class="exp-package-item-icon" style="'.$style2.'"><i class="material-icons">download</i><span>Run Last Configuration</span></a>',
         );
         foreach my $icon (@boxIcons) {
             $boxIconsDiv -> ContentLoader(
