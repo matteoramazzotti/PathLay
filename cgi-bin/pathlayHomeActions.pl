@@ -32,11 +32,11 @@ chomp $localhost;
 $localhost =~ s/ .+//g;
 $localhost =~ s/ //g;
 my $parameters = new Parameters();
-my $session_id = $cgi->param('sid');
+my $session_id = $cgi->param('sid') ? $cgi->param('sid') : "no active session";
 my $session = CGI::Session->new($session_id);
-my $username = $session->param('username');
-my $home = $session->param('home');
-my $action = $cgi->param('action'); 
+my $username = $session->param('username') ? $session->param('username') : "";
+my $home = $session->param('home') ? $session->param('home') : "";
+my $action = $cgi->param('action') ? $cgi->param('action') : ""; 
 $parameters -> {_host} = $localhost;
 $parameters -> {_base} = $base;
 $parameters->{_userdir} = $home ne "6135251850" ? "$base/pathlay_users/".$home."/" : "$base/demo_exps/6135251850/";
@@ -226,25 +226,31 @@ if ($action eq "loadExpConf") {
 	my $expId = $cgi->param('exp');
 	#load conf for selected exp
 	my $conf = {};
-	open (IN,"$parameters->{_userdir}/$expId/$expId.conf");
-	while(<IN>) {
-		chomp;
-		my ($tag,$value) = split("=");
-		if ($tag eq "expname" || $tag eq "comments" || $tag eq "organism") {
-			$conf->{$tag} = $value;
-		}
-		if ($tag =~ /(^.+?)IdType/) {
-			$conf->{$1}->{IdType} = $value; 
-		}
-		if ($tag =~ /(^.+?)_(.+?)_column$/) {
-			$conf->{$1}->{$2."Column"} = $value;
-		}
+	my $status;
+	if (-f "$parameters->{_userdir}/$expId/$expId.conf") {
+		open (IN,"$parameters->{_userdir}/$expId/$expId.conf");
+		while(<IN>) {
+			chomp;
+			my ($tag,$value) = split("=");
+			if ($tag eq "expname" || $tag eq "comments" || $tag eq "organism") {
+				$conf->{$tag} = $value;
+			}
+			if ($tag =~ /(^.+?)IdType/) {
+				$conf->{$1}->{IdType} = $value; 
+			}
+			if ($tag =~ /(^.+?)_(.+?)_column$/) {
+				$conf->{$1}->{$2."Column"} = $value;
+			}
 
+		}
+		close(IN);
+		$status = "ok";
+	} else {
+		$status = "missing";
 	}
-	close(IN);
 
 	my $response = {
-		status => "ok",
+		status => $status,
 		conf => $conf
 	};
 	$response = to_json($response);
