@@ -118,17 +118,24 @@ sub DownloadZip {
 	my $zip = Archive::Zip->new();
 
 	if ($target eq "experiment" && $exp) {
-		$zip -> addTree($userDir,'',sub { /$exp/ });
-		print header(
-			-type => 'application/zip',
-			-attachment => "${user}_$exp.zip",
-			-Access_Control_Allow_Origin => '*',
-			-Access_Control_Expose_Headers => 'Content-Disposition',
-		);
+		if (-d "$userDir/$exp") { # Check if the folder exists
+			$zip->addTree("$userDir/$exp","$exp");
+			print header(
+				-type => 'application/zip',
+				-attachment => "${user}_$exp.zip",
+				-Access_Control_Allow_Origin => '*',
+				-Access_Control_Expose_Headers => 'Content-Disposition',
+			);
+		}
 	}
 
 	if ($target eq "home") {
-		$zip -> addTree("$userDir",'');
+		opendir(DIR,$userDir);
+		foreach my $id (readdir(DIR)) {
+			next if (-f $id || $id !~ /^exp/);
+			$zip -> addTree("$userDir/$id","$id");
+		}
+		closedir(DIR);
 		print header(
 			-type => 'application/zip',
 			-attachment => "${user}_home.zip",
