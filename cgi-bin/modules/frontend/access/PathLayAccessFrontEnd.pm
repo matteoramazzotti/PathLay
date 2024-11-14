@@ -265,7 +265,7 @@ sub AccessBuilderNew {
 
         my @boxIcons = (
             '<a onClick=performAction("editConf","'.$exp.'") class="exp-package-item-icon" style="'.$style1.'"><i class="material-icons">edit_note</i><span>Configure Analysis</span></a>',
-            '<a onClick=performAction("runLast","'.$exp.'") class="exp-package-item-icon" style="'.$style2.'"><i class="material-icons">download</i><span>Run Last Configuration</span></a>',
+            '<a onClick=performAction("runLast","'.$exp.'") class="exp-package-item-icon" style="'.$style2.'"><i class="material-icons">keyboard_double_arrow_right</i><span>Run Last Configuration</span></a>',
         );
         foreach my $icon (@boxIcons) {
             $boxIconsDiv -> ContentLoader(
