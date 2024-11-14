@@ -171,7 +171,7 @@ sub HomeBuilderNew {
             );
         }
 
-        my $expID = $parameters -> {_exps_available} -> {$exp} -> {conf_data} -> {expname};
+        my $expID = $parameters -> {_exps_available} -> {$exp} -> {conf_data} -> {expname} ? $parameters -> {_exps_available} -> {$exp} -> {conf_data} -> {expname} : "No Title";
 
         $box -> ContentLoader(
             Content => "<span>Title: ${expID}</span>"
