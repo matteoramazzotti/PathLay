@@ -221,6 +221,18 @@ sub prepareONTsForFrontend {
     return($ont2gene_js_var,@ont_select_options);
 }
 
+sub changePermissions {
+  my %args = (
+    Input => "",
+    @_,
+  );
+  my $input = $args{Input};
+
+  system("chgrp -R www-data $input");
+	system("chmod -R 774 $input");
+	system("chmod g+s $input");
+}
+
 package Parameters;
     sub new {
 
