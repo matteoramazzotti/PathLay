@@ -254,8 +254,8 @@ sub AccessBuilderNew {
         );
 
 
-        my $confAvailable = checkFile(File=>"$parameters->{_userdir}/$exp.conf");
-        my $lastAvailable = checkFile(File=>"$parameters->{_userdir}/$exp.last");;
+        my $confAvailable = checkFile(File=>"$parameters->{_userdir}/${exp}/$exp.conf");
+        my $lastAvailable = checkFile(File=>"$parameters->{_userdir}/${exp}/$exp.last");;
 
         
 
