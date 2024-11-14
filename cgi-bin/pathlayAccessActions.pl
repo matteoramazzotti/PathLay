@@ -64,7 +64,7 @@ if ($action eq "checkConf") {
 	};
 	my @cols = ('_id_column','_dev_column','_pvalue_column');
 
-	if (-z "$parameters->{_userdir}/$expId.conf") {
+	if (-z "$parameters->{_userdir}/$expId/$expId.conf") {
 		$response->{status} = 'error';
 		$response->{message} = 'Experiment Package not configured: check it in Home section';
 		$response = to_json($response);
@@ -72,7 +72,7 @@ if ($action eq "checkConf") {
 		print $response;
 		exit;
 	}
-	open(IN,"$parameters->{_userdir}/$expId.conf") or die "Error opening conf file!\n";
+	open(IN,"$parameters->{_userdir}/$expId/$expId.conf") or die "Error opening conf file!\n";
 	while(<IN>) {
 		chomp;
 		my ($tag,$val) = split("=");
@@ -88,7 +88,7 @@ if ($action eq "checkConf") {
 		}
 		#check if data is available
 		my $ext = $alias->{$omic} ? $alias->{$omic} : $omic;
-		$response->{checks}->{$omic}->{dataAvailable} = -z "$parameters->{_userdir}/$expId.$ext" ? 0 : 1;
+		$response->{checks}->{$omic}->{dataAvailable} = -z "$parameters->{_userdir}/${expId}/$expId.$ext" ? 0 : 1;
 	}
 	print STDERR Dumper $response;
 	$response->{status} = 'ok';
@@ -106,7 +106,7 @@ if ($action eq "loadLastConf") {
 		message => ''
 	};
 	my @omics = ('gene','prot','urna','meth','chroma','meta');
-	if (-z "$parameters->{_userdir}/$expId.last") {
+	if (-z "$parameters->{_userdir}/$expId/$expId.last") {
 		$response->{status} = 'error';
 		$response->{message} = 'There is no previous configuration';
 		$response = to_json($response);
@@ -114,7 +114,7 @@ if ($action eq "loadLastConf") {
 		print $response;
 		exit;
 	}
-	open(IN,"$parameters->{_userdir}/$expId.last") or die "Error opening last file!\n";
+	open(IN,"$parameters->{_userdir}/$expId/$expId.last") or die "Error opening last file!\n";
 	while(<IN>) {
 		chomp;
 		my ($tag,$val) = split("=");
@@ -169,7 +169,7 @@ if ($action eq "loadExpData") {
 	my $data = {};
 	my @onts = [];
 
-	if (-z "$parameters->{_userdir}/$expId.conf") {
+	if (-z "$parameters->{_userdir}/$expId/$expId.conf") {
 		$response->{status} = 'error';
 		$response->{message} = 'Experiment Package not configured: check it in Home section';
 		$response = to_json($response);
@@ -178,14 +178,14 @@ if ($action eq "loadExpData") {
 		exit;
 	}
 	my $expConf = loadConf(
-		confFile => "$parameters->{_userdir}/$expId.conf"
+		confFile => "$parameters->{_userdir}/$expId/$expId.conf"
 	);
 
 	
 	foreach my $ext (("mrna","prot","mirna","meth","chroma","meta")) {
 		my $omic = $ext eq "mrna" ? "gene" : $ext eq "mirna" ? "urna" : $ext;
-		if (-e "$parameters->{_userdir}/$expId.$ext") {
-			$data->{$omic}->{textData} = read_file("$parameters->{_userdir}/$expId.$ext", chomp => 0);
+		if (-e "$parameters->{_userdir}/$expId/$expId.$ext") {
+			$data->{$omic}->{textData} = read_file("$parameters->{_userdir}/$expId/$expId.$ext", chomp => 0);
 			@{$data->{$omic}->{objData}} = parseTextData(
 				textData => $data->{$omic}->{textData},
 				expConf => $expConf->{$omic}
@@ -194,8 +194,8 @@ if ($action eq "loadExpData") {
 			$data->{$omic}->{textData} = '';
 		}
 	}
-	if (-e "$parameters->{_userdir}/$expId.ont") {
-		@onts = read_file("$parameters->{_userdir}/$expId.ont", chomp => 1);
+	if (-e "$parameters->{_userdir}/$expId/$expId.ont") {
+		@onts = read_file("$parameters->{_userdir}/$expId/$expId.ont", chomp => 1);
 	}
 
 
@@ -251,10 +251,10 @@ if ($action eq "updateLastConf") {
 			$lastFile->{$omic}->{"${omic}NoDEFromIdOnlyCheck"} = $conf->{omicConfs}->{$omic}->{noDeLoadIdOnlyEnabled} ? 1 : 0;
 		}
 	}
-	print STDERR "${userDir}${expId}.last\n";
+	print STDERR "${userDir}/${expId}/${expId}.last\n";
 	print STDERR Dumper $conf;
 	print STDERR Dumper $lastFile;
-	open(LAST,">","${userDir}${expId}.last");
+	open(LAST,">","${userDir}/${expId}/${expId}.last");
 	print LAST "maps_db_select=$lastFile->{maps_db_select}\n";
 	print LAST "FETPooling=$lastFile->{FETPooling}\n";
 	print LAST "FETIntersect=$lastFile->{FETIntersect}\n";

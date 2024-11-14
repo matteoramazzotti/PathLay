@@ -73,25 +73,29 @@ sub ExtractZip {
 	my $home = $parameters -> {_home};
 	my $userDir = $parameters->{_userdir};
 
-	my $expn = 0;
-	foreach (1..10000) {
-		$expn++;
-		last if (!-e "$userDir/exp${expn}.conf");
-	}
+	my $expn = getExpToAdd(
+		userDir => $parameters->{_userdir}
+	);
 	$zip = Archive::Zip->new($zip);
 	my @members = $zip -> memberNames();
-	foreach my $file (@members) {
-		$zip->extractMember($file,"$userDir/exp$expn.conf") if ($file =~ /\.conf/);
-		$zip->extractMember($file,"$userDir/exp$expn.last") if ($file =~ /\.last/);
-		$zip->extractMember($file,"$userDir/exp$expn.sel") if ($file =~ /\.sel/);
-		$zip->extractMember($file,"$userDir/exp$expn.mirna") if ($file =~ /\.mirna/);
-		$zip->extractMember($file,"$userDir/exp$expn.mrna") if ($file =~ /\.mrna/);
-		$zip->extractMember($file,"$userDir/exp$expn.meta") if ($file =~ /\.meta/);
-		$zip->extractMember($file,"$userDir/exp$expn.prot") if ($file =~ /\.prot/);
-		$zip->extractMember($file,"$userDir/exp$expn.chroma") if ($file =~ /\.chroma/);
-		$zip->extractMember($file,"$userDir/exp$expn.meth") if ($file =~ /\.meth/);
-		$zip->extractMember($file,"$userDir/exp$expn.ont") if ($file =~ /\.ont/);
+	if (!-d "$userDir/exp$expn") {
+		mkdir("$userDir/exp$expn/");
 	}
+	foreach my $file (@members) {
+		$zip->extractMember($file,"$userDir/exp$expn/exp$expn.conf") if ($file =~ /\.conf/);
+		$zip->extractMember($file,"$userDir/exp$expn/exp$expn.last") if ($file =~ /\.last/);
+		$zip->extractMember($file,"$userDir/exp$expn/exp$expn.sel") if ($file =~ /\.sel/);
+		$zip->extractMember($file,"$userDir/exp$expn/exp$expn.mirna") if ($file =~ /\.mirna/);
+		$zip->extractMember($file,"$userDir/exp$expn/exp$expn.mrna") if ($file =~ /\.mrna/);
+		$zip->extractMember($file,"$userDir/exp$expn/exp$expn.meta") if ($file =~ /\.meta/);
+		$zip->extractMember($file,"$userDir/exp$expn/exp$expn.prot") if ($file =~ /\.prot/);
+		$zip->extractMember($file,"$userDir/exp$expn/exp$expn.chroma") if ($file =~ /\.chroma/);
+		$zip->extractMember($file,"$userDir/exp$expn/exp$expn.meth") if ($file =~ /\.meth/);
+		$zip->extractMember($file,"$userDir/exp$expn/exp$expn.ont") if ($file =~ /\.ont/);
+	}
+	changePermissions(
+		Input => "$userDir/exp$expn"
+	);
 }
 sub DownloadZip {
 
@@ -110,7 +114,7 @@ sub DownloadZip {
 	my $user = $parameters -> {_username};
 	my $home = $parameters -> {_home};
 	my $userDir = $parameters->{_userdir};
-	print STDERR "$userDir\n";
+	print STDERR "$userDir/$exp\n";
 	my $zip = Archive::Zip->new();
 
 	if ($target eq "experiment" && $exp) {
@@ -294,13 +298,14 @@ sub DeleteExp {
 	my $userHome = $args{userHome};
 	my $expId = $args{expId};
 	return if (!$expId);
-	opendir(DIR,$userHome);
+	opendir(DIR,"$userHome/$expId/");
 	foreach my $file (readdir(DIR)){
 		if ($file =~ $expId) {
-			unlink("$userHome/$file");
+			unlink("$userHome/$expId/$file");
 		}
 	}
 	closedir(DIR);
+	rmdir("$userHome/$expId");
 }
 sub PoolDownload {
 	my %args = (
@@ -321,28 +326,22 @@ sub getExpToAdd {
 	);
 	my $userDir = $args{userDir};
 
-	my $first = 1;
 	my $max;
+
 	opendir(DIR,$userDir);
-	foreach my $file (sort(readdir(DIR))) {
-		next if ($file !~ /^exp/);
-		my $n = $file;
-		$n =~ s/\..+$//;
-		$n =~ s/exp//;
-		if ($first == 1) {
-			$max = $n;
-			$first = 0;
-			next;
-		}
-		if ($n > $max) {
-			$max = $n;
-		}
+	my @folderContent = readdir(DIR);
+	my @expFolders;
+	foreach my $folder (@folderContent) {
+		next if (-f $folder || $folder !~ /^exp(.+?)$/);
+		push(@expFolders,$folder);
+	}
+	my $limit = scalar(@expFolders) + 1;
+	foreach (1..$limit) {
+		next if (-d "$args{userDir}/exp$_");
+		$max = $_;
+		last;
 	}
 	closedir(DIR);
-
-	if (!$max) {
-		$max = 1;
-	}
 	return($max);
 }
 

@@ -144,8 +144,11 @@ if ($action eq "addNewExp") {
 	$parameters -> {_expname} = getExpToAdd(
 		userDir => $parameters->{_userdir}
 	);
-	$parameters->{_expname} += 1;
-	write_file("$parameters->{_userdir}/exp$parameters->{_expname}.conf", '');
+	mkdir("$parameters->{_userdir}/exp$parameters->{_expname}");
+	write_file("$parameters->{_userdir}/exp$parameters->{_expname}/exp$parameters->{_expname}.conf", '');
+	changePermissions(
+		Input => "$parameters->{_userdir}/exp$parameters->{_expname}"
+	);
 	print $cgi->header('application/json');
 	print to_json(
 		{
@@ -157,8 +160,9 @@ if ($action eq "addNewExp") {
 if ($action eq "saveExp") {
 	my $data = decode_json($cgi->param('data'));
 	my $expId = $data->{id};
+	mkdir("$parameters->{_userdir}/$expId");
 
-	open(OUT,'>',"$parameters->{_userdir}/$expId.conf");
+	open(OUT,'>',"$parameters->{_userdir}/${expId}/$expId.conf");
 	print OUT "expname=$data->{title}\n";
 	print OUT "comments=$data->{comments}\n";
 	print OUT "organism=$data->{organism}\n";
@@ -172,17 +176,21 @@ if ($action eq "saveExp") {
 
 	foreach my $omic (("gene","prot","urna","meth","meta","chroma")) {
 		my $ext = $omic eq "gene" ? "mrna" : $omic eq "urna" ? "mirna" : $omic;
-		open(OUT,'>',"$parameters->{_userdir}/${expId}.${ext}");
+		open(OUT,'>',"$parameters->{_userdir}/${expId}/${expId}.${ext}");
 		print OUT $data->{omics}->{$omic}->{textData};
 		close(OUT);
 	}
 
 	print STDERR Dumper $data->{onts};
-	open(OUT,'>',"$parameters->{_userdir}/${expId}.ont");
+	open(OUT,'>',"$parameters->{_userdir}/${expId}/${expId}.ont");
 	foreach my $ontId (sort @{$data->{onts}}) {
 		print OUT "$ontId\n";
 	}
 	close(OUT);
+
+	changePermissions(
+		Input => "$parameters->{_userdir}/$expId"
+	);
 
 	print $cgi->header('application/json');
 	print to_json(
@@ -218,7 +226,7 @@ if ($action eq "loadExpConf") {
 	my $expId = $cgi->param('exp');
 	#load conf for selected exp
 	my $conf = {};
-	open (IN,"$parameters->{_userdir}/$expId.conf");
+	open (IN,"$parameters->{_userdir}/$expId/$expId.conf");
 	while(<IN>) {
 		chomp;
 		my ($tag,$value) = split("=");
@@ -251,14 +259,14 @@ if ($action eq "loadExpData") {
 
 	foreach my $ext (("mrna","prot","mirna","meth","chroma","meta")) {
 		my $omic = $ext eq "mrna" ? "gene" : $ext eq "mirna" ? "urna" : $ext;
-		if (-e "$parameters->{_userdir}/$expId.$ext") {
+		if (-e "$parameters->{_userdir}/$expId/$expId.$ext") {
 			$data->{$omic} = read_file("$parameters->{_userdir}/$expId.$ext", chomp => 0);
 		} else {
 			$data->{$omic} = '';
 		}
 	}
 
-	if (-e "$parameters->{_userdir}/$expId.ont") {
+	if (-e "$parameters->{_userdir}/$expId/$expId.ont") {
 		@onts = read_file("$parameters->{_userdir}/$expId.ont", chomp => 1);
 	}
 
