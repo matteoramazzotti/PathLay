@@ -407,7 +407,9 @@ package Parameters;
         my @nexps;
 
         foreach my $file (readdir(DIR)) {
-            if ($file =~ /exp(.+?)\.conf$/) {
+          next if ($file !~ /exp(.+?)$/);
+          print STDERR "$file\n";
+            if ($file =~ /exp(.+?)$/) {
                 push(@nexps,$1);
             }
         }
@@ -421,7 +423,7 @@ package Parameters;
             $self -> {_exps_available} -> {"exp$e"} -> {prot_file} = "exp$e.prot";
             $self -> {_exps_available} -> {"exp$e"} -> {last_file} = "exp$e.last";
             print STDERR $self->{_exps_available}->{"exp$e"}->{conf_file}."\n";
-            open(CONFIG,$args{UsersDir}.$self->{_exps_available}->{"exp$e"}->{conf_file}) or print "No".$args{UsersDir}.$self->{_exps_available}->{"exp$e"}->{conf_file}."<br>";
+            open(CONFIG,$args{UsersDir}."/exp$e/".$self->{_exps_available}->{"exp$e"}->{conf_file}) or print "No".$args{UsersDir}.$self->{_exps_available}->{"exp$e"}->{conf_file}."<br>";
             while (<CONFIG>) {
                 chomp;
                 next if ($_ !~ /\w/);
@@ -430,7 +432,7 @@ package Parameters;
                 print STDERR $field.":".$value."\n";
             }
             close(CONFIG);
-            open(LAST,$args{UsersDir}.$self->{_exps_available}->{"exp$e"}->{last_file}) or print STDERR "No".$args{UsersDir}.$self->{_exps_available}->{"exp$e"}->{last_file}."<br>";
+            open(LAST,$args{UsersDir}."/exp$e/".$self->{_exps_available}->{"exp$e"}->{last_file}) or print STDERR "No".$args{UsersDir}.$self->{_exps_available}->{"exp$e"}->{last_file}."<br>";
             if ($args{UsersDir}.$self->{_exps_available}->{"exp$e"}->{last_file}) {
                 while (<LAST>) {
                     chomp;
@@ -660,14 +662,14 @@ package Parameters;
         my $expId = $args{expId};
         $self -> {_exp_select} = $expId;
         #load conf
-        open (IN,"$self->{_userdir}/${expId}.conf");
+        open (IN,"$self->{_userdir}/${expId}/${expId}.conf");
         while (<IN>) {
             chomp;
             my ($tag,$value) = split("=",$_);
             $self -> {"_${tag}"} = $value;
         }
         close(IN);
-        open(IN,"$self->{_userdir}/${expId}.last");
+        open(IN,"$self->{_userdir}/${expId}/${expId}.last");
         while (<IN>) {
             chomp;
             my ($tag,$value) = split("=",$_);
@@ -676,8 +678,8 @@ package Parameters;
         close(IN);
         foreach my $dataType (("gene","prot","urna","meth","chroma","meta")) {
             my $ext = $dataType eq "gene" ? "mrna" : $dataType eq "urna" ? "mirna" : $dataType;
-            if (-e "$self->{_userdir}/${expId}.${ext}") {
-                $self->{"_${dataType}_data"} = read_file("$self->{_userdir}/$expId.$ext", chomp => 0);
+            if (-e "$self->{_userdir}/${expId}/${expId}.${ext}") {
+                $self->{"_${dataType}_data"} = read_file("$self->{_userdir}/$expId/$expId.$ext", chomp => 0);
             }
         }
         $self -> {_org} = $self -> {_organism};
@@ -707,7 +709,7 @@ package Parameters;
         print STDERR $FindBin::Bin."\n";
         
 
-        open(LAST,">",$self->{_userdir}."/".$self -> {_exp_select}.".last");
+        open(LAST,">","$self->{_userdir}/$self -> {_exp_select}/$self -> {_exp_select}.last");
         print LAST "maps_db_select=".$self -> {_maps_db_select}."\n";
         if ($self -> {_FETPooling}) {
             print LAST "FETPooling=".$self -> {_FETPooling}."\n";
