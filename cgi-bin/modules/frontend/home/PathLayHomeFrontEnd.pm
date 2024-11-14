@@ -77,9 +77,6 @@ sub HomeBuilderNew {
         @_
     );
     my $parameters = $args{Parameters};
-        $parameters -> LoadAvailableExps(
-        UsersDir => $parameters->{_base}."/pathlay_users/".$parameters->{_home}."/"
-    );
 
     my $home_script = home_script_Packager(
         Parameters => $parameters
