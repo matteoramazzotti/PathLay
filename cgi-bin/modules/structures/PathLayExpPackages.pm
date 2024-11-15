@@ -28,8 +28,8 @@ package ExpONTs;
         my $ont_db_location = $parameters -> {_ont_db_location};
 
         my $debug = 0;
-        if ( -e $base.$user."/"."$exp.ont") {
-            open(IN,$base.$user."/"."$exp.ont");
+        if ( -e $base.$user."/$exp/"."$exp.ont") {
+            open(IN,$base.$user."/$exp/"."$exp.ont");
             while (<IN>) {
                 chomp;
                 next if ($_ eq "");
