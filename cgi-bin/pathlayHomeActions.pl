@@ -266,14 +266,14 @@ if ($action eq "loadExpData") {
 	foreach my $ext (("mrna","prot","mirna","meth","chroma","meta")) {
 		my $omic = $ext eq "mrna" ? "gene" : $ext eq "mirna" ? "urna" : $ext;
 		if (-e "$parameters->{_userdir}/$expId/$expId.$ext") {
-			$data->{$omic} = read_file("$parameters->{_userdir}/$expId.$ext", chomp => 0);
+			$data->{$omic} = read_file("$parameters->{_userdir}/$expId/$expId.$ext", chomp => 0);
 		} else {
 			$data->{$omic} = '';
 		}
 	}
 
 	if (-e "$parameters->{_userdir}/$expId/$expId.ont") {
-		@onts = read_file("$parameters->{_userdir}/$expId.ont", chomp => 1);
+		@onts = read_file("$parameters->{_userdir}/$expId/$expId.ont", chomp => 1);
 	}
 
 
