@@ -129,7 +129,91 @@ var currentConf = {
 
 
 };
-
+var defaultConf = {
+  meth: {
+    LeftEffectSizeCheck: false,
+    enabled: true,
+    pValCheck: true,
+    IdOnlyCheck: true,
+    RightEffectSizeCheck: false,
+    LeftThreshold: "-1",
+    enabledFET: false,
+    NoDEFromIdOnlyCheck: true,
+    pValThreshold: "0.05",
+    RightThreshold: "1",
+    nodeg_select: true
+  },
+  chroma: {
+    pValThreshold: "0.05",
+    RightThreshold: "1",
+    nodeg_select: true,
+    LeftEffectSizeCheck: true,
+    pValCheck: false,
+    IdOnlyCheck: true,
+    enabled: true,
+    RightEffectSizeCheck: true,
+    LeftThreshold: "-1",
+    enabledFET: false,
+    NoDEFromIdOnlyCheck: false
+  },
+  FETIntersect: false,
+  urna: {
+    RightThreshold: "1",
+    pValThreshold: "0.05",
+    nodeg_select: true,
+    enabledFET: false,
+    LeftThreshold: "-1",
+    RightEffectSizeCheck: true,
+    enabled: true,
+    IdOnlyCheck: true,
+    LeftEffectSizeCheck: true,
+    pValCheck: true,
+    NoDEFromIdOnlyCheck: false
+  },
+  prot: {
+    IdOnlyCheck: true,
+    LeftEffectSizeCheck: true,
+    enabled: true,
+    enabletfsIdOnly: false,
+    enabledFET: false,
+    pValThreshold: "0.05",
+    enabletfs: false,
+    tfsNoDEFromIdOnlyCheck: false,
+    pValCheck: false,
+    RightEffectSizeCheck: true,
+    nodeg_select_tf: false,
+    LeftThreshold: "-1",
+    RightThreshold: "1"
+  },
+  gene: {
+    enabletfsIdOnly: false,
+    enabledFET: false,
+    LeftEffectSizeCheck: true,
+    enabled: true,
+    IdOnlyCheck: true,
+    enabletfs: true,
+    tfsNoDEFromIdOnlyCheck: false,
+    pValThreshold: "0.05",
+    LeftThreshold: "-1",
+    nodeg_select_tf: false,
+    pValCheck: true,
+    RightEffectSizeCheck: true,
+    RightThreshold: "1"
+  },
+  mapsDB: "kegg",
+  meta: {
+    RightThreshold: "1",
+    pValThreshold: "0.05",
+    RightEffectSizeCheck: true,
+    enabled: true,
+    pValCheck: true,
+    LeftEffectSizeCheck: true,
+    IdOnlyCheck: true,
+    enabledFET: false,
+    LeftThreshold: "-0.5"
+  },
+  FETPooling: false
+};
 
 // check for errors in the interface
 
@@ -236,7 +320,7 @@ document.addEventListener("DOMContentLoaded", async function() {
 		console.log(checkConf)
 		expConf = await loadExpConf();
 		[expData,expOnts] = await loadExpData();
-		lastConf = await loadLastConf();
+		lastConf = await loadLastConf() ? await loadLastConf() : defaultConf;
 		fillExpGenerics(expConf);
 		loadPageContent(expConf.organism);
 		fillFETExtras(lastConf);
