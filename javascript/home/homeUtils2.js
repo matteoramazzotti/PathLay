@@ -117,7 +117,6 @@ async function submitForm(event) {
 async function uploadFileAndReload(query, formData) {
 	try {
 			const { result, response } = await postRequest(query, formData);
-			alert(result);
 			window.location.reload();
 			return response;
 	} catch (error) {
@@ -139,7 +138,6 @@ async function performAction(action, exp) {
 		formData.append('exp', exp);
 		try {
 			const { result, response } = await postRequest("../cgi-bin/pathlayHomeActions.pl?action=deleteExp", formData);
-			alert(result);
 			window.location.reload();
 			return response;
 		} catch (error) {
