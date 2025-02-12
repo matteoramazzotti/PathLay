@@ -9,6 +9,7 @@ services:
     volumes:
       - ./pathlay_users:/var/www/html/pathlay/pathlay_users
       - ./pathlay_data:/var/www/html/pathlay/pathlay_data
+    command: sh -c "chown -R 33:33 /var/www/html/pathlay && chmod -R 775 /var/www/html/pathlay && /usr/sbin/apache2 -D FOREGROUND"
     restart: unless-stopped
     environment:
       - LANG=C
