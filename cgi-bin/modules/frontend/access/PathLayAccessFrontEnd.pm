@@ -231,9 +231,11 @@ sub AccessBuilderNew {
     my $header = new HTMLDiv(
         _class => "header"
     );
+
     $header -> ContentLoader(
         Content => "<h1>PathLay - Conf</h1>"
     );
+    
     my $container = new HTMLDiv(
         _class => "container"
     );
@@ -264,8 +266,8 @@ sub AccessBuilderNew {
         my $style2 = $lastAvailable ? "" : "color: red; pointer-events: none;";
 
         my @boxIcons = (
-            '<a onClick=performAction("editConf","'.$exp.'") class="exp-package-item-icon" style="'.$style1.'"><i class="material-icons">edit_note</i><span>Configure Analysis</span></a>',
-            '<a onClick=performAction("runLast","'.$exp.'") class="exp-package-item-icon" style="'.$style2.'"><i class="material-icons">keyboard_double_arrow_right</i><span>Run Last Configuration</span></a>',
+            '<a expId="'.$exp.'"  class="exp-package-item-icon configure-button" style="'.$style1.'"><i class="material-icons">edit_note</i><span>Configure Analysis</span></a>',
+            '<a expId="'.$exp.'"  class="exp-package-item-icon run-last-button" style="'.$style2.'"><i class="material-icons">keyboard_double_arrow_right</i><span>Run Last Configuration</span></a>',
         );
         foreach my $icon (@boxIcons) {
             $boxIconsDiv -> ContentLoader(
