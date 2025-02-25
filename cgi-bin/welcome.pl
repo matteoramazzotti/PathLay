@@ -17,7 +17,7 @@ if ($client eq "::1") { #handling ipv6
 my $session_id = $cgi->param('sid');
 
 # Load the session using the session ID
-my $session = CGI::Session->new($session_id);
+my $session = CGI::Session->load($session_id);
 
 # Retrieve the username from the session
 my $username = $session->param('username');
