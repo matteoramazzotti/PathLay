@@ -118,7 +118,6 @@ function addGlobalEventListener(type, selector, callback, options) {
 
 function showSecondParty(first_party) {
 
-    console.log(first_party);
     // each function call wll firstly reset the logistics_div_selectors div
     if (document.getElementById('agreement_selector2')) {
         document.getElementById('logistics_div_agreement_selectors').removeChild(document.getElementById('agreement_selector2'));
@@ -582,7 +581,6 @@ function spawnTFSelectors(){
 
     selectHLDefault.add(firstOpt,0);
     let selectHLDynamic = selectHLDefault.cloneNode(true);
-    console.log(selectHLDynamic);
     let selectID = selectHLDefault.cloneNode(true);
     selectID.id = "tfIDSelect";
     selectHLDefault.id = "tfHLDefault";
@@ -600,7 +598,6 @@ function spawnTFSelectors(){
         document.getElementById("idselectors").appendChild(selectHLDefault);
     }
     if (!document.getElementById(selectHLDynamic.id)) {
-        console.log("Appending");
         document.getElementById("idselectors").appendChild(selectHLDynamic);
     }
     document.getElementById("logistics_div_selectors").appendChild(selectID);
@@ -618,8 +615,6 @@ function spawnTFSelectors(){
     document.getElementById("tfHLDynamic").addEventListener("change",function () {
         selectorInterface.updateSelected("tfHLDynamic");
     });
-    console.log(selectHLDynamic);
-
 }
 
 function spawnIDSelector(type) {
