@@ -996,7 +996,7 @@ sub ResultsBuilder {
             _value => "none",
             _text => "Ontologies"
         );
-
+        $parameters -> {_enablenodeg} = $parameters -> {_nodeg_select_urna} || $parameters -> {_nodeg_select_meth} || $parameters -> {_nodeg_select_chroma} ? 1 : 0;
         if ($parameters -> {_enablegene} || $parameters -> {_enablenodeg} || $parameters -> {_enablemeth}) {
             foreach (@ont_select_options) {
                 $ont_selector_main_html -> LoadOption(
