@@ -1,4 +1,4 @@
-import {performAction} from "../accessUtils.js";
+import { performAction } from "../accessUtils.js";
 
 Array.from(document.getElementsByClassName("configure-button")).forEach(element => {
 	element.addEventListener("click", function() {
