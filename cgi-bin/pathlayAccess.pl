@@ -55,7 +55,8 @@ if ($mode eq 'list') {
 	);
 	AccessPrinterNew(
 		script => $access_script,
-		form => $parentDiv
+		form => $parentDiv,
+		action => "list"
 	);
 }
 
@@ -69,6 +70,7 @@ if ($mode eq 'conf') {
 
 	AccessPrinterNew(
 		script => $access_script,
-		form => $parentDiv
+		form => $parentDiv,
+		action => "conf"
 	);
 }

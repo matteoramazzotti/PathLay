@@ -2195,7 +2195,7 @@ sub AccessPrinterNew {
     my %args = (
         @_
     );
-
+    my $action = $args{action};
     my $script = $args{script};
     my $container = $args{form};
     print "Content-type: text/html\n\n";
@@ -2209,6 +2209,15 @@ sub AccessPrinterNew {
     # print '<link rel="stylesheet" href="../css/ul.css">'."\n";
     # print '<link rel="stylesheet" href="../css/mainDivsHome.css">'."\n";
     # print '<link rel="stylesheet" href="../css/pathlayHome.css">'."\n";
+    print '<script src="../javascript/access/accessUtils.js" type="module"></script>'."\n";
+    if ($action eq "list") {
+        print '<script src="../javascript/access/list/onloadList.js" type="module"></script>'."\n";
+        print '<script src="../javascript/access/list/accessUtilsList.js" type="module"></script>'."\n";
+    }
+    if ($action eq "conf") {
+        print '<script src="../javascript/access/edit/accessUtilsEdit.js" type="module"></script>'."\n";
+        print '<script src="../javascript/access/edit/onloadEdit.js" type="module"></script>'."\n";
+    }
     print '<link rel="stylesheet" href="../css/pathlayAccess.css">'."\n";
     print '<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">'."\n";
     print '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">'."\n";
