@@ -1593,10 +1593,14 @@ sub access_script_Packager {
     my @js_variables;
     
     
-    $js_functions[0] = new HTMLScriptSrc(
-        _type => "text/javascript",
-        _src => $parameters -> {_jsdir}."access/accessUtils2.js"
-    );
+    # $js_functions[0] = new HTMLScriptSrc(
+    #     _type => "text/javascript",
+    #     _src => $parameters -> {_jsdir}."access/accessUtils2.js"
+    # );
+    # $js_functions[0] = new HTMLScriptSrc(
+    #     _type => "module",
+    #     _src => $parameters -> {_jsdir}."access/onloadEdit.js"
+    # );
 
     $access_script -> FunctionsLoader(
         Content => \@js_functions
