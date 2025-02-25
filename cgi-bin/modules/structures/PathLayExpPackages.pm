@@ -21,17 +21,18 @@ package ExpONTs;
             @_
         );
         my $parameters = $args{Parameters};
-        my $user = $parameters -> {_h3};
+        my $user = $parameters -> {_h3} ? $parameters -> {_h3} : $parameters->{_userdir};
         my $base = $user ne "6135251850" ? "../pathlay_users/" : "../demo_exps/";
         my $exp = $parameters -> {_exp_select};
         my $ont_db = $parameters -> {_ont_db_file};
         my $ont_db_location = $parameters -> {_ont_db_location};
 
-        my $debug = 0;
-        if ( -e $base.$user."/$exp/"."$exp.ont") {
-            open(IN,$base.$user."/$exp/"."$exp.ont");
+        my $debug = 1;
+        if ( -e $user."/$exp/"."$exp.ont") {
+            open(IN,$user."/$exp/"."$exp.ont");
             while (<IN>) {
                 chomp;
+                print STDERR "$_\n" if ($debug);
                 next if ($_ eq "");
                 $self -> {_ids} -> {$_} = 1;
             }
