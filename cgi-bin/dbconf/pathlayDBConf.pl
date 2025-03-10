@@ -17,7 +17,7 @@ my $session = CGI::Session->new($session_id);
 
 print STDERR "$0: $session_id\n";
 
-my $html_content = read_file('../db_conf.html');
+my $html_content = read_file('../../db_conf.html');
 
 print $cgi->header;
 print $html_content;

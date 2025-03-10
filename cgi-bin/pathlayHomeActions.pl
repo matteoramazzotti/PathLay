@@ -20,8 +20,8 @@ use File::Basename;
 use File::Slurp;
 use File::Temp qw(tempfile);
 use File::MimeInfo::Simple;
-use lib "$FindBin::Bin";
-use DBMaintainer;
+use lib "$FindBin::Bin/modules/dbconf/";
+use DBMaintainer "qw( HomoSapiensDB MusMusculusDB)";
 
 my $cgi = CGI->new;
 our $base = "$FindBin::Bin/..";

@@ -305,7 +305,7 @@ document.addEventListener("DOMContentLoaded", async function() {
 			document.body.innerHTML = errorPage;
 			document.getElementById("goBackButton").addEventListener('click', () => {
 				const baseUrl = `${window.location.protocol}//${window.location.host}${window.location.pathname}`;
-				let newUrl = `${baseUrl.replace('pathlayDBConf.pl', 'welcome.pl')}?sid=${sid}`;
+				let newUrl = `${baseUrl.replace('dbconf/pathlayDBConf.pl', 'dbconf/welcome.pl')}?sid=${sid}`;
 				window.location.href = newUrl;
 			})
 		} else {

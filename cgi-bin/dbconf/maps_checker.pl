@@ -11,7 +11,7 @@ use LWP::Simple;
 use Data::Dumper;
 use FindBin;
 # Include the custom library
-use lib "$FindBin::Bin";
+use lib "$FindBin::Bin/../modules/dbconf/";
 use DBMaintainer;
 
 my $sources = {
@@ -88,23 +88,23 @@ my $sources = {
 my $confsMapsDB = {
 	homo_sapiens => {
 		kegg => [
-			"../pathlay_data/hsa/db/kegg/hsa.kegg.genes.universe",
-			"../pathlay_data/hsa/db/kegg/hsa.kegg.gene.gmt",
-			"../pathlay_data/hsa/db/kegg/hsa.kegg.meta.gmt"
+			"../../pathlay_data/hsa/db/kegg/hsa.kegg.genes.universe",
+			"../../pathlay_data/hsa/db/kegg/hsa.kegg.gene.gmt",
+			"../../pathlay_data/hsa/db/kegg/hsa.kegg.meta.gmt"
 		],
 		wikipathways => [
-			"../pathlay_data/hsa/db/wikipathways/hsa.wikipathways.genes.universe",
-			"../pathlay_data/hsa/db/wikipathways/hsa.wikipathways.gmt"
+			"../../pathlay_data/hsa/db/wikipathways/hsa.wikipathways.genes.universe",
+			"../../pathlay_data/hsa/db/wikipathways/hsa.wikipathways.gmt"
 		]
 	},
 	mus_musculus => {
 		kegg => [
-			"../pathlay_data/mmu/db/kegg/mmu.kegg.genes.universe",
-			"../pathlay_data/mmu/db/kegg/mmu.kegg.gmt"
+			"../../pathlay_data/mmu/db/kegg/mmu.kegg.genes.universe",
+			"../../pathlay_data/mmu/db/kegg/mmu.kegg.gmt"
 		],
 		wikipathways => [
-			"../pathlay_data/mmu/db/wikipathways/mmu.wikipathways.genes.universe",
-			"../pathlay_data/mmu/db/wikipathways/mmu.wikipathways.gmt"
+			"../../pathlay_data/mmu/db/wikipathways/mmu.wikipathways.genes.universe",
+			"../../pathlay_data/mmu/db/wikipathways/mmu.wikipathways.gmt"
 		]
 	}
 };
@@ -148,14 +148,14 @@ my $response = {
 
 # Check for pathlay_data folder and assign correct permissions
 my @mandatoryFolders = (
-	"$FindBin::Bin/../pathlay_data/",
-	"$FindBin::Bin/../pathlay_data/pathways/",
-	"$FindBin::Bin/../pathlay_data/pathways/$dbSelected/",
-	"$FindBin::Bin/../pathlay_data/$organismCodes->{$organism}/",
-	"$FindBin::Bin/../pathlay_data/$organismCodes->{$organism}/db/",
-	"$FindBin::Bin/../pathlay_data/$organismCodes->{$organism}/db/$dbSelected/",
-	"$FindBin::Bin/../pathlay_data/$organismCodes->{$organism}/maps/",
-	"$FindBin::Bin/../pathlay_data/$organismCodes->{$organism}/maps/$dbSelected/"
+	"$FindBin::Bin/../../pathlay_data/",
+	"$FindBin::Bin/../../pathlay_data/pathways/",
+	"$FindBin::Bin/../../pathlay_data/pathways/$dbSelected/",
+	"$FindBin::Bin/../../pathlay_data/$organismCodes->{$organism}/",
+	"$FindBin::Bin/../../pathlay_data/$organismCodes->{$organism}/db/",
+	"$FindBin::Bin/../../pathlay_data/$organismCodes->{$organism}/db/$dbSelected/",
+	"$FindBin::Bin/../../pathlay_data/$organismCodes->{$organism}/maps/",
+	"$FindBin::Bin/../../pathlay_data/$organismCodes->{$organism}/maps/$dbSelected/"
 );
 
 foreach my $folder (@mandatoryFolders) {
@@ -236,7 +236,7 @@ foreach my $mapDB (@{$mapDBs -> {$organism}}) {
 		}
 	}
 
-	my $dirToCheck = "../pathlay_data/$organismCodes->{$organism}/maps/$mapDB/";
+	my $dirToCheck = "../../pathlay_data/$organismCodes->{$organism}/maps/$mapDB/";
 	if (!-d $dirToCheck) {
 		mkdir($dirToCheck);
 	}
@@ -254,7 +254,7 @@ foreach my $mapDB (@{$mapDBs -> {$organism}}) {
 		}
 	}
 
-	$dirToCheck = "../pathlay_data/pathways/$mapDB";
+	$dirToCheck = "../../pathlay_data/pathways/$mapDB";
 
 	my $foundImgs = {};
 	if (-d $dirToCheck) {
@@ -300,21 +300,21 @@ my $db = {
 };
 
 foreach my $dataType (('gene','meta')) {
-	if (!-e "$FindBin::Bin/../pathlay_data/$organismCodes->{$organism}/db/$dbSelected/$db->{$organism}->{universeFiles}->{$dataType}->{$dbSelected}") {
+	if (!-e "$FindBin::Bin/../../pathlay_data/$organismCodes->{$organism}/db/$dbSelected/$db->{$organism}->{universeFiles}->{$dataType}->{$dbSelected}") {
 		my $gmtFile = new GMTFile(
 			mapsDB => $dbSelected,
 			fileName => $db->{$organism}->{universeFiles}->{$dataType}->{$dbSelected},
 			organismCode => $organismCodes->{$organism},
-			filePath => "$FindBin::Bin/../pathlay_data/$organismCodes->{$organism}/db/$dbSelected/"
+			filePath => "$FindBin::Bin/../../pathlay_data/$organismCodes->{$organism}/db/$dbSelected/"
 		);
 		$gmtFile->createFromNodes(
-			nodesFolder => "$FindBin::Bin/../pathlay_data/$organismCodes->{$organism}/maps/$dbSelected/",
+			nodesFolder => "$FindBin::Bin/../../pathlay_data/$organismCodes->{$organism}/maps/$dbSelected/",
 			dataType => $dataType,
 			mapDB => $dbSelected,
 			organismCode => $organismCodes->{$organism}
 		);
 		$gmtFile->printContent(
-			outFile => "$FindBin::Bin/../pathlay_data/$organismCodes->{$organism}/db/$dbSelected/$db->{$organism}->{universeFiles}->{$dataType}->{$dbSelected}"
+			outFile => "$FindBin::Bin/../../pathlay_data/$organismCodes->{$organism}/db/$dbSelected/$db->{$organism}->{universeFiles}->{$dataType}->{$dbSelected}"
 		);
 	}
 }

@@ -8,7 +8,7 @@ package HomoSapiensDB;
 		my $self = {
 			code => "hsa",
 			msigdbCode => "human",
-			interactionDBPath => "../pathlay_data/OrganismCode/db/",
+			interactionDBPath => "../../pathlay_data/OrganismCode/db/",
 			fileNames => {
 				tf => "hsa_tf.gmt",
 				urna => "hsa_mirtarbase.tsv",
@@ -659,7 +659,7 @@ package MusMusculusDB;
 		my $self = {
 			code => "mmu",
 			msigdbCode => "mouse",
-			interactionDBPath => "../pathlay_data/OrganismCode/db/",
+			interactionDBPath => "../../pathlay_data/OrganismCode/db/",
 			fileNames => {
 				tf => "mmu_tf.gmt",
 				urna => "mmu_mirtarbase.tsv",
@@ -750,7 +750,7 @@ package KGML;
 			@_
 		};
 		if (!$self->{filePath}) {
-			$self->{filePath} = "../pathlay_data/$self->{organismCode}/maps/kegg/";
+			$self->{filePath} = "../../pathlay_data/$self->{organismCode}/maps/kegg/";
 		}
 		
 		die "ID for kgml file not provided!\n" unless $self->{fileName}; 
@@ -869,7 +869,7 @@ package GPML;
 			@_
 		};
 		if (!$self->{filePath}) {
-			$self->{filePath} = "../pathlay_data/$self->{organismCode}/maps/wikipathways/";
+			$self->{filePath} = "../../pathlay_data/$self->{organismCode}/maps/wikipathways/";
 		}
 		
 		die "ID for gpml file not provided!\n" unless $self->{fileName}; 
@@ -990,7 +990,7 @@ package Node;
 		};
 		die "ID for nodes file not provided!\n" unless $self->{fileName}; 
 		if (!$self->{filePath}) {
-			$self->{filePath} = "../pathlay_data/$self->{organismCode}/maps/$self->{mapsDB}/";
+			$self->{filePath} = "../../pathlay_data/$self->{organismCode}/maps/$self->{mapsDB}/";
 		}
 		bless $self,$class;
 		return($self);
@@ -1046,7 +1046,7 @@ package GMTFile;
 		};
 		die "ID gmt file not provided!\n" unless $self->{fileName}; 
 		if (!$self->{filePath}) {
-			$self->{filePath} = "../pathlay_data/$self->{organismCode}/db/$self->{mapsDB}/";
+			$self->{filePath} = "../../pathlay_data/$self->{organismCode}/db/$self->{mapsDB}/";
 		}
 		if ($self->{fileName} =~ /\.$self->{fileExt}$/) {
 			$self->{fileExt} = "";

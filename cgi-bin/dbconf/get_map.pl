@@ -13,8 +13,8 @@ use Encode;
 use Encode::Guess;
 
 # Include the custom library
-use lib "$FindBin::Bin";
-use DBMaintainer;
+use lib "$FindBin::Bin/../modules/dbconf/";
+use DBMaintainer "qw( HomoSapiensDB MusMusculusDB KGML GPML Node GMTFile)";
 
 
 

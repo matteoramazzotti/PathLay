@@ -10,8 +10,8 @@ use Data::Dumper;
 use JSON;
 use File::Slurp;
 
-use lib "$FindBin::Bin";
-use DBMaintainer;
+use lib "$FindBin::Bin/../modules/dbconf/";
+use DBMaintainer "qw( HomoSapiensDB MusMusculusDB)";
 my $query = CGI->new;
 
 
@@ -33,7 +33,7 @@ my $type = $query->param('type');
 # Process the uploaded file as tmp
 if (my $upload_filehandle = $query->upload('file')) {
   #my $filename = $query->param('file');
-  my $upload_path = "../pathlay_data/$db->{$organism}->{code}/db/$basename.tmp";
+  my $upload_path = "../../pathlay_data/$db->{$organism}->{code}/db/$basename.tmp";
 
   open my $out, '>', $upload_path or die "Cannot open $upload_path: $!";
   binmode $out;
@@ -80,7 +80,7 @@ if (my $url = $query->param('url')) {
 # Check if all file are present (either tmp or standard) and delete tmp
 my $score = 0;
 foreach my $dbType (sort keys %{$db->{$organism}->{fileNames}}) {
-  if (-e "../pathlay_data/$db->{$organism}->{code}/db/$db->{$organism}->{fileNames}->{$dbType}" || -e "../pathlay_data/$db->{$organism}->{code}/db/$db->{$organism}->{fileNames}->{$dbType}.tmp") {
+  if (-e "../../pathlay_data/$db->{$organism}->{code}/db/$db->{$organism}->{fileNames}->{$dbType}" || -e "../../pathlay_data/$db->{$organism}->{code}/db/$db->{$organism}->{fileNames}->{$dbType}.tmp") {
     $score++;
   }
 }

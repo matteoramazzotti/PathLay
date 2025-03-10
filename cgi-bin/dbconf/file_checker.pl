@@ -105,41 +105,41 @@ my $mapDBs = {
 };
 my $confsInteractions = {
 	homo_sapiens => [
-		"../pathlay_data/hsa/db/hsa_mirtarbase.tsv",
-		"../pathlay_data/hsa/db/hsa_ont.gmt",
-		"../pathlay_data/hsa/db/hsa_tf.gmt",
-		"../pathlay_data/hsa/db/hsa_uniprot.tsv",
-		"../pathlay_data/hsa/db/hsa.compound_info",
-		"../pathlay_data/hsa/db/hsa.gene_info"
+		"../../pathlay_data/hsa/db/hsa_mirtarbase.tsv",
+		"../../pathlay_data/hsa/db/hsa_ont.gmt",
+		"../../pathlay_data/hsa/db/hsa_tf.gmt",
+		"../../pathlay_data/hsa/db/hsa_uniprot.tsv",
+		"../../pathlay_data/hsa/db/hsa.compound_info",
+		"../../pathlay_data/hsa/db/hsa.gene_info"
 	],
 	mus_musculus => [
-		"../pathlay_data/mmu/db/mmu_mirtarbase.tsv",
-		"../pathlay_data/mmu/db/mmu_ont.gmt",
-		"../pathlay_data/mmu/db/mmu_tf.gmt",
-		"../pathlay_data/mmu/db/mmu_uniprot.tsv",
-		"../pathlay_data/mmu/db/mmu.compound_info",
-		"../pathlay_data/mmu/db/mmu.gene_info"
+		"../../pathlay_data/mmu/db/mmu_mirtarbase.tsv",
+		"../../pathlay_data/mmu/db/mmu_ont.gmt",
+		"../../pathlay_data/mmu/db/mmu_tf.gmt",
+		"../../pathlay_data/mmu/db/mmu_uniprot.tsv",
+		"../../pathlay_data/mmu/db/mmu.compound_info",
+		"../../pathlay_data/mmu/db/mmu.gene_info"
 	]
 };
 my $confsMapsDB = {
 	homo_sapiens => {
 		kegg => [
-			"../pathlay_data/hsa/db/kegg/hsa.kegg.genes.universe",
-			"../pathlay_data/hsa/db/kegg/hsa.kegg.gmt"
+			"../../pathlay_data/hsa/db/kegg/hsa.kegg.genes.universe",
+			"../../pathlay_data/hsa/db/kegg/hsa.kegg.gmt"
 		],
 		wikipathways => [
-			"../pathlay_data/hsa/db/wikipathways/hsa.wikipathways.genes.universe",
-			"../pathlay_data/hsa/db/wikipathways/hsa.wikipathways.gmt"
+			"../../pathlay_data/hsa/db/wikipathways/hsa.wikipathways.genes.universe",
+			"../../pathlay_data/hsa/db/wikipathways/hsa.wikipathways.gmt"
 		]
 	},
 	mus_musculus => {
 		kegg => [
-			"../pathlay_data/mmu/db/kegg/mmu.kegg.genes.universe",
-			"../pathlay_data/mmu/db/kegg/mmu.kegg.gmt"
+			"../../pathlay_data/mmu/db/kegg/mmu.kegg.genes.universe",
+			"../../pathlay_data/mmu/db/kegg/mmu.kegg.gmt"
 		],
 		wikipathways => [
-			"../pathlay_data/mmu/db/wikipathways/mmu.wikipathways.genes.universe",
-			"../pathlay_data/mmu/db/wikipathways/mmu.wikipathways.gmt"
+			"../../pathlay_data/mmu/db/wikipathways/mmu.wikipathways.genes.universe",
+			"../../pathlay_data/mmu/db/wikipathways/mmu.wikipathways.gmt"
 		]
 	}
 };
@@ -169,11 +169,11 @@ my $response = {
 
 # Check for pathlay_data folder and assign correct permissions
 my @mandatoryFolders = (
-	"$FindBin::Bin/../pathlay_data/",
-	"$FindBin::Bin/../pathlay_data/pathways/",
-	"$FindBin::Bin/../pathlay_data/$organismCodes->{$organism}/",
-	"$FindBin::Bin/../pathlay_data/$organismCodes->{$organism}/db/",
-	"$FindBin::Bin/../pathlay_data/$organismCodes->{$organism}/maps/",
+	"$FindBin::Bin/../../pathlay_data/",
+	"$FindBin::Bin/../../pathlay_data/pathways/",
+	"$FindBin::Bin/../../pathlay_data/$organismCodes->{$organism}/",
+	"$FindBin::Bin/../../pathlay_data/$organismCodes->{$organism}/db/",
+	"$FindBin::Bin/../../pathlay_data/$organismCodes->{$organism}/maps/",
 );
 
 foreach my $folder (@mandatoryFolders) {
