@@ -19,7 +19,7 @@ use PathLayResultsFrontEnd;
 use HTMLObjects;
 use Benchmark;
 use PathLayStatistic;
-use PathLayDBs;
+use PathLayDBs qw(protDB metaDB uRNADB geneDB TFs);
 use PathLayExpPackages;
 use PathLayComplex;
 use PathLayPathway;
