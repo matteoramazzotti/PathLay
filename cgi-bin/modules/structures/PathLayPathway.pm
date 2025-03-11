@@ -360,21 +360,15 @@ package Pathway;
 
 		my $self = shift;
 		my %args = (
-			ExpGenes  => {},
-			ExpProts  => {},
-			ExpNoDEGs => {},
-			ExpMetas  => {},
+			ExpPackages => {},
 			Params => {},
 			@_
 		);
 
 		my $parameters = $args{Params};
 		my $debug = 0;
-		my $degs = $args{ExpGenes};
-		my $deps = $args{ExpProts};
-		my $dems = $args{ExpMetas};
-		my $nodegs = $args{ExpNoDEGs};
-
+		
+		my $expPacks = $args{ExpPackages};
 
 		open(IN,$self -> {_source});
 		chomp(my @nodes = <IN>);
@@ -387,10 +381,10 @@ package Pathway;
 			my ($node_name,$node_type,$node_db,$node_id,@coords) = split(/\t/,$_);
 			# print STDERR "Checking $node_id\n";
 			next if (
-				!$degs -> {_data} -> {$node_id} &&
-				!$nodegs -> {_data} -> {$node_id} &&
-				!$dems -> {_data} -> {$node_id} &&
-				!$deps -> {_data} -> {$node_id}
+				!$expPacks -> {deg} -> {_data} -> {$node_id} &&
+				!$expPacks -> {nodeg} -> {_data} -> {$node_id} &&
+				!$expPacks -> {meta} -> {_data} -> {$node_id} &&
+				!$expPacks -> {prot} -> {_data} -> {$node_id}
 			);
 			# print STDERR "$node_id Passed\n";
 
@@ -398,46 +392,26 @@ package Pathway;
 			$self -> {_data} -> {$node_id} -> {name} = $node_name;
 			$self -> {_data} -> {$node_id} -> {db} = $node_db; #useless
 
-			if ($degs -> {_data} -> {$node_id} && !$deps -> {_data} -> {$node_id}) {
-				checkByType(
-					ExpToCheck => $degs,
-					DataType => "deg",
-					NodeId => $node_id,
-					Pathway => $self
-				);
-			}
-			if ($deps -> {_data} -> {$node_id} && !$degs -> {_data} -> {$node_id}) {
-				checkByType(
-					ExpToCheck => $deps,
-					DataType => "prot",
-					NodeId => $node_id,
-					Pathway => $self
-				);
-			}
-			if ($degs -> {_data} -> {$node_id} && $deps -> {_data} -> {$node_id}) {
+			if ($expPacks -> {deg} -> {_data} -> {$node_id} && $expPacks -> {prot} -> {_data} -> {$node_id}) {
 				checkDegProt(
-					ExpToCheckGene => $degs,
-					ExpToCheckProt => $deps,
+					ExpToCheckGene => $expPacks -> {deg},
+					ExpToCheckProt => $expPacks -> {prot},
 					Pathway => $self,
 					NodeId => $node_id
 				);
+			} else {
+				foreach my $type (("deg","prot","meta","nodeg")) {
+					if ($expPacks -> {$type} -> {_data} -> {$node_id}) {
+						checkByType(
+							ExpToCheck => $expPacks -> {$type},
+							DataType => $type,
+							NodeId => $node_id,
+							Pathway => $self
+						);
+					}
+				}
 			}
-			if ($dems -> {_data} -> {$node_id}) {
-				checkByType(
-					ExpToCheck => $dems,
-					DataType => "meta",
-					NodeId => $node_id,
-					Pathway => $self
-				);
-			}
-			if ($nodegs -> {_data} -> {$node_id}) {
-				checkByType(
-					ExpToCheck => $nodegs,
-					DataType => "nodeg",
-					NodeId => $node_id,
-					Pathway => $self
-				);
-			}
+			
 			@{$self -> {_data} -> {$node_id} -> {coordinates}} = @coords;
 			print STDERR "FOUND $node_id id at ".$self -> {_id}."\n" if ($debug);
 		}
