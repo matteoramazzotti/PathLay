@@ -63,11 +63,7 @@ foreach my $map (sort(@maps)) {
   );
   $pathway -> PathwayLoader(
     Params => $parameters,
-    ExpGenes  => $expPackages -> {gene},
-    ExpNoDEGs => $expPackages -> {nodeg},
-    ExpProts => $expPackages -> {prot},
-    ExpuRNAS  => $expPackages -> {urna},
-    ExpMetas  => $expPackages -> {meta}
+    ExpPackages => $expPackages,
   );
   #here proteins should be merged with genes
   #print STDERR Dumper $pathway;
