@@ -172,213 +172,61 @@ package Pathway;
 						}
 				}
 		}
-		sub LoadComplexes {
+	sub LoadComplexes {
 
-						my $self = shift;
-						my %args = (
-								@_
-						);
+		my $self = shift;
+		my %args = (
+			@_
+		);
 
+		my $count = 1;
+		my $parameters = $args{Parameters};
 
-						my @deg_complexes;
-						my @nodeg_complexes;
-						my @prot_complexes;
-						my @meta_complexes;
-						my @multi_complexes;
-						my $count = 1;
-						my $parameters = $args{Parameters};
+		#multi must be handled first due to not generate indicator duplicates
 
-						#multi must be handled first due to not generate indicator duplicates
-						foreach my $coord (sort keys %{$self -> {_nodes} -> {multi}}) {
-								my $complex = new Complex(
-										_id => $self -> {_id}."_$count",
-										_coordinates => $coord,
-										_type => "multi",
-										_index => $self -> {_index}
-								);
-								$complex -> CoordinatesTrimmer(
-										OffSetX => 25,
-										OffSetY => 25
-								);
-								$complex -> InitLegends(
-										MapName => $self -> {_name},
-										Parameters => $parameters
-								);
-								$complex -> ComplexLoader(
-										_ids => $self -> {_nodes} -> {multi} -> {$coord},
-										_data => $self -> {_data},
-										_nodes => $self -> {_nodes},
-										_multi_available => $self -> {_multi_available},
-										#_mode => $parameters -> {_mode_select}
-								);
-								push (@multi_complexes,$complex);
-								$count++;
-						}
-						foreach my $coord (sort keys %{$self -> {_nodes} -> {deg}}) {
-							#print STDERR "COMPLEX: ".$self -> {_id}."_$count"."\n";
-							#print STDERR "TYPE: deg\n";
-							#print STDERR "COORDINATES: ".$coord."\n";
-							my $complex = new Complex(
-									_id => $self -> {_id}."_$count",
-									_coordinates => $coord,
-									_type => "deg",
-									_index => $self -> {_index}
-							);
-							my $offSetByDB = {
-								x => 25,
-								y => 25
-							};
-							my $offSetByType = {
-								x => $self -> {_nodes} -> {deg} -> {$coord} && $self -> {_nodes} -> {nodeg} -> {$coord} ? -10 : 0,
-								y => 0
-							};
-							my $offSet = {
-								x => $offSetByDB->{x}+$offSetByType->{x},
-								y => $offSetByDB->{y}+$offSetByType->{y}
-							};
-							$complex -> CoordinatesTrimmer(
-									OffSetX => $offSet->{x},
-									OffSetY => $offSet->{y}
-							);
-							$complex -> InitLegends(
-									MapName => $self -> {_name},
-									Parameters => $parameters
-							);
-							$complex -> ComplexLoader(
-									_ids => $self -> {_nodes} -> {deg} -> {$coord},
-									_data => $self -> {_data},
-									_nodes => $self -> {_nodes},
-									_multi_available => $self -> {_multi_available},
-									#_mode => $parameters -> {_mode_select}
-							);
-							next if ($complex -> {_purge});
-							push (@deg_complexes,$complex);
-							#push (@gene_complexes,$complex);
-							$count++;
-						}
-						foreach my $coord (sort keys %{$self -> {_nodes} -> {prot}}) {
-								my $complex = new Complex(
-										_id => $self -> {_id}."_$count",
-										_coordinates => $coord,
-										_type => "prot",
-										_index => $self -> {_index}
-								);
-								my $offSetByDB = {
-									x => 25,
-									y => 25
-								};
-								my $offSetByType = {
-									x => $self -> {_nodes} -> {prot} -> {$coord} && $self -> {_nodes} -> {nodeg} -> {$coord} ? -10 : 0,
-									y => 0
-								};
-								my $offSet = {
-									x => $offSetByDB->{x}+$offSetByType->{x},
-									y => $offSetByDB->{y}+$offSetByType->{y}
-								};
-								$complex -> CoordinatesTrimmer(
-										OffSetX => $offSet->{x},
-										OffSetY => $offSet->{y}
-								);
-								
-								$complex -> InitLegends(
-									MapName => $self -> {_name},
-									Parameters => $parameters
-								);
-								$complex -> ComplexLoader(
-										_ids => $self -> {_nodes} -> {prot} -> {$coord},
-										_data => $self -> {_data},
-										_nodes => $self -> {_nodes},
-										_multi_available => $self -> {_multi_available},
-										#_mode => $parameters -> {_mode_select}
-								);
-								next if ($complex -> {_purge});
-								push (@prot_complexes,$complex);
-								#push (@gene_complexes,$complex);
-								$count++;
-						}
-						foreach my $coord (sort keys %{$self -> {_nodes} -> {nodeg}}) {
-							#print STDERR "COMPLEX: ".$self -> {_id}."_$count"."\n";
-							#print STDERR "TYPE: nodeg\n";
-							#print STDERR "COORDINATES: ".$coord."\n";
-							my $complex = new Complex(
-									_id => $self -> {_id}."_$count",
-									_coordinates => $coord,
-									_type => "nodeg",
-									_index => $self -> {_index}
-							);
-
-							my $offSetByDB = {
-								x => 25,
-								y => 25
-							};
-							my $offSetByType = {
-								x => ($self -> {_nodes} -> {multi} -> {$coord} || $self -> {_nodes} -> {deg} -> {$coord} || $self -> {_nodes} -> {prot} -> {$coord}) && $self -> {_nodes} -> {nodeg} -> {$coord} ? 10 : 0,
-								y => 0
-							};
-							my $offSet = {
-								x => $offSetByDB->{x}+$offSetByType->{x},
-								y => $offSetByDB->{y}+$offSetByType->{y}
-							};
-							$complex -> CoordinatesTrimmer(
-									OffSetX => $offSet->{x},
-									OffSetY => $offSet->{y}
-							);
-							$complex -> InitLegends(
-									MapName => $self -> {_name},
-									Parameters => $parameters
-							);
-							$complex -> ComplexLoader(
-									_ids => $self -> {_nodes} -> {nodeg} -> {$coord},
-									_data => $self -> {_data},
-									_nodes => $self -> {_nodes},
-									_multi_available => $self -> {_multi_available},
-									#_mode => $parameters -> {_mode_select}
-							);
-							next if ($complex -> {_purge});
-							push (@nodeg_complexes,$complex);
-							#push (@gene_complexes,$complex);
-							$count++;
-						}
-						foreach my $coord (sort keys %{$self -> {_nodes} -> {meta}}) {
-								print STDERR "COMPLEX: ".$self -> {_id}."_$count"."\n";
-								print STDERR "TYPE: meta\n";
-								print STDERR "COORDINATES: ".$coord."\n";
-								my $complex = new Complex(
-										_id => $self -> {_id}."_$count",
-										_coordinates => $coord,
-										_type => "meta",
-										_index => $self -> {_index}
-								);
-								$complex -> CoordinatesTrimmer(
-										OffSetX => 25,
-										OffSetY => 25
-								);
-								$complex -> InitLegends(
-										MapName => $self -> {_name},
-										Parameters => $parameters
-								);
-								$complex -> ComplexLoader(
-										_ids => $self -> {_nodes} -> {meta} -> {$coord},
-										_data => $self -> {_data},
-										_nodes => $self -> {_nodes},
-										_multi_available => $self -> {_multi_available},
-										#_mode => $parameters -> {_mode_select}
-								);
-								push (@meta_complexes,$complex);
-								$count++;
-						}
-						#print STDERR "COMPLEXES ON ".$self -> {_id}.": ".(scalar @deg_complexes + scalar @nodeg_complexes + scalar @meta_complexes)."\n";
-						#print STDERR " DEG: ".(scalar @deg_complexes)."\n"." NODEG: ".(scalar @nodeg_complexes)."\n"." META: ".(scalar @meta_complexes)."\n";
-
-
-						@{$self -> {_complexes} -> {deg}}   = @deg_complexes;
-						@{$self -> {_complexes} -> {nodeg}} = @nodeg_complexes;
-						@{$self -> {_complexes} -> {prot}} = @prot_complexes;
-						@{$self -> {_complexes} -> {meta}}  = @meta_complexes;
-						@{$self -> {_complexes} -> {multi}}  = @multi_complexes;
+		foreach my $type (("multi","deg","prot","nodeg","meta")) {
+			if (!$self -> {_complexes} -> {$type}) {
+				@{$self -> {_complexes} -> {$type}} = ();
+			}
+			foreach my $coord (sort keys %{$self -> {_nodes} -> {$type}}) {
+				my $complex = new Complex(
+					_id => $self -> {_id}."_$count",
+					_coordinates => $coord,
+					_type => $type,
+					_index => $self -> {_index}
+				);
+				$complex -> CheckOffSetAndTrim(
+					Nodes => $self -> {_nodes},
+					Type => $type,
+					Coord => $coord
+				);
+				$complex -> InitLegends(
+					MapName => $self -> {_name},
+					Parameters => $parameters
+				);
+				$complex -> ComplexLoader(
+					_ids => $self -> {_nodes} -> {$type} -> {$coord},
+					_data => $self -> {_data},
+					_nodes => $self -> {_nodes},
+					_multi_available => $self -> {_multi_available},
+					#_mode => $parameters -> {_mode_select}
+				);
+				next if ($complex -> {_purge});
+				
+				push(@{$self -> {_complexes} -> {$type}},$complex);
+				# if ($type eq "prot") {
+				# 	push (@prot_complexes,$complex);
+				# } elsif ($type eq "deg") {
+				# 	push (@deg_complexes,$complex);
+				# } elsif ($type eq "nodeg") {
+				# 	push (@nodeg_complexes,$complex);
+				# } elsif ($type eq "meta") {
+				# 	push (@meta_complexes,$complex);
+				# }
+				$count++;
+			}
 		}
-		sub PathwayPrinter {
-				my $self = shift;
+	}
 
 				print STDERR $self -> {_id}."|".$self -> {_name}."|".$self -> {_organism}."|".$self -> {_db}."\n";
 				foreach my $node_id (sort keys %{$self -> {_data}}) {
