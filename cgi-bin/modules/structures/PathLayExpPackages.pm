@@ -27,7 +27,7 @@ package ExpONTs;
         my $ont_db = $parameters -> {_ont_db_file};
         my $ont_db_location = $parameters -> {_ont_db_location};
 
-        my $debug = 1;
+        my $debug = 0;
         if ( -e $user."/$exp/"."$exp.ont") {
             open(IN,$user."/$exp/"."$exp.ont");
             while (<IN>) {
@@ -519,7 +519,7 @@ package ExpGenes;
             #print STDERR "Found:".$_."\n";
             if ($_ =~ /^ENS/) {
               if ($db -> {ensembl2entrez} -> {$_}) {
-                  
+
                 my $entrez = $db -> {ensembl2entrez} -> {$_};
                 #print STDERR "Converted:".$_."->"."$entrez\n";
                 $converted -> {$entrez} = $self -> {_data} -> {$_};
