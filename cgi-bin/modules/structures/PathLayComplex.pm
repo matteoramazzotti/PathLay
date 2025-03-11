@@ -523,7 +523,7 @@ package Complex;
 			my $chromaEffectSize = $args{chromaEffectSize};
 
 			$legendForPlot .= "|dev:$chromaEffectSize%0A";
-			$legendForTitle .= ": $chromaEffectSize\n";
+			$legendForTitle .= " $chromaEffectSize\n";
 
 			return($legendForPlot,$legendForTitle);
 		};
