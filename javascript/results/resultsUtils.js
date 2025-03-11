@@ -451,9 +451,11 @@ function downloadFromPool() {
 }
 
 function spawnMethSelectors(){
+    console.log("spawnMeth")
     let selectHLDefault = document.createElement("select");
     let optionsArray = [];
     for (let methID in meth2name) {
+        console.log(methID)
         let opt = document.createElement("option");
         //let optID = document.createElement("option");
         opt.value = methID;
@@ -625,12 +627,7 @@ function spawnIDSelector(type) {
         let opt = document.createElement("option");
         opt.value = id;
         if (type === "meth" || type === "chroma") {
-            if (entrez2symbol[id]) {
-                opt.text  = `${entrez2symbol[id]} (${id})`;
-            } else if (entrez2protID[id]) {
-                opt.text  = `${entrez2protID[id]} (${id})`;
-            }
-                
+            opt.text  = `${referenceTable[type].ids[id].name} (${id})`;
         } else if (type === "urna") {
             opt.text  = `${id}`;
         } else {

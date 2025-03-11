@@ -208,7 +208,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		if (enable_meth === 1) {
 			let opt = document.createElement("option");
 			opt.value = "meth";
-			opt.text = "Methylation";
+			opt.text = "Methylations";
 			document.getElementById('type_for_logical').add(opt);
 		}
 		if (enable_chroma === 1) {

@@ -74,6 +74,8 @@ var referenceTable = {
 }
 
 referenceTable.deg = referenceTable.gene;
+referenceTable.meth.ids = referenceTable.gene.ids;
+referenceTable.chroma.ids = referenceTable.gene.ids;
 referenceTable.nodeg = referenceTable.gene;
 
 var changeEvent = new Event('change');
