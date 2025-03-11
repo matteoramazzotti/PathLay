@@ -5,28 +5,46 @@ package Complex;
 
     sub new {
 
-        my $class = shift;
-        my $self = {
-            _id => "undef",
-            _type => "undef",
-            _coordinates => "undef",
-            _queryForPlot => "",
-            _legend_for_title => "",
-            _data => {},
-            @_
-        };
-        bless $self, $class;
-        return($self);
-    }
-    sub CoordinatesTrimmer {
-        my $self = shift;
-        my %args = (
-            OffSetX => 0,
-            OffSetY => 0,
-            Pathway => {},
-            @_
-        );
-        my $pathway = $args{Pathway};
+	sub CheckOffSetAndTrim {
+		my $self = shift;
+		my %args = (
+			Nodes => {},
+			Type => "",
+			Coord => "",
+			@_
+		);
+		my $nodes = $args{Nodes};
+		my $type = $args{Type};
+		my $coord = $args{Coord};
+
+		my $offSetByDB = {
+			x => 25,
+			y => 25
+		};
+
+		my $x = 0;
+
+		if ($type eq "deg") {
+			$x = $nodes -> {deg} -> {$coord} && $nodes -> {nodeg} -> {$coord} ? -10 : 0;
+		} elsif ($type eq "prot") {
+			$x = $nodes -> {prot} -> {$coord} && $nodes -> {nodeg} -> {$coord} ? -10 : 0
+		} elsif ($type eq "nodeg") {
+			$x = ($nodes -> {multi} -> {$coord} || $nodes -> {deg} -> {$coord} || $nodes -> {prot} -> {$coord}) && $nodes -> {nodeg} -> {$coord} ? 10 : 0
+		}
+		
+		my $offSetByType = {
+			x => $x,
+			y => 0
+		};
+		my $offSet = {
+			x => $offSetByDB->{x}+$offSetByType->{x},
+			y => $offSetByDB->{y}+$offSetByType->{y}
+		};
+		$self -> CoordinatesTrimmer(
+			OffSetX => $offSet->{x},
+			OffSetY => $offSet->{y}
+		);
+	}
 
         my ($x_old,$y_old) = split(/,/,$self -> {_coordinates});
         my $x_new = $x_old - $args{OffSetX};
