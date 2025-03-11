@@ -268,94 +268,93 @@ package Pathway;
 		};
 
 		local *checkByType = sub {
-				my %args = (
-						NodeId  => {},
-						Pathway  => {},
-						ExpToCheck => {},
-						DataType => "",
-						@_
-				);
-				my $nodeId = $args{NodeId};
-				my $pathway = $args{Pathway};
-				my $expPack = $args{ExpToCheck};
-				my $dataType = $args{DataType};
+			my %args = (
+				NodeId  => {},
+				Pathway  => {},
+				ExpToCheck => {},
+				DataType => "",
+				@_
+			);
+			my $nodeId = $args{NodeId};
+			my $pathway = $args{Pathway};
+			my $expPack = $args{ExpToCheck};
+			my $dataType = $args{DataType};
 
-				$pathway -> {_data} -> {$nodeId} -> {type} = $dataType;
-				$seen -> {$dataType} -> {$nodeId}++;
-				# print STDERR "Checking by type $nodeId\n";
-				if ($expPack -> {_data} -> {$nodeId} -> {_prot_id}) {
+			$pathway -> {_data} -> {$nodeId} -> {type} = $dataType;
+			$seen -> {$dataType} -> {$nodeId}++;
+			# print STDERR "Checking by type $nodeId\n";
+			if ($expPack -> {_data} -> {$nodeId} -> {_prot_id}) {
 
-						$pathway -> {_data} -> {$nodeId} -> {prot_id} = $expPack -> {_data} -> {$nodeId} -> {_prot_id};
-						$pathway -> {_data} -> {$nodeId} -> {prot_name} =  $expPack -> {_data} -> {$nodeId} -> {_prot_name};
+				$pathway -> {_data} -> {$nodeId} -> {prot_id} = $expPack -> {_data} -> {$nodeId} -> {_prot_id};
+				$pathway -> {_data} -> {$nodeId} -> {prot_name} =  $expPack -> {_data} -> {$nodeId} -> {_prot_name};
+			}
+			if ($expPack -> {_data} -> {$nodeId} -> {dev}) {
+				$pathway -> {_data} -> {$nodeId} -> {dev} = $expPack -> {_data} -> {$nodeId} -> {dev};
+			}
+			if ($expPack -> {_data} -> {$nodeId} -> {urnas}) {
+				%{$pathway -> {_data} -> {$nodeId} -> {urnas}} = %{$expPack -> {_data} -> {$nodeId} -> {urnas}}; #this includes mirt
+				foreach (keys %{$pathway -> {_data} -> {$nodeId} -> {urnas}}) {
+					$seen -> {urna} -> {$nodeId}++;
 				}
-				if ($expPack -> {_data} -> {$nodeId} -> {dev}) {
-						$pathway -> {_data} -> {$nodeId} -> {dev} = $expPack -> {_data} -> {$nodeId} -> {dev};
+			}
+			if ($expPack -> {_data} -> {$nodeId} -> {meth}) {
+				$pathway -> {_data} -> {$nodeId} -> {meth} = $expPack -> {_data} -> {$nodeId} -> {meth};
+				$seen -> {meth} -> {$nodeId}++;
+			}
+			if ($expPack -> {_data} -> {$nodeId} -> {chroma}) {
+				$pathway -> {_data} -> {$nodeId} -> {chroma} = $expPack -> {_data} -> {$nodeId} -> {chroma};
+				$seen -> {chroma} -> {$nodeId}++;
+			}
+			if ($expPack -> {_data} -> {$nodeId} -> {tfs}) {
+				foreach my $tf_id (sort keys %{$expPack -> {_data} -> {$nodeId} -> {tfs}}) {
+					$pathway -> {_data} -> {$nodeId} -> {tfs} -> {$tf_id} -> {dev} = $expPack -> {_data} -> {$nodeId} -> {tfs} -> {$tf_id} -> {dev};
+					$pathway -> {_data} -> {$nodeId} -> {tfs} -> {$tf_id} -> {name} = $expPack -> {_data} -> {$nodeId} -> {tfs} -> {$tf_id} -> {name};
+					$seen -> {tf} -> {$nodeId}++;
 				}
-				if ($expPack -> {_data} -> {$nodeId} -> {urnas}) {
-						%{$pathway -> {_data} -> {$nodeId} -> {urnas}} = %{$expPack -> {_data} -> {$nodeId} -> {urnas}}; #this includes mirt
-						foreach (keys %{$pathway -> {_data} -> {$nodeId} -> {urnas}}) {
-								$seen -> {urna} -> {$nodeId}++;
-						}
-				}
-				if ($expPack -> {_data} -> {$nodeId} -> {meth}) {
-						$pathway -> {_data} -> {$nodeId} -> {meth} = $expPack -> {_data} -> {$nodeId} -> {meth};
-						$seen -> {meth} -> {$nodeId}++;
-				}
-				if ($expPack -> {_data} -> {$nodeId} -> {chroma}) {
-						$pathway -> {_data} -> {$nodeId} -> {chroma} = $expPack -> {_data} -> {$nodeId} -> {chroma};
-						$seen -> {chroma} -> {$nodeId}++;
-				}
-				if ($expPack -> {_data} -> {$nodeId} -> {tfs}) {
-						foreach my $tf_id (sort keys %{$expPack -> {_data} -> {$nodeId} -> {tfs}}) {
-								$pathway -> {_data} -> {$nodeId} -> {tfs} -> {$tf_id} -> {dev} = $expPack -> {_data} -> {$nodeId} -> {tfs} -> {$tf_id} -> {dev};
-								$pathway -> {_data} -> {$nodeId} -> {tfs} -> {$tf_id} -> {name} = $expPack -> {_data} -> {$nodeId} -> {tfs} -> {$tf_id} -> {name};
-								$seen -> {tf} -> {$nodeId}++;
-						}
-				}
+			}
 		};
 		local *checkDegProt = sub {
-				my %args = (
-						NodeId  => {},
-						Pathway  => {},
-						ExpToCheckGene => {},
-						ExpToCheckProt => {},
-						@_
-				);
-				my $nodeId = $args{NodeId};
-				my $pathway = $args{Pathway};
-				my $expPackProt = $args{ExpToCheckProt};
-				my $expPackGene = $args{ExpToCheckGene};
-				my $dataType = $args{DataType};
+			my %args = (
+				NodeId  => {},
+				Pathway  => {},
+				ExpToCheckGene => {},
+				ExpToCheckProt => {},
+				@_
+			);
+			my $nodeId = $args{NodeId};
+			my $pathway = $args{Pathway};
+			my $expPackProt = $args{ExpToCheckProt};
+			my $expPackGene = $args{ExpToCheckGene};
+			my $dataType = $args{DataType};
 
-				$seen -> {deg} -> {$nodeId}++;
-				$seen -> {prot} -> {$nodeId}++;
-				$pathway -> {_data} -> {$nodeId} -> {type} = "deg+prot";
-				$pathway -> {_data} -> {$nodeId} -> {dev_prot} = $expPackProt -> {_data} -> {$nodeId} -> {dev};
-				$pathway -> {_data} -> {$nodeId} -> {prot_id} =  $expPackProt -> {_data} -> {$nodeId} -> {_prot_id};
-				$pathway -> {_data} -> {$nodeId} -> {prot_name} =  $expPackProt -> {_data} -> {$nodeId} -> {_prot_name};
-				$pathway -> {_data} -> {$nodeId} -> {dev_gene} = $expPackGene -> {_data} -> {$nodeId} -> {dev};
-				if ($expPackGene -> {_data} -> {$nodeId} -> {urnas}) {
-						%{$pathway -> {_data} -> {$nodeId} -> {urnas}} = %{$expPackGene -> {_data} -> {$nodeId} -> {urnas}}; #this includes mirt
-						foreach (keys %{$pathway -> {_data} -> {$nodeId} -> {urnas}}) {
-								$seen -> {urna} -> {$nodeId}++;
-						}
+			$seen -> {deg} -> {$nodeId}++;
+			$seen -> {prot} -> {$nodeId}++;
+			$pathway -> {_data} -> {$nodeId} -> {type} = "deg+prot";
+			$pathway -> {_data} -> {$nodeId} -> {dev_prot} = $expPackProt -> {_data} -> {$nodeId} -> {dev};
+			$pathway -> {_data} -> {$nodeId} -> {prot_id} =  $expPackProt -> {_data} -> {$nodeId} -> {_prot_id};
+			$pathway -> {_data} -> {$nodeId} -> {prot_name} =  $expPackProt -> {_data} -> {$nodeId} -> {_prot_name};
+			$pathway -> {_data} -> {$nodeId} -> {dev_gene} = $expPackGene -> {_data} -> {$nodeId} -> {dev};
+			if ($expPackGene -> {_data} -> {$nodeId} -> {urnas}) {
+				%{$pathway -> {_data} -> {$nodeId} -> {urnas}} = %{$expPackGene -> {_data} -> {$nodeId} -> {urnas}}; #this includes mirt
+				foreach (keys %{$pathway -> {_data} -> {$nodeId} -> {urnas}}) {
+					$seen -> {urna} -> {$nodeId}++;
 				}
-				if ($expPackGene -> {_data} -> {$nodeId} -> {meth}) {
-						$pathway -> {_data} -> {$nodeId} -> {meth} = $expPackGene -> {_data} -> {$nodeId} -> {meth};
-						$seen -> {meth} -> {$nodeId}++;
+			}
+			if ($expPackGene -> {_data} -> {$nodeId} -> {meth}) {
+				$pathway -> {_data} -> {$nodeId} -> {meth} = $expPackGene -> {_data} -> {$nodeId} -> {meth};
+				$seen -> {meth} -> {$nodeId}++;
+			}
+			if ($expPackGene -> {_data} -> {$nodeId} -> {chroma}) {
+				$pathway -> {_data} -> {$nodeId} -> {chroma} = $expPackGene -> {_data} -> {$nodeId} -> {chroma};
+				$seen -> {chroma} -> {$nodeId}++;
+			}
+			if ($expPackGene -> {_data} -> {$nodeId} -> {tfs}) {
+				foreach my $tf_id (sort keys %{$expPackGene -> {_data} -> {$nodeId} -> {tfs}}) {
+					$pathway -> {_data} -> {$nodeId} -> {tfs} -> {$tf_id} -> {dev} = $expPackGene -> {_data} -> {$nodeId} -> {tfs} -> {$tf_id} -> {dev};
+					$pathway -> {_data} -> {$nodeId} -> {tfs} -> {$tf_id} -> {name} = $expPackGene -> {_data} -> {$nodeId} -> {tfs} -> {$tf_id} -> {name};
+					$seen -> {tf} -> {$nodeId}++;
 				}
-				if ($expPackGene -> {_data} -> {$nodeId} -> {chroma}) {
-						$pathway -> {_data} -> {$nodeId} -> {chroma} = $expPackGene -> {_data} -> {$nodeId} -> {chroma};
-						$seen -> {chroma} -> {$nodeId}++;
-				}
-				if ($expPackGene -> {_data} -> {$nodeId} -> {tfs}) {
-						foreach my $tf_id (sort keys %{$expPackGene -> {_data} -> {$nodeId} -> {tfs}}) {
-								$pathway -> {_data} -> {$nodeId} -> {tfs} -> {$tf_id} -> {dev} = $expPackGene -> {_data} -> {$nodeId} -> {tfs} -> {$tf_id} -> {dev};
-								$pathway -> {_data} -> {$nodeId} -> {tfs} -> {$tf_id} -> {name} = $expPackGene -> {_data} -> {$nodeId} -> {tfs} -> {$tf_id} -> {name};
-								$seen -> {tf} -> {$nodeId}++;
-
-						}
-				}
+			}
 		};
 
 		my $self = shift;
