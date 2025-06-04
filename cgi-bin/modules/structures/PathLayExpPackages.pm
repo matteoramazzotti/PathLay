@@ -408,6 +408,7 @@ package ExpGenes;
 
     sub Collapse {
       use Statistics::Distributions qw(chisqrprob);
+      use List::Util qw(sum);
       my $self = shift;
 
       foreach my $id (sort keys %{$self->{_data}}) {
@@ -434,13 +435,18 @@ package ExpGenes;
           if ($self->{_data}{$id}{devs}) {
               my @devs = @{$self->{_data}{$id}{devs}};
               if (@devs > 1) {
-                  my $new_fc = sum(@devs) / scalar(@devs);
-                  delete $self->{_data}{$id}{devs};
-                  $self->{_data}{$id}{dev} = $new_fc;
+                my $sum;
+                foreach (@devs) {
+                    $sum += $_;
+                }
+                my $new_fc = sum(@devs) / scalar(@devs);
+                # my $new_fc = $sum / scalar(@devs);
+                delete $self->{_data}{$id}{devs};
+                $self->{_data}{$id}{dev} = $new_fc;
               } else {
-                  my $new_fc = shift @devs;
-                  delete $self->{_data}{$id}{devs};
-                  $self->{_data}{$id}{dev} = $new_fc;
+                my $new_fc = shift @devs;
+                delete $self->{_data}{$id}{devs};
+                $self->{_data}{$id}{dev} = $new_fc;
               }
               $self->{_collapsed}++;
           }
