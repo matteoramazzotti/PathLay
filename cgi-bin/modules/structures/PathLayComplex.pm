@@ -131,6 +131,7 @@ package Complex;
 		my $parameters = $args{Parameters};
 		my $thresholds;
 
+		$self -> {_legend_for_title} = "";
 		$self -> {_queryForPlot} = "pathlayplot.pl?";
 		$self -> {_queryForPlot} .= "source=%0Amap_name:$map_name%0A";
 
@@ -386,6 +387,46 @@ package Complex;
 			typeForTitle => $typeForTitle
 		);
 	}
+	sub mainLegendHandler2 {
+		use Data::Dumper;
+		my $self = shift;
+		my %args = (
+			@_
+		);
+
+		my $mainID = $args{ID};
+		my $mainName = $args{mainName};
+		my $fullName = $args{fullName};;
+		my $mainType = $args{mainType};
+		my $typeForPlot;
+		my $typeForTitle;
+
+		if ($mainType eq "deg") {
+			$typeForPlot = "deg";
+			$typeForTitle = "mRNA";
+		} elsif ($mainType eq "prot") {
+			$typeForPlot = "prot";
+			$typeForTitle = "Protein";
+		} elsif ($mainType eq "meta") {
+			$typeForPlot = "meta";
+			$typeForTitle = "Metabolite";
+		} elsif ($mainType eq "nodeg") {
+			$typeForPlot = "nodeg";
+			$typeForTitle = "Not Expressed mRNA";
+		} else {
+			$typeForPlot = "nodeg";
+			$typeForTitle = "Unknown";
+		}
+		if (!$mainID ) {
+			print STDERR "Missing main id\n";
+			print STDERR Dumper $self;
+		}
+		$self->{_queryForPlot} .= "type:$typeForPlot|id:$mainID|name:$mainName";
+		$self->{_legend_for_title} .= "$typeForTitle: $mainID ($mainName)";
+		if ($fullName) {
+			$self->{_legend_for_title} .= " ($fullName)";
+		}
+	}
 	sub effectSizeLegendHandler {
 		local *updateLegendEffectSize = sub {
 
@@ -420,6 +461,15 @@ package Complex;
 			effectSize => $effectSize
 		);
 
+	}
+	sub effectSizeLegendHandler2 {
+		my $self = shift;
+		my %args = (
+			@_
+		);
+		my $effectSize = $args{effectSize};
+		$self->{_queryForPlot} .= "|dev:$effectSize%0A";
+		$self->{_legend_for_title} .= " Effect Size:$effectSize\n";
 	}
 	sub methHandler {
 
@@ -480,14 +530,38 @@ package Complex;
 				methylEffectSize => $self -> {_data} -> {$id} -> {meth}
 			);
 		} else {
-			print STDERR $self -> {_queryForPlot}."\n";
-			print STDERR $self -> {_legend_for_title}."\n";
+			# print STDERR $self -> {_queryForPlot}."\n";
+			# print STDERR $self -> {_legend_for_title}."\n";
 			$self -> {_queryForPlot} =~ s/$/%0A/;
 			$self -> {_legend_for_title} =~ s/$/\n/;
 			#$self -> {_queryForPlot} .= "type:meth|id:$id%0A";
 			#$self -> {_legend_for_title} .= "type:meth|id:$id\n";
 			#print STDERR $self -> {_queryForPlot}."\n";
 			#print STDERR $self -> {_legend_for_title}."\n";
+		}
+	}
+	sub methAndChromaHandler {
+		my $self = shift;
+		my %args = (
+			@_
+		);
+		my $type = $args{Type};
+		my $methylID = $args{ID};
+		my $effectSize = $args{effectSize};
+		my $typeToTitles = {
+			meth => "Methylated",
+			chroma => "Chromatin"
+		};
+
+		$self -> {_queryForPlot} .= "type:$type|id:$methylID";
+		$self -> {_legend_for_title} .= "\t$typeToTitles->{$type}";
+
+		if ($effectSize ne "on") {
+			$self -> {_queryForPlot} .= "|dev:$effectSize%0A";
+			$self -> {_legend_for_title} .= ": $effectSize\n";
+		} else {
+			$self -> {_queryForPlot} =~ s/$/%0A/;
+			$self -> {_legend_for_title} =~ s/$/\n/;
 		}
 	}
 	sub chromaHandler {
@@ -627,6 +701,26 @@ package Complex;
 		}
 
 	}
+	sub urnaHandler2 {
+		my $self = shift;
+		my %args = (
+			@_
+		);
+		my $urnaID = $args{ID};
+		my $urnaEffectSize = $args{EffectSize};
+		my $urnaMIRT = $args{MIRT};
+
+		$self -> {_queryForPlot} .= "type:urna|id:$urnaID|mirt:$urnaMIRT";
+		$self -> {_legend_for_title} .= "\tmiRNA: $urnaID($urnaMIRT)";
+		if ($urnaEffectSize) {
+			$self -> {_queryForPlot} .= "|dev:$urnaEffectSize%0A";
+			$self -> {_legend_for_title} .= " Effect Size: $urnaEffectSize\n";
+		} else {
+			$self -> {_queryForPlot} =~ s/$/%0A/;
+			$self -> {_legend_for_title} =~ s/$/\n/;
+		}
+		
+	}
 	sub tfHandler {
 		local *updateLegendTf = sub {
 			my %args = (
@@ -695,14 +789,34 @@ package Complex;
 			}
 		}
 	}
+	sub tfHandler2 {
+		my $self = shift;
+		my %args = (
+			@_
+		);
+		my $tfID = $args{ID};
+		my $tfName = $args{Name};
+		my $tfEffecSize = $args{EffectSize};
+		$self->{_queryForPlot} .= "type:tf|id:$tfID|name:$tfName";
+		$self->{_legend_for_title} .= "\tTranscription Factor: $tfID ($tfName)";
+	
+		if ($tfEffecSize) {
+			$self -> {_queryForPlot} .= "|dev:$tfEffecSize%0A";
+			$self -> {_legend_for_title} .= " Effect Size: $tfEffecSize\n";
+		} else {
+			$self -> {_queryForPlot} =~ s/$/%0A/;
+			$self -> {_legend_for_title} =~ s/$/\n/;
+		}
+		
+	}
 	sub ComplexLoader {
 
 		my $self = shift;
 		my %args = (
-						_ids => {},
-						_data => {},
-						#_mode => "id_only",
-						@_
+			_ids => {},
+			_data => {},
+			#_mode => "id_only",
+			@_
 		);
 		my $ids  = $args{_ids};
 		my $data = $args{_data};
