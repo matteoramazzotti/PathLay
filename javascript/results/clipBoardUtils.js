@@ -3,15 +3,11 @@
 
 
 function fill_info_display(active) {
-
-	console.log("fill_info_display")
-
 	//var div = document.getElementById("info_display_div");
 	//div.setAttribute("contenteditable", true);
-	
-	let tmpObj = new Complex (active.id,active.parentElement.id);
-    tmpObj.loadContent();
-
+	let tmpObj = new Complex ({id:active.id,parentPathway:active.parentElement.id});
+	tmpObj.loadContent2();
+	console.log(tmpObj.id);
 	tmpObj.fillInfoDisplay(tmpObj.id);
 	//const info = get_info(text)
 	//console.log(info)
