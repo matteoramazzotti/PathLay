@@ -38,6 +38,7 @@ function changemap(selector) {
 	//console.log(sel);
 //	sel.style.visibility="visible"
 	sel.style.display="block"
+    imgToDrag = sel.children[0];
 	var child2 = document.getElementById(selector.value).children
 	for(var j = 0; j < child2.length; j++) {
 //		child2[j].style.visibility="visible"
@@ -45,7 +46,7 @@ function changemap(selector) {
 	}
 }
 
-function change(action,dir) {
+async function change(action,dir) {
     let indicators = document.querySelectorAll(".complex");
     for(let indicator of indicators) {
         var selected = false;
@@ -74,14 +75,14 @@ function change(action,dir) {
             if (dir == "u") {
                 indicator.width += 5
                 indicator.height += 5
-                indicator.style.top = parseFloat(indicator.style.top)-2.5
-                indicator.style.left = parseFloat(indicator.style.left)-2.5
+                indicator.style.top = parseFloat(indicator.style.top)-2.5+"px"
+                indicator.style.left = parseFloat(indicator.style.left)-2.5+"px"
             }
             if (dir == "d") {
                 indicator.width -= 5
                 indicator.height -= 5
-                indicator.style.top = parseFloat(indicator.style.top)+2.5
-                indicator.style.left = parseFloat(indicator.style.left)+2.5
+                indicator.style.top = parseFloat(indicator.style.top)+2.5+"px"
+                indicator.style.left = parseFloat(indicator.style.left)+2.5+"px"
             }
         }
         if (selected === true) {
