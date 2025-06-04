@@ -43,19 +43,25 @@ my $session_id = $json_data->{sid};
 my $session = CGI::Session->load($session_id);
 my $username = $session->param('username');
 my $home = $session->param('home');
-my $expId = $cgi->param('exp');
-print STDERR "$0: $json_data->{sid}\n";
+my $expId = $cgi->param('exp') ? $cgi->param('exp') : $json_data->{exp} ? $json_data->{exp} : "";
 print STDERR "$0: $session_id\n";
 print STDERR "$0: $username\n";
 print STDERR "$0: $home\n";
-
+print STDERR "$0: $expId\n";
 my $parameters = new Parameters();
 $parameters -> {_exp_name_input_text} = $expId;
 $parameters->{_userdir} = $home ne "6135251850" ? "$base/pathlay_users/".$home."/" : "$base/demo_exps/6135251850/";
 
-$parameters -> LoadENVFromJson(
-	JSON => $json_data
-);
+
+if (scalar keys %$json_data == 2) {
+  $parameters -> LoadLastENV(
+    expId => $expId
+  );
+} else {
+  $parameters -> LoadENVFromJson(
+    JSON => $json_data
+  );
+}
 my @dataTypes = (
   "gene",
   "prot",
@@ -90,7 +96,7 @@ my $expPackages = {
 };
 my $validIdTypes = {
   "gene" => "entrez",
-  "prot" => "uniprot",
+  "prot" => "entrez",
   "meth" => "entrez",
   "chroma" => "entrez",
   "meta" => "keggcompound",
@@ -171,11 +177,11 @@ foreach my $dataType (@dataTypes) {
       _idOnlyCheck => $parameters -> {"_${dataType}IdOnlyCheck"}
     );
     $expPackages -> {$dataType} -> Collapse();
-
-    if ($parameters -> {"_${dataType}IdType"} ne $validIdTypes -> {$dataType}) {
+    if ($parameters -> {"_${dataType}IdType"} ne $validIdTypes -> {$dataType} || $dataType eq "prot") {
       $expPackages -> {$dataType} -> checkIdForConversion(
         _DB => $DBs -> {$dataType},
-        _idType => $parameters -> {"_${dataType}IdType"}
+        _idType => $parameters -> {"_${dataType}IdType"},
+        _validType => $validIdTypes->{$dataType}
       );
     }
     if ($parameters -> {"_${dataType}pValCheck"}) {
@@ -196,6 +202,7 @@ foreach my $dataType (@dataTypes) {
 
   }
 }
+
 
 
 $DBs -> {urna} -> DBLoader(
@@ -272,7 +279,7 @@ $interfaces -> {ont} -> integrateAll(
   Prots => $expPackages -> {prot},
   ONTs => $expPackages -> {ont}
 );
-
+# print STDERR Dumper  $expPackages -> {prot} -> {_data} -> {"7532"};
 #statistic steps
 my %needed_maps;
 if ($parameters -> {_statistic_select} eq "FET") {
@@ -388,7 +395,6 @@ my @map_ids;
 my @map_names;
 
 my %nums_for_selector;
-
 print STDERR  "Maps to be processed: ".(scalar @maps)."\n";
 
 
@@ -402,13 +408,12 @@ my $response = {
     expPackages => $expPackages
   }
 };
+
 $response = encode_json(unbless($response));
 $response = to_json($response);
 # print STDERR Dumper $json_data;
 print $cgi->header('application/json');
 print $response;
-
-
 
 exit;
 

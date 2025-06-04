@@ -24,7 +24,6 @@ use PathLayExpPackages;
 use PathLayComplex;
 use PathLayPathway;
 
-
 my $t0 = Benchmark->new;
 
 our $timestamp = getTimeStamp();
@@ -61,26 +60,27 @@ foreach my $map (sort(@maps)) {
     _source => $parameters -> {_nodesdir}."$mapinfile",
     _index => $map_counter
   );
-  $pathway -> PathwayLoader(
+  $pathway -> PathwayLoader2(
     Params => $parameters,
     ExpPackages => $expPackages,
   );
+  
   #here proteins should be merged with genes
   #print STDERR Dumper $pathway;
-  $pathway -> NodesInit();
+  #$pathway -> NodesInit();
 
-  $pathway -> LoadComplexes(
+  $pathway -> LoadComplexes2(
     Parameters => $parameters
   );
-  # print STDERR Dumper  $pathway;
   next if (
-    scalar  @{$pathway -> {_complexes} -> {deg}} < 1 &&
-    scalar  @{$pathway -> {_complexes} -> {nodeg}} < 1 &&
-    scalar  @{$pathway -> {_complexes} -> {meta}} < 1 &&
-    scalar @{$pathway -> {_complexes} -> {prot}} < 1 &&
-    scalar @{$pathway -> {_complexes} -> {multi}} < 1
+    # scalar  @{$pathway -> {_complexes} -> {deg}} < 1 &&
+    # scalar  @{$pathway -> {_complexes} -> {nodeg}} < 1 &&
+    # scalar  @{$pathway -> {_complexes} -> {meta}} < 1 &&
+    # scalar @{$pathway -> {_complexes} -> {prot}} < 1 &&
+    # scalar @{$pathway -> {_complexes} -> {multi}} < 1
+    scalar @{$pathway -> {_complexes}} < 1
   );
-  $pathway -> PathwayEncoder();
+  $pathway -> PathwayEncoder2();
   my $map_div = new MapDiv(
     _id => $mapin,
     _name => $map_name,
@@ -107,7 +107,7 @@ foreach my $map (sort(@maps)) {
     Content => $map_img
   );
 
-  $map_complexes_div -> LoadComplexesOnDiv(
+  $map_complexes_div -> LoadComplexesOnDiv2(
     Pathway => $pathway
   );
 
@@ -128,6 +128,7 @@ foreach my $map (sort(@maps)) {
     methyls => $pathway -> {_methyls_loaded}
   );
 }
+
 $map_divs[0] -> {_style} = "display:block;";
 
 
@@ -136,7 +137,6 @@ my ($ont2gene_js_var,@ont_select_options) = prepareONTsForFrontend(
   ONTs => $expPackages -> {ont}
   #ONT2GeneJSVar => $ont2gene_js_var
 );
-#print STDERR Dumper $ont2gene_js_var;
 
 my ($style_section,$script_section,$container5,$container2,$container3,$container6,$window_engine) = ResultsBuilder(
   Parameters => $parameters,
@@ -148,7 +148,7 @@ my ($style_section,$script_section,$container5,$container2,$container3,$containe
   ont2gene_js_var => $ont2gene_js_var
 );
 
- 
+
 
 prepareEnablersForFrontEnd(
   Parameters => $parameters,
