@@ -590,24 +590,34 @@ package ExpProteins;
 
     }
     sub checkIdForConversion {
+        use Data::Dumper;
         my $self = shift;
         my %args = (
             @_
         );
         my $debug;
         my $idtype = $args{_idType};
+        my $validType = $args{_validType};
         my $db = $args{_DB};
         my $converted = {};
 
         foreach (sort keys %{$self -> {_data}}) {
-            #print STDERR "Converting idType ".$idtype." to entrez\n";
-            #print STDERR $db -> {$idtype."2entrez"} -> {$_}."\n";
-            if ($db -> {$idtype."2entrez"} -> {$_}) {
-                my $entrez = $db -> {$idtype."2entrez"} -> {$_};
-                $converted -> {$entrez} = $self -> {_data} -> {$_};
-                $converted -> {$entrez} -> {_prot_id} = $_;
-                $converted -> {$entrez} -> {_prot_name} = $db -> {entrez2fullName} -> {$entrez};
-                next;
+            # print STDERR "Converting idType ".$idtype." to entrez\n";
+            if ($idtype ne $validType) {
+                if ($db -> {$idtype."2entrez"} -> {$_}) {
+                    my $entrez = ${$db -> {$idtype."2entrez"} -> {$_}}[0];
+                    $converted -> {$entrez} = $self -> {_data} -> {$_};
+                    $converted -> {$entrez} -> {_prot_id} = $_;
+                    $converted -> {$entrez} -> {_prot_name} = $db -> {entrez2fullName} -> {$entrez};
+                    next;
+                }
+            } else {
+                $converted -> {$_} = $self -> {_data} -> {$_};
+                if ($db -> {$validType."2entry"} -> {$_}) {
+                    $converted -> {$_} -> {_prot_id} = $db -> {entrez2entry} -> {$_};
+                    $converted -> {$_} -> {_prot_name} = $db -> {entrez2fullName} -> {$_};
+                    next;
+                }
             }
         }
         $self -> {_data} = $converted;

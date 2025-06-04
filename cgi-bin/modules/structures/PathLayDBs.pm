@@ -164,28 +164,33 @@ package protDB;
             my @data = split("\t",$_);
             # print STDERR Dumper \@data;
             
-            my $entrez = $data[5];
+            my $entrezL = $data[5];
             my $symbol = $data[3];
             my $entry = $data[0];
             my $fullName = $data[4];
             $fullName =~ s/ \(.+?$//;
 
-            my @entrezs = split(/;/,$entrez);
-            next if(scalar @entrezs > 1);
-            my @symbols = split(/ /,$symbol);
+            my @entrezs = split(/;/,$entrezL);
+            # next if(scalar @entrezs > 1); #???
+            foreach my $entrez (@entrezs) {
+                my @symbols = split(/ /,$symbol);
 
-            $entrez =~ s/;$//;
+                $entrez =~ s/;$//;
 
-            $self -> {entrez2entry} -> {$entrez} = $entry;
-            $self -> {entry2entrez} -> {$entry} = $entrez;
-            $self -> {entrez2fullName} -> {$entrez} = $fullName;
-            $self -> {entry2fullName} -> {$entry} = $fullName;
-            foreach (@symbols) {
-                $self -> {symbol2entrez} -> {$_} = $entrez;
-                $self -> {symbol2fullName} -> {$_} = $fullName;
-                $self -> {symbol2entry} -> {$_} = $entry;
-                $self -> {entrez2symbol} -> {$entrez} -> {$symbol} = 1;
-                $self -> {entry2symbol} -> {$entry} -> {$symbol} = 1;
+                $self -> {entrez2entry} -> {$entrez} = $entry;
+                # $self -> {entry2entrez} -> {$entry} = $entrez;
+                push(@{$self->{entry2entrez}->{$_}},$entrez);
+
+                $self -> {entrez2fullName} -> {$entrez} = $fullName;
+                $self -> {entry2fullName} -> {$entry} = $fullName;
+                foreach (@symbols) {
+                    #$self -> {symbol2entrez} -> {$_} = $entrez;
+                    push(@{$self->{symbol2entrez}->{$_}},$entrez);
+                    $self -> {symbol2fullName} -> {$_} = $fullName;
+                    $self -> {symbol2entry} -> {$_} = $entry;
+                    $self -> {entrez2symbol} -> {$entrez} -> {$symbol} = 1;
+                    $self -> {entry2symbol} -> {$entry} -> {$symbol} = 1;
+                }
             }
             
         }
