@@ -185,15 +185,11 @@ class Complex {
 		let parsedData = srcLines.map(line => {
 			let fields = line.split('|');
 			let entry = {
-				dev: undefined // Set 'dev' field as undefined by default
+				dev: undefined
 			};
 			
 			fields.forEach(field => {
 				let [key, value] = field.split(':');
-				// Convert numeric values to number type
-				// if (!isNaN(value)) {
-				//     value = parseFloat(value);
-				// }
 				entry[key] = value;
 			});
 			return entry;
@@ -201,10 +197,14 @@ class Complex {
 		
 		let parentMap = {};
 		let lastParent = null;
+		let lastProteinEntrez = null;
+		let lastProteinID = null;
+		let parentsToUpdate = [];
 
 		parsedData.forEach(entry => {
 			if (["deg", "prot", "nodeg", "meta"].includes(entry.type)) {
 				if (!parentMap[entry.id]) {
+					parentsToUpdate = [];
 					parentMap[entry.id] = 
 						entry.type === "meta" ? new Metabolite() :
 						entry.type === "prot" ? new Protein() :
@@ -218,52 +218,63 @@ class Complex {
 					this.hasNoDeg = entry.type === "nodeg" ? true : this.hasNoDeg;
 					this.hasMeta = entry.type === "meta" ? true : this.hasMeta;
 					this.hasProt = entry.type === "prot" ? true : this.hasProt;
+					if (entry.type === "prot") {
+						lastProteinEntrez = parentMap[entry.id].name;
+						lastProteinID = parentMap[entry.id].id;
+					}
 				}
 
 				lastParent = parentMap[entry.id];
+				parentsToUpdate.push(lastParent);
+				if (entry.type === "deg" && lastProteinEntrez === lastParent.id) {
+					parentsToUpdate.push(parentMap[lastProteinID]);
+				}
+
 			} else if (["chroma", "meth", "urna","tf"].includes(entry.type)) {
-				lastParent.hasMethyl = entry.type === "meth" ? true : lastParent.hasMethyl;
-				lastParent.meth = entry.type === "meth" ? entry.dev : lastParent.meth;
-				this.hasMethyl = entry.type === "meth" ? true : this.hasMethyl;
-				
-				lastParent.hasChroma = entry.type === "chroma" ? true : lastParent.hasChroma;
-				lastParent.chroma = entry.type === "chroma" ? entry.dev : lastParent.chroma;
-				this.hasChroma = entry.type === "chroma" ? true : this.hasChroma;
-
-
-				lastParent.hasmiRNA = entry.type === "urna" ? true : lastParent.hasmiRNA;
-				this.hasmiRNA = entry.type === "urna" ? true : this.hasmiRNA;
-
-				if (entry.type === "urna") {
-					let urnaObj = new miRNA({
-						id: entry.id,
-						dev: entry.dev,
-						mirt: entry.mirt
-					});
-					urnaObj.assignImg();
-					lastParent.urnas.push(urnaObj);
-				}
-
-
-				lastParent.hasTF = entry.type === "tf" ? true : lastParent.hasTF;
-				this.hasTF = entry.type === "tf" ? true : this.hasTF;
-
-				if (entry.type === "tf") {
-					let tfObj = new TF();
-					tfObj.id = entry.id;
-					tfObj.dev = entry.dev;
-					tfObj.name = entry.name;
-					tfObj.assignImg();
-					lastParent.tfs.push(tfObj);
-				}
-				lastParent.assignImg();
+				parentsToUpdate.forEach((parent) => {
+					parent.hasMethyl = entry.type === "meth" ? true : parent.hasMethyl;
+					parent.meth = entry.type === "meth" ? entry.dev : parent.meth;
+					this.hasMethyl = entry.type === "meth" ? true : this.hasMethyl;
+					parent.hasChroma = entry.type === "chroma" ? true : parent.hasChroma;
+					parent.chroma = entry.type === "chroma" ? entry.dev : parent.chroma;
+					this.hasChroma = entry.type === "chroma" ? true : this.hasChroma;
+					parent.hasmiRNA = entry.type === "urna" ? true : parent.hasmiRNA;
+					this.hasmiRNA = entry.type === "urna" ? true : this.hasmiRNA;
+					if (entry.type === "urna") {
+						let urnaObj = new miRNA({
+							id: entry.id,
+							dev: entry.dev,
+							mirt: entry.mirt
+						});
+						urnaObj.assignImg();
+						parent.urnas.push(urnaObj);
+					}
+					parent.hasTF = entry.type === "tf" ? true : parent.hasTF;
+					this.hasTF = entry.type === "tf" ? true : this.hasTF;
+					if (entry.type === "tf") {
+						let tfObj = new TF();
+						tfObj.id = entry.id;
+						tfObj.dev = entry.dev;
+						tfObj.name = entry.name;
+						tfObj.assignImg();
+						parent.tfs.push(tfObj);
+					}
+					parent.assignImg();
+				})
 			}
 
 			if (!referenceTable[entry.type].ids[entry.id]) {
 				referenceTable[entry.type].ids[entry.id] = {};
 				referenceTable[entry.type].ids[entry.id].complexes = [];
 				referenceTable[entry.type].ids[entry.id].name = entry.mirt ? entry.mirt : entry.name;
-
+				if (!referenceTable[entry.type].ids[entry.id].name && ["meth","chroma"].includes(entry.type)) {
+					["gene","prot","nodeg"].forEach((t) => {
+						if (referenceTable[t].ids[entry.id] && referenceTable[t].ids[entry.id] && referenceTable[t].ids[entry.id].name) {
+							referenceTable[entry.type].ids[entry.id].name = referenceTable[t].ids[entry.id].name;
+							return
+						}
+					})
+				}
 			}
 			referenceTable[entry.type].ids[entry.id].complexes.push(this.id);
 			const withoutDuplicates = Array.from(new Set(referenceTable[entry.type].ids[entry.id].complexes));
@@ -810,27 +821,30 @@ class Protein extends Gene {
 			this.img = "cyan_square.png";
 		}
 		
-
-		if (this.meth !== undefined) {
-			if (this.meth > methRightThreshold) { // this should be a threshold
-				this.methImg = "yellow_meth.png";
+		if (this.hasMethyl) {
+			if (this.meth !== undefined) {
+				if (this.meth > methRightThreshold) { // this should be a threshold
+					this.methImg = "yellow_meth.png";
+				}
+				if (this.meth < methLeftThreshold) {
+					this.methImg = "blue_meth.png";
+				}
+			} else {
+				this.methImg = "meth_orange.png";
 			}
-			if (this.meth < methLeftThreshold) {
-				this.methImg = "blue_meth.png";
-			}
-		} else {
-			this.methImg = "meth_orange.png";
 		}
 		
-		if (this.chromaImg !== undefined) {
-			if (this.chroma > chromaRightThreshold) { // this should be a threshold
-				this.chromaImg = "yellow_meth.png";
+		if (this.hasChroma) {
+			if (this.chromaImg !== undefined) {
+				if (this.chroma > chromaRightThreshold) { // this should be a threshold
+					this.chromaImg = "yellow_meth.png";
+				}
+				if (this.chroma < chromaRightThreshold) { // this should be a threshold
+					this.chromaImg = "blue_meth.png";
+				}
+			} else {
+				this.chromaImg = "meth_orange.png";
 			}
-			if (this.chroma < chromaRightThreshold) { // this should be a threshold
-				this.chromaImg = "blue_meth.png";
-			}
-		} else {
-			this.chromaImg = "blue_meth.png";
 		}
 		
 	}

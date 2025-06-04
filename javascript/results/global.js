@@ -33,7 +33,11 @@ var complexObjs = {};
 var entrez2symbol = {};
 var entrez2protID = {};
 
-
+var containerForDrag;
+var dragTarget;
+var imgToDrag;
+var isDragging = false;
+var startX, startY, offsetX = 0, offsetY = 0;
 
 var referenceTable = {
     gene : {
@@ -70,13 +74,18 @@ var referenceTable = {
         aliasForIDSelector : "TF",
         aliasForTypeSelector : "TFs",
         ids : {}
+    },
+    nodeg : {
+        ids: {}
     }
 }
 
 referenceTable.deg = referenceTable.gene;
-referenceTable.meth.ids = referenceTable.gene.ids;
-referenceTable.chroma.ids = referenceTable.gene.ids;
-referenceTable.nodeg = referenceTable.gene;
+// referenceTable.meth.ids = referenceTable.gene.ids;
+// referenceTable.chroma.ids = referenceTable.gene.ids;
+// referenceTable.nodeg = referenceTable.gene;
+// referenceTable.chroma.ids = {};
+// referenceTable.meth.ids = {};
 
 var changeEvent = new Event('change');
 
