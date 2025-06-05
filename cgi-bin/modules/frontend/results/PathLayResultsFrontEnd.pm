@@ -129,35 +129,19 @@ sub ResultsBuilder {
             _id => "header_div",
             _class => "header_div"
         );
-        my $unifi_logo_div = new HTMLDiv(
-            _id => "unifi_logo_div",
-            _class => "unifi_logo_div"
-        );
-        my $unifi_logo_img = new HTMLImg(
-            _id => "unifi",
-            _src => "../src/sbsc-unifi-trasp-inv.png",
-            _height => 100
-        );
 
         $header_div -> ContentLoader(
-            Content => "<font style=\"margin-top:35px; margin-left:60px; position:absolute;\" size=\"+2\" color=\"white\">"
+            Content => "<h1>"
         );
         $header_div -> ContentLoader(
             Content => "<b> PathLay - MAPS</b>"
         );
         $header_div -> ContentLoader(
-            Content => "</font>"
-        );
-
-        $unifi_logo_div -> ContentLoader(
-            Content => $unifi_logo_img
+            Content => "</h1>"
         );
 
         $container -> ContentLoader(
             Content => $header_div
-        );
-        $container -> ContentLoader(
-            Content => $unifi_logo_div
         );
 
         return($container);

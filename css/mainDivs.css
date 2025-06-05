@@ -29,9 +29,11 @@
 }
 .header_div{
 
-	float:left;
+	text-align: center;
+  color: white;
+	/* float:left;
 	width:60%;
-	overflow:hidden;
+	overflow:hidden; */
 }
 .unifi_logo_div{
 	overflow:hidden;
@@ -101,7 +103,11 @@ font.clicker:hover {
 	grid-row-end: 3;
 	position:relative;
 	z-index:0;
-	overflow:auto;
+	overflow:auto; /*auto if draggin disabled else hidden*/
+	/*width:80%;*/ /*enable when drag is enabled*/
+	/*height:65%;*/ /*enable when drag is enabled*/
+	margin-top: 10px;
+  justify-self: center;
 }
 .maps_div{
 
@@ -110,7 +116,7 @@ font.clicker:hover {
 	position:relative;
 }
 .pathway_div {
-	overflow:auto;
+	overflow:hidden;
 	cursor:grab;
 }
 .complex {
