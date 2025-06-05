@@ -67,7 +67,7 @@ export async function checkMapsExistence(organism,dbId) {
 		
 		integrityCheck[organism] = [ ...mapDBFiles];
 		mapsCheck[organism] = [...(mapsCheck[organism] || []), ...mapFiles];
-		printMaps(organism);
+		printMaps(organism,dbId);
 		let status = checkMapsStatus(organism,dbId);
 		updateBoxMapStatus(dbId,organism,status);
 	} catch (error) {
@@ -93,33 +93,34 @@ export async function downloadMaps(organism,db) {
 	console.log(organism);
 	updateBoxMapStatus(db,organism,"download");
 
-	// var list = [];
-	// mapsCheck[organism].filter((d) => ((!d.imgAvailable || !d.fileAvailable) && d.db === db))
-	// 	.map((map) => {
-	// 		//query for download here
-	// 		enqueueUploadMap(organism,map);
-	// })
-	// if (Array.from(requestQueueMaps.immediateRequests).length === 0) {
-	// 	updateBoxMapStatus(map.db,organism,"ok");
-	// }
 	// Filter out maps that need downloading and belong to the specified db
 	let mapsToDownload = mapsCheck[organism].filter((d) => 
 		(!d.imgAvailable || !d.fileAvailable) && d.db === db
 	);
 	console.log(mapsToDownload);
 	// Enqueue all maps that need to be downloaded
+	let res = [];
 	const immediateRequests = mapsToDownload.map(async (map) => {
-		await enqueueUploadMap(organism, map);
+		console.log(`Downloading ${map}`)
+		let status = await enqueueUploadMap(organism, map);
+		res.push(status)
 	});
-
 	// Wait for all the enqueued immediate requests to complete
 	await Promise.all(immediateRequests);
 
 	// After all immediate requests complete, check the length
 	if (Array.from(requestQueueMaps.immediateRequests).length === 0) {
-		updateBoxMapStatus(db, organism, "ok");
+
+		let notOk = res.filter((d) => !d.success);
+
+		if (notOk.length > 0) {
+			updateBoxMapStatus(db, organism, "warning");
+		} else {
+			updateBoxMapStatus(db, organism, "ok");
+		}
 	}
 }
+
 export async function enqueueUploadMap(organism, map) {
 	return new Promise((resolve, reject) => {
 		requestQueueMaps.enqueueImmediate(async () => {
@@ -144,7 +145,9 @@ export async function enqueueUploadMap(organism, map) {
 					const errorBody = await uploadResponse.text();
 					updateLiStatus(map, 'error');
 					// Reject the promise with an error
-					reject(new Error(`Upload failed with status: ${uploadResponse.status} - ${errorBody}`));
+					// reject(new Error(`Upload failed with status: ${uploadResponse.status} - ${errorBody}`));
+					console.warn(`Upload failed with status: ${uploadResponse.status} - ${errorBody}`);
+					resolve({ success: false, error: errorBody, map });
 				} else {
 					const json = await uploadResponse.json();
 					console.log(json);
@@ -153,7 +156,7 @@ export async function enqueueUploadMap(organism, map) {
 					updateLiStatus(map, (map.imgAvailable == "true" && map.fileAvailable == "true") ? 'ok' : 'error');
 					console.log(Array.from(requestQueueMaps.immediateRequests).length);
 					// Resolve the promise on successful upload
-					resolve();
+					resolve({ success: true, error: null, map });
 				}
 			} catch (error) {
 				// Catch any unexpected errors and reject the promise

@@ -150,26 +150,31 @@ export function updateLiStatus(map,status) {
 	}
 	
 }
-export function printMaps(organism) {
+export function printMaps(organism,dbId) {
 	let keggListUl = document.getElementById("mapsListUlkegg");
 	let wpListUl = document.getElementById("mapsListUlwikipathways");
 	// keggListUl.innerHTML = "";
-	mapsCheck[organism].filter((d) => ((!d.imgAvailable || !d.fileAvailable) && d.db === "kegg"))
-		.map((map) => {
-			keggListUl.appendChild(mapLi(map));
-	})
-	mapsCheck[organism].filter((d) => ((d.imgAvailable && d.fileAvailable) && d.db === "kegg"))
-		.map((map) => {
-			keggListUl.appendChild(mapLi(map));
-	})
-	mapsCheck[organism].filter((d) => ((!d.imgAvailable || !d.fileAvailable) && d.db === "wikipathways"))
-		.map((map) => {
-			wpListUl.appendChild(mapLi(map));
-	})
-	mapsCheck[organism].filter((d) => ((d.imgAvailable && d.fileAvailable) && d.db === "wikipathways"))
-		.map((map) => {
-			wpListUl.appendChild(mapLi(map));
-	})
+
+	if (dbId === "kegg") {
+		mapsCheck[organism].filter((d) => ((!d.imgAvailable || !d.fileAvailable) && d.db === "kegg"))
+			.map((map) => {
+				keggListUl.appendChild(mapLi(map));
+		})
+		mapsCheck[organism].filter((d) => ((d.imgAvailable && d.fileAvailable) && d.db === "kegg"))
+			.map((map) => {
+				keggListUl.appendChild(mapLi(map));
+		})
+	}
+	if (dbId === "wikipathways") {
+		mapsCheck[organism].filter((d) => ((!d.imgAvailable || !d.fileAvailable) && d.db === "wikipathways"))
+			.map((map) => {
+				wpListUl.appendChild(mapLi(map));
+		})
+		mapsCheck[organism].filter((d) => ((d.imgAvailable && d.fileAvailable) && d.db === "wikipathways"))
+			.map((map) => {
+				wpListUl.appendChild(mapLi(map));
+		})
+	}
 }
 
 

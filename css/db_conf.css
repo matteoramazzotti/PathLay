@@ -1,9 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.button-custom{
+  border: 1px solid white;
+  width: auto;
+  height: auto;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-decoration: none;
+  transition: color 0.3s, background-color 0.3s;
+}
+.button-custom:hover {
+	color: rgba(0, 102, 153, 1);
+	background-color: white;
+	border-radius: 10px;
+  cursor: pointer;
+}
+.button-custom:hover span {
+	color: rgba(0, 102, 153, 1);
+}
+
+#header_div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  align-self: center;
+}
+
+
 #container {
   margin: 0;
+  margin-top: 100px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  background-color: rgba(0, 102, 153, 1);
+  border-radius: 15px;
+  padding: 20px;
+  align-self: center;
 }
-#organismSelectBox{
-  align-self: flex-start;
+#container5 {
+  position:fixed;
+  width: 100%;
+  z-index: 1000;
+  background-color: #006699;
+  padding:1px; 
 }
 
 .progressContainer {
@@ -60,7 +116,6 @@
 .sources-box{
   background-color: #069;
   border-radius: 15px;
-  width: fit-content;
   align-self: center;
   display: flex;
   padding: 10px;
@@ -85,6 +140,7 @@
 #check-icon {
   color: rgb(66, 118, 69);
   font-size: 48px;
+  font-display: block;
 }
 #error-icon {
   color: red;
@@ -211,12 +267,7 @@
   height: 200;
 }
 .mapsListBoxChildthree {
-  height: 100;
   flex-direction: column;
-
-
-  
-
 }
 
 .maps-list-box-ul {
@@ -277,7 +328,7 @@
   display:flex;
   flex-flow: column;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin: 5px;
   border-radius: 15px;
   padding: 0px 5px 5px 5px;
@@ -316,3 +367,76 @@
   width: 25%;
 }
 
+select {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background: transparent;
+	width: 100%;
+	padding: 10px;
+	color: white;
+	font-size: 16px;
+	border: 2px solid #0563af;;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#organismSelectBox{
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: rgba(0, 102, 153, 1);
+  padding: 10px;
+}
+#buttonsBox{
+  display: flex;
+}
+
+#organismSelectBox select{
+  margin-left: auto;
+  border: 1px solid white;
+  width: 400px;
+  background-color: rgba(0, 102, 153, 1);
+  margin-left: 10px;
+}
+
+#organismSelectBox span{
+  color: white;
+}
+
+#organismSelectBox::after {
+	content: 'expand_circle_down';
+	font-family: 'Material Icons';
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	pointer-events: none;
+	color: white;
+	background-color: rgba(0, 102, 153, 1);
+	padding: 0 5px;
+	border-radius: 5px;
+  margin-right: 10px;
+}
+/* Hover effect */
+#organismSelectBox:hover::after {
+	background-color: white;
+	color: rgba(0, 102, 153, 1);
+}
+.material-icons {
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px;
+	line-height: 1;
+	letter-spacing: normal;
+	text-transform: none;
+	display: inline-block;
+	white-space: nowrap;
+	word-wrap: normal;
+	direction: ltr;
+	-moz-font-feature-settings: 'liga';
+	-moz-osx-font-smoothing: grayscale;
+  transition: color 0.3s;
+  pointer-events: none;
+}

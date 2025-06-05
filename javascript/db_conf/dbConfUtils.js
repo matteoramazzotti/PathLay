@@ -19,6 +19,7 @@ async function grantAccess() {
 async function checkFileExistence(organism) {
 	try {
 		console.log("checkFileExistence: "+organism)
+
 		var selectedSpecies = organism;
 		paths.interactionDBPath = `pathlay_data/${organismCodes[selectedSpecies]}/db/`;
 		console.log(paths.interactionDBPath);
@@ -205,7 +206,7 @@ async function downloadFileWithProgress(url, type) {
 
 	const response = await fetch(url);
 	if (!response.ok) {
-			throw new Error(`Download failed with status: ${response.status}`);
+		throw new Error(`Download failed with status: ${response.status}`);
 	}
 	console.log("Response:", response);
 
@@ -213,7 +214,7 @@ async function downloadFileWithProgress(url, type) {
 	const totalBytes = contentLength ? parseInt(contentLength, 10) : null;
 
 	if (totalBytes === null) {
-			console.warn('Content-Length header is missing. Progress tracking will be disabled.');
+		console.warn('Content-Length header is missing. Progress tracking will be disabled.');
 	}
 
 	let loadedBytes = 0;
@@ -311,9 +312,16 @@ document.addEventListener("DOMContentLoaded", async function() {
 		} else {
 			document.getElementById('species').value = "homo_sapiens";
 			document.getElementById("fileCheckerButton").addEventListener('click',() => {
+
+				if (document.getElementById("sourcesContainer").style.display == "none") {
+					document.getElementById("sourcesContainer").style.display = "flex";
+				}
 				checkFileExistence(document.getElementById('species').value)
 			});
 			document.getElementById("mapsCheckerButton").addEventListener('click',() => {
+				if (document.getElementById("mapsContainer").style.display == "none") {
+					document.getElementById("mapsContainer").style.display = "flex";
+				}
 				checkMapsExistence(document.getElementById('species').value,'kegg');
 				checkMapsExistence(document.getElementById('species').value,'wikipathways');
 			});
@@ -332,7 +340,6 @@ window.addEventListener('beforeunload', (event) => {
 	event.preventDefault();
 	event.returnValue = ''; // Modern browsers ignore custom text
 });
-
 
 
 
