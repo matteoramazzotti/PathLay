@@ -34,6 +34,8 @@ RUN apt-get update && apt-get install -y \
     && cpanm --notest XML::Simple \
     && cpanm --notest ExtUtils::PkgConfig \
     && cpanm --notest Statistics::Distributions \
+    && cpanm --notest List::Util \
+    && cpanm Data::Structure::Util \
     && cpanm --notest Bio::FdrFet \
     && cpanm --notest GD \
     && cpanm --notest Archive::Zip \
