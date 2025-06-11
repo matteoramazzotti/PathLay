@@ -68,13 +68,13 @@ RUN mkdir -p /var/lock/apache2 /var/run/apache2 \
     && echo '</Directory>' >> /etc/apache2/sites-enabled/localhost.conf
 
 # Set environment variables for Apache
-ENV APACHE_RUN_USER www-data
-ENV APACHE_RUN_GROUP www-data
-ENV APACHE_PID_FILE /var/run/apache2.pid
-ENV APACHE_RUN_DIR /var/run/apache2
-ENV APACHE_LOCK_DIR /var/lock/apache2
-ENV APACHE_LOG_DIR /var/log/apache2
-ENV LANG C
+ENV APACHE_RUN_USER=www-data
+ENV APACHE_RUN_GROUP=www-data
+ENV APACHE_PID_FILE=/var/run/apache2.pid
+ENV APACHE_RUN_DIR=/var/run/apache2
+ENV APACHE_LOCK_DIR=/var/lock/apache2
+ENV APACHE_LOG_DIR=/var/log/apache2
+ENV LANG=C
 
 # Add necessary files to container
 ADD cgi-bin /var/www/html/pathlay/cgi-bin/
