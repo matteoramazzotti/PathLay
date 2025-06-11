@@ -179,7 +179,7 @@ package protDB;
 
                 $self -> {entrez2entry} -> {$entrez} = $entry;
                 # $self -> {entry2entrez} -> {$entry} = $entrez;
-                push(@{$self->{entry2entrez}->{$_}},$entrez);
+                push(@{$self->{entry2entrez}->{$entry}},$entrez);
 
                 $self -> {entrez2fullName} -> {$entrez} = $fullName;
                 $self -> {entry2fullName} -> {$entry} = $fullName;
