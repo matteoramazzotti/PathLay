@@ -312,3 +312,9 @@ foreach my $dbType (sort keys %{$db->{$organism}->{fileNames}}) {
     unlink("$db->{$organism}->{interactionDBPath}$db->{$organism}->{fileNames}->{$dbType}.status.json");
   }
 }
+my $response = {
+  status => "complete"
+};
+my $json_response = to_json($response, { pretty => 1 });
+print $query->header('application/json');
+print $json_response;

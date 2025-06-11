@@ -161,14 +161,13 @@ my @mandatoryFolders = (
 foreach my $folder (@mandatoryFolders) {
 	if (!-e $folder) {
 		mkdir($folder);
-		my $chgrp_command = "chgrp -R www-data $folder";
-		system($chgrp_command) == 0 or exit "Failed to execute $chgrp_command: $!";
-		my $chmod_command = "chmod -R 774 $folder";
-		system($chmod_command) == 0 or die "Failed to execute $chmod_command: $!";
-		my $chmod_gs_command = "chmod g+s $folder";
-		system($chmod_gs_command) == 0 or die "Failed to execute $chmod_gs_command: $!";
-
 	}
+	my $chgrp_command = "chgrp -R www-data $folder";
+	system($chgrp_command) == 0 or exit "Failed to execute $chgrp_command: $!";
+	my $chmod_command = "chmod -R 774 $folder";
+	system($chmod_command) == 0 or die "Failed to execute $chmod_command: $!";
+	my $chmod_gs_command = "chmod g+s $folder";
+	system($chmod_gs_command) == 0 or die "Failed to execute $chmod_gs_command: $!";
 }
 
 foreach my $mapDB (@{$mapDBs -> {$organism}}) {
@@ -300,7 +299,7 @@ my $db = {
 };
 
 foreach my $dataType (('gene','meta')) {
-	if (!-e "$FindBin::Bin/../../pathlay_data/$organismCodes->{$organism}/db/$dbSelected/$db->{$organism}->{universeFiles}->{$dataType}->{$dbSelected}") {
+	# if (!-e "$FindBin::Bin/../../pathlay_data/$organismCodes->{$organism}/db/$dbSelected/$db->{$organism}->{universeFiles}->{$dataType}->{$dbSelected}") {
 		my $gmtFile = new GMTFile(
 			mapsDB => $dbSelected,
 			fileName => $db->{$organism}->{universeFiles}->{$dataType}->{$dbSelected},
@@ -316,7 +315,7 @@ foreach my $dataType (('gene','meta')) {
 		$gmtFile->printContent(
 			outFile => "$FindBin::Bin/../../pathlay_data/$organismCodes->{$organism}/db/$dbSelected/$db->{$organism}->{universeFiles}->{$dataType}->{$dbSelected}"
 		);
-	}
+	# }
 }
 
 

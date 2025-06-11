@@ -169,24 +169,24 @@ my $response = {
 
 # Check for pathlay_data folder and assign correct permissions
 my @mandatoryFolders = (
+	"$FindBin::Bin/../../pathlay_users/",
 	"$FindBin::Bin/../../pathlay_data/",
 	"$FindBin::Bin/../../pathlay_data/pathways/",
 	"$FindBin::Bin/../../pathlay_data/$organismCodes->{$organism}/",
 	"$FindBin::Bin/../../pathlay_data/$organismCodes->{$organism}/db/",
-	"$FindBin::Bin/../../pathlay_data/$organismCodes->{$organism}/maps/",
+	"$FindBin::Bin/../../pathlay_data/$organismCodes->{$organism}/maps/"
 );
 
 foreach my $folder (@mandatoryFolders) {
 	if (!-e $folder) {
 		mkdir($folder);
-		my $chgrp_command = "chgrp -R www-data $folder";
-		system($chgrp_command) == 0 or exit "Failed to execute $chgrp_command: $!";
-		my $chmod_command = "chmod -R 774 $folder";
-		system($chmod_command) == 0 or die "Failed to execute $chmod_command: $!";
-		my $chmod_gs_command = "chmod g+s $folder";
-		system($chmod_gs_command) == 0 or die "Failed to execute $chmod_gs_command: $!";
-
 	}
+	my $chgrp_command = "chgrp -R www-data $folder";
+	system($chgrp_command) == 0 or exit "Failed to execute $chgrp_command: $!";
+	my $chmod_command = "chmod -R 774 $folder";
+	system($chmod_command) == 0 or die "Failed to execute $chmod_command: $!";
+	my $chmod_gs_command = "chmod g+s $folder";
+	system($chmod_gs_command) == 0 or die "Failed to execute $chmod_gs_command: $!";
 }
 
 

@@ -77,7 +77,7 @@ if (!$imgAvailable) {
 	
 	if (defined $img_content) {
 		# Define the local path to save the image
-		my $img_path = "$FindBin::Bin/../pathlay_data/pathways/$mapDB/$imgID.png"; # Adjust the path as necessary
+		my $img_path = "$FindBin::Bin/../../pathlay_data/pathways/$mapDB/$imgID.png"; 
 		if ($mapDB ne "wikipathways") {
 			open my $fh, '>', $img_path or die "Could not open file '$img_path' $!";
 			binmode $fh; # Set to binary mode
@@ -124,7 +124,7 @@ if (!$fileAvailable) {
 	my $ext = $mapDB eq "kegg" ? "kgml" : $mapDB eq "wikipathways" ? "gpml" : "xml";
 	if (defined $file_content) {
 		# Define the local path to save the image
-		my $file_path = "$FindBin::Bin/../pathlay_data/$organismCodes->{$organism}/maps/$mapDB/$mapID.$ext"; # Adjust the path as necessary
+		my $file_path = "$FindBin::Bin/../../pathlay_data/$organismCodes->{$organism}/maps/$mapDB/$mapID.$ext"; # Adjust the path as necessary
 		open my $fh, '>', $file_path or die "Could not open file '$file_path' $!";
 		binmode $fh; # Set to binary mode
 		print $fh $file_content;
@@ -142,7 +142,7 @@ if (!$fileAvailable) {
 		$xml->nodesPrinter(
 			conversionTables => $db->{$organism}->{conversionTables}
 		);
-		if (-e "$FindBin::Bin/../pathlay_data/$organismCodes->{$organism}/maps/$mapDB/$mapID.nodes") {
+		if (-e "$FindBin::Bin/../../pathlay_data/$organismCodes->{$organism}/maps/$mapDB/$mapID.nodes") {
 			$fileAvailable = 1;
 		}
 	} else {
@@ -165,7 +165,7 @@ foreach my $dataType (('gene','meta')) {
 	my $gmtFile = new GMTFile(
 		fileName => $db->{$organism}->{universeFiles}->{$dataType}->{$mapDB},
 		organismCode => $organismCodes->{$organism},
-		filePath => "$FindBin::Bin/../pathlay_data/$organismCodes->{$organism}/db/$mapDB/"
+		filePath => "$FindBin::Bin/../../pathlay_data/$organismCodes->{$organism}/db/$mapDB/"
 	);
 	$gmtFile -> loadContent();
 
@@ -174,7 +174,7 @@ foreach my $dataType (('gene','meta')) {
 		dataType => $dataType
 	);
 	$gmtFile -> printContent(
-		outFile => "$FindBin::Bin/../pathlay_data/$organismCodes->{$organism}/db/$mapDB/$db->{$organism}->{universeFiles}->{$dataType}->{$mapDB}"
+		outFile => "$FindBin::Bin/../../pathlay_data/$organismCodes->{$organism}/db/$mapDB/$db->{$organism}->{universeFiles}->{$dataType}->{$mapDB}"
 	);
 
 }
