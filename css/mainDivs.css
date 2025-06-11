@@ -60,6 +60,7 @@
 #clickers_div{
 	background:#006699;
 	float:right;
+	margin-right: 1%;
 }
 #main_selectors_div{
 	float:left;
@@ -163,18 +164,20 @@ img.minicomplex:hover {
 }
 */
 body {
-    font-family: Arial, sans-serif;
+	font-family: Arial, sans-serif;
+	width: 100%;
+  margin: 0;
 }
 
 #ontUlSelect {
-	margin-left:20px;
+	/* margin-left:20px;
 	margin-top:20px;
-	float:left;
+	float:left; */
 }
 
 #ontUlAddButton {
-	margin-top:20px;
-	margin-left:20px;
+	/* margin-top:20px;
+	margin-left:20px; */
 }
 #mapselectDefault{
 	margin:10px;
