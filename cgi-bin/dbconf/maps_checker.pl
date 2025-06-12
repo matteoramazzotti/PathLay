@@ -160,14 +160,29 @@ my @mandatoryFolders = (
 
 foreach my $folder (@mandatoryFolders) {
 	if (!-e $folder) {
-		mkdir($folder);
+		unless (mkdir($folder)) {
+			warn "Failed to create directory $folder: $!";
+			next;
+		}
 	}
+
 	my $chgrp_command = "chgrp -R www-data $folder";
-	system($chgrp_command) == 0 or exit "Failed to execute $chgrp_command: $!";
+	if (system($chgrp_command) != 0) {
+		warn "Failed to execute '$chgrp_command': $!";
+		next;
+	}
+
 	my $chmod_command = "chmod -R 774 $folder";
-	system($chmod_command) == 0 or die "Failed to execute $chmod_command: $!";
+	if (system($chmod_command) != 0) {
+		warn "Failed to execute '$chmod_command': $!";
+		next;
+	}
+
 	my $chmod_gs_command = "chmod g+s $folder";
-	system($chmod_gs_command) == 0 or die "Failed to execute $chmod_gs_command: $!";
+	if (system($chmod_gs_command) != 0) {
+		warn "Failed to execute '$chmod_gs_command': $!";
+		next;
+	}
 }
 
 foreach my $mapDB (@{$mapDBs -> {$organism}}) {
