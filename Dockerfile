@@ -44,6 +44,9 @@ RUN apt-get update && apt-get install -y \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
+
+
+
 # Edit Apache configuration
 
 RUN mkdir -p /var/lock/apache2 /var/run/apache2 \
@@ -90,9 +93,13 @@ ADD demo_exps /var/www/html/pathlay/demo_exps/
 ADD help /var/www/html/pathlay/help/
 
 # Set file permissions
-RUN chgrp -R www-data /var/www/html/pathlay/ \
+RUN adduser www-data ubuntu \
+    && chgrp -R www-data /var/www/html/pathlay/ \
     && chmod -R 774 /var/www/html/pathlay/ \
     && chmod g+s /var/www/html/pathlay/
+
+RUN chown -R www-data:www-data /var/www/html/pathlay/
+
 
 # Start Apache in the foreground
 CMD ["/usr/sbin/apache2", "-D", "FOREGROUND"]
