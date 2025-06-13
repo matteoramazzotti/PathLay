@@ -196,7 +196,6 @@ select {
 	background-color: rgba(0, 102, 153, 1);
 	border-radius: 15px;
 	width: fit-content;
-	overflow: scroll;
 }
 .conf-container {
 	height: fit-content;
@@ -204,6 +203,7 @@ select {
 }	
 .info-container {
 	height: 25vh;
+	overflow: auto;
 }
 
 .info-row, .conf-row, .columns-row {
@@ -214,7 +214,7 @@ select {
 	width: 100%;
 	padding: 20px;
 	box-sizing: border-box;
-	overflow: scroll;
+	overflow: auto;
 }
 .unjustify {
 	justify-content: flex-start;

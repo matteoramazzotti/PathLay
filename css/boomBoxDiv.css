@@ -9,10 +9,12 @@
     transform: translate(-50%, -50%);
     z-index:999;
     padding:10px;
+    overflow: auto;
 }
 .boomBoxDivHeader {
     height:10%;
     width:100%;
+    overflow: auto;
 }
 
 
@@ -21,6 +23,7 @@
     height: 90%;
     overflow: scroll;
     border-color: white;
+    overflow: auto;
 }
 
 .rightSection {
@@ -106,6 +109,7 @@
 
     font-size:0.8vw;
     float:right;
+    overflow: auto;
 }
 ::-webkit-scrollbar {
     height: 12px;
