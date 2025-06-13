@@ -343,8 +343,9 @@ function downloadFromPool() {
 
     let miniComplexes = document.querySelectorAll('.minicomplex');
     for (let miniComplex of miniComplexes) {
-        let complexObj = new Complex(miniComplex.id,miniComplex.parentElement.id);
-        complexObj.loadContent();
+        let complexObj = new Complex({id:miniComplex.id,parent:miniComplex.parentElement.id});
+        console.log(complexObj.id);
+        complexObj.loadContent2();
         complexObj.contentToTSV();
     }
 
