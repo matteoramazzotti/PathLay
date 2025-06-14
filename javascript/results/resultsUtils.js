@@ -687,35 +687,20 @@ function logic_list_handler(type) {
 
     //active_logical_selected_element = {id:undefined,name:undefined,type:undefined};
 
-    if (document.getElementById("geneIDSelect")) {
-        selectors_available.push(document.getElementById("geneIDSelect"));
-    }
-    if (document.getElementById("metaIDSelect")) {
-        selectors_available.push(document.getElementById("metaIDSelect"));
-    }
-    if (document.getElementById("protIDSelect")) {
-        selectors_available.push(document.getElementById("protIDSelect"));
-    }
-    if (document.getElementById("urnaIDSelect")) {
-        selectors_available.push(document.getElementById("urnaIDSelect"));
-    }
-    if (document.getElementById("methIDSelect")) {
-        selectors_available.push(document.getElementById("methIDSelect"));
-    }
-    if (document.getElementById("chromaIDSelect")) {
-        selectors_available.push(document.getElementById("chromaIDSelect"));
-    }
-    if (document.getElementById("tfIDSelect")) {
-        selectors_available.push(document.getElementById("tfIDSelect"));
-    }
-    
+    ["gene","meta","prot","urna","meth","chroma","tf"].forEach((t) => {
+        if (document.getElementById(`${t}IDSelect`)) {
+            selectors_available.push(document.getElementById(`${t}IDSelect`));
+        }
+    })
+
 
     for (let i = 0; i < selectors_available.length; i++) {
         selectors_available[i].selectedIndex = 0;
         selectors_available[i].style.display = 'none';
     }
     if (document.getElementById(`${type}IDSelect`)) {
-        document.getElementById(`${type}IDSelect`).style.display = 'block';
+        document.getElementById(`${type}IDSelect`).style.display = 'flex';
+        document.getElementById(`${type}IDSelect`).after(document.getElementById("add_element_to_logic_button"))
     }
     
     
