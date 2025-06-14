@@ -400,6 +400,15 @@ sub ResultsBuilder {
             _class => "overDivSection"
         );
 
+        my $firstRow = new HTMLDiv(
+            _id => "",
+            _class => ""
+        );
+        my $secondRow = new HTMLDiv(
+            _id => "",
+            _class => ""
+        );
+
         my $type_logical_select = new HTMLSelect(
             _name => "type_for_logical",
             _id => "type_for_logical",
@@ -721,12 +730,12 @@ sub ResultsBuilder {
         $logisticsDiv_selectors -> ContentLoader(
             Content => $add_element_button
         );
-        $logisticsDiv_selectors -> ContentLoader(
-            Content => $runlogic_button
-        );
-        $logisticsDiv_selectors -> ContentLoader(
-            Content => $resetlogic_button
-        );
+        # $logisticsDiv_selectors -> ContentLoader(
+        #     Content => $runlogic_button
+        # );
+        # $logisticsDiv_selectors -> ContentLoader(
+        #     Content => $resetlogic_button
+        # );
         my $logistics_ul_pool = new HTMLul(
             _id => "queryUlPool",
             _class => "logistics_ul_pool"
@@ -771,27 +780,47 @@ sub ResultsBuilder {
         $logisticsDiv_selectors_wrapper -> ContentLoader(
             Content => $logisticsDiv_selectors
         );
-        $logisticsDiv_selectors_wrapper -> ContentLoader(
-            Content => "<br><br>"
-        );
+        # $logisticsDiv_selectors_wrapper -> ContentLoader(
+        #     Content => "<br><br>"
+        # );
         #if ($parameters -> {_mode_select} ne "id_only") {
-            $logisticsDiv_selectors_wrapper -> ContentLoader(
-                Content => $logisticsDiv_agreement_selectors
-            );
-            $logisticsDiv_selectors_wrapper -> ContentLoader(
-                Content => "<br><br>"
-            );
+        $logisticsDiv_selectors_wrapper -> ContentLoader(
+            Content => $logisticsDiv_agreement_selectors
+        );
+        # $logisticsDiv_selectors_wrapper -> ContentLoader(
+        #     Content => "<br><br>"
+        # );
         #}
         if ($parameters -> {_enablegene} || $parameters -> {_enablemeth} || $parameters -> {_enablechroma} || $parameters -> {_enablenodeg}) {
             $logisticsDiv_selectors_wrapper -> ContentLoader(
                 Content => $ontSelectorDiv
             );
         }
-        $logisticsDiv -> ContentLoader(
+        # $logisticsDiv -> ContentLoader(
+        #     Content => $logisticsDiv_selectors_wrapper
+        # );
+        # $logisticsDiv -> ContentLoader(
+        #     Content => $logisticsDiv_pool_wrapper
+        # );
+
+        $firstRow -> ContentLoader(
             Content => $logisticsDiv_selectors_wrapper
         );
-        $logisticsDiv -> ContentLoader(
+        $firstRow -> ContentLoader(
             Content => $logisticsDiv_pool_wrapper
+        );
+        $secondRow -> ContentLoader(
+            Content => $runlogic_button
+        );
+        $secondRow -> ContentLoader(
+            Content => $resetlogic_button
+        );
+
+        $logisticsDiv -> ContentLoader(
+            Content => $firstRow
+        );
+        $logisticsDiv -> ContentLoader(
+            Content => $secondRow
         );
 
         $debug = 0;
