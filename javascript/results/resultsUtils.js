@@ -3,7 +3,7 @@ function toggleOverDiv(targetId) {
 	var containerDiv = document.getElementById('container3');
 	var targetDivId = document.getElementById(targetId);
 
-	if (targetDivId.style.display == "block") {
+	if (targetDivId.style.display == "flex") {
 		containerDiv.style.display = "none";
 		targetDivId.style.display = "none";
 		return;
@@ -13,8 +13,8 @@ function toggleOverDiv(targetId) {
 	for (overDivSection of overDivSections) {
 		overDivSection.style.display = "none";
 	}
-	containerDiv.style.display = "block";
-	targetDivId.style.display = "block";
+	containerDiv.style.display = "flex";
+	targetDivId.style.display = "flex";
 	return;
 }
 
